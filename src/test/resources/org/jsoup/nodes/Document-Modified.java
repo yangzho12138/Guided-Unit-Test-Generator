@@ -178,7 +178,7 @@ public class Document extends Element {
     private void ensureMetaCharsetElement() {
         if (updateMetaCharset) {
             OutputSettings.Syntax syntax = outputSettings().syntax();
-            if (OutputSettings.Syntax.html == syntax) {
+            if (syntax == OutputSettings.Syntax.html) {
                 Element metaCharset = select("meta[charset]").first();
                 if (null != metaCharset) {
                     metaCharset.attr("charset", charset().displayName());
@@ -189,7 +189,7 @@ public class Document extends Element {
                     }
                 }
                 select("meta[name=charset]").remove();
-            } else if (OutputSettings.Syntax.xml == syntax) {
+            } else if (syntax == OutputSettings.Syntax.xml) {
                 Node node = childNodes().get(0);
                 if (node instanceof XmlDeclaration) {
                     XmlDeclaration decl = (XmlDeclaration) node;
