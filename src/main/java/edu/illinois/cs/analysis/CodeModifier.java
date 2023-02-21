@@ -22,6 +22,12 @@ public class CodeModifier extends VoidVisitorAdapter
 		super.visit(n, arg);
 		// TODO: complete this visit function to automatically switch the two
 		// operands for all null checks specified in the homework assignment
+		Expression left = n.getLeft();
+		Expression right = n.getRight();
+		if("null".equals(left.toString()) || "null".equals(right.toString())){
+			n.setLeft(right);
+			n.setRight(left);
+		}
 	}
 
 	// The following three visit functions are used to remove all comments to
