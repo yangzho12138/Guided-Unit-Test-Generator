@@ -6,7 +6,7 @@ import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.StringLiteralExpr;
 import com.github.javaparser.ast.stmt.IfStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import edu.illinois.cs.test.ValuePool;
+import edu.illinois.cs.test.pojo.ValuePool;
 
 import java.util.*;
 
@@ -41,9 +41,21 @@ public class PoolInit extends VoidVisitorAdapter {
                 BinaryExpr expr = (BinaryExpr) o;
                 int boundValue = 0;
                 if(expr.getLeft().isIntegerLiteralExpr()){
-                    boundValue = Integer.parseInt(expr.getLeft().toString());
+                    String num = expr.getLeft().toString().trim();
+                    if(num.startsWith("0x")){
+                        num = num.substring(2);
+                        boundValue = Integer.parseInt(num,16);
+                    }else{
+                        boundValue = Integer.parseInt(num);
+                    }
                 }else{
-                    boundValue = Integer.parseInt(expr.getRight().toString());
+                    String num = expr.getRight().toString().trim();
+                    if(num.startsWith("0x")){
+                        num = num.substring(2);
+                        boundValue = Integer.parseInt(num,16);
+                    }else{
+                        boundValue = Integer.parseInt(num);
+                    }
                 }
                 BinaryExpr.Operator operator = expr.getOperator();
                 if(operator.equals(BinaryExpr.Operator.EQUALS)){
@@ -62,11 +74,15 @@ public class PoolInit extends VoidVisitorAdapter {
             }
             // String Type
             if(o instanceof com.github.javaparser.ast.expr.StringLiteralExpr){
-                String s = ((StringLiteralExpr) o).asString();
-                char c = s.charAt(s.length() - 1);
-                candidateValues.add(s);
-                candidateValues.add(s.substring(0, s.length() - 1) + (char)(c + 1));
-                candidateValues.add(s.substring(0, s.length() - 1) + (char)(c - 1));
+                String s = ((StringLiteralExpr) o).asString().trim();
+                if(s.length() != 0){
+                    char c = s.charAt(s.length() - 1);
+                    candidateValues.add(s);
+                    candidateValues.add(s.substring(0, s.length() - 1) + (char)(c + 1));
+                    candidateValues.add(s.substring(0, s.length() - 1) + (char)(c - 1));
+                }else{
+                    candidateValues.add("");
+                }
             }
             // Char Type
             if(o instanceof com.github.javaparser.ast.expr.CharLiteralExpr){
@@ -83,9 +99,9 @@ public class PoolInit extends VoidVisitorAdapter {
                 BinaryExpr expr = (BinaryExpr) o;
                 double boundValue = 0;
                 if(expr.getLeft().isDoubleLiteralExpr()){
-                    boundValue = Double.parseDouble(expr.getLeft().toString());
+                    boundValue = Double.parseDouble(expr.getLeft().toString().trim());
                 }else{
-                    boundValue = Double.parseDouble(expr.getRight().toString());
+                    boundValue = Double.parseDouble(expr.getRight().toString().trim());
                 }
                 BinaryExpr.Operator operator = expr.getOperator();
                 if(operator.equals(BinaryExpr.Operator.EQUALS)){
@@ -102,7 +118,6 @@ public class PoolInit extends VoidVisitorAdapter {
                     candidateValues.add(boundValue + 10e-16);
                 }
             }
-
         }
 
         for(Object o : candidateValues){
