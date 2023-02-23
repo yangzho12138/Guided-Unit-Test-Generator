@@ -1,9 +1,10 @@
 package edu.illinois.cs.test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ValuePool {
-    List<Object> valuePool;
+    List<Object> valuePool = new ArrayList<>();
 
     // add the value into the pool
     public void addValue(Object o){
@@ -13,7 +14,7 @@ public class ValuePool {
     }
 
     // check whether this object could be added into the value pool
-    public boolean checkValue(Object o){
-
-    }
+//    public boolean checkValue(Object o){
+//
+//    }
 }
