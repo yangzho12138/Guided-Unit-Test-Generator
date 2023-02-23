@@ -37,11 +37,11 @@ public class PoolInit extends VoidVisitorAdapter {
             if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
                     (((BinaryExpr) o).getLeft().isIntegerLiteralExpr() ||
                             ((BinaryExpr) o).getRight().isIntegerLiteralExpr())){
-
                 BinaryExpr expr = (BinaryExpr) o;
                 int boundValue = 0;
                 if(expr.getLeft().isIntegerLiteralExpr()){
                     String num = expr.getLeft().toString().trim();
+                    // Hexadecimal
                     if(num.startsWith("0x")){
                         num = num.substring(2);
                         boundValue = Integer.parseInt(num,16);

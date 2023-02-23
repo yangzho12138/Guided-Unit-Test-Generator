@@ -37,9 +37,9 @@ public class PoolInitTest {
         // applied to all possible elements of the specified type(s).
         poolInit.visit(cu, null);
 
-        for(Object o : poolInit.pool.valuePool){
-            System.out.println(o);
-        }
+//        for(Object o : poolInit.pool.valuePool){
+//            System.out.println(o);
+//        }
 
         // Check if the number of returned methods is as expected
         assertEquals(1, 1);
@@ -66,7 +66,7 @@ public class PoolInitTest {
                     }
                 });
 
-        for(Object o : poolInit.pool.valuePool){
+        for(Object o : poolInit.pool.objectsPool){
             System.out.println(o);
         }
 
