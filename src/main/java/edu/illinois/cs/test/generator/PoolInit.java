@@ -1,6 +1,7 @@
 package edu.illinois.cs.test.generator;
 
 import com.github.javaparser.ast.expr.BinaryExpr;
+import com.github.javaparser.ast.expr.CharLiteralExpr;
 import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.StringLiteralExpr;
 import com.github.javaparser.ast.stmt.IfStmt;
@@ -11,7 +12,7 @@ import java.util.*;
 
 // scan the target resources to generate the primitive value pool
 public class PoolInit extends VoidVisitorAdapter {
-    ValuePool pool;
+    public ValuePool pool;
 
     public PoolInit(){
         this.pool = new ValuePool();
@@ -68,31 +69,11 @@ public class PoolInit extends VoidVisitorAdapter {
                 candidateValues.add(s.substring(0, s.length() - 1) + (char)(c - 1));
             }
             // Char Type
-            if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
-                    (((BinaryExpr) o).getLeft().isCharLiteralExpr() ||
-                            ((BinaryExpr) o).getRight().isCharLiteralExpr())) {
-
-                BinaryExpr expr = (BinaryExpr) o;
-                char boundValue = 'a';
-                if (expr.getLeft().isCharLiteralExpr()) {
-                    boundValue = expr.getLeft().toString().charAt(0);
-                } else {
-                    boundValue = expr.getRight().toString().charAt(0);
-                }
-                BinaryExpr.Operator operator = expr.getOperator();
-                if (operator.equals(BinaryExpr.Operator.EQUALS)) {
-                    candidateValues.add(boundValue);
-                } else if (operator.equals(BinaryExpr.Operator.LESS)) {
-                    candidateValues.add((char) (boundValue - 1));
-                } else if (operator.equals(BinaryExpr.Operator.LESS_EQUALS)) {
-                    candidateValues.add(boundValue);
-                    candidateValues.add((char) (boundValue - 1));
-                } else if (operator.equals(BinaryExpr.Operator.GREATER)) {
-                    candidateValues.add((char) (boundValue + 1));
-                } else if (operator.equals(BinaryExpr.Operator.GREATER_EQUALS)) {
-                    candidateValues.add(boundValue);
-                    candidateValues.add((char) (boundValue + 1));
-                }
+            if(o instanceof com.github.javaparser.ast.expr.CharLiteralExpr){
+                char c = ((CharLiteralExpr) o).asChar();
+                candidateValues.add(c);
+                candidateValues.add((char)(c-1));
+                candidateValues.add((char)(c+1));
             }
             // Double type
             if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&

@@ -13,7 +13,11 @@ public class PoolInitTest {
     public void testToyProgram() {
         // Get the code representation for the content of the toy java file
         CompilationUnit cu = StaticJavaParser.parse(
-                "class X {public Object m(Object x, Object y){if(x < 3.4 && y > 1) return x; char s = \"abc\"; if(s == 'c') return x; if(x == 10) return \"error\"; return y; }}");
+                "class X {public Object m(Object x, Object y){" +
+                        "if(x < 3.4 && y > 1) return x; " +
+                        "char ch = \"a\"; if(ch == 'c') return x; " +
+                        "if(x == 10) return \"error\"; return y; " +
+                        "String s = \"abc\"; if(s.equals(s)) return x;}}");
 
         // Instantiate the CodeParser class that you will implement to perform
         // the actual task. This is a visitor class according to the visitor
@@ -25,6 +29,10 @@ public class PoolInitTest {
         // Java file. In this way, our visit function(s) can be automatically
         // applied to all possible elements of the specified type(s).
         poolInit.visit(cu, null);
+
+        for(Object o : poolInit.pool.valuePool){
+            System.out.println(o);
+        }
 
         // Check if the number of returned methods is as expected
         assertEquals(1, 1);
