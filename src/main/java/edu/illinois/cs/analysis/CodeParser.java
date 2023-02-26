@@ -26,7 +26,7 @@ public class CodeParser extends VoidVisitorAdapter
 		//System.out.println(n.getDeclarationAsString());
 		if(n.getBody().isPresent() && n.getParameters().isNonEmpty() && !n.getType().toString().equals("void") ) {
 			String declaration = n.getDeclarationAsString();
-
+			
 			if(!declaration.contains("static") && declaration.contains("public")) {
 				methNum++;
 			}
