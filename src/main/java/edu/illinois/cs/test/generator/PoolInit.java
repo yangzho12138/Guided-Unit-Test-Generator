@@ -18,6 +18,7 @@ import edu.illinois.cs.test.pojo.ValuePool;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -63,27 +64,7 @@ public class PoolInit extends VoidVisitorAdapter {
     @Override
     public void visit(MethodDeclaration n, Object arg) {
         super.visit(n, arg);
-        NodeList<Parameter> parameters = n.getParameters();
 
-        Map<String, Object> parameterList = new HashMap<>();
-        for(Parameter p : parameters){
-            String type = p.getType().toString();
-            if("String".equals(type) || "int".equals(type) || "long".equals(type) || "short".equals(type) || "double".equals(type) || "float".equals(type)){
-                if("int".equals(type)) {
-                    parameterList.put(p.getName().toString(), 0);
-                }else if("String".equals(type)){
-                    parameterList.put(p.getName().toString(), "");
-                }else if("long".equals(type)){
-                    parameterList.put(p.getName().toString(), 0L);
-                }
-            }
-        }
-
-        Optional<BlockStmt> op = n.getBody();
-        if(op.isPresent()){
-            BlockStmt body = n.getBody().get();
-            scanNodes(body.getChildNodes(), parameterList);
-        }
     }
 
     public void scanNodes(List<Node> nodes, Map<String, Object> paramterList){
