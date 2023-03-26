@@ -1,8 +1,6 @@
 package edu.illinois.cs.test.generator;
 
-import com.github.javaparser.JavaParser;
 import com.github.javaparser.ast.CompilationUnit;
-<<<<<<< HEAD
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.expr.BinaryExpr;
 import com.github.javaparser.ast.expr.CharLiteralExpr;
@@ -10,20 +8,8 @@ import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.StringLiteralExpr;
 import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.IfStmt;
-=======
-import com.github.javaparser.ast.Node;
-import com.github.javaparser.ast.NodeList;
-import com.github.javaparser.ast.body.MethodDeclaration;
-import com.github.javaparser.ast.body.Parameter;
-import com.github.javaparser.ast.body.VariableDeclarator;
-import com.github.javaparser.ast.expr.*;
-import com.github.javaparser.ast.stmt.BlockStmt;
-import com.github.javaparser.ast.stmt.IfStmt;
-import com.github.javaparser.ast.type.PrimitiveType;
->>>>>>> 0c7da65617dd5b8d4042999c2195f106932e24dd
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
-import com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type;
 import edu.illinois.cs.test.pojo.ValuePool;
 
 import java.io.FileNotFoundException;
@@ -33,16 +19,11 @@ import java.lang.reflect.Parameter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-<<<<<<< HEAD
 import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
-=======
-import java.util.*;
->>>>>>> 0c7da65617dd5b8d4042999c2195f106932e24dd
 
 import static com.github.javaparser.StaticJavaParser.parse;
-import static com.github.javaparser.StaticJavaParser.parseExpression;
 
 // scan the target resources to generate the primitive value pool
 public class PoolInit extends VoidVisitorAdapter {
@@ -78,7 +59,6 @@ public class PoolInit extends VoidVisitorAdapter {
         }
     }
 
-<<<<<<< HEAD
 //    @Override
 //    public void visit(MethodDeclaration n, Object arg) {
 //        super.visit(n, arg);
@@ -128,14 +108,18 @@ public class PoolInit extends VoidVisitorAdapter {
                     candidateValues.add(boundValue);
                 }else if(operator.equals(BinaryExpr.Operator.LESS)){
                     candidateValues.add(boundValue - 1);
+                    candidateValues.add(boundValue - 100);
                 }else if(operator.equals(BinaryExpr.Operator.LESS_EQUALS)){
                     candidateValues.add(boundValue);
                     candidateValues.add(boundValue - 1);
+                    candidateValues.add(boundValue - 100);
                 }else if(operator.equals(BinaryExpr.Operator.GREATER)){
                     candidateValues.add(boundValue + 1);
+                    candidateValues.add(boundValue + 100);
                 }else if(operator.equals(BinaryExpr.Operator.GREATER_EQUALS)){
                     candidateValues.add(boundValue);
                     candidateValues.add(boundValue + 1);
+                    candidateValues.add(boundValue + 100);
                 }
             }
             // String Type
@@ -157,39 +141,41 @@ public class PoolInit extends VoidVisitorAdapter {
                 candidateValues.add((char)(c-1));
                 candidateValues.add((char)(c+1));
             }
+            // Long type
+            if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
+                    (((BinaryExpr) o).getLeft().isLongLiteralExpr() ||
+                            ((BinaryExpr) o).getRight().isLongLiteralExpr())){
+
+                BinaryExpr expr = (BinaryExpr) o;
+                long boundValue = 0;
+                if(expr.getLeft().isLongLiteralExpr()){
+                    boundValue = Long.parseLong(expr.getLeft().toString().trim());
+                }else{
+                    boundValue = Long.parseLong(expr.getRight().toString().trim());
+                }
+                BinaryExpr.Operator operator = expr.getOperator();
+                if(operator.equals(BinaryExpr.Operator.EQUALS)){
+                    candidateValues.add(boundValue);
+                }else if(operator.equals(BinaryExpr.Operator.LESS)){
+                    candidateValues.add(boundValue - 1L); // double precise
+                    candidateValues.add(boundValue - 100L);
+                }else if(operator.equals(BinaryExpr.Operator.LESS_EQUALS)){
+                    candidateValues.add(boundValue);
+                    candidateValues.add(boundValue - 1L);
+                    candidateValues.add(boundValue - 100L);
+                }else if(operator.equals(BinaryExpr.Operator.GREATER)){
+                    candidateValues.add(boundValue + 1L);
+                    candidateValues.add(boundValue + 100L);
+                }else if(operator.equals(BinaryExpr.Operator.GREATER_EQUALS)){
+                    candidateValues.add(boundValue);
+                    candidateValues.add(boundValue + 1L);
+                    candidateValues.add(boundValue + 100L);
+                }
+            }
             // Double type
             if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
                     (((BinaryExpr) o).getLeft().isDoubleLiteralExpr() ||
                             ((BinaryExpr) o).getRight().isDoubleLiteralExpr())){
-=======
-    @Override
-    public void visit(MethodDeclaration n, Object arg) {
-        super.visit(n, arg);
-        NodeList<Parameter> parameters = n.getParameters();
-
-        Map<String, Object> parameterList = new HashMap<>();
-        for(Parameter p : parameters){
-            String type = p.getType().toString();
-            if("String".equals(type) || "int".equals(type) || "long".equals(type) || "short".equals(type) || "double".equals(type) || "float".equals(type)){
-                if("int".equals(type)) {
-                    parameterList.put(p.getName().toString(), 0);
-                }else if("String".equals(type)){
-                    parameterList.put(p.getName().toString(), "");
-                }else if("long".equals(type)){
-                    parameterList.put(p.getName().toString(), 0L);
-                }
-            }
-        }
-
-        Optional<BlockStmt> op = n.getBody();
-        if(op.isPresent()){
-            BlockStmt body = n.getBody().get();
-            scanNodes(body.getChildNodes(), parameterList);
-        }
-    }
-
-    public void scanNodes(List<Node> nodes, Map<String, Object> paramterList){
->>>>>>> 0c7da65617dd5b8d4042999c2195f106932e24dd
 
                 BinaryExpr expr = (BinaryExpr) o;
                 double boundValue = 0;
@@ -215,14 +201,9 @@ public class PoolInit extends VoidVisitorAdapter {
             }
         }
 
-<<<<<<< HEAD
         for(Object o : candidateValues){
             valuePool.addValue(o);
         }
     }
 
 }
-=======
-    }
-}
->>>>>>> 0c7da65617dd5b8d4042999c2195f106932e24dd
