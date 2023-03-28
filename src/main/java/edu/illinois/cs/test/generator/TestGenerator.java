@@ -3,6 +3,7 @@ package edu.illinois.cs.test.generator;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.NodeList;
+import com.github.javaparser.ast.PackageDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
@@ -17,6 +18,7 @@ import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -37,6 +39,10 @@ public class TestGenerator extends VoidVisitorAdapter {
     List<MethodDeclaration> methods;
     List<ConstructorDeclaration> constructors;
 
+//    List<List<Object>> argumentsList;
+
+    StringBuilder sb;
+
     public TestGenerator(String target) {
         integersPool = PoolInit.valuePool.integersPool;
         stringsPool = PoolInit.valuePool.stringsPool;
@@ -46,7 +52,17 @@ public class TestGenerator extends VoidVisitorAdapter {
         objectsPool = PoolInit.valuePool.objectsPool;
         methods = new ArrayList<>();
         constructors = new ArrayList<>();
+//        argumentsList = new ArrayList<>();
         MethodTraverse(target);
+
+        sb = new StringBuilder();
+        sb.append("package " + "edu.illinois.cs.test" + ";\n");
+        sb.append("import org.junit.Test;\n");
+        sb.append("import static org.junit.Assert.*;\n");
+        sb.append("public class " + "UnitTest" + " {\n");
+
+        generateTest();
+        generateTestFile();
     }
 
     public void MethodTraverse(String target){
@@ -107,73 +123,301 @@ public class TestGenerator extends VoidVisitorAdapter {
 
     }
 
-    public void invokeMethod(List<String> parametersList, int i, MethodDeclaration n, int argumentLength, List<Object> arguments) {
-        if (i == argumentLength) {
-            // get class object and method
-            System.out.println(arguments);
-            return;
-//            Class<? extends MethodDeclaration> NClass = n.getClass();
-//            String methodName = String.valueOf(n.getName());
-//            try {
-//                Object classObject = NClass.newInstance();
-//                Method methodCall = classObject.getClass().getMethod(methodName);
-//
-//                Object[] argumentsArray = arguments.toArray();
-//                methodCall.invoke(classObject, argumentsArray);
-//            } catch (InstantiationException | IllegalAccessException | InvocationTargetException |
-//                     NoSuchMethodException e) {
-//                throw new RuntimeException(e);
-//            }
-        }
-        String currentParameter = parametersList.get(i);
-        if (currentParameter.equals("String")) {
-            for (String stringValueFromPool : stringsPool) {
-                arguments.add(stringValueFromPool);
-                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
-                arguments.remove(stringValueFromPool);
-            }
-        }
-        else if (currentParameter.equals("int")) {
-            for (int intValueFromPool: integersPool) {
-                arguments.add(intValueFromPool);
-                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
-                arguments.remove((Object) intValueFromPool);
-            }
-        }
-        else if (currentParameter.equals("Character")) {
-            for (Character charValueFromPool: charactersPool) {
-                arguments.add(charValueFromPool);
-                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
-                arguments.remove(charValueFromPool);
-            }
-        }
-        else if (currentParameter.equals("long")) {
-            for (Long longValueFromPool: longsPool) {
-                arguments.add(longValueFromPool);
-                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
-                arguments.remove(longValueFromPool);
-            }
-        }
-        else if (currentParameter.equals("boolean")) {
-            for (boolean boolValueFromPool: booleansPool) {
-                arguments.add(boolValueFromPool);
-                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
-                arguments.remove(boolValueFromPool);
-            }
-        }
-        else {
-            for (Object objectValueFromPool: objectsPool) {
-                if (currentParameter.equals(objectValueFromPool.getClass().toString())) {
-                    arguments.add(objectValueFromPool);
-                    invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
-                    arguments.remove(objectValueFromPool);
+    public Object getValueFromPool(String type){
+        if (type.equals("String")) {
+            Random random = new Random();
+            int index = random.nextInt(stringsPool.size());
+
+            // find a random string in the string pool
+            Iterator<String> it = stringsPool.iterator();
+            int i = 0;
+            while(it.hasNext()) {
+                String s = it.next();
+                if (i == index) {
+                    return s;
                 }
+                i++;
+            }
+        }else if(type.equals("int")){
+            Random random = new Random();
+            int index = random.nextInt(integersPool.size());
+
+            // find a random int in the int pool
+            Iterator<Integer> it = integersPool.iterator();
+            int i = 0;
+            while(it.hasNext()) {
+                Integer s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
+            }
+        }else if(type.equals("Character") || type.equals("char")){
+            Random random = new Random();
+            int index = random.nextInt(charactersPool.size());
+
+            // find a random char in the char pool
+            Iterator<Character> it = charactersPool.iterator();
+            int i = 0;
+            while(it.hasNext()) {
+                Character s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
+            }
+        }else if(type.equals("long")) {
+            Random random = new Random();
+            int index = random.nextInt(longsPool.size());
+
+            // find a random long in the long pool
+            Iterator<Long> it = longsPool.iterator();
+            int i = 0;
+            while (it.hasNext()) {
+                Long s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
+            }
+        }else if(type.equals("boolean")) {
+            Random random = new Random();
+            int index = random.nextInt(1);
+
+            return index == 0;
+        }else if(type.contains("[]")) {
+            if(type.contains("int")){
+                Random random = new Random();
+                int randomNumber = random.nextInt(integersPool.size());
+                int[] intArray = new int[randomNumber];
+                int j = 0;
+                Iterator<Integer> it = integersPool.iterator();
+                while(it.hasNext() && j < randomNumber){
+                    intArray[j] = it.next();
+                    j++;
+                }
+                return intArray;
+            }
+            else if(type.contains("String")){
+                Random random = new Random();
+                int randomNumber = random.nextInt(stringsPool.size());
+                String[] stringArray = new String[randomNumber];
+                int j = 0;
+                Iterator<String> it = stringsPool.iterator();
+                while(it.hasNext() && j < randomNumber){
+                    stringArray[j] = it.next();
+                    j++;
+                }
+                return stringArray;
+            }
+            else if(type.contains("Character")){
+                Random random = new Random();
+                int randomNumber = random.nextInt(charactersPool.size());
+                Character[] charArray = new Character[randomNumber];
+                int j = 0;
+                Iterator<Character> it = charactersPool.iterator();
+                while(it.hasNext() && j < randomNumber){
+                    charArray[j] = it.next();
+                    j++;
+                }
+                return charArray;
+            }
+            else if(type.contains("long")){
+                Random random = new Random();
+                int randomNumber = random.nextInt(longsPool.size());
+                long[] longArray = new long[randomNumber];
+                int j = 0;
+                Iterator<Long> it = longsPool.iterator();
+                while(it.hasNext() && j < randomNumber){
+                    longArray[j] = it.next();
+                    j++;
+                }
+                return longArray;
+            }
+            else if(type.contains("boolean")){
+                boolean[] boolArray = new boolean[2];
+                boolArray[0] = true;
+                return boolArray;
+            }
+            else{
+                Random random = new Random();
+                int randomNumber = random.nextInt(objectsPool.size());
+                Object[] objectArray = new Object[randomNumber];
+                int j = 0;
+                Iterator<Object> it = objectsPool.iterator();
+                while(it.hasNext() && j < randomNumber){
+                    objectArray[j] = it.next();
+                    j++;
+                }
+                return objectArray;
+            }
+        } else{
+            Random random = new Random();
+            int index = random.nextInt(objectsPool.size());
+
+            // find a random object in the object pool
+            Iterator<Object> it = objectsPool.iterator();
+            int i = 0;
+            while (it.hasNext()) {
+                Object s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
             }
         }
+        return null;
     }
+    
+//    public void invokeMethod(List<String> parametersList, int i, MethodDeclaration n, int argumentLength, List<Object> arguments) {
+//        if (i == argumentLength) {
+//            // get class object and method
+//            System.out.println(arguments);
+//            argumentsList.add(arguments);
+//            return;
+//        }
+//        String currentParameter = parametersList.get(i);
+//        if (currentParameter.equals("String")) {
+//            for (String stringValueFromPool : stringsPool) {
+//                arguments.add(stringValueFromPool);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(stringValueFromPool);
+//            }
+//        }
+//        else if (currentParameter.equals("int")) {
+//            for (int intValueFromPool: integersPool) {
+//                arguments.add(intValueFromPool);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove((Object) intValueFromPool);
+//            }
+//        }
+//        else if (currentParameter.equals("Character")) {
+//            for (Character charValueFromPool: charactersPool) {
+//                arguments.add(charValueFromPool);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(charValueFromPool);
+//            }
+//        }
+//        else if (currentParameter.equals("long")) {
+//            for (Long longValueFromPool: longsPool) {
+//                arguments.add(longValueFromPool);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(longValueFromPool);
+//            }
+//        }
+//        else if (currentParameter.equals("boolean")) {
+//            for (boolean boolValueFromPool: booleansPool) {
+//                arguments.add(boolValueFromPool);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(boolValueFromPool);
+//            }
+//        }
+//        else if(currentParameter.contains("[]")){
+//            if(currentParameter.contains("int")){
+//                Random random = new Random();
+//                int randomNumber = random.nextInt(integersPool.size());
+//                int[] intArray = new int[randomNumber];
+//                int j = 0;
+//                Iterator<Integer> it = integersPool.iterator();
+//                while(it.hasNext() && j < randomNumber){
+//                    intArray[j] = it.next();
+//                    j++;
+//                }
+//                arguments.add(intArray);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(intArray);
+//            }
+//            else if(currentParameter.contains("String")){
+//                Random random = new Random();
+//                int randomNumber = random.nextInt(stringsPool.size());
+//                String[] stringArray = new String[randomNumber];
+//                int j = 0;
+//                Iterator<String> it = stringsPool.iterator();
+//                while(it.hasNext() && j < randomNumber){
+//                    stringArray[j] = it.next();
+//                    j++;
+//                }
+//                arguments.add(stringArray);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(stringArray);
+//            }
+//            else if(currentParameter.contains("Character")){
+//                Random random = new Random();
+//                int randomNumber = random.nextInt(charactersPool.size());
+//                Character[] charArray = new Character[randomNumber];
+//                int j = 0;
+//                Iterator<Character> it = charactersPool.iterator();
+//                while(it.hasNext() && j < randomNumber){
+//                    charArray[j] = it.next();
+//                    j++;
+//                }
+//                arguments.add(charArray);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(charArray);
+//            }
+//            else if(currentParameter.contains("long")){
+//                Random random = new Random();
+//                int randomNumber = random.nextInt(longsPool.size());
+//                long[] longArray = new long[randomNumber];
+//                int j = 0;
+//                Iterator<Long> it = longsPool.iterator();
+//                while(it.hasNext() && j < randomNumber){
+//                    longArray[j] = it.next();
+//                    j++;
+//                }
+//                arguments.add(longArray);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(longArray);
+//            }
+//            else if(currentParameter.contains("boolean")){
+//                boolean[] boolArray = new boolean[2];
+//                boolArray[0] = true;
+//                arguments.add(boolArray);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(boolArray);
+//            }
+//            else{
+//                Random random = new Random();
+//                int randomNumber = random.nextInt(objectsPool.size());
+//                Object[] objectArray = new Object[randomNumber];
+//                int j = 0;
+//                Iterator<Object> it = objectsPool.iterator();
+//                while(it.hasNext() && j < randomNumber){
+//                    objectArray[j] = it.next();
+//                    j++;
+//                }
+//                arguments.add(objectArray);
+//                invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                arguments.remove(objectArray);
+//            }
+//        }
+//        else {
+//            for (Object objectValueFromPool: objectsPool) {
+//                System.out.println(objectsPool);
+//                if (objectsPool.size() == 1 || currentParameter.equals(objectValueFromPool.getClass().toString())) {
+//                    arguments.add(objectValueFromPool);
+//                    invokeMethod(parametersList, i + 1, n, argumentLength, arguments);
+//                    arguments.remove(objectValueFromPool);
+//                }
+//            }
+//        }
+//    }
 
     public void generateTestFile(){
-
+        Path dir = Paths.get("src/main/java/edu/illinois/cs/test");
+        if(!Files.exists(dir)){
+            try {
+                Files.createDirectories(dir);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+        Path file = dir.resolve("UnitTest.java");
+        try{
+            Files.write(file, sb.toString().getBytes(StandardCharsets.UTF_8));
+        }catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void construct(){
@@ -183,26 +427,78 @@ public class TestGenerator extends VoidVisitorAdapter {
     }
 
     public void generateTest(){
-        Random rand = new Random();
-        int randomInt = rand.nextInt(methods.size());
-        // pick a method randomly
-        MethodDeclaration method = methods.get(randomInt);
+        for(MethodDeclaration method : methods) {
+            String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
-        // find parameter types
-        NodeList<Parameter> parameters = method.getParameters();
-        List<String> parametersList = new ArrayList<>();
-        for (Parameter p: parameters) {
-            parametersList.add(p.getType().toString());
+            // find parameter types
+            NodeList<Parameter> parameters = method.getParameters();
+            List<String> parametersList = new ArrayList<>();
+
+            for (Parameter p : parameters) {
+                parametersList.add(p.getType().toString());
+            }
+            System.out.println(parametersList);
+
+            List<List<Object>> argumentsList = new ArrayList<>();
+
+            // generate 3 groups of arguments for each method
+            for(int num = 0; num < 3; num ++){
+                List<Object> arguments = new ArrayList<>();
+                for(int i = 0; i < parametersList.size(); i++){
+                    String type = parametersList.get(i);
+                    if(type.equals("String")){
+                        String s = (String) getValueFromPool(type);
+                        arguments.add(s);
+                    }else if (type.equals("Integer") || type.equals("int")) {
+                        int s = (int) getValueFromPool(type);
+                        arguments.add(s);
+                    }else if (type.equals("Long") || type.equals("long")) {
+                        long s = (long) getValueFromPool(type);
+                        arguments.add(s);
+                    }else if (type.equals("boolean")) {
+                        boolean s = (boolean) getValueFromPool(type);
+                        arguments.add(s);
+                    }else if (type.equals("Character") || type.equals("char")){
+                        char s = (char) getValueFromPool(type);
+                        arguments.add(s);
+                    }else{
+                        Object s = getValueFromPool(type);
+                        arguments.add(s);
+                    }
+                }
+                argumentsList.add(arguments);
+            }
+
+            // create arguments from value pools
+//            List<Object> arguments = new ArrayList<>();
+//            int argumentLength = parameters.size();
+//            argumentsList.clear();
+//            invokeMethod(parametersList, 0, method, argumentLength, arguments);
+
+            // 根据方法所在的类，去constructor list中找到对应的实体，调用该函数，生成test
+            for (int i = 0; i < argumentsList.size(); i++) {
+                sb.append("    @Test\n");
+                sb.append("    public void test" + method.getName() + i + "() {\n");
+                sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
+                // get the parameter list
+                List<Object> currentArguments = argumentsList.get(i);
+                StringBuilder parameterList = new StringBuilder();
+                parameterList.append("(");
+                for (int j = 0; j < currentArguments.size(); j++) {
+                    Object o = currentArguments.get(j);
+                    if (o instanceof String) {
+                        parameterList.append("\"" + o + "\"");
+                    } else {
+                        parameterList.append(o);
+                    }
+                }
+                parameterList.append(")");
+                sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                sb.append("        " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
+
+                sb.append("    }\n");
+            }
         }
-        System.out.println(parametersList);
-
-        // create arguments from value pools
-        List<Object> arguments = new ArrayList<Object>();
-        int argumentLength = parameters.size();
-        invokeMethod(parametersList, 0, method, argumentLength, arguments);
-
-        // 根据方法所在的类，去constructor list中找到对应的实体，调用该函数，生成test
-
+        sb.append("}");
     }
-
 }
