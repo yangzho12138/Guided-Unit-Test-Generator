@@ -34,7 +34,11 @@ public class PoolInit extends VoidVisitorAdapter {
         valuePool.addValue(null);
         valuePool.addValue(true);
         valuePool.addValue(false);
-
+        valuePool.addValue(0L);
+        valuePool.addValue(1L);
+        valuePool.addValue(-1L);
+        valuePool.addValue(100L);
+        valuePool.addValue(-100L);
         preParse(target);
     }
 
