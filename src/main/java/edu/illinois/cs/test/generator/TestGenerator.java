@@ -1,15 +1,12 @@
 package edu.illinois.cs.test.generator;
 
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.Node;
 import com.github.javaparser.ast.NodeList;
-import com.github.javaparser.ast.PackageDeclaration;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.Parameter;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import com.github.javaparser.resolution.declarations.ResolvedReferenceTypeDeclaration;
 import com.github.javaparser.utils.SourceRoot;
 
 import java.beans.Expression;
@@ -25,7 +22,6 @@ import java.nio.file.Paths;
 import java.util.*;
 
 import static com.github.javaparser.StaticJavaParser.parse;
-import static com.github.javaparser.StaticJavaParser.parseExplicitConstructorInvocationStmt;
 
 public class TestGenerator extends VoidVisitorAdapter {
 
@@ -38,7 +34,6 @@ public class TestGenerator extends VoidVisitorAdapter {
 
     List<MethodDeclaration> methods;
     List<ConstructorDeclaration> constructors;
-
 //    List<List<Object>> argumentsList;
 
     StringBuilder sb;
@@ -65,25 +60,26 @@ public class TestGenerator extends VoidVisitorAdapter {
         generateTestFile();
     }
 
-    public void MethodTraverse(String target){
+    public void MethodTraverse(String target) {
         Path sourcePath = Paths.get(target);
         SourceRoot sourceRoot = new SourceRoot(sourcePath);
 
-        try{
+        try {
             Files.walk(sourcePath)
                     .filter(path -> path.toString().endsWith(".java"))
                     .forEach(path -> {
-                        try{
+                        try {
                             CompilationUnit cu = parse(path.toFile());
                             visit(cu, null);
                         } catch (FileNotFoundException e) {
                             e.printStackTrace();
                         }
                     });
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
     @Override
     public void visit(MethodDeclaration n, Object arg) {
         super.visit(n, arg);
@@ -120,10 +116,9 @@ public class TestGenerator extends VoidVisitorAdapter {
     public void visit(ConstructorDeclaration n, Object arg) {
         super.visit(n, arg);
 
-
     }
 
-    public Object getValueFromPool(String type){
+    public Object getValueFromPool(String type) {
         if (type.equals("String")) {
             Random random = new Random();
             int index = random.nextInt(stringsPool.size());
@@ -131,42 +126,42 @@ public class TestGenerator extends VoidVisitorAdapter {
             // find a random string in the string pool
             Iterator<String> it = stringsPool.iterator();
             int i = 0;
-            while(it.hasNext()) {
+            while (it.hasNext()) {
                 String s = it.next();
                 if (i == index) {
                     return s;
                 }
                 i++;
             }
-        }else if(type.equals("int")){
+        } else if (type.equals("int")) {
             Random random = new Random();
             int index = random.nextInt(integersPool.size());
 
             // find a random int in the int pool
             Iterator<Integer> it = integersPool.iterator();
             int i = 0;
-            while(it.hasNext()) {
+            while (it.hasNext()) {
                 Integer s = it.next();
                 if (i == index) {
                     return s;
                 }
                 i++;
             }
-        }else if(type.equals("Character") || type.equals("char")){
+        } else if (type.equals("Character") || type.equals("char")) {
             Random random = new Random();
             int index = random.nextInt(charactersPool.size());
 
             // find a random char in the char pool
             Iterator<Character> it = charactersPool.iterator();
             int i = 0;
-            while(it.hasNext()) {
+            while (it.hasNext()) {
                 Character s = it.next();
                 if (i == index) {
                     return s;
                 }
                 i++;
             }
-        }else if(type.equals("long")) {
+        } else if (type.equals("long")) {
             Random random = new Random();
             int index = random.nextInt(longsPool.size());
 
@@ -180,78 +175,73 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 i++;
             }
-        }else if(type.equals("boolean")) {
+        } else if (type.equals("boolean")) {
             Random random = new Random();
             int index = random.nextInt(1);
 
             return index == 0;
-        }else if(type.contains("[]")) {
-            if(type.contains("int")){
+        } else if (type.contains("[]")) {
+            if (type.contains("int")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(integersPool.size());
                 int[] intArray = new int[randomNumber];
                 int j = 0;
                 Iterator<Integer> it = integersPool.iterator();
-                while(it.hasNext() && j < randomNumber){
+                while (it.hasNext() && j < randomNumber) {
                     intArray[j] = it.next();
                     j++;
                 }
                 return intArray;
-            }
-            else if(type.contains("String")){
+            } else if (type.contains("String")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(stringsPool.size());
                 String[] stringArray = new String[randomNumber];
                 int j = 0;
                 Iterator<String> it = stringsPool.iterator();
-                while(it.hasNext() && j < randomNumber){
+                while (it.hasNext() && j < randomNumber) {
                     stringArray[j] = it.next();
                     j++;
                 }
                 return stringArray;
-            }
-            else if(type.contains("Character")){
+            } else if (type.contains("Character")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(charactersPool.size());
                 Character[] charArray = new Character[randomNumber];
                 int j = 0;
                 Iterator<Character> it = charactersPool.iterator();
-                while(it.hasNext() && j < randomNumber){
+                while (it.hasNext() && j < randomNumber) {
                     charArray[j] = it.next();
                     j++;
                 }
                 return charArray;
-            }
-            else if(type.contains("long")){
+            } else if (type.contains("long")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(longsPool.size());
                 long[] longArray = new long[randomNumber];
                 int j = 0;
                 Iterator<Long> it = longsPool.iterator();
-                while(it.hasNext() && j < randomNumber){
+                while (it.hasNext() && j < randomNumber) {
                     longArray[j] = it.next();
                     j++;
                 }
                 return longArray;
-            }
-            else if(type.contains("boolean")){
+            } else if (type.contains("boolean")) {
                 boolean[] boolArray = new boolean[2];
                 boolArray[0] = true;
                 return boolArray;
-            }
-            else{
+            } else {
                 Random random = new Random();
                 int randomNumber = random.nextInt(objectsPool.size());
                 Object[] objectArray = new Object[randomNumber];
                 int j = 0;
                 Iterator<Object> it = objectsPool.iterator();
-                while(it.hasNext() && j < randomNumber){
+                while (it.hasNext() && j < randomNumber) {
                     objectArray[j] = it.next();
                     j++;
                 }
                 return objectArray;
             }
-        } else{
+        } else {
             Random random = new Random();
             int index = random.nextInt(objectsPool.size());
 
@@ -268,7 +258,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         }
         return null;
     }
-    
+
 //    public void invokeMethod(List<String> parametersList, int i, MethodDeclaration n, int argumentLength, List<Object> arguments) {
 //        if (i == argumentLength) {
 //            // get class object and method
@@ -403,9 +393,9 @@ public class TestGenerator extends VoidVisitorAdapter {
 //        }
 //    }
 
-    public void generateTestFile(){
+    public void generateTestFile() {
         Path dir = Paths.get("src/main/java/edu/illinois/cs/test");
-        if(!Files.exists(dir)){
+        if (!Files.exists(dir)) {
             try {
                 Files.createDirectories(dir);
             } catch (IOException e) {
@@ -413,21 +403,21 @@ public class TestGenerator extends VoidVisitorAdapter {
             }
         }
         Path file = dir.resolve("UnitTest.java");
-        try{
+        try {
             Files.write(file, sb.toString().getBytes(StandardCharsets.UTF_8));
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void construct(){
-        for(ConstructorDeclaration cd : constructors) {
+    public void construct() {
+        for (ConstructorDeclaration cd : constructors) {
             // 创建constructor -> 加入pool -> 生成test
         }
     }
 
-    public void generateTest(){
-        for(MethodDeclaration method : methods) {
+    public void generateTest() {
+        for (MethodDeclaration method : methods) {
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             // find parameter types
@@ -442,26 +432,26 @@ public class TestGenerator extends VoidVisitorAdapter {
             List<List<Object>> argumentsList = new ArrayList<>();
 
             // generate 3 groups of arguments for each method
-            for(int num = 0; num < 3; num ++){
+            for (int num = 0; num < 3; num++) {
                 List<Object> arguments = new ArrayList<>();
-                for(int i = 0; i < parametersList.size(); i++){
+                for (int i = 0; i < parametersList.size(); i++) {
                     String type = parametersList.get(i);
-                    if(type.equals("String")){
+                    if (type.equals("String")) {
                         String s = (String) getValueFromPool(type);
                         arguments.add(s);
-                    }else if (type.equals("Integer") || type.equals("int")) {
+                    } else if (type.equals("Integer") || type.equals("int")) {
                         int s = (int) getValueFromPool(type);
                         arguments.add(s);
-                    }else if (type.equals("Long") || type.equals("long")) {
+                    } else if (type.equals("Long") || type.equals("long")) {
                         long s = (long) getValueFromPool(type);
                         arguments.add(s);
-                    }else if (type.equals("boolean")) {
+                    } else if (type.equals("boolean")) {
                         boolean s = (boolean) getValueFromPool(type);
                         arguments.add(s);
-                    }else if (type.equals("Character") || type.equals("char")){
+                    } else if (type.equals("Character") || type.equals("char")) {
                         char s = (char) getValueFromPool(type);
                         arguments.add(s);
-                    }else{
+                    } else {
                         Object s = getValueFromPool(type);
                         arguments.add(s);
                     }
