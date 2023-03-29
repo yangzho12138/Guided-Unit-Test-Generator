@@ -195,9 +195,19 @@ public class PoolInit extends VoidVisitorAdapter {
             // Char Type
             if(o instanceof com.github.javaparser.ast.expr.CharLiteralExpr){
                 char c = ((CharLiteralExpr) o).asChar();
-                candidateValues.add(c);
-                candidateValues.add((char)(c-1));
-                candidateValues.add((char)(c+1));
+                // continue when unmeaningful char
+
+                if (c != 92 && c != 39 && c != 34 && c != 32 && c != 9 && c != 10 && c != 13 && c != 12 && c != 8 && c != 0) {
+//                    System.out.println(c);
+                    if ((c < 90 && c > 65) || (c < 122 && c > 97)) {
+                        candidateValues.add(c);
+                        candidateValues.add((char)(c + 1));
+                        candidateValues.add((char)(c - 1));
+                    }
+                    else {
+                        candidateValues.add(c);
+                    }
+                }
             }
             // Double type
             if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
