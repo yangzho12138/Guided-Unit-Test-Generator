@@ -178,8 +178,16 @@ public class PoolInit extends VoidVisitorAdapter {
                 else if(s.length() != 0){
                     char c = s.charAt(s.length() - 1);
                     candidateValues.add(s);
-                    candidateValues.add(s.substring(0, s.length() - 1) + (char)(c + 1));
-                    candidateValues.add(s.substring(0, s.length() - 1) + (char)(c - 1));
+                    if ((char)(c + 1) == '\\') {
+                        continue;
+                    } else {
+                        candidateValues.add(s.substring(0, s.length() - 1) + (char)(c + 1));
+                    }
+                    if ((char)(c - 1) == '\\') {
+                        continue;
+                    } else {
+                        candidateValues.add(s.substring(0, s.length() - 1) + (char)(c - 1));
+                    }
                 }else{
                     candidateValues.add("\\\"\\\"");
                 }
