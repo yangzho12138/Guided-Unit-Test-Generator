@@ -133,7 +133,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 i++;
             }
-        } else if (type.equals("int")) {
+        } else if (type.equals("Integer") || type.equals("int")) {
             Random random = new Random();
             int index = random.nextInt(integersPool.size());
 
@@ -161,7 +161,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 i++;
             }
-        } else if (type.equals("long")) {
+        } else if (type.equals("Long") || type.equals("long")) {
             Random random = new Random();
             int index = random.nextInt(longsPool.size());
 
@@ -181,7 +181,7 @@ public class TestGenerator extends VoidVisitorAdapter {
 
             return index == 0;
         } else if (type.contains("[]")) {
-            if (type.contains("int")) {
+            if (type.equals("Integer") || type.contains("int")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(integersPool.size());
                 int[] intArray = new int[randomNumber];
@@ -203,7 +203,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                     j++;
                 }
                 return stringArray;
-            } else if (type.contains("Character")) {
+            } else if (type.contains("Character") || type.contains("char")){
                 Random random = new Random();
                 int randomNumber = random.nextInt(charactersPool.size());
                 Character[] charArray = new Character[randomNumber];
@@ -214,7 +214,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                     j++;
                 }
                 return charArray;
-            } else if (type.contains("long")) {
+            } else if (type.contains("Long") || type.contains("long")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(longsPool.size());
                 long[] longArray = new long[randomNumber];
@@ -394,7 +394,7 @@ public class TestGenerator extends VoidVisitorAdapter {
 //    }
 
     public void generateTestFile() {
-        Path dir = Paths.get("src/main/java/edu/illinois/cs/test");
+        Path dir = Paths.get("src/test/java/edu/illinois/cs/test");
         if (!Files.exists(dir)) {
             try {
                 Files.createDirectories(dir);
@@ -410,14 +410,17 @@ public class TestGenerator extends VoidVisitorAdapter {
         }
     }
 
-    public void construct() {
-        for (ConstructorDeclaration cd : constructors) {
-            // 创建constructor -> 加入pool -> 生成test
-        }
-    }
+//    public void construct() {
+//        for (ConstructorDeclaration cd : constructors) {
+//            // 创建constructor -> 加入pool -> 生成test
+//        }
+//    }
 
     public void generateTest() {
         for (MethodDeclaration method : methods) {
+            if("Optional.empty".equals(method.findAncestor(ClassOrInterfaceDeclaration.class).toString())){
+                continue;
+            }
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             // find parameter types
@@ -440,20 +443,40 @@ public class TestGenerator extends VoidVisitorAdapter {
                         String s = (String) getValueFromPool(type);
                         arguments.add(s);
                     } else if (type.equals("Integer") || type.equals("int")) {
-                        int s = (int) getValueFromPool(type);
-                        arguments.add(s);
+                        int in = (int) getValueFromPool(type);
+                        arguments.add(in);
                     } else if (type.equals("Long") || type.equals("long")) {
-                        long s = (long) getValueFromPool(type);
-                        arguments.add(s);
+                        long l = (long) getValueFromPool(type);
+                        arguments.add(l);
                     } else if (type.equals("boolean")) {
-                        boolean s = (boolean) getValueFromPool(type);
-                        arguments.add(s);
+                        boolean b = (boolean) getValueFromPool(type);
+                        arguments.add(b);
                     } else if (type.equals("Character") || type.equals("char")) {
-                        char s = (char) getValueFromPool(type);
-                        arguments.add(s);
+                        char c = (char) getValueFromPool(type);
+                        arguments.add(c);
+                    } else if(type.contains("[]")){
+                        if(type.contains("String")){
+                            String[] strs = (String[]) getValueFromPool(type);
+                            arguments.add(strs);
+                        }else if(type.contains("Integer") || type.contains("int")) {
+                            int[] ints = (int[]) getValueFromPool(type);
+                            arguments.add(ints);
+                        }else if(type.contains("Long") || type.contains("long")) {
+                            long[] longs = (long[]) getValueFromPool(type);
+                            arguments.add(longs);
+                        }else if(type.contains("boolean")) {
+                            boolean[] bools = (boolean[]) getValueFromPool(type);
+                            arguments.add(bools);
+                        }else if(type.contains("Character") || type.contains("char")) {
+                            char[] chars = (char[]) getValueFromPool(type);
+                            arguments.add(chars);
+                        }else{
+                            Object[] objects = (Object[]) getValueFromPool(type);
+                            arguments.add(objects);
+                        }
                     } else {
-                        Object s = getValueFromPool(type);
-                        arguments.add(s);
+                        Object o = getValueFromPool(type);
+                        arguments.add(o);
                     }
                 }
                 argumentsList.add(arguments);
