@@ -159,13 +159,29 @@ public class PoolInit extends VoidVisitorAdapter {
             // String Type
             if(o instanceof com.github.javaparser.ast.expr.StringLiteralExpr){
                 String s = ((StringLiteralExpr) o).asString().trim();
-                if(s.length() != 0){
+                if (s.length() == 1) {
+                    char c = s.charAt(s.length() - 1);
+                    if (c == '\\') {
+                        candidateValues.add("\\\\");
+                    }
+                    else if (c == '\'') {
+                        candidateValues.add("\\\'");
+                    }
+                    else if (c == '\"') {
+                        candidateValues.add("\\\"");
+                    } else {
+                        candidateValues.add(s);
+                        candidateValues.add((char)(c + 1));
+                        candidateValues.add((char)(c - 1));
+                    }
+                }
+                else if(s.length() != 0){
                     char c = s.charAt(s.length() - 1);
                     candidateValues.add(s);
                     candidateValues.add(s.substring(0, s.length() - 1) + (char)(c + 1));
                     candidateValues.add(s.substring(0, s.length() - 1) + (char)(c - 1));
                 }else{
-                    candidateValues.add("");
+                    candidateValues.add("\\\"\\\"");
                 }
             }
             // Char Type
