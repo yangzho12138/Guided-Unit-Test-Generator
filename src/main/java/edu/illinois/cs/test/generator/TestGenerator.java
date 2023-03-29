@@ -430,7 +430,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             for (Parameter p : parameters) {
                 parametersList.add(p.getType().toString());
             }
-            System.out.println(parametersList);
+//            System.out.println(parametersList);
 
             List<List<Object>> argumentsList = new ArrayList<>();
 
@@ -468,7 +468,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                             boolean[] bools = (boolean[]) getValueFromPool(type);
                             arguments.add(bools);
                         }else if(type.contains("Character") || type.contains("char")) {
-                            char[] chars = (char[]) getValueFromPool(type);
+                            Character[] chars = (Character[]) getValueFromPool(type);
                             arguments.add(chars);
                         }else{
                             Object[] objects = (Object[]) getValueFromPool(type);
@@ -489,6 +489,7 @@ public class TestGenerator extends VoidVisitorAdapter {
 //            invokeMethod(parametersList, 0, method, argumentLength, arguments);
 
             // 根据方法所在的类，去constructor list中找到对应的实体，调用该函数，生成test
+            // TODO: Object can not be put into the code directly!!!
             for (int i = 0; i < argumentsList.size(); i++) {
                 sb.append("    @Test\n");
                 sb.append("    public void test" + method.getName() + i + "() {\n");
@@ -499,10 +500,72 @@ public class TestGenerator extends VoidVisitorAdapter {
                 parameterList.append("(");
                 for (int j = 0; j < currentArguments.size(); j++) {
                     Object o = currentArguments.get(j);
+                    if(o != null){
+                        String type = o.getClass().toString();
+                        if(type.contains("[L")) {
+                            if(type.contains("String")) {
+                                parameterList.append("new String[]{");
+                                for(int k = 0; k < ((String[]) o).length; k++){
+                                    parameterList.append("\"" + ((String[]) o)[k] + "\"");
+                                    if(k != ((String[]) o).length - 1){
+                                        parameterList.append(",");
+                                    }
+                                }
+                            }else if(type.contains("Integer") || type.contains("int")) {
+                                parameterList.append("new int[]{");
+                                for (int k = 0; k < ((int[]) o).length; k++) {
+                                    parameterList.append(((int[]) o)[k]);
+                                    if (k != ((int[]) o).length - 1) {
+                                        parameterList.append(",");
+                                    }
+                                }
+                            }else if(type.contains("Long") || type.contains("long")) {
+                                parameterList.append("new long[]{");
+                                for (int k = 0; k < ((long[]) o).length; k++) {
+                                    parameterList.append(((long[]) o)[k]);
+                                    if (k != ((long[]) o).length - 1) {
+                                        parameterList.append(",");
+                                    }
+                                }
+                            }else if(type.contains("boolean")) {
+                                parameterList.append("new boolean[]{");
+                                for (int k = 0; k < ((boolean[]) o).length; k++) {
+                                    parameterList.append(((boolean[]) o)[k]);
+                                    if (k != ((boolean[]) o).length - 1) {
+                                        parameterList.append(",");
+                                    }
+                                }
+                            }else if(type.contains("Character") || type.contains("char")) {
+                                parameterList.append("new Character[]{");
+                                for (int k = 0; k < ((Character[]) o).length; k++) {
+                                    parameterList.append(((Character[]) o)[k]);
+                                    if (k != ((Character[]) o).length - 1) {
+                                        parameterList.append(",");
+                                    }
+                                }
+                            }else{
+                                parameterList.append("new Object[]{");
+                                for (int k = 0; k < ((Object[]) o).length; k++) {
+                                    parameterList.append(((Object[]) o)[k]);
+                                    if (k != ((Object[]) o).length - 1) {
+                                        parameterList.append(",");
+                                    }
+                                }
+                            }
+                            parameterList.append("}");
+                            if(j != currentArguments.size() - 1){
+                                parameterList.append(",");
+                            }
+                            continue;
+                        }
+                    }
                     if (o instanceof String) {
                         parameterList.append("\"" + o + "\"");
                     } else {
                         parameterList.append(o);
+                    }
+                    if(j != currentArguments.size() - 1){
+                        parameterList.append(",");
                     }
                 }
                 parameterList.append(")");
