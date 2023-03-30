@@ -84,7 +84,9 @@ public class TestGenerator extends VoidVisitorAdapter {
     public void visit(MethodDeclaration n, Object arg) {
         super.visit(n, arg);
 
-        methods.add(n);
+        if(n.isPublic()){
+            methods.add(n);
+        }
 
 //        for (Parameter p: n.getParameters()) {
 //            System.out.println(p);
