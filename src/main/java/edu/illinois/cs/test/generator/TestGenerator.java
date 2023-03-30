@@ -118,9 +118,10 @@ public class TestGenerator extends VoidVisitorAdapter {
 //        System.out.println("-----------");
     }
 
-    public void visit(MethodCallExpr n, Void arg) {
-        // This method is called for every method call expression
-        // Do nothing here to avoid visiting methods declared within methods
+    @Override
+    public void visit(ClassOrInterfaceDeclaration n, Object arg) {
+        // This method is called for every class or interface declaration
+        // Do nothing here to avoid visiting the anonymous inner class
     }
 
     @Override
