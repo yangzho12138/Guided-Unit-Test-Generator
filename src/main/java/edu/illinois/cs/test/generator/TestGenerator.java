@@ -55,7 +55,8 @@ public class TestGenerator extends VoidVisitorAdapter {
         sb.append("package " + "edu.illinois.cs.test" + ";\n");
         sb.append("import org.junit.Test;\n");
         sb.append("import static org.junit.Assert.*;\n");
-        sb.append("public class " + "UnitTest" + " {\n");
+        sb.append("import org.jsoup.nodes.*;\n");
+        sb.append("public class " + "AutomatedTest" + " {\n");
 
         generateTest();
         generateTestFile();
@@ -412,7 +413,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 e.printStackTrace();
             }
         }
-        Path file = dir.resolve("UnitTest.java");
+        Path file = dir.resolve("AutomatedTest.java");
         try {
             Files.write(file, sb.toString().getBytes(StandardCharsets.UTF_8));
         } catch (IOException e) {
@@ -508,7 +509,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 List<Object> currentArguments = argumentsList.get(i);
 
                 sb.append("    @Test\n");
-                sb.append("    public void test" + className + method.getName() + currentArguments.hashCode() + i + "() {\n");
+                sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() {\n");
                 sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
 
                 StringBuilder parameterList = new StringBuilder();
