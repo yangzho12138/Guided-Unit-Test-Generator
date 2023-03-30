@@ -493,11 +493,13 @@ public class TestGenerator extends VoidVisitorAdapter {
             // 根据方法所在的类，去constructor list中找到对应的实体，调用该函数，生成test
             // TODO: Object can not be put into the code directly!!!
             for (int i = 0; i < argumentsList.size(); i++) {
-                sb.append("    @Test\n");
-                sb.append("    public void test" + className + method.getName() + parametersList.toString() + i + "() {\n");
-                sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
                 // get the parameter list
                 List<Object> currentArguments = argumentsList.get(i);
+
+                sb.append("    @Test\n");
+                sb.append("    public void test" + className + method.getName() + currentArguments.hashCode() + i + "() {\n");
+                sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
+
                 StringBuilder parameterList = new StringBuilder();
                 parameterList.append("(");
                 for (int j = 0; j < currentArguments.size(); j++) {
