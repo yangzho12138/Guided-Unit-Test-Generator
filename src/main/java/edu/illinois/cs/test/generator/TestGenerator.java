@@ -494,7 +494,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             // TODO: Object can not be put into the code directly!!!
             for (int i = 0; i < argumentsList.size(); i++) {
                 sb.append("    @Test\n");
-                sb.append("    public void test" + className + method.getName() + i + "() {\n");
+                sb.append("    public void test" + className + method.getName() + parametersList.toString() + i + "() {\n");
                 sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
                 // get the parameter list
                 List<Object> currentArguments = argumentsList.get(i);
