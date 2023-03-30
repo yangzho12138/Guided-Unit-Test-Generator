@@ -433,10 +433,15 @@ public class TestGenerator extends VoidVisitorAdapter {
             if("Optional.empty".equals(method.findAncestor(ClassOrInterfaceDeclaration.class).toString())){
                 continue;
             }
-            if(method.findAncestor(ClassOrInterfaceDeclaration.class).get().isPrivate()){
+            if(method.findAncestor(ClassOrInterfaceDeclaration.class).get().isPrivate() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isProtected() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isStatic() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isAbstract()){
                 continue;
             }
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
+
+            // TODO: delete after successfully generating constructor
+            if(className.equals("Element") || className.equals("Document")){
+                continue;
+            }
 
             // find parameter types
             NodeList<Parameter> parameters = method.getParameters();
