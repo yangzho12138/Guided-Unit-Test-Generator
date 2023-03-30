@@ -51,12 +51,21 @@ public class TestGenerator extends VoidVisitorAdapter {
 //        argumentsList = new ArrayList<>();
         MethodTraverse(target);
         sb = new StringBuilder();
-        sb.append("package " + "edu.illinois.cs.test" + ";\n");
+        sb.append("package " + "org.jsoup.mytests" + ";\n");
         sb.append("import org.junit.Test;\n");
         sb.append("import static org.junit.Assert.*;\n");
         sb.append("import org.jsoup.nodes.*;\n");
+        sb.append("import org.jsoup.select.*;\n");
+        sb.append("import org.jsoup.examples.*;\n");
+        sb.append("import org.jsoup.parser.*;\n");
+        sb.append("import org.jsoup.helper.*;\n");
+        sb.append("import org.jsoup.internal.*;\n");
+        sb.append("import org.jsoup.safety.*;\n");
+        sb.append("import org.jsoup.*;\n");
+        sb.append("\n");
         sb.append("public class " + "AutomatedTest" + " {\n");
 
+//        System.out.println(objectsPool);
         generateTest();
         generateTestFile();
     }
@@ -437,11 +446,15 @@ public class TestGenerator extends VoidVisitorAdapter {
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             // TODO: delete after successfully generating constructor
-            if(className.equals("Element") || className.equals("Document") || className.equals("CDataNode")){
+            if(className.equals("Element") || className.equals("Document") || className.equals("CDataNode")
+                    || className.equals("DataNode") || className.equals("Comment") || className.equals("XmlDeclaration")
+                    || className.equals("FormElement") || className.equals("DocumentType") || className.equals("Attribute")
+                    || className.equals("TextNode") || className.equals("UncheckedIOException") || className.equals("Entity")
+            ) {
                 continue;
             }
 
-            System.out.println(method.getName().asString());
+//            System.out.println(method.getName().asString());
 
             // find parameter types
             NodeList<Parameter> parameters = method.getParameters();
@@ -454,6 +467,9 @@ public class TestGenerator extends VoidVisitorAdapter {
 
             List<List<Object>> argumentsList = new ArrayList<>();
 
+            // TODO: generate a typesList so that we can cast null to the correct type
+            // TODO: add quoatation marks to Char
+            List<List<String>> typesList = new ArrayList<>();
             // generate 3 groups of arguments for each method
             for (int num = 0; num < 5; num++) {
                 List<Object> arguments = new ArrayList<>();
@@ -473,6 +489,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                         arguments.add(b);
                     } else if (type.equals("Character") || type.equals("char")) {
                         char c = (char) getValueFromPool(type);
+//                        System.out.println(c);
                         arguments.add(c);
                     } else if(type.contains("[]")){
                         if(type.contains("String")){
@@ -495,13 +512,16 @@ public class TestGenerator extends VoidVisitorAdapter {
                             arguments.add(objects);
                         }
                     } else {
+//                        System.out.println(type);
                         Object o = getValueFromPool(type);
                         arguments.add(o);
                     }
                 }
                 argumentsList.add(arguments);
             }
-
+            if(method.getName().toString().equals("consumeTo")){
+                System.out.println(argumentsList);
+            }
             // create arguments from value pools
 //            List<Object> arguments = new ArrayList<>();
 //            int argumentLength = parameters.size();
@@ -524,11 +544,15 @@ public class TestGenerator extends VoidVisitorAdapter {
                     Object o = currentArguments.get(j);
                     if(o != null){
                         String type = o.getClass().toString();
-                        if(method.getName().toString().equals("codepointsForName")){
-                            System.out.println(type);
-                        }
-                        if(type.contains("[L") || type.contains("[I") || type.contains("[J") || type.contains("[Z") || type.contains("[C")){
+//                        System.out.println(type);
+//                        if(method.getName().toString().equals("consumeTo")){
+////                            System.out.println();
+//                            System.out.println(o);
+//                        }
+
+                        if(type.contains("[L") || type.contains("[I")){
                             if(type.contains("String")) {
+//                                System.out.println("String array");
                                 parameterList.append("new String[]{");
                                 for(int k = 0; k < ((String[]) o).length; k++){
                                     parameterList.append("\"" + ((String[]) o)[k] + "\"");
@@ -536,7 +560,8 @@ public class TestGenerator extends VoidVisitorAdapter {
                                         parameterList.append(",");
                                     }
                                 }
-                            }else if(type.contains("Integer") || type.contains("int")) {
+                            }else if(type.contains("Integer") || type.contains("int") || type.contains("[I")) {
+//                                System.out.println("int array");
                                 parameterList.append("new int[]{");
                                 for (int k = 0; k < ((int[]) o).length; k++) {
                                     parameterList.append(((int[]) o)[k]);
@@ -564,6 +589,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                                 parameterList.append("new Character[]{");
                                 for (int k = 0; k < ((Character[]) o).length; k++) {
                                     Character c = ((Character[]) o)[k];
+                                    System.out.println(c);
                                     if (c == '\\') {
                                         parameterList.append("'\\\\'");
                                     }else{
@@ -574,8 +600,10 @@ public class TestGenerator extends VoidVisitorAdapter {
                                     }
                                 }
                             }else{
+//                                System.out.println("Object array");
                                 parameterList.append("new Object[]{");
                                 for (int k = 0; k < ((Object[]) o).length; k++) {
+//                                    System.out.println(type);
                                     parameterList.append(((Object[]) o)[k]);
                                     if (k != ((Object[]) o).length - 1) {
                                         parameterList.append(",");
@@ -592,6 +620,8 @@ public class TestGenerator extends VoidVisitorAdapter {
                     if (o instanceof String) {
                         parameterList.append("\"" + o + "\"");
                     } else {
+                        // TODO: Cast null to the correct type
+//                        System.out.println(o.getClass());
                         parameterList.append(o);
                     }
                     if(j != currentArguments.size() - 1){
