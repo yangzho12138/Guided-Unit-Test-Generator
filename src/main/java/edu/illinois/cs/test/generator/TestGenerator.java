@@ -6,6 +6,7 @@ import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.Parameter;
+import com.github.javaparser.ast.expr.MethodCallExpr;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
 
@@ -82,11 +83,13 @@ public class TestGenerator extends VoidVisitorAdapter {
 
     @Override
     public void visit(MethodDeclaration n, Object arg) {
-        super.visit(n, arg);
 
         if(n.isPublic()){
+            System.out.println(n);
             methods.add(n);
         }
+
+        super.visit(n, arg);
 
 //        for (Parameter p: n.getParameters()) {
 //            System.out.println(p);
@@ -112,6 +115,11 @@ public class TestGenerator extends VoidVisitorAdapter {
 //        invokeMethod(parametersList, 0, n, argumentLength, arguments);
 //
 //        System.out.println("-----------");
+    }
+
+    public void visit(MethodCallExpr n, Void arg) {
+        // This method is called for every method call expression
+        // Do nothing here to avoid visiting methods declared within methods
     }
 
     @Override
@@ -421,6 +429,9 @@ public class TestGenerator extends VoidVisitorAdapter {
     public void generateTest() {
         for (MethodDeclaration method : methods) {
             if("Optional.empty".equals(method.findAncestor(ClassOrInterfaceDeclaration.class).toString())){
+                continue;
+            }
+            if(method.findAncestor(ClassOrInterfaceDeclaration.class).get().isPrivate()){
                 continue;
             }
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
