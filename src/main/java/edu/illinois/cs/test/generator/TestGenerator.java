@@ -49,7 +49,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         constructors = new ArrayList<>();
 //        argumentsList = new ArrayList<>();
         MethodTraverse(target);
-
+//        System.out.println(charactersPool);
         sb = new StringBuilder();
         sb.append("package " + "edu.illinois.cs.test" + ";\n");
         sb.append("import org.junit.Test;\n");
@@ -437,7 +437,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             List<List<Object>> argumentsList = new ArrayList<>();
 
             // generate 3 groups of arguments for each method
-            for (int num = 0; num < 3; num++) {
+            for (int num = 0; num < 5; num++) {
                 List<Object> arguments = new ArrayList<>();
                 for (int i = 0; i < parametersList.size(); i++) {
                     String type = parametersList.get(i);
@@ -540,7 +540,14 @@ public class TestGenerator extends VoidVisitorAdapter {
                             }else if(type.contains("Character") || type.contains("char")) {
                                 parameterList.append("new Character[]{");
                                 for (int k = 0; k < ((Character[]) o).length; k++) {
-                                    parameterList.append(((Character[]) o)[k]);
+                                    Character c = ((Character[]) o)[k];
+                                    if (c == '\\') {
+                                        parameterList.append("'\\\\'");
+                                    }else{
+                                        System.out.println(c);
+                                        parameterList.append("'" + c + "'");
+//                                    System.out.println(((Character[]) o)[k]);
+                                    }
                                     if (k != ((Character[]) o).length - 1) {
                                         parameterList.append(",");
                                     }
@@ -571,30 +578,8 @@ public class TestGenerator extends VoidVisitorAdapter {
                     }
                 }
                 parameterList.append(")");
-
-
                 sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
-
-                // o.equals(o)==true
                 sb.append("        " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
-                // o.equals(o) throws no exception
-                sb.append("        " + "try {\n");
-                sb.append("            " + className.toLowerCase() + ".equals(" + className.toLowerCase() + ");\n");
-                sb.append("        " + "} catch (Exception e) {\n");
-                sb.append("            " + "fail(\""+ className.toLowerCase() + ".equals(" + className.toLowerCase() +") throws an exception\");\n");
-                sb.append("        " + "}\n");
-                // o.hashCode() throws no exception
-                sb.append("        " + "try {\n");
-                sb.append("            " + className.toLowerCase() + ".hashCode();\n");
-                sb.append("        " + "} catch (Exception e) {\n");
-                sb.append("            " + "fail(\""+ className.toLowerCase() + ".hashCode() throws an exception\");\n");
-                sb.append("        " + "}\n");
-                // o.toString() throws no exception
-                sb.append("        " + "try {\n");
-                sb.append("            " + className.toLowerCase() + ".toString();\n");
-                sb.append("        " + "} catch (Exception e) {\n");
-                sb.append("            " + "fail(\""+ className.toLowerCase() + ".toString() throws an exception\");\n");
-                sb.append("        " + "}\n");
 
                 sb.append("    }\n");
             }
