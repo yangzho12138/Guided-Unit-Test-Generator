@@ -118,11 +118,11 @@ public class TestGenerator extends VoidVisitorAdapter {
 //        System.out.println("-----------");
     }
 
-    @Override
-    public void visit(ClassOrInterfaceDeclaration n, Object arg) {
-        // This method is called for every class or interface declaration
-        // Do nothing here to avoid visiting the anonymous inner class
-    }
+//    @Override
+//    public void visit(ClassOrInterfaceDeclaration n, Object arg) {
+//        // This method is called for every class or interface declaration
+//        // Do nothing here to avoid visiting the anonymous inner class
+//    }
 
     @Override
     public void visit(ConstructorDeclaration n, Object arg) {
@@ -433,7 +433,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             if("Optional.empty".equals(method.findAncestor(ClassOrInterfaceDeclaration.class).toString())){
                 continue;
             }
-            if(method.findAncestor(ClassOrInterfaceDeclaration.class).get().isPrivate() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isProtected() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isStatic() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isAbstract()){
+            if(method.findAncestor(ClassOrInterfaceDeclaration.class).get().isPrivate() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isProtected() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isStatic() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isAbstract() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isInterface()){
                 continue;
             }
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
