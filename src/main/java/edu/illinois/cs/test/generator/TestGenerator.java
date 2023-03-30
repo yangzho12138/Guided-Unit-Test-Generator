@@ -50,7 +50,6 @@ public class TestGenerator extends VoidVisitorAdapter {
         constructors = new ArrayList<>();
 //        argumentsList = new ArrayList<>();
         MethodTraverse(target);
-//        System.out.println(charactersPool);
         sb = new StringBuilder();
         sb.append("package " + "edu.illinois.cs.test" + ";\n");
         sb.append("import org.junit.Test;\n");
@@ -86,7 +85,6 @@ public class TestGenerator extends VoidVisitorAdapter {
     public void visit(MethodDeclaration n, Object arg) {
 
         if(n.isPublic()){
-            System.out.println(n);
             methods.add(n);
         }
 
@@ -439,9 +437,11 @@ public class TestGenerator extends VoidVisitorAdapter {
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             // TODO: delete after successfully generating constructor
-            if(className.equals("Element") || className.equals("Document")){
+            if(className.equals("Element") || className.equals("Document") || className.equals("CDataNode")){
                 continue;
             }
+
+            System.out.println(method.getName().asString());
 
             // find parameter types
             NodeList<Parameter> parameters = method.getParameters();
@@ -524,7 +524,10 @@ public class TestGenerator extends VoidVisitorAdapter {
                     Object o = currentArguments.get(j);
                     if(o != null){
                         String type = o.getClass().toString();
-                        if(type.contains("[L")) {
+                        if(method.getName().toString().equals("codepointsForName")){
+                            System.out.println(type);
+                        }
+                        if(type.contains("[L") || type.contains("[I") || type.contains("[J") || type.contains("[Z") || type.contains("[C")){
                             if(type.contains("String")) {
                                 parameterList.append("new String[]{");
                                 for(int k = 0; k < ((String[]) o).length; k++){
@@ -564,9 +567,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                                     if (c == '\\') {
                                         parameterList.append("'\\\\'");
                                     }else{
-                                        System.out.println(c);
                                         parameterList.append("'" + c + "'");
-//                                    System.out.println(((Character[]) o)[k]);
                                     }
                                     if (k != ((Character[]) o).length - 1) {
                                         parameterList.append(",");
