@@ -594,7 +594,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                                     if (c == '\\') {
                                         parameterList.append("'\\\\'");
                                     }else{
-                                        parameterList.append("'" + c + "'");
+                                        parameterList.append("\'" + c + "\'");
                                     }
                                     if (k != ((Character[]) o).length - 1) {
                                         parameterList.append(",");
@@ -620,6 +620,12 @@ public class TestGenerator extends VoidVisitorAdapter {
                     }
                     if (o instanceof String) {
                         parameterList.append("\"" + o + "\"");
+                    } else if(o instanceof Character){
+                        if((Character) o == '\\'){
+                            parameterList.append("'\\\\'");
+                        }else{
+                            parameterList.append("\'" + o + "\'");
+                        }
                     } else {
                         // TODO: Cast null to the correct type
 //                        System.out.println(o.getClass());
