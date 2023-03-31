@@ -48,6 +48,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         objectsPool = PoolInit.valuePool.objectsPool;
         methods = new ArrayList<>();
         constructors = new ArrayList<>();
+
 //        argumentsList = new ArrayList<>();
         MethodTraverse(target);
         sb = new StringBuilder();
@@ -630,7 +631,27 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 parameterList.append(")");
                 sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+
+                // o.equals(o)==true
                 sb.append("        " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
+                // o.equals(o) throws no exception
+                sb.append("        " + "try {\n");
+                sb.append("            " + className.toLowerCase() + ".equals(" + className.toLowerCase() + ");\n");
+                sb.append("        " + "} catch (Exception e) {\n");
+                sb.append("            " + "fail(\""+ className.toLowerCase() + ".equals(" + className.toLowerCase() +") throws an exception\");\n");
+                sb.append("        " + "}\n");
+                // o.hashCode() throws no exception
+                sb.append("        " + "try {\n");
+                sb.append("            " + className.toLowerCase() + ".hashCode();\n");
+                sb.append("        " + "} catch (Exception e) {\n");
+                sb.append("            " + "fail(\""+ className.toLowerCase() + ".hashCode() throws an exception\");\n");
+                sb.append("        " + "}\n");
+                // o.toString() throws no exception
+                sb.append("        " + "try {\n");
+                sb.append("            " + className.toLowerCase() + ".toString();\n");
+                sb.append("        " + "} catch (Exception e) {\n");
+                sb.append("            " + "fail(\""+ className.toLowerCase() + ".toString() throws an exception\");\n");
+                sb.append("        " + "}\n");
 
                 sb.append("    }\n");
             }
