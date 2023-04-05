@@ -1,8 +1,11 @@
-<h1>UIUC CS527</h1>
 <h2>Guided Unit Test Generation</h2>
 
 <h3>Overview</h3>
 <p>This is a guided unit test generation tool for Java programs based on JavaParser</p>
+
+<h3>Structure</h3>
+<p>You can find the value pool initialization process in src/main/java/edu/illinois/cs/test/generator/PoolInit.java file</p>
+<p>You can find the test generation process in src/main/java/edu/illinois/cs/test/generator/TestGenerator.java file</p>
 
 <h3>How to run the tool</h3>
 <p>Please find the Application.java file in src/main/java/edu/illinois/cs/test</p>
