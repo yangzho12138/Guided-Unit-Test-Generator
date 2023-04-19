@@ -11,6 +11,7 @@ import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
 
+import javax.xml.stream.events.Attribute;
 import java.beans.Expression;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -22,6 +23,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
+
 
 import static com.github.javaparser.StaticJavaParser.parse;
 
@@ -140,6 +142,7 @@ public class TestGenerator extends VoidVisitorAdapter {
     }
 
     public Object getValueFromPool(String type) {
+//        System.out.println("type: " + type);
         if (type.equals("String")) {
             Random random = new Random();
             int index = random.nextInt(stringsPool.size());
@@ -264,6 +267,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             }
         } else {
             Random random = new Random();
+
             int index = random.nextInt(objectsPool.size());
 
             // find a random object in the object pool
@@ -276,6 +280,35 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 i++;
             }
+
+            //TODO: find the correct type and choose a random one
+            //TODO: remove the comments when finished the constructor part
+//            Random random = new Random();
+//            int index = random.nextInt(objectsPool.size());
+//            // find a random object in the object pool according to the type
+//            Iterator<Object> it = objectsPool.iterator();
+//
+//            // cast value pool to list
+//            List<Object> objectList = new ArrayList<>(objectsPool);
+//            List<Integer> indexList = new ArrayList<>();
+//            for (int i = 0; i < objectList.size(); i++) {
+//                Object o = objectList.get(i);
+//                if (o.getClass().toString().equals(type)) {
+//                    indexList.add(i);
+//                }
+//            }
+//
+//            // get a random index from the index list
+//            int randomIndex = random.nextInt(indexList.size());
+//            int i = 0;
+//            while (it.hasNext()) {
+//                Object s = it.next();
+//                if (i == indexList.get(randomIndex)) {
+//                    return s;
+//                }
+//                i++;
+//            }
+
         }
         return null;
     }
@@ -483,7 +516,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             List<List<Object>> argumentsList = new ArrayList<>();
 
             // TODO: generate a typesList so that we can cast null to the correct type
-            // TODO: add quoatation marks to Char
+            // TODO: add quotation marks to Char
             List<List<String>> typesList = new ArrayList<>();
             // generate 3 groups of arguments for each method
             for (int num = 0; num < 5; num++) {
