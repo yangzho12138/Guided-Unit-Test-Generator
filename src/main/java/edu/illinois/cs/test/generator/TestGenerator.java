@@ -7,6 +7,7 @@ import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.Parameter;
 import com.github.javaparser.ast.expr.MethodCallExpr;
+import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
 
@@ -444,18 +445,31 @@ public class TestGenerator extends VoidVisitorAdapter {
             if(method.findAncestor(ClassOrInterfaceDeclaration.class).get().isPrivate() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isProtected() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isStatic() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isAbstract() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isInterface()){
                 continue;
             }
-            String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
-
-            // TODO: delete after successfully generating constructor
-            if(className.equals("Element") || className.equals("Document") || className.equals("CDataNode")
-                    || className.equals("DataNode") || className.equals("Comment") || className.equals("XmlDeclaration")
-                    || className.equals("FormElement") || className.equals("DocumentType") || className.equals("Attribute")
-                    || className.equals("TextNode") || className.equals("UncheckedIOException") || className.equals("Entity")
-            ) {
+            if (Objects.equals(method.getName().toString(), "iterator")) {
+                continue;
+            }
+            // Pass the override method
+            if (method.isAnnotationPresent("Override")) {
                 continue;
             }
 
-//            System.out.println(method.getName().asString());
+            String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
+
+            // TODO: delete after successfully generating constructor
+//            if(className.equals("Element") || className.equals("Document") || className.equals("CDataNode")
+//                    || className.equals("DataNode") || className.equals("Comment") || className.equals("XmlDeclaration")
+//                    || className.equals("FormElement") || className.equals("DocumentType") || className.equals("Attribute")
+//                    || className.equals("TextNode") || className.equals("UncheckedIOException") || className.equals("Entity")
+//            ) {
+//                continue;
+//            }
+
+//            System.out.println(method);
+//            System.out.println(method.getName());
+//            // get the exception list of the method
+            NodeList<ReferenceType> exceptionList = method.getThrownExceptions();
+//            System.out.println(exceptionList);
+//            System.out.println("=================================");
 
             // find parameter types
             NodeList<Parameter> parameters = method.getParameters();
@@ -520,9 +534,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 argumentsList.add(arguments);
             }
-            if(method.getName().toString().equals("consumeTo")){
-                System.out.println(argumentsList);
-            }
+//            if(method.getName().toString().equals("consumeTo")){
+//                System.out.println(argumentsList);
+//            }
             // create arguments from value pools
 //            List<Object> arguments = new ArrayList<>();
 //            int argumentLength = parameters.size();
@@ -536,7 +550,14 @@ public class TestGenerator extends VoidVisitorAdapter {
                 List<Object> currentArguments = argumentsList.get(i);
 
                 sb.append("    @Test\n");
-                sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() {\n");
+                // if exception list is not empty, add throws to the signature
+                String throwException;
+                if (exceptionList.size() != 0) {
+                    throwException = "throws Exception ";
+                } else {
+                    throwException = "";
+                }
+                sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() " + throwException + "{\n");
                 sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
 
                 StringBuilder parameterList = new StringBuilder();
@@ -624,7 +645,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                         if((Character) o == '\\'){
                             parameterList.append("'\\\\'");
                         }else{
-                            parameterList.append("\'" + o + "\'");
+                            parameterList.append("\"" + o + "\"");
                         }
                     } else {
                         // TODO: Cast null to the correct type
