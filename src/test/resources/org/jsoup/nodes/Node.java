@@ -2,7 +2,7 @@ package org.jsoup.nodes;
 
 import org.jsoup.SerializationException;
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.select.NodeFilter;
 import org.jsoup.select.NodeTraversor;
 import org.jsoup.select.NodeVisitor;
@@ -82,7 +82,7 @@ public abstract class Node implements Cloneable {
      * @return this (for chaining)
      */
     public Node attr(String attributeKey, String attributeValue) {
-        attributeKey = NodeUtils.parser(this).settings().normalizeAttribute(attributeKey);
+        attributeKey = edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).settings().normalizeAttribute(attributeKey);
         attributes().putIgnoreCase(attributeKey, attributeValue);
         return this;
     }
@@ -332,7 +332,7 @@ public abstract class Node implements Cloneable {
         Validate.notNull(parentNode);
 
         Element context = parent() instanceof Element ? (Element) parent() : null;
-        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
+        List<Node> nodes = edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
         parentNode.addChildren(index, nodes.toArray(new Node[0]));
     }
 
@@ -345,7 +345,7 @@ public abstract class Node implements Cloneable {
         Validate.notEmpty(html);
 
         Element context = parent() instanceof Element ? (Element) parent() : null;
-        List<Node> wrapChildren = NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
+        List<Node> wrapChildren = edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).parseFragmentInput(html, context, baseUri());
         Node wrapNode = wrapChildren.get(0);
         if (!(wrapNode instanceof Element)) // nothing to wrap with; noop
             return null;
@@ -527,7 +527,7 @@ public abstract class Node implements Cloneable {
      * Get the list index of this node in its node sibling list. I.e. if this is the first node
      * sibling, returns 0.
      * @return position in node sibling list
-     * @see org.jsoup.nodes.Element#elementSiblingIndex()
+     * @see Element#elementSiblingIndex()
      */
     public int siblingIndex() {
         return siblingIndex;
@@ -572,7 +572,7 @@ public abstract class Node implements Cloneable {
     }
 
     protected void outerHtml(Appendable accum) {
-        NodeTraversor.traverse(new OuterHtmlVisitor(accum, NodeUtils.outputSettings(this)), this);
+        NodeTraversor.traverse(new OuterHtmlVisitor(accum, edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.outputSettings(this)), this);
     }
 
     /**

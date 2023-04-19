@@ -1,8 +1,8 @@
 package org.jsoup.parser;
 
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.*;
-import org.jsoup.examples.HtmlToPlainText;;
+;
 
 /**
  * A character queue with parsing helpers.

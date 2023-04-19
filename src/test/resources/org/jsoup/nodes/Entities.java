@@ -2,7 +2,7 @@ package org.jsoup.nodes;
 
 import org.jsoup.SerializationException;
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.parser.CharacterReader;
 import org.jsoup.parser.Parser;
 
@@ -30,15 +30,15 @@ public class Entities {
         /**
          * Restricted entities suitable for XHTML output: lt, gt, amp, and quot only.
          */
-        xhtml(EntitiesData.xmlPoints, 4),
+        xhtml(edu.illinois.cs.test.generator.org.jsoup.nodes.EntitiesData.xmlPoints, 4),
         /**
          * Default HTML output entities.
          */
-        base(EntitiesData.basePoints, 106),
+        base(edu.illinois.cs.test.generator.org.jsoup.nodes.EntitiesData.basePoints, 106),
         /**
          * Complete HTML entities.
          */
-        extended(EntitiesData.fullPoints, 2125);
+        extended(edu.illinois.cs.test.generator.org.jsoup.nodes.EntitiesData.fullPoints, 2125);
 
         // table of named references to their codepoints. sorted so we can binary search. built by BuildEntities.
         private String[] nameKeys;

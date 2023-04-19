@@ -1,7 +1,7 @@
 package org.jsoup.parser;
 
 import org.jsoup.UncheckedIOException;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -256,7 +256,7 @@ public final class CharacterReader {
             switch (val[pos]) {
                 case '&':
                 case '<':
-                case TokeniserState.nullChar:
+                case edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.nullChar:
                     break OUTER;
                 default:
                     pos++;
@@ -285,7 +285,7 @@ public final class CharacterReader {
                 case '/':
                 case '>':
                 case '<':
-                case TokeniserState.nullChar:
+                case edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.nullChar:
                     break OUTER;
             }
             pos++;

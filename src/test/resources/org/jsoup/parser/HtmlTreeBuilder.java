@@ -1,6 +1,6 @@
 package org.jsoup.parser;
 
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.CDataNode;
 import org.jsoup.nodes.Comment;
@@ -22,7 +22,7 @@ import static org.jsoup.internal.StringUtil.inSorted;
 /**
  * HTML Tree Builder; creates a DOM from Tokens.
  */
-public class HtmlTreeBuilder extends TreeBuilder {
+public class HtmlTreeBuilder extends edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder {
     // tag searches. must be sorted, used in inSorted. MUST update HtmlTreeBuilderTest if more arrays are added.
     static final String[] TagsSearchInScope = new String[]{"applet", "caption", "html", "marquee", "object", "table", "td", "th"};
     static final String[] TagSearchList = new String[]{"ol", "ul"};
@@ -41,8 +41,8 @@ public class HtmlTreeBuilder extends TreeBuilder {
 
     public static final int MaxScopeSearchDepth = 100; // prevents the parser bogging down in exceptionally broken pages
 
-    private HtmlTreeBuilderState state; // the current state
-    private HtmlTreeBuilderState originalState; // original / marked state
+    private edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState state; // the current state
+    private edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState originalState; // original / marked state
 
     private boolean baseUriSetFromDoc;
     private Element headElement; // the current head element
@@ -50,7 +50,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
     private Element contextElement; // fragment parse context -- could be null even if fragment parsing
     private ArrayList<Element> formattingElements; // active (open) formatting elements
     private List<String> pendingTableCharacters; // chars in table to be shifted out
-    private Token.EndTag emptyEnd; // reused empty end tag
+    private edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag emptyEnd; // reused empty end tag
 
     private boolean framesetOk; // if ok to go into frameset
     private boolean fosterInserts; // if next inserts should be fostered
@@ -65,7 +65,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
         super.initialiseParse(input, baseUri, parser);
 
         // this is a bit mucky. todo - probably just create new parser objects to ensure all reset.
-        state = HtmlTreeBuilderState.Initial;
+        state = edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.Initial;
         originalState = null;
         baseUriSetFromDoc = false;
         headElement = null;
@@ -73,7 +73,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
         contextElement = null;
         formattingElements = new ArrayList<>();
         pendingTableCharacters = new ArrayList<>();
-        emptyEnd = new Token.EndTag();
+        emptyEnd = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag();
         framesetOk = true;
         fosterInserts = false;
         fragmentParsing = false;
@@ -81,7 +81,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
 
     List<Node> parseFragment(String inputFragment, Element context, String baseUri, Parser parser) {
         // context may be null
-        state = HtmlTreeBuilderState.Initial;
+        state = edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.Initial;
         initialiseParse(new StringReader(inputFragment), baseUri, parser);
         contextElement = context;
         fragmentParsing = true;
@@ -94,17 +94,17 @@ public class HtmlTreeBuilder extends TreeBuilder {
             // initialise the tokeniser state:
             String contextTag = context.tagName();
             if (StringUtil.in(contextTag, "title", "textarea"))
-                tokeniser.transition(TokeniserState.Rcdata);
+                tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Rcdata);
             else if (StringUtil.in(contextTag, "iframe", "noembed", "noframes", "style", "xmp"))
-                tokeniser.transition(TokeniserState.Rawtext);
+                tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Rawtext);
             else if (contextTag.equals("script"))
-                tokeniser.transition(TokeniserState.ScriptData);
+                tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.ScriptData);
             else if (contextTag.equals(("noscript")))
-                tokeniser.transition(TokeniserState.Data); // if scripting enabled, rawtext
+                tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Data); // if scripting enabled, rawtext
             else if (contextTag.equals("plaintext"))
-                tokeniser.transition(TokeniserState.Data);
+                tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Data);
             else
-                tokeniser.transition(TokeniserState.Data); // default
+                tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Data); // default
 
             root = new Element(Tag.valueOf("html", settings), baseUri);
             doc.appendChild(root);
@@ -131,21 +131,21 @@ public class HtmlTreeBuilder extends TreeBuilder {
     }
 
     @Override
-    protected boolean process(Token token) {
+    protected boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token token) {
         currentToken = token;
         return this.state.process(token, this);
     }
 
-    boolean process(Token token, HtmlTreeBuilderState state) {
+    boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token token, edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState state) {
         currentToken = token;
         return state.process(token, this);
     }
 
-    void transition(HtmlTreeBuilderState state) {
+    void transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState state) {
         this.state = state;
     }
 
-    HtmlTreeBuilderState state() {
+    edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState state() {
         return state;
     }
 
@@ -153,7 +153,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
         originalState = state;
     }
 
-    HtmlTreeBuilderState originalState() {
+    edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState originalState() {
         return originalState;
     }
 
@@ -189,12 +189,12 @@ public class HtmlTreeBuilder extends TreeBuilder {
         return fragmentParsing;
     }
 
-    void error(HtmlTreeBuilderState state) {
+    void error(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState state) {
         if (parser.getErrors().canAddError())
             parser.getErrors().add(new ParseError(reader.pos(), "Unexpected token [%s] when in state [%s]", currentToken.tokenType(), state));
     }
 
-    Element insert(final Token.StartTag startTag) {
+    Element insert(final edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag) {
         // cleanup duplicate attributes:
         if (!startTag.attributes.isEmpty()) {
             int dupes = startTag.attributes.deduplicate(settings);
@@ -208,7 +208,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
         if (startTag.isSelfClosing()) {
             Element el = insertEmpty(startTag);
             stack.add(el);
-            tokeniser.transition(TokeniserState.Data); // handles <script />, otherwise needs breakout steps from script data
+            tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Data); // handles <script />, otherwise needs breakout steps from script data
             tokeniser.emit(emptyEnd.reset().name(el.tagName()));  // ensure we get out of whatever state we are in. emitted for yielded processing
             return el;
         }
@@ -229,7 +229,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
         stack.add(el);
     }
 
-    Element insertEmpty(Token.StartTag startTag) {
+    Element insertEmpty(edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag) {
         Tag tag = Tag.valueOf(startTag.name(), settings);
         Element el = new Element(tag, baseUri, startTag.attributes);
         insertNode(el);
@@ -244,7 +244,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
         return el;
     }
 
-    FormElement insertForm(Token.StartTag startTag, boolean onStack) {
+    FormElement insertForm(edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag, boolean onStack) {
         Tag tag = Tag.valueOf(startTag.name(), settings);
         FormElement el = new FormElement(tag, baseUri, startTag.attributes);
         setFormElement(el);
@@ -254,12 +254,12 @@ public class HtmlTreeBuilder extends TreeBuilder {
         return el;
     }
 
-    void insert(Token.Comment commentToken) {
+    void insert(edu.illinois.cs.test.generator.org.jsoup.parser.Token.Comment commentToken) {
         Comment comment = new Comment(commentToken.getData());
         insertNode(comment);
     }
 
-    void insert(Token.Character characterToken) {
+    void insert(edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character characterToken) {
         final Node node;
         final Element el = currentElement();
         final String tagName = el.tagName();
@@ -427,40 +427,40 @@ public class HtmlTreeBuilder extends TreeBuilder {
             }
             String name = node.normalName();
             if ("select".equals(name)) {
-                transition(HtmlTreeBuilderState.InSelect);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InSelect);
                 break; // frag
             } else if (("td".equals(name) || "th".equals(name) && !last)) {
-                transition(HtmlTreeBuilderState.InCell);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InCell);
                 break;
             } else if ("tr".equals(name)) {
-                transition(HtmlTreeBuilderState.InRow);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InRow);
                 break;
             } else if ("tbody".equals(name) || "thead".equals(name) || "tfoot".equals(name)) {
-                transition(HtmlTreeBuilderState.InTableBody);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InTableBody);
                 break;
             } else if ("caption".equals(name)) {
-                transition(HtmlTreeBuilderState.InCaption);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InCaption);
                 break;
             } else if ("colgroup".equals(name)) {
-                transition(HtmlTreeBuilderState.InColumnGroup);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InColumnGroup);
                 break; // frag
             } else if ("table".equals(name)) {
-                transition(HtmlTreeBuilderState.InTable);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InTable);
                 break;
             } else if ("head".equals(name)) {
-                transition(HtmlTreeBuilderState.InBody);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InBody);
                 break; // frag
             } else if ("body".equals(name)) {
-                transition(HtmlTreeBuilderState.InBody);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InBody);
                 break;
             } else if ("frameset".equals(name)) {
-                transition(HtmlTreeBuilderState.InFrameset);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InFrameset);
                 break; // frag
             } else if ("html".equals(name)) {
-                transition(HtmlTreeBuilderState.BeforeHead);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.BeforeHead);
                 break; // frag
             } else if (last) {
-                transition(HtmlTreeBuilderState.InBody);
+                transition(edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState.InBody);
                 break; // frag
             }
         }

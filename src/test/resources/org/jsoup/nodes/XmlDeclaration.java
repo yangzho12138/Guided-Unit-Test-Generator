@@ -2,14 +2,14 @@ package org.jsoup.nodes;
 
 import org.jsoup.SerializationException;
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 
 import java.io.IOException;
 
 /**
  * An XML Declaration.
  */
-public class XmlDeclaration extends LeafNode {
+public class XmlDeclaration extends edu.illinois.cs.test.generator.org.jsoup.nodes.LeafNode {
     // todo this impl isn't really right, the data shouldn't be attributes, just a run of text after the name
     private final boolean isProcessingInstruction; // <! if true, <? if false, declaration (and last data char should be ?)
 

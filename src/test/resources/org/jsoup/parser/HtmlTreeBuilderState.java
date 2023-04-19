@@ -15,7 +15,7 @@ import java.util.ArrayList;
  */
 enum HtmlTreeBuilderState {
     Initial {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 return true; // ignore whitespace
             } else if (t.isComment()) {
@@ -23,7 +23,7 @@ enum HtmlTreeBuilderState {
             } else if (t.isDoctype()) {
                 // todo: parse error check on expected doctypes
                 // todo: quirk state check on doctype ids
-                Token.Doctype d = t.asDoctype();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.Doctype d = t.asDoctype();
                 DocumentType doctype = new DocumentType(
                     tb.settings.normalizeTag(d.getName()), d.getPublicIdentifier(), d.getSystemIdentifier());
                 doctype.setPubSysKey(d.getPubSysKey());
@@ -40,7 +40,7 @@ enum HtmlTreeBuilderState {
         }
     },
     BeforeHtml {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isDoctype()) {
                 tb.error(this);
                 return false;
@@ -62,14 +62,14 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             tb.insertStartTag("html");
             tb.transition(BeforeHead);
             return tb.process(t);
         }
     },
     BeforeHead {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 return true;
             } else if (t.isComment()) {
@@ -97,7 +97,7 @@ enum HtmlTreeBuilderState {
         }
     },
     InHead {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 tb.insert(t.asCharacter());
                 return true;
@@ -110,7 +110,7 @@ enum HtmlTreeBuilderState {
                     tb.error(this);
                     return false;
                 case StartTag:
-                    Token.StartTag start = t.asStartTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag start = t.asStartTag();
                     String name = start.normalName();
                     if (name.equals("html")) {
                         return InBody.process(t, tb);
@@ -133,7 +133,7 @@ enum HtmlTreeBuilderState {
                     } else if (name.equals("script")) {
                         // skips some script rules as won't execute them
 
-                        tb.tokeniser.transition(TokeniserState.ScriptData);
+                        tb.tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.ScriptData);
                         tb.markInsertionMode();
                         tb.transition(Text);
                         tb.insert(start);
@@ -145,7 +145,7 @@ enum HtmlTreeBuilderState {
                     }
                     break;
                 case EndTag:
-                    Token.EndTag end = t.asEndTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag end = t.asEndTag();
                     name = end.normalName();
                     if (name.equals("head")) {
                         tb.pop();
@@ -163,13 +163,13 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, TreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder tb) {
             tb.processEndTag("head");
             return tb.process(t);
         }
     },
     InHeadNoscript {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isDoctype()) {
                 tb.error(this);
             } else if (t.isStartTag() && t.asStartTag().normalName().equals("html")) {
@@ -191,14 +191,14 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             tb.error(this);
-            tb.insert(new Token.Character().data(t.toString()));
+            tb.insert(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character().data(t.toString()));
             return true;
         }
     },
     AfterHead {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 tb.insert(t.asCharacter());
             } else if (t.isComment()) {
@@ -206,7 +206,7 @@ enum HtmlTreeBuilderState {
             } else if (t.isDoctype()) {
                 tb.error(this);
             } else if (t.isStartTag()) {
-                Token.StartTag startTag = t.asStartTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag = t.asStartTag();
                 String name = startTag.normalName();
                 if (name.equals("html")) {
                     return tb.process(t, InBody);
@@ -242,17 +242,17 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             tb.processStartTag("body");
             tb.framesetOk(true);
             return tb.process(t);
         }
     },
     InBody {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             switch (t.type) {
                 case Character: {
-                    Token.Character c = t.asCharacter();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character c = t.asCharacter();
                     if (c.getData().equals(nullString)) {
                         // todo confirm that check
                         tb.error(this);
@@ -276,7 +276,7 @@ enum HtmlTreeBuilderState {
                     return false;
                 }
                 case StartTag:
-                    Token.StartTag startTag = t.asStartTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag = t.asStartTag();
                     // todo - refactor to a switch statement
                     String name = startTag.normalName();
                     if (name.equals("a")) {
@@ -411,7 +411,7 @@ enum HtmlTreeBuilderState {
                             tb.processEndTag("p");
                         }
                         tb.insert(startTag);
-                        tb.tokeniser.transition(TokeniserState.PLAINTEXT); // once in, never gets out
+                        tb.tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.PLAINTEXT); // once in, never gets out
                     } else if (name.equals("button")) {
                         if (tb.inButtonScope("button")) {
                             // close and reprocess
@@ -484,7 +484,7 @@ enum HtmlTreeBuilderState {
                                 startTag.attributes.get("prompt") :
                                 "This is a searchable index. Enter search keywords: ";
 
-                        tb.process(new Token.Character().data(prompt));
+                        tb.process(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character().data(prompt));
 
                         // input
                         Attributes inputAttribs = new Attributes();
@@ -500,7 +500,7 @@ enum HtmlTreeBuilderState {
                     } else if (name.equals("textarea")) {
                         tb.insert(startTag);
                         // todo: If the next token is a U+000A LINE FEED (LF) character token, then ignore that token and move on to the next one. (Newlines at the start of textarea elements are ignored as an authoring convenience.)
-                        tb.tokeniser.transition(TokeniserState.Rcdata);
+                        tb.tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Rcdata);
                         tb.markInsertionMode();
                         tb.framesetOk(false);
                         tb.transition(Text);
@@ -522,7 +522,7 @@ enum HtmlTreeBuilderState {
                         tb.insert(startTag);
                         tb.framesetOk(false);
 
-                        HtmlTreeBuilderState state = tb.state();
+                        edu.illinois.cs.test.generator.org.jsoup.parser.HtmlTreeBuilderState state = tb.state();
                         if (state.equals(InTable) || state.equals(InCaption) || state.equals(InTableBody) || state.equals(InRow) || state.equals(InCell))
                             tb.transition(InSelectInTable);
                         else
@@ -559,7 +559,7 @@ enum HtmlTreeBuilderState {
                     break;
 
                 case EndTag:
-                    Token.EndTag endTag = t.asEndTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = t.asEndTag();
                     name = endTag.normalName();
                     if (StringUtil.inSorted(name, Constants.InBodyEndAdoptionFormatters)) {
                         // Adoption Agency Algorithm.
@@ -764,7 +764,7 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        boolean anyOtherEndTag(Token t, HtmlTreeBuilder tb) {
+        boolean anyOtherEndTag(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             String name = t.asEndTag().normalName; // case insensitive search - goal is to preserve output case, not for the parse to be case sensitive
             ArrayList<Element> stack = tb.getStack();
             for (int pos = stack.size() -1; pos >= 0; pos--) {
@@ -787,7 +787,7 @@ enum HtmlTreeBuilderState {
     },
     Text {
         // in script, style etc. normally treated as data tags
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isCharacter()) {
                 tb.insert(t.asCharacter());
             } else if (t.isEOF()) {
@@ -805,7 +805,7 @@ enum HtmlTreeBuilderState {
         }
     },
     InTable {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isCharacter()) {
                 tb.newPendingTableCharacters();
                 tb.markInsertionMode();
@@ -818,7 +818,7 @@ enum HtmlTreeBuilderState {
                 tb.error(this);
                 return false;
             } else if (t.isStartTag()) {
-                Token.StartTag startTag = t.asStartTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag = t.asStartTag();
                 String name = startTag.normalName();
                 if (name.equals("caption")) {
                     tb.clearStackToTableContext();
@@ -864,7 +864,7 @@ enum HtmlTreeBuilderState {
                 }
                 return true; // todo: check if should return processed http://www.whatwg.org/specs/web-apps/current-work/multipage/tree-construction.html#parsing-main-intable
             } else if (t.isEndTag()) {
-                Token.EndTag endTag = t.asEndTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = t.asEndTag();
                 String name = endTag.normalName();
 
                 if (name.equals("table")) {
@@ -891,7 +891,7 @@ enum HtmlTreeBuilderState {
             return anythingElse(t, tb);
         }
 
-        boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             tb.error(this);
             boolean processed;
             if (StringUtil.in(tb.currentElement().normalName(), "table", "tbody", "tfoot", "thead", "tr")) {
@@ -905,10 +905,10 @@ enum HtmlTreeBuilderState {
         }
     },
     InTableText {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             switch (t.type) {
                 case Character:
-                    Token.Character c = t.asCharacter();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character c = t.asCharacter();
                     if (c.getData().equals(nullString)) {
                         tb.error(this);
                         return false;
@@ -925,13 +925,13 @@ enum HtmlTreeBuilderState {
                                 tb.error(this);
                                 if (StringUtil.in(tb.currentElement().normalName(), "table", "tbody", "tfoot", "thead", "tr")) {
                                     tb.setFosterInserts(true);
-                                    tb.process(new Token.Character().data(character), InBody);
+                                    tb.process(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character().data(character), InBody);
                                     tb.setFosterInserts(false);
                                 } else {
-                                    tb.process(new Token.Character().data(character), InBody);
+                                    tb.process(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character().data(character), InBody);
                                 }
                             } else
-                                tb.insert(new Token.Character().data(character));
+                                tb.insert(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character().data(character));
                         }
                         tb.newPendingTableCharacters();
                     }
@@ -942,9 +942,9 @@ enum HtmlTreeBuilderState {
         }
     },
     InCaption {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isEndTag() && t.asEndTag().normalName().equals("caption")) {
-                Token.EndTag endTag = t.asEndTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = t.asEndTag();
                 String name = endTag.normalName();
                 if (!tb.inTableScope(name)) {
                     tb.error(this);
@@ -977,7 +977,7 @@ enum HtmlTreeBuilderState {
         }
     },
     InColumnGroup {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 tb.insert(t.asCharacter());
                 return true;
@@ -990,7 +990,7 @@ enum HtmlTreeBuilderState {
                     tb.error(this);
                     break;
                 case StartTag:
-                    Token.StartTag startTag = t.asStartTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag = t.asStartTag();
                     switch (startTag.normalName()) {
                         case "html":
                             return tb.process(t, InBody);
@@ -1002,7 +1002,7 @@ enum HtmlTreeBuilderState {
                     }
                     break;
                 case EndTag:
-                    Token.EndTag endTag = t.asEndTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = t.asEndTag();
                     if (endTag.normalName.equals("colgroup")) {
                         if (tb.currentElement().normalName().equals("html")) { // frag case
                             tb.error(this);
@@ -1025,7 +1025,7 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, TreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder tb) {
             boolean processed = tb.processEndTag("colgroup");
             if (processed) // only ignored in frag case
                 return tb.process(t);
@@ -1033,10 +1033,10 @@ enum HtmlTreeBuilderState {
         }
     },
     InTableBody {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             switch (t.type) {
                 case StartTag:
-                    Token.StartTag startTag = t.asStartTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag = t.asStartTag();
                     String name = startTag.normalName();
                     if (name.equals("template")) {
                         tb.insert(startTag);
@@ -1054,7 +1054,7 @@ enum HtmlTreeBuilderState {
                         return anythingElse(t, tb);
                     break;
                 case EndTag:
-                    Token.EndTag endTag = t.asEndTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = t.asEndTag();
                     name = endTag.normalName();
                     if (StringUtil.in(name, "tbody", "tfoot", "thead")) {
                         if (!tb.inTableScope(name)) {
@@ -1079,7 +1079,7 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean exitTableBody(Token t, HtmlTreeBuilder tb) {
+        private boolean exitTableBody(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (!(tb.inTableScope("tbody") || tb.inTableScope("thead") || tb.inScope("tfoot"))) {
                 // frag case
                 tb.error(this);
@@ -1090,14 +1090,14 @@ enum HtmlTreeBuilderState {
             return tb.process(t);
         }
 
-        private boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             return tb.process(t, InTable);
         }
     },
     InRow {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isStartTag()) {
-                Token.StartTag startTag = t.asStartTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag = t.asStartTag();
                 String name = startTag.normalName();
 
                 if (name.equals("template")) {
@@ -1113,7 +1113,7 @@ enum HtmlTreeBuilderState {
                     return anythingElse(t, tb);
                 }
             } else if (t.isEndTag()) {
-                Token.EndTag endTag = t.asEndTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = t.asEndTag();
                 String name = endTag.normalName();
 
                 if (name.equals("tr")) {
@@ -1145,11 +1145,11 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             return tb.process(t, InTable);
         }
 
-        private boolean handleMissingTr(Token t, TreeBuilder tb) {
+        private boolean handleMissingTr(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder tb) {
             boolean processed = tb.processEndTag("tr");
             if (processed)
                 return tb.process(t);
@@ -1158,9 +1158,9 @@ enum HtmlTreeBuilderState {
         }
     },
     InCell {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isEndTag()) {
-                Token.EndTag endTag = t.asEndTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = t.asEndTag();
                 String name = endTag.normalName();
 
                 if (StringUtil.inSorted(name, Constants.InCellNames)) {
@@ -1202,7 +1202,7 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             return tb.process(t, InBody);
         }
 
@@ -1214,10 +1214,10 @@ enum HtmlTreeBuilderState {
         }
     },
     InSelect {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             switch (t.type) {
                 case Character:
-                    Token.Character c = t.asCharacter();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character c = t.asCharacter();
                     if (c.getData().equals(nullString)) {
                         tb.error(this);
                         return false;
@@ -1232,7 +1232,7 @@ enum HtmlTreeBuilderState {
                     tb.error(this);
                     return false;
                 case StartTag:
-                    Token.StartTag start = t.asStartTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag start = t.asStartTag();
                     String name = start.normalName();
                     if (name.equals("html"))
                         return tb.process(start, InBody);
@@ -1262,7 +1262,7 @@ enum HtmlTreeBuilderState {
                     }
                     break;
                 case EndTag:
-                    Token.EndTag end = t.asEndTag();
+                    edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag end = t.asEndTag();
                     name = end.normalName();
                     switch (name) {
                         case "optgroup":
@@ -1302,13 +1302,13 @@ enum HtmlTreeBuilderState {
             return true;
         }
 
-        private boolean anythingElse(Token t, HtmlTreeBuilder tb) {
+        private boolean anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             tb.error(this);
             return false;
         }
     },
     InSelectInTable {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isStartTag() && StringUtil.in(t.asStartTag().normalName(), "caption", "table", "tbody", "tfoot", "thead", "tr", "td", "th")) {
                 tb.error(this);
                 tb.processEndTag("select");
@@ -1326,7 +1326,7 @@ enum HtmlTreeBuilderState {
         }
     },
     AfterBody {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 return tb.process(t, InBody);
             } else if (t.isComment()) {
@@ -1354,7 +1354,7 @@ enum HtmlTreeBuilderState {
         }
     },
     InFrameset {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 tb.insert(t.asCharacter());
             } else if (t.isComment()) {
@@ -1363,7 +1363,7 @@ enum HtmlTreeBuilderState {
                 tb.error(this);
                 return false;
             } else if (t.isStartTag()) {
-                Token.StartTag start = t.asStartTag();
+                edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag start = t.asStartTag();
                 switch (start.normalName()) {
                     case "html":
                         return tb.process(start, InBody);
@@ -1402,7 +1402,7 @@ enum HtmlTreeBuilderState {
         }
     },
     AfterFrameset {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (isWhitespace(t)) {
                 tb.insert(t.asCharacter());
             } else if (t.isComment()) {
@@ -1426,7 +1426,7 @@ enum HtmlTreeBuilderState {
         }
     },
     AfterAfterBody {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isComment()) {
                 tb.insert(t.asComment());
             } else if (t.isDoctype() || isWhitespace(t) || (t.isStartTag() && t.asStartTag().normalName().equals("html"))) {
@@ -1442,7 +1442,7 @@ enum HtmlTreeBuilderState {
         }
     },
     AfterAfterFrameset {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             if (t.isComment()) {
                 tb.insert(t.asComment());
             } else if (t.isDoctype() || isWhitespace(t) || (t.isStartTag() && t.asStartTag().normalName().equals("html"))) {
@@ -1459,7 +1459,7 @@ enum HtmlTreeBuilderState {
         }
     },
     ForeignContent {
-        boolean process(Token t, HtmlTreeBuilder tb) {
+        boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb) {
             return true;
             // todo: implement. Also; how do we get here?
         }
@@ -1467,9 +1467,9 @@ enum HtmlTreeBuilderState {
 
     private static String nullString = String.valueOf('\u0000');
 
-    abstract boolean process(Token t, HtmlTreeBuilder tb);
+    abstract boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token t, HtmlTreeBuilder tb);
 
-    private static boolean isWhitespace(Token t) {
+    private static boolean isWhitespace(edu.illinois.cs.test.generator.org.jsoup.parser.Token t) {
         if (t.isCharacter()) {
             String data = t.asCharacter().getData();
             return isWhitespace(data);
@@ -1481,15 +1481,15 @@ enum HtmlTreeBuilderState {
         return StringUtil.isBlank(data);
     }
 
-    private static void handleRcData(Token.StartTag startTag, HtmlTreeBuilder tb) {
-        tb.tokeniser.transition(TokeniserState.Rcdata);
+    private static void handleRcData(edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag, HtmlTreeBuilder tb) {
+        tb.tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Rcdata);
         tb.markInsertionMode();
         tb.transition(Text);
         tb.insert(startTag);
     }
 
-    private static void handleRawtext(Token.StartTag startTag, HtmlTreeBuilder tb) {
-        tb.tokeniser.transition(TokeniserState.Rawtext);
+    private static void handleRawtext(edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag, HtmlTreeBuilder tb) {
+        tb.tokeniser.transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Rawtext);
         tb.markInsertionMode();
         tb.transition(Text);
         tb.insert(startTag);

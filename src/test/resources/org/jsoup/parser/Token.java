@@ -1,6 +1,6 @@
 package org.jsoup.parser;
 
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.nodes.Attributes;
 
 import static org.jsoup.internal.Normalizer.lowerCase;
@@ -22,7 +22,7 @@ abstract class Token {
      * Reset the data represent by this token, for reuse. Prevents the need to create transfer objects for every
      * piece of data, which immediately get GCed.
      */
-    abstract Token reset();
+    abstract edu.illinois.cs.test.generator.org.jsoup.parser.Token reset();
 
     static void reset(StringBuilder sb) {
         if (sb != null) {
@@ -30,7 +30,7 @@ abstract class Token {
         }
     }
 
-    static final class Doctype extends Token {
+    static final class Doctype extends edu.illinois.cs.test.generator.org.jsoup.parser.Token {
         final StringBuilder name = new StringBuilder();
         String pubSysKey = null;
         final StringBuilder publicIdentifier = new StringBuilder();
@@ -42,7 +42,7 @@ abstract class Token {
         }
 
         @Override
-        Token reset() {
+        edu.illinois.cs.test.generator.org.jsoup.parser.Token reset() {
             reset(name);
             pubSysKey = null;
             reset(publicIdentifier);
@@ -72,7 +72,7 @@ abstract class Token {
         }
     }
 
-    static abstract class Tag extends Token {
+    static abstract class Tag extends edu.illinois.cs.test.generator.org.jsoup.parser.Token {
         protected String tagName;
         protected String normalName; // lc version of tag name, for case insensitive tree build
         private String pendingAttributeName; // attribute names are generally caught in one hop, not accumulated
@@ -257,12 +257,12 @@ abstract class Token {
         }
     }
 
-    final static class Comment extends Token {
+    final static class Comment extends edu.illinois.cs.test.generator.org.jsoup.parser.Token {
         final StringBuilder data = new StringBuilder();
         boolean bogus = false;
 
         @Override
-        Token reset() {
+        edu.illinois.cs.test.generator.org.jsoup.parser.Token reset() {
             reset(data);
             bogus = false;
             return this;
@@ -282,7 +282,7 @@ abstract class Token {
         }
     }
 
-    static class Character extends Token {
+    static class Character extends edu.illinois.cs.test.generator.org.jsoup.parser.Token {
         private String data;
 
         Character() {
@@ -291,7 +291,7 @@ abstract class Token {
         }
 
         @Override
-        Token reset() {
+        edu.illinois.cs.test.generator.org.jsoup.parser.Token reset() {
             data = null;
             return this;
         }
@@ -324,13 +324,13 @@ abstract class Token {
 
     }
 
-    final static class EOF extends Token {
+    final static class EOF extends edu.illinois.cs.test.generator.org.jsoup.parser.Token {
         EOF() {
-            type = Token.TokenType.EOF;
+            type = edu.illinois.cs.test.generator.org.jsoup.parser.Token.TokenType.EOF;
         }
 
         @Override
-        Token reset() {
+        edu.illinois.cs.test.generator.org.jsoup.parser.Token reset() {
             return this;
         }
     }

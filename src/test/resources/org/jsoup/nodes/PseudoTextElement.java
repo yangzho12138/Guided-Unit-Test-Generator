@@ -1,10 +1,11 @@
 package org.jsoup.nodes;
 
 import org.jsoup.parser.Tag;
+import org.jsoup.select.Selector;
 
 /**
  * Represents a {@link TextNode} as an {@link Element}, to enable text nodes to be selected with
- * the {@link org.jsoup.select.Selector} {@code :matchText} syntax.
+ * the {@link Selector} {@code :matchText} syntax.
  */
 public class PseudoTextElement extends Element {
 

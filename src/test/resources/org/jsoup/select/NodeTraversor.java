@@ -1,6 +1,6 @@
 package org.jsoup.select;
 
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.select.NodeFilter.FilterResult;

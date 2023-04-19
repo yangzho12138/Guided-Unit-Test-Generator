@@ -4,8 +4,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.parser.Parser;
 import org.jsoup.safety.Cleaner;
 import org.jsoup.safety.Whitelist;
-import org.jsoup.helper.DataUtil;
-import org.jsoup.helper.HttpConnection;
+import org.jsoup.parser.helper.DataUtil;
+import org.jsoup.parser.helper.HttpConnection;
 
 import java.io.File;
 import java.io.IOException;
@@ -244,7 +244,7 @@ public class Jsoup {
      @param bodyHtml HTML to test
      @param whitelist whitelist to test against
      @return true if no tags or attributes were removed; false otherwise
-     @see #clean(String, org.jsoup.safety.Whitelist) 
+     @see #clean(String, Whitelist)
      */
     public static boolean isValid(String bodyHtml, Whitelist whitelist) {
         return new Cleaner(whitelist).isValidBodyHtml(bodyHtml);

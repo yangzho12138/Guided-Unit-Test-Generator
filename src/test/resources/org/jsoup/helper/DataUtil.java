@@ -9,6 +9,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.XmlDeclaration;
 import org.jsoup.parser.Parser;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.select.Elements;
 
 import java.io.BufferedReader;
@@ -156,7 +157,7 @@ public final class DataUtil {
                 doc = null;
             }
         } else { // specified by content type header (or by user on file load)
-            Validate.notEmpty(charsetName, "Must set charset arg to character set of file to parse. Set to null to attempt to detect from HTML");
+            org.jsoup.parser.helper.Validate.notEmpty(charsetName, "Must set charset arg to character set of file to parse. Set to null to attempt to detect from HTML");
         }
         if (doc == null) {
             if (charsetName == null)
@@ -164,7 +165,7 @@ public final class DataUtil {
             BufferedReader reader = new BufferedReader(new InputStreamReader(input, charsetName), bufferSize);
             if (bomCharset != null && bomCharset.offset) { // creating the buffered reader ignores the input pos, so must skip here
                 long skipped = reader.skip(1);
-                Validate.isTrue(skipped == 1); // WTF if this fails.
+                org.jsoup.parser.helper.Validate.isTrue(skipped == 1); // WTF if this fails.
             }
             try {
                 doc = parser.parseInput(reader, baseUri);

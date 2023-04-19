@@ -9,7 +9,7 @@ import java.io.IOException;
  A comment node.
 
  @author Jonathan Hedley, jonathan@hedley.net */
-public class Comment extends LeafNode {
+public class Comment extends edu.illinois.cs.test.generator.org.jsoup.nodes.LeafNode {
     private static final String COMMENT_KEY = "comment";
 
     /**
@@ -77,7 +77,7 @@ public class Comment extends LeafNode {
         XmlDeclaration decl = null;
         if (doc.children().size() > 0) {
             Element el = doc.child(0);
-            decl = new XmlDeclaration(NodeUtils.parser(doc).settings().normalizeTag(el.tagName()), data.startsWith("!"));
+            decl = new XmlDeclaration(edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(doc).settings().normalizeTag(el.tagName()), data.startsWith("!"));
             decl.attributes().addAll(el.attributes());
         }
         return decl;

@@ -1,6 +1,6 @@
 package org.jsoup.parser;
 
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.nodes.CDataNode;
 import org.jsoup.nodes.Comment;
 import org.jsoup.nodes.Document;
@@ -21,7 +21,7 @@ import java.util.List;
  *
  * @author Jonathan Hedley
  */
-public class XmlTreeBuilder extends TreeBuilder {
+public class XmlTreeBuilder extends edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder {
     ParseSettings defaultSettings() {
         return ParseSettings.preserveCase;
     }
@@ -42,7 +42,7 @@ public class XmlTreeBuilder extends TreeBuilder {
     }
 
     @Override
-    protected boolean process(Token token) {
+    protected boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token token) {
         // start tag, end tag, doctype, comment, character, eof
         switch (token.type) {
             case StartTag:
@@ -72,7 +72,7 @@ public class XmlTreeBuilder extends TreeBuilder {
         currentElement().appendChild(node);
     }
 
-    Element insert(Token.StartTag startTag) {
+    Element insert(edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag) {
         Tag tag = Tag.valueOf(startTag.name(), settings);
         // todo: wonder if for xml parsing, should treat all tags as unknown? because it's not html.
         startTag.attributes.deduplicate(settings);
@@ -88,7 +88,7 @@ public class XmlTreeBuilder extends TreeBuilder {
         return el;
     }
 
-    void insert(Token.Comment commentToken) {
+    void insert(edu.illinois.cs.test.generator.org.jsoup.parser.Token.Comment commentToken) {
         Comment comment = new Comment(commentToken.getData());
         Node insert = comment;
         if (commentToken.bogus && comment.isXmlDeclaration()) {
@@ -101,12 +101,12 @@ public class XmlTreeBuilder extends TreeBuilder {
         insertNode(insert);
     }
 
-    void insert(Token.Character token) {
+    void insert(edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character token) {
         final String data = token.getData();
         insertNode(token.isCData() ? new CDataNode(data) : new TextNode(data));
     }
 
-    void insert(Token.Doctype d) {
+    void insert(edu.illinois.cs.test.generator.org.jsoup.parser.Token.Doctype d) {
         DocumentType doctypeNode = new DocumentType(settings.normalizeTag(d.getName()), d.getPublicIdentifier(), d.getSystemIdentifier());
         doctypeNode.setPubSysKey(d.getPubSysKey());
         insertNode(doctypeNode);
@@ -118,7 +118,7 @@ public class XmlTreeBuilder extends TreeBuilder {
      *
      * @param endTag tag to close
      */
-    private void popStackToClose(Token.EndTag endTag) {
+    private void popStackToClose(edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag) {
         String elName = settings.normalizeTag(endTag.tagName);
         Element firstFound = null;
 

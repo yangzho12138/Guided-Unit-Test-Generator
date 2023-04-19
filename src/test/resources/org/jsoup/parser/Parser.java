@@ -1,5 +1,6 @@
 package org.jsoup.parser;
 
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
@@ -9,11 +10,11 @@ import java.io.StringReader;
 import java.util.List;
 
 /**
- * Parses HTML into a {@link org.jsoup.nodes.Document}. Generally best to use one of the  more convenient parse methods
- * in {@link org.jsoup.Jsoup}.
+ * Parses HTML into a {@link Document}. Generally best to use one of the  more convenient parse methods
+ * in {@link Jsoup}.
  */
 public class Parser {
-    private TreeBuilder treeBuilder;
+    private edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder treeBuilder;
     private ParseErrorList errors;
     private ParseSettings settings;
 
@@ -21,7 +22,7 @@ public class Parser {
      * Create a new Parser, using the specified TreeBuilder
      * @param treeBuilder TreeBuilder to use to parse input into Documents.
      */
-    public Parser(TreeBuilder treeBuilder) {
+    public Parser(edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder treeBuilder) {
         this.treeBuilder = treeBuilder;
         settings = treeBuilder.defaultSettings();
         errors = ParseErrorList.noTracking();
@@ -43,7 +44,7 @@ public class Parser {
      * Get the TreeBuilder currently in use.
      * @return current TreeBuilder.
      */
-    public TreeBuilder getTreeBuilder() {
+    public edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder getTreeBuilder() {
         return treeBuilder;
     }
 
@@ -52,7 +53,7 @@ public class Parser {
      * @param treeBuilder current TreeBuilder
      * @return this, for chaining
      */
-    public Parser setTreeBuilder(TreeBuilder treeBuilder) {
+    public Parser setTreeBuilder(edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder treeBuilder) {
         this.treeBuilder = treeBuilder;
         treeBuilder.parser = this;
         return this;
@@ -103,7 +104,7 @@ public class Parser {
      * @return parsed Document
      */
     public static Document parse(String html, String baseUri) {
-        TreeBuilder treeBuilder = new HtmlTreeBuilder();
+        edu.illinois.cs.test.generator.org.jsoup.parser.TreeBuilder treeBuilder = new HtmlTreeBuilder();
         return treeBuilder.parse(new StringReader(html), baseUri, new Parser(treeBuilder));
     }
 
@@ -181,7 +182,7 @@ public class Parser {
      * @return an unescaped string
      */
     public static String unescapeEntities(String string, boolean inAttribute) {
-        Tokeniser tokeniser = new Tokeniser(new CharacterReader(string), ParseErrorList.noTracking());
+        edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser tokeniser = new edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser(new CharacterReader(string), ParseErrorList.noTracking());
         return tokeniser.unescapeEntities(inAttribute);
     }
 

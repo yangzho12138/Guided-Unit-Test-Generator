@@ -1,7 +1,8 @@
 package org.jsoup.select;
 
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
+import org.jsoup.safety.Cleaner;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.FormElement;
 import org.jsoup.nodes.Node;
@@ -430,7 +431,7 @@ public class Elements extends ArrayList<Element> {
      * <code>doc.select("p").remove();</code><br>
      * HTML = {@code <div> <img /></div>}
      * <p>
-     * Note that this method should not be used to clean user-submitted HTML; rather, use {@link org.jsoup.safety.Cleaner} to clean HTML.
+     * Note that this method should not be used to clean user-submitted HTML; rather, use {@link Cleaner} to clean HTML.
      * @return this, for chaining
      * @see Element#empty()
      * @see #empty()

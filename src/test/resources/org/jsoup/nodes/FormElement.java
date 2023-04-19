@@ -2,8 +2,8 @@ package org.jsoup.nodes;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
-import org.jsoup.helper.HttpConnection;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.HttpConnection;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.parser.Tag;
 import org.jsoup.select.Elements;
 

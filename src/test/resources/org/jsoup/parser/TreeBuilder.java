@@ -1,6 +1,6 @@
 package org.jsoup.parser;
 
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.nodes.Attributes;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -16,15 +16,15 @@ import java.util.List;
 abstract class TreeBuilder {
     protected Parser parser;
     CharacterReader reader;
-    Tokeniser tokeniser;
+    edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser tokeniser;
     protected Document doc; // current doc we are building into
     protected ArrayList<Element> stack; // the stack of open elements
     protected String baseUri; // current base uri, for creating new elements
-    protected Token currentToken; // currentToken is used only for error tracking.
+    protected edu.illinois.cs.test.generator.org.jsoup.parser.Token currentToken; // currentToken is used only for error tracking.
     protected ParseSettings settings;
 
-    private Token.StartTag start = new Token.StartTag(); // start tag to process
-    private Token.EndTag end  = new Token.EndTag();
+    private edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag start = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag(); // start tag to process
+    private edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag end  = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag();
     abstract ParseSettings defaultSettings();
 
     protected void initialiseParse(Reader input, String baseUri, Parser parser) {
@@ -37,7 +37,7 @@ abstract class TreeBuilder {
         settings = parser.settings();
         reader = new CharacterReader(input);
         currentToken = null;
-        tokeniser = new Tokeniser(reader, parser.getErrors());
+        tokeniser = new edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser(reader, parser.getErrors());
         stack = new ArrayList<>(32);
         this.baseUri = baseUri;
     }
@@ -52,27 +52,27 @@ abstract class TreeBuilder {
 
     protected void runParser() {
         while (true) {
-            Token token = tokeniser.read();
+            edu.illinois.cs.test.generator.org.jsoup.parser.Token token = tokeniser.read();
             process(token);
             token.reset();
 
-            if (token.type == Token.TokenType.EOF)
+            if (token.type == edu.illinois.cs.test.generator.org.jsoup.parser.Token.TokenType.EOF)
                 break;
         }
     }
 
-    protected abstract boolean process(Token token);
+    protected abstract boolean process(edu.illinois.cs.test.generator.org.jsoup.parser.Token token);
 
     protected boolean processStartTag(String name) {
         if (currentToken == start) { // don't recycle an in-use token
-            return process(new Token.StartTag().name(name));
+            return process(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag().name(name));
         }
         return process(start.reset().name(name));
     }
 
     public boolean processStartTag(String name, Attributes attrs) {
         if (currentToken == start) { // don't recycle an in-use token
-            return process(new Token.StartTag().nameAttr(name, attrs));
+            return process(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag().nameAttr(name, attrs));
         }
         start.reset();
         start.nameAttr(name, attrs);
@@ -81,7 +81,7 @@ abstract class TreeBuilder {
 
     protected boolean processEndTag(String name) {
         if (currentToken == end) { // don't recycle an in-use token
-            return process(new Token.EndTag().name(name));
+            return process(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag().name(name));
         }
         return process(end.reset().name(name));
     }

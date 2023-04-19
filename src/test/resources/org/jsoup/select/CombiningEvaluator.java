@@ -38,7 +38,7 @@ abstract class CombiningEvaluator extends Evaluator {
         num = evaluators.size();
     }
 
-    static final class And extends CombiningEvaluator {
+    static final class And extends edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator {
         And(Collection<Evaluator> evaluators) {
             super(evaluators);
         }
@@ -63,7 +63,7 @@ abstract class CombiningEvaluator extends Evaluator {
         }
     }
 
-    static final class Or extends CombiningEvaluator {
+    static final class Or extends edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator {
         /**
          * Create a new Or evaluator. The initial evaluators are ANDed together and used as the first clause of the OR.
          * @param evaluators initial OR clause (these are wrapped into an AND evaluator).

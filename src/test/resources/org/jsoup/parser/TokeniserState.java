@@ -8,7 +8,7 @@ import org.jsoup.nodes.DocumentType;
 enum TokeniserState {
     Data {
         // in data state, gather characters until a character reference or tag is found
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             switch (r.current()) {
                 case '&':
                     t.advanceTransition(CharacterReferenceInData);
@@ -21,7 +21,7 @@ enum TokeniserState {
                     t.emit(r.consume());
                     break;
                 case eof:
-                    t.emit(new Token.EOF());
+                    t.emit(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EOF());
                     break;
                 default:
                     String data = r.consumeData();
@@ -32,13 +32,13 @@ enum TokeniserState {
     },
     CharacterReferenceInData {
         // from & in data
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             readCharRef(t, Data);
         }
     },
     Rcdata {
         /// handles data in title, textarea etc
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             switch (r.current()) {
                 case '&':
                     t.advanceTransition(CharacterReferenceInRcdata);
@@ -52,7 +52,7 @@ enum TokeniserState {
                     t.emit(replacementChar);
                     break;
                 case eof:
-                    t.emit(new Token.EOF());
+                    t.emit(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EOF());
                     break;
                 default:
                     String data = r.consumeToAny('&', '<', nullChar);
@@ -62,22 +62,22 @@ enum TokeniserState {
         }
     },
     CharacterReferenceInRcdata {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             readCharRef(t, Rcdata);
         }
     },
     Rawtext {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             readData(t, r, this, RawtextLessthanSign);
         }
     },
     ScriptData {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             readData(t, r, this, ScriptDataLessthanSign);
         }
     },
     PLAINTEXT {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             switch (r.current()) {
                 case nullChar:
                     t.error(this);
@@ -85,7 +85,7 @@ enum TokeniserState {
                     t.emit(replacementChar);
                     break;
                 case eof:
-                    t.emit(new Token.EOF());
+                    t.emit(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EOF());
                     break;
                 default:
                     String data = r.consumeTo(nullChar);
@@ -96,7 +96,7 @@ enum TokeniserState {
     },
     TagOpen {
         // from < in data
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             switch (r.current()) {
                 case '!':
                     t.advanceTransition(MarkupDeclarationOpen);
@@ -121,7 +121,7 @@ enum TokeniserState {
         }
     },
     EndTagOpen {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.isEmpty()) {
                 t.eofError(this);
                 t.emit("</");
@@ -140,7 +140,7 @@ enum TokeniserState {
     },
     TagName {
         // from < or </ in data, will have start or end tag pending
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             // previous TagOpen state did NOT consume, will have a letter char in current
             //String tagName = r.consumeToAnySorted(tagCharsSorted).toLowerCase();
             String tagName = r.consumeTagName();
@@ -180,7 +180,7 @@ enum TokeniserState {
     },
     RcdataLessthanSign {
         // from < in rcdata
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matches('/')) {
                 t.createTempBuffer();
                 t.advanceTransition(RCDATAEndTagOpen);
@@ -198,7 +198,7 @@ enum TokeniserState {
         }
     },
     RCDATAEndTagOpen {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matchesLetter()) {
                 t.createTagPending(false);
                 t.tagPending.appendTagName(r.current());
@@ -211,7 +211,7 @@ enum TokeniserState {
         }
     },
     RCDATAEndTagName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matchesLetter()) {
                 String name = r.consumeLetterSequence();
                 t.tagPending.appendTagName(name);
@@ -250,14 +250,14 @@ enum TokeniserState {
             }
         }
 
-        private void anythingElse(Tokeniser t, CharacterReader r) {
+        private void anythingElse(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             t.emit("</" + t.dataBuffer.toString());
             r.unconsume();
             t.transition(Rcdata);
         }
     },
     RawtextLessthanSign {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matches('/')) {
                 t.createTempBuffer();
                 t.advanceTransition(RawtextEndTagOpen);
@@ -268,17 +268,17 @@ enum TokeniserState {
         }
     },
     RawtextEndTagOpen {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             readEndTag(t, r, RawtextEndTagName, Rawtext);
         }
     },
     RawtextEndTagName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             handleDataEndTag(t, r, Rawtext);
         }
     },
     ScriptDataLessthanSign {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             switch (r.consume()) {
                 case '/':
                     t.createTempBuffer();
@@ -296,17 +296,17 @@ enum TokeniserState {
         }
     },
     ScriptDataEndTagOpen {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             readEndTag(t, r, ScriptDataEndTagName, ScriptData);
         }
     },
     ScriptDataEndTagName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             handleDataEndTag(t, r, ScriptData);
         }
     },
     ScriptDataEscapeStart {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matches('-')) {
                 t.emit('-');
                 t.advanceTransition(ScriptDataEscapeStartDash);
@@ -316,7 +316,7 @@ enum TokeniserState {
         }
     },
     ScriptDataEscapeStartDash {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matches('-')) {
                 t.emit('-');
                 t.advanceTransition(ScriptDataEscapedDashDash);
@@ -326,7 +326,7 @@ enum TokeniserState {
         }
     },
     ScriptDataEscaped {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.isEmpty()) {
                 t.eofError(this);
                 t.transition(Data);
@@ -353,7 +353,7 @@ enum TokeniserState {
         }
     },
     ScriptDataEscapedDash {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.isEmpty()) {
                 t.eofError(this);
                 t.transition(Data);
@@ -381,7 +381,7 @@ enum TokeniserState {
         }
     },
     ScriptDataEscapedDashDash {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.isEmpty()) {
                 t.eofError(this);
                 t.transition(Data);
@@ -412,7 +412,7 @@ enum TokeniserState {
         }
     },
     ScriptDataEscapedLessthanSign {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matchesLetter()) {
                 t.createTempBuffer();
                 t.dataBuffer.append(r.current());
@@ -428,7 +428,7 @@ enum TokeniserState {
         }
     },
     ScriptDataEscapedEndTagOpen {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matchesLetter()) {
                 t.createTagPending(false);
                 t.tagPending.appendTagName(r.current());
@@ -441,17 +441,17 @@ enum TokeniserState {
         }
     },
     ScriptDataEscapedEndTagName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             handleDataEndTag(t, r, ScriptDataEscaped);
         }
     },
     ScriptDataDoubleEscapeStart {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             handleDataDoubleEscapeTag(t, r, ScriptDataDoubleEscaped, ScriptDataEscaped);
         }
     },
     ScriptDataDoubleEscaped {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.current();
             switch (c) {
                 case '-':
@@ -478,7 +478,7 @@ enum TokeniserState {
         }
     },
     ScriptDataDoubleEscapedDash {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '-':
@@ -505,7 +505,7 @@ enum TokeniserState {
         }
     },
     ScriptDataDoubleEscapedDashDash {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '-':
@@ -535,7 +535,7 @@ enum TokeniserState {
         }
     },
     ScriptDataDoubleEscapedLessthanSign {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matches('/')) {
                 t.emit('/');
                 t.createTempBuffer();
@@ -546,13 +546,13 @@ enum TokeniserState {
         }
     },
     ScriptDataDoubleEscapeEnd {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             handleDataDoubleEscapeTag(t,r, ScriptDataEscaped, ScriptDataDoubleEscaped);
         }
     },
     BeforeAttributeName {
         // from tagname <xxx
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -599,7 +599,7 @@ enum TokeniserState {
     },
     AttributeName {
         // from before attribute name
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             String name = r.consumeToAnySorted(attributeNameCharsSorted);
             t.tagPending.appendAttributeName(name);
 
@@ -642,7 +642,7 @@ enum TokeniserState {
         }
     },
     AfterAttributeName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -687,7 +687,7 @@ enum TokeniserState {
         }
     },
     BeforeAttributeValue {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -736,7 +736,7 @@ enum TokeniserState {
         }
     },
     AttributeValue_doubleQuoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             String value = r.consumeToAny(attributeDoubleValueCharsSorted);
             if (value.length() > 0)
                 t.tagPending.appendAttributeValue(value);
@@ -769,7 +769,7 @@ enum TokeniserState {
         }
     },
     AttributeValue_singleQuoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             String value = r.consumeToAny(attributeSingleValueCharsSorted);
             if (value.length() > 0)
                 t.tagPending.appendAttributeValue(value);
@@ -802,7 +802,7 @@ enum TokeniserState {
         }
     },
     AttributeValue_unquoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             String value = r.consumeToAnySorted(attributeValueUnquoted);
             if (value.length() > 0)
                 t.tagPending.appendAttributeValue(value);
@@ -851,7 +851,7 @@ enum TokeniserState {
     },
     // CharacterReferenceInAttributeValue state handled inline
     AfterAttributeValue_quoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -881,7 +881,7 @@ enum TokeniserState {
         }
     },
     SelfClosingStartTag {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '>':
@@ -901,11 +901,11 @@ enum TokeniserState {
         }
     },
     BogusComment {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             // todo: handle bogus comment starting from eof. when does that trigger?
             // rewind to capture character that lead us here
             r.unconsume();
-            Token.Comment comment = new Token.Comment();
+            edu.illinois.cs.test.generator.org.jsoup.parser.Token.Comment comment = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Comment();
             comment.bogus = true;
             comment.data.append(r.consumeTo('>'));
             // todo: replace nullChar with replaceChar
@@ -914,7 +914,7 @@ enum TokeniserState {
         }
     },
     MarkupDeclarationOpen {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matchConsume("--")) {
                 t.createCommentPending();
                 t.transition(CommentStart);
@@ -933,7 +933,7 @@ enum TokeniserState {
         }
     },
     CommentStart {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '-':
@@ -961,7 +961,7 @@ enum TokeniserState {
         }
     },
     CommentStartDash {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '-':
@@ -989,7 +989,7 @@ enum TokeniserState {
         }
     },
     Comment {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.current();
             switch (c) {
                 case '-':
@@ -1011,7 +1011,7 @@ enum TokeniserState {
         }
     },
     CommentEndDash {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '-':
@@ -1034,7 +1034,7 @@ enum TokeniserState {
         }
     },
     CommentEnd {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '>':
@@ -1067,7 +1067,7 @@ enum TokeniserState {
         }
     },
     CommentEndBang {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '-':
@@ -1095,7 +1095,7 @@ enum TokeniserState {
         }
     },
     Doctype {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1122,7 +1122,7 @@ enum TokeniserState {
         }
     },
     BeforeDoctypeName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matchesLetter()) {
                 t.createDoctypePending();
                 t.transition(DoctypeName);
@@ -1157,7 +1157,7 @@ enum TokeniserState {
         }
     },
     DoctypeName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.matchesLetter()) {
                 String name = r.consumeLetterSequence();
                 t.doctypePending.name.append(name);
@@ -1192,7 +1192,7 @@ enum TokeniserState {
         }
     },
     AfterDoctypeName {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             if (r.isEmpty()) {
                 t.eofError(this);
                 t.doctypePending.forceQuirks = true;
@@ -1220,7 +1220,7 @@ enum TokeniserState {
         }
     },
     AfterDoctypePublicKeyword {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1260,7 +1260,7 @@ enum TokeniserState {
         }
     },
     BeforeDoctypePublicIdentifier {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1297,7 +1297,7 @@ enum TokeniserState {
         }
     },
     DoctypePublicIdentifier_doubleQuoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '"':
@@ -1325,7 +1325,7 @@ enum TokeniserState {
         }
     },
     DoctypePublicIdentifier_singleQuoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\'':
@@ -1353,7 +1353,7 @@ enum TokeniserState {
         }
     },
     AfterDoctypePublicIdentifier {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1391,7 +1391,7 @@ enum TokeniserState {
         }
     },
     BetweenDoctypePublicAndSystemIdentifiers {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1428,7 +1428,7 @@ enum TokeniserState {
         }
     },
     AfterDoctypeSystemKeyword {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1468,7 +1468,7 @@ enum TokeniserState {
         }
     },
     BeforeDoctypeSystemIdentifier {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1505,7 +1505,7 @@ enum TokeniserState {
         }
     },
     DoctypeSystemIdentifier_doubleQuoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '"':
@@ -1533,7 +1533,7 @@ enum TokeniserState {
         }
     },
     DoctypeSystemIdentifier_singleQuoted {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\'':
@@ -1561,7 +1561,7 @@ enum TokeniserState {
         }
     },
     AfterDoctypeSystemIdentifier {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '\t':
@@ -1588,7 +1588,7 @@ enum TokeniserState {
         }
     },
     BogusDoctype {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             char c = r.consume();
             switch (c) {
                 case '>':
@@ -1606,18 +1606,18 @@ enum TokeniserState {
         }
     },
     CdataSection {
-        void read(Tokeniser t, CharacterReader r) {
+        void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r) {
             String data = r.consumeTo("]]>");
             t.dataBuffer.append(data);
             if (r.matchConsume("]]>") || r.isEmpty()) {
-                t.emit(new Token.CData(t.dataBuffer.toString()));
+                t.emit(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.CData(t.dataBuffer.toString()));
                 t.transition(Data);
             }// otherwise, buffer underrun, stay in data section
         }
     };
 
 
-    abstract void read(Tokeniser t, CharacterReader r);
+    abstract void read(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r);
 
     static final char nullChar = '\u0000';
     // char searches. must be sorted, used in inSorted. MUST update TokenisetStateTest if more arrays are added.
@@ -1626,15 +1626,15 @@ enum TokeniserState {
     static final char[] attributeNameCharsSorted = new char[]{nullChar, '\t', '\n', '\f', '\r', ' ', '"', '\'', '/', '<', '=', '>'};
     static final char[] attributeValueUnquoted = new char[]{nullChar, '\t', '\n', '\f', '\r', ' ', '"', '&', '\'', '<', '=', '>', '`'};
 
-    private static final char replacementChar = Tokeniser.replacementChar;
-    private static final String replacementStr = String.valueOf(Tokeniser.replacementChar);
+    private static final char replacementChar = edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser.replacementChar;
+    private static final String replacementStr = String.valueOf(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser.replacementChar);
     private static final char eof = CharacterReader.EOF;
 
     /**
      * Handles RawtextEndTagName, ScriptDataEndTagName, and ScriptDataEscapedEndTagName. Same body impl, just
      * different else exit transitions.
      */
-    private static void handleDataEndTag(Tokeniser t, CharacterReader r, TokeniserState elseTransition) {
+    private static void handleDataEndTag(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState elseTransition) {
         if (r.matchesLetter()) {
             String name = r.consumeLetterSequence();
             t.tagPending.appendTagName(name);
@@ -1674,7 +1674,7 @@ enum TokeniserState {
         }
     }
 
-    private static void readData(Tokeniser t, CharacterReader r, TokeniserState current, TokeniserState advance) {
+    private static void readData(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState current, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState advance) {
         switch (r.current()) {
             case '<':
                 t.advanceTransition(advance);
@@ -1685,7 +1685,7 @@ enum TokeniserState {
                 t.emit(replacementChar);
                 break;
             case eof:
-                t.emit(new Token.EOF());
+                t.emit(new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EOF());
                 break;
             default:
                 String data = r.consumeToAny('<', nullChar); // todo - why hunt for null here? Just consumeTo'<'?
@@ -1694,7 +1694,7 @@ enum TokeniserState {
         }
     }
 
-    private static void readCharRef(Tokeniser t, TokeniserState advance) {
+    private static void readCharRef(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState advance) {
         int[] c = t.consumeCharacterReference(null, false);
         if (c == null)
             t.emit('&');
@@ -1703,7 +1703,7 @@ enum TokeniserState {
         t.transition(advance);
     }
 
-    private static void readEndTag(Tokeniser t, CharacterReader r, TokeniserState a, TokeniserState b) {
+    private static void readEndTag(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState a, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState b) {
         if (r.matchesLetter()) {
             t.createTagPending(false);
             t.transition(a);
@@ -1713,7 +1713,7 @@ enum TokeniserState {
         }
     }
 
-    private static void handleDataDoubleEscapeTag(Tokeniser t, CharacterReader r, TokeniserState primary, TokeniserState fallback) {
+    private static void handleDataDoubleEscapeTag(edu.illinois.cs.test.generator.org.jsoup.parser.Tokeniser t, CharacterReader r, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState primary, edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState fallback) {
         if (r.matchesLetter()) {
             String name = r.consumeLetterSequence();
             t.dataBuffer.append(name);

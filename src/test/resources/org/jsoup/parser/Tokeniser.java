@@ -1,7 +1,7 @@
 package org.jsoup.parser;
 
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.nodes.Entities;
 
 import java.util.Arrays;
@@ -32,19 +32,19 @@ final class Tokeniser {
     private final CharacterReader reader; // html input
     private final ParseErrorList errors; // errors found while tokenising
 
-    private TokeniserState state = TokeniserState.Data; // current tokenisation state
-    private Token emitPending; // the token we are about to emit on next read
+    private edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState state = edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState.Data; // current tokenisation state
+    private edu.illinois.cs.test.generator.org.jsoup.parser.Token emitPending; // the token we are about to emit on next read
     private boolean isEmitPending = false;
     private String charsString = null; // characters pending an emit. Will fall to charsBuilder if more than one
     private StringBuilder charsBuilder = new StringBuilder(1024); // buffers characters to output as one token, if more than one emit per read
     StringBuilder dataBuffer = new StringBuilder(1024); // buffers data looking for </script>
 
-    Token.Tag tagPending; // tag we are building up
-    Token.StartTag startPending = new Token.StartTag();
-    Token.EndTag endPending = new Token.EndTag();
-    Token.Character charPending = new Token.Character();
-    Token.Doctype doctypePending = new Token.Doctype(); // doctype building up
-    Token.Comment commentPending = new Token.Comment(); // comment building up
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Tag tagPending; // tag we are building up
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startPending = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag();
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endPending = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag();
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character charPending = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Character();
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Doctype doctypePending = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Doctype(); // doctype building up
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Comment commentPending = new edu.illinois.cs.test.generator.org.jsoup.parser.Token.Comment(); // comment building up
     private String lastStartTag; // the last start tag emitted, to test appropriate end tag
 
     Tokeniser(CharacterReader reader, ParseErrorList errors) {
@@ -52,7 +52,7 @@ final class Tokeniser {
         this.errors = errors;
     }
 
-    Token read() {
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token read() {
         while (!isEmitPending)
             state.read(this, reader);
 
@@ -63,7 +63,7 @@ final class Tokeniser {
             charsString = null;
             return charPending.data(str);
         } else if (charsString != null) {
-            Token token = charPending.data(charsString);
+            edu.illinois.cs.test.generator.org.jsoup.parser.Token token = charPending.data(charsString);
             charsString = null;
             return token;
         } else {
@@ -72,17 +72,17 @@ final class Tokeniser {
         }
     }
 
-    void emit(Token token) {
+    void emit(edu.illinois.cs.test.generator.org.jsoup.parser.Token token) {
         Validate.isFalse(isEmitPending, "There is an unread token pending!");
 
         emitPending = token;
         isEmitPending = true;
 
-        if (token.type == Token.TokenType.StartTag) {
-            Token.StartTag startTag = (Token.StartTag) token;
+        if (token.type == edu.illinois.cs.test.generator.org.jsoup.parser.Token.TokenType.StartTag) {
+            edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag startTag = (edu.illinois.cs.test.generator.org.jsoup.parser.Token.StartTag) token;
             lastStartTag = startTag.tagName;
-        } else if (token.type == Token.TokenType.EndTag) {
-            Token.EndTag endTag = (Token.EndTag) token;
+        } else if (token.type == edu.illinois.cs.test.generator.org.jsoup.parser.Token.TokenType.EndTag) {
+            edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag endTag = (edu.illinois.cs.test.generator.org.jsoup.parser.Token.EndTag) token;
             if (endTag.attributes != null)
                 error("Attributes incorrectly present on end tag");
         }
@@ -114,15 +114,15 @@ final class Tokeniser {
         emit(String.valueOf(c));
     }
 
-    TokeniserState getState() {
+    edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState getState() {
         return state;
     }
 
-    void transition(TokeniserState state) {
+    void transition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState state) {
         this.state = state;
     }
 
-    void advanceTransition(TokeniserState state) {
+    void advanceTransition(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState state) {
         reader.advance();
         this.state = state;
     }
@@ -204,7 +204,7 @@ final class Tokeniser {
         }
     }
 
-    Token.Tag createTagPending(boolean start) {
+    edu.illinois.cs.test.generator.org.jsoup.parser.Token.Tag createTagPending(boolean start) {
         tagPending = start ? startPending.reset() : endPending.reset();
         return tagPending;
     }
@@ -231,7 +231,7 @@ final class Tokeniser {
     }
 
     void createTempBuffer() {
-        Token.reset(dataBuffer);
+        edu.illinois.cs.test.generator.org.jsoup.parser.Token.reset(dataBuffer);
     }
 
     boolean isAppropriateEndTagToken() {
@@ -242,12 +242,12 @@ final class Tokeniser {
         return lastStartTag; // could be null
     }
 
-    void error(TokeniserState state) {
+    void error(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState state) {
         if (errors.canAddError())
             errors.add(new ParseError(reader.pos(), "Unexpected character '%s' in input state [%s]", reader.current(), state));
     }
 
-    void eofError(TokeniserState state) {
+    void eofError(edu.illinois.cs.test.generator.org.jsoup.parser.TokeniserState state) {
         if (errors.canAddError())
             errors.add(new ParseError(reader.pos(), "Unexpectedly reached end of file (EOF) in input state [%s]", state));
     }

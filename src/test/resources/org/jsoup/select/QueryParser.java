@@ -1,7 +1,7 @@
 package org.jsoup.select;
 
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.parser.TokenQueue;
 
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ public class QueryParser {
         tq.consumeWhitespace();
 
         if (tq.matchesAny(combinators)) { // if starts with a combinator, use root as elements
-            evals.add(new StructuralEvaluator.Root());
+            evals.add(new edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator.Root());
             combinator(tq.consume());
         } else {
             findElements();
@@ -75,7 +75,7 @@ public class QueryParser {
         if (evals.size() == 1)
             return evals.get(0);
 
-        return new CombiningEvaluator.And(evals);
+        return new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.And(evals);
     }
 
     private void combinator(char combinator) {
@@ -90,32 +90,32 @@ public class QueryParser {
         if (evals.size() == 1) {
             rootEval = currentEval = evals.get(0);
             // make sure OR (,) has precedence:
-            if (rootEval instanceof CombiningEvaluator.Or && combinator != ',') {
-                currentEval = ((CombiningEvaluator.Or) currentEval).rightMostEvaluator();
+            if (rootEval instanceof edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or && combinator != ',') {
+                currentEval = ((edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or) currentEval).rightMostEvaluator();
                 replaceRightMost = true;
             }
         }
         else {
-            rootEval = currentEval = new CombiningEvaluator.And(evals);
+            rootEval = currentEval = new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.And(evals);
         }
         evals.clear();
 
         // for most combinators: change the current eval into an AND of the current eval and the new eval
         if (combinator == '>')
-            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediateParent(currentEval));
+            currentEval = new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.And(newEval, new edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator.ImmediateParent(currentEval));
         else if (combinator == ' ')
-            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.Parent(currentEval));
+            currentEval = new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.And(newEval, new edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator.Parent(currentEval));
         else if (combinator == '+')
-            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.ImmediatePreviousSibling(currentEval));
+            currentEval = new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.And(newEval, new edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator.ImmediatePreviousSibling(currentEval));
         else if (combinator == '~')
-            currentEval = new CombiningEvaluator.And(newEval, new StructuralEvaluator.PreviousSibling(currentEval));
+            currentEval = new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.And(newEval, new edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator.PreviousSibling(currentEval));
         else if (combinator == ',') { // group or.
-            CombiningEvaluator.Or or;
-            if (currentEval instanceof CombiningEvaluator.Or) {
-                or = (CombiningEvaluator.Or) currentEval;
+            edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or or;
+            if (currentEval instanceof edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or) {
+                or = (edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or) currentEval;
                 or.add(newEval);
             } else {
-                or = new CombiningEvaluator.Or();
+                or = new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or();
                 or.add(currentEval);
                 or.add(newEval);
             }
@@ -125,7 +125,7 @@ public class QueryParser {
             throw new Selector.SelectorParseException("Unknown combinator: " + combinator);
 
         if (replaceRightMost)
-            ((CombiningEvaluator.Or) rootEval).replaceRightMostEvaluator(currentEval);
+            ((edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or) rootEval).replaceRightMostEvaluator(currentEval);
         else rootEval = currentEval;
         evals.add(rootEval);
     }
@@ -226,7 +226,7 @@ public class QueryParser {
 
         // namespaces: wildcard match equals(tagName) or ending in ":"+tagName
         if (tagName.startsWith("*|")) {
-            evals.add(new CombiningEvaluator.Or(new Evaluator.Tag(normalize(tagName)), new Evaluator.TagEndsWith(normalize(tagName.replace("*|", ":")))));
+            evals.add(new edu.illinois.cs.test.generator.org.jsoup.select.CombiningEvaluator.Or(new Evaluator.Tag(normalize(tagName)), new Evaluator.TagEndsWith(normalize(tagName.replace("*|", ":")))));
         } else {
             // namespaces: if element name is "abc:def", selector must be "abc|def", so flip:
             if (tagName.contains("|"))
@@ -335,7 +335,7 @@ public class QueryParser {
         tq.consume(":has");
         String subQuery = tq.chompBalanced('(', ')');
         Validate.notEmpty(subQuery, ":has(el) subselect must not be empty");
-        evals.add(new StructuralEvaluator.Has(parse(subQuery)));
+        evals.add(new edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator.Has(parse(subQuery)));
     }
 
     // pseudo selector :contains(text), containsOwn(text)
@@ -375,6 +375,6 @@ public class QueryParser {
         String subQuery = tq.chompBalanced('(', ')');
         Validate.notEmpty(subQuery, ":not(selector) subselect must not be empty");
 
-        evals.add(new StructuralEvaluator.Not(parse(subQuery)));
+        evals.add(new edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator.Not(parse(subQuery)));
     }
 }

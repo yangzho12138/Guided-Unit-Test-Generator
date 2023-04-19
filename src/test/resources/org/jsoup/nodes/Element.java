@@ -1,7 +1,7 @@
 package org.jsoup.nodes;
 
-import org.jsoup.helper.ChangeNotifyingArrayList;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.ChangeNotifyingArrayList;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.internal.StringUtil;
 import org.jsoup.parser.ParseSettings;
 import org.jsoup.parser.Tag;
@@ -151,7 +151,7 @@ public class Element extends Node {
      */
     public Element tagName(String tagName) {
         Validate.notEmpty(tagName, "Tag name must not be empty.");
-        tag = Tag.valueOf(tagName, NodeUtils.parser(this).settings()); // maintains the case option of the original parse
+        tag = Tag.valueOf(tagName, edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).settings()); // maintains the case option of the original parse
         return this;
     }
 
@@ -361,12 +361,12 @@ public class Element extends Node {
      * <li>{@code el.select("a[href*=example.com]")} - finds links pointing to example.com (loosely)
      * </ul>
      * <p>
-     * See the query syntax documentation in {@link org.jsoup.select.Selector}.
+     * See the query syntax documentation in {@link Selector}.
      * </p>
      * 
      * @param cssQuery a {@link Selector} CSS-like query
      * @return elements that match the query (empty if none match)
-     * @see org.jsoup.select.Selector
+     * @see Selector
      * @throws Selector.SelectorParseException (unchecked) on an invalid CSS query.
      */
     public Elements select(String cssQuery) {
@@ -493,7 +493,7 @@ public class Element extends Node {
      *  {@code parent.appendElement("h1").attr("id", "header").text("Welcome");}
      */
     public Element appendElement(String tagName) {
-        Element child = new Element(Tag.valueOf(tagName, NodeUtils.parser(this).settings()), baseUri());
+        Element child = new Element(Tag.valueOf(tagName, edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).settings()), baseUri());
         appendChild(child);
         return child;
     }
@@ -506,7 +506,7 @@ public class Element extends Node {
      *  {@code parent.prependElement("h1").attr("id", "header").text("Welcome");}
      */
     public Element prependElement(String tagName) {
-        Element child = new Element(Tag.valueOf(tagName, NodeUtils.parser(this).settings()), baseUri());
+        Element child = new Element(Tag.valueOf(tagName, edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).settings()), baseUri());
         prependChild(child);
         return child;
     }
@@ -545,7 +545,7 @@ public class Element extends Node {
      */
     public Element append(String html) {
         Validate.notNull(html);
-        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
+        List<Node> nodes = edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
         addChildren(nodes.toArray(new Node[0]));
         return this;
     }
@@ -558,7 +558,7 @@ public class Element extends Node {
      */
     public Element prepend(String html) {
         Validate.notNull(html);
-        List<Node> nodes = NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
+        List<Node> nodes = edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.parser(this).parseFragmentInput(html, this, baseUri());
         addChildren(0, nodes.toArray(new Node[0]));
         return this;
     }
@@ -1437,7 +1437,7 @@ public class Element extends Node {
         StringBuilder accum = StringUtil.borrowBuilder();
         html(accum);
         String html = StringUtil.releaseBuilder(accum);
-        return NodeUtils.outputSettings(this).prettyPrint() ? html.trim() : html;
+        return edu.illinois.cs.test.generator.org.jsoup.nodes.NodeUtils.outputSettings(this).prettyPrint() ? html.trim() : html;
     }
 
     @Override

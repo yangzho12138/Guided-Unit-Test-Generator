@@ -14,7 +14,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
     }
 
-    static class Has extends StructuralEvaluator {
+    static class Has extends edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator {
         public Has(Evaluator evaluator) {
             this.evaluator = evaluator;
         }
@@ -33,7 +33,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
     }
 
-    static class Not extends StructuralEvaluator {
+    static class Not extends edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator {
         public Not(Evaluator evaluator) {
             this.evaluator = evaluator;
         }
@@ -48,7 +48,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
     }
 
-    static class Parent extends StructuralEvaluator {
+    static class Parent extends edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator {
         public Parent(Evaluator evaluator) {
             this.evaluator = evaluator;
         }
@@ -74,7 +74,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
     }
 
-    static class ImmediateParent extends StructuralEvaluator {
+    static class ImmediateParent extends edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator {
         public ImmediateParent(Evaluator evaluator) {
             this.evaluator = evaluator;
         }
@@ -93,7 +93,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
     }
 
-    static class PreviousSibling extends StructuralEvaluator {
+    static class PreviousSibling extends edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator {
         public PreviousSibling(Evaluator evaluator) {
             this.evaluator = evaluator;
         }
@@ -119,7 +119,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
     }
 
-    static class ImmediatePreviousSibling extends StructuralEvaluator {
+    static class ImmediatePreviousSibling extends edu.illinois.cs.test.generator.org.jsoup.select.StructuralEvaluator {
         public ImmediatePreviousSibling(Evaluator evaluator) {
             this.evaluator = evaluator;
         }

@@ -1,7 +1,7 @@
 package org.jsoup.nodes;
 
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.nodes.Document.OutputSettings.Syntax;
 
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * A {@code <!DOCTYPE>} node.
  */
-public class DocumentType extends LeafNode {
+public class DocumentType extends edu.illinois.cs.test.generator.org.jsoup.nodes.LeafNode {
     // todo needs a bit of a chunky cleanup. this level of detail isn't needed
     public static final String PUBLIC_KEY = "PUBLIC";
     public static final String SYSTEM_KEY = "SYSTEM";

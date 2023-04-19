@@ -1,5 +1,6 @@
 package org.jsoup;
 
+import org.jsoup.parser.helper.HttpConnection;
 import org.jsoup.nodes.Document;
 import org.jsoup.parser.Parser;
 
@@ -16,7 +17,7 @@ import java.util.Map;
 /**
  * A Connection provides a convenient interface to fetch content from the web, and parse them into Documents.
  * <p>
- * To get a new Connection, use {@link org.jsoup.Jsoup#connect(String)}. Connections contain {@link Connection.Request}
+ * To get a new Connection, use {@link Jsoup#connect(String)}. Connections contain {@link Connection.Request}
  * and {@link Connection.Response} objects. The request objects are reusable as prototype requests.
  * </p>
  * <p>
@@ -81,7 +82,7 @@ public interface Connection {
      * Set the request user-agent header.
      * @param userAgent user-agent to use
      * @return this Connection, for chaining
-     * @see org.jsoup.helper.HttpConnection#DEFAULT_UA
+     * @see HttpConnection#DEFAULT_UA
      */
     Connection userAgent(String userAgent);
 
@@ -234,7 +235,7 @@ public interface Connection {
      * @param name header name
      * @param value header value
      * @return this Connection, for chaining
-     * @see org.jsoup.Connection.Request#headers()
+     * @see Connection.Request#headers()
      */
     Connection header(String name, String value);
 
@@ -242,7 +243,7 @@ public interface Connection {
      * Adds each of the supplied headers to the request.
      * @param headers map of headers name {@literal ->} value pairs
      * @return this Connection, for chaining
-     * @see org.jsoup.Connection.Request#headers()
+     * @see Connection.Request#headers()
      */
     Connection headers(Map<String,String> headers);
 

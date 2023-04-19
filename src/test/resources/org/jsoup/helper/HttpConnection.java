@@ -1,6 +1,7 @@
 package org.jsoup.helper;
 
 import org.jsoup.Connection;
+import org.jsoup.Jsoup;
 import org.jsoup.HttpStatusException;
 import org.jsoup.UncheckedIOException;
 import org.jsoup.UnsupportedMimeTypeException;
@@ -9,6 +10,8 @@ import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.parser.Parser;
 import org.jsoup.parser.TokenQueue;
+import org.jsoup.parser.helper.DataUtil;
+import org.jsoup.parser.helper.Validate;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLSocketFactory;
@@ -48,7 +51,7 @@ import static org.jsoup.internal.Normalizer.lowerCase;
 
 /**
  * Implementation of {@link Connection}.
- * @see org.jsoup.Jsoup#connect(String)
+ * @see Jsoup#connect(String)
  */
 public class HttpConnection implements Connection {
     public static final String CONTENT_ENCODING = "Content-Encoding";
@@ -66,13 +69,13 @@ public class HttpConnection implements Connection {
     private static final String DefaultUploadType = "application/octet-stream";
 
     public static Connection connect(String url) {
-        Connection con = new HttpConnection();
+        Connection con = new org.jsoup.parser.helper.HttpConnection();
         con.url(url);
         return con;
     }
 
     public static Connection connect(URL url) {
-        Connection con = new HttpConnection();
+        Connection con = new org.jsoup.parser.helper.HttpConnection();
         con.url(url);
         return con;
     }
@@ -124,7 +127,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection url(String url) {
-        Validate.notEmpty(url, "Must supply a valid URL");
+        org.jsoup.parser.helper.Validate.notEmpty(url, "Must supply a valid URL");
         try {
             req.url(new URL(encodeUrl(url)));
         } catch (MalformedURLException e) {
@@ -144,7 +147,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection userAgent(String userAgent) {
-        Validate.notNull(userAgent, "User agent must not be null");
+        org.jsoup.parser.helper.Validate.notNull(userAgent, "User agent must not be null");
         req.header(USER_AGENT, userAgent);
         return this;
     }
@@ -165,7 +168,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection referrer(String referrer) {
-        Validate.notNull(referrer, "Referrer must not be null");
+        org.jsoup.parser.helper.Validate.notNull(referrer, "Referrer must not be null");
         req.header("Referer", referrer);
         return this;
     }
@@ -208,7 +211,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection data(Map<String, String> data) {
-        Validate.notNull(data, "Data map must not be null");
+        org.jsoup.parser.helper.Validate.notNull(data, "Data map must not be null");
         for (Map.Entry<String, String> entry : data.entrySet()) {
             req.data(KeyVal.create(entry.getKey(), entry.getValue()));
         }
@@ -216,20 +219,20 @@ public class HttpConnection implements Connection {
     }
 
     public Connection data(String... keyvals) {
-        Validate.notNull(keyvals, "Data key value pairs must not be null");
-        Validate.isTrue(keyvals.length %2 == 0, "Must supply an even number of key value pairs");
+        org.jsoup.parser.helper.Validate.notNull(keyvals, "Data key value pairs must not be null");
+        org.jsoup.parser.helper.Validate.isTrue(keyvals.length %2 == 0, "Must supply an even number of key value pairs");
         for (int i = 0; i < keyvals.length; i += 2) {
             String key = keyvals[i];
             String value = keyvals[i+1];
-            Validate.notEmpty(key, "Data key must not be empty");
-            Validate.notNull(value, "Data value must not be null");
+            org.jsoup.parser.helper.Validate.notEmpty(key, "Data key must not be empty");
+            org.jsoup.parser.helper.Validate.notNull(value, "Data value must not be null");
             req.data(KeyVal.create(key, value));
         }
         return this;
     }
 
     public Connection data(Collection<Connection.KeyVal> data) {
-        Validate.notNull(data, "Data collection must not be null");
+        org.jsoup.parser.helper.Validate.notNull(data, "Data collection must not be null");
         for (Connection.KeyVal entry: data) {
             req.data(entry);
         }
@@ -237,7 +240,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection.KeyVal data(String key) {
-        Validate.notEmpty(key, "Data key must not be empty");
+        org.jsoup.parser.helper.Validate.notEmpty(key, "Data key must not be empty");
         for (Connection.KeyVal keyVal : request().data()) {
             if (keyVal.key().equals(key))
                 return keyVal;
@@ -256,7 +259,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection headers(Map<String,String> headers) {
-        Validate.notNull(headers, "Header map must not be null");
+        org.jsoup.parser.helper.Validate.notNull(headers, "Header map must not be null");
         for (Map.Entry<String,String> entry : headers.entrySet()) {
             req.header(entry.getKey(),entry.getValue());
         }
@@ -269,7 +272,7 @@ public class HttpConnection implements Connection {
     }
 
     public Connection cookies(Map<String, String> cookies) {
-        Validate.notNull(cookies, "Cookie map must not be null");
+        org.jsoup.parser.helper.Validate.notNull(cookies, "Cookie map must not be null");
         for (Map.Entry<String, String> entry : cookies.entrySet()) {
             req.cookie(entry.getKey(), entry.getValue());
         }
@@ -338,7 +341,7 @@ public class HttpConnection implements Connection {
         }
 
         public T url(URL url) {
-            Validate.notNull(url, "URL must not be null");
+            org.jsoup.parser.helper.Validate.notNull(url, "URL must not be null");
             this.url = url;
             return (T) this;
         }
@@ -348,13 +351,13 @@ public class HttpConnection implements Connection {
         }
 
         public T method(Method method) {
-            Validate.notNull(method, "Method must not be null");
+            org.jsoup.parser.helper.Validate.notNull(method, "Method must not be null");
             this.method = method;
             return (T) this;
         }
 
         public String header(String name) {
-            Validate.notNull(name, "Header name must not be null");
+            org.jsoup.parser.helper.Validate.notNull(name, "Header name must not be null");
             List<String> vals = getHeadersCaseInsensitive(name);
             if (vals.size() > 0) {
                 // https://www.w3.org/Protocols/rfc2616/rfc2616-sec4.html#sec4.2
@@ -366,7 +369,7 @@ public class HttpConnection implements Connection {
 
         @Override
         public T addHeader(String name, String value) {
-            Validate.notEmpty(name);
+            org.jsoup.parser.helper.Validate.notEmpty(name);
             value = value == null ? "" : value;
 
             List<String> values = headers(name);
@@ -381,7 +384,7 @@ public class HttpConnection implements Connection {
 
         @Override
         public List<String> headers(String name) {
-            Validate.notEmpty(name);
+            org.jsoup.parser.helper.Validate.notEmpty(name);
             return getHeadersCaseInsensitive(name);
         }
 
@@ -438,14 +441,14 @@ public class HttpConnection implements Connection {
         }
 
         public T header(String name, String value) {
-            Validate.notEmpty(name, "Header name must not be empty");
+            org.jsoup.parser.helper.Validate.notEmpty(name, "Header name must not be empty");
             removeHeader(name); // ensures we don't get an "accept-encoding" and a "Accept-Encoding"
             addHeader(name, value);
             return (T) this;
         }
 
         public boolean hasHeader(String name) {
-            Validate.notEmpty(name, "Header name must not be empty");
+            org.jsoup.parser.helper.Validate.notEmpty(name, "Header name must not be empty");
             return !getHeadersCaseInsensitive(name).isEmpty();
         }
 
@@ -453,8 +456,8 @@ public class HttpConnection implements Connection {
          * Test if the request has a header with this value (case insensitive).
          */
         public boolean hasHeaderWithValue(String name, String value) {
-            Validate.notEmpty(name);
-            Validate.notEmpty(value);
+            org.jsoup.parser.helper.Validate.notEmpty(name);
+            org.jsoup.parser.helper.Validate.notEmpty(value);
             List<String> values = headers(name);
             for (String candidate : values) {
                 if (value.equalsIgnoreCase(candidate))
@@ -464,7 +467,7 @@ public class HttpConnection implements Connection {
         }
 
         public T removeHeader(String name) {
-            Validate.notEmpty(name, "Header name must not be empty");
+            org.jsoup.parser.helper.Validate.notEmpty(name, "Header name must not be empty");
             Map.Entry<String, List<String>> entry = scanHeaders(name); // remove is case insensitive too
             if (entry != null)
                 headers.remove(entry.getKey()); // ensures correct case
@@ -488,7 +491,7 @@ public class HttpConnection implements Connection {
         }
 
         private List<String> getHeadersCaseInsensitive(String name) {
-            Validate.notNull(name);
+            org.jsoup.parser.helper.Validate.notNull(name);
 
             for (Map.Entry<String, List<String>> entry : headers.entrySet()) {
                 if (name.equalsIgnoreCase(entry.getKey()))
@@ -508,24 +511,24 @@ public class HttpConnection implements Connection {
         }
 
         public String cookie(String name) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            org.jsoup.parser.helper.Validate.notEmpty(name, "Cookie name must not be empty");
             return cookies.get(name);
         }
 
         public T cookie(String name, String value) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
-            Validate.notNull(value, "Cookie value must not be null");
+            org.jsoup.parser.helper.Validate.notEmpty(name, "Cookie name must not be empty");
+            org.jsoup.parser.helper.Validate.notNull(value, "Cookie value must not be null");
             cookies.put(name, value);
             return (T) this;
         }
 
         public boolean hasCookie(String name) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            org.jsoup.parser.helper.Validate.notEmpty(name, "Cookie name must not be empty");
             return cookies.containsKey(name);
         }
 
         public T removeCookie(String name) {
-            Validate.notEmpty(name, "Cookie name must not be empty");
+            org.jsoup.parser.helper.Validate.notEmpty(name, "Cookie name must not be empty");
             cookies.remove(name);
             return (T) this;
         }
@@ -535,7 +538,7 @@ public class HttpConnection implements Connection {
         }
     }
 
-    public static class Request extends HttpConnection.Base<Connection.Request> implements Connection.Request {
+    public static class Request extends org.jsoup.parser.helper.HttpConnection.Base<Connection.Request> implements Connection.Request {
         private Proxy proxy; // nullable
         private int timeoutMilliseconds;
         private int maxBodySizeBytes;
@@ -546,7 +549,7 @@ public class HttpConnection implements Connection {
         private boolean ignoreContentType = false;
         private Parser parser;
         private boolean parserDefined = false; // called parser(...) vs initialized in ctor
-        private String postDataCharset = DataUtil.defaultCharset;
+        private String postDataCharset = org.jsoup.parser.helper.DataUtil.defaultCharset;
         private SSLSocketFactory sslSocketFactory;
 
         Request() {
@@ -579,7 +582,7 @@ public class HttpConnection implements Connection {
         }
 
         public Request timeout(int millis) {
-            Validate.isTrue(millis >= 0, "Timeout milliseconds must be 0 (infinite) or greater");
+            org.jsoup.parser.helper.Validate.isTrue(millis >= 0, "Timeout milliseconds must be 0 (infinite) or greater");
             timeoutMilliseconds = millis;
             return this;
         }
@@ -589,7 +592,7 @@ public class HttpConnection implements Connection {
         }
 
         public Connection.Request maxBodySize(int bytes) {
-            Validate.isTrue(bytes >= 0, "maxSize must be 0 (unlimited) or larger");
+            org.jsoup.parser.helper.Validate.isTrue(bytes >= 0, "maxSize must be 0 (unlimited) or larger");
             maxBodySizeBytes = bytes;
             return this;
         }
@@ -630,7 +633,7 @@ public class HttpConnection implements Connection {
         }
 
         public Request data(Connection.KeyVal keyval) {
-            Validate.notNull(keyval, "Key val must not be null");
+            org.jsoup.parser.helper.Validate.notNull(keyval, "Key val must not be null");
             data.add(keyval);
             return this;
         }
@@ -659,7 +662,7 @@ public class HttpConnection implements Connection {
         }
 
         public Connection.Request postDataCharset(String charset) {
-            Validate.notNull(charset, "Charset must not be null");
+            org.jsoup.parser.helper.Validate.notNull(charset, "Charset must not be null");
             if (!Charset.isSupported(charset)) throw new IllegalCharsetNameException(charset);
             this.postDataCharset = charset;
             return this;
@@ -670,7 +673,7 @@ public class HttpConnection implements Connection {
         }
     }
 
-    public static class Response extends HttpConnection.Base<Connection.Response> implements Connection.Response {
+    public static class Response extends org.jsoup.parser.helper.HttpConnection.Base<Connection.Response> implements Connection.Response {
         private static final int MAX_REDIRECTS = 20;
         private static final String LOCATION = "Location";
         private int statusCode;
@@ -708,15 +711,15 @@ public class HttpConnection implements Connection {
         }
 
         static Response execute(Connection.Request req, Response previousResponse) throws IOException {
-            Validate.notNull(req, "Request must not be null");
-            Validate.notNull(req.url(), "URL must be specified to connect");
+            org.jsoup.parser.helper.Validate.notNull(req, "Request must not be null");
+            org.jsoup.parser.helper.Validate.notNull(req.url(), "URL must be specified to connect");
             String protocol = req.url().getProtocol();
             if (!protocol.equals("http") && !protocol.equals("https"))
                 throw new MalformedURLException("Only http & https protocols supported");
             final boolean methodHasBody = req.method().hasBody();
             final boolean hasRequestBody = req.requestBody() != null;
             if (!methodHasBody)
-                Validate.isFalse(hasRequestBody, "Cannot set a request body for HTTP method " + req.method());
+                org.jsoup.parser.helper.Validate.isFalse(hasRequestBody, "Cannot set a request body for HTTP method " + req.method());
 
             // set up the request for execution
             String mimeBoundary = null;
@@ -774,12 +777,12 @@ public class HttpConnection implements Connection {
                 // switch to the XML parser if content type is xml and not parser not explicitly set
                 if (contentType != null && xmlContentTypeRxp.matcher(contentType).matches()) {
                     // only flip it if a HttpConnection.Request (i.e. don't presume other impls want it):
-                    if (req instanceof HttpConnection.Request && !((Request) req).parserDefined) {
+                    if (req instanceof org.jsoup.parser.helper.HttpConnection.Request && !((Request) req).parserDefined) {
                         req.parser(Parser.xmlParser());
                     }
                 }
 
-                res.charset = DataUtil.getCharsetFromContentType(res.contentType); // may be null, readInputStream deals with it
+                res.charset = org.jsoup.parser.helper.DataUtil.getCharsetFromContentType(res.contentType); // may be null, readInputStream deals with it
                 if (conn.getContentLength() != 0 && req.method() != HEAD) { // -1 means unknown, chunked. sun throws an IO exception on 500 response with no content when trying to read body
                     res.bodyStream = null;
                     res.bodyStream = conn.getErrorStream() != null ? conn.getErrorStream() : conn.getInputStream();
@@ -789,11 +792,11 @@ public class HttpConnection implements Connection {
                         res.bodyStream = new InflaterInputStream(res.bodyStream, new Inflater(true));
                     }
                     res.bodyStream = ConstrainableInputStream
-                        .wrap(res.bodyStream, DataUtil.bufferSize, req.maxBodySize())
+                        .wrap(res.bodyStream, org.jsoup.parser.helper.DataUtil.bufferSize, req.maxBodySize())
                         .timeout(startTime, req.timeout())
                     ;
                 } else {
-                    res.byteData = DataUtil.emptyByteBuffer();
+                    res.byteData = org.jsoup.parser.helper.DataUtil.emptyByteBuffer();
                 }
             } catch (IOException e){
                 // per Java's documentation, this is not necessary, and precludes keepalives. However in practice,
@@ -828,13 +831,13 @@ public class HttpConnection implements Connection {
         }
 
         public Document parse() throws IOException {
-            Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before parsing response");
+            org.jsoup.parser.helper.Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before parsing response");
             if (byteData != null) { // bytes have been read in to the buffer, parse that
                 bodyStream = new ByteArrayInputStream(byteData.array());
                 inputStreamRead = false; // ok to reparse if in bytes
             }
-            Validate.isFalse(inputStreamRead, "Input stream already read and parsed, cannot re-read.");
-            Document doc = DataUtil.parseInputStream(bodyStream, charset, url.toExternalForm(), req.parser());
+            org.jsoup.parser.helper.Validate.isFalse(inputStreamRead, "Input stream already read and parsed, cannot re-read.");
+            Document doc = org.jsoup.parser.helper.DataUtil.parseInputStream(bodyStream, charset, url.toExternalForm(), req.parser());
             charset = doc.outputSettings().charset().name(); // update charset from meta-equiv, possibly
             inputStreamRead = true;
             safeClose();
@@ -842,11 +845,11 @@ public class HttpConnection implements Connection {
         }
 
         private void prepareByteData() {
-            Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before getting response body");
+            org.jsoup.parser.helper.Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before getting response body");
             if (byteData == null) {
-                Validate.isFalse(inputStreamRead, "Request has already been read (with .parse())");
+                org.jsoup.parser.helper.Validate.isFalse(inputStreamRead, "Request has already been read (with .parse())");
                 try {
-                    byteData = DataUtil.readToByteBuffer(bodyStream, req.maxBodySize());
+                    byteData = org.jsoup.parser.helper.DataUtil.readToByteBuffer(bodyStream, req.maxBodySize());
                 } catch (IOException e) {
                     throw new UncheckedIOException(e);
                 } finally {
@@ -861,7 +864,7 @@ public class HttpConnection implements Connection {
             // charset gets set from header on execute, and from meta-equiv on parse. parse may not have happened yet
             String body;
             if (charset == null)
-                body = Charset.forName(DataUtil.defaultCharset).decode(byteData).toString();
+                body = Charset.forName(org.jsoup.parser.helper.DataUtil.defaultCharset).decode(byteData).toString();
             else
                 body = Charset.forName(charset).decode(byteData).toString();
             ((Buffer)byteData).rewind(); // cast to avoid covariant return type change in jdk9
@@ -881,10 +884,10 @@ public class HttpConnection implements Connection {
 
         @Override
         public BufferedInputStream bodyStream() {
-            Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before getting response body");
-            Validate.isFalse(inputStreamRead, "Request has already been read");
+            org.jsoup.parser.helper.Validate.isTrue(executed, "Request must be executed (with .execute(), .get(), or .post() before getting response body");
+            org.jsoup.parser.helper.Validate.isFalse(inputStreamRead, "Request has already been read");
             inputStreamRead = true;
-            return ConstrainableInputStream.wrap(bodyStream, DataUtil.bufferSize, req.maxBodySize());
+            return ConstrainableInputStream.wrap(bodyStream, org.jsoup.parser.helper.DataUtil.bufferSize, req.maxBodySize());
         }
 
         // set up connection defaults, and details from request
@@ -934,7 +937,7 @@ public class HttpConnection implements Connection {
         }
 
         // set up url, method, header, cookies
-        private void setupFromConnection(HttpURLConnection conn, HttpConnection.Response previousResponse) throws IOException {
+        private void setupFromConnection(HttpURLConnection conn, org.jsoup.parser.helper.HttpConnection.Response previousResponse) throws IOException {
             this.conn = conn;
             method = Method.valueOf(conn.getRequestMethod());
             url = conn.getURL();
@@ -1014,13 +1017,13 @@ public class HttpConnection implements Connection {
                 // if user has set content type to multipart/form-data, auto add boundary.
                 if(req.header(CONTENT_TYPE).contains(MULTIPART_FORM_DATA) &&
                         !req.header(CONTENT_TYPE).contains("boundary")) {
-                    bound = DataUtil.mimeBoundary();
+                    bound = org.jsoup.parser.helper.DataUtil.mimeBoundary();
                     req.header(CONTENT_TYPE, MULTIPART_FORM_DATA + "; boundary=" + bound);
                 }
 
             }
             else if (needsMultipart(req)) {
-                bound = DataUtil.mimeBoundary();
+                bound = org.jsoup.parser.helper.DataUtil.mimeBoundary();
                 req.header(CONTENT_TYPE, MULTIPART_FORM_DATA + "; boundary=" + bound);
             } else {
                 req.header(CONTENT_TYPE, FORM_URL_ENCODED + "; charset=" + req.postDataCharset());
@@ -1048,7 +1051,7 @@ public class HttpConnection implements Connection {
                         w.write(keyVal.contentType() != null ? keyVal.contentType() : DefaultUploadType);
                         w.write("\r\n\r\n");
                         w.flush(); // flush
-                        DataUtil.crossStreams(keyVal.inputStream(), outputStream);
+                        org.jsoup.parser.helper.DataUtil.crossStreams(keyVal.inputStream(), outputStream);
                         outputStream.flush();
                     } else {
                         w.write("\r\n\r\n");
@@ -1111,13 +1114,13 @@ public class HttpConnection implements Connection {
                 first = false;
             }
             for (Connection.KeyVal keyVal : req.data()) {
-                Validate.isFalse(keyVal.hasInputStream(), "InputStream data not supported in URL query string.");
+                org.jsoup.parser.helper.Validate.isFalse(keyVal.hasInputStream(), "InputStream data not supported in URL query string.");
                 if (!first)
                     url.append('&');
                 else
                     first = false;
                 url
-                    .append(URLEncoder.encode(keyVal.key(), DataUtil.defaultCharset))
+                    .append(URLEncoder.encode(keyVal.key(), org.jsoup.parser.helper.DataUtil.defaultCharset))
                     .append('=')
                     .append(URLEncoder.encode(keyVal.value(), DataUtil.defaultCharset));
             }
@@ -1152,7 +1155,7 @@ public class HttpConnection implements Connection {
         private KeyVal() {}
 
         public KeyVal key(String key) {
-            Validate.notEmpty(key, "Data key must not be empty");
+            org.jsoup.parser.helper.Validate.notEmpty(key, "Data key must not be empty");
             this.key = key;
             return this;
         }
@@ -1162,7 +1165,7 @@ public class HttpConnection implements Connection {
         }
 
         public KeyVal value(String value) {
-            Validate.notNull(value, "Data value must not be null");
+            org.jsoup.parser.helper.Validate.notNull(value, "Data value must not be null");
             this.value = value;
             return this;
         }
@@ -1172,7 +1175,7 @@ public class HttpConnection implements Connection {
         }
 
         public KeyVal inputStream(InputStream inputStream) {
-            Validate.notNull(value, "Data input stream must not be null");
+            org.jsoup.parser.helper.Validate.notNull(value, "Data input stream must not be null");
             this.stream = inputStream;
             return this;
         }

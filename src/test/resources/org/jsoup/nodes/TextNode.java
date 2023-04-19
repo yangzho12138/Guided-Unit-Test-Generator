@@ -1,7 +1,7 @@
 package org.jsoup.nodes;
 
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 
 import java.io.IOException;
 
@@ -9,7 +9,7 @@ import java.io.IOException;
  A text node.
 
  @author Jonathan Hedley, jonathan@hedley.net */
-public class TextNode extends LeafNode {
+public class TextNode extends edu.illinois.cs.test.generator.org.jsoup.nodes.LeafNode {
 
     /**
      Create a new TextNode representing the supplied (unencoded) text).

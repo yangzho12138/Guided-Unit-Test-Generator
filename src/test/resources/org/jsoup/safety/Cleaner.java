@@ -1,6 +1,7 @@
 package org.jsoup.safety;
 
-import org.jsoup.helper.Validate;
+import org.jsoup.Jsoup;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.nodes.Attribute;
 import org.jsoup.nodes.Attributes;
 import org.jsoup.nodes.DataNode;
@@ -29,7 +30,7 @@ import java.util.List;
  canned white-lists only allow body contained tags.
  </p>
  <p>
- Rather than interacting directly with a Cleaner object, generally see the {@code clean} methods in {@link org.jsoup.Jsoup}.
+ Rather than interacting directly with a Cleaner object, generally see the {@code clean} methods in {@link Jsoup}.
  </p>
  */
 public class Cleaner {

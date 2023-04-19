@@ -1,7 +1,8 @@
 package org.jsoup.nodes;
 
+import org.jsoup.Jsoup;
 import org.jsoup.internal.StringUtil;
-import org.jsoup.helper.Validate;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.parser.ParseSettings;
 import org.jsoup.parser.Parser;
 import org.jsoup.parser.Tag;
@@ -26,7 +27,7 @@ public class Document extends Element {
     /**
      Create a new, empty Document.
      @param baseUri base URI of document
-     @see org.jsoup.Jsoup#parse
+     @see Jsoup#parse
      @see #createShell
      */
     public Document(String baseUri) {

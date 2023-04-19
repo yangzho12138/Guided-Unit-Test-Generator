@@ -1,8 +1,8 @@
 package org.jsoup.helper;
 
 import org.jsoup.internal.StringUtil;
-import org.jsoup.nodes.Attribute;
-import org.jsoup.nodes.Attributes;
+import org.jsoup.nodes.*;
+import org.jsoup.parser.helper.Validate;
 import org.jsoup.select.NodeTraversor;
 import org.jsoup.select.NodeVisitor;
 import org.w3c.dom.Comment;
@@ -54,7 +54,7 @@ public class W3CDom {
      * before converting.
      * @param in jsoup doc
      * @param out w3c doc
-     * @see org.jsoup.helper.W3CDom#fromJsoup(org.jsoup.nodes.Document)
+     * @see org.jsoup.parser.helper.W3CDom#fromJsoup(org.jsoup.nodes.Document)
      */
     public void convert(org.jsoup.nodes.Document in, Document out) {
         if (!StringUtil.isBlank(in.location()))
@@ -80,7 +80,7 @@ public class W3CDom {
             this.namespacesStack.push(new HashMap<String, String>());
         }
 
-        public void head(org.jsoup.nodes.Node source, int depth) {
+        public void head(Node source, int depth) {
             namespacesStack.push(new HashMap<>(namespacesStack.peek())); // inherit from above on the stack
             if (source instanceof org.jsoup.nodes.Element) {
                 org.jsoup.nodes.Element sourceEl = (org.jsoup.nodes.Element) source;
@@ -99,16 +99,16 @@ public class W3CDom {
                     dest.appendChild(el);
                 }
                 dest = el; // descend
-            } else if (source instanceof org.jsoup.nodes.TextNode) {
-                org.jsoup.nodes.TextNode sourceText = (org.jsoup.nodes.TextNode) source;
+            } else if (source instanceof TextNode) {
+                TextNode sourceText = (TextNode) source;
                 Text text = doc.createTextNode(sourceText.getWholeText());
                 dest.appendChild(text);
             } else if (source instanceof org.jsoup.nodes.Comment) {
                 org.jsoup.nodes.Comment sourceComment = (org.jsoup.nodes.Comment) source;
                 Comment comment = doc.createComment(sourceComment.getData());
                 dest.appendChild(comment);
-            } else if (source instanceof org.jsoup.nodes.DataNode) {
-                org.jsoup.nodes.DataNode sourceData = (org.jsoup.nodes.DataNode) source;
+            } else if (source instanceof DataNode) {
+                DataNode sourceData = (DataNode) source;
                 Text node = doc.createTextNode(sourceData.getWholeData());
                 dest.appendChild(node);
             } else {
@@ -116,14 +116,14 @@ public class W3CDom {
             }
         }
 
-        public void tail(org.jsoup.nodes.Node source, int depth) {
+        public void tail(Node source, int depth) {
             if (source instanceof org.jsoup.nodes.Element && dest.getParentNode() instanceof Element) {
                 dest = (Element) dest.getParentNode(); // undescend. cromulent.
             }
             namespacesStack.pop();
         }
 
-        private void copyAttributes(org.jsoup.nodes.Node source, Element el) {
+        private void copyAttributes(Node source, Element el) {
             for (Attribute attribute : source.attributes()) {
                 // valid xml attribute names are: ^[a-zA-Z_:][-a-zA-Z0-9_:.]
                 String key = attribute.getKey().replaceAll("[^-a-zA-Z0-9_:.]", "");
