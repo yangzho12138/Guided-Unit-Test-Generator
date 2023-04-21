@@ -5,6 +5,7 @@ import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Modifier;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
+import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 
 public class CodeParser extends VoidVisitorAdapter
@@ -22,8 +23,14 @@ public class CodeParser extends VoidVisitorAdapter
 		
 		// TODO: add your implementation here so that it counts the methods
 		// satisfying the listed constriants rather than all possible methods
-		
-		methNum++;
+		//System.out.println(n.getDeclarationAsString());
+		if(n.getBody().isPresent() && n.getParameters().isNonEmpty() && !n.getType().toString().equals("void") ) {
+			String declaration = n.getDeclarationAsString();
+			
+			if(!declaration.contains("static") && declaration.contains("public")) {
+				methNum++;
+			}
+		}
 	}
 
 }

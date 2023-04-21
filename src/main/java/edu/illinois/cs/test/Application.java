@@ -2,7 +2,6 @@ package edu.illinois.cs.test;
 
 import edu.illinois.cs.test.generator.PoolInit;
 import edu.illinois.cs.test.generator.TestGenerator;
-import org.checkerframework.checker.units.qual.A;
 
 public class Application{
 
