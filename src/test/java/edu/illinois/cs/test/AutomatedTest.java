@@ -12,9 +12,9 @@ import org.jsoup.*;
 
 public class AutomatedTest {
     @Test
-    public void testAttributesget996170340() {
+    public void testAttributesget32110810() {
         Attributes attributes = new Attributes();
-        attributes.get("https");
+        attributes.get("hree");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -33,9 +33,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget9503947301() {
+    public void testAttributesget14721() {
         Attributes attributes = new Attributes();
-        attributes.get("command");
+        attributes.get("-.");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -54,9 +54,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget16449536112() {
+    public void testAttributesget17571249782() {
         Attributes attributes = new Attributes();
-        attributes.get("frameseu");
+        attributes.get(":empty");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -75,9 +75,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget1101158213() {
+    public void testAttributesget11153() {
         Attributes attributes = new Attributes();
-        attributes.get("table");
+        attributes.get("!=");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -96,9 +96,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget30294414() {
+    public void testAttributesget29224() {
         Attributes attributes = new Attributes();
-        attributes.get("body");
+        attributes.get("\'");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -117,9 +117,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase21011358000() {
+    public void testAttributesgetIgnoreCase1857353270() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase(":matchTexu");
+        attributes.getIgnoreCase("US-ASCII");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -138,9 +138,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase31821() {
+    public void testAttributesgetIgnoreCase807731721() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("bq");
+        attributes.getIgnoreCase("optgrouq");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -159,9 +159,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase10548386272() {
+    public void testAttributesgetIgnoreCase1102563202() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase(":first-chilc");
+        attributes.getIgnoreCase("text.");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -180,9 +180,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase26152053() {
+    public void testAttributesgetIgnoreCase3081290273() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("UTF-");
+        attributes.getIgnoreCase(":last-chilc");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -201,9 +201,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase31891124() {
+    public void testAttributesgetIgnoreCase35118024() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("gzio");
+        attributes.getIgnoreCase("rubz");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -222,9 +222,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd16777128000() {
+    public void testAttributesadd31114340() {
         Attributes attributes = new Attributes();
-        attributes.add("noframer","UTF,");
+        attributes.add("~<","abs9");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -243,9 +243,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd17479740831() {
+    public void testAttributesadd15021562761() {
         Attributes attributes = new Attributes();
-        attributes.add("ti","DOCTYPD");
+        attributes.add(":nth-of-type)","te");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -264,9 +264,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd21304842822() {
+    public void testAttributesadd1083638052() {
         Attributes attributes = new Attributes();
-        attributes.add(":containsData)","deflate");
+        attributes.add("^>","radip");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -285,9 +285,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd15370140333() {
+    public void testAttributesadd1008333153() {
         Attributes attributes = new Attributes();
-        attributes.add("checked","xml");
+        attributes.add("forn","htto");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -306,9 +306,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd2142794() {
+    public void testAttributesadd1913276754() {
         Attributes attributes = new Attributes();
-        attributes.add("hq","odd");
+        attributes.add("UTF.","text.");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -327,9 +327,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput35463040() {
+    public void testAttributesput1784260560() {
         Attributes attributes = new Attributes();
-        attributes.put("!<","ruby");
+        attributes.put("scripu","DOCTYPF");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -348,9 +348,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput13740038121() {
+    public void testAttributesput19919432971() {
         Attributes attributes = new Attributes();
-        attributes.put("xmk","buttom");
+        attributes.put("tbodx","actiom");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -369,9 +369,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput36841442() {
+    public void testAttributesput10967337912() {
         Attributes attributes = new Attributes();
-        attributes.put("xmp","*");
+        attributes.put("radin",":first-of-typd");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -390,9 +390,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput13605114783() {
+    public void testAttributesput8736476083() {
         Attributes attributes = new Attributes();
-        attributes.put(":emptx","gziq");
+        attributes.put("text0","namd");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -411,9 +411,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput1170254() {
+    public void testAttributesput18628266394() {
         Attributes attributes = new Attributes();
-        attributes.put("th","*>");
+        attributes.put("colgrouq","table");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -432,9 +432,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput20685275330() {
+    public void testAttributesput1045871090() {
         Attributes attributes = new Attributes();
-        attributes.put("[a-zA-Z_:][-a-zA-Z0-9_:.]*",);
+        attributes.put("name",);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -453,9 +453,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput568965231() {
+    public void testAttributesput8784004181() {
         Attributes attributes = new Attributes();
-        attributes.put(":lt'",);
+        attributes.put(":last-of-typd",);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -474,9 +474,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput17527120802() {
+    public void testAttributesput996121982() {
         Attributes attributes = new Attributes();
-        attributes.put("colgrouq",);
+        attributes.put("htmk",);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -495,9 +495,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput444763() {
+    public void testAttributesput19817296533() {
         Attributes attributes = new Attributes();
-        attributes.put("*>",);
+        attributes.put("templatf",);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -516,9 +516,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput6538530944() {
+    public void testAttributesput9987052794() {
         Attributes attributes = new Attributes();
-        attributes.put("deflatd",);
+        attributes.put(":contains(",);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -537,28 +537,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput18738595960() {
-        Attributes attributes = new Attributes();
-        attributes.put();
-        assertTrue(attributes.equals(attributes));
-        try {
-            attributes.equals(attributes);
-        } catch (Exception e) {
-            fail("attributes.equals(attributes) throws an exception");
-        }
-        try {
-            attributes.hashCode();
-        } catch (Exception e) {
-            fail("attributes.hashCode() throws an exception");
-        }
-        try {
-            attributes.toString();
-        } catch (Exception e) {
-            fail("attributes.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testAttributesput18432892591() {
+    public void testAttributesput3880431240() {
         Attributes attributes = new Attributes();
         attributes.put();
         assertTrue(attributes.equals(attributes));
@@ -579,7 +558,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput18432892592() {
+    public void testAttributesput631() {
         Attributes attributes = new Attributes();
         attributes.put();
         assertTrue(attributes.equals(attributes));
@@ -600,7 +579,28 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput633() {
+    public void testAttributesput322() {
+        Attributes attributes = new Attributes();
+        attributes.put();
+        assertTrue(attributes.equals(attributes));
+        try {
+            attributes.equals(attributes);
+        } catch (Exception e) {
+            fail("attributes.equals(attributes) throws an exception");
+        }
+        try {
+            attributes.hashCode();
+        } catch (Exception e) {
+            fail("attributes.hashCode() throws an exception");
+        }
+        try {
+            attributes.toString();
+        } catch (Exception e) {
+            fail("attributes.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesput323() {
         Attributes attributes = new Attributes();
         attributes.put();
         assertTrue(attributes.equals(attributes));
@@ -642,9 +642,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove13215466000() {
+    public void testAttributesremove39980() {
         Attributes attributes = new Attributes();
-        attributes.remove("templatd");
+        attributes.remove("~=");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -663,9 +663,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove21065455181() {
+    public void testAttributesremove37411() {
         Attributes attributes = new Attributes();
-        attributes.remove(":last-of-type");
+        attributes.remove("tr");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -684,9 +684,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove5525734442() {
+    public void testAttributesremove7390744122() {
         Attributes attributes = new Attributes();
-        attributes.remove("captiom");
+        attributes.remove("charseu");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -705,9 +705,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove15368918753() {
+    public void testAttributesremove2709408273() {
         Attributes attributes = new Attributes();
-        attributes.remove("checkboy");
+        attributes.remove("disabled");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -726,9 +726,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove20353119924() {
+    public void testAttributesremove13776877284() {
         Attributes attributes = new Attributes();
-        attributes.remove(":first-of-type");
+        attributes.remove("buttom");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -747,9 +747,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase14562253610() {
+    public void testAttributesremoveIgnoreCase14229508270() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase(":matches)");
+        attributes.removeIgnoreCase("action");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -768,9 +768,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase14711890851() {
+    public void testAttributesremoveIgnoreCase1281() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase(":nth-last-child(");
+        attributes.removeIgnoreCase("a");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -789,9 +789,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase11912143962() {
+    public void testAttributesremoveIgnoreCase37422() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase("iframf");
+        attributes.removeIgnoreCase("ts");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -810,9 +810,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase21156131443() {
+    public void testAttributesremoveIgnoreCase1102563223() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase("noembee");
+        attributes.removeIgnoreCase("text0");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -831,9 +831,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase944() {
+    public void testAttributesremoveIgnoreCase1102773764() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase("?");
+        attributes.removeIgnoreCase("tfoos");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -852,9 +852,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey11346655530() {
+    public void testAttributeshasKey567593350() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("keygem");
+        attributes.hasKey(":has(");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -873,9 +873,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey16449536111() {
+    public void testAttributeshasKey1082706171() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("frameseu");
+        attributes.hasKey("radin");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -894,9 +894,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey33480052() {
+    public void testAttributeshasKey9060216042() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("metb");
+        attributes.hasKey("selecu");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -915,9 +915,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey31833() {
+    public void testAttributeshasKey923503() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("br");
+        attributes.hasKey("]]?");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -936,9 +936,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey12068418914() {
+    public void testAttributeshasKey570706504() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("http:0");
+        attributes.hasKey(":roos");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -957,9 +957,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase33868630() {
+    public void testAttributeshasKeyIgnoreCase35756400() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase("nobq");
+        attributes.hasKeyIgnoreCase("typd");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -978,9 +978,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase33441681() {
+    public void testAttributeshasKeyIgnoreCase2709408281() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase("mati");
+        attributes.hasKeyIgnoreCase("disablee");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -999,9 +999,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase10176250972() {
+    public void testAttributeshasKeyIgnoreCase15368918732() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase(":nth-last-of-type(");
+        attributes.hasKeyIgnoreCase("checkbow");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -1020,9 +1020,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase10548386273() {
+    public void testAttributeshasKeyIgnoreCase39983() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase(":first-chilc");
+        attributes.hasKeyIgnoreCase("~=");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -1041,9 +1041,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase15368918744() {
+    public void testAttributeshasKeyIgnoreCase12269463004() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase("checkbox");
+        attributes.hasKeyIgnoreCase(":containsData(");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -1272,7 +1272,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesaddAll16082306800() {
+    public void testAttributesaddAll2824321650() {
         Attributes attributes = new Attributes();
         attributes.addAll();
         assertTrue(attributes.equals(attributes));
@@ -1293,7 +1293,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesaddAll1885761751() {
+    public void testAttributesaddAll18432892591() {
         Attributes attributes = new Attributes();
         attributes.addAll();
         assertTrue(attributes.equals(attributes));
@@ -1314,7 +1314,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesaddAll632() {
+    public void testAttributesaddAll20504041212() {
         Attributes attributes = new Attributes();
         attributes.addAll();
         assertTrue(attributes.equals(attributes));
@@ -1335,7 +1335,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesaddAll18432892593() {
+    public void testAttributesaddAll15614086493() {
         Attributes attributes = new Attributes();
         attributes.addAll();
         assertTrue(attributes.equals(attributes));
@@ -1356,7 +1356,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesaddAll2664372634() {
+    public void testAttributesaddAll18738595964() {
         Attributes attributes = new Attributes();
         attributes.addAll();
         assertTrue(attributes.equals(attributes));
@@ -1797,7 +1797,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesdeduplicate18432892590() {
+    public void testAttributesdeduplicate320() {
         Attributes attributes = new Attributes();
         attributes.deduplicate();
         assertTrue(attributes.equals(attributes));
@@ -1818,7 +1818,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesdeduplicate311() {
+    public void testAttributesdeduplicate321() {
         Attributes attributes = new Attributes();
         attributes.deduplicate();
         assertTrue(attributes.equals(attributes));
@@ -1839,7 +1839,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesdeduplicate312() {
+    public void testAttributesdeduplicate3880431242() {
         Attributes attributes = new Attributes();
         attributes.deduplicate();
         assertTrue(attributes.equals(attributes));
@@ -1860,7 +1860,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesdeduplicate16082306803() {
+    public void testAttributesdeduplicate1885761753() {
         Attributes attributes = new Attributes();
         attributes.deduplicate();
         assertTrue(attributes.equals(attributes));
@@ -1881,7 +1881,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesdeduplicate18738595964() {
+    public void testAttributesdeduplicate634() {
         Attributes attributes = new Attributes();
         attributes.deduplicate();
         assertTrue(attributes.equals(attributes));
@@ -1902,9 +1902,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity18285140() {
+    public void testEntitiesisNamedEntity10101369410() {
         Entities entities = new Entities();
-        entities.isNamedEntity(":eq)");
+        entities.isNamedEntity("optiom");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1923,9 +1923,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity31255601() {
+    public void testEntitiesisNamedEntity33701() {
         Entities entities = new Entities();
-        entities.isNamedEntity("evem");
+        entities.isNamedEntity("hs");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1944,9 +1944,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity1143072() {
+    public void testEntitiesisNamedEntity7423139272() {
         Entities entities = new Entities();
-        entities.isNamedEntity("svg");
+        entities.isNamedEntity("checkee");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1965,9 +1965,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity11927218613() {
+    public void testEntitiesisNamedEntity12174874143() {
         Entities entities = new Entities();
-        entities.isNamedEntity("noframer");
+        entities.isNamedEntity("hiddeo");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1986,9 +1986,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity29875604() {
+    public void testEntitiesisNamedEntity34844() {
         Entities entities = new Entities();
-        entities.isNamedEntity("abs;");
+        entities.isNamedEntity("li");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2007,9 +2007,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity567593350() {
+    public void testEntitiesisBaseNamedEntity33040() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity(":has(");
+        entities.isBaseNamedEntity("h1");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2028,9 +2028,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity1101158221() {
+    public void testEntitiesisBaseNamedEntity10761623181() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity("tablf");
+        entities.isBaseNamedEntity(":contains(");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2049,9 +2049,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity14229508282() {
+    public void testEntitiesisBaseNamedEntity1188392() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity("actiom");
+        entities.isBaseNamedEntity("xmm");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2070,9 +2070,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity30053() {
+    public void testEntitiesisBaseNamedEntity20919604283() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity("^<");
+        entities.isBaseNamedEntity(":only-child");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2091,9 +2091,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity18912061164() {
+    public void testEntitiesisBaseNamedEntity2882752474() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity(":nth-of-type(");
+        entities.isBaseNamedEntity(":nth-child'");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2112,9 +2112,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName30164320() {
+    public void testEntitiesgetCharacterByName17209582720() {
         Entities entities = new Entities();
-        entities.getCharacterByName("base");
+        entities.getCharacterByName("basefonu");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2133,9 +2133,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName26152041() {
+    public void testEntitiesgetCharacterByName13215466001() {
         Entities entities = new Entities();
-        entities.getCharacterByName("UTF,");
+        entities.getCharacterByName("templatd");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2154,9 +2154,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName20913044552() {
+    public void testEntitiesgetCharacterByName11912143962() {
         Entities entities = new Entities();
-        entities.getCharacterByName("isindex");
+        entities.getCharacterByName("iframf");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2175,28 +2175,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName19383() {
-        Entities entities = new Entities();
-        entities.getCharacterByName("</");
-        assertTrue(entities.equals(entities));
-        try {
-            entities.equals(entities);
-        } catch (Exception e) {
-            fail("entities.equals(entities) throws an exception");
-        }
-        try {
-            entities.hashCode();
-        } catch (Exception e) {
-            fail("entities.hashCode() throws an exception");
-        }
-        try {
-            entities.toString();
-        } catch (Exception e) {
-            fail("entities.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testEntitiesgetCharacterByName1224() {
+    public void testEntitiesgetCharacterByName1223() {
         Entities entities = new Entities();
         entities.getCharacterByName("[");
         assertTrue(entities.equals(entities));
@@ -2217,9 +2196,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName20919604290() {
+    public void testEntitiesgetCharacterByName9503947314() {
         Entities entities = new Entities();
-        entities.getByName(":only-chilc");
+        entities.getCharacterByName("commane");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2238,9 +2217,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName11346655531() {
+    public void testEntitiesgetByName7390744100() {
         Entities entities = new Entities();
-        entities.getByName("keygem");
+        entities.getByName("charses");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2259,9 +2238,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName14712() {
+    public void testEntitiesgetByName1101578771() {
         Entities entities = new Entities();
-        entities.getByName("--");
+        entities.getByName("tbody");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2280,9 +2259,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName16183955603() {
+    public void testEntitiesgetByName18912061172() {
         Entities entities = new Entities();
-        entities.getByName(":only-of-type");
+        entities.getByName(":nth-of-type'");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2301,9 +2280,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName569515654() {
+    public void testEntitiesgetByName12083() {
         Entities entities = new Entities();
-        entities.getByName(":not'");
+        entities.getByName("$=");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2322,9 +2301,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName21293430840() {
+    public void testEntitiesgetByName16183955594() {
         Entities entities = new Entities();
-        entities.codepointsForName("deflatf",new int[]{0,-1,55296,192});
+        entities.getByName(":only-of-typd");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2343,9 +2322,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName15109983091() {
+    public void testEntitiescodepointsForName10813248940() {
         Entities entities = new Entities();
-        entities.codepointsForName(":has)",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239,240});
+        entities.codepointsForName(":lt(",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2364,9 +2343,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName14677798322() {
+    public void testEntitiescodepointsForName16677939101() {
         Entities entities = new Entities();
-        entities.codepointsForName("noembee",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396});
+        entities.codepointsForName("hs",new int[]{0,-1,55296});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2385,9 +2364,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName17764290243() {
+    public void testEntitiescodepointsForName19784106432() {
         Entities entities = new Entities();
-        entities.codepointsForName(":containsData'",new int[]{});
+        entities.codepointsForName("noembec",new int[]{});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2406,9 +2385,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName12893657124() {
+    public void testEntitiescodepointsForName18000114233() {
         Entities entities = new Entities();
-        entities.codepointsForName(":first-of-typd",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101});
+        entities.codepointsForName(":has)",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239,240,1114211,500,187});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2427,7 +2406,112 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape12713251230() {
+    public void testEntitiescodepointsForName456720754() {
+        Entities entities = new Entities();
+        entities.codepointsForName("inpuu",new int[]{0,-1,55296,192,1,55297,2,3,4,199});
+        assertTrue(entities.equals(entities));
+        try {
+            entities.equals(entities);
+        } catch (Exception e) {
+            fail("entities.equals(entities) throws an exception");
+        }
+        try {
+            entities.hashCode();
+        } catch (Exception e) {
+            fail("entities.hashCode() throws an exception");
+        }
+        try {
+            entities.toString();
+        } catch (Exception e) {
+            fail("entities.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testEntitiesescape16549179790() {
+        Entities entities = new Entities();
+        entities.escape("basd",);
+        assertTrue(entities.equals(entities));
+        try {
+            entities.equals(entities);
+        } catch (Exception e) {
+            fail("entities.equals(entities) throws an exception");
+        }
+        try {
+            entities.hashCode();
+        } catch (Exception e) {
+            fail("entities.hashCode() throws an exception");
+        }
+        try {
+            entities.toString();
+        } catch (Exception e) {
+            fail("entities.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testEntitiesescape8380763711() {
+        Entities entities = new Entities();
+        entities.escape("textareb",);
+        assertTrue(entities.equals(entities));
+        try {
+            entities.equals(entities);
+        } catch (Exception e) {
+            fail("entities.equals(entities) throws an exception");
+        }
+        try {
+            entities.hashCode();
+        } catch (Exception e) {
+            fail("entities.hashCode() throws an exception");
+        }
+        try {
+            entities.toString();
+        } catch (Exception e) {
+            fail("entities.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testEntitiesescape14650778712() {
+        Entities entities = new Entities();
+        entities.escape("meta",);
+        assertTrue(entities.equals(entities));
+        try {
+            entities.equals(entities);
+        } catch (Exception e) {
+            fail("entities.equals(entities) throws an exception");
+        }
+        try {
+            entities.hashCode();
+        } catch (Exception e) {
+            fail("entities.hashCode() throws an exception");
+        }
+        try {
+            entities.toString();
+        } catch (Exception e) {
+            fail("entities.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testEntitiesescape2861959813() {
+        Entities entities = new Entities();
+        entities.escape("form",);
+        assertTrue(entities.equals(entities));
+        try {
+            entities.equals(entities);
+        } catch (Exception e) {
+            fail("entities.equals(entities) throws an exception");
+        }
+        try {
+            entities.hashCode();
+        } catch (Exception e) {
+            fail("entities.hashCode() throws an exception");
+        }
+        try {
+            entities.toString();
+        } catch (Exception e) {
+            fail("entities.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testEntitiesescape7587553054() {
         Entities entities = new Entities();
         entities.escape("command",);
         assertTrue(entities.equals(entities));
@@ -2448,9 +2532,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape20534643481() {
+    public void testEntitiesescape9060216040() {
         Entities entities = new Entities();
-        entities.escape("cok",);
+        entities.escape("selecu");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2469,9 +2553,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape19734705322() {
+    public void testEntitiesescape9060216061() {
         Entities entities = new Entities();
-        entities.escape("htmk",);
+        entities.escape("selecs");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2490,49 +2574,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape5134515403() {
-        Entities entities = new Entities();
-        entities.escape(":first-of-type",);
-        assertTrue(entities.equals(entities));
-        try {
-            entities.equals(entities);
-        } catch (Exception e) {
-            fail("entities.equals(entities) throws an exception");
-        }
-        try {
-            entities.hashCode();
-        } catch (Exception e) {
-            fail("entities.hashCode() throws an exception");
-        }
-        try {
-            entities.toString();
-        } catch (Exception e) {
-            fail("entities.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testEntitiesescape34069634() {
-        Entities entities = new Entities();
-        entities.escape("odd",);
-        assertTrue(entities.equals(entities));
-        try {
-            entities.equals(entities);
-        } catch (Exception e) {
-            fail("entities.equals(entities) throws an exception");
-        }
-        try {
-            entities.hashCode();
-        } catch (Exception e) {
-            fail("entities.hashCode() throws an exception");
-        }
-        try {
-            entities.toString();
-        } catch (Exception e) {
-            fail("entities.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testEntitiesescape2882752490() {
+    public void testEntitiesescape2882752492() {
         Entities entities = new Entities();
         entities.escape(":nth-child)");
         assertTrue(entities.equals(entities));
@@ -2553,9 +2595,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape996170351() {
+    public void testEntitiesescape9060216053() {
         Entities entities = new Entities();
-        entities.escape("httpt");
+        entities.escape("select");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2574,9 +2616,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape17571249772() {
+    public void testEntitiesescape15451126504() {
         Entities entities = new Entities();
-        entities.escape(":emptx");
+        entities.escape("deflate");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2595,9 +2637,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape10101369393() {
+    public void testEntitiesunescape570706520() {
         Entities entities = new Entities();
-        entities.escape("optioo");
+        entities.unescape(":roou");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2616,9 +2658,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape10032436884() {
+    public void testEntitiesunescape35756421() {
         Entities entities = new Entities();
-        entities.escape("textare`");
+        entities.unescape("typf");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2637,9 +2679,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape1143060() {
+    public void testEntitiesunescape2709408262() {
         Entities entities = new Entities();
-        entities.unescape("svf");
+        entities.unescape("disablec");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2658,9 +2700,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape15368918741() {
+    public void testEntitiesunescape10761623183() {
         Entities entities = new Entities();
-        entities.unescape("checkbox");
+        entities.unescape(":contains(");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2679,9 +2721,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape9076856542() {
+    public void testEntitiesunescape1044184() {
         Entities entities = new Entities();
-        entities.unescape("script");
+        entities.unescape("img");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2700,51 +2742,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape1188423() {
-        Entities entities = new Entities();
-        entities.unescape("xmp");
-        assertTrue(entities.equals(entities));
-        try {
-            entities.equals(entities);
-        } catch (Exception e) {
-            fail("entities.equals(entities) throws an exception");
-        }
-        try {
-            entities.hashCode();
-        } catch (Exception e) {
-            fail("entities.hashCode() throws an exception");
-        }
-        try {
-            entities.toString();
-        } catch (Exception e) {
-            fail("entities.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testEntitiesunescape11927218614() {
-        Entities entities = new Entities();
-        entities.unescape("noframer");
-        assertTrue(entities.equals(entities));
-        try {
-            entities.equals(entities);
-        } catch (Exception e) {
-            fail("entities.equals(entities) throws an exception");
-        }
-        try {
-            entities.hashCode();
-        } catch (Exception e) {
-            fail("entities.hashCode() throws an exception");
-        }
-        try {
-            entities.toString();
-        } catch (Exception e) {
-            fail("entities.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtiljoin3303761640() {
+    public void testStringUtiljoin16505111320() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"h3");
+        stringutil.join(,"https");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2763,9 +2763,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin31265221() {
+    public void testStringUtiljoin56621() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"even");
+        stringutil.join(,"tq");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2784,9 +2784,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin16813309412() {
+    public void testStringUtiljoin17170134482() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"eveo");
+        stringutil.join(,"noscripu");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2805,9 +2805,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin39663() {
+    public void testStringUtiljoin16814400703() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"^<");
+        stringutil.join(,"basf");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2826,9 +2826,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin8673394244() {
+    public void testStringUtiljoin8864636714() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,":emptx");
+        stringutil.join(,"linl");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2847,9 +2847,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin7496868680() {
+    public void testStringUtiljoin8601463870() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"^<");
+        stringutil.join(,":lt(");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2868,9 +2868,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin5430283351() {
+    public void testStringUtiljoin12728841141() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"[CDATA[");
+        stringutil.join(,":nth-last-child'");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2889,9 +2889,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin20397847962() {
+    public void testStringUtiljoin1003590812() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"ode");
+        stringutil.join(,"inpus");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2910,9 +2910,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin16812673893() {
+    public void testStringUtiljoin20397758603() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"gziq");
+        stringutil.join(,"xmm");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2931,9 +2931,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin8619816544() {
+    public void testStringUtiljoin2746521314() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(,"#");
+        stringutil.join(,"Set-Cookie");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2952,9 +2952,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin9260896980() {
+    public void testStringUtiljoin1988328270() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom"},":gt'");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type"},"checkee");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2973,9 +2973,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin4069136301() {
+    public void testStringUtiljoin11117946231() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu"},"command");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx","#texs","rubx","command","rubz"},"*|");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2994,9 +2994,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin11117946872() {
+    public void testStringUtiljoin6747049452() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td"},"*<");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf"},"*>");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3015,9 +3015,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin6720911363() {
+    public void testStringUtiljoin18994404413() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te"},"UTF,");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx","#texs","rubx","command","rubz"},"ode");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3036,9 +3036,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin18964247844() {
+    public void testStringUtiljoin18110883954() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1"},"evem");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq"},"colgrouo");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3057,7 +3057,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding573730() {
+    public void testStringUtilpadding2180() {
         StringUtil stringutil = new StringUtil();
         stringutil.padding();
         assertTrue(stringutil.equals(stringutil));
@@ -3078,7 +3078,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding2231() {
+    public void testStringUtilpadding573731() {
         StringUtil stringutil = new StringUtil();
         stringutil.padding();
         assertTrue(stringutil.equals(stringutil));
@@ -3099,7 +3099,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding1342() {
+    public void testStringUtilpadding352() {
         StringUtil stringutil = new StringUtil();
         stringutil.padding();
         assertTrue(stringutil.equals(stringutil));
@@ -3120,7 +3120,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding2183() {
+    public void testStringUtilpadding2223() {
         StringUtil stringutil = new StringUtil();
         stringutil.padding();
         assertTrue(stringutil.equals(stringutil));
@@ -3141,7 +3141,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding1324() {
+    public void testStringUtilpadding1314() {
         StringUtil stringutil = new StringUtil();
         stringutil.padding();
         assertTrue(stringutil.equals(stringutil));
@@ -3162,9 +3162,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank9076856540() {
+    public void testStringUtilisBlank31255600() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("script");
+        stringutil.isBlank("evem");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3183,9 +3183,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank6361976011() {
+    public void testStringUtilisBlank33681() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("colgrouq");
+        stringutil.isBlank("hq");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3204,9 +3204,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank11346655522() {
+    public void testStringUtilisBlank10176250962() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("keygen");
+        stringutil.isBlank(":nth-last-of-type'");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3225,9 +3225,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank9503947293() {
+    public void testStringUtilisBlank31255603() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("commanc");
+        stringutil.isBlank("evem");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3246,9 +3246,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank12269463014() {
+    public void testStringUtilisBlank14562253634() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank(":containsData'");
+        stringutil.isBlank(":matches'");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3267,9 +3267,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric12174874150() {
+    public void testStringUtilisNumeric31255600() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("hidden");
+        stringutil.isNumeric("evem");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3288,9 +3288,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric30294421() {
+    public void testStringUtilisNumeric31490281() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("bodz");
+        stringutil.isNumeric("forn");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3309,9 +3309,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric19788929332() {
+    public void testStringUtilisNumeric29875582() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric(":containsOwn)");
+        stringutil.isNumeric("abs9");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3330,9 +3330,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric14229508263() {
+    public void testStringUtilisNumeric358799203() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("actioo");
+        stringutil.isNumeric("#texu");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3351,9 +3351,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric5525734464() {
+    public void testStringUtilisNumeric1103269004() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("captioo");
+        stringutil.isNumeric("theae");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3372,7 +3372,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace2220() {
+    public void testStringUtilisWhitespace320() {
         StringUtil stringutil = new StringUtil();
         stringutil.isWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3393,7 +3393,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace321() {
+    public void testStringUtilisWhitespace4321() {
         StringUtil stringutil = new StringUtil();
         stringutil.isWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3414,7 +3414,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace5312() {
+    public void testStringUtilisWhitespace692() {
         StringUtil stringutil = new StringUtil();
         stringutil.isWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3435,7 +3435,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace2233() {
+    public void testStringUtilisWhitespace313() {
         StringUtil stringutil = new StringUtil();
         stringutil.isWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3456,7 +3456,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace572744() {
+    public void testStringUtilisWhitespace553274() {
         StringUtil stringutil = new StringUtil();
         stringutil.isWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3477,7 +3477,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace553280() {
+    public void testStringUtilisActuallyWhitespace350() {
         StringUtil stringutil = new StringUtil();
         stringutil.isActuallyWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3498,7 +3498,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace1341() {
+    public void testStringUtilisActuallyWhitespace2301() {
         StringUtil stringutil = new StringUtil();
         stringutil.isActuallyWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3519,7 +3519,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace573732() {
+    public void testStringUtilisActuallyWhitespace2702() {
         StringUtil stringutil = new StringUtil();
         stringutil.isActuallyWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3540,7 +3540,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace2703() {
+    public void testStringUtilisActuallyWhitespace2183() {
         StringUtil stringutil = new StringUtil();
         stringutil.isActuallyWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3561,7 +3561,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace2304() {
+    public void testStringUtilisActuallyWhitespace553284() {
         StringUtil stringutil = new StringUtil();
         stringutil.isActuallyWhitespace();
         assertTrue(stringutil.equals(stringutil));
@@ -3582,7 +3582,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar1310() {
+    public void testStringUtilisInvisibleChar4320() {
         StringUtil stringutil = new StringUtil();
         stringutil.isInvisibleChar();
         assertTrue(stringutil.equals(stringutil));
@@ -3603,7 +3603,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar2301() {
+    public void testStringUtilisInvisibleChar573731() {
         StringUtil stringutil = new StringUtil();
         stringutil.isInvisibleChar();
         assertTrue(stringutil.equals(stringutil));
@@ -3624,7 +3624,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar2702() {
+    public void testStringUtilisInvisibleChar1332() {
         StringUtil stringutil = new StringUtil();
         stringutil.isInvisibleChar();
         assertTrue(stringutil.equals(stringutil));
@@ -3645,7 +3645,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar2233() {
+    public void testStringUtilisInvisibleChar1313() {
         StringUtil stringutil = new StringUtil();
         stringutil.isInvisibleChar();
         assertTrue(stringutil.equals(stringutil));
@@ -3666,7 +3666,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar572744() {
+    public void testStringUtilisInvisibleChar573734() {
         StringUtil stringutil = new StringUtil();
         stringutil.isInvisibleChar();
         assertTrue(stringutil.equals(stringutil));
@@ -3687,9 +3687,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace1082706180() {
+    public void testStringUtilnormaliseWhitespace358799200() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("radio");
+        stringutil.normaliseWhitespace("#texu");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3708,9 +3708,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace358799191() {
+    public void testStringUtilnormaliseWhitespace6361976011() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("#text");
+        stringutil.normaliseWhitespace("colgrouq");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3729,9 +3729,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace5525734462() {
+    public void testStringUtilnormaliseWhitespace19392() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("captioo");
+        stringutil.normaliseWhitespace("<0");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3750,9 +3750,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace37273() {
+    public void testStringUtilnormaliseWhitespace1003581223() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("td");
+        stringutil.normaliseWhitespace("inpuu");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3771,9 +3771,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace30074() {
+    public void testStringUtilnormaliseWhitespace19732341974() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("^>");
+        stringutil.normaliseWhitespace("plaintexs");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3792,9 +3792,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace8344868790() {
+    public void testStringUtilappendNormalisedWhitespace14801608920() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace(,"ti",);
+        stringutil.appendNormalisedWhitespace(,"template",);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3813,9 +3813,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace1296951() {
+    public void testStringUtilappendNormalisedWhitespace10264729731() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace(,"br",);
+        stringutil.appendNormalisedWhitespace(,"selecs",);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3834,9 +3834,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace4967596442() {
+    public void testStringUtilappendNormalisedWhitespace3290780912() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace(,":first-of-typf",);
+        stringutil.appendNormalisedWhitespace(,"charset",);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3855,9 +3855,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace16609624743() {
+    public void testStringUtilappendNormalisedWhitespace30903193() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace(,"name",);
+        stringutil.appendNormalisedWhitespace(,"cok",);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3876,9 +3876,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace13052296204() {
+    public void testStringUtilappendNormalisedWhitespace32679804() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace(,":nth-child)",);
+        stringutil.appendNormalisedWhitespace(,"img",);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3897,9 +3897,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin14514103290() {
+    public void testStringUtilin8917707030() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in(":has(",":last-chile");
+        stringutil.in("style","de");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3918,9 +3918,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin16436595071() {
+    public void testStringUtilin1354406031() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in(":matchesOwn)","http");
+        stringutil.in("htmk","#roos");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3939,9 +3939,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin19302208972() {
+    public void testStringUtilin8763685322() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in("hiddeo",":nth-last-of-type)");
+        stringutil.in("tfoou",".");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3960,9 +3960,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin11851511323() {
+    public void testStringUtilin33214213() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in("imagf","cok");
+        stringutil.in("lh","http");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3981,9 +3981,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin567937424() {
+    public void testStringUtilin14477732404() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in(":eq'","odc");
+        stringutil.in("noembee",":nth-child'");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4002,9 +4002,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted1866351580() {
+    public void testStringUtilinSorted12187091470() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("bgsoune",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf"});
+        stringutil.inSorted("th",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4023,9 +4023,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted3372166721() {
+    public void testStringUtilinSorted13616377361() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("tablf",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet"});
+        stringutil.inSorted("noscripu",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4044,9 +4044,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted6770514942() {
+    public void testStringUtilinSorted8625587032() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("image",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>"});
+        stringutil.inSorted(":matches)",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4065,9 +4065,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted20414548573() {
+    public void testStringUtilinSorted12844095343() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted(":matchText",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0"});
+        stringutil.inSorted(":emptz",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4086,9 +4086,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted8124829394() {
+    public void testStringUtilinSorted4209829524() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("style",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq"});
+        stringutil.inSorted("actioo",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4107,9 +4107,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve12068399700() throws Exception {
+    public void testStringUtilresolve7984944240() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve(,"http:/");
+        stringutil.resolve(,":root");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4128,9 +4128,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve13490509921() throws Exception {
+    public void testStringUtilresolve16818412981() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve(,"select");
+        stringutil.resolve(,"UTF-");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4149,9 +4149,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve20913054172() throws Exception {
+    public void testStringUtilresolve8555639612() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve(,"isindey");
+        stringutil.resolve(,"!<");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4170,9 +4170,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve9692030603() throws Exception {
+    public void testStringUtilresolve6872456283() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve(,"keygen");
+        stringutil.resolve(,":nth-last-of-type)");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4191,9 +4191,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve2746521324() throws Exception {
+    public void testStringUtilresolve16843421954() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve(,"Set-Cookif");
+        stringutil.resolve(,"svh");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4212,9 +4212,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve11047320260() {
+    public void testStringUtilresolve566873260() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("actioo",":root");
+        stringutil.resolve(":eq'","lj");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4233,9 +4233,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve7868029451() {
+    public void testStringUtilresolve11539909511() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("http-equiv","#texs");
+        stringutil.resolve("head",":first-chile");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4254,9 +4254,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve8770183692() {
+    public void testStringUtilresolve13693439842() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("text/","^>");
+        stringutil.resolve(":only-of-typf","$=");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4275,9 +4275,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve14712822103() {
+    public void testStringUtilresolve3932680023() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("^<",":nth-last-child)");
+        stringutil.resolve("nobr",":nth-child)");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4296,9 +4296,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve7109225144() {
+    public void testStringUtilresolve16449161644() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("deflate",":root");
+        stringutil.resolve("$>","frameset");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4422,7 +4422,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder18738595960() {
+    public void testStringUtilreleaseBuilder13612897780() {
         StringUtil stringutil = new StringUtil();
         stringutil.releaseBuilder();
         assertTrue(stringutil.equals(stringutil));
@@ -4443,7 +4443,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder1885761751() {
+    public void testStringUtilreleaseBuilder15614086491() {
         StringUtil stringutil = new StringUtil();
         stringutil.releaseBuilder();
         assertTrue(stringutil.equals(stringutil));
@@ -4464,7 +4464,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder3880431242() {
+    public void testStringUtilreleaseBuilder15614086492() {
         StringUtil stringutil = new StringUtil();
         stringutil.releaseBuilder();
         assertTrue(stringutil.equals(stringutil));
@@ -4485,7 +4485,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder323() {
+    public void testStringUtilreleaseBuilder2664372633() {
         StringUtil stringutil = new StringUtil();
         stringutil.releaseBuilder();
         assertTrue(stringutil.equals(stringutil));
@@ -4506,7 +4506,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder13612897784() {
+    public void testStringUtilreleaseBuilder314() {
         StringUtil stringutil = new StringUtil();
         stringutil.releaseBuilder();
         assertTrue(stringutil.equals(stringutil));
@@ -4527,9 +4527,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase19370() {
+    public void testNormalizerlowerCase33868650() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase("<.");
+        normalizer.lowerCase("nobs");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4548,9 +4548,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase35756411() {
+    public void testNormalizerlowerCase9503947311() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase("type");
+        normalizer.lowerCase("commane");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4569,9 +4569,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase15368918752() {
+    public void testNormalizerlowerCase922() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase("checkboy");
+        normalizer.lowerCase("=");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4590,9 +4590,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase12174874163() {
+    public void testNormalizerlowerCase39983() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase("hiddem");
+        normalizer.lowerCase("~=");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4611,9 +4611,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase33218824() {
+    public void testNormalizerlowerCase11912143984() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase("linl");
+        normalizer.lowerCase("iframd");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4632,9 +4632,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize1082706180() {
+    public void testNormalizernormalize14711890860() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("radio");
+        normalizer.normalize(":nth-last-child)");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4653,9 +4653,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize35756421() {
+    public void testNormalizernormalize31255611() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("typf");
+        normalizer.normalize("even");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4674,9 +4674,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize33480032() {
+    public void testNormalizernormalize33737382() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("met`");
+        normalizer.normalize("name");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4695,9 +4695,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize9076856543() {
+    public void testNormalizernormalize1605222323() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("script");
+        normalizer.normalize("bgsounc");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4716,9 +4716,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize33044() {
+    public void testNormalizernormalize807731734() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("h1");
+        normalizer.normalize("optgroup");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4737,7 +4737,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap6757116920() {
+    public void testConstrainableInputStreamwrap15701257550() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.wrap(,,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4758,7 +4758,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap8676152151() {
+    public void testConstrainableInputStreamwrap15701315611() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.wrap(,,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4779,7 +4779,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap358992() {
+    public void testConstrainableInputStreamwrap16517582442() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.wrap(,,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4800,7 +4800,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap15701796583() {
+    public void testConstrainableInputStreamwrap308163() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.wrap(,,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4821,7 +4821,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap17655485884() {
+    public void testConstrainableInputStreamwrap9515700254() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.wrap(,,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4842,7 +4842,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer553270() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer2710() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.readToByteBuffer();
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4863,7 +4863,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer2711() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer2301() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.readToByteBuffer();
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4884,7 +4884,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer2712() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer352() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.readToByteBuffer();
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4905,7 +4905,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer4313() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer553273() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.readToByteBuffer();
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4926,7 +4926,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer2224() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer2714() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.readToByteBuffer();
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4947,7 +4947,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout40620() {
+    public void testConstrainableInputStreamtimeout9610() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.timeout(,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -4968,7 +4968,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout9921() {
+    public void testConstrainableInputStreamtimeout9931() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.timeout(,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -5010,7 +5010,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout40613() {
+    public void testConstrainableInputStreamtimeout10603() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.timeout(,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -5031,7 +5031,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout40304() {
+    public void testConstrainableInputStreamtimeout41614() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
         constrainableinputstream.timeout(,);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
@@ -5052,9 +5052,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse7710994680() {
+    public void testJsoupparse1102320670() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("tablf","tfoot");
+        jsoup.parse("template",":only-chile");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5073,9 +5073,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse19957006481() {
+    public void testJsoupparse7317081231() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("typf",":last-of-typd");
+        jsoup.parse("noembee",":nth-of-type(");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5094,9 +5094,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1823283962() {
+    public void testJsoupparse20959717172() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("odd","US-ASCII");
+        jsoup.parse("plaintexu",":matchesOwn)");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5115,9 +5115,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse12161387193() {
+    public void testJsoupparse7427584823() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(":containsOwn(","[");
+        jsoup.parse("xmp","charset");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5136,9 +5136,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8813757924() {
+    public void testJsoupparse1004065894() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("tabld","!=");
+        jsoup.parse("^<","imagd");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5157,9 +5157,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse12723140070() {
+    public void testJsoupparse21415288040() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("\"\"","httpt",);
+        jsoup.parse("checkbox",":nth-last-child(",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5178,9 +5178,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse4029483971() {
+    public void testJsoupparse17456644351() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("#text","basf",);
+        jsoup.parse(":lt)","http-equiw",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5199,9 +5199,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse13695415222() {
+    public void testJsoupparse15653419912() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(":alm",":last-of-type",);
+        jsoup.parse("~<","^>",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5220,9 +5220,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse16881817403() {
+    public void testJsoupparse9887065643() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("^>","http:0",);
+        jsoup.parse("xmk",":only-of-type",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5241,9 +5241,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse16086503514() {
+    public void testJsoupparse3957752394() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("style","ds",);
+        jsoup.parse("select","inpus",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5262,9 +5262,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1188380() {
+    public void testJsoupparse33700() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("xml");
+        jsoup.parse("hs");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5283,9 +5283,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse19391() {
+    public void testJsoupparse20913044561() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("<0");
+        jsoup.parse("isindey");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5304,9 +5304,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse18353322() {
+    public void testJsoupparse37312() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(":lt'");
+        jsoup.parse("th");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5325,9 +5325,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1101578783() {
+    public void testJsoupparse20353119913() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("tbodz");
+        jsoup.parse(":first-of-typd");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5346,9 +5346,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse358296694() {
+    public void testJsoupparse10548386284() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("#roou");
+        jsoup.parse(":first-child");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5367,9 +5367,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect16449536130() {
+    public void testJsoupconnect33737370() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("frameses");
+        jsoup.connect("namd");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5388,9 +5388,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect33681() {
+    public void testJsoupconnect37261() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("hq");
+        jsoup.connect("tc");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5409,9 +5409,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect34842() {
+    public void testJsoupconnect1252() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("li");
+        jsoup.connect("^");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5430,9 +5430,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect14711890863() {
+    public void testJsoupconnect1605222313() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect(":nth-last-child)");
+        jsoup.connect("bgsound");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5451,9 +5451,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect15368918734() {
+    public void testJsoupconnect17209582744() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("checkbow");
+        jsoup.connect("basefons");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5472,9 +5472,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse18576135290() throws Exception {
+    public void testJsoupparse18284891750() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"[CDATA[","</");
+        jsoup.parse(,"tbodz","htto");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5493,9 +5493,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8363753431() throws Exception {
+    public void testJsoupparse5789250161() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"dc","heac");
+        jsoup.parse(,"http","$<");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5514,9 +5514,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8349397992() throws Exception {
+    public void testJsoupparse10580213922() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"!<",":eq)");
+        jsoup.parse(,"lh",":nth-of-type(");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5535,9 +5535,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17527733443() throws Exception {
+    public void testJsoupparse350661943() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"colgrouo","^=");
+        jsoup.parse(,"#texu","Set-Cookif");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5556,9 +5556,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11057802464() throws Exception {
+    public void testJsoupparse1257424() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"frameset","br");
+        jsoup.parse(,"^>","tc");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5577,9 +5577,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse569534890() throws Exception {
+    public void testJsoupparse15139756280() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,":not)");
+        jsoup.parse(,":nth-of-type)");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5598,9 +5598,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1684919341() throws Exception {
+    public void testJsoupparse1102572831() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"bodz");
+        jsoup.parse(,"text0");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5619,9 +5619,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse14262888082() throws Exception {
+    public void testJsoupparse33489352() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,":containsOwn'");
+        jsoup.parse(,"metb");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5640,9 +5640,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17974712063() throws Exception {
+    public void testJsoupparse16276971673() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"scripu");
+        jsoup.parse(,":has)");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5661,9 +5661,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse16813309414() throws Exception {
+    public void testJsoupparse15576467664() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"eveo");
+        jsoup.parse(,"action");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5682,9 +5682,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17709910790() throws Exception {
+    public void testJsoupparse10215332620() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"captioo","basefonu");
+        jsoup.parse(,"inpus",":nth-last-of-type)");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5703,9 +5703,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse19388253231() throws Exception {
+    public void testJsoupparse1430017531() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"Set-Cookid","href");
+        jsoup.parse(,"#roos",":emptz");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5724,9 +5724,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse19974928572() throws Exception {
+    public void testJsoupparse15867849152() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"http:/",":first-child");
+        jsoup.parse(,"checkboy","h3");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5745,9 +5745,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse4848407213() throws Exception {
+    public void testJsoupparse4200289003() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"charses","#");
+        jsoup.parse(,":gt)","http:/");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5766,9 +5766,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1676068994() throws Exception {
+    public void testJsoupparse4830269804() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,":nth-last-of-type'","UTF.");
+        jsoup.parse(,"command","svf");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5787,9 +5787,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse50680980() throws Exception {
+    public void testJsoupparse15366189670() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"ds","h6",);
+        jsoup.parse(,"matg","action",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5808,9 +5808,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse15441489321() throws Exception {
+    public void testJsoupparse11205181901() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"tbody",":not)",);
+        jsoup.parse(,"noframet",":nth-last-of-type)",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5829,9 +5829,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse9813968342() throws Exception {
+    public void testJsoupparse18490916342() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"input",":containsData'",);
+        jsoup.parse(,":all","p",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5850,9 +5850,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse14227309333() throws Exception {
+    public void testJsoupparse9114957053() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"colgrouq","hreg",);
+        jsoup.parse(,"sarcasn","[a-zA-Z_:][-a-zA-Z0-9_:.])",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5871,9 +5871,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17500512674() throws Exception {
+    public void testJsoupparse13533161574() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(,"bs","script",);
+        jsoup.parse(,":last-chile","#roos",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5892,9 +5892,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment565649280() {
+    public void testJsoupparseBodyFragment4126639380() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment(":all","\"");
+        jsoup.parseBodyFragment("optgroup","isindey");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5913,9 +5913,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment4059300271() {
+    public void testJsoupparseBodyFragment31519111() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("isindex","*<");
+        jsoup.parseBodyFragment("?","forn");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5934,9 +5934,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment21037230422() {
+    public void testJsoupparseBodyFragment11482425612() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment(":nth-child(",":emptx");
+        jsoup.parseBodyFragment("isindex","checkee");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5955,9 +5955,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment14198905683() {
+    public void testJsoupparseBodyFragment7390767683() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("col","actioo");
+        jsoup.parseBodyFragment(".","charseu");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5976,9 +5976,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment11831769604() {
+    public void testJsoupparseBodyFragment988657494() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment(":emptx","DOCTYPD");
+        jsoup.parseBodyFragment("gzio","h5");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5997,9 +5997,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment1188380() {
+    public void testJsoupparseBodyFragment9503947300() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("xml");
+        jsoup.parseBodyFragment("command");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6018,9 +6018,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment33218801() {
+    public void testJsoupparseBodyFragment31490261() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("linj");
+        jsoup.parseBodyFragment("forl");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6039,9 +6039,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment13215466002() {
+    public void testJsoupparseBodyFragment1188422() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("templatd");
+        jsoup.parseBodyFragment("xmp");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6081,9 +6081,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment19732341984() {
+    public void testJsoupparseBodyFragment3081290264() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("plaintext");
+        jsoup.parseBodyFragment(":last-child");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6102,28 +6102,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse20398946650() throws Exception {
-        Jsoup jsoup = new Jsoup();
-        jsoup.parse(,);
-        assertTrue(jsoup.equals(jsoup));
-        try {
-            jsoup.equals(jsoup);
-        } catch (Exception e) {
-            fail("jsoup.equals(jsoup) throws an exception");
-        }
-        try {
-            jsoup.hashCode();
-        } catch (Exception e) {
-            fail("jsoup.hashCode() throws an exception");
-        }
-        try {
-            jsoup.toString();
-        } catch (Exception e) {
-            fail("jsoup.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testJsoupparse11590277641() throws Exception {
+    public void testJsoupparse1655197660() throws Exception {
         Jsoup jsoup = new Jsoup();
         jsoup.parse(,);
         assertTrue(jsoup.equals(jsoup));
@@ -6144,7 +6123,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse20398944692() throws Exception {
+    public void testJsoupparse8555649421() throws Exception {
         Jsoup jsoup = new Jsoup();
         jsoup.parse(,);
         assertTrue(jsoup.equals(jsoup));
@@ -6165,7 +6144,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse3292652283() throws Exception {
+    public void testJsoupparse11601419752() throws Exception {
         Jsoup jsoup = new Jsoup();
         jsoup.parse(,);
         assertTrue(jsoup.equals(jsoup));
@@ -6186,7 +6165,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11590280624() throws Exception {
+    public void testJsoupparse7496896553() throws Exception {
         Jsoup jsoup = new Jsoup();
         jsoup.parse(,);
         assertTrue(jsoup.equals(jsoup));
@@ -6207,9 +6186,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean12598207010() {
+    public void testJsoupparse20398942674() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("disablec","abs9",);
+        jsoup.parse(,);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6228,9 +6207,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1885647731() {
+    public void testJsoupclean8046886970() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("text/","plaintexs",);
+        jsoup.clean("span","abs;",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6249,9 +6228,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean649053702() {
+    public void testJsoupclean19668233181() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean(":not'","tabld",);
+        jsoup.clean("caption","command",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6270,9 +6249,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean9486300323() {
+    public void testJsoupclean12830876722() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("!>",":containsOwn)",);
+        jsoup.clean("templatf","html",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6291,9 +6270,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean16177004724() {
+    public void testJsoupclean12003498953() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("td","#texu",);
+        jsoup.clean("tfoot","disablee",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6312,9 +6291,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1922601220() {
+    public void testJsoupclean2205726454() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("xml",);
+        jsoup.clean("noembec",":matches)",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6333,9 +6312,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean2825345891() {
+    public void testJsoupclean996109990() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("h2",);
+        jsoup.clean("htmk",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6354,9 +6333,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean3992245332() {
+    public void testJsoupclean4227116091() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean(":last-child",);
+        jsoup.clean("radio",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6375,9 +6354,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean8148937433() {
+    public void testJsoupclean20685287632() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("keygen",);
+        jsoup.clean("[a-zA-Z_:][-a-zA-Z0-9_:.]*",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6396,9 +6375,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean14219515984() {
+    public void testJsoupclean4849355153() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean(":containsData)",);
+        jsoup.clean("eveo",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6417,9 +6396,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean21467855720() {
+    public void testJsoupclean1108449034() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("sarcasl","xmm",,);
+        jsoup.clean("type",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6438,9 +6417,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean20953588371() {
+    public void testJsoupclean14071732820() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("DOCTYPE","commane",,);
+        jsoup.clean(":only-of-type","htmk",,);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6459,9 +6438,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean5044655122() {
+    public void testJsoupclean18587489251() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("du","radio",,);
+        jsoup.clean("linl","hr",,);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6480,9 +6459,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1883311573() {
+    public void testJsoupclean16572028822() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("dd","UTF.",,);
+        jsoup.clean("#roos","bq",,);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6501,9 +6480,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean7035425174() {
+    public void testJsoupclean14032873943() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("inpus","http:.",,);
+        jsoup.clean("dt","tabld",,);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6522,9 +6501,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid11769516200() {
+    public void testJsoupclean10135554744() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("titld",);
+        jsoup.clean("</","tfoos",,);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6543,9 +6522,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid10206064271() {
+    public void testJsoupisValid19307548880() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("http-equiw",);
+        jsoup.isValid(":lt(",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6564,9 +6543,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid8026412502() {
+    public void testJsoupisValid9063693271() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("<.",);
+        jsoup.isValid("meta",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6585,9 +6564,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid1156623() {
+    public void testJsoupisValid6914969652() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("tg",);
+        jsoup.isValid("tbody",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6606,9 +6585,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid500923894() {
+    public void testJsoupisValid8187961803() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("caption",);
+        jsoup.isValid("httpr",);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6627,9 +6606,30 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput10407216600() {
+    public void testJsoupisValid2984511534() {
+        Jsoup jsoup = new Jsoup();
+        jsoup.isValid(":first-child",);
+        assertTrue(jsoup.equals(jsoup));
+        try {
+            jsoup.equals(jsoup);
+        } catch (Exception e) {
+            fail("jsoup.equals(jsoup) throws an exception");
+        }
+        try {
+            jsoup.hashCode();
+        } catch (Exception e) {
+            fail("jsoup.hashCode() throws an exception");
+        }
+        try {
+            jsoup.toString();
+        } catch (Exception e) {
+            fail("jsoup.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testParserparseInput6793973440() {
         Parser parser = new Parser();
-        parser.parseInput("plaintexs","te");
+        parser.parseInput("bgsounc",":alm");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6648,9 +6648,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput17271781941() {
+    public void testParserparseInput1061767441() {
         Parser parser = new Parser();
-        parser.parseInput("iframf","xmk");
+        parser.parseInput("link","heae");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6669,9 +6669,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput16567534022() {
+    public void testParserparseInput13540090872() {
         Parser parser = new Parser();
-        parser.parseInput(":first-chilc","abs;");
+        parser.parseInput(":last-chilc",":containsOwn)");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6690,9 +6690,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput16803260363() {
+    public void testParserparseInput8534426233() {
         Parser parser = new Parser();
-        parser.parseInput("noframes","<.");
+        parser.parseInput("noscript","h2");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6711,9 +6711,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput12353407774() {
+    public void testParserparseInput386924554() {
         Parser parser = new Parser();
-        parser.parseInput("bodx","[CDATA[");
+        parser.parseInput("]]>","#roos");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6732,9 +6732,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput8619779880() {
+    public void testParserparseInput13240906780() {
         Parser parser = new Parser();
-        parser.parseInput(,"ti");
+        parser.parseInput(,"boundary");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6753,9 +6753,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput33489641() {
+    public void testParserparseInput13068906601() {
         Parser parser = new Parser();
-        parser.parseInput(,"met`");
+        parser.parseInput(,"[CDATA[");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6774,9 +6774,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput8321217712() {
+    public void testParserparseInput20919585052() {
         Parser parser = new Parser();
-        parser.parseInput(,"actioo");
+        parser.parseInput(,":only-chile");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6795,9 +6795,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput5039652763() {
+    public void testParserparseInput7463418693() {
         Parser parser = new Parser();
-        parser.parseInput(,":last-of-typf");
+        parser.parseInput(,"meta");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6816,9 +6816,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput16810827644() {
+    public void testParserparseInput5737064724() {
         Parser parser = new Parser();
-        parser.parseInput(,"namf");
+        parser.parseInput(,":nth-child(");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6837,9 +6837,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput3296499930() {
+    public void testParserparseFragmentInput10004356770() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("head",,"$>");
+        parser.parseFragmentInput("\'",,"textare`");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6858,9 +6858,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput18642661171() {
+    public void testParserparseFragmentInput9065734321() {
         Parser parser = new Parser();
-        parser.parseFragmentInput(":matchText",,"$>");
+        parser.parseFragmentInput("frameses",,"tc");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6879,9 +6879,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput11989502532() {
+    public void testParserparseFragmentInput4900066792() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("title",,"radip");
+        parser.parseFragmentInput(":has)",,":matches'");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6900,9 +6900,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput8021617863() {
+    public void testParserparseFragmentInput1894012623() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("basd",,"http:0");
+        parser.parseFragmentInput("htmk",,":nth-last-of-type'");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6921,9 +6921,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput16263296334() {
+    public void testParserparseFragmentInput14109250394() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("inpuu",,":lt)");
+        parser.parseFragmentInput("imf",,"gzip");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7047,7 +7047,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTreeBuilder310() {
+    public void testParsersetTreeBuilder13612897780() {
         Parser parser = new Parser();
         parser.setTreeBuilder();
         assertTrue(parser.equals(parser));
@@ -7068,7 +7068,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTreeBuilder16082306801() {
+    public void testParsersetTreeBuilder8025812341() {
         Parser parser = new Parser();
         parser.setTreeBuilder();
         assertTrue(parser.equals(parser));
@@ -7089,7 +7089,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTreeBuilder16082306802() {
+    public void testParsersetTreeBuilder15614086492() {
         Parser parser = new Parser();
         parser.setTreeBuilder();
         assertTrue(parser.equals(parser));
@@ -7110,7 +7110,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTreeBuilder323() {
+    public void testParsersetTreeBuilder633() {
         Parser parser = new Parser();
         parser.setTreeBuilder();
         assertTrue(parser.equals(parser));
@@ -7131,7 +7131,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTreeBuilder13612897784() {
+    public void testParsersetTreeBuilder18432892594() {
         Parser parser = new Parser();
         parser.setTreeBuilder();
         assertTrue(parser.equals(parser));
@@ -7257,7 +7257,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors553270() {
+    public void testParsersetTrackErrors4320() {
         Parser parser = new Parser();
         parser.setTrackErrors();
         assertTrue(parser.equals(parser));
@@ -7278,7 +7278,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors301() {
+    public void testParsersetTrackErrors321() {
         Parser parser = new Parser();
         parser.setTrackErrors();
         assertTrue(parser.equals(parser));
@@ -7299,7 +7299,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors554272() {
+    public void testParsersetTrackErrors572742() {
         Parser parser = new Parser();
         parser.setTrackErrors();
         assertTrue(parser.equals(parser));
@@ -7320,7 +7320,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors554273() {
+    public void testParsersetTrackErrors2233() {
         Parser parser = new Parser();
         parser.setTrackErrors();
         assertTrue(parser.equals(parser));
@@ -7341,7 +7341,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors2554() {
+    public void testParsersetTrackErrors694() {
         Parser parser = new Parser();
         parser.setTrackErrors();
         assertTrue(parser.equals(parser));
@@ -7467,7 +7467,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersettings16082306800() {
+    public void testParsersettings630() {
         Parser parser = new Parser();
         parser.settings();
         assertTrue(parser.equals(parser));
@@ -7488,7 +7488,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersettings8025812341() {
+    public void testParsersettings1885761751() {
         Parser parser = new Parser();
         parser.settings();
         assertTrue(parser.equals(parser));
@@ -7509,7 +7509,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersettings322() {
+    public void testParsersettings8025812342() {
         Parser parser = new Parser();
         parser.settings();
         assertTrue(parser.equals(parser));
@@ -7530,7 +7530,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersettings8025812343() {
+    public void testParsersettings2664372633() {
         Parser parser = new Parser();
         parser.settings();
         assertTrue(parser.equals(parser));
@@ -7551,7 +7551,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersettings18738595964() {
+    public void testParsersettings324() {
         Parser parser = new Parser();
         parser.settings();
         assertTrue(parser.equals(parser));
@@ -7677,9 +7677,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse8116802970() {
+    public void testParserparse11595902810() {
         Parser parser = new Parser();
-        parser.parse("keygen","htto");
+        parser.parse("noembec","]]?");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7698,9 +7698,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse17692825301() {
+    public void testParserparse9260028561() {
         Parser parser = new Parser();
-        parser.parse(":roou","]]>");
+        parser.parse("textare`","styld");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7719,9 +7719,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse14561228152() {
+    public void testParserparse70319502() {
         Parser parser = new Parser();
-        parser.parse("h6",":matches'");
+        parser.parse("xml","met`");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7740,9 +7740,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse11392177463() {
+    public void testParserparse16184387123() {
         Parser parser = new Parser();
-        parser.parse("optioo","text0");
+        parser.parse("*<",":only-of-type");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7761,9 +7761,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse20115771984() {
+    public void testParserparse1138703534() {
         Parser parser = new Parser();
-        parser.parse("[a-zA-Z_:][-a-zA-Z0-9_:.]+",":not(");
+        parser.parse("svf","theac");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7782,9 +7782,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment9669619310() {
+    public void testParserparseFragment42206020() {
         Parser parser = new Parser();
-        parser.parseFragment(":containsData)",,"!=");
+        parser.parseFragment(":nth-last-of-type(",,"httq");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7803,9 +7803,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment20556562221() {
+    public void testParserparseFragment6145412061() {
         Parser parser = new Parser();
-        parser.parseFragment("forn",,"optgrouq");
+        parser.parseFragment("textarea",,"disablec");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7824,9 +7824,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment13485804832() {
+    public void testParserparseFragment16458617772() {
         Parser parser = new Parser();
-        parser.parseFragment("noscript",,"noscrips");
+        parser.parseFragment("com",,"com");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7845,9 +7845,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment2609601453() {
+    public void testParserparseFragment14215975183() {
         Parser parser = new Parser();
-        parser.parseFragment("\"\"",,"noembec");
+        parser.parseFragment("xmo",,"a");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7866,9 +7866,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment18927231384() {
+    public void testParserparseFragment1034712584() {
         Parser parser = new Parser();
-        parser.parseFragment("tbodz",,"~=");
+        parser.parseFragment("imf",,"evem");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7887,9 +7887,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment6491914040() {
+    public void testParserparseFragment15817848650() {
         Parser parser = new Parser();
-        parser.parseFragment("textarea",,":gt(",);
+        parser.parseFragment("style",,"frameset",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7908,9 +7908,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment4698902891() {
+    public void testParserparseFragment20668293041() {
         Parser parser = new Parser();
-        parser.parseFragment("http-equiv",,"odc",);
+        parser.parseFragment("met`",,"#roou",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7929,9 +7929,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment3033391802() {
+    public void testParserparseFragment7865024272() {
         Parser parser = new Parser();
-        parser.parseFragment(":matches'",,":last-chilc",);
+        parser.parseFragment("abs9",,"namf",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7950,9 +7950,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment16684167863() {
+    public void testParserparseFragment13538551863() {
         Parser parser = new Parser();
-        parser.parseFragment("iframe",,"checkbox",);
+        parser.parseFragment("*<",,"met`",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7971,9 +7971,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment7649539154() {
+    public void testParserparseFragment15724919644() {
         Parser parser = new Parser();
-        parser.parseFragment("buttoo",,"caption",);
+        parser.parseFragment("linl",,"evem",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7992,9 +7992,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment744550080() {
+    public void testParserparseXmlFragment5494192570() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("\"\"","bgsoune");
+        parser.parseXmlFragment("frameses","namf");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8013,9 +8013,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment568985051() {
+    public void testParserparseXmlFragment971261191() {
         Parser parser = new Parser();
-        parser.parseXmlFragment(":lt)","bq");
+        parser.parseXmlFragment("body","http");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8034,9 +8034,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment844155212() {
+    public void testParserparseXmlFragment18099945232() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("UTF.","matg");
+        parser.parseXmlFragment("basefont","imh");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8055,9 +8055,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment12068360433() {
+    public void testParserparseXmlFragment11134960713() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("https","dc");
+        parser.parseXmlFragment("#roou","\"\"");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8076,9 +8076,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment62524() {
+    public void testParserparseXmlFragment8983483884() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("?","hr");
+        parser.parseXmlFragment(":contains)","inpuu");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8097,9 +8097,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment14592522310() {
+    public void testParserparseBodyFragment996180040() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("US-ASCII","type");
+        parser.parseBodyFragment("httq","|");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8118,9 +8118,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment11917480921() {
+    public void testParserparseBodyFragment3499849281() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("buttom","commane");
+        parser.parseBodyFragment(":nth-child(","nobq");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8139,9 +8139,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment20969391382() {
+    public void testParserparseBodyFragment20586110082() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("even",":matchTexs");
+        parser.parseBodyFragment("disablee","[a-zA-Z_:][-a-zA-Z0-9_:.])");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8160,9 +8160,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment1103798023() {
+    public void testParserparseBodyFragment5941677083() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("h2","tfoou");
+        parser.parseBodyFragment("text/",":nth-last-child'");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8181,9 +8181,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment26583884() {
+    public void testParserparseBodyFragment13298343854() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("*=","UTF-");
+        parser.parseBodyFragment(":first-of-typf","h0");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8202,9 +8202,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities16468717240() {
+    public void testParserunescapeEntities8813756450() {
         Parser parser = new Parser();
-        parser.unescapeEntities(":matchesOwn)",);
+        parser.unescapeEntities("tabld",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8223,9 +8223,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities11501471621() {
+    public void testParserunescapeEntities1018881() {
         Parser parser = new Parser();
-        parser.unescapeEntities("boundary",);
+        parser.unescapeEntities("dt",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8244,9 +8244,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities8763673472() {
+    public void testParserunescapeEntities36853022() {
         Parser parser = new Parser();
-        parser.unescapeEntities("tfoou",);
+        parser.unescapeEntities("xmo",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8265,9 +8265,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities36853333() {
+    public void testParserunescapeEntities5460468423() {
         Parser parser = new Parser();
-        parser.unescapeEntities("xmp",);
+        parser.unescapeEntities("frameseu",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8286,9 +8286,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities935105924() {
+    public void testParserunescapeEntities968935914() {
         Parser parser = new Parser();
-        parser.unescapeEntities("basd",);
+        parser.unescapeEntities("evem",);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8307,9 +8307,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed8748302280() {
+    public void testParserparseBodyFragmentRelaxed6358122530() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed("thead","dc");
+        parser.parseBodyFragmentRelaxed("#texu","DOCTYPF");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8328,9 +8328,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed6563333191() {
+    public void testParserparseBodyFragmentRelaxed144326671() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed("optgrouo","keygen");
+        parser.parseBodyFragmentRelaxed("sarcasm",":only-chile");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8349,9 +8349,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed13266486362() {
+    public void testParserparseBodyFragmentRelaxed968924372() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed(":first-of-typd","gziq");
+        parser.parseBodyFragmentRelaxed("even",".");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8370,9 +8370,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed18642985983() {
+    public void testParserparseBodyFragmentRelaxed20094990093() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed("svf","[a-zA-Z_:][-a-zA-Z0-9_:.])");
+        parser.parseBodyFragmentRelaxed("thead","keygeo");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8391,9 +8391,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed9986021244() {
+    public void testParserparseBodyFragmentRelaxed36870784() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed(":contains(","imf");
+        parser.parseBodyFragmentRelaxed("xmp","^>");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8832,9 +8832,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf432150() {
+    public void testTagvalueOf2931788030() {
         Tag tag = new Tag();
-        tag.valueOf("*<",);
+        tag.valueOf("bgsounc",);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8853,9 +8853,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf17078416161() {
+    public void testTagvalueOf16179706601() {
         Tag tag = new Tag();
-        tag.valueOf("htmk",);
+        tag.valueOf(":all",);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8874,9 +8874,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf19730119492() {
+    public void testTagvalueOf3453450052() {
         Tag tag = new Tag();
-        tag.valueOf("heae",);
+        tag.valueOf("textare`",);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8895,9 +8895,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf20574361653() {
+    public void testTagvalueOf3815844563() {
         Tag tag = new Tag();
-        tag.valueOf("optgroup",);
+        tag.valueOf("heac",);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8916,9 +8916,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf18767224154() {
+    public void testTagvalueOf13933036684() {
         Tag tag = new Tag();
-        tag.valueOf("]]?",);
+        tag.valueOf(":first-child",);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8937,9 +8937,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf35367460() {
+    public void testTagvalueOf14562253610() {
         Tag tag = new Tag();
-        tag.valueOf("spao");
+        tag.valueOf(":matches)");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8958,9 +8958,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf34851() {
+    public void testTagvalueOf16183955611() {
         Tag tag = new Tag();
-        tag.valueOf("lj");
+        tag.valueOf(":only-of-typf");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8979,9 +8979,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf772() {
+    public void testTagvalueOf10176250972() {
         Tag tag = new Tag();
-        tag.valueOf(".");
+        tag.valueOf(":nth-last-of-type(");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9000,9 +9000,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf37313() {
+    public void testTagvalueOf21156131443() {
         Tag tag = new Tag();
-        tag.valueOf("th");
+        tag.valueOf("noembee");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9021,9 +9021,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf10101369394() {
+    public void testTagvalueOf11912143984() {
         Tag tag = new Tag();
-        tag.valueOf("optioo");
+        tag.valueOf("iframd");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9882,9 +9882,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag1650854890() {
+    public void testTagisKnownTag1102563220() {
         Tag tag = new Tag();
-        tag.isKnownTag("http-equiu");
+        tag.isKnownTag("text0");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9903,9 +9903,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag12068418921() {
+    public void testTagisKnownTag13776877271() {
         Tag tag = new Tag();
-        tag.isKnownTag("http:/");
+        tag.isKnownTag("button");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9924,9 +9924,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag3081290252() {
+    public void testTagisKnownTag11927218612() {
         Tag tag = new Tag();
-        tag.isKnownTag(":last-chile");
+        tag.isKnownTag("noframer");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9945,9 +9945,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag10176250973() {
+    public void testTagisKnownTag1188423() {
         Tag tag = new Tag();
-        tag.isKnownTag(":nth-last-of-type(");
+        tag.isKnownTag("xmp");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9966,9 +9966,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag14229508274() {
+    public void testTagisKnownTag21153115444() {
         Tag tag = new Tag();
-        tag.isKnownTag("action");
+        tag.isKnownTag("boundarx");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -10617,7 +10617,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking5310() {
+    public void testParseErrorListtracking553270() {
         ParseErrorList parseerrorlist = new ParseErrorList();
         parseerrorlist.tracking();
         assertTrue(parseerrorlist.equals(parseerrorlist));
@@ -10638,7 +10638,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking2711() {
+    public void testParseErrorListtracking321() {
         ParseErrorList parseerrorlist = new ParseErrorList();
         parseerrorlist.tracking();
         assertTrue(parseerrorlist.equals(parseerrorlist));
@@ -10659,7 +10659,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking302() {
+    public void testParseErrorListtracking332() {
         ParseErrorList parseerrorlist = new ParseErrorList();
         parseerrorlist.tracking();
         assertTrue(parseerrorlist.equals(parseerrorlist));
@@ -10680,7 +10680,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking4313() {
+    public void testParseErrorListtracking553283() {
         ParseErrorList parseerrorlist = new ParseErrorList();
         parseerrorlist.tracking();
         assertTrue(parseerrorlist.equals(parseerrorlist));
@@ -10701,7 +10701,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking5314() {
+    public void testParseErrorListtracking553284() {
         ParseErrorList parseerrorlist = new ParseErrorList();
         parseerrorlist.tracking();
         assertTrue(parseerrorlist.equals(parseerrorlist));
@@ -11142,9 +11142,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo1260() {
+    public void testCharacterReaderconsumeTo650() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo("_");
+        characterreader.consumeTo(""");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11163,9 +11163,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo1331() {
+    public void testCharacterReaderconsumeTo921() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo("f");
+        characterreader.consumeTo("=");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11184,9 +11184,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo912() {
+    public void testCharacterReaderconsumeTo922() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo("<");
+        characterreader.consumeTo("=");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11205,9 +11205,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo1233() {
+    public void testCharacterReaderconsumeTo1003() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo('\\');
+        characterreader.consumeTo("E");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11226,9 +11226,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo934() {
+    public void testCharacterReaderconsumeTo1424() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo(">");
+        characterreader.consumeTo("o");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11247,9 +11247,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1210() {
+    public void testCharacterReaderconsumeToAny1440() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny("Z");
+        characterreader.consumeToAny("q");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11268,9 +11268,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny931() {
+    public void testCharacterReaderconsumeToAny1561() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny(">");
+        characterreader.consumeToAny("}");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11289,9 +11289,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny912() {
+    public void testCharacterReaderconsumeToAny882() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny("<");
+        characterreader.consumeToAny("9");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11310,9 +11310,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1263() {
+    public void testCharacterReaderconsumeToAny693() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny("_");
+        characterreader.consumeToAny("&");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11331,9 +11331,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1274() {
+    public void testCharacterReaderconsumeToAny794() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny("`");
+        characterreader.consumeToAny("0");
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11352,9 +11352,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload3789701040() throws Exception {
+    public void testDataUtilload15420799820() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"<0","iframd");
+        datautil.load(,"spao","odc");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11373,9 +11373,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload13050128621() throws Exception {
+    public void testDataUtilload75496181() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"templatf",":eq'");
+        datautil.load(,"evem",":containsOwn)");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11394,9 +11394,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload21457512982() throws Exception {
+    public void testDataUtilload6230461862() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,":nth-last-of-type(","http:/");
+        datautil.load(,"h1",":matches)");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11415,9 +11415,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload17152081343() throws Exception {
+    public void testDataUtilload16272402103() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"tfoos","tbodx");
+        datautil.load(,"*|",":roos");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11436,9 +11436,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload11288684024() throws Exception {
+    public void testDataUtilload19688489384() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"US-ASCIH","tfoos");
+        datautil.load(,":containsOwn'","lh");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11457,9 +11457,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload18794127840() throws Exception {
+    public void testDataUtilload8233090570() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"textarea","http-equiw");
+        datautil.load(,"scripu","deflate");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11478,9 +11478,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload11479558961() throws Exception {
+    public void testDataUtilload6751548201() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"inpus","#texu");
+        datautil.load(,".","nobs");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11499,9 +11499,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload16568049152() throws Exception {
+    public void testDataUtilload19603700762() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"head","textare`");
+        datautil.load(,":last-of-type",":matches(");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11520,9 +11520,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload9340908263() throws Exception {
+    public void testDataUtilload15090269293() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"html","ode");
+        datautil.load(,":lt(",":nth-of-type)");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11541,9 +11541,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload4203464344() throws Exception {
+    public void testDataUtilload8731126324() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,":emptx","tfoos");
+        datautil.load(,"]]=","#text");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11562,9 +11562,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload10174761850() throws Exception {
+    public void testDataUtilload4513056550() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"http-equiv",":matchTexu",);
+        datautil.load(,"action","[a-zA-Z_:][-a-zA-Z0-9_:.]*",);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11583,9 +11583,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload6298127111() throws Exception {
+    public void testDataUtilload10796411171() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"$>","hs",);
+        datautil.load(,"gziq","templatd",);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11604,9 +11604,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload20511902372() throws Exception {
+    public void testDataUtilload11601443202() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,":nth-last-of-type)","base",);
+        datautil.load(,"captioo","[a-zA-Z_:][-a-zA-Z0-9_:.])",);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11625,9 +11625,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload11796900373() throws Exception {
+    public void testDataUtilload11389371233() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"htmk","[CDATA[",);
+        datautil.load(,"buttom","button",);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11646,9 +11646,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload18711849784() throws Exception {
+    public void testDataUtilload6687309654() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load(,"svf","hr",);
+        datautil.load(,"gzio","boundarz",);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11667,7 +11667,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer8897282790() throws Exception {
+    public void testDataUtilreadToByteBuffer11590282640() throws Exception {
         DataUtil datautil = new DataUtil();
         datautil.readToByteBuffer(,);
         assertTrue(datautil.equals(datautil));
@@ -11688,7 +11688,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer15509495251() throws Exception {
+    public void testDataUtilreadToByteBuffer8555077021() throws Exception {
         DataUtil datautil = new DataUtil();
         datautil.readToByteBuffer(,);
         assertTrue(datautil.equals(datautil));
@@ -11709,7 +11709,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer20398945662() throws Exception {
+    public void testDataUtilreadToByteBuffer13073923722() throws Exception {
         DataUtil datautil = new DataUtil();
         datautil.readToByteBuffer(,);
         assertTrue(datautil.equals(datautil));
@@ -11730,7 +11730,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer8897281803() throws Exception {
+    public void testDataUtilreadToByteBuffer572503() throws Exception {
         DataUtil datautil = new DataUtil();
         datautil.readToByteBuffer(,);
         assertTrue(datautil.equals(datautil));
@@ -11751,7 +11751,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer8619263934() throws Exception {
+    public void testDataUtilreadToByteBuffer1654626264() throws Exception {
         DataUtil datautil = new DataUtil();
         datautil.readToByteBuffer(,);
         assertTrue(datautil.equals(datautil));
@@ -11772,7 +11772,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull320() {
+    public void testValidatenotNull8025812340() {
         Validate validate = new Validate();
         validate.notNull();
         assertTrue(validate.equals(validate));
@@ -11793,7 +11793,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull321() {
+    public void testValidatenotNull3880431241() {
         Validate validate = new Validate();
         validate.notNull();
         assertTrue(validate.equals(validate));
@@ -11814,7 +11814,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull1885761752() {
+    public void testValidatenotNull2664372632() {
         Validate validate = new Validate();
         validate.notNull();
         assertTrue(validate.equals(validate));
@@ -11835,7 +11835,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull16082306803() {
+    public void testValidatenotNull3880431243() {
         Validate validate = new Validate();
         validate.notNull();
         assertTrue(validate.equals(validate));
@@ -11856,7 +11856,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull16082306804() {
+    public void testValidatenotNull3880431244() {
         Validate validate = new Validate();
         validate.notNull();
         assertTrue(validate.equals(validate));
@@ -11877,9 +11877,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull14177635960() {
+    public void testValidatenotNull3303783540() {
         Validate validate = new Validate();
-        validate.notNull(,"titld");
+        validate.notNull(,"!>");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11898,9 +11898,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull8555613491() {
+    public void testValidatenotNull9985056011() {
         Validate validate = new Validate();
-        validate.notNull(,"tc");
+        validate.notNull(,"bgsound");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11919,9 +11919,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull20398945562() {
+    public void testValidatenotNull1686757492() {
         Validate validate = new Validate();
-        validate.notNull(,"p");
+        validate.notNull(,"htmk");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11940,9 +11940,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull4135661243() {
+    public void testValidatenotNull2709417893() {
         Validate validate = new Validate();
-        validate.notNull(,"basefons");
+        validate.notNull(,"disablee");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11961,9 +11961,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull13104215904() {
+    public void testValidatenotNull16844564324() {
         Validate validate = new Validate();
-        validate.notNull(,"bodx");
+        validate.notNull(,"(");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12087,9 +12087,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue423960() {
+    public void testValidateisTrue428230() {
         Validate validate = new Validate();
-        validate.isTrue(,"h2");
+        validate.isTrue(,"ti");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12108,9 +12108,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue1104105381() {
+    public void testValidateisTrue428191() {
         Validate validate = new Validate();
-        validate.isTrue(,"title");
+        validate.isTrue(,"te");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12129,9 +12129,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue1604831402() {
+    public void testValidateisTrue35758362() {
         Validate validate = new Validate();
-        validate.isTrue(,"bgsound");
+        validate.isTrue(,"span");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12150,9 +12150,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue18636743() {
+    public void testValidateisTrue20353510823() {
         Validate validate = new Validate();
-        validate.isTrue(,":alm");
+        validate.isTrue(,":first-of-typd");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12171,9 +12171,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue13215075084() {
+    public void testValidateisTrue18911670244() {
         Validate validate = new Validate();
-        validate.isTrue(,"template");
+        validate.isTrue(,":nth-of-type)");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12297,9 +12297,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse1579300() {
+    public void testValidateisFalse420970() {
         Validate validate = new Validate();
-        validate.isFalse(,"xmm");
+        validate.isFalse(,"^=");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12318,9 +12318,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse404841() {
+    public void testValidateisFalse1314401() {
         Validate validate = new Validate();
-        validate.isFalse(,"*<");
+        validate.isFalse(,"]]>");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12339,9 +12339,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse423982() {
+    public void testValidateisFalse18676032() {
         Validate validate = new Validate();
-        validate.isFalse(,"h4");
+        validate.isFalse(,":eq'");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12360,9 +12360,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse12174483243() {
+    public void testValidateisFalse18676043() {
         Validate validate = new Validate();
-        validate.isFalse(,"hidden");
+        validate.isFalse(,":eq(");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12381,9 +12381,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse1103164694() {
+    public void testValidateisFalse2709799184() {
         Validate validate = new Validate();
-        validate.isFalse(,"tfoou");
+        validate.isFalse(,"disabled");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12402,28 +12402,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements15827856290() {
-        Validate validate = new Validate();
-        validate.noNullElements(});
-        assertTrue(validate.equals(validate));
-        try {
-            validate.equals(validate);
-        } catch (Exception e) {
-            fail("validate.equals(validate) throws an exception");
-        }
-        try {
-            validate.hashCode();
-        } catch (Exception e) {
-            fail("validate.hashCode() throws an exception");
-        }
-        try {
-            validate.toString();
-        } catch (Exception e) {
-            fail("validate.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testValidatenoNullElements3228362521() {
+    public void testValidatenoNullElements3228362520() {
         Validate validate = new Validate();
         validate.noNullElements(});
         assertTrue(validate.equals(validate));
@@ -12444,7 +12423,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements13706511122() {
+    public void testValidatenoNullElements13706511121() {
         Validate validate = new Validate();
         validate.noNullElements(});
         assertTrue(validate.equals(validate));
@@ -12465,7 +12444,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements4500037113() {
+    public void testValidatenoNullElements4500037112() {
         Validate validate = new Validate();
         validate.noNullElements(});
         assertTrue(validate.equals(validate));
@@ -12486,7 +12465,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements21349916634() {
+    public void testValidatenoNullElements21349916633() {
         Validate validate = new Validate();
         validate.noNullElements(});
         assertTrue(validate.equals(validate));
@@ -12507,9 +12486,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements20253338450() {
+    public void testValidatenoNullElements4809718024() {
         Validate validate = new Validate();
-        validate.noNullElements(},"odd");
+        validate.noNullElements(});
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12528,9 +12507,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements19475613401() {
+    public void testValidatenoNullElements20573385240() {
         Validate validate = new Validate();
-        validate.noNullElements(},"du");
+        validate.noNullElements(},"style");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12549,9 +12528,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements8877112572() {
+    public void testValidatenoNullElements8880685651() {
         Validate validate = new Validate();
-        validate.noNullElements(},"namf");
+        validate.noNullElements(},"basd");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12570,9 +12549,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements17818262703() {
+    public void testValidatenoNullElements3223898252() {
         Validate validate = new Validate();
-        validate.noNullElements(},"href");
+        validate.noNullElements(},":matches'");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12591,9 +12570,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements16869066024() {
+    public void testValidatenoNullElements3956683403() {
         Validate validate = new Validate();
-        validate.noNullElements(},"keygen");
+        validate.noNullElements(},"sarcasl");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12612,9 +12591,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty14562253610() {
+    public void testValidatenoNullElements267443414() {
         Validate validate = new Validate();
-        validate.notEmpty(":matches)");
+        validate.noNullElements(},"[a-zA-Z_:][-a-zA-Z0-9_:.]*");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12633,9 +12612,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty1102563201() {
+    public void testValidatenotEmpty358296690() {
         Validate validate = new Validate();
-        validate.notEmpty("text.");
+        validate.notEmpty("#roou");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12654,9 +12633,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty14712() {
+    public void testValidatenotEmpty570706501() {
         Validate validate = new Validate();
-        validate.notEmpty("--");
+        validate.notEmpty(":roos");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12675,9 +12654,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty20913044553() {
+    public void testValidatenotEmpty12068418922() {
         Validate validate = new Validate();
-        validate.notEmpty("isindex");
+        validate.notEmpty("http:/");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12696,9 +12675,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty18245814() {
+    public void testValidatenotEmpty31255613() {
         Validate validate = new Validate();
-        validate.notEmpty(":alk");
+        validate.notEmpty("even");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12717,9 +12696,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty6373700340() {
+    public void testValidatenotEmpty1188384() {
         Validate validate = new Validate();
-        validate.notEmpty("#roou","DOCTYPF");
+        validate.notEmpty("xml");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12738,9 +12717,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty1907688651() {
+    public void testValidatenotEmpty2140444130() {
         Validate validate = new Validate();
-        validate.notEmpty("disablee",";");
+        validate.notEmpty("meta","text.");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12759,9 +12738,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty8812781882() {
+    public void testValidatenotEmpty19434688791() {
         Validate validate = new Validate();
-        validate.notEmpty("tabld","col");
+        validate.notEmpty("textareb","script");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12780,9 +12759,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty2200105113() {
+    public void testValidatenotEmpty17953689902() {
         Validate validate = new Validate();
-        validate.notEmpty("span","title");
+        validate.notEmpty(":has'","#roos");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12801,9 +12780,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty34976444() {
+    public void testValidatenotEmpty14400070053() {
         Validate validate = new Validate();
-        validate.notEmpty("~=","namd");
+        validate.notEmpty("charseu","spam");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12822,9 +12801,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail32300() {
+    public void testValidatenotEmpty32494994() {
         Validate validate = new Validate();
-        validate.fail("dc");
+        validate.notEmpty("~>","even");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12843,9 +12822,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail18678420531() {
+    public void testValidatefail11912143970() {
         Validate validate = new Validate();
-        validate.fail("[a-zA-Z_:][-a-zA-Z0-9_:.])");
+        validate.fail("iframe");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12864,9 +12843,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail33042() {
+    public void testValidatefail33737371() {
         Validate validate = new Validate();
-        validate.fail("h1");
+        validate.fail("namd");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12885,9 +12864,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail1553() {
+    public void testValidatefail14229508282() {
         Validate validate = new Validate();
-        validate.fail("|");
+        validate.fail("actiom");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12906,9 +12885,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail10761623194() {
+    public void testValidatefail21156131433() {
         Validate validate = new Validate();
-        validate.fail(":contains)");
+        validate.fail("noembed");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12927,9 +12906,30 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect3081290250() {
+    public void testValidatefail16449536134() {
+        Validate validate = new Validate();
+        validate.fail("frameses");
+        assertTrue(validate.equals(validate));
+        try {
+            validate.equals(validate);
+        } catch (Exception e) {
+            fail("validate.equals(validate) throws an exception");
+        }
+        try {
+            validate.hashCode();
+        } catch (Exception e) {
+            fail("validate.hashCode() throws an exception");
+        }
+        try {
+            validate.toString();
+        } catch (Exception e) {
+            fail("validate.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectionconnect20919604290() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect(":last-chile");
+        httpconnection.connect(":only-chilc");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -12948,9 +12948,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect32321() {
+    public void testHttpConnectionconnect10101369391() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("de");
+        httpconnection.connect("optioo");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -12969,9 +12969,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect14572() {
+    public void testHttpConnectionconnect1082706192() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("*|");
+        httpconnection.connect("radip");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -12990,9 +12990,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect31255623() {
+    public void testHttpConnectionconnect11912143973() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("eveo");
+        httpconnection.connect("iframe");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13011,9 +13011,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect5525734444() {
+    public void testHttpConnectionconnect358799194() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("captiom");
+        httpconnection.connect("#text");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13032,7 +13032,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect20504041210() {
+    public void testHttpConnectionconnect2664372630() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.connect();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13053,7 +13053,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect15614086491() {
+    public void testHttpConnectionconnect13811282921() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.connect();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13074,7 +13074,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect15614086492() {
+    public void testHttpConnectionconnect1885761752() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.connect();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13116,7 +13116,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect314() {
+    public void testHttpConnectionconnect324() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.connect();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13137,7 +13137,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl20504041210() {
+    public void testHttpConnectionurl2664372630() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.url();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13158,7 +13158,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl18738595961() {
+    public void testHttpConnectionurl18432892591() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.url();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13179,7 +13179,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl20504041212() {
+    public void testHttpConnectionurl312() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.url();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13200,7 +13200,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl8025812343() {
+    public void testHttpConnectionurl18738595963() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.url();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13221,7 +13221,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl634() {
+    public void testHttpConnectionurl18738595964() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.url();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13242,28 +13242,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl35756400() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("typd");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionurl33868641() {
+    public void testHttpConnectionurl33868640() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.url("nobr");
         assertTrue(httpconnection.equals(httpconnection));
@@ -13284,9 +13263,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl9503947292() {
+    public void testHttpConnectionurl37281() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("commanc");
+        httpconnection.url("te");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13305,9 +13284,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl15515509563() {
+    public void testHttpConnectionurl35367442() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("noscripu");
+        httpconnection.url("spam");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13326,9 +13305,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl1101158204() {
+    public void testHttpConnectionurl13776877283() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("tabld");
+        httpconnection.url("buttom");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13347,7 +13326,28 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy3880431240() {
+    public void testHttpConnectionurl904() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.url(";");
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectionproxy18432892590() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.proxy();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13368,7 +13368,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy8025812341() {
+    public void testHttpConnectionproxy3880431241() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.proxy();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13410,7 +13410,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy15614086493() {
+    public void testHttpConnectionproxy13811282923() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.proxy();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13452,9 +13452,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy16597408690() {
+    public void testHttpConnectionproxy591780() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy(":first-chile",);
+        httpconnection.proxy("[",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13473,9 +13473,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy19817284251() {
+    public void testHttpConnectionproxy13298375011() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("templatf",);
+        httpconnection.proxy(":first-of-type",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13494,9 +13494,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy1029787122() {
+    public void testHttpConnectionproxy11118338512() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("link",);
+        httpconnection.proxy("#roou",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13515,9 +13515,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy16803280103() {
+    public void testHttpConnectionproxy1023553() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("noframet",);
+        httpconnection.proxy("h2",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13536,9 +13536,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy1080754() {
+    public void testHttpConnectionproxy10407733214() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("lh",);
+        httpconnection.proxy("plaintexu",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13557,9 +13557,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent31984640() {
+    public void testHttpConnectionuserAgent7390744120() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("heae");
+        httpconnection.userAgent("charseu");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13578,9 +13578,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent1431() {
+    public void testHttpConnectionuserAgent10032436881() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("p");
+        httpconnection.userAgent("textare`");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13599,9 +13599,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent37312() {
+    public void testHttpConnectionuserAgent567593362() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("th");
+        httpconnection.userAgent(":has)");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13620,9 +13620,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent996170353() {
+    public void testHttpConnectionuserAgent14723() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("httpt");
+        httpconnection.userAgent("-.");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13641,9 +13641,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent17209582734() {
+    public void testHttpConnectionuserAgent10032436864() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("basefont");
+        httpconnection.userAgent("textareb");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13662,28 +13662,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout1330() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.timeout();
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectiontimeout2701() {
+    public void testHttpConnectiontimeout2550() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.timeout();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13704,7 +13683,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout2182() {
+    public void testHttpConnectiontimeout1331() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.timeout();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13725,7 +13704,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout2553() {
+    public void testHttpConnectiontimeout4322() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.timeout();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13746,7 +13725,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout1344() {
+    public void testHttpConnectiontimeout11141433() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.timeout();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13767,7 +13746,28 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize573730() {
+    public void testHttpConnectiontimeout11141434() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.timeout();
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectionmaxBodySize553270() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.maxBodySize();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13788,7 +13788,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize4321() {
+    public void testHttpConnectionmaxBodySize2701() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.maxBodySize();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13809,7 +13809,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize322() {
+    public void testHttpConnectionmaxBodySize1322() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.maxBodySize();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13830,7 +13830,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize4313() {
+    public void testHttpConnectionmaxBodySize693() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.maxBodySize();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13851,7 +13851,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize2184() {
+    public void testHttpConnectionmaxBodySize5314() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.maxBodySize();
         assertTrue(httpconnection.equals(httpconnection));
@@ -13977,9 +13977,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer21153115420() {
+    public void testHttpConnectionreferrer35756410() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("boundarz");
+        httpconnection.referrer("type");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13998,9 +13998,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer18690634841() {
+    public void testHttpConnectionreferrer21153115431() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("sarcasn");
+        httpconnection.referrer("boundary");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14019,9 +14019,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer6361976012() {
+    public void testHttpConnectionreferrer5525734442() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("colgrouq");
+        httpconnection.referrer("captiom");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14040,9 +14040,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer12174874153() {
+    public void testHttpConnectionreferrer358296683() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("hidden");
+        httpconnection.referrer("#root");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14061,9 +14061,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer11346655534() {
+    public void testHttpConnectionreferrer13934() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("keygem");
+        httpconnection.referrer("*<");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14082,28 +14082,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmethod2664372630() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.method();
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionmethod311() {
+    public void testHttpConnectionmethod13612897780() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.method();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14124,7 +14103,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmethod18738595962() {
+    public void testHttpConnectionmethod18432892591() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.method();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14145,7 +14124,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmethod2664372633() {
+    public void testHttpConnectionmethod322() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.method();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14166,7 +14145,28 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmethod314() {
+    public void testHttpConnectionmethod18738595963() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.method();
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectionmethod2824321654() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.method();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14397,9 +14397,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata600443500() {
+    public void testHttpConnectiondata20685276190() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":lt)","form");
+        httpconnection.data("[a-zA-Z_:][-a-zA-Z0-9_:.])","$<");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14418,9 +14418,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata3493715981() {
+    public void testHttpConnectiondata10745935491() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("iframe","buttom");
+        httpconnection.data("plaintexu","boundary");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14439,9 +14439,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9635169422() {
+    public void testHttpConnectiondata926156922() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":containsOwn)","boundarx");
+        httpconnection.data("abs:","*=");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14460,9 +14460,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata16802292223() {
+    public void testHttpConnectiondata10553616953() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("noframet","com");
+        httpconnection.data("li",":matchesOwn(");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14481,9 +14481,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata1068175034() {
+    public void testHttpConnectiondata8770566784() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("met`","body");
+        httpconnection.data("tbodz","basd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14502,28 +14502,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionsslSocketFactory2664372630() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.sslSocketFactory();
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionsslSocketFactory15614086491() {
+    public void testHttpConnectionsslSocketFactory320() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.sslSocketFactory();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14544,7 +14523,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionsslSocketFactory20504041212() {
+    public void testHttpConnectionsslSocketFactory13612897781() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.sslSocketFactory();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14565,7 +14544,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionsslSocketFactory3880431243() {
+    public void testHttpConnectionsslSocketFactory13612897782() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.sslSocketFactory();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14586,7 +14565,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionsslSocketFactory314() {
+    public void testHttpConnectionsslSocketFactory1885761753() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.sslSocketFactory();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14607,9 +14586,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata18859486500() {
+    public void testHttpConnectionsslSocketFactory2824321654() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("tfoou","tfoos",);
+        httpconnection.sslSocketFactory();
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14628,9 +14607,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata8737752101() {
+    public void testHttpConnectiondata19388026890() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("sarcasm","bs",);
+        httpconnection.data("optgrouo",":containsData(",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14649,9 +14628,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata15810076482() {
+    public void testHttpConnectiondata15359782391() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("charseu","h4",);
+        httpconnection.data("dd","hidden",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14670,9 +14649,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata16094668453() {
+    public void testHttpConnectiondata20298177342() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("#root","checked",);
+        httpconnection.data("~=",":has(",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14691,9 +14670,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata12534505864() {
+    public void testHttpConnectiondata17790579163() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("bgsounc","bodx",);
+        httpconnection.data(":containsOwn'","dc",);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14712,7 +14691,238 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata13612897780() {
+    public void testHttpConnectiondata367277054() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data("text/","?",);
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata20504041210() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data();
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata2664372631() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data();
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata18432892592() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data();
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata13612897783() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data();
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata13612897784() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data();
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata10176250960() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data(":nth-last-of-type'");
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata18912061161() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data(":nth-of-type(");
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata32132582() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data("html");
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata567593343() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data(":has'");
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata27763634() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.data("\"\"");
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectiondata20504041210() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.data();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14754,7 +14964,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata13612897782() {
+    public void testHttpConnectiondata8025812342() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.data();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14775,7 +14985,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata16082306803() {
+    public void testHttpConnectiondata13612897783() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.data();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14796,7 +15006,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata16082306804() {
+    public void testHttpConnectiondata2824321654() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.data();
         assertTrue(httpconnection.equals(httpconnection));
@@ -14817,9 +15027,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata14711890840() {
+    public void testHttpConnectiondata20919604280() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":nth-last-child'");
+        httpconnection.data(":only-child");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14838,9 +15048,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9060216061() {
+    public void testHttpConnectiondata10101369391() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("selecs");
+        httpconnection.data("optioo");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14859,9 +15069,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata29172() {
+    public void testHttpConnectiondata1082706172() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("\"");
+        httpconnection.data("radin");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14880,9 +15090,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata13215465993() {
+    public void testHttpConnectiondata13215466003() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("template");
+        httpconnection.data("templatd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14901,9 +15111,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata13954() {
+    public void testHttpConnectiondata1099024() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("*>");
+        httpconnection.data("odd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14922,9 +15132,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata630() {
+    public void testHttpConnectionrequestBody14562253630() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data();
+        httpconnection.requestBody(":matches'");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14943,9 +15153,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata8025812341() {
+    public void testHttpConnectionrequestBody2709408281() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data();
+        httpconnection.requestBody("disablee");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14964,9 +15174,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata312() {
+    public void testHttpConnectionrequestBody33737372() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data();
+        httpconnection.requestBody("namd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14985,9 +15195,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata15614086493() {
+    public void testHttpConnectionrequestBody33073() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data();
+        httpconnection.requestBody("h4");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15006,9 +15216,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata18738595964() {
+    public void testHttpConnectionrequestBody3081290274() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data();
+        httpconnection.requestBody(":last-chilc");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15027,9 +15237,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata33080() {
+    public void testHttpConnectionheader6042358800() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("h5");
+        httpconnection.header("checkbox","textarea");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15048,9 +15258,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata11141() {
+    public void testHttpConnectionheader16885934801() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("!<");
+        httpconnection.header("boundarx",":matches)");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15069,9 +15279,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata10552537222() {
+    public void testHttpConnectionheader16576172622() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":matchesOwn(");
+        httpconnection.header("frameseu","isindew");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15090,9 +15300,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata10761623183() {
+    public void testHttpConnectionheader1096423413() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":contains(");
+        httpconnection.header("spao","ds");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15111,9 +15321,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata29224() {
+    public void testHttpConnectionheader3855233194() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("\'");
+        httpconnection.header("frameset","bgsoune");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15132,217 +15342,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody1188410() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("xmo");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionrequestBody19804204661() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("Set-Cookie");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionrequestBody15515509562() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("noscripu");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionrequestBody10032436873() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("textarea");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionrequestBody1188384() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("xml");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionheader14834422670() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header(":nth-last-of-type)",":lt'");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionheader9620641001() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header(":last-chile","!<");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionheader10549805452() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header("namd","commanc");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionheader8194696363() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header("http-equiu","html");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionheader17270594544() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header("iframe","a");
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionheaders310() {
+    public void testHttpConnectionheaders3880431240() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.headers();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15363,7 +15363,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders1885761751() {
+    public void testHttpConnectionheaders631() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.headers();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15384,7 +15384,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders8025812342() {
+    public void testHttpConnectionheaders18738595962() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.headers();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15405,7 +15405,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders323() {
+    public void testHttpConnectionheaders2824321653() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.headers();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15426,7 +15426,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders324() {
+    public void testHttpConnectionheaders2664372634() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.headers();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15447,9 +15447,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie7196739070() {
+    public void testHttpConnectioncookie598730150() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie("scripu","http:0");
+        httpconnection.cookie(":eq)","gzio");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15468,9 +15468,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie28660651() {
+    public void testHttpConnectioncookie6326764361() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie("]]=","h5");
+        httpconnection.cookie("image","caption");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15489,9 +15489,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie11501446822() {
+    public void testHttpConnectioncookie11928373672() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie("boundary","ts");
+        httpconnection.cookie("td","noframer");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15510,9 +15510,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie13601638173() {
+    public void testHttpConnectioncookie15419753013() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie(":empty","spam");
+        httpconnection.cookie("linl","frameset");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15531,9 +15531,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie9060545424() {
+    public void testHttpConnectioncookie2563926464() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie("imagd","isindew");
+        httpconnection.cookie(":contains'","checked");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15573,7 +15573,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies16082306801() {
+    public void testHttpConnectioncookies2664372631() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.cookies();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15594,7 +15594,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies15614086492() {
+    public void testHttpConnectioncookies18432892592() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.cookies();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15615,7 +15615,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies2664372633() {
+    public void testHttpConnectioncookies16082306803() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.cookies();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15636,7 +15636,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies18432892594() {
+    public void testHttpConnectioncookies2664372634() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.cookies();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15657,7 +15657,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionparser630() {
+    public void testHttpConnectionparser1885761750() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.parser();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15699,7 +15699,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionparser322() {
+    public void testHttpConnectionparser2824321652() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.parser();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15720,7 +15720,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionparser8025812343() {
+    public void testHttpConnectionparser323() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.parser();
         assertTrue(httpconnection.equals(httpconnection));
@@ -15741,7 +15741,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionparser20504041214() {
+    public void testHttpConnectionparser13612897784() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.parser();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16182,7 +16182,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequest20504041210() {
+    public void testHttpConnectionrequest18432892590() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.request();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16203,7 +16203,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequest2824321651() {
+    public void testHttpConnectionrequest13612897781() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.request();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16224,7 +16224,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequest2664372632() {
+    public void testHttpConnectionrequest15614086492() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.request();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16245,7 +16245,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequest20504041213() {
+    public void testHttpConnectionrequest1885761753() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.request();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16266,7 +16266,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequest1885761754() {
+    public void testHttpConnectionrequest314() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.request();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16392,7 +16392,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionresponse15614086490() {
+    public void testHttpConnectionresponse13811282920() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.response();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16413,7 +16413,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionresponse16082306801() {
+    public void testHttpConnectionresponse311() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.response();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16434,7 +16434,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionresponse2824321652() {
+    public void testHttpConnectionresponse18738595962() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.response();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16455,7 +16455,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionresponse323() {
+    public void testHttpConnectionresponse20504041213() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.response();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16476,7 +16476,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionresponse8025812344() {
+    public void testHttpConnectionresponse15614086494() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.response();
         assertTrue(httpconnection.equals(httpconnection));
@@ -16497,9 +16497,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset16183955590() {
+    public void testHttpConnectionpostDataCharset33040() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset(":only-of-typd");
+        httpconnection.postDataCharset("h1");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16518,9 +16518,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset923501() {
+    public void testHttpConnectionpostDataCharset1650854891() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("]]?");
+        httpconnection.postDataCharset("http-equiu");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16539,9 +16539,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset1097804322() {
+    public void testHttpConnectionpostDataCharset13932() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("style");
+        httpconnection.postDataCharset("*<");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16560,9 +16560,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset29875583() {
+    public void testHttpConnectionpostDataCharset18305283() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("abs9");
+        httpconnection.postDataCharset(":gt(");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16581,9 +16581,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset1103714474() {
+    public void testHttpConnectionpostDataCharset30064() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("title");
+        httpconnection.postDataCharset("^=");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16602,7 +16602,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomfromJsoup2664372630() {
+    public void testW3CDomfromJsoup8025812340() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.fromJsoup();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16623,7 +16623,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomfromJsoup631() {
+    public void testW3CDomfromJsoup13811282921() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.fromJsoup();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16644,7 +16644,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomfromJsoup2824321652() {
+    public void testW3CDomfromJsoup2664372632() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.fromJsoup();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16665,7 +16665,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomfromJsoup2824321653() {
+    public void testW3CDomfromJsoup18432892593() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.fromJsoup();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16686,7 +16686,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomfromJsoup314() {
+    public void testW3CDomfromJsoup324() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.fromJsoup();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16707,7 +16707,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomconvert3303794070() {
+    public void testW3CDomconvert17391636570() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.convert(,);
         assertTrue(w3cdom.equals(w3cdom));
@@ -16728,7 +16728,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomconvert15277087841() {
+    public void testW3CDomconvert6734055451() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.convert(,);
         assertTrue(w3cdom.equals(w3cdom));
@@ -16749,7 +16749,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomconvert11358425182() {
+    public void testW3CDomconvert1346959082() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.convert(,);
         assertTrue(w3cdom.equals(w3cdom));
@@ -16770,7 +16770,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomconvert5795495553() {
+    public void testW3CDomconvert1477362263() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.convert(,);
         assertTrue(w3cdom.equals(w3cdom));
@@ -16791,7 +16791,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomconvert19534() {
+    public void testW3CDomconvert11590278634() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.convert(,);
         assertTrue(w3cdom.equals(w3cdom));
@@ -16812,7 +16812,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomasString630() {
+    public void testW3CDomasString15614086490() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.asString();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16833,7 +16833,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomasString15614086491() {
+    public void testW3CDomasString311() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.asString();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16854,7 +16854,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomasString322() {
+    public void testW3CDomasString632() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.asString();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16875,7 +16875,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomasString313() {
+    public void testW3CDomasString13612897783() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.asString();
         assertTrue(w3cdom.equals(w3cdom));
@@ -16896,7 +16896,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testW3CDomasString8025812344() {
+    public void testW3CDomasString2664372634() {
         W3CDom w3cdom = new W3CDom();
         w3cdom.asString();
         assertTrue(w3cdom.equals(w3cdom));
@@ -17127,9 +17127,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst910() {
+    public void testTokenQueueaddFirst690() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("<");
+        tokenqueue.addFirst("&");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17148,9 +17148,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1541() {
+    public void testTokenQueueaddFirst691() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("{");
+        tokenqueue.addFirst("&");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17169,9 +17169,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1212() {
+    public void testTokenQueueaddFirst1442() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("Z");
+        tokenqueue.addFirst("q");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17190,9 +17190,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1013() {
+    public void testTokenQueueaddFirst773() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("F");
+        tokenqueue.addFirst(".");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17211,9 +17211,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1284() {
+    public void testTokenQueueaddFirst1344() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("a");
+        tokenqueue.addFirst("g");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17232,9 +17232,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst30294410() {
+    public void testTokenQueueaddFirst32134780() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("body");
+        tokenqueue.addFirst("htto");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17253,9 +17253,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst18245821() {
+    public void testTokenQueueaddFirst1044171() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst(":all");
+        tokenqueue.addFirst("imf");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17274,9 +17274,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst10552537222() {
+    public void testTokenQueueaddFirst12269462992() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst(":matchesOwn(");
+        tokenqueue.addFirst(":containsData)");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17295,9 +17295,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst10552537233() {
+    public void testTokenQueueaddFirst14711890853() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst(":matchesOwn)");
+        tokenqueue.addFirst(":nth-last-child(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17316,9 +17316,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst11346655524() {
+    public void testTokenQueueaddFirst35118024() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("keygen");
+        tokenqueue.addFirst("rubz");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17337,9 +17337,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches15368918730() {
+    public void testTokenQueuematches19380() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("checkbow");
+        tokenqueue.matches("</");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17358,9 +17358,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches11927218611() {
+    public void testTokenQueuematches14562253611() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("noframer");
+        tokenqueue.matches(":matches)");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17379,9 +17379,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches16183955592() {
+    public void testTokenQueuematches567593352() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches(":only-of-typd");
+        tokenqueue.matches(":has(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17400,9 +17400,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches11346655523() {
+    public void testTokenQueuematches1103269003() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("keygen");
+        tokenqueue.matches("theae");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17421,9 +17421,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches32474() {
+    public void testTokenQueuematches18912061174() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("dt");
+        tokenqueue.matches(":nth-of-type'");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17442,9 +17442,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS20353119910() {
+    public void testTokenQueuematchesCS31891120() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS(":first-of-typd");
+        tokenqueue.matchesCS("gzio");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17463,9 +17463,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS20919604271() {
+    public void testTokenQueuematchesCS17571249791() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS(":only-chile");
+        tokenqueue.matchesCS(":emptz");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17484,9 +17484,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS33737392() {
+    public void testTokenQueuematchesCS7423139272() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS("namf");
+        tokenqueue.matchesCS("checkee");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17505,9 +17505,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS2882752493() {
+    public void testTokenQueuematchesCS14713() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS(":nth-child)");
+        tokenqueue.matchesCS("--");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17526,9 +17526,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS1101578784() {
+    public void testTokenQueuematchesCS1082706194() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS("tbodz");
+        tokenqueue.matchesCS("radip");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17547,9 +17547,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny39990() {
+    public void testTokenQueuematchesAny18245810() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("~>");
+        tokenqueue.matchesAny(":alk");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17568,9 +17568,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny7390744101() {
+    public void testTokenQueuematchesAny10101369391() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("charses");
+        tokenqueue.matchesAny("optioo");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17589,9 +17589,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1605222322() {
+    public void testTokenQueuematchesAny14572() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("bgsounc");
+        tokenqueue.matchesAny("*|");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17610,9 +17610,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny33703() {
+    public void testTokenQueuematchesAny17209582733() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("hs");
+        tokenqueue.matchesAny("basefont");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17631,9 +17631,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny18305294() {
+    public void testTokenQueuematchesAny29875594() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny(":gt)");
+        tokenqueue.matchesAny("abs:");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17652,9 +17652,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1260() {
+    public void testTokenQueuematchesAny700() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("_");
+        tokenqueue.matchesAny("'");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17673,9 +17673,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1241() {
+    public void testTokenQueuematchesAny921() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("]");
+        tokenqueue.matchesAny("=");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17694,9 +17694,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1002() {
+    public void testTokenQueuematchesAny1282() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("E");
+        tokenqueue.matchesAny("a");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17715,9 +17715,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny793() {
+    public void testTokenQueuematchesAny1333() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("0");
+        tokenqueue.matchesAny("f");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17736,9 +17736,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny724() {
+    public void testTokenQueuematchesAny654() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny(")");
+        tokenqueue.matchesAny(""");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17862,9 +17862,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp1857353280() {
+    public void testTokenQueuematchChomp21065455190() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("US-ASCIH");
+        tokenqueue.matchChomp(":last-of-typd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17883,9 +17883,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp1082706181() {
+    public void testTokenQueuematchChomp358296681() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("radio");
+        tokenqueue.matchChomp("#root");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17904,9 +17904,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp37402() {
+    public void testTokenQueuematchChomp14229508262() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("tq");
+        tokenqueue.matchChomp("actioo");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17925,9 +17925,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp35118023() {
+    public void testTokenQueuematchChomp18678420533() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("rubz");
+        tokenqueue.matchChomp("[a-zA-Z_:][-a-zA-Z0-9_:.])");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17946,9 +17946,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp570706504() {
+    public void testTokenQueuematchChomp1102563214() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp(":roos");
+        tokenqueue.matchChomp("text/");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18387,9 +18387,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume18690634820() {
+    public void testTokenQueueconsume33070() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("sarcasl");
+        tokenqueue.consume("h4");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18408,9 +18408,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume1101578771() {
+    public void testTokenQueueconsume21065455191() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("tbody");
+        tokenqueue.consume(":last-of-typd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18429,9 +18429,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume35367452() {
+    public void testTokenQueueconsume31255612() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("span");
+        tokenqueue.consume("even");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18450,9 +18450,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume13215465993() {
+    public void testTokenQueueconsume32132593() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("template");
+        tokenqueue.consume("htmm");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18471,9 +18471,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume17571249794() {
+    public void testTokenQueueconsume10032436864() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume(":emptz");
+        tokenqueue.consume("textareb");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18492,9 +18492,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo1143080() {
+    public void testTokenQueueconsumeTo32310() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("svh");
+        tokenqueue.consumeTo("dd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18513,9 +18513,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo13215466001() {
+    public void testTokenQueueconsumeTo11927218611() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("templatd");
+        tokenqueue.consumeTo("noframer");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18534,9 +18534,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo31490282() {
+    public void testTokenQueueconsumeTo9503947302() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("forn");
+        tokenqueue.consumeTo("command");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18555,9 +18555,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo1044183() {
+    public void testTokenQueueconsumeTo20919604293() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("img");
+        tokenqueue.consumeTo(":only-chilc");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18576,9 +18576,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo14714() {
+    public void testTokenQueueconsumeTo35756424() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("--");
+        tokenqueue.consumeTo("typf");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18597,9 +18597,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase660() {
+    public void testTokenQueueconsumeToIgnoreCase567593350() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("#");
+        tokenqueue.consumeToIgnoreCase(":has(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18618,9 +18618,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase1101158201() {
+    public void testTokenQueueconsumeToIgnoreCase14562253621() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("tabld");
+        tokenqueue.consumeToIgnoreCase(":matches(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18639,9 +18639,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase1650854872() {
+    public void testTokenQueueconsumeToIgnoreCase9076856542() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("http-equiw");
+        tokenqueue.consumeToIgnoreCase("script");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18660,9 +18660,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase32132583() {
+    public void testTokenQueueconsumeToIgnoreCase18353333() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("html");
+        tokenqueue.consumeToIgnoreCase(":lt(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18681,9 +18681,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase33218824() {
+    public void testTokenQueueconsumeToIgnoreCase1101578764() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("linl");
+        tokenqueue.consumeToIgnoreCase("tbodx");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18702,9 +18702,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny940() {
+    public void testTokenQueueconsumeToAny17480897440() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny("?");
+        tokenqueue.consumeToAny("DOCTYPD");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18723,9 +18723,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny18285121() {
+    public void testTokenQueueconsumeToAny16183955591() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny(":eq'");
+        tokenqueue.consumeToAny(":only-of-typd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18744,9 +18744,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny37402() {
+    public void testTokenQueueconsumeToAny7390744102() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny("tq");
+        tokenqueue.consumeToAny("charses");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18765,9 +18765,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny773() {
+    public void testTokenQueueconsumeToAny1099033() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny(".");
+        tokenqueue.consumeToAny("ode");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18786,9 +18786,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny1101158204() {
+    public void testTokenQueueconsumeToAny9076856544() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny("tabld");
+        tokenqueue.consumeToAny("script");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18807,9 +18807,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo19804204660() {
+    public void testTokenQueuechompTo32480() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("Set-Cookie");
+        tokenqueue.chompTo("du");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18828,9 +18828,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo11912143981() {
+    public void testTokenQueuechompTo33091() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("iframd");
+        tokenqueue.chompTo("h6");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18849,9 +18849,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo14712() {
+    public void testTokenQueuechompTo19392() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("--");
+        tokenqueue.chompTo("<0");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18870,9 +18870,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo33033() {
+    public void testTokenQueuechompTo31984633() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("h0");
+        tokenqueue.chompTo("head");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18891,9 +18891,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo1044184() {
+    public void testTokenQueuechompTo37304() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("img");
+        tokenqueue.chompTo("tg");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18912,9 +18912,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase34840() {
+    public void testTokenQueuechompToIgnoreCase14711890860() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("li");
+        tokenqueue.chompToIgnoreCase(":nth-last-child)");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18933,9 +18933,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase32471() {
+    public void testTokenQueuechompToIgnoreCase1102563201() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("dt");
+        tokenqueue.chompToIgnoreCase("text.");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18954,9 +18954,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase31255622() {
+    public void testTokenQueuechompToIgnoreCase30164312() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("eveo");
+        tokenqueue.chompToIgnoreCase("basd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18975,9 +18975,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase31984623() {
+    public void testTokenQueuechompToIgnoreCase19732341983() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("heac");
+        tokenqueue.chompToIgnoreCase("plaintext");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18996,9 +18996,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase1101578784() {
+    public void testTokenQueuechompToIgnoreCase19394() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("tbodz");
+        tokenqueue.chompToIgnoreCase("<0");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19017,9 +19017,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced29440() {
+    public void testTokenQueuechompBalanced23960() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced("<","{");
+        tokenqueue.chompBalanced(",","G");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19038,9 +19038,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced38581() {
+    public void testTokenQueuechompBalanced40701() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced('\\',"-");
+        tokenqueue.chompBalanced("a","f");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19059,9 +19059,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced40062() {
+    public void testTokenQueuechompBalanced22702() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced("a","&");
+        tokenqueue.chompBalanced(")","&");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19080,9 +19080,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced37893() {
+    public void testTokenQueuechompBalanced25103() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced("Z","&");
+        tokenqueue.chompBalanced("0","=");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19101,9 +19101,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced25414() {
+    public void testTokenQueuechompBalanced39984() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced("/","{");
+        tokenqueue.chompBalanced("`","=");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19122,9 +19122,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape21153115440() {
+    public void testTokenQueueunescape15451126490() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("boundarx");
+        tokenqueue.unescape("deflatd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19143,9 +19143,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape941() {
+    public void testTokenQueueunescape1101578761() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("?");
+        tokenqueue.unescape("tbodx");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19164,9 +19164,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape29875582() {
+    public void testTokenQueueunescape18912061162() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("abs9");
+        tokenqueue.unescape(":nth-of-type(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19185,9 +19185,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape996170333() {
+    public void testTokenQueueunescape33063() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("httpr");
+        tokenqueue.unescape("h3");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19206,9 +19206,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape20913044564() {
+    public void testTokenQueueunescape19804204654() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("isindey");
+        tokenqueue.unescape("Set-Cookif");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -20172,9 +20172,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag26152050() {
+    public void testParseSettingsnormalizeTag33737390() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("UTF-");
+        parsesettings.normalizeTag("namf");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20193,9 +20193,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag19371() {
+    public void testParseSettingsnormalizeTag1103714461() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("<.");
+        parsesettings.normalizeTag("titld");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20214,9 +20214,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag15515509542() {
+    public void testParseSettingsnormalizeTag18678420522() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("noscrips");
+        parsesettings.normalizeTag("[a-zA-Z_:][-a-zA-Z0-9_:.]*");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20235,9 +20235,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag2709408273() {
+    public void testParseSettingsnormalizeTag570706513() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("disabled");
+        parsesettings.normalizeTag(":root");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20256,9 +20256,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag30164324() {
+    public void testParseSettingsnormalizeTag21153115424() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("base");
+        parsesettings.normalizeTag("boundarz");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20277,9 +20277,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute567593350() {
+    public void testParseSettingsnormalizeAttribute1003581220() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute(":has(");
+        parsesettings.normalizeAttribute("inpuu");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20298,9 +20298,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute30294401() {
+    public void testParseSettingsnormalizeAttribute11912143981() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute("bodx");
+        parsesettings.normalizeAttribute("iframd");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20319,9 +20319,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute996170352() {
+    public void testParseSettingsnormalizeAttribute1003581202() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute("httpt");
+        parsesettings.normalizeAttribute("inpus");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20340,9 +20340,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute20919604283() {
+    public void testParseSettingsnormalizeAttribute32303() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute(":only-child");
+        parsesettings.normalizeAttribute("dc");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20361,9 +20361,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute923504() {
+    public void testParseSettingsnormalizeAttribute15515509564() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute("]]?");
+        parsesettings.normalizeAttribute("noscripu");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20382,7 +20382,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerclean20504041210() {
+    public void testCleanerclean1885761750() {
         Cleaner cleaner = new Cleaner();
         cleaner.clean();
         assertTrue(cleaner.equals(cleaner));
@@ -20403,7 +20403,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerclean18432892591() {
+    public void testCleanerclean18738595961() {
         Cleaner cleaner = new Cleaner();
         cleaner.clean();
         assertTrue(cleaner.equals(cleaner));
@@ -20424,7 +20424,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerclean2664372632() {
+    public void testCleanerclean13612897782() {
         Cleaner cleaner = new Cleaner();
         cleaner.clean();
         assertTrue(cleaner.equals(cleaner));
@@ -20445,7 +20445,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerclean313() {
+    public void testCleanerclean20504041213() {
         Cleaner cleaner = new Cleaner();
         cleaner.clean();
         assertTrue(cleaner.equals(cleaner));
@@ -20466,7 +20466,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerclean324() {
+    public void testCleanerclean3880431244() {
         Cleaner cleaner = new Cleaner();
         cleaner.clean();
         assertTrue(cleaner.equals(cleaner));
@@ -20487,7 +20487,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValid630() {
+    public void testCleanerisValid8025812340() {
         Cleaner cleaner = new Cleaner();
         cleaner.isValid();
         assertTrue(cleaner.equals(cleaner));
@@ -20508,7 +20508,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValid3880431241() {
+    public void testCleanerisValid2664372631() {
         Cleaner cleaner = new Cleaner();
         cleaner.isValid();
         assertTrue(cleaner.equals(cleaner));
@@ -20529,7 +20529,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValid2824321652() {
+    public void testCleanerisValid18738595962() {
         Cleaner cleaner = new Cleaner();
         cleaner.isValid();
         assertTrue(cleaner.equals(cleaner));
@@ -20571,7 +20571,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValid20504041214() {
+    public void testCleanerisValid8025812344() {
         Cleaner cleaner = new Cleaner();
         cleaner.isValid();
         assertTrue(cleaner.equals(cleaner));
@@ -20592,9 +20592,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml1188410() {
+    public void testCleanerisValidBodyHtml7390744110() {
         Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("xmo");
+        cleaner.isValidBodyHtml("charset");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -20613,9 +20613,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml14711() {
+    public void testCleanerisValidBodyHtml37281() {
         Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("--");
+        cleaner.isValidBodyHtml("te");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -20634,9 +20634,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml358296692() {
+    public void testCleanerisValidBodyHtml20919604272() {
         Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("#roou");
+        cleaner.isValidBodyHtml(":only-chile");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -20655,9 +20655,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml1103714463() {
+    public void testCleanerisValidBodyHtml17480897433() {
         Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("titld");
+        cleaner.isValidBodyHtml("DOCTYPE");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -20676,9 +20676,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml1605222324() {
+    public void testCleanerisValidBodyHtml35367464() {
         Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("bgsounc");
+        cleaner.isValidBodyHtml("spao");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -21222,9 +21222,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags11912143980() {
+    public void testWhitelistaddTags570706500() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("iframd");
+        whitelist.addTags(":roos");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21243,9 +21243,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags1605222311() {
+    public void testWhitelistaddTags21065455181() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("bgsound");
+        whitelist.addTags(":last-of-type");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21264,9 +21264,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags14702() {
+    public void testWhitelistaddTags14711890862() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("-,");
+        whitelist.addTags(":nth-last-child)");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21285,9 +21285,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags6361976023() {
+    public void testWhitelistaddTags11414281683() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("colgroup");
+        whitelist.addTags("[CDATA[");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21306,9 +21306,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags14724() {
+    public void testWhitelistaddTags12068418934() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("-.");
+        whitelist.addTags("http:.");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21327,9 +21327,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags14229508270() {
+    public void testWhitelistremoveTags34850() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("action");
+        whitelist.removeTags("lj");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21348,9 +21348,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags39981() {
+    public void testWhitelistremoveTags37301() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("~=");
+        whitelist.removeTags("tg");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21369,9 +21369,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags37322() {
+    public void testWhitelistremoveTags9076856552() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("ti");
+        whitelist.removeTags("scrips");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21390,9 +21390,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags18690634843() {
+    public void testWhitelistremoveTags1102773763() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("sarcasn");
+        whitelist.removeTags("tfoos");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21411,9 +21411,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags1101578764() {
+    public void testWhitelistremoveTags2882752474() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("tbodx");
+        whitelist.removeTags(":nth-child'");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21432,9 +21432,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes8233388490() {
+    public void testWhitelistaddAttributes1038804420() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("scripu","deflatd");
+        whitelist.addAttributes("meta","]]>");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21453,9 +21453,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes34193381() {
+    public void testWhitelistaddAttributes926174821() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("-.","namd");
+        whitelist.addAttributes("abs:","bs");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21474,9 +21474,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes9504971242() {
+    public void testWhitelistaddAttributes1015872() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("h1","commane");
+        whitelist.addAttributes("dd","*|");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21495,9 +21495,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes20685255333() {
+    public void testWhitelistaddAttributes600943093() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("[a-zA-Z_:][-a-zA-Z0-9_:.]+","dd");
+        whitelist.addAttributes(":gt'","met`");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21516,9 +21516,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes11927669994() {
+    public void testWhitelistaddAttributes11138686734() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("*|","noframet");
+        whitelist.addAttributes("#roos","form");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21537,9 +21537,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes20282313060() {
+    public void testWhitelistremoveAttributes17915951190() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("Set-Cookif","textare`");
+        whitelist.removeAttributes("htmm",":nth-of-type'");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21558,9 +21558,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes19911126611() {
+    public void testWhitelistremoveAttributes1026273991() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("plaintexs","commanc");
+        whitelist.removeAttributes("html","base");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21579,9 +21579,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes2072638372() {
+    public void testWhitelistremoveAttributes19976528232() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("eveo","titld");
+        whitelist.removeAttributes("disablee",":last-of-type");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21600,9 +21600,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes2883911583() {
+    public void testWhitelistremoveAttributes6241512773() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("tq",":nth-child)");
+        whitelist.removeAttributes("bgsounc",":roos");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21621,9 +21621,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes2037657144() {
+    public void testWhitelistremoveAttributes38029084() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("basf","text0");
+        whitelist.removeAttributes("xmp","xmk");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21642,9 +21642,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute15587195590() {
+    public void testWhitelistaddEnforcedAttribute3992545190() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute("hiddeo",":last-chilc","xmp");
+        whitelist.addEnforcedAttribute("|","checkbox","cok");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21663,9 +21663,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute8601767601() {
+    public void testWhitelistaddEnforcedAttribute3411673431() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute("spam","ds","#texs");
+        whitelist.addEnforcedAttribute(":last-chile","hs","image");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21684,9 +21684,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute20936269912() {
+    public void testWhitelistaddEnforcedAttribute15105128662() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute("deflate","stylf","typd");
+        whitelist.addEnforcedAttribute(":nth-of-type)",".",":last-of-type");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21705,9 +21705,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute1915842503() {
+    public void testWhitelistaddEnforcedAttribute13535765393() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute("noscrips",":last-of-typf","dt");
+        whitelist.addEnforcedAttribute(":nth-child(","nobq","selecs");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21726,9 +21726,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute10887788594() {
+    public void testWhitelistaddEnforcedAttribute5493509134() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute(":nth-child)","plaintexu",":last-of-typd");
+        whitelist.addEnforcedAttribute("[","frameses","gziq");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21747,9 +21747,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute1096422800() {
+    public void testWhitelistremoveEnforcedAttribute3331476730() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("spam","dt");
+        whitelist.removeEnforcedAttribute("select","frameses");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21768,9 +21768,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute1096391581() {
+    public void testWhitelistremoveEnforcedAttribute11821243511() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("spam","^");
+        whitelist.removeEnforcedAttribute("imagd","even");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21789,9 +21789,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute10407529132() {
+    public void testWhitelistremoveEnforcedAttribute1083306332() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("body","keygem");
+        whitelist.removeEnforcedAttribute("<.","radin");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21810,9 +21810,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute12131094013() {
+    public void testWhitelistremoveEnforcedAttribute12460872673() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute(":containsOwn(","bodx");
+        whitelist.removeEnforcedAttribute("optiom","nobq");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21831,9 +21831,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute17271580454() {
+    public void testWhitelistremoveEnforcedAttribute2167614() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("iframe","col");
+        whitelist.removeEnforcedAttribute("h3","svf");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21957,9 +21957,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols19405823750() {
+    public void testWhitelistaddProtocols68461480() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols(":contains'","US-ASCIH","typf");
+        whitelist.addProtocols("?","svh","html");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21978,9 +21978,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols16702711001() {
+    public void testWhitelistaddProtocols3319425571() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("boundarz",":first-of-typd","hr");
+        whitelist.addProtocols("plaintext",":matchTexu",":first-chile");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21999,9 +21999,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols3814985722() {
+    public void testWhitelistaddProtocols17971762312() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols(":alm","httpt","http-equiv");
+        whitelist.addProtocols(":matches)",":roos",":lt'");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22020,9 +22020,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols16657419963() {
+    public void testWhitelistaddProtocols16187647553() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("lh","type","noscrips");
+        whitelist.addProtocols("disablee","h6","^=");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22041,9 +22041,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols21060237114() {
+    public void testWhitelistaddProtocols17237689884() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("hs","stylf","hiddem");
+        whitelist.addProtocols("deflate",":only-of-type","typf");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22062,9 +22062,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols7286266510() {
+    public void testWhitelistremoveProtocols931480540() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols(":matches(","$=",":alk");
+        whitelist.removeProtocols("deflate","#texs","ds");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22083,9 +22083,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols9729243921() {
+    public void testWhitelistremoveProtocols21302130761() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("noscript",":first-child","*|");
+        whitelist.removeProtocols("eveo","titlf","*=");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22104,9 +22104,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols15123728642() {
+    public void testWhitelistremoveProtocols1046893962() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("frameseu","Set-Cookif","typf");
+        whitelist.removeProtocols("<.","http","href");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22125,9 +22125,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols8677700623() {
+    public void testWhitelistremoveProtocols14537435353() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("actiom","caption","basefont");
+        whitelist.removeProtocols("gzip",":matchesOwn(","#texu");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22146,9 +22146,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols9895095984() {
+    public void testWhitelistremoveProtocols20206495034() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("optioo","htto","optiom");
+        whitelist.removeProtocols(":containsData'","$<","<0");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22167,9 +22167,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain1101158210() throws Exception {
+    public void testHtmlToPlainTextmain1101158200() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("table");
+        htmltoplaintext.main("tabld");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22188,9 +22188,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain18912061151() throws Exception {
+    public void testHtmlToPlainTextmain9060216051() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main(":nth-of-type)");
+        htmltoplaintext.main("select");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22209,9 +22209,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain13942() throws Exception {
+    public void testHtmlToPlainTextmain18285142() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("*=");
+        htmltoplaintext.main(":eq)");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22230,9 +22230,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain21153115433() throws Exception {
+    public void testHtmlToPlainTextmain570706503() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("boundary");
+        htmltoplaintext.main(":roos");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22251,9 +22251,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain7423139254() throws Exception {
+    public void testHtmlToPlainTextmain734() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("checkec");
+        htmltoplaintext.main("*");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22272,28 +22272,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextgetPlainText18738595960() {
-        HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.getPlainText();
-        assertTrue(htmltoplaintext.equals(htmltoplaintext));
-        try {
-            htmltoplaintext.equals(htmltoplaintext);
-        } catch (Exception e) {
-            fail("htmltoplaintext.equals(htmltoplaintext) throws an exception");
-        }
-        try {
-            htmltoplaintext.hashCode();
-        } catch (Exception e) {
-            fail("htmltoplaintext.hashCode() throws an exception");
-        }
-        try {
-            htmltoplaintext.toString();
-        } catch (Exception e) {
-            fail("htmltoplaintext.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHtmlToPlainTextgetPlainText321() {
+    public void testHtmlToPlainTextgetPlainText16082306800() {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
         htmltoplaintext.getPlainText();
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
@@ -22314,7 +22293,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextgetPlainText13612897782() {
+    public void testHtmlToPlainTextgetPlainText631() {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
         htmltoplaintext.getPlainText();
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
@@ -22335,7 +22314,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextgetPlainText18432892593() {
+    public void testHtmlToPlainTextgetPlainText2664372632() {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
         htmltoplaintext.getPlainText();
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
@@ -22356,7 +22335,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextgetPlainText13612897784() {
+    public void testHtmlToPlainTextgetPlainText15614086493() {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
         htmltoplaintext.getPlainText();
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
@@ -22377,9 +22356,30 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain3364849140() throws Exception {
+    public void testHtmlToPlainTextgetPlainText634() {
+        HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
+        htmltoplaintext.getPlainText();
+        assertTrue(htmltoplaintext.equals(htmltoplaintext));
+        try {
+            htmltoplaintext.equals(htmltoplaintext);
+        } catch (Exception e) {
+            fail("htmltoplaintext.equals(htmltoplaintext) throws an exception");
+        }
+        try {
+            htmltoplaintext.hashCode();
+        } catch (Exception e) {
+            fail("htmltoplaintext.hashCode() throws an exception");
+        }
+        try {
+            htmltoplaintext.toString();
+        } catch (Exception e) {
+            fail("htmltoplaintext.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testWikipediamain8762139320() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22398,9 +22398,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain8762139321() throws Exception {
+    public void testWikipediamain2305280441() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22419,9 +22419,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain2305280442() throws Exception {
+    public void testWikipediamain19095468072() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22440,9 +22440,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain19095468073() throws Exception {
+    public void testWikipediamain3927813303() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22461,9 +22461,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain3927813304() throws Exception {
+    public void testWikipediamain18223831484() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22482,9 +22482,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain18223831480() throws Exception {
+    public void testListLinksmain2330215820() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22503,9 +22503,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain2330215821() throws Exception {
+    public void testListLinksmain19913132671() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22524,9 +22524,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain19913132672() throws Exception {
+    public void testListLinksmain7367789632() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx","#texs","rubx","command","rubz","heac"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22545,9 +22545,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain7367789633() throws Exception {
+    public void testListLinksmain10320007833() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22566,9 +22566,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain10320007834() throws Exception {
+    public void testListLinksmain7709112544() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -23007,7 +23007,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse3880431240() {
+    public void testNodeTraversortraverse2824321650() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse();
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23028,7 +23028,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse16082306801() {
+    public void testNodeTraversortraverse15614086491() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse();
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23049,7 +23049,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse18738595962() {
+    public void testNodeTraversortraverse322() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse();
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23070,7 +23070,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse8025812343() {
+    public void testNodeTraversortraverse18738595963() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse();
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23091,7 +23091,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse20504041214() {
+    public void testNodeTraversortraverse15614086494() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse();
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23112,7 +23112,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse5535056160() {
+    public void testNodeTraversortraverse6669889000() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23133,7 +23133,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse5955444571() {
+    public void testNodeTraversortraverse13629449061() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23154,7 +23154,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse10855353432() {
+    public void testNodeTraversortraverse8555650432() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23175,7 +23175,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse3540386673() {
+    public void testNodeTraversortraverse13612917003() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23196,7 +23196,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse4784860504() {
+    public void testNodeTraversortraverse10507488224() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23217,7 +23217,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse10240() {
+    public void testNodeTraversortraverse17548111720() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23238,7 +23238,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse13612907391() {
+    public void testNodeTraversortraverse3303794391() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23259,7 +23259,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse16844564712() {
+    public void testNodeTraversortraverse6786049212() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23280,7 +23280,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse11590278633() {
+    public void testNodeTraversortraverse8897854903() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23301,7 +23301,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversortraverse20398946364() {
+    public void testNodeTraversortraverse9934() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.traverse(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23322,7 +23322,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter20398946670() {
+    public void testNodeTraversorfilter8025821950() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23343,7 +23343,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter1588327561() {
+    public void testNodeTraversorfilter12926502051() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23364,7 +23364,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter528913612() {
+    public void testNodeTraversorfilter19532() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23385,7 +23385,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter6073533883() {
+    public void testNodeTraversorfilter18432911813() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23406,7 +23406,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter15470709564() {
+    public void testNodeTraversorfilter18513185244() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23427,7 +23427,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter15277087840() {
+    public void testNodeTraversorfilter13007142480() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23448,7 +23448,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter14261664971() {
+    public void testNodeTraversorfilter13612907391() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23469,7 +23469,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter10309103082() {
+    public void testNodeTraversorfilter15614095792() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23490,7 +23490,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter8897855213() {
+    public void testNodeTraversorfilter3880440543() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23511,7 +23511,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNodeTraversorfilter9007839394() {
+    public void testNodeTraversorfilter15745308154() {
         NodeTraversor nodetraversor = new NodeTraversor();
         nodetraversor.filter(,);
         assertTrue(nodetraversor.equals(nodetraversor));
@@ -23532,7 +23532,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorcollect1418032950() {
+    public void testCollectorcollect12964133790() {
         Collector collector = new Collector();
         collector.collect(,);
         assertTrue(collector.equals(collector));
@@ -23553,7 +23553,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorcollect16082326021() {
+    public void testCollectorcollect6734055451() {
         Collector collector = new Collector();
         collector.collect(,);
         assertTrue(collector.equals(collector));
@@ -23574,7 +23574,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorcollect2664391852() {
+    public void testCollectorcollect10118778762() {
         Collector collector = new Collector();
         collector.collect(,);
         assertTrue(collector.equals(collector));
@@ -23595,7 +23595,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorcollect6734055453() {
+    public void testCollectorcollect8897855223() {
         Collector collector = new Collector();
         collector.collect(,);
         assertTrue(collector.equals(collector));
@@ -23616,7 +23616,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorcollect20087517514() {
+    public void testCollectorcollect9877241844() {
         Collector collector = new Collector();
         collector.collect(,);
         assertTrue(collector.equals(collector));
@@ -23637,7 +23637,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorfindFirst8025821950() {
+    public void testCollectorfindFirst8702136020() {
         Collector collector = new Collector();
         collector.findFirst(,);
         assertTrue(collector.equals(collector));
@@ -23658,7 +23658,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorfindFirst15614096101() {
+    public void testCollectorfindFirst12620798681() {
         Collector collector = new Collector();
         collector.findFirst(,);
         assertTrue(collector.equals(collector));
@@ -23679,7 +23679,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorfindFirst15129097892() {
+    public void testCollectorfindFirst6314384192() {
         Collector collector = new Collector();
         collector.findFirst(,);
         assertTrue(collector.equals(collector));
@@ -23700,7 +23700,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorfindFirst529838413() {
+    public void testCollectorfindFirst8897855223() {
         Collector collector = new Collector();
         collector.findFirst(,);
         assertTrue(collector.equals(collector));
@@ -23721,7 +23721,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCollectorfindFirst20398946364() {
+    public void testCollectorfindFirst8117187764() {
         Collector collector = new Collector();
         collector.findFirst(,);
         assertTrue(collector.equals(collector));
@@ -23742,9 +23742,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr20353119920() {
+    public void testElementsattr15451126500() {
         Elements elements = new Elements();
-        elements.attr(":first-of-type");
+        elements.attr("deflate");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23763,9 +23763,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr1102773771() {
+    public void testElementsattr30061() {
         Elements elements = new Elements();
-        elements.attr("tfoot");
+        elements.attr("^=");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23784,9 +23784,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr1101158202() {
+    public void testElementsattr14711890852() {
         Elements elements = new Elements();
-        elements.attr("tabld");
+        elements.attr(":nth-last-child(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23805,9 +23805,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr996170353() {
+    public void testElementsattr9076856533() {
         Elements elements = new Elements();
-        elements.attr("httpt");
+        elements.attr("scripu");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23826,9 +23826,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr18285144() {
+    public void testElementsattr16183955594() {
         Elements elements = new Elements();
-        elements.attr(":eq)");
+        elements.attr(":only-of-typd");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23847,9 +23847,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr1097804330() {
+    public void testElementshasAttr32320() {
         Elements elements = new Elements();
-        elements.hasAttr("stylf");
+        elements.hasAttr("de");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23868,9 +23868,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr10101369411() {
+    public void testElementshasAttr20913044551() {
         Elements elements = new Elements();
-        elements.hasAttr("optiom");
+        elements.hasAttr("isindex");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23889,9 +23889,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr12068418912() {
+    public void testElementshasAttr31255612() {
         Elements elements = new Elements();
-        elements.hasAttr("http:0");
+        elements.hasAttr("even");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23910,9 +23910,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr26152063() {
+    public void testElementshasAttr33693() {
         Elements elements = new Elements();
-        elements.hasAttr("UTF.");
+        elements.hasAttr("hr");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23931,9 +23931,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr12068418934() {
+    public void testElementshasAttr14229508284() {
         Elements elements = new Elements();
-        elements.hasAttr("http:.");
+        elements.hasAttr("actiom");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23952,9 +23952,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr1102563210() {
+    public void testElementseachAttr7390744120() {
         Elements elements = new Elements();
-        elements.eachAttr("text/");
+        elements.eachAttr("charseu");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23973,9 +23973,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr30294401() {
+    public void testElementseachAttr567593361() {
         Elements elements = new Elements();
-        elements.eachAttr("bodx");
+        elements.eachAttr(":has)");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23994,9 +23994,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr17209582722() {
+    public void testElementseachAttr1857353262() {
         Elements elements = new Elements();
-        elements.eachAttr("basefonu");
+        elements.eachAttr("US-ASCIJ");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24015,9 +24015,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr33053() {
+    public void testElementseachAttr30063() {
         Elements elements = new Elements();
-        elements.eachAttr("h2");
+        elements.eachAttr("^=");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24036,9 +24036,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr358799194() {
+    public void testElementseachAttr30064() {
         Elements elements = new Elements();
-        elements.eachAttr("#text");
+        elements.eachAttr("^=");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24057,9 +24057,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr59730() {
+    public void testElementsattr17691934850() {
         Elements elements = new Elements();
-        elements.attr("*","tr");
+        elements.attr(":roou","h1");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24078,9 +24078,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr9725470761() {
+    public void testElementsattr2546606031() {
         Elements elements = new Elements();
-        elements.attr("stylf","optgrouq");
+        elements.attr(":nth-last-of-type(",":containsData'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24099,9 +24099,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr6916790102() {
+    public void testElementsattr976198522() {
         Elements elements = new Elements();
-        elements.attr(":nth-of-type'",":matchTexu");
+        elements.attr("forl",".");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24120,9 +24120,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr15599838213() {
+    public void testElementsattr18545914163() {
         Elements elements = new Elements();
-        elements.attr(":containsData(","noembec");
+        elements.attr("#texu","checkee");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24141,9 +24141,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr6361044474() {
+    public void testElementsattr11791280314() {
         Elements elements = new Elements();
-        elements.attr("^=","colgroup");
+        elements.attr("[CDATA[","isindey");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24162,9 +24162,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr21156131420() {
+    public void testElementsremoveAttr13776877280() {
         Elements elements = new Elements();
-        elements.removeAttr("noembec");
+        elements.removeAttr("buttom");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24183,9 +24183,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr14711() {
+    public void testElementsremoveAttr807731741() {
         Elements elements = new Elements();
-        elements.removeAttr("--");
+        elements.removeAttr("optgrouo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24204,9 +24204,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr1097804312() {
+    public void testElementsremoveAttr2882752482() {
         Elements elements = new Elements();
-        elements.removeAttr("styld");
+        elements.removeAttr(":nth-child(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24225,9 +24225,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr33737383() {
+    public void testElementsremoveAttr733() {
         Elements elements = new Elements();
-        elements.removeAttr("name");
+        elements.removeAttr("*");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24246,9 +24246,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr1188374() {
+    public void testElementsremoveAttr21065455184() {
         Elements elements = new Elements();
-        elements.removeAttr("xmk");
+        elements.removeAttr(":last-of-type");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24267,9 +24267,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass1188380() {
+    public void testElementsaddClass18912061170() {
         Elements elements = new Elements();
-        elements.addClass("xml");
+        elements.addClass(":nth-of-type'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24288,9 +24288,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass12269463001() {
+    public void testElementsaddClass996170341() {
         Elements elements = new Elements();
-        elements.addClass(":containsData(");
+        elements.addClass("https");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24309,9 +24309,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass1003581222() {
+    public void testElementsaddClass29875582() {
         Elements elements = new Elements();
-        elements.addClass("inpuu");
+        elements.addClass("abs9");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24330,9 +24330,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass11927218613() {
+    public void testElementsaddClass33683() {
         Elements elements = new Elements();
-        elements.addClass("noframer");
+        elements.addClass("hq");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24351,9 +24351,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass31824() {
+    public void testElementsaddClass20919604274() {
         Elements elements = new Elements();
-        elements.addClass("bq");
+        elements.addClass(":only-chile");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24372,9 +24372,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass31984640() {
+    public void testElementsremoveClass30294400() {
         Elements elements = new Elements();
-        elements.removeClass("heae");
+        elements.removeClass("bodx");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24393,9 +24393,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass20353119931() {
+    public void testElementsremoveClass18305291() {
         Elements elements = new Elements();
-        elements.removeClass(":first-of-typf");
+        elements.removeClass(":gt)");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24414,9 +24414,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass29222() {
+    public void testElementsremoveClass29875602() {
         Elements elements = new Elements();
-        elements.removeClass("\'");
+        elements.removeClass("abs;");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24435,9 +24435,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass1003134653() {
+    public void testElementsremoveClass21065455183() {
         Elements elements = new Elements();
-        elements.removeClass("imagd");
+        elements.removeClass(":last-of-type");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24456,9 +24456,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass15515509554() {
+    public void testElementsremoveClass33480044() {
         Elements elements = new Elements();
-        elements.removeClass("noscript");
+        elements.removeClass("meta");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24477,9 +24477,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass33090() {
+    public void testElementstoggleClass33737370() {
         Elements elements = new Elements();
-        elements.toggleClass("h6");
+        elements.toggleClass("namd");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24498,9 +24498,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass18678420531() {
+    public void testElementstoggleClass37401() {
         Elements elements = new Elements();
-        elements.toggleClass("[a-zA-Z_:][-a-zA-Z0-9_:.])");
+        elements.toggleClass("tq");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24519,9 +24519,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass32132582() {
+    public void testElementstoggleClass33032() {
         Elements elements = new Elements();
-        elements.toggleClass("html");
+        elements.toggleClass("h0");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24540,9 +24540,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass26152043() {
+    public void testElementstoggleClass10548386293() {
         Elements elements = new Elements();
-        elements.toggleClass("UTF,");
+        elements.toggleClass(":first-chile");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24561,9 +24561,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass1857353284() {
+    public void testElementstoggleClass9060216054() {
         Elements elements = new Elements();
-        elements.toggleClass("US-ASCIH");
+        elements.toggleClass("select");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24582,9 +24582,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass18353320() {
+    public void testElementshasClass5525734460() {
         Elements elements = new Elements();
-        elements.hasClass(":lt'");
+        elements.hasClass("captioo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24603,9 +24603,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass1101578761() {
+    public void testElementshasClass9503947301() {
         Elements elements = new Elements();
-        elements.hasClass("tbodx");
+        elements.hasClass("command");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24624,9 +24624,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass33868652() {
+    public void testElementshasClass2882752482() {
         Elements elements = new Elements();
-        elements.hasClass("nobs");
+        elements.hasClass(":nth-child(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24645,9 +24645,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass923483() {
+    public void testElementshasClass30164333() {
         Elements elements = new Elements();
-        elements.hasClass("]]=");
+        elements.hasClass("basf");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24666,9 +24666,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass31834() {
+    public void testElementshasClass7423139274() {
         Elements elements = new Elements();
-        elements.hasClass("br");
+        elements.hasClass("checkee");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24792,9 +24792,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval987190() {
+    public void testElementsval34830() {
         Elements elements = new Elements();
-        elements.val("col");
+        elements.val("lh");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24813,9 +24813,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval5525734461() {
+    public void testElementsval32134791() {
         Elements elements = new Elements();
-        elements.val("captioo");
+        elements.val("http");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24834,9 +24834,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval18245812() {
+    public void testElementsval5525734442() {
         Elements elements = new Elements();
-        elements.val(":alk");
+        elements.val("captiom");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24855,9 +24855,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval14573() {
+    public void testElementsval17480897443() {
         Elements elements = new Elements();
-        elements.val("*|");
+        elements.val("DOCTYPD");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24876,9 +24876,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval1097804334() {
+    public void testElementsval1650854874() {
         Elements elements = new Elements();
-        elements.val("stylf");
+        elements.val("http-equiw");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25422,9 +25422,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName13215465980() {
+    public void testElementstagName358296680() {
         Elements elements = new Elements();
-        elements.tagName("templatf");
+        elements.tagName("#root");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25443,9 +25443,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName1281() {
+    public void testElementstagName12071() {
         Elements elements = new Elements();
-        elements.tagName("a");
+        elements.tagName("$<");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25464,9 +25464,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName34852() {
+    public void testElementstagName12092() {
         Elements elements = new Elements();
-        elements.tagName("lj");
+        elements.tagName("$>");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25485,9 +25485,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName1253() {
+    public void testElementstagName21156131443() {
         Elements elements = new Elements();
-        elements.tagName("^");
+        elements.tagName("noembee");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25506,9 +25506,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName1101158204() {
+    public void testElementstagName19788929354() {
         Elements elements = new Elements();
-        elements.tagName("tabld");
+        elements.tagName(":containsOwn'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25527,9 +25527,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml1003581200() {
+    public void testElementshtml18912061170() {
         Elements elements = new Elements();
-        elements.html("inpus");
+        elements.html(":nth-of-type'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25548,9 +25548,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml12068418931() {
+    public void testElementshtml18305271() {
         Elements elements = new Elements();
-        elements.html("http:.");
+        elements.html(":gt'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25569,9 +25569,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml1188392() {
+    public void testElementshtml21153115422() {
         Elements elements = new Elements();
-        elements.html("xmm");
+        elements.html("boundarz");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25590,9 +25590,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml31255613() {
+    public void testElementshtml35367443() {
         Elements elements = new Elements();
-        elements.html("even");
+        elements.html("spam");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25611,9 +25611,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml1605222314() {
+    public void testElementshtml31490284() {
         Elements elements = new Elements();
-        elements.html("bgsound");
+        elements.html("forn");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25632,9 +25632,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend730() {
+    public void testElementsprepend1102563200() {
         Elements elements = new Elements();
-        elements.prepend("*");
+        elements.prepend("text.");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25653,9 +25653,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend18690634821() {
+    public void testElementsprepend35367441() {
         Elements elements = new Elements();
-        elements.prepend("sarcasl");
+        elements.prepend("spam");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25674,9 +25674,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend33868632() {
+    public void testElementsprepend32134792() {
         Elements elements = new Elements();
-        elements.prepend("nobq");
+        elements.prepend("http");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25695,9 +25695,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend13933() {
+    public void testElementsprepend5525734453() {
         Elements elements = new Elements();
-        elements.prepend("*<");
+        elements.prepend("caption");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25716,9 +25716,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend12269463014() {
+    public void testElementsprepend14714() {
         Elements elements = new Elements();
-        elements.prepend(":containsData'");
+        elements.prepend("--");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25737,9 +25737,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend15451126500() {
+    public void testElementsappend19804204660() {
         Elements elements = new Elements();
-        elements.append("deflate");
+        elements.append("Set-Cookie");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25758,9 +25758,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend13215466001() {
+    public void testElementsappend31891131() {
         Elements elements = new Elements();
-        elements.append("templatd");
+        elements.append("gzip");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25779,9 +25779,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend33480042() {
+    public void testElementsappend1097804332() {
         Elements elements = new Elements();
-        elements.append("meta");
+        elements.append("stylf");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25800,9 +25800,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend21153115433() {
+    public void testElementsappend33480053() {
         Elements elements = new Elements();
-        elements.append("boundary");
+        elements.append("metb");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25821,9 +25821,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend33441684() {
+    public void testElementsappend10548386274() {
         Elements elements = new Elements();
-        elements.append("mati");
+        elements.append(":first-chilc");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25842,9 +25842,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore12080() {
+    public void testElementsbefore32132580() {
         Elements elements = new Elements();
-        elements.before("$=");
+        elements.before("html");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25863,9 +25863,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore30294411() {
+    public void testElementsbefore358799201() {
         Elements elements = new Elements();
-        elements.before("body");
+        elements.before("#texu");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25884,9 +25884,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore31832() {
+    public void testElementsbefore32134792() {
         Elements elements = new Elements();
-        elements.before("br");
+        elements.before("http");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25905,9 +25905,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore1103714483() {
+    public void testElementsbefore14229508283() {
         Elements elements = new Elements();
-        elements.before("titlf");
+        elements.before("actiom");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25926,9 +25926,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore30294404() {
+    public void testElementsbefore1102773774() {
         Elements elements = new Elements();
-        elements.before("bodx");
+        elements.before("tfoot");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25947,9 +25947,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter569515660() {
+    public void testElementsafter14229508270() {
         Elements elements = new Elements();
-        elements.after(":not(");
+        elements.after("action");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25968,9 +25968,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter12269462991() {
+    public void testElementsafter19381() {
         Elements elements = new Elements();
-        elements.after(":containsData)");
+        elements.after("</");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25989,9 +25989,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter10032436872() {
+    public void testElementsafter20353119922() {
         Elements elements = new Elements();
-        elements.after("textarea");
+        elements.after(":first-of-type");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26010,9 +26010,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter1003134653() {
+    public void testElementsafter32110813() {
         Elements elements = new Elements();
-        elements.after("imagd");
+        elements.after("hree");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26031,9 +26031,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter12068418914() {
+    public void testElementsafter1101158214() {
         Elements elements = new Elements();
-        elements.after("http:0");
+        elements.after("table");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26052,9 +26052,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap30294420() {
+    public void testElementswrap19788929330() {
         Elements elements = new Elements();
-        elements.wrap("bodz");
+        elements.wrap(":containsOwn)");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26073,9 +26073,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap567593341() {
+    public void testElementswrap33081() {
         Elements elements = new Elements();
-        elements.wrap(":has'");
+        elements.wrap("h5");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26094,9 +26094,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap10176250972() {
+    public void testElementswrap1044182() {
         Elements elements = new Elements();
-        elements.wrap(":nth-last-of-type(");
+        elements.wrap("img");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26115,9 +26115,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap13215466003() {
+    public void testElementswrap1102563203() {
         Elements elements = new Elements();
-        elements.wrap("templatd");
+        elements.wrap("text.");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26136,9 +26136,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap987184() {
+    public void testElementswrap15515509544() {
         Elements elements = new Elements();
-        elements.wrap("cok");
+        elements.wrap("noscrips");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26472,9 +26472,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect14580() {
+    public void testElementsselect18690634840() {
         Elements elements = new Elements();
-        elements.select("*}");
+        elements.select("sarcasn");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26493,9 +26493,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect21156131431() {
+    public void testElementsselect358296681() {
         Elements elements = new Elements();
-        elements.select("noembed");
+        elements.select("#root");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26514,9 +26514,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect807731722() {
+    public void testElementsselect32312() {
         Elements elements = new Elements();
-        elements.select("optgrouq");
+        elements.select("dd");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26535,9 +26535,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect18285143() {
+    public void testElementsselect33218813() {
         Elements elements = new Elements();
-        elements.select(":eq)");
+        elements.select("link");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26556,9 +26556,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect30064() {
+    public void testElementsselect13215465994() {
         Elements elements = new Elements();
-        elements.select("^=");
+        elements.select("template");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26577,9 +26577,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot920() {
+    public void testElementsnot30050() {
         Elements elements = new Elements();
-        elements.not("=");
+        elements.not("^<");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26598,9 +26598,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot21153115431() {
+    public void testElementsnot31255621() {
         Elements elements = new Elements();
-        elements.not("boundary");
+        elements.not("eveo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26619,9 +26619,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot35756412() {
+    public void testElementsnot18912061162() {
         Elements elements = new Elements();
-        elements.not("type");
+        elements.not(":nth-of-type(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26640,9 +26640,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot1103269003() {
+    public void testElementsnot3081290273() {
         Elements elements = new Elements();
-        elements.not("theae");
+        elements.not(":last-chilc");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26661,9 +26661,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot33868634() {
+    public void testElementsnot20919604294() {
         Elements elements = new Elements();
-        elements.not("nobq");
+        elements.not(":only-chilc");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26682,7 +26682,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq320() {
+    public void testElementseq2180() {
         Elements elements = new Elements();
         elements.eq();
         assertTrue(elements.equals(elements));
@@ -26703,7 +26703,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq341() {
+    public void testElementseq2221() {
         Elements elements = new Elements();
         elements.eq();
         assertTrue(elements.equals(elements));
@@ -26724,7 +26724,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq572742() {
+    public void testElementseq573732() {
         Elements elements = new Elements();
         elements.eq();
         assertTrue(elements.equals(elements));
@@ -26745,7 +26745,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq1313() {
+    public void testElementseq573733() {
         Elements elements = new Elements();
         elements.eq();
         assertTrue(elements.equals(elements));
@@ -26766,7 +26766,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq314() {
+    public void testElementseq572744() {
         Elements elements = new Elements();
         elements.eq();
         assertTrue(elements.equals(elements));
@@ -26787,9 +26787,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis567593340() {
+    public void testElementsis20919604290() {
         Elements elements = new Elements();
-        elements.is(":has'");
+        elements.is(":only-chilc");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26808,9 +26808,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis1003134671() {
+    public void testElementsis10032436861() {
         Elements elements = new Elements();
-        elements.is("imagf");
+        elements.is("textareb");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26829,9 +26829,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis9076856552() {
+    public void testElementsis1552() {
         Elements elements = new Elements();
-        elements.is("scrips");
+        elements.is("|");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26850,9 +26850,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis17571249773() {
+    public void testElementsis18353333() {
         Elements elements = new Elements();
-        elements.is(":emptx");
+        elements.is(":lt(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26871,9 +26871,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis1044174() {
+    public void testElementsis35756414() {
         Elements elements = new Elements();
-        elements.is("imf");
+        elements.is("type");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26997,9 +26997,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext14711890850() {
+    public void testElementsnext32460() {
         Elements elements = new Elements();
-        elements.next(":nth-last-child(");
+        elements.next("ds");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27018,9 +27018,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext16183955591() {
+    public void testElementsnext9060216051() {
         Elements elements = new Elements();
-        elements.next(":only-of-typd");
+        elements.next("select");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27039,9 +27039,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext923482() {
+    public void testElementsnext567593342() {
         Elements elements = new Elements();
-        elements.next("]]=");
+        elements.next(":has'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27060,9 +27060,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext31490263() {
+    public void testElementsnext10552537223() {
         Elements elements = new Elements();
-        elements.next("forl");
+        elements.next(":matchesOwn(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27081,9 +27081,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext17209582724() {
+    public void testElementsnext33218804() {
         Elements elements = new Elements();
-        elements.next("basefonu");
+        elements.next("linj");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27207,9 +27207,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll567593340() {
+    public void testElementsnextAll570706520() {
         Elements elements = new Elements();
-        elements.nextAll(":has'");
+        elements.nextAll(":roou");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27228,9 +27228,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll807731731() {
+    public void testElementsnextAll14562253631() {
         Elements elements = new Elements();
-        elements.nextAll("optgroup");
+        elements.nextAll(":matches'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27249,9 +27249,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll17571249792() {
+    public void testElementsnextAll29875582() {
         Elements elements = new Elements();
-        elements.nextAll(":emptz");
+        elements.nextAll("abs9");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27270,9 +27270,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll20919604283() {
+    public void testElementsnextAll14563() {
         Elements elements = new Elements();
-        elements.nextAll(":only-child");
+        elements.nextAll("*{");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27291,9 +27291,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll1044194() {
+    public void testElementsnextAll33034() {
         Elements elements = new Elements();
-        elements.nextAll("imh");
+        elements.nextAll("h0");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27417,9 +27417,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev30294410() {
+    public void testElementsprev19804204660() {
         Elements elements = new Elements();
-        elements.prev("body");
+        elements.prev("Set-Cookie");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27438,9 +27438,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev18285121() {
+    public void testElementsprev1103269001() {
         Elements elements = new Elements();
-        elements.prev(":eq'");
+        elements.prev("theae");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27459,9 +27459,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev18690634832() {
+    public void testElementsprev16183955612() {
         Elements elements = new Elements();
-        elements.prev("sarcasm");
+        elements.prev(":only-of-typf");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27480,9 +27480,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev570706523() {
+    public void testElementsprev7423139273() {
         Elements elements = new Elements();
-        elements.prev(":roou");
+        elements.prev("checkee");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27501,9 +27501,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev1044184() {
+    public void testElementsprev12174874144() {
         Elements elements = new Elements();
-        elements.prev("img");
+        elements.prev("hiddeo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27627,7 +27627,49 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll5525734460() {
+    public void testElementsprevAll33868630() {
+        Elements elements = new Elements();
+        elements.prevAll("nobq");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsprevAll31891141() {
+        Elements elements = new Elements();
+        elements.prevAll("gziq");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsprevAll5525734462() {
         Elements elements = new Elements();
         elements.prevAll("captioo");
         assertTrue(elements.equals(elements));
@@ -27648,9 +27690,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll1101578761() {
+    public void testElementsprevAll1102773763() {
         Elements elements = new Elements();
-        elements.prevAll("tbodx");
+        elements.prevAll("tfoos");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27669,51 +27711,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll7390744102() {
+    public void testElementsprevAll21065455194() {
         Elements elements = new Elements();
-        elements.prevAll("charses");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementsprevAll1044193() {
-        Elements elements = new Elements();
-        elements.prevAll("imh");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementsprevAll1284() {
-        Elements elements = new Elements();
-        elements.prevAll("a");
+        elements.prevAll(":last-of-typd");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -28047,7 +28047,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstraverse20504041210() {
+    public void testElementstraverse2664372630() {
         Elements elements = new Elements();
         elements.traverse();
         assertTrue(elements.equals(elements));
@@ -28068,7 +28068,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstraverse8025812341() {
+    public void testElementstraverse15614086491() {
         Elements elements = new Elements();
         elements.traverse();
         assertTrue(elements.equals(elements));
@@ -28089,7 +28089,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstraverse2664372632() {
+    public void testElementstraverse15614086492() {
         Elements elements = new Elements();
         elements.traverse();
         assertTrue(elements.equals(elements));
@@ -28110,7 +28110,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstraverse16082306803() {
+    public void testElementstraverse2664372633() {
         Elements elements = new Elements();
         elements.traverse();
         assertTrue(elements.equals(elements));
@@ -28131,7 +28131,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstraverse8025812344() {
+    public void testElementstraverse18432892594() {
         Elements elements = new Elements();
         elements.traverse();
         assertTrue(elements.equals(elements));
@@ -28152,7 +28152,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsfilter3880431240() {
+    public void testElementsfilter8025812340() {
         Elements elements = new Elements();
         elements.filter();
         assertTrue(elements.equals(elements));
@@ -28194,7 +28194,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsfilter312() {
+    public void testElementsfilter8025812342() {
         Elements elements = new Elements();
         elements.filter();
         assertTrue(elements.equals(elements));
@@ -28215,7 +28215,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsfilter2664372633() {
+    public void testElementsfilter16082306803() {
         Elements elements = new Elements();
         elements.filter();
         assertTrue(elements.equals(elements));
@@ -28236,7 +28236,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsfilter634() {
+    public void testElementsfilter8025812344() {
         Elements elements = new Elements();
         elements.filter();
         assertTrue(elements.equals(elements));
@@ -28362,9 +28362,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse3081290270() {
+    public void testQueryParserparse18912061170() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse(":last-chilc");
+        queryparser.parse(":nth-of-type'");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28383,9 +28383,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse33868651() {
+    public void testQueryParserparse15515509541() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse("nobs");
+        queryparser.parse("noscrips");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28404,9 +28404,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse7423139252() {
+    public void testQueryParserparse1101578782() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse("checkec");
+        queryparser.parse("tbodz");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28425,9 +28425,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse31891143() {
+    public void testQueryParserparse1143063() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse("gziq");
+        queryparser.parse("svf");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28446,9 +28446,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse21011357984() {
+    public void testQueryParserparse21065455194() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse(":matchTexs");
+        queryparser.parse(":last-of-typd");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28467,9 +28467,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect15615072600() {
+    public void testSelectorselect1024240() {
         Selector selector = new Selector();
-        selector.select("bq",);
+        selector.select("h1",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28488,9 +28488,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect8280957481() {
+    public void testSelectorselect1037881561() {
         Selector selector = new Selector();
-        selector.select(":containsOwn'",);
+        selector.select("metb",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28509,9 +28509,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect3815844562() {
+    public void testSelectorselect13978958082() {
         Selector selector = new Selector();
-        selector.select("heac",);
+        selector.select("noframes",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28530,9 +28530,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect6928007323() {
+    public void testSelectorselect4059286343() {
         Selector selector = new Selector();
-        selector.select("tabld",);
+        selector.select("isindew",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28551,9 +28551,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect13907320904() {
+    public void testSelectorselect3452698084() {
         Selector selector = new Selector();
-        selector.select(":matches'",);
+        selector.select(":containsOwn(",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28572,7 +28572,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect4722017640() {
+    public void testSelectorselect8025831560() {
         Selector selector = new Selector();
         selector.select(,);
         assertTrue(selector.equals(selector));
@@ -28593,7 +28593,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect18513185241() {
+    public void testSelectorselect872043191() {
         Selector selector = new Selector();
         selector.select(,);
         assertTrue(selector.equals(selector));
@@ -28614,7 +28614,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect1654625232() {
+    public void testSelectorselect15614095792() {
         Selector selector = new Selector();
         selector.select(,);
         assertTrue(selector.equals(selector));
@@ -28635,7 +28635,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect9613() {
+    public void testSelectorselect2664391853() {
         Selector selector = new Selector();
         selector.select(,);
         assertTrue(selector.equals(selector));
@@ -28656,7 +28656,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect6669889004() {
+    public void testSelectorselect13811292224() {
         Selector selector = new Selector();
         selector.select(,);
         assertTrue(selector.equals(selector));
@@ -28677,9 +28677,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect2824365670() {
+    public void testSelectorselect1946692300() {
         Selector selector = new Selector();
-        selector.select("p",);
+        selector.select("[a-zA-Z_:][-a-zA-Z0-9_:.])",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28698,9 +28698,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect3655895851() {
+    public void testSelectorselect15614518011() {
         Selector selector = new Selector();
-        selector.select("head",);
+        selector.select("*<",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28719,9 +28719,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect1384837552() {
+    public void testSelectorselect19429070772() {
         Selector selector = new Selector();
-        selector.select("caption",);
+        selector.select("http",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28740,9 +28740,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect7773149473() {
+    public void testSelectorselect19847044363() {
         Selector selector = new Selector();
-        selector.select("DOCTYPD",);
+        selector.select("type",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28761,9 +28761,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect3917271644() {
+    public void testSelectorselect21063930954() {
         Selector selector = new Selector();
-        selector.select("xmo",);
+        selector.select("sarcasl",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28782,9 +28782,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst15614460660() {
+    public void testSelectorselectFirst4699497080() {
         Selector selector = new Selector();
-        selector.selectFirst("$=",);
+        selector.selectFirst("templatd",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28803,9 +28803,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst18433898541() {
+    public void testSelectorselectFirst5850826441() {
         Selector selector = new Selector();
-        selector.selectFirst("ds",);
+        selector.selectFirst(":matches'",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28824,9 +28824,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst20504386862() {
+    public void testSelectorselectFirst4849355152() {
         Selector selector = new Selector();
-        selector.selectFirst("!>",);
+        selector.selectFirst("eveo",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28845,9 +28845,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst20505027323() {
+    public void testSelectorselectFirst18739621443() {
         Selector selector = new Selector();
-        selector.selectFirst("bq",);
+        selector.selectFirst("h6",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28866,9 +28866,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst16083463414() {
+    public void testSelectorselectFirst4447894614() {
         Selector selector = new Selector();
-        selector.selectFirst("ti",);
+        selector.selectFirst(":gt(",);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);

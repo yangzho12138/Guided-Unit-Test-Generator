@@ -102,38 +102,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         }
 
         super.visit(n, arg);
-
-//        for (Parameter p: n.getParameters()) {
-//            System.out.println(p);
-//        }
-//        for (int i: this.integers) {
-//            System.out.println(i);
-//        }
-//        System.out.println(this.integersPool.size());
-//
-//        // find parameter types
-//        NodeList<Parameter> parameters = n.getParameters();
-//        List<String> parametersList = new ArrayList<String>();
-//        for (Parameter p: parameters) {
-//            parametersList.add(p.getType().toString());
-//        }
-//        System.out.println(parametersList);
-////        System.out.println("+++++++++++++");
-//
-//        // create arguments from value pools
-////        Object[] arguments = new Object[parameters.size()];
-//        List<Object> arguments = new ArrayList<Object>();
-//        int argumentLength = parameters.size();
-//        invokeMethod(parametersList, 0, n, argumentLength, arguments);
-//
-//        System.out.println("-----------");
     }
-
-//    @Override
-//    public void visit(ConstructorDeclaration n, Object arg) {
-//        super.visit(n, arg);
-//        constructors.add(n);
-//    }
 
     @Override
     public void visit(ClassOrInterfaceDeclaration n, Object arg) {
@@ -444,13 +413,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                     searchForClass(file, className, clazzes);
                 } else if (file.getName().endsWith(".class")) {
                     String fileName = file.getName().substring(0, file.getName().length() - 6);
-                    String fullClassName = directory.getName() + "." + fileName;
-                    if (fullClassName.endsWith(className) && !fullClassName.contains("jsoup")) {
-                        Class<?> clazz = null;
-                        if(fullClassName.contains("helper"))
-                            clazz = Class.forName("org.jsoup.parser." + fullClassName);
-                        else
-                            clazz = Class.forName("org.jsoup." + fullClassName);
+                    String fullClassName = directory.getPath().substring(directory.getPath().lastIndexOf("org")).replace('/', '.') + "." + fileName;
+                    if (fullClassName.endsWith(className)) {
+                        Class<?> clazz = Class.forName(fullClassName);
                         clazzes.add(clazz);
                     }
                 }
@@ -481,7 +446,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                     for(Class<?> cl : clazzes){
                         Constructor<?>[] constructors = cl.getConstructors();
                         for (Constructor<?> constructor : constructors) {
-                            System.out.println(constructor);
+//                            System.out.println(constructor);
                             if (constructor.getParameterCount() == 0) {
                                 Object obj = constructor.newInstance();
                                 objectsPool.add(obj);
@@ -523,8 +488,6 @@ public class TestGenerator extends VoidVisitorAdapter {
                 continue;
             }
 
-//            System.out.println(method.getName().asString());
-
             NodeList<ReferenceType> exceptionList = method.getThrownExceptions();
 
             // find parameter types
@@ -534,7 +497,6 @@ public class TestGenerator extends VoidVisitorAdapter {
             for (Parameter p : parameters) {
                 parametersList.add(p.getType().toString());
             }
-//            System.out.println(parametersList);
 
             List<List<Object>> argumentsList = new ArrayList<>();
 
@@ -593,11 +555,6 @@ public class TestGenerator extends VoidVisitorAdapter {
             if(method.getName().toString().equals("consumeTo")){
                 System.out.println(argumentsList);
             }
-            // create arguments from value pools
-//            List<Object> arguments = new ArrayList<>();
-//            int argumentLength = parameters.size();
-//            argumentsList.clear();
-//            invokeMethod(parametersList, 0, method, argumentLength, arguments);
 
             // 根据方法所在的类，去constructor list中找到对应的实体，调用该函数，生成test
             // TODO: Object can not be put into the code directly!!!
@@ -622,15 +579,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                     Object o = currentArguments.get(j);
                     if(o != null){
                         String type = o.getClass().toString();
-//                        System.out.println(type);
-//                        if(method.getName().toString().equals("consumeTo")){
-////                            System.out.println();
-//                            System.out.println(o);
-//                        }
 
                         if(type.contains("[L") || type.contains("[I")){
                             if(type.contains("String")) {
-//                                System.out.println("String array");
                                 parameterList.append("new String[]{");
                                 for(int k = 0; k < ((String[]) o).length; k++){
                                     parameterList.append("\"" + ((String[]) o)[k] + "\"");
