@@ -6,6 +6,7 @@ import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.Parameter;
+import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
 
@@ -502,6 +503,15 @@ public class TestGenerator extends VoidVisitorAdapter {
             if(method.findAncestor(ClassOrInterfaceDeclaration.class).get().isPrivate() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isProtected() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isStatic() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isAbstract() || method.findAncestor(ClassOrInterfaceDeclaration.class).get().isInterface()){
                 continue;
             }
+
+            if (Objects.equals(method.getName().toString(), "iterator")) {
+                continue;
+            }
+            // Pass the override method
+            if (method.isAnnotationPresent("Override")) {
+                continue;
+            }
+
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             // TODO: delete after successfully generating constructor
@@ -514,6 +524,8 @@ public class TestGenerator extends VoidVisitorAdapter {
             }
 
 //            System.out.println(method.getName().asString());
+
+            NodeList<ReferenceType> exceptionList = method.getThrownExceptions();
 
             // find parameter types
             NodeList<Parameter> parameters = method.getParameters();
@@ -594,7 +606,14 @@ public class TestGenerator extends VoidVisitorAdapter {
                 List<Object> currentArguments = argumentsList.get(i);
 
                 sb.append("    @Test\n");
-                sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() {\n");
+                String throwException;
+                if (exceptionList.size() != 0) {
+                    throwException = "throws Exception ";
+                } else {
+                    throwException = "";
+                }
+                sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() " + throwException + "{\n");
+
                 sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
 
                 StringBuilder parameterList = new StringBuilder();
@@ -660,14 +679,15 @@ public class TestGenerator extends VoidVisitorAdapter {
                                 }
                             }else{
 //                                System.out.println("Object array");
-                                parameterList.append("new Object[]{");
-                                for (int k = 0; k < ((Object[]) o).length; k++) {
-//                                    System.out.println(type);
-                                    parameterList.append(((Object[]) o)[k]);
-                                    if (k != ((Object[]) o).length - 1) {
-                                        parameterList.append(",");
-                                    }
-                                }
+                                // TODO: Object
+//                                parameterList.append("new Object[]{");
+//                                for (int k = 0; k < ((Object[]) o).length; k++) {
+////                                    System.out.println(type);
+//                                    parameterList.append(((Object[]) o)[k]);
+//                                    if (k != ((Object[]) o).length - 1) {
+//                                        parameterList.append(",");
+//                                    }
+//                                }
                             }
                             parameterList.append("}");
                             if(j != currentArguments.size() - 1){
@@ -682,12 +702,12 @@ public class TestGenerator extends VoidVisitorAdapter {
                         if((Character) o == '\\'){
                             parameterList.append("'\\\\'");
                         }else{
-                            parameterList.append("\'" + o + "\'");
+                            parameterList.append("\"" + o + "\"");
                         }
                     } else {
                         // TODO: Cast null to the correct type
 //                        System.out.println(o.getClass());
-                        parameterList.append(o);
+//                        parameterList.append(o);
                     }
                     if(j != currentArguments.size() - 1){
                         parameterList.append(",");
