@@ -445,7 +445,11 @@ public class TestGenerator extends VoidVisitorAdapter {
                     String fileName = file.getName().substring(0, file.getName().length() - 6);
                     String fullClassName = directory.getName() + "." + fileName;
                     if (fullClassName.endsWith(className) && !fullClassName.contains("jsoup")) {
-                        Class<?> clazz = Class.forName("org.jsoup." + fullClassName);
+                        Class<?> clazz = null;
+                        if(fullClassName.contains("helper"))
+                            clazz = Class.forName("org.jsoup.parser." + fullClassName);
+                        else
+                            clazz = Class.forName("org.jsoup." + fullClassName);
                         clazzes.add(clazz);
                     }
                 }
