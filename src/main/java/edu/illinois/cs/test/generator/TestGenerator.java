@@ -113,69 +113,8 @@ public class TestGenerator extends VoidVisitorAdapter {
     }
 
     public Object getValueFromPool(String type) {
-        if (type.equals("String")) {
-            Random random = new Random();
-            int index = random.nextInt(stringsPool.size());
-
-            // find a random string in the string pool
-            Iterator<String> it = stringsPool.iterator();
-            int i = 0;
-            while (it.hasNext()) {
-                String s = it.next();
-                if (i == index) {
-                    return s;
-                }
-                i++;
-            }
-        } else if (type.equals("Integer") || type.equals("int")) {
-            Random random = new Random();
-            int index = random.nextInt(integersPool.size());
-
-            // find a random int in the int pool
-            Iterator<Integer> it = integersPool.iterator();
-            int i = 0;
-            while (it.hasNext()) {
-                Integer s = it.next();
-                if (i == index) {
-                    return s;
-                }
-                i++;
-            }
-        } else if (type.equals("Character") || type.equals("char")) {
-            Random random = new Random();
-            int index = random.nextInt(charactersPool.size());
-
-            // find a random char in the char pool
-            Iterator<Character> it = charactersPool.iterator();
-            int i = 0;
-            while (it.hasNext()) {
-                Character s = it.next();
-                if (i == index) {
-                    return s;
-                }
-                i++;
-            }
-        } else if (type.equals("Long") || type.equals("long")) {
-            Random random = new Random();
-            int index = random.nextInt(longsPool.size());
-
-            // find a random long in the long pool
-            Iterator<Long> it = longsPool.iterator();
-            int i = 0;
-            while (it.hasNext()) {
-                Long s = it.next();
-                if (i == index) {
-                    return s;
-                }
-                i++;
-            }
-        } else if (type.equals("boolean")) {
-            Random random = new Random();
-            int index = random.nextInt(1);
-
-            return index == 0;
-        } else if (type.contains("[]")) {
-            if (type.equals("Integer") || type.contains("int")) {
+        if (type.contains("[]")) {
+            if (type.contains("Integer") || type.contains("int")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(integersPool.size());
                 int[] intArray = new int[randomNumber];
@@ -197,7 +136,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                     j++;
                 }
                 return stringArray;
-            } else if (type.contains("Character") || type.contains("char")){
+            } else if (type.contains("Character") || type.contains("char")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(charactersPool.size());
                 Character[] charArray = new Character[randomNumber];
@@ -236,6 +175,67 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 return objectArray;
             }
+        } else if (type.contains("String")) {
+            Random random = new Random();
+            int index = random.nextInt(stringsPool.size());
+
+            // find a random string in the string pool
+            Iterator<String> it = stringsPool.iterator();
+            int i = 0;
+            while (it.hasNext()) {
+                String s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
+            }
+        } else if (type.contains("Integer") || type.contains("int")) {
+            Random random = new Random();
+            int index = random.nextInt(integersPool.size());
+
+            // find a random int in the int pool
+            Iterator<Integer> it = integersPool.iterator();
+            int i = 0;
+            while (it.hasNext()) {
+                Integer s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
+            }
+        } else if (type.contains("Character") || type.contains("char")) {
+            Random random = new Random();
+            int index = random.nextInt(charactersPool.size());
+
+            // find a random char in the char pool
+            Iterator<Character> it = charactersPool.iterator();
+            int i = 0;
+            while (it.hasNext()) {
+                Character s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
+            }
+        } else if (type.contains("Long") || type.contains("long")) {
+            Random random = new Random();
+            int index = random.nextInt(longsPool.size());
+
+            // find a random long in the long pool
+            Iterator<Long> it = longsPool.iterator();
+            int i = 0;
+            while (it.hasNext()) {
+                Long s = it.next();
+                if (i == index) {
+                    return s;
+                }
+                i++;
+            }
+        } else if (type.contains("boolean")) {
+            Random random = new Random();
+            int index = random.nextInt(1);
+
+            return index == 0;
         } else {
             Random random = new Random();
 //            System.out.println(type);
@@ -515,9 +515,6 @@ public class TestGenerator extends VoidVisitorAdapter {
 
             List<List<Object>> argumentsList = new ArrayList<>();
 
-            // TODO: generate a typesList so that we can cast null to the correct type
-            // TODO: add quotation marks to Char
-            List<List<String>> typesList = new ArrayList<>();
             // generate 3 groups of arguments for each method
             for (int num = 0; num < 5; num++) {
                 List<Object> arguments = new ArrayList<>();
