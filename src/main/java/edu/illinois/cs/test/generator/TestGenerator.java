@@ -443,16 +443,37 @@ public class TestGenerator extends VoidVisitorAdapter {
 
             if(clazzes.size() != 0){
                 try {
+                    // generate the constructor without arguments
                     for(Class<?> cl : clazzes){
                         Constructor<?>[] constructors = cl.getConstructors();
                         for (Constructor<?> constructor : constructors) {
-//                            System.out.println(constructor);
                             if (constructor.getParameterCount() == 0) {
                                 Object obj = constructor.newInstance();
                                 objectsPool.add(obj);
                             }
                         }
                     }
+
+                    // generate the constructor with arguments
+                    for(Class<?> cl : clazzes){
+                        Constructor<?>[] constructors = cl.getConstructors();
+                        for (Constructor<?> constructor : constructors) {
+                            if (constructor.getParameterCount() != 0) {
+                                Class<?>[] parameterTypes = constructor.getParameterTypes();
+                                List<String> parametersTypeList = new ArrayList<>();
+                                for (Class<?> parameterType : parameterTypes) {
+                                    parametersTypeList.add(parameterType.toString());
+                                }
+                                List<Object> parametersList = new ArrayList<>();
+                                for(String type : parametersTypeList){
+                                    parametersList.add(getValueFromPool(type));
+                                }
+                                Object obj = constructor.newInstance(parametersList.toArray());
+                                objectsPool.add(obj);
+                            }
+                        }
+                    }
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
