@@ -464,11 +464,57 @@ public class TestGenerator extends VoidVisitorAdapter {
                                 for (Class<?> parameterType : parameterTypes) {
                                     parametersTypeList.add(parameterType.toString());
                                 }
-                                List<Object> parametersList = new ArrayList<>();
-                                for(String type : parametersTypeList){
-                                    parametersList.add(getValueFromPool(type));
+                                System.out.println(parametersTypeList);
+                                System.out.println(parametersTypeList.size());
+                                System.out.println("-------------------------------------");
+                                Object[] arguments = new Object[parametersTypeList.size()];
+                                for(int i = 0; i < parametersTypeList.size(); i++){
+                                    String type = parametersTypeList.get(i);
+                                    if(type.contains("[]")) {
+                                        if (type.contains("String")) {
+                                            String[] strs = (String[]) getValueFromPool(type);
+                                            arguments[i] = strs;
+                                        } else if (type.contains("Integer") || type.contains("int")) {
+                                            int[] ints = (int[]) getValueFromPool(type);
+                                            arguments[i] = ints;
+                                        } else if (type.contains("Long") || type.contains("long")) {
+                                            long[] longs = (long[]) getValueFromPool(type);
+                                            arguments[i] = longs;
+                                        } else if (type.contains("boolean")) {
+                                            boolean[] bools = (boolean[]) getValueFromPool(type);
+                                            arguments[i] = bools;
+                                        } else if (type.contains("Character") || type.contains("char")) {
+                                            Character[] chars = (Character[]) getValueFromPool(type);
+                                            arguments[i] = chars;
+                                        } else {
+                                            Object[] objects = (Object[]) getValueFromPool(type);
+                                            arguments[i] = objects;
+                                        }
+                                    }else if (type.contains("String")) {
+                                        String s = (String) getValueFromPool(type);
+                                        arguments[i] = s;
+                                    } else if (type.contains("Integer") || type.contains("int")) {
+                                        int in = (int) getValueFromPool(type);
+                                        arguments[i] = in;
+                                    } else if (type.contains("Long") || type.contains("long")) {
+                                        long l = (long) getValueFromPool(type);
+                                        arguments[i] = l;
+                                    } else if (type.contains("boolean")) {
+                                        boolean b = (boolean) getValueFromPool(type);
+                                        arguments[i] = b;
+                                    } else if (type.contains("Character") || type.contains("char")) {
+                                        char ch = (char) getValueFromPool(type);
+                                        arguments[i] = ch;
+                                    } else {
+                                        Object o = getValueFromPool(type);
+                                        arguments[i] = o;
+                                    }
                                 }
-                                Object obj = constructor.newInstance(parametersList.toArray());
+                                for(Object o : arguments){
+                                    System.out.print(o.getClass().toString() + " ");
+                                }
+                                System.out.println("=====================================");
+                                Object obj = constructor.newInstance(arguments);
                                 objectsPool.add(obj);
                             }
                         }
