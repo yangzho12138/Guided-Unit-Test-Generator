@@ -31,7 +31,7 @@ public class PoolInit extends VoidVisitorAdapter {
 
     public PoolInit(String target){
         this.valuePool = new ValuePool();
-        valuePool.addValue(null);
+//        valuePool.addValue(null);
         valuePool.addValue(true);
         valuePool.addValue(false);
         valuePool.addValue(0L);

@@ -12,9 +12,9 @@ import org.jsoup.*;
 
 public class AutomatedTest {
     @Test
-    public void testAttributesget1650854880() {
+    public void testAttributesget11414281680() {
         Attributes attributes = new Attributes();
-        attributes.get("http-equiv");
+        attributes.get("[CDATA[");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -33,9 +33,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget1221() {
+    public void testAttributesget19391() {
         Attributes attributes = new Attributes();
-        attributes.get("[");
+        attributes.get("<0");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -54,9 +54,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget37412() {
+    public void testAttributesget26152062() {
         Attributes attributes = new Attributes();
-        attributes.get("tr");
+        attributes.get("UTF.");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -75,9 +75,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget987183() {
+    public void testAttributesget9060216063() {
         Attributes attributes = new Attributes();
-        attributes.get("cok");
+        attributes.get("selecs");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -96,9 +96,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget1143074() {
+    public void testAttributesget33737374() {
         Attributes attributes = new Attributes();
-        attributes.get("svg");
+        attributes.get("namd");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -117,9 +117,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase19390() {
+    public void testAttributesgetIgnoreCase33480030() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("<0");
+        attributes.getIgnoreCase("met`");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -138,9 +138,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase26152041() {
+    public void testAttributesgetIgnoreCase1102563201() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("UTF,");
+        attributes.getIgnoreCase("text.");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -159,9 +159,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase1003134662() {
+    public void testAttributesgetIgnoreCase1103714462() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("image");
+        attributes.getIgnoreCase("titld");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -180,9 +180,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase21156131433() {
+    public void testAttributesgetIgnoreCase1103714473() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("noembed");
+        attributes.getIgnoreCase("title");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -201,9 +201,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase1434() {
+    public void testAttributesgetIgnoreCase7390744114() {
         Attributes attributes = new Attributes();
-        attributes.getIgnoreCase("p");
+        attributes.getIgnoreCase("charset");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -222,9 +222,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd11608600() {
+    public void testAttributesadd12208775840() {
         Attributes attributes = new Attributes();
-        attributes.add("DOCTYPD","frameses");
+        attributes.add("#roou","tbodx");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -243,9 +243,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd1070429141() {
+    public void testAttributesadd30876901() {
         Attributes attributes = new Attributes();
-        attributes.add("mati","namd");
+        attributes.add("dd","abs;");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -264,9 +264,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd8230024892() {
+    public void testAttributesadd2883683732() {
         Attributes attributes = new Attributes();
-        attributes.add("tbody",":root");
+        attributes.add("^<",":nth-child)");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -285,9 +285,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd18795616293() {
+    public void testAttributesadd11111811513() {
         Attributes attributes = new Attributes();
-        attributes.add(":roou","titlf");
+        attributes.add("US-ASCII","basefont");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -306,9 +306,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd16579055984() {
+    public void testAttributesadd21163833164() {
         Attributes attributes = new Attributes();
-        attributes.add(":first-child",":lt(");
+        attributes.add("UTF-",":first-of-type");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -327,9 +327,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput1515855810() {
+    public void testAttributesput8534430800() {
         Attributes attributes = new Attributes();
-        attributes.put("httpr",":matchesOwn)");
+        attributes.put("noscripu","th");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -348,9 +348,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput1103853811() {
+    public void testAttributesput6566455921() {
         Attributes attributes = new Attributes();
-        attributes.put("lj","tfoot");
+        attributes.put(":nth-child)","textare`");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -369,9 +369,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput1048136122() {
+    public void testAttributesput16611899892() {
         Attributes attributes = new Attributes();
-        attributes.put("link",":lt'");
+        attributes.put("spam","noscripu");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -390,9 +390,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput11481070963() {
+    public void testAttributesput1082038053() {
         Attributes attributes = new Attributes();
-        attributes.put("#texs","#roou");
+        attributes.put("nobq","hreg");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -411,9 +411,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput771654574() {
+    public void testAttributesput13636975554() {
         Attributes attributes = new Attributes();
-        attributes.put("DOCTYPF","basefonu");
+        attributes.put(":empty","^=");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -432,9 +432,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput991536150() {
+    public void testAttributesput1251380() {
         Attributes attributes = new Attributes();
-        attributes.put("heae",true);
+        attributes.put("~<",true);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -453,9 +453,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput4059299271() {
+    public void testAttributesput11618014461() {
         Attributes attributes = new Attributes();
-        attributes.put("isindey",true);
+        attributes.put("action",true);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -474,9 +474,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput34942() {
+    public void testAttributesput40832() {
         Attributes attributes = new Attributes();
-        attributes.put("*",true);
+        attributes.put("=",true);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -495,9 +495,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput11107209083() {
+    public void testAttributesput12068380113() {
         Attributes attributes = new Attributes();
-        attributes.put("#roos",true);
+        attributes.put("https",true);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -516,9 +516,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput11852486504() {
+    public void testAttributesput17270606194() {
         Attributes attributes = new Attributes();
-        attributes.put("imagd",true);
+        attributes.put("iframf",true);
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -642,9 +642,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove1857353270() {
+    public void testAttributesremove19788929350() {
         Attributes attributes = new Attributes();
-        attributes.remove("US-ASCII");
+        attributes.remove(":containsOwn'");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -663,9 +663,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove2882752491() {
+    public void testAttributesremove20353119911() {
         Attributes attributes = new Attributes();
-        attributes.remove(":nth-child)");
+        attributes.remove(":first-of-typd");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -684,9 +684,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove18353342() {
+    public void testAttributesremove19788929342() {
         Attributes attributes = new Attributes();
-        attributes.remove(":lt)");
+        attributes.remove(":containsOwn(");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -705,9 +705,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove32132583() {
+    public void testAttributesremove39993() {
         Attributes attributes = new Attributes();
-        attributes.remove("html");
+        attributes.remove("~>");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -726,9 +726,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove13776877274() {
+    public void testAttributesremove1650854884() {
         Attributes attributes = new Attributes();
-        attributes.remove("button");
+        attributes.remove("http-equiv");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -747,9 +747,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase15368918750() {
+    public void testAttributesremoveIgnoreCase770() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase("checkboy");
+        attributes.removeIgnoreCase(".");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -768,9 +768,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase15515509541() {
+    public void testAttributesremoveIgnoreCase37281() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase("noscrips");
+        attributes.removeIgnoreCase("te");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -789,9 +789,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase16183955612() {
+    public void testAttributesremoveIgnoreCase21153115422() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase(":only-of-typf");
+        attributes.removeIgnoreCase("boundarz");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -810,9 +810,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase358296673() {
+    public void testAttributesremoveIgnoreCase32134783() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase("#roos");
+        attributes.removeIgnoreCase("htto");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -831,9 +831,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase1003581224() {
+    public void testAttributesremoveIgnoreCase30074() {
         Attributes attributes = new Attributes();
-        attributes.removeIgnoreCase("inpuu");
+        attributes.removeIgnoreCase("^>");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -852,9 +852,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey14580() {
+    public void testAttributeshasKey32470() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("*}");
+        attributes.hasKey("dt");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -873,9 +873,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey9076856541() {
+    public void testAttributeshasKey32110821() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("script");
+        attributes.hasKey("href");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -894,9 +894,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey14562253612() {
+    public void testAttributeshasKey1857353282() {
         Attributes attributes = new Attributes();
-        attributes.hasKey(":matches)");
+        attributes.hasKey("US-ASCIH");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -915,9 +915,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey30164333() {
+    public void testAttributeshasKey30294413() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("basf");
+        attributes.hasKey("body");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -936,9 +936,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey1188384() {
+    public void testAttributeshasKey10552537214() {
         Attributes attributes = new Attributes();
-        attributes.hasKey("xml");
+        attributes.hasKey(":matchesOwn'");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -957,9 +957,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase18285130() {
+    public void testAttributeshasKeyIgnoreCase996170330() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase(":eq(");
+        attributes.hasKeyIgnoreCase("httpr");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -978,9 +978,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase19732341991() {
+    public void testAttributeshasKeyIgnoreCase711() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase("plaintexu");
+        attributes.hasKeyIgnoreCase("(");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -999,9 +999,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase17209582742() {
+    public void testAttributeshasKeyIgnoreCase31255602() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase("basefons");
+        attributes.hasKeyIgnoreCase("evem");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -1020,9 +1020,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase996170343() {
+    public void testAttributeshasKeyIgnoreCase35367463() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase("https");
+        attributes.hasKeyIgnoreCase("spao");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -1041,9 +1041,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase569515654() {
+    public void testAttributeshasKeyIgnoreCase31824() {
         Attributes attributes = new Attributes();
-        attributes.hasKeyIgnoreCase(":not'");
+        attributes.hasKeyIgnoreCase("bq");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -1902,9 +1902,10509 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity16449536110() {
+    public void testElementtagName10() {
+        Element element = new Element();
+        element.tagName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName11() {
+        Element element = new Element();
+        element.tagName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName12() {
+        Element element = new Element();
+        element.tagName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName13() {
+        Element element = new Element();
+        element.tagName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName14() {
+        Element element = new Element();
+        element.tagName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnormalName10() {
+        Element element = new Element();
+        element.normalName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnormalName11() {
+        Element element = new Element();
+        element.normalName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnormalName12() {
+        Element element = new Element();
+        element.normalName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnormalName13() {
+        Element element = new Element();
+        element.normalName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnormalName14() {
+        Element element = new Element();
+        element.normalName();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName6361976030() {
+        Element element = new Element();
+        element.tagName("colgrouo");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName31490261() {
+        Element element = new Element();
+        element.tagName("forl");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName12174874152() {
+        Element element = new Element();
+        element.tagName("hidden");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName20913044563() {
+        Element element = new Element();
+        element.tagName("isindey");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtagName18245834() {
+        Element element = new Element();
+        element.tagName(":alm");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtag10() {
+        Element element = new Element();
+        element.tag();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtag11() {
+        Element element = new Element();
+        element.tag();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtag12() {
+        Element element = new Element();
+        element.tag();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtag13() {
+        Element element = new Element();
+        element.tag();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtag14() {
+        Element element = new Element();
+        element.tag();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementisBlock10() {
+        Element element = new Element();
+        element.isBlock();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementisBlock11() {
+        Element element = new Element();
+        element.isBlock();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementisBlock12() {
+        Element element = new Element();
+        element.isBlock();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementisBlock13() {
+        Element element = new Element();
+        element.isBlock();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementisBlock14() {
+        Element element = new Element();
+        element.isBlock();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementid10() {
+        Element element = new Element();
+        element.id();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementid11() {
+        Element element = new Element();
+        element.id();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementid12() {
+        Element element = new Element();
+        element.id();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementid13() {
+        Element element = new Element();
+        element.id();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementid14() {
+        Element element = new Element();
+        element.id();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr20438270990() {
+        Element element = new Element();
+        element.attr("title","button");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr15494140001() {
+        Element element = new Element();
+        element.attr(":first-chile","theae");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr18707814012() {
+        Element element = new Element();
+        element.attr("span","Set-Cookif");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr1889444353() {
+        Element element = new Element();
+        element.attr("disablec",":all");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr9987030584() {
+        Element element = new Element();
+        element.attr(":contains(","lh");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr8813755830() {
+        Element element = new Element();
+        element.attr("tablf",true);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr1108461021() {
+        Element element = new Element();
+        element.attr("type",true);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr999042() {
+        Element element = new Element();
+        element.attr("br",true);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr17691914433() {
+        Element element = new Element();
+        element.attr(":roou",true);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementattr444454() {
+        Element element = new Element();
+        element.attr("*=",true);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataset10() {
+        Element element = new Element();
+        element.dataset();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataset11() {
+        Element element = new Element();
+        element.dataset();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataset12() {
+        Element element = new Element();
+        element.dataset();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataset13() {
+        Element element = new Element();
+        element.dataset();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataset14() {
+        Element element = new Element();
+        element.dataset();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementparents10() {
+        Element element = new Element();
+        element.parents();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementparents11() {
+        Element element = new Element();
+        element.parents();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementparents12() {
+        Element element = new Element();
+        element.parents();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementparents13() {
+        Element element = new Element();
+        element.parents();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementparents14() {
+        Element element = new Element();
+        element.parents();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchild340() {
+        Element element = new Element();
+        element.child(3);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchild351() {
+        Element element = new Element();
+        element.child(4);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchild2232() {
+        Element element = new Element();
+        element.child(192);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchild2303() {
+        Element element = new Element();
+        element.child(199);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchild4324() {
+        Element element = new Element();
+        element.child(401);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchildren10() {
+        Element element = new Element();
+        element.children();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchildren11() {
+        Element element = new Element();
+        element.children();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchildren12() {
+        Element element = new Element();
+        element.children();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchildren13() {
+        Element element = new Element();
+        element.children();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementchildren14() {
+        Element element = new Element();
+        element.children();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtextNodes10() {
+        Element element = new Element();
+        element.textNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtextNodes11() {
+        Element element = new Element();
+        element.textNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtextNodes12() {
+        Element element = new Element();
+        element.textNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtextNodes13() {
+        Element element = new Element();
+        element.textNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtextNodes14() {
+        Element element = new Element();
+        element.textNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataNodes10() {
+        Element element = new Element();
+        element.dataNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataNodes11() {
+        Element element = new Element();
+        element.dataNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataNodes12() {
+        Element element = new Element();
+        element.dataNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataNodes13() {
+        Element element = new Element();
+        element.dataNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdataNodes14() {
+        Element element = new Element();
+        element.dataNodes();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselect1102773760() {
+        Element element = new Element();
+        element.select("tfoos");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselect7390744121() {
+        Element element = new Element();
+        element.select("charseu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselect26152042() {
+        Element element = new Element();
+        element.select("UTF,");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselect14711890863() {
+        Element element = new Element();
+        element.select(":nth-last-child)");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselect12269463014() {
+        Element element = new Element();
+        element.select(":containsData'");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselectFirst16183955600() {
+        Element element = new Element();
+        element.selectFirst(":only-of-type");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselectFirst33737391() {
+        Element element = new Element();
+        element.selectFirst("namf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselectFirst14562253612() {
+        Element element = new Element();
+        element.selectFirst(":matches)");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselectFirst20913044563() {
+        Element element = new Element();
+        element.selectFirst("isindey");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementselectFirst19732341994() {
+        Element element = new Element();
+        element.selectFirst("plaintexu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis1003134660() {
+        Element element = new Element();
+        element.is("image");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis1857353281() {
+        Element element = new Element();
+        element.is("US-ASCIH");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis10552537222() {
+        Element element = new Element();
+        element.is(":matchesOwn(");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis35367453() {
+        Element element = new Element();
+        element.is("span");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis33480044() {
+        Element element = new Element();
+        element.is("meta");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis310() {
+        Element element = new Element();
+        element.is((Evaluator) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis311() {
+        Element element = new Element();
+        element.is((Evaluator) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis312() {
+        Element element = new Element();
+        element.is((Evaluator) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis313() {
+        Element element = new Element();
+        element.is((Evaluator) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementis314() {
+        Element element = new Element();
+        element.is((Evaluator) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendChild310() {
+        Element element = new Element();
+        element.appendChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendChild311() {
+        Element element = new Element();
+        element.appendChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendChild312() {
+        Element element = new Element();
+        element.appendChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendChild313() {
+        Element element = new Element();
+        element.appendChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendChild314() {
+        Element element = new Element();
+        element.appendChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendTo310() {
+        Element element = new Element();
+        element.appendTo((Element) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendTo311() {
+        Element element = new Element();
+        element.appendTo((Element) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendTo312() {
+        Element element = new Element();
+        element.appendTo((Element) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendTo313() {
+        Element element = new Element();
+        element.appendTo((Element) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendTo314() {
+        Element element = new Element();
+        element.appendTo((Element) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependChild310() {
+        Element element = new Element();
+        element.prependChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependChild311() {
+        Element element = new Element();
+        element.prependChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependChild312() {
+        Element element = new Element();
+        element.prependChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependChild313() {
+        Element element = new Element();
+        element.prependChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependChild314() {
+        Element element = new Element();
+        element.prependChild((Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren10850() {
+        Element element = new Element();
+        element.insertChildren(4,(Collection<? extends Node>) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren17151681() {
+        Element element = new Element();
+        element.insertChildren(55297,(Collection<? extends Node>) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren69132() {
+        Element element = new Element();
+        element.insertChildren(192,(Collection<? extends Node>) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren21393() {
+        Element element = new Element();
+        element.insertChildren(-100,(Collection<? extends Node>) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren41234() {
+        Element element = new Element();
+        element.insertChildren(102,(Collection<? extends Node>) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren79050() {
+        Element element = new Element();
+        element.insertChildren(224,(Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren10231() {
+        Element element = new Element();
+        element.insertChildren(2,(Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren345415022() {
+        Element element = new Element();
+        element.insertChildren(1114211,(Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren41543() {
+        Element element = new Element();
+        element.insertChildren(103,(Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren83704() {
+        Element element = new Element();
+        element.insertChildren(239,(Node) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendElement12269463000() {
+        Element element = new Element();
+        element.appendElement(":containsData(");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendElement923481() {
+        Element element = new Element();
+        element.appendElement("]]=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendElement29875582() {
+        Element element = new Element();
+        element.appendElement("abs9");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendElement29875593() {
+        Element element = new Element();
+        element.appendElement("abs:");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendElement1103714484() {
+        Element element = new Element();
+        element.appendElement("titlf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependElement31891120() {
+        Element element = new Element();
+        element.prependElement("gzio");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependElement14561() {
+        Element element = new Element();
+        element.prependElement("*{");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependElement17209582732() {
+        Element element = new Element();
+        element.prependElement("basefont");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependElement33868643() {
+        Element element = new Element();
+        element.prependElement("nobr");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependElement18285144() {
+        Element element = new Element();
+        element.prependElement(":eq)");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendText1280() {
+        Element element = new Element();
+        element.appendText("a");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendText2709408261() {
+        Element element = new Element();
+        element.appendText("disablec");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendText1102563222() {
+        Element element = new Element();
+        element.appendText("text0");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendText37273() {
+        Element element = new Element();
+        element.appendText("td");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappendText21065455194() {
+        Element element = new Element();
+        element.appendText(":last-of-typd");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependText37400() {
+        Element element = new Element();
+        element.prependText("tq");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependText18285121() {
+        Element element = new Element();
+        element.prependText(":eq'");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependText31842() {
+        Element element = new Element();
+        element.prependText("bs");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependText13215465983() {
+        Element element = new Element();
+        element.prependText("templatf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprependText13215466004() {
+        Element element = new Element();
+        element.prependText("templatd");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappend15368918750() {
+        Element element = new Element();
+        element.append("checkboy");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappend1082706191() {
+        Element element = new Element();
+        element.append("radip");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappend807731722() {
+        Element element = new Element();
+        element.append("optgrouq");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappend16449536113() {
+        Element element = new Element();
+        element.append("frameseu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementappend9060216044() {
+        Element element = new Element();
+        element.append("selecu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprepend18353320() {
+        Element element = new Element();
+        element.prepend(":lt'");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprepend1857353271() {
+        Element element = new Element();
+        element.prepend("US-ASCII");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprepend18678420512() {
+        Element element = new Element();
+        element.prepend("[a-zA-Z_:][-a-zA-Z0-9_:.]+");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprepend30053() {
+        Element element = new Element();
+        element.prepend("^<");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementprepend1003134654() {
+        Element element = new Element();
+        element.prepend("imagd");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementempty10() {
+        Element element = new Element();
+        element.empty();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementempty11() {
+        Element element = new Element();
+        element.empty();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementempty12() {
+        Element element = new Element();
+        element.empty();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementempty13() {
+        Element element = new Element();
+        element.empty();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementempty14() {
+        Element element = new Element();
+        element.empty();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementcssSelector10() {
+        Element element = new Element();
+        element.cssSelector();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementcssSelector11() {
+        Element element = new Element();
+        element.cssSelector();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementcssSelector12() {
+        Element element = new Element();
+        element.cssSelector();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementcssSelector13() {
+        Element element = new Element();
+        element.cssSelector();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementcssSelector14() {
+        Element element = new Element();
+        element.cssSelector();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsiblingElements10() {
+        Element element = new Element();
+        element.siblingElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsiblingElements11() {
+        Element element = new Element();
+        element.siblingElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsiblingElements12() {
+        Element element = new Element();
+        element.siblingElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsiblingElements13() {
+        Element element = new Element();
+        element.siblingElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsiblingElements14() {
+        Element element = new Element();
+        element.siblingElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSibling10() {
+        Element element = new Element();
+        element.nextElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSibling11() {
+        Element element = new Element();
+        element.nextElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSibling12() {
+        Element element = new Element();
+        element.nextElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSibling13() {
+        Element element = new Element();
+        element.nextElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSibling14() {
+        Element element = new Element();
+        element.nextElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSiblings10() {
+        Element element = new Element();
+        element.nextElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSiblings11() {
+        Element element = new Element();
+        element.nextElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSiblings12() {
+        Element element = new Element();
+        element.nextElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSiblings13() {
+        Element element = new Element();
+        element.nextElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementnextElementSiblings14() {
+        Element element = new Element();
+        element.nextElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSibling10() {
+        Element element = new Element();
+        element.previousElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSibling11() {
+        Element element = new Element();
+        element.previousElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSibling12() {
+        Element element = new Element();
+        element.previousElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSibling13() {
+        Element element = new Element();
+        element.previousElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSibling14() {
+        Element element = new Element();
+        element.previousElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSiblings10() {
+        Element element = new Element();
+        element.previousElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSiblings11() {
+        Element element = new Element();
+        element.previousElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSiblings12() {
+        Element element = new Element();
+        element.previousElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSiblings13() {
+        Element element = new Element();
+        element.previousElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementpreviousElementSiblings14() {
+        Element element = new Element();
+        element.previousElementSiblings();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementfirstElementSibling10() {
+        Element element = new Element();
+        element.firstElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementfirstElementSibling11() {
+        Element element = new Element();
+        element.firstElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementfirstElementSibling12() {
+        Element element = new Element();
+        element.firstElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementfirstElementSibling13() {
+        Element element = new Element();
+        element.firstElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementfirstElementSibling14() {
+        Element element = new Element();
+        element.firstElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementelementSiblingIndex10() {
+        Element element = new Element();
+        element.elementSiblingIndex();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementelementSiblingIndex11() {
+        Element element = new Element();
+        element.elementSiblingIndex();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementelementSiblingIndex12() {
+        Element element = new Element();
+        element.elementSiblingIndex();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementelementSiblingIndex13() {
+        Element element = new Element();
+        element.elementSiblingIndex();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementelementSiblingIndex14() {
+        Element element = new Element();
+        element.elementSiblingIndex();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementlastElementSibling10() {
+        Element element = new Element();
+        element.lastElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementlastElementSibling11() {
+        Element element = new Element();
+        element.lastElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementlastElementSibling12() {
+        Element element = new Element();
+        element.lastElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementlastElementSibling13() {
+        Element element = new Element();
+        element.lastElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementlastElementSibling14() {
+        Element element = new Element();
+        element.lastElementSibling();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByTag30164310() {
+        Element element = new Element();
+        element.getElementsByTag("basd");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByTag37271() {
+        Element element = new Element();
+        element.getElementsByTag("td");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByTag11162() {
+        Element element = new Element();
+        element.getElementsByTag("!>");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByTag17480897433() {
+        Element element = new Element();
+        element.getElementsByTag("DOCTYPE");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByTag33034() {
+        Element element = new Element();
+        element.getElementsByTag("h0");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementById1188430() {
+        Element element = new Element();
+        element.getElementById("xmq");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementById31891121() {
+        Element element = new Element();
+        element.getElementById("gzio");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementById358296672() {
+        Element element = new Element();
+        element.getElementById("#roos");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementById12174874153() {
+        Element element = new Element();
+        element.getElementById("hidden");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementById15451126514() {
+        Element element = new Element();
+        element.getElementById("deflatf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByClass33218800() {
+        Element element = new Element();
+        element.getElementsByClass("linj");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByClass2882752481() {
+        Element element = new Element();
+        element.getElementsByClass(":nth-child(");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByClass21011357982() {
+        Element element = new Element();
+        element.getElementsByClass(":matchTexs");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByClass1650854883() {
+        Element element = new Element();
+        element.getElementsByClass("http-equiv");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByClass33868654() {
+        Element element = new Element();
+        element.getElementsByClass("nobs");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttribute13776877270() {
+        Element element = new Element();
+        element.getElementsByAttribute("button");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttribute923501() {
+        Element element = new Element();
+        element.getElementsByAttribute("]]?");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttribute1188432() {
+        Element element = new Element();
+        element.getElementsByAttribute("xmq");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttribute11346655533() {
+        Element element = new Element();
+        element.getElementsByAttribute("keygem");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttribute21153115434() {
+        Element element = new Element();
+        element.getElementsByAttribute("boundary");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeStarting33480050() {
+        Element element = new Element();
+        element.getElementsByAttributeStarting("metb");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeStarting10761623171() {
+        Element element = new Element();
+        element.getElementsByAttributeStarting(":contains'");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeStarting21011358002() {
+        Element element = new Element();
+        element.getElementsByAttributeStarting(":matchTexu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeStarting713() {
+        Element element = new Element();
+        element.getElementsByAttributeStarting("(");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeStarting21065455194() {
+        Element element = new Element();
+        element.getElementsByAttributeStarting(":last-of-typd");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValue4348876950() {
+        Element element = new Element();
+        element.getElementsByAttributeValue("checkbow","#text");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValue5730944691() {
+        Element element = new Element();
+        element.getElementsByAttributeValue("deflatd",":containsData'");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValue482570562() {
+        Element element = new Element();
+        element.getElementsByAttributeValue("captioo",":lt(");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValue11524584033() {
+        Element element = new Element();
+        element.getElementsByAttributeValue("forl",":first-child");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValue16642744024() {
+        Element element = new Element();
+        element.getElementsByAttributeValue(":eq(","basefons");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueNot16377771650() {
+        Element element = new Element();
+        element.getElementsByAttributeValueNot(":nth-last-child)","*{");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueNot12036282221() {
+        Element element = new Element();
+        element.getElementsByAttributeValueNot("httpr","href");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueNot1006073642() {
+        Element element = new Element();
+        element.getElementsByAttributeValueNot("form","abs9");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueNot11911064553() {
+        Element element = new Element();
+        element.getElementsByAttributeValueNot("lh","iframe");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueNot1133239494() {
+        Element element = new Element();
+        element.getElementsByAttributeValueNot("svh","style");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueStarting4085438080() {
+        Element element = new Element();
+        element.getElementsByAttributeValueStarting("isindew","UTF-");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueStarting17654985501() {
+        Element element = new Element();
+        element.getElementsByAttributeValueStarting(":not'","#");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueStarting12185683492() {
+        Element element = new Element();
+        element.getElementsByAttributeValueStarting("linj","templatf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueStarting9158859503() {
+        Element element = new Element();
+        element.getElementsByAttributeValueStarting("imagf",":matchTexu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueStarting20649920184() {
+        Element element = new Element();
+        element.getElementsByAttributeValueStarting("[a-zA-Z_:][-a-zA-Z0-9_:.]+","spao");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueEnding12952353690() {
+        Element element = new Element();
+        element.getElementsByAttributeValueEnding("http:.",":emptx");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueEnding7980465601() {
+        Element element = new Element();
+        element.getElementsByAttributeValueEnding("spao","scrips");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueEnding1036692372() {
+        Element element = new Element();
+        element.getElementsByAttributeValueEnding("matg","[");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueEnding1029822473() {
+        Element element = new Element();
+        element.getElementsByAttributeValueEnding("linj","~=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueEnding19813147654() {
+        Element element = new Element();
+        element.getElementsByAttributeValueEnding("select","http");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueContaining13136263560() {
+        Element element = new Element();
+        element.getElementsByAttributeValueContaining("#text","sarcasl");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueContaining27306801() {
+        Element element = new Element();
+        element.getElementsByAttributeValueContaining("tc","UTF-");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueContaining3080131172() {
+        Element element = new Element();
+        element.getElementsByAttributeValueContaining("tq",":last-child");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueContaining11618014683() {
+        Element element = new Element();
+        element.getElementsByAttributeValueContaining("actioo","$>");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueContaining12459549844() {
+        Element element = new Element();
+        element.getElementsByAttributeValueContaining("http:/","met`");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching19817283910() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("template",(Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching1239381() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("~=",(Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching17270593882() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("iframf",(Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching1037880933() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("met`",(Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching18100989114() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("basefont",(Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching15174868240() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching(":nth-last-of-type(","#texu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching1036726311() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("math","lj");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching17686368072() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("table","frameses");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching18691090533() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching("--","sarcasm");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByAttributeValueMatching11535478674() {
+        Element element = new Element();
+        element.getElementsByAttributeValueMatching(":last-chilc","noembed");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexLessThan11142420() {
+        Element element = new Element();
+        element.getElementsByIndexLessThan(1114211);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexLessThan4311() {
+        Element element = new Element();
+        element.getElementsByIndexLessThan(400);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexLessThan11141432() {
+        Element element = new Element();
+        element.getElementsByIndexLessThan(1114112);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexLessThan2303() {
+        Element element = new Element();
+        element.getElementsByIndexLessThan(199);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexLessThan1324() {
+        Element element = new Element();
+        element.getElementsByIndexLessThan(101);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexGreaterThan4310() {
+        Element element = new Element();
+        element.getElementsByIndexGreaterThan(400);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexGreaterThan301() {
+        Element element = new Element();
+        element.getElementsByIndexGreaterThan(-1);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexGreaterThan1332() {
+        Element element = new Element();
+        element.getElementsByIndexGreaterThan(102);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexGreaterThan683() {
+        Element element = new Element();
+        element.getElementsByIndexGreaterThan(-99);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexGreaterThan314() {
+        Element element = new Element();
+        element.getElementsByIndexGreaterThan(0);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexEquals1330() {
+        Element element = new Element();
+        element.getElementsByIndexEquals(102);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexEquals2701() {
+        Element element = new Element();
+        element.getElementsByIndexEquals(239);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexEquals302() {
+        Element element = new Element();
+        element.getElementsByIndexEquals(-1);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexEquals2553() {
+        Element element = new Element();
+        element.getElementsByIndexEquals(224);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsByIndexEquals1334() {
+        Element element = new Element();
+        element.getElementsByIndexEquals(102);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingText15451126510() {
+        Element element = new Element();
+        element.getElementsContainingText("deflatf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingText12071() {
+        Element element = new Element();
+        element.getElementsContainingText("$<");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingText358799202() {
+        Element element = new Element();
+        element.getElementsContainingText("#texu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingText15515509553() {
+        Element element = new Element();
+        element.getElementsContainingText("noscript");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingText10101369404() {
+        Element element = new Element();
+        element.getElementsContainingText("option");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingOwnText12174874140() {
+        Element element = new Element();
+        element.getElementsContainingOwnText("hiddeo");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingOwnText35756421() {
+        Element element = new Element();
+        element.getElementsContainingOwnText("typf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingOwnText37322() {
+        Element element = new Element();
+        element.getElementsContainingOwnText("ti");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingOwnText30063() {
+        Element element = new Element();
+        element.getElementsContainingOwnText("^=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsContainingOwnText13944() {
+        Element element = new Element();
+        element.getElementsContainingOwnText("*=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText310() {
+        Element element = new Element();
+        element.getElementsMatchingText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText311() {
+        Element element = new Element();
+        element.getElementsMatchingText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText312() {
+        Element element = new Element();
+        element.getElementsMatchingText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText313() {
+        Element element = new Element();
+        element.getElementsMatchingText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText314() {
+        Element element = new Element();
+        element.getElementsMatchingText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText14711890860() {
+        Element element = new Element();
+        element.getElementsMatchingText(":nth-last-child)");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText20353119931() {
+        Element element = new Element();
+        element.getElementsMatchingText(":first-of-typf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText33062() {
+        Element element = new Element();
+        element.getElementsMatchingText("h3");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText10032436863() {
+        Element element = new Element();
+        element.getElementsMatchingText("textareb");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingText1188384() {
+        Element element = new Element();
+        element.getElementsMatchingText("xml");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText310() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText311() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText312() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText313() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText314() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText((Pattern) null);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText17480897420() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText("DOCTYPF");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText11151() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText("!=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText32132592() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText("htmm");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText1082706193() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText("radip");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetElementsMatchingOwnText734() {
+        Element element = new Element();
+        element.getElementsMatchingOwnText("*");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetAllElements10() {
+        Element element = new Element();
+        element.getAllElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetAllElements11() {
+        Element element = new Element();
+        element.getAllElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetAllElements12() {
+        Element element = new Element();
+        element.getAllElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetAllElements13() {
+        Element element = new Element();
+        element.getAllElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementgetAllElements14() {
+        Element element = new Element();
+        element.getAllElements();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext10() {
+        Element element = new Element();
+        element.text();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext11() {
+        Element element = new Element();
+        element.text();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext12() {
+        Element element = new Element();
+        element.text();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext13() {
+        Element element = new Element();
+        element.text();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext14() {
+        Element element = new Element();
+        element.text();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead563570() {
+        Element element = new Element();
+        element.head((Node) null,55396);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead562581() {
+        Element element = new Element();
+        element.head((Node) null,55297);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead10622() {
+        Element element = new Element();
+        element.head((Node) null,101);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead13613() {
+        Element element = new Element();
+        element.head((Node) null,400);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead9654() {
+        Element element = new Element();
+        element.head((Node) null,4);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail12000() {
+        Element element = new Element();
+        element.tail((Node) null,239);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail11151721() {
+        Element element = new Element();
+        element.tail((Node) null,1114211);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail13622() {
+        Element element = new Element();
+        element.tail((Node) null,401);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail563573() {
+        Element element = new Element();
+        element.tail((Node) null,55396);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail12014() {
+        Element element = new Element();
+        element.tail((Node) null,240);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementwholeText10() {
+        Element element = new Element();
+        element.wholeText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementwholeText11() {
+        Element element = new Element();
+        element.wholeText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementwholeText12() {
+        Element element = new Element();
+        element.wholeText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementwholeText13() {
+        Element element = new Element();
+        element.wholeText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementwholeText14() {
+        Element element = new Element();
+        element.wholeText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead11600() {
+        Element element = new Element();
+        element.head((Node) null,199);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead11151721() {
+        Element element = new Element();
+        element.head((Node) null,1114211);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead13622() {
+        Element element = new Element();
+        element.head((Node) null,401);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead12003() {
+        Element element = new Element();
+        element.head((Node) null,239);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhead10644() {
+        Element element = new Element();
+        element.head((Node) null,103);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail9620() {
+        Element element = new Element();
+        element.tail((Node) null,1);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail9651() {
+        Element element = new Element();
+        element.tail((Node) null,4);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail11602() {
+        Element element = new Element();
+        element.tail((Node) null,199);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail562583() {
+        Element element = new Element();
+        element.tail((Node) null,55297);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtail11150734() {
+        Element element = new Element();
+        element.tail((Node) null,1114112);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementownText10() {
+        Element element = new Element();
+        element.ownText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementownText11() {
+        Element element = new Element();
+        element.ownText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementownText12() {
+        Element element = new Element();
+        element.ownText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementownText13() {
+        Element element = new Element();
+        element.ownText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementownText14() {
+        Element element = new Element();
+        element.ownText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext17209582720() {
+        Element element = new Element();
+        element.text("basefonu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext33031() {
+        Element element = new Element();
+        element.text("h0");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext1099022() {
+        Element element = new Element();
+        element.text("odd");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext17571249773() {
+        Element element = new Element();
+        element.text(":emptx");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtext13776877284() {
+        Element element = new Element();
+        element.text("buttom");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasText10() {
+        Element element = new Element();
+        element.hasText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasText11() {
+        Element element = new Element();
+        element.hasText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasText12() {
+        Element element = new Element();
+        element.hasText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasText13() {
+        Element element = new Element();
+        element.hasText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasText14() {
+        Element element = new Element();
+        element.hasText();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdata10() {
+        Element element = new Element();
+        element.data();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdata11() {
+        Element element = new Element();
+        element.data();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdata12() {
+        Element element = new Element();
+        element.data();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdata13() {
+        Element element = new Element();
+        element.data();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementdata14() {
+        Element element = new Element();
+        element.data();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassName10() {
+        Element element = new Element();
+        element.className();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassName11() {
+        Element element = new Element();
+        element.className();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassName12() {
+        Element element = new Element();
+        element.className();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassName13() {
+        Element element = new Element();
+        element.className();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassName14() {
+        Element element = new Element();
+        element.className();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames10() {
+        Element element = new Element();
+        element.classNames();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames11() {
+        Element element = new Element();
+        element.classNames();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames12() {
+        Element element = new Element();
+        element.classNames();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames13() {
+        Element element = new Element();
+        element.classNames();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames14() {
+        Element element = new Element();
+        element.classNames();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames20919604280() {
+        Element element = new Element();
+        element.classNames(":only-child");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames33701() {
+        Element element = new Element();
+        element.classNames("hs");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames33682() {
+        Element element = new Element();
+        element.classNames("hq");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames1102773763() {
+        Element element = new Element();
+        element.classNames("tfoos");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementclassNames923484() {
+        Element element = new Element();
+        element.classNames("]]=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasClass26152060() {
+        Element element = new Element();
+        element.hasClass("UTF.");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasClass12269463001() {
+        Element element = new Element();
+        element.hasClass(":containsData(");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasClass1102773782() {
+        Element element = new Element();
+        element.hasClass("tfoou");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasClass1102563203() {
+        Element element = new Element();
+        element.hasClass("text.");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhasClass32132584() {
+        Element element = new Element();
+        element.hasClass("html");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementaddClass923480() {
+        Element element = new Element();
+        element.addClass("]]=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementaddClass2709408261() {
+        Element element = new Element();
+        element.addClass("disablec");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementaddClass14702() {
+        Element element = new Element();
+        element.addClass("-,");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementaddClass30063() {
+        Element element = new Element();
+        element.addClass("^=");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementaddClass1102773784() {
+        Element element = new Element();
+        element.addClass("tfoou");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementremoveClass1101578780() {
+        Element element = new Element();
+        element.removeClass("tbodz");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementremoveClass6361976021() {
+        Element element = new Element();
+        element.removeClass("colgroup");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementremoveClass14702() {
+        Element element = new Element();
+        element.removeClass("-,");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementremoveClass10176250983() {
+        Element element = new Element();
+        element.removeClass(":nth-last-of-type)");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementremoveClass26152044() {
+        Element element = new Element();
+        element.removeClass("UTF,");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtoggleClass16449536110() {
+        Element element = new Element();
+        element.toggleClass("frameseu");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtoggleClass21011357981() {
+        Element element = new Element();
+        element.toggleClass(":matchTexs");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtoggleClass1101578782() {
+        Element element = new Element();
+        element.toggleClass("tbodz");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtoggleClass1003581203() {
+        Element element = new Element();
+        element.toggleClass("inpus");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementtoggleClass1044184() {
+        Element element = new Element();
+        element.toggleClass("img");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval10() {
+        Element element = new Element();
+        element.val();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval11() {
+        Element element = new Element();
+        element.val();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval12() {
+        Element element = new Element();
+        element.val();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval13() {
+        Element element = new Element();
+        element.val();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval14() {
+        Element element = new Element();
+        element.val();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval37300() {
+        Element element = new Element();
+        element.val("tg");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval14711() {
+        Element element = new Element();
+        element.val("--");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval1099032() {
+        Element element = new Element();
+        element.val("ode");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval20353119933() {
+        Element element = new Element();
+        element.val(":first-of-typf");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementval16183955594() {
+        Element element = new Element();
+        element.val(":only-of-typd");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml10() {
+        Element element = new Element();
+        element.html();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml11() {
+        Element element = new Element();
+        element.html();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml12() {
+        Element element = new Element();
+        element.html();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml13() {
+        Element element = new Element();
+        element.html();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml14() {
+        Element element = new Element();
+        element.html();
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml923490() {
+        Element element = new Element();
+        element.html("]]>");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml19381() {
+        Element element = new Element();
+        element.html("</");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml31832() {
+        Element element = new Element();
+        element.html("br");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml10101369403() {
+        Element element = new Element();
+        element.html("option");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementhtml10101369414() {
+        Element element = new Element();
+        element.html("optiom");
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateShell19732341980() {
+        Document document = new Document();
+        document.createShell("plaintext");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateShell10176250961() {
+        Document document = new Document();
+        document.createShell(":nth-last-of-type'");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateShell13215465992() {
+        Document document = new Document();
+        document.createShell("template");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateShell21156131443() {
+        Document document = new Document();
+        document.createShell("noembee");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateShell1101578764() {
+        Document document = new Document();
+        document.createShell("tbodx");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentlocation10() {
+        Document document = new Document();
+        document.location();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentlocation11() {
+        Document document = new Document();
+        document.location();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentlocation12() {
+        Document document = new Document();
+        document.location();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentlocation13() {
+        Document document = new Document();
+        document.location();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentlocation14() {
+        Document document = new Document();
+        document.location();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenthead10() {
+        Document document = new Document();
+        document.head();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenthead11() {
+        Document document = new Document();
+        document.head();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenthead12() {
+        Document document = new Document();
+        document.head();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenthead13() {
+        Document document = new Document();
+        document.head();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenthead14() {
+        Document document = new Document();
+        document.head();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentbody10() {
+        Document document = new Document();
+        document.body();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentbody11() {
+        Document document = new Document();
+        document.body();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentbody12() {
+        Document document = new Document();
+        document.body();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentbody13() {
+        Document document = new Document();
+        document.body();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentbody14() {
+        Document document = new Document();
+        document.body();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle10() {
+        Document document = new Document();
+        document.title();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle11() {
+        Document document = new Document();
+        document.title();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle12() {
+        Document document = new Document();
+        document.title();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle13() {
+        Document document = new Document();
+        document.title();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle14() {
+        Document document = new Document();
+        document.title();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle18690634840() {
+        Document document = new Document();
+        document.title("sarcasn");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle12081() {
+        Document document = new Document();
+        document.title("$=");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle570706522() {
+        Document document = new Document();
+        document.title(":roou");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle569515673() {
+        Document document = new Document();
+        document.title(":not)");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumenttitle19804204654() {
+        Document document = new Document();
+        document.title("Set-Cookif");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateElement12068418930() {
+        Document document = new Document();
+        document.createElement("http:.");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateElement29875581() {
+        Document document = new Document();
+        document.createElement("abs9");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateElement15515509562() {
+        Document document = new Document();
+        document.createElement("noscripu");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateElement570706503() {
+        Document document = new Document();
+        document.createElement(":roos");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcreateElement35756424() {
+        Document document = new Document();
+        document.createElement("typf");
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentnormalise10() {
+        Document document = new Document();
+        document.normalise();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentnormalise11() {
+        Document document = new Document();
+        document.normalise();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentnormalise12() {
+        Document document = new Document();
+        document.normalise();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentnormalise13() {
+        Document document = new Document();
+        document.normalise();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentnormalise14() {
+        Document document = new Document();
+        document.normalise();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset310() {
+        Document document = new Document();
+        document.charset((Charset) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset311() {
+        Document document = new Document();
+        document.charset((Charset) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset312() {
+        Document document = new Document();
+        document.charset((Charset) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset313() {
+        Document document = new Document();
+        document.charset((Charset) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset314() {
+        Document document = new Document();
+        document.charset((Charset) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset10() {
+        Document document = new Document();
+        document.charset();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset11() {
+        Document document = new Document();
+        document.charset();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset12() {
+        Document document = new Document();
+        document.charset();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset13() {
+        Document document = new Document();
+        document.charset();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentcharset14() {
+        Document document = new Document();
+        document.charset();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement12620() {
+        Document document = new Document();
+        document.updateMetaCharsetElement(true);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement12621() {
+        Document document = new Document();
+        document.updateMetaCharsetElement(true);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement12622() {
+        Document document = new Document();
+        document.updateMetaCharsetElement(true);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement12623() {
+        Document document = new Document();
+        document.updateMetaCharsetElement(true);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement12624() {
+        Document document = new Document();
+        document.updateMetaCharsetElement(true);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement10() {
+        Document document = new Document();
+        document.updateMetaCharsetElement();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement11() {
+        Document document = new Document();
+        document.updateMetaCharsetElement();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement12() {
+        Document document = new Document();
+        document.updateMetaCharsetElement();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement13() {
+        Document document = new Document();
+        document.updateMetaCharsetElement();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentupdateMetaCharsetElement14() {
+        Document document = new Document();
+        document.updateMetaCharsetElement();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings10() {
+        Document document = new Document();
+        document.outputSettings();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings11() {
+        Document document = new Document();
+        document.outputSettings();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings12() {
+        Document document = new Document();
+        document.outputSettings();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings13() {
+        Document document = new Document();
+        document.outputSettings();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings14() {
+        Document document = new Document();
+        document.outputSettings();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings310() {
+        Document document = new Document();
+        document.outputSettings((OutputSettings) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings311() {
+        Document document = new Document();
+        document.outputSettings((OutputSettings) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings312() {
+        Document document = new Document();
+        document.outputSettings((OutputSettings) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings313() {
+        Document document = new Document();
+        document.outputSettings((OutputSettings) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentoutputSettings314() {
+        Document document = new Document();
+        document.outputSettings((OutputSettings) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode10() {
+        Document document = new Document();
+        document.quirksMode();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode11() {
+        Document document = new Document();
+        document.quirksMode();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode12() {
+        Document document = new Document();
+        document.quirksMode();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode13() {
+        Document document = new Document();
+        document.quirksMode();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode14() {
+        Document document = new Document();
+        document.quirksMode();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode310() {
+        Document document = new Document();
+        document.quirksMode((QuirksMode) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode311() {
+        Document document = new Document();
+        document.quirksMode((QuirksMode) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode312() {
+        Document document = new Document();
+        document.quirksMode((QuirksMode) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode313() {
+        Document document = new Document();
+        document.quirksMode((QuirksMode) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentquirksMode314() {
+        Document document = new Document();
+        document.quirksMode((QuirksMode) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser10() {
+        Document document = new Document();
+        document.parser();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser11() {
+        Document document = new Document();
+        document.parser();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser12() {
+        Document document = new Document();
+        document.parser();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser13() {
+        Document document = new Document();
+        document.parser();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser14() {
+        Document document = new Document();
+        document.parser();
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser310() {
+        Document document = new Document();
+        document.parser((Parser) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser311() {
+        Document document = new Document();
+        document.parser((Parser) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser312() {
+        Document document = new Document();
+        document.parser((Parser) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser313() {
+        Document document = new Document();
+        document.parser((Parser) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentparser314() {
+        Document document = new Document();
+        document.parser((Parser) null);
+        assertTrue(document.equals(document));
+        try {
+            document.equals(document);
+        } catch (Exception e) {
+            fail("document.equals(document) throws an exception");
+        }
+        try {
+            document.hashCode();
+        } catch (Exception e) {
+            fail("document.hashCode() throws an exception");
+        }
+        try {
+            document.toString();
+        } catch (Exception e) {
+            fail("document.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testEntitiesisNamedEntity10101369410() {
         Entities entities = new Entities();
-        entities.isNamedEntity("frameseu");
+        entities.isNamedEntity("optiom");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1923,9 +12423,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity21156131441() {
+    public void testEntitiesisNamedEntity771() {
         Entities entities = new Entities();
-        entities.isNamedEntity("noembee");
+        entities.isNamedEntity(".");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1944,9 +12444,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity358799192() {
+    public void testEntitiesisNamedEntity10552537232() {
         Entities entities = new Entities();
-        entities.isNamedEntity("#text");
+        entities.isNamedEntity(":matchesOwn)");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1965,9 +12465,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity1082706193() {
+    public void testEntitiesisNamedEntity9503947293() {
         Entities entities = new Entities();
-        entities.isNamedEntity("radip");
+        entities.isNamedEntity("commanc");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -1986,9 +12486,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity570706524() {
+    public void testEntitiesisNamedEntity14564() {
         Entities entities = new Entities();
-        entities.isNamedEntity(":roou");
+        entities.isNamedEntity("*{");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2007,9 +12507,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity1044190() {
+    public void testEntitiesisBaseNamedEntity730() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity("imh");
+        entities.isBaseNamedEntity("*");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2028,9 +12528,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity18245811() {
+    public void testEntitiesisBaseNamedEntity37401() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity(":alk");
+        entities.isBaseNamedEntity("tq");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2049,9 +12549,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity1188382() {
+    public void testEntitiesisBaseNamedEntity1650854892() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity("xml");
+        entities.isBaseNamedEntity("http-equiu");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2070,9 +12570,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity31490283() {
+    public void testEntitiesisBaseNamedEntity14229508263() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity("forn");
+        entities.isBaseNamedEntity("actioo");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2091,9 +12591,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity567593344() {
+    public void testEntitiesisBaseNamedEntity1099034() {
         Entities entities = new Entities();
-        entities.isBaseNamedEntity(":has'");
+        entities.isBaseNamedEntity("ode");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2112,9 +12612,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName10032436860() {
+    public void testEntitiesgetCharacterByName14710() {
         Entities entities = new Entities();
-        entities.getCharacterByName("textareb");
+        entities.getCharacterByName("--");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2133,9 +12633,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName1102773761() {
+    public void testEntitiesgetCharacterByName1281() {
         Entities entities = new Entities();
-        entities.getCharacterByName("tfoos");
+        entities.getCharacterByName("a");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2154,9 +12654,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName35756412() {
+    public void testEntitiesgetCharacterByName31490262() {
         Entities entities = new Entities();
-        entities.getCharacterByName("type");
+        entities.getCharacterByName("forl");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2175,9 +12675,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName35367453() {
+    public void testEntitiesgetCharacterByName1857353273() {
         Entities entities = new Entities();
-        entities.getCharacterByName("span");
+        entities.getCharacterByName("US-ASCII");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2196,9 +12696,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName21011358004() {
+    public void testEntitiesgetCharacterByName1254() {
         Entities entities = new Entities();
-        entities.getCharacterByName(":matchTexu");
+        entities.getCharacterByName("^");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2217,9 +12717,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName9503947300() {
+    public void testEntitiesgetByName10552537220() {
         Entities entities = new Entities();
-        entities.getByName("command");
+        entities.getByName(":matchesOwn(");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2238,9 +12738,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName1143071() {
+    public void testEntitiesgetByName13215465981() {
         Entities entities = new Entities();
-        entities.getByName("svg");
+        entities.getByName("templatf");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2259,9 +12759,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName26152042() {
+    public void testEntitiesgetByName9076856532() {
         Entities entities = new Entities();
-        entities.getByName("UTF,");
+        entities.getByName("scripu");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2280,9 +12780,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName1003134663() {
+    public void testEntitiesgetByName15515509563() {
         Entities entities = new Entities();
-        entities.getByName("image");
+        entities.getByName("noscripu");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2301,9 +12801,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName10761623194() {
+    public void testEntitiesgetByName18353344() {
         Entities entities = new Entities();
-        entities.getByName(":contains)");
+        entities.getByName(":lt)");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2322,9 +12822,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName19983607670() {
+    public void testEntitiescodepointsForName18825112360() {
         Entities entities = new Entities();
-        entities.codepointsForName("hiddem",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239,240,1114211,500,187,57342,57343});
+        entities.codepointsForName(":nth-child)",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2343,9 +12843,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName18321168361() {
+    public void testEntitiescodepointsForName14680699541() {
         Entities entities = new Entities();
-        entities.codepointsForName("checkec",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112});
+        entities.codepointsForName("hidden",new int[]{0,-1,55296,192});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2364,9 +12864,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName1698191962() {
+    public void testEntitiescodepointsForName14101812292() {
         Entities entities = new Entities();
-        entities.codepointsForName("selecu",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239,240,1114211,500,187,57342});
+        entities.codepointsForName("iframd",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2385,9 +12885,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName5881880863() {
+    public void testEntitiescodepointsForName8284976053() {
         Entities entities = new Entities();
-        entities.codepointsForName("isindex",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239,240});
+        entities.codepointsForName("tbodz",new int[]{0,-1,55296,192,1});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2406,9 +12906,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName4698717834() {
+    public void testEntitiescodepointsForName5894214324() {
         Entities entities = new Entities();
-        entities.codepointsForName("image",new int[]{0,-1,55296,192,1,55297,2,3,4});
+        entities.codepointsForName("keygeo",new int[]{0,-1,55296,192,1,55297,2});
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2427,9 +12927,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape1907689550() {
+    public void testEntitiesescape1088658310() {
         Entities entities = new Entities();
-        entities.escape("disabled",(Document.OutputSettings) null);
+        entities.escape("ruby",(Document.OutputSettings) null);
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2448,9 +12948,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape1096391261() {
+    public void testEntitiesescape35434861() {
         Entities entities = new Entities();
-        entities.escape("spao",(Document.OutputSettings) null);
+        entities.escape("svf",(Document.OutputSettings) null);
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2469,9 +12969,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape8800731402() {
+    public void testEntitiesescape37822() {
         Entities entities = new Entities();
-        entities.escape("tbodx",(Document.OutputSettings) null);
+        entities.escape("[",(Document.OutputSettings) null);
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2490,9 +12990,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape1088658003() {
+    public void testEntitiesescape1108448403() {
         Entities entities = new Entities();
-        entities.escape("rubx",(Document.OutputSettings) null);
+        entities.escape("typd",(Document.OutputSettings) null);
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2511,9 +13011,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape16597409004() {
+    public void testEntitiesescape987044() {
         Entities entities = new Entities();
-        entities.escape(":first-child",(Document.OutputSettings) null);
+        entities.escape("bs",(Document.OutputSettings) null);
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2532,9 +13032,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape940() {
+    public void testEntitiesescape358799180() {
         Entities entities = new Entities();
-        entities.escape("?");
+        entities.escape("#texs");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2553,9 +13053,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape901() {
+    public void testEntitiesescape10176250981() {
         Entities entities = new Entities();
-        entities.escape(";");
+        entities.escape(":nth-last-of-type)");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2574,9 +13074,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape1003581212() {
+    public void testEntitiesescape11346655522() {
         Entities entities = new Entities();
-        entities.escape("input");
+        entities.escape("keygen");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2595,9 +13095,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape29875583() {
+    public void testEntitiesescape1605222323() {
         Entities entities = new Entities();
-        entities.escape("abs9");
+        entities.escape("bgsounc");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2616,9 +13116,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape35118014() {
+    public void testEntitiesescape9060216054() {
         Entities entities = new Entities();
-        entities.escape("ruby");
+        entities.escape("select");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2637,9 +13137,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape569515670() {
+    public void testEntitiesunescape35367460() {
         Entities entities = new Entities();
-        entities.unescape(":not)");
+        entities.unescape("spao");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2658,9 +13158,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape16449536131() {
+    public void testEntitiesunescape20913044541() {
         Entities entities = new Entities();
-        entities.unescape("frameses");
+        entities.unescape("isindew");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2679,7 +13179,28 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape32302() {
+    public void testEntitiesunescape18678420512() {
+        Entities entities = new Entities();
+        entities.unescape("[a-zA-Z_:][-a-zA-Z0-9_:.]+");
+        assertTrue(entities.equals(entities));
+        try {
+            entities.equals(entities);
+        } catch (Exception e) {
+            fail("entities.equals(entities) throws an exception");
+        }
+        try {
+            entities.hashCode();
+        } catch (Exception e) {
+            fail("entities.hashCode() throws an exception");
+        }
+        try {
+            entities.toString();
+        } catch (Exception e) {
+            fail("entities.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testEntitiesunescape32303() {
         Entities entities = new Entities();
         entities.unescape("dc");
         assertTrue(entities.equals(entities));
@@ -2700,9 +13221,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape33737393() {
+    public void testEntitiesunescape37414() {
         Entities entities = new Entities();
-        entities.unescape("namf");
+        entities.unescape("tr");
         assertTrue(entities.equals(entities));
         try {
             entities.equals(entities);
@@ -2721,30 +13242,3264 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape33737394() {
-        Entities entities = new Entities();
-        entities.unescape("namf");
-        assertTrue(entities.equals(entities));
+    public void testDataNodenodeName10() {
+        DataNode datanode = new DataNode();
+        datanode.nodeName();
+        assertTrue(datanode.equals(datanode));
         try {
-            entities.equals(entities);
+            datanode.equals(datanode);
         } catch (Exception e) {
-            fail("entities.equals(entities) throws an exception");
+            fail("datanode.equals(datanode) throws an exception");
         }
         try {
-            entities.hashCode();
+            datanode.hashCode();
         } catch (Exception e) {
-            fail("entities.hashCode() throws an exception");
+            fail("datanode.hashCode() throws an exception");
         }
         try {
-            entities.toString();
+            datanode.toString();
         } catch (Exception e) {
-            fail("entities.toString() throws an exception");
+            fail("datanode.toString() throws an exception");
         }
     }
     @Test
-    public void testStringUtiljoin10761632490() {
+    public void testDataNodenodeName11() {
+        DataNode datanode = new DataNode();
+        datanode.nodeName();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodenodeName12() {
+        DataNode datanode = new DataNode();
+        datanode.nodeName();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodenodeName13() {
+        DataNode datanode = new DataNode();
+        datanode.nodeName();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodenodeName14() {
+        DataNode datanode = new DataNode();
+        datanode.nodeName();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodegetWholeData10() {
+        DataNode datanode = new DataNode();
+        datanode.getWholeData();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodegetWholeData11() {
+        DataNode datanode = new DataNode();
+        datanode.getWholeData();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodegetWholeData12() {
+        DataNode datanode = new DataNode();
+        datanode.getWholeData();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodegetWholeData13() {
+        DataNode datanode = new DataNode();
+        datanode.getWholeData();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodegetWholeData14() {
+        DataNode datanode = new DataNode();
+        datanode.getWholeData();
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodesetWholeData1857353280() {
+        DataNode datanode = new DataNode();
+        datanode.setWholeData("US-ASCIH");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodesetWholeData1431() {
+        DataNode datanode = new DataNode();
+        datanode.setWholeData("p");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodesetWholeData35118012() {
+        DataNode datanode = new DataNode();
+        datanode.setWholeData("ruby");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodesetWholeData33441673() {
+        DataNode datanode = new DataNode();
+        datanode.setWholeData("math");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodesetWholeData1103268994() {
+        DataNode datanode = new DataNode();
+        datanode.setWholeData("thead");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodecreateFromEncoded5211783770() {
+        DataNode datanode = new DataNode();
+        datanode.createFromEncoded("Set-Cookif","checkec");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodecreateFromEncoded16185111581() {
+        DataNode datanode = new DataNode();
+        datanode.createFromEncoded("tg",":only-of-typd");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodecreateFromEncoded10875452212() {
+        DataNode datanode = new DataNode();
+        datanode.createFromEncoded("mati","iframd");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodecreateFromEncoded5373351603() {
+        DataNode datanode = new DataNode();
+        datanode.createFromEncoded("gzio","colgrouq");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDataNodecreateFromEncoded10420512864() {
+        DataNode datanode = new DataNode();
+        datanode.createFromEncoded("abs9","keygem");
+        assertTrue(datanode.equals(datanode));
+        try {
+            datanode.equals(datanode);
+        } catch (Exception e) {
+            fail("datanode.equals(datanode) throws an exception");
+        }
+        try {
+            datanode.hashCode();
+        } catch (Exception e) {
+            fail("datanode.hashCode() throws an exception");
+        }
+        try {
+            datanode.toString();
+        } catch (Exception e) {
+            fail("datanode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentnodeName10() {
+        Comment comment = new Comment();
+        comment.nodeName();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentnodeName11() {
+        Comment comment = new Comment();
+        comment.nodeName();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentnodeName12() {
+        Comment comment = new Comment();
+        comment.nodeName();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentnodeName13() {
+        Comment comment = new Comment();
+        comment.nodeName();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentnodeName14() {
+        Comment comment = new Comment();
+        comment.nodeName();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentgetData10() {
+        Comment comment = new Comment();
+        comment.getData();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentgetData11() {
+        Comment comment = new Comment();
+        comment.getData();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentgetData12() {
+        Comment comment = new Comment();
+        comment.getData();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentgetData13() {
+        Comment comment = new Comment();
+        comment.getData();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentgetData14() {
+        Comment comment = new Comment();
+        comment.getData();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentisXmlDeclaration10() {
+        Comment comment = new Comment();
+        comment.isXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentisXmlDeclaration11() {
+        Comment comment = new Comment();
+        comment.isXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentisXmlDeclaration12() {
+        Comment comment = new Comment();
+        comment.isXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentisXmlDeclaration13() {
+        Comment comment = new Comment();
+        comment.isXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentisXmlDeclaration14() {
+        Comment comment = new Comment();
+        comment.isXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentasXmlDeclaration10() {
+        Comment comment = new Comment();
+        comment.asXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentasXmlDeclaration11() {
+        Comment comment = new Comment();
+        comment.asXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentasXmlDeclaration12() {
+        Comment comment = new Comment();
+        comment.asXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentasXmlDeclaration13() {
+        Comment comment = new Comment();
+        comment.asXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCommentasXmlDeclaration14() {
+        Comment comment = new Comment();
+        comment.asXmlDeclaration();
+        assertTrue(comment.equals(comment));
+        try {
+            comment.equals(comment);
+        } catch (Exception e) {
+            fail("comment.equals(comment) throws an exception");
+        }
+        try {
+            comment.hashCode();
+        } catch (Exception e) {
+            fail("comment.hashCode() throws an exception");
+        }
+        try {
+            comment.toString();
+        } catch (Exception e) {
+            fail("comment.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationnodeName10() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.nodeName();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationnodeName11() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.nodeName();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationnodeName12() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.nodeName();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationnodeName13() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.nodeName();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationnodeName14() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.nodeName();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationname10() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.name();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationname11() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.name();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationname12() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.name();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationname13() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.name();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationname14() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.name();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationgetWholeDeclaration10() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.getWholeDeclaration();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationgetWholeDeclaration11() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.getWholeDeclaration();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationgetWholeDeclaration12() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.getWholeDeclaration();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationgetWholeDeclaration13() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.getWholeDeclaration();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testXmlDeclarationgetWholeDeclaration14() {
+        XmlDeclaration xmldeclaration = new XmlDeclaration();
+        xmldeclaration.getWholeDeclaration();
+        assertTrue(xmldeclaration.equals(xmldeclaration));
+        try {
+            xmldeclaration.equals(xmldeclaration);
+        } catch (Exception e) {
+            fail("xmldeclaration.equals(xmldeclaration) throws an exception");
+        }
+        try {
+            xmldeclaration.hashCode();
+        } catch (Exception e) {
+            fail("xmldeclaration.hashCode() throws an exception");
+        }
+        try {
+            xmldeclaration.toString();
+        } catch (Exception e) {
+            fail("xmldeclaration.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementelements10() {
+        FormElement formelement = new FormElement();
+        formelement.elements();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementelements11() {
+        FormElement formelement = new FormElement();
+        formelement.elements();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementelements12() {
+        FormElement formelement = new FormElement();
+        formelement.elements();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementelements13() {
+        FormElement formelement = new FormElement();
+        formelement.elements();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementelements14() {
+        FormElement formelement = new FormElement();
+        formelement.elements();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementaddElement310() {
+        FormElement formelement = new FormElement();
+        formelement.addElement((Element) null);
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementaddElement311() {
+        FormElement formelement = new FormElement();
+        formelement.addElement((Element) null);
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementaddElement312() {
+        FormElement formelement = new FormElement();
+        formelement.addElement((Element) null);
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementaddElement313() {
+        FormElement formelement = new FormElement();
+        formelement.addElement((Element) null);
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementaddElement314() {
+        FormElement formelement = new FormElement();
+        formelement.addElement((Element) null);
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementsubmit10() {
+        FormElement formelement = new FormElement();
+        formelement.submit();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementsubmit11() {
+        FormElement formelement = new FormElement();
+        formelement.submit();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementsubmit12() {
+        FormElement formelement = new FormElement();
+        formelement.submit();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementsubmit13() {
+        FormElement formelement = new FormElement();
+        formelement.submit();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementsubmit14() {
+        FormElement formelement = new FormElement();
+        formelement.submit();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementformData10() {
+        FormElement formelement = new FormElement();
+        formelement.formData();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementformData11() {
+        FormElement formelement = new FormElement();
+        formelement.formData();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementformData12() {
+        FormElement formelement = new FormElement();
+        formelement.formData();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementformData13() {
+        FormElement formelement = new FormElement();
+        formelement.formData();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testFormElementformData14() {
+        FormElement formelement = new FormElement();
+        formelement.formData();
+        assertTrue(formelement.equals(formelement));
+        try {
+            formelement.equals(formelement);
+        } catch (Exception e) {
+            fail("formelement.equals(formelement) throws an exception");
+        }
+        try {
+            formelement.hashCode();
+        } catch (Exception e) {
+            fail("formelement.hashCode() throws an exception");
+        }
+        try {
+            formelement.toString();
+        } catch (Exception e) {
+            fail("formelement.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentTypesetPubSysKey10032436860() {
+        DocumentType documenttype = new DocumentType();
+        documenttype.setPubSysKey("textareb");
+        assertTrue(documenttype.equals(documenttype));
+        try {
+            documenttype.equals(documenttype);
+        } catch (Exception e) {
+            fail("documenttype.equals(documenttype) throws an exception");
+        }
+        try {
+            documenttype.hashCode();
+        } catch (Exception e) {
+            fail("documenttype.hashCode() throws an exception");
+        }
+        try {
+            documenttype.toString();
+        } catch (Exception e) {
+            fail("documenttype.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentTypesetPubSysKey33480031() {
+        DocumentType documenttype = new DocumentType();
+        documenttype.setPubSysKey("met`");
+        assertTrue(documenttype.equals(documenttype));
+        try {
+            documenttype.equals(documenttype);
+        } catch (Exception e) {
+            fail("documenttype.equals(documenttype) throws an exception");
+        }
+        try {
+            documenttype.hashCode();
+        } catch (Exception e) {
+            fail("documenttype.hashCode() throws an exception");
+        }
+        try {
+            documenttype.toString();
+        } catch (Exception e) {
+            fail("documenttype.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentTypesetPubSysKey1650854892() {
+        DocumentType documenttype = new DocumentType();
+        documenttype.setPubSysKey("http-equiu");
+        assertTrue(documenttype.equals(documenttype));
+        try {
+            documenttype.equals(documenttype);
+        } catch (Exception e) {
+            fail("documenttype.equals(documenttype) throws an exception");
+        }
+        try {
+            documenttype.hashCode();
+        } catch (Exception e) {
+            fail("documenttype.hashCode() throws an exception");
+        }
+        try {
+            documenttype.toString();
+        } catch (Exception e) {
+            fail("documenttype.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentTypesetPubSysKey12269463013() {
+        DocumentType documenttype = new DocumentType();
+        documenttype.setPubSysKey(":containsData'");
+        assertTrue(documenttype.equals(documenttype));
+        try {
+            documenttype.equals(documenttype);
+        } catch (Exception e) {
+            fail("documenttype.equals(documenttype) throws an exception");
+        }
+        try {
+            documenttype.hashCode();
+        } catch (Exception e) {
+            fail("documenttype.hashCode() throws an exception");
+        }
+        try {
+            documenttype.toString();
+        } catch (Exception e) {
+            fail("documenttype.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testDocumentTypesetPubSysKey11927218614() {
+        DocumentType documenttype = new DocumentType();
+        documenttype.setPubSysKey("noframer");
+        assertTrue(documenttype.equals(documenttype));
+        try {
+            documenttype.equals(documenttype);
+        } catch (Exception e) {
+            fail("documenttype.equals(documenttype) throws an exception");
+        }
+        try {
+            documenttype.hashCode();
+        } catch (Exception e) {
+            fail("documenttype.hashCode() throws an exception");
+        }
+        try {
+            documenttype.toString();
+        } catch (Exception e) {
+            fail("documenttype.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetKey10() {
+        Attribute attribute = new Attribute();
+        attribute.getKey();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetKey11() {
+        Attribute attribute = new Attribute();
+        attribute.getKey();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetKey12() {
+        Attribute attribute = new Attribute();
+        attribute.getKey();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetKey13() {
+        Attribute attribute = new Attribute();
+        attribute.getKey();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetKey14() {
+        Attribute attribute = new Attribute();
+        attribute.getKey();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetKey2709408270() {
+        Attribute attribute = new Attribute();
+        attribute.setKey("disabled");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetKey21011358001() {
+        Attribute attribute = new Attribute();
+        attribute.setKey(":matchTexu");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetKey12068418922() {
+        Attribute attribute = new Attribute();
+        attribute.setKey("http:/");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetKey12083() {
+        Attribute attribute = new Attribute();
+        attribute.setKey("$=");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetKey33044() {
+        Attribute attribute = new Attribute();
+        attribute.setKey("h1");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetValue10() {
+        Attribute attribute = new Attribute();
+        attribute.getValue();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetValue11() {
+        Attribute attribute = new Attribute();
+        attribute.getValue();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetValue12() {
+        Attribute attribute = new Attribute();
+        attribute.getValue();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetValue13() {
+        Attribute attribute = new Attribute();
+        attribute.getValue();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributegetValue14() {
+        Attribute attribute = new Attribute();
+        attribute.getValue();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetValue21065455190() {
+        Attribute attribute = new Attribute();
+        attribute.setValue(":last-of-typd");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetValue987201() {
+        Attribute attribute = new Attribute();
+        attribute.setValue("com");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetValue1188372() {
+        Attribute attribute = new Attribute();
+        attribute.setValue("xmk");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetValue567593343() {
+        Attribute attribute = new Attribute();
+        attribute.setValue(":has'");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesetValue11414281684() {
+        Attribute attribute = new Attribute();
+        attribute.setValue("[CDATA[");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributehtml10() {
+        Attribute attribute = new Attribute();
+        attribute.html();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributehtml11() {
+        Attribute attribute = new Attribute();
+        attribute.html();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributehtml12() {
+        Attribute attribute = new Attribute();
+        attribute.html();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributehtml13() {
+        Attribute attribute = new Attribute();
+        attribute.html();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributehtml14() {
+        Attribute attribute = new Attribute();
+        attribute.html();
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributecreateFromEncoded2098673200() {
+        Attribute attribute = new Attribute();
+        attribute.createFromEncoded("htmm","text0");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributecreateFromEncoded19985640001() {
+        Attribute attribute = new Attribute();
+        attribute.createFromEncoded("title","actioo");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributecreateFromEncoded7630567042() {
+        Attribute attribute = new Attribute();
+        attribute.createFromEncoded("command","bgsound");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributecreateFromEncoded935107243() {
+        Attribute attribute = new Attribute();
+        attribute.createFromEncoded("basd","*=");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributecreateFromEncoded7467973024() {
+        Attribute attribute = new Attribute();
+        attribute.createFromEncoded("noframet","[a-zA-Z_:][-a-zA-Z0-9_:.]*");
+        assertTrue(attribute.equals(attribute));
+        try {
+            attribute.equals(attribute);
+        } catch (Exception e) {
+            fail("attribute.equals(attribute) throws an exception");
+        }
+        try {
+            attribute.hashCode();
+        } catch (Exception e) {
+            fail("attribute.hashCode() throws an exception");
+        }
+        try {
+            attribute.toString();
+        } catch (Exception e) {
+            fail("attribute.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodenodeName10() {
+        TextNode textnode = new TextNode();
+        textnode.nodeName();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodenodeName11() {
+        TextNode textnode = new TextNode();
+        textnode.nodeName();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodenodeName12() {
+        TextNode textnode = new TextNode();
+        textnode.nodeName();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodenodeName13() {
+        TextNode textnode = new TextNode();
+        textnode.nodeName();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodenodeName14() {
+        TextNode textnode = new TextNode();
+        textnode.nodeName();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext10() {
+        TextNode textnode = new TextNode();
+        textnode.text();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext11() {
+        TextNode textnode = new TextNode();
+        textnode.text();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext12() {
+        TextNode textnode = new TextNode();
+        textnode.text();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext13() {
+        TextNode textnode = new TextNode();
+        textnode.text();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext14() {
+        TextNode textnode = new TextNode();
+        textnode.text();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext18353330() {
+        TextNode textnode = new TextNode();
+        textnode.text(":lt(");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext2709408271() {
+        TextNode textnode = new TextNode();
+        textnode.text("disabled");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext33702() {
+        TextNode textnode = new TextNode();
+        textnode.text("hs");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext30294413() {
+        TextNode textnode = new TextNode();
+        textnode.text("body");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodetext34854() {
+        TextNode textnode = new TextNode();
+        textnode.text("lj");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodegetWholeText10() {
+        TextNode textnode = new TextNode();
+        textnode.getWholeText();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodegetWholeText11() {
+        TextNode textnode = new TextNode();
+        textnode.getWholeText();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodegetWholeText12() {
+        TextNode textnode = new TextNode();
+        textnode.getWholeText();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodegetWholeText13() {
+        TextNode textnode = new TextNode();
+        textnode.getWholeText();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodegetWholeText14() {
+        TextNode textnode = new TextNode();
+        textnode.getWholeText();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodeisBlank10() {
+        TextNode textnode = new TextNode();
+        textnode.isBlank();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodeisBlank11() {
+        TextNode textnode = new TextNode();
+        textnode.isBlank();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodeisBlank12() {
+        TextNode textnode = new TextNode();
+        textnode.isBlank();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodeisBlank13() {
+        TextNode textnode = new TextNode();
+        textnode.isBlank();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodeisBlank14() {
+        TextNode textnode = new TextNode();
+        textnode.isBlank();
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodesplitText1330() {
+        TextNode textnode = new TextNode();
+        textnode.splitText(102);
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodesplitText681() {
+        TextNode textnode = new TextNode();
+        textnode.splitText(-99);
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodesplitText573732() {
+        TextNode textnode = new TextNode();
+        textnode.splitText(57342);
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodesplitText4313() {
+        TextNode textnode = new TextNode();
+        textnode.splitText(400);
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodesplitText553284() {
+        TextNode textnode = new TextNode();
+        textnode.splitText(55297);
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded5739212500() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded(":nth-last-of-type(","script");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded1096391761() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("spam","p");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded6776851522() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("bgsound","spam");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded9238609813() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("colgrouo",":only-of-typd");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded17571594824() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("!<",":emptz");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded13215466000() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("templatd");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded20913044551() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("isindex");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded732() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("*");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded14229508273() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("action");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTextNodecreateFromEncoded358296694() {
+        TextNode textnode = new TextNode();
+        textnode.createFromEncoded("#roou");
+        assertTrue(textnode.equals(textnode));
+        try {
+            textnode.equals(textnode);
+        } catch (Exception e) {
+            fail("textnode.equals(textnode) throws an exception");
+        }
+        try {
+            textnode.hashCode();
+        } catch (Exception e) {
+            fail("textnode.hashCode() throws an exception");
+        }
+        try {
+            textnode.toString();
+        } catch (Exception e) {
+            fail("textnode.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testUncheckedIOExceptionioException10() {
+        UncheckedIOException uncheckedioexception = new UncheckedIOException();
+        uncheckedioexception.ioException();
+        assertTrue(uncheckedioexception.equals(uncheckedioexception));
+        try {
+            uncheckedioexception.equals(uncheckedioexception);
+        } catch (Exception e) {
+            fail("uncheckedioexception.equals(uncheckedioexception) throws an exception");
+        }
+        try {
+            uncheckedioexception.hashCode();
+        } catch (Exception e) {
+            fail("uncheckedioexception.hashCode() throws an exception");
+        }
+        try {
+            uncheckedioexception.toString();
+        } catch (Exception e) {
+            fail("uncheckedioexception.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testUncheckedIOExceptionioException11() {
+        UncheckedIOException uncheckedioexception = new UncheckedIOException();
+        uncheckedioexception.ioException();
+        assertTrue(uncheckedioexception.equals(uncheckedioexception));
+        try {
+            uncheckedioexception.equals(uncheckedioexception);
+        } catch (Exception e) {
+            fail("uncheckedioexception.equals(uncheckedioexception) throws an exception");
+        }
+        try {
+            uncheckedioexception.hashCode();
+        } catch (Exception e) {
+            fail("uncheckedioexception.hashCode() throws an exception");
+        }
+        try {
+            uncheckedioexception.toString();
+        } catch (Exception e) {
+            fail("uncheckedioexception.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testUncheckedIOExceptionioException12() {
+        UncheckedIOException uncheckedioexception = new UncheckedIOException();
+        uncheckedioexception.ioException();
+        assertTrue(uncheckedioexception.equals(uncheckedioexception));
+        try {
+            uncheckedioexception.equals(uncheckedioexception);
+        } catch (Exception e) {
+            fail("uncheckedioexception.equals(uncheckedioexception) throws an exception");
+        }
+        try {
+            uncheckedioexception.hashCode();
+        } catch (Exception e) {
+            fail("uncheckedioexception.hashCode() throws an exception");
+        }
+        try {
+            uncheckedioexception.toString();
+        } catch (Exception e) {
+            fail("uncheckedioexception.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testUncheckedIOExceptionioException13() {
+        UncheckedIOException uncheckedioexception = new UncheckedIOException();
+        uncheckedioexception.ioException();
+        assertTrue(uncheckedioexception.equals(uncheckedioexception));
+        try {
+            uncheckedioexception.equals(uncheckedioexception);
+        } catch (Exception e) {
+            fail("uncheckedioexception.equals(uncheckedioexception) throws an exception");
+        }
+        try {
+            uncheckedioexception.hashCode();
+        } catch (Exception e) {
+            fail("uncheckedioexception.hashCode() throws an exception");
+        }
+        try {
+            uncheckedioexception.toString();
+        } catch (Exception e) {
+            fail("uncheckedioexception.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testUncheckedIOExceptionioException14() {
+        UncheckedIOException uncheckedioexception = new UncheckedIOException();
+        uncheckedioexception.ioException();
+        assertTrue(uncheckedioexception.equals(uncheckedioexception));
+        try {
+            uncheckedioexception.equals(uncheckedioexception);
+        } catch (Exception e) {
+            fail("uncheckedioexception.equals(uncheckedioexception) throws an exception");
+        }
+        try {
+            uncheckedioexception.hashCode();
+        } catch (Exception e) {
+            fail("uncheckedioexception.hashCode() throws an exception");
+        }
+        try {
+            uncheckedioexception.toString();
+        } catch (Exception e) {
+            fail("uncheckedioexception.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtiljoin20353129220() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Collection) null,":contains)");
+        stringutil.join((Collection) null,":first-of-type");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2763,9 +16518,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin17209573431() {
+    public void testStringUtiljoin19804195371() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Collection) null,"basefont");
+        stringutil.join((Collection) null,"Set-Cookid");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2784,9 +16539,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin3081280962() {
+    public void testStringUtiljoin1650845582() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Collection) null,":last-child");
+        stringutil.join((Collection) null,"http-equiv");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2805,9 +16560,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin10176260273() {
+    public void testStringUtiljoin35127323() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Collection) null,":nth-last-of-type(");
+        stringutil.join((Collection) null,"rubz");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2826,9 +16581,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin570715824() {
+    public void testStringUtiljoin13215456684() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Collection) null,":roou");
+        stringutil.join((Collection) null,"templatf");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2847,9 +16602,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin569524960() {
+    public void testStringUtiljoin42360() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Iterator) null,":not(");
+        stringutil.join((Iterator) null,"h3");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2868,9 +16623,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin1102783081() {
+    public void testStringUtiljoin1103278301() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Iterator) null,"tfoou");
+        stringutil.join((Iterator) null,"theae");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2889,9 +16644,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin1108312() {
+    public void testStringUtiljoin1003590512() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Iterator) null,"odc");
+        stringutil.join((Iterator) null,"input");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2910,9 +16665,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin7423148563() {
+    public void testStringUtiljoin31900423() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Iterator) null,"checked");
+        stringutil.join((Iterator) null,"gzio");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2931,9 +16686,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin12068409624() {
+    public void testStringUtiljoin46604() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join((Iterator) null,"http:/");
+        stringutil.join((Iterator) null,"tg");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2952,9 +16707,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin13586753410() {
+    public void testStringUtiljoin19951293700() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox"},"optgrouo");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk"},"[a-zA-Z_:][-a-zA-Z0-9_:.]*");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2973,9 +16728,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin1831477791() {
+    public void testStringUtiljoin10025195851() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao"},":last-chile");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh"},"html");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -2994,9 +16749,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin1243172302() {
+    public void testStringUtiljoin328418942() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style"},"lj");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII"},"#roos");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3015,9 +16770,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin989072863() {
+    public void testStringUtiljoin12540036733() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^"},":empty");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du"},"isindex");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3036,9 +16791,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin5082107534() {
+    public void testStringUtiljoin1034004714() {
         StringUtil stringutil = new StringUtil();
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx"},":matchesOwn)");
+        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3"},"h1");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3057,9 +16812,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding573730() {
+    public void testStringUtilpadding350() {
         StringUtil stringutil = new StringUtil();
-        stringutil.padding(57342);
+        stringutil.padding(4);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3078,9 +16833,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding11141431() {
+    public void testStringUtilpadding572741() {
         StringUtil stringutil = new StringUtil();
-        stringutil.padding(1114112);
+        stringutil.padding(57243);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3099,9 +16854,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding1312() {
+    public void testStringUtilpadding2302() {
         StringUtil stringutil = new StringUtil();
-        stringutil.padding(100);
+        stringutil.padding(199);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3120,9 +16875,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding5313() {
+    public void testStringUtilpadding553283() {
         StringUtil stringutil = new StringUtil();
-        stringutil.padding(500);
+        stringutil.padding(55297);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3141,9 +16896,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding5314() {
+    public void testStringUtilpadding2234() {
         StringUtil stringutil = new StringUtil();
-        stringutil.padding(500);
+        stringutil.padding(192);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3162,9 +16917,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank1650854870() {
+    public void testStringUtilisBlank31490270() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("http-equiw");
+        stringutil.isBlank("form");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3183,9 +16938,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank923491() {
+    public void testStringUtilisBlank2709408261() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("]]>");
+        stringutil.isBlank("disablec");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3204,9 +16959,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank33682() {
+    public void testStringUtilisBlank11927218632() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("hq");
+        stringutil.isBlank("noframet");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3225,9 +16980,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank30164313() {
+    public void testStringUtilisBlank32110813() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("basd");
+        stringutil.isBlank("hree");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3246,9 +17001,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank1003581214() {
+    public void testStringUtilisBlank1101578774() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isBlank("input");
+        stringutil.isBlank("tbody");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3267,9 +17022,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric19788929330() {
+    public void testStringUtilisNumeric2882752490() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric(":containsOwn)");
+        stringutil.isNumeric(":nth-child)");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3288,9 +17043,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric19732341971() {
+    public void testStringUtilisNumeric996170351() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("plaintexs");
+        stringutil.isNumeric("httpt");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3309,9 +17064,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric33702() {
+    public void testStringUtilisNumeric26152042() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("hs");
+        stringutil.isNumeric("UTF,");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3330,9 +17085,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric713() {
+    public void testStringUtilisNumeric11927218623() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("(");
+        stringutil.isNumeric("noframes");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3351,9 +17106,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric31984624() {
+    public void testStringUtilisNumeric10548386284() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isNumeric("heac");
+        stringutil.isNumeric(":first-child");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3372,28 +17127,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace2230() {
-        StringUtil stringutil = new StringUtil();
-        stringutil.isWhitespace(192);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilisWhitespace1321() {
+    public void testStringUtilisWhitespace1320() {
         StringUtil stringutil = new StringUtil();
         stringutil.isWhitespace(101);
         assertTrue(stringutil.equals(stringutil));
@@ -3414,9 +17148,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace553282() {
+    public void testStringUtilisWhitespace2551() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isWhitespace(55297);
+        stringutil.isWhitespace(224);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3435,9 +17169,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace572743() {
+    public void testStringUtilisWhitespace553272() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isWhitespace(57243);
+        stringutil.isWhitespace(55296);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3456,9 +17190,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace554274() {
+    public void testStringUtilisWhitespace1333() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isWhitespace(55396);
+        stringutil.isWhitespace(102);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3477,9 +17211,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace2710() {
+    public void testStringUtilisWhitespace324() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isActuallyWhitespace(240);
+        stringutil.isWhitespace(1);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3498,72 +17232,93 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace553281() {
-        StringUtil stringutil = new StringUtil();
-        stringutil.isActuallyWhitespace(55297);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilisActuallyWhitespace322() {
-        StringUtil stringutil = new StringUtil();
-        stringutil.isActuallyWhitespace(1);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilisActuallyWhitespace333() {
-        StringUtil stringutil = new StringUtil();
-        stringutil.isActuallyWhitespace(2);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilisActuallyWhitespace2704() {
+    public void testStringUtilisActuallyWhitespace2700() {
         StringUtil stringutil = new StringUtil();
         stringutil.isActuallyWhitespace(239);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilisActuallyWhitespace4311() {
+        StringUtil stringutil = new StringUtil();
+        stringutil.isActuallyWhitespace(400);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilisActuallyWhitespace2552() {
+        StringUtil stringutil = new StringUtil();
+        stringutil.isActuallyWhitespace(224);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilisActuallyWhitespace2233() {
+        StringUtil stringutil = new StringUtil();
+        stringutil.isActuallyWhitespace(192);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilisActuallyWhitespace2304() {
+        StringUtil stringutil = new StringUtil();
+        stringutil.isActuallyWhitespace(199);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3603,9 +17358,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar301() {
+    public void testStringUtilisInvisibleChar2221() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isInvisibleChar(-1);
+        stringutil.isInvisibleChar(191);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3624,7 +17379,49 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar1332() {
+    public void testStringUtilisInvisibleChar2552() {
+        StringUtil stringutil = new StringUtil();
+        stringutil.isInvisibleChar(224);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilisInvisibleChar313() {
+        StringUtil stringutil = new StringUtil();
+        stringutil.isInvisibleChar(0);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilisInvisibleChar1334() {
         StringUtil stringutil = new StringUtil();
         stringutil.isInvisibleChar(102);
         assertTrue(stringutil.equals(stringutil));
@@ -3645,9 +17442,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar683() {
+    public void testStringUtilnormaliseWhitespace1097804330() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isInvisibleChar(-99);
+        stringutil.normaliseWhitespace("stylf");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3666,9 +17463,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar1324() {
+    public void testStringUtilnormaliseWhitespace21011357991() {
         StringUtil stringutil = new StringUtil();
-        stringutil.isInvisibleChar(101);
+        stringutil.normaliseWhitespace(":matchText");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3687,9 +17484,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace17480897440() {
+    public void testStringUtilnormaliseWhitespace13215466002() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("DOCTYPD");
+        stringutil.normaliseWhitespace("templatd");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3708,9 +17505,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace14711890841() {
+    public void testStringUtilnormaliseWhitespace17480897433() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace(":nth-last-child'");
+        stringutil.normaliseWhitespace("DOCTYPE");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3729,9 +17526,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace19732341982() {
+    public void testStringUtilnormaliseWhitespace31891134() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("plaintext");
+        stringutil.normaliseWhitespace("gzip");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3750,9 +17547,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace18353333() {
+    public void testStringUtilappendNormalisedWhitespace12965639150() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace(":lt(");
+        stringutil.appendNormalisedWhitespace("basf","html",true);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3771,9 +17568,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace33480044() {
+    public void testStringUtilappendNormalisedWhitespace20156288311() {
         StringUtil stringutil = new StringUtil();
-        stringutil.normaliseWhitespace("meta");
+        stringutil.appendNormalisedWhitespace("imagd","mati",true);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3792,9 +17589,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace5051637840() {
+    public void testStringUtilappendNormalisedWhitespace15530690232() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace(":containsData)",":root",true);
+        stringutil.appendNormalisedWhitespace(":not(",":nth-last-child(",true);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3813,9 +17610,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace876410071() {
+    public void testStringUtilappendNormalisedWhitespace9431149073() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace(":first-chilc","#",true);
+        stringutil.appendNormalisedWhitespace(":last-chile","inpus",true);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3834,9 +17631,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace1381922932() {
+    public void testStringUtilappendNormalisedWhitespace28909894() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace("checkbow","deflate",true);
+        stringutil.appendNormalisedWhitespace("^<","?",true);
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3855,9 +17652,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace18038811803() {
+    public void testStringUtilin30639430() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace("titlf","inpuu",true);
+        stringutil.in("!<","bodx");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3876,9 +17673,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace3233826534() {
+    public void testStringUtilin14018741681() {
         StringUtil stringutil = new StringUtil();
-        stringutil.appendNormalisedWhitespace("http-equiv",":gt)",true);
+        stringutil.in(":containsOwn(","US-ASCII");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3897,9 +17694,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin7458574440() {
+    public void testStringUtilin17375395422() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in("svh","checkee");
+        stringutil.in("button",":containsOwn(");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3918,9 +17715,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin3392496411() {
+    public void testStringUtilin2413553603() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in("colgroup",":only-child");
+        stringutil.in("buttoo","<.");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3939,9 +17736,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin14514103272() {
+    public void testStringUtilin21471008304() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in(":has(",":last-chilc");
+        stringutil.in(":all","isindex");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3960,9 +17757,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin34111243() {
+    public void testStringUtilinSorted3600806060() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in("$<","name");
+        stringutil.inSorted("boundary",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -3981,9 +17778,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin1620252604() {
+    public void testStringUtilinSorted18259019591() {
         StringUtil stringutil = new StringUtil();
-        stringutil.in("cok","http-equiw");
+        stringutil.inSorted(":matchTexu",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4002,9 +17799,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted20520114440() {
+    public void testStringUtilinSorted3439021092() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted(":roos",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>"});
+        stringutil.inSorted("*}",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4023,9 +17820,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted13443000511() {
+    public void testStringUtilinSorted12272205943() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("dc",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not("});
+        stringutil.inSorted(":first-of-typd",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty"});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4044,9 +17841,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted14162582442() {
+    public void testStringUtilinSorted13527601804() {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("noscrips",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos"});
+        stringutil.inSorted(":first-chilc",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq("});
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4065,9 +17862,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted15823397293() {
+    public void testStringUtilresolve1197720() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("hidden",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq"});
+        stringutil.resolve((URL) null,"xmp");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4086,9 +17883,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted6675402404() {
+    public void testStringUtilresolve19804195351() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.inSorted("^<",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head"});
+        stringutil.resolve((URL) null,"Set-Cookif");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4107,9 +17904,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve10030() throws Exception {
+    public void testStringUtilresolve21153106132() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve((URL) null,"*");
+        stringutil.resolve((URL) null,"boundary");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4128,28 +17925,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve41141() throws Exception {
-        StringUtil stringutil = new StringUtil();
-        stringutil.resolve((URL) null,"bs");
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilresolve1003143972() throws Exception {
+    public void testStringUtilresolve1003143973() throws Exception {
         StringUtil stringutil = new StringUtil();
         stringutil.resolve((URL) null,"imagf");
         assertTrue(stringutil.equals(stringutil));
@@ -4170,9 +17946,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve15515518853() throws Exception {
+    public void testStringUtilresolve1097813624() throws Exception {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve((URL) null,"noscript");
+        stringutil.resolve((URL) null,"style");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4191,9 +17967,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve569524974() throws Exception {
+    public void testStringUtilresolve771654570() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve((URL) null,":not)");
+        stringutil.resolve("DOCTYPF","basefonu");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4212,9 +17988,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve10918573230() {
+    public void testStringUtilresolve12068391341() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("table","plaintexu");
+        stringutil.resolve(";","http:.");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4233,9 +18009,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve10325721441() {
+    public void testStringUtilresolve7639676542() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("textareb","hree");
+        stringutil.resolve("deflatd","tablf");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4254,9 +18030,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve16359501402() {
+    public void testStringUtilresolve20659136223() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve(":nth-last-child(",":eq'");
+        stringutil.resolve("[a-zA-Z_:][-a-zA-Z0-9_:.])","UTF,");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4275,30 +18051,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve18629670773() {
+    public void testStringUtilresolve1096402404() {
         StringUtil stringutil = new StringUtil();
-        stringutil.resolve("colgrouo","text/");
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilresolve18688071844() {
-        StringUtil stringutil = new StringUtil();
-        stringutil.resolve(":root","https");
+        stringutil.resolve("spam","$<");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4422,9 +18177,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder37270() {
+    public void testStringUtilreleaseBuilder11927218630() {
         StringUtil stringutil = new StringUtil();
-        stringutil.releaseBuilder("td");
+        stringutil.releaseBuilder("noframet");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4443,9 +18198,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder32471() {
+    public void testStringUtilreleaseBuilder32311() {
         StringUtil stringutil = new StringUtil();
-        stringutil.releaseBuilder("dt");
+        stringutil.releaseBuilder("dd");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4464,9 +18219,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder10032436862() {
+    public void testStringUtilreleaseBuilder19732341982() {
         StringUtil stringutil = new StringUtil();
-        stringutil.releaseBuilder("textareb");
+        stringutil.releaseBuilder("plaintext");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4485,9 +18240,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder996170343() {
+    public void testStringUtilreleaseBuilder14573() {
         StringUtil stringutil = new StringUtil();
-        stringutil.releaseBuilder("https");
+        stringutil.releaseBuilder("*|");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4506,9 +18261,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder1003134654() {
+    public void testStringUtilreleaseBuilder1650854884() {
         StringUtil stringutil = new StringUtil();
-        stringutil.releaseBuilder("imagd");
+        stringutil.releaseBuilder("http-equiv");
         assertTrue(stringutil.equals(stringutil));
         try {
             stringutil.equals(stringutil);
@@ -4527,9 +18282,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase20353119910() {
+    public void testNormalizerlowerCase1044180() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase(":first-of-typd");
+        normalizer.lowerCase("img");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4548,9 +18303,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase10552537231() {
+    public void testNormalizerlowerCase37271() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase(":matchesOwn)");
+        normalizer.lowerCase("td");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4569,9 +18324,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase9503947302() {
+    public void testNormalizerlowerCase567593342() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase("command");
+        normalizer.lowerCase(":has'");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4590,9 +18345,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase713() {
+    public void testNormalizerlowerCase11414281683() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase("(");
+        normalizer.lowerCase("[CDATA[");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4611,9 +18366,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase16183955594() {
+    public void testNormalizerlowerCase17209582724() {
         Normalizer normalizer = new Normalizer();
-        normalizer.lowerCase(":only-of-typd");
+        normalizer.lowerCase("basefonu");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4632,9 +18387,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize14711890850() {
+    public void testNormalizernormalize730() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize(":nth-last-child(");
+        normalizer.normalize("*");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4653,9 +18408,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize1143081() {
+    public void testNormalizernormalize358799181() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("svh");
+        normalizer.normalize("#texs");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4674,9 +18429,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize34842() {
+    public void testNormalizernormalize10101369392() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("li");
+        normalizer.normalize("optioo");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4695,9 +18450,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize18912061153() {
+    public void testNormalizernormalize19732341973() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize(":nth-of-type)");
+        normalizer.normalize("plaintexs");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4716,9 +18471,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize1605222314() {
+    public void testNormalizernormalize987194() {
         Normalizer normalizer = new Normalizer();
-        normalizer.normalize("bgsound");
+        normalizer.normalize("col");
         assertTrue(normalizer.equals(normalizer));
         try {
             normalizer.equals(normalizer);
@@ -4737,9 +18492,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap345705560() {
+    public void testConstrainableInputStreamwrap18075240() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.wrap((InputStream) null,1114211,224);
+        constrainableinputstream.wrap((InputStream) null,57343,100);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4758,9 +18513,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap345673641() {
+    public void testConstrainableInputStreamwrap424461() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.wrap((InputStream) null,1114112,101);
+        constrainableinputstream.wrap((InputStream) null,401,224);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4779,9 +18534,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap903262() {
+    public void testConstrainableInputStreamwrap18047242() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.wrap((InputStream) null,103,57342);
+        constrainableinputstream.wrap((InputStream) null,57243,400);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4800,9 +18555,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap819883() {
+    public void testConstrainableInputStreamwrap329233() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.wrap((InputStream) null,-100,55297);
+        constrainableinputstream.wrap((InputStream) null,101,1);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4821,9 +18576,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap267214() {
+    public void testConstrainableInputStreamwrap302534() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.wrap((InputStream) null,-99,-1);
+        constrainableinputstream.wrap((InputStream) null,2,400);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4842,9 +18597,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer300() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer553270() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.readToByteBuffer(-1);
+        constrainableinputstream.readToByteBuffer(55296);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4863,9 +18618,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer2551() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer2701() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.readToByteBuffer(224);
+        constrainableinputstream.readToByteBuffer(239);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4884,9 +18639,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer11142422() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer322() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.readToByteBuffer(1114211);
+        constrainableinputstream.readToByteBuffer(1);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4905,9 +18660,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer4313() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer4323() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.readToByteBuffer(400);
+        constrainableinputstream.readToByteBuffer(401);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4926,9 +18681,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer684() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer2224() throws Exception {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.readToByteBuffer(-99);
+        constrainableinputstream.readToByteBuffer(191);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4947,9 +18702,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout10610() {
+    public void testConstrainableInputStreamtimeout40620() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.timeout(-1,100);
+        constrainableinputstream.timeout(100,1);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4968,9 +18723,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout9931() {
+    public void testConstrainableInputStreamtimeout9921() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.timeout(1,1);
+        constrainableinputstream.timeout(1,0);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -4991,7 +18746,7 @@ public class AutomatedTest {
     @Test
     public void testConstrainableInputStreamtimeout9612() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.timeout(0,-1);
+        constrainableinputstream.timeout(-1,0);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -5010,9 +18765,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout9933() {
+    public void testConstrainableInputStreamtimeout10923() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.timeout(1,1);
+        constrainableinputstream.timeout(1,100);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -5031,9 +18786,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout40614() {
+    public void testConstrainableInputStreamtimeout10604() {
         ConstrainableInputStream constrainableinputstream = new ConstrainableInputStream();
-        constrainableinputstream.timeout(100,-1);
+        constrainableinputstream.timeout(-1,-100);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
             constrainableinputstream.equals(constrainableinputstream);
@@ -5052,9 +18807,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17648637710() {
+    public void testJsoupparse21153095270() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("link","[a-zA-Z_:][-a-zA-Z0-9_:.]+");
+        jsoup.parse("#","boundarz");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5073,9 +18828,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8770201991() {
+    public void testJsoupparse10762782891() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("text.","$=");
+        jsoup.parse("ts",":contains(");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5094,9 +18849,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse70802002() {
+    public void testJsoupparse6405491292() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("svf","span");
+        jsoup.parse("DOCTYPF","textareb");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5115,9 +18870,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse945183() {
+    public void testJsoupparse14816081123() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("(","]]=");
+        jsoup.parse(":nth-last-of-type(","$=");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5136,9 +18891,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17595430964() {
+    public void testJsoupparse1140971044() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse(":has(","ts");
+        jsoup.parse(":last-chile",":contains(");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5157,9 +18912,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse9336790610() {
+    public void testJsoupparse5749469950() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("frameset","bgsounc",(Parser) null);
+        jsoup.parse("basefont","noscript",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5178,9 +18933,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8734207881() {
+    public void testJsoupparse977318091() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("--","theac",(Parser) null);
+        jsoup.parse("com","]]?",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5199,9 +18954,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse15630829232() {
+    public void testJsoupparse16560289272() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("optgroup","optioo",(Parser) null);
+        jsoup.parse("actioo","ti",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5220,9 +18975,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1337812183() {
+    public void testJsoupparse12034080073() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("http:/","lj",(Parser) null);
+        jsoup.parse("http","odc",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5241,9 +18996,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse10504339264() {
+    public void testJsoupparse18246590954() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("style",":only-of-typf",(Parser) null);
+        jsoup.parse("htto","Set-Cookie",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5262,9 +19017,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse32470() {
+    public void testJsoupparse32480() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("dt");
+        jsoup.parse("du");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5283,9 +19038,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse16449536121() {
+    public void testJsoupparse3081290251() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("frameset");
+        jsoup.parse(":last-chile");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5304,9 +19059,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1102563202() {
+    public void testJsoupparse18305292() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("text.");
+        jsoup.parse(":gt)");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5325,9 +19080,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse35118013() {
+    public void testJsoupparse26152043() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("ruby");
+        jsoup.parse("UTF,");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5346,9 +19101,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1003134664() {
+    public void testJsoupparse20919604274() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse("image");
+        jsoup.parse(":only-chile");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5367,9 +19122,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect30294420() {
+    public void testJsoupconnect35756420() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("bodz");
+        jsoup.connect("typf");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5388,9 +19143,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect34851() {
+    public void testJsoupconnect18245811() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("lj");
+        jsoup.connect(":alk");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5409,9 +19164,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect12072() {
+    public void testJsoupconnect1282() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("$<");
+        jsoup.connect("a");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5430,9 +19185,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect16449536133() {
+    public void testJsoupconnect31984623() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("frameses");
+        jsoup.connect("heac");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5451,9 +19206,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect11154() {
+    public void testJsoupconnect21065455184() {
         Jsoup jsoup = new Jsoup();
-        jsoup.connect("!=");
+        jsoup.connect(":last-of-type");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5472,9 +19227,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse5242195490() throws Exception {
+    public void testJsoupparse15309110270() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"noscripu","buttom");
+        jsoup.parse((File) null,"http:.",":nth-child'");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5493,9 +19248,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse16771100621() throws Exception {
+    public void testJsoupparse5044766871() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"noframer","gzio");
+        jsoup.parse((File) null,"basefons","Set-Cookie");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5514,9 +19269,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse14364992162() throws Exception {
+    public void testJsoupparse17032046112() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"charseu","^");
+        jsoup.parse((File) null,"checkee",":first-chile");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5535,9 +19290,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8243964793() throws Exception {
+    public void testJsoupparse33806773() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"table",":not)");
+        jsoup.parse((File) null,"^","met`");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5556,9 +19311,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17595682814() throws Exception {
+    public void testJsoupparse5460781504() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,":has'","a");
+        jsoup.parse((File) null,"frameseu","tq");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5577,9 +19332,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1003590510() throws Exception {
+    public void testJsoupparse7423148560() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"input");
+        jsoup.parse((File) null,"checked");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5598,9 +19353,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse30173611() throws Exception {
+    public void testJsoupparse16183964911() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"basd");
+        jsoup.parse((File) null,":only-of-typf");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5619,9 +19374,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse9076847232() throws Exception {
+    public void testJsoupparse10032427562() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"scripu");
+        jsoup.parse((File) null,"textareb");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5640,9 +19395,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse15451135793() throws Exception {
+    public void testJsoupparse29884883() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"deflatd");
+        jsoup.parse((File) null,"abs9");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5661,9 +19416,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse33228114() throws Exception {
+    public void testJsoupparse49294() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((File) null,"link");
+        jsoup.parse((File) null,"~>");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5682,9 +19437,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse9158380470() throws Exception {
+    public void testJsoupparse19817585530() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"hiddem","httq");
+        jsoup.parse((InputStream) null,"templatd","*=");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5703,9 +19458,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11832680011() throws Exception {
+    public void testJsoupparse10122416641() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"http:/","sarcasn");
+        jsoup.parse((InputStream) null,"hiddeo","httpt");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5724,9 +19479,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17860658852() throws Exception {
+    public void testJsoupparse19799585992() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"tbodz","selecs");
+        jsoup.parse((InputStream) null,"selecs",":eq)");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5745,9 +19500,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse7424027723() throws Exception {
+    public void testJsoupparse18581863() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"<.","checked");
+        jsoup.parse((InputStream) null,"|",":all");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5766,9 +19521,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1105242164() throws Exception {
+    public void testJsoupparse15741357254() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"~>","titlf");
+        jsoup.parse((InputStream) null,"templatd","charseu");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5787,9 +19542,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse16428607800() throws Exception {
+    public void testJsoupparse8878212800() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"ds",":matchesOwn)",(Parser) null);
+        jsoup.parse((InputStream) null,"bs","stylf",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5808,9 +19563,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1101915771() throws Exception {
+    public void testJsoupparse10805854421() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"odc","xmk",(Parser) null);
+        jsoup.parse((InputStream) null,"radin","typd",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5829,9 +19584,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse5209247762() throws Exception {
+    public void testJsoupparse9594735902() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"htmk","iframd",(Parser) null);
+        jsoup.parse((InputStream) null,"optioo","tabld",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5850,9 +19605,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1746202823() throws Exception {
+    public void testJsoupparse975792583() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"basefont","linl",(Parser) null);
+        jsoup.parse((InputStream) null,"h3","basf",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5871,9 +19626,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse610354974() throws Exception {
+    public void testJsoupparse21169644574() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((InputStream) null,"tc",":all",(Parser) null);
+        jsoup.parse((InputStream) null,":emptz",":nth-of-type)",(Parser) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5892,9 +19647,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment18913569920() {
+    public void testJsoupparseBodyFragment19817297840() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("optgrouo","input");
+        jsoup.parseBodyFragment("templatf","*<");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5913,9 +19668,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment9586914761() {
+    public void testJsoupparseBodyFragment14627135641() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment(":last-chile","name");
+        jsoup.parseBodyFragment("US-ASCII","svh");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5934,9 +19689,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment19762944872() {
+    public void testJsoupparseBodyFragment19732687322() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("com","plaintext");
+        jsoup.parseBodyFragment("!=","plaintext");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5955,9 +19710,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment4022062693() {
+    public void testJsoupparseBodyFragment6780728683() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("checkbox","heac");
+        jsoup.parseBodyFragment("bgsound","forn");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5976,9 +19731,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment35492484() {
+    public void testJsoupparseBodyFragment996208784() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("$>","rubx");
+        jsoup.parseBodyFragment("^","https");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -5997,9 +19752,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment996170340() {
+    public void testJsoupparseBodyFragment2709408260() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("https");
+        jsoup.parseBodyFragment("disablec");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6018,9 +19773,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment20353119911() {
+    public void testJsoupparseBodyFragment10101369401() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment(":first-of-typd");
+        jsoup.parseBodyFragment("option");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6039,9 +19794,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment567593352() {
+    public void testJsoupparseBodyFragment13952() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment(":has(");
+        jsoup.parseBodyFragment("*>");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6060,9 +19815,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment31490263() {
+    public void testJsoupparseBodyFragment33063() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("forl");
+        jsoup.parseBodyFragment("h3");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6081,9 +19836,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment6361976034() {
+    public void testJsoupparseBodyFragment15368918734() {
         Jsoup jsoup = new Jsoup();
-        jsoup.parseBodyFragment("colgrouo");
+        jsoup.parseBodyFragment("checkbow");
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6102,9 +19857,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse12000() throws Exception {
+    public void testJsoupparse9620() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((URL) null,239);
+        jsoup.parse((URL) null,1);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6123,7 +19878,28 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8611() throws Exception {
+    public void testJsoupparse10611() throws Exception {
+        Jsoup jsoup = new Jsoup();
+        jsoup.parse((URL) null,100);
+        assertTrue(jsoup.equals(jsoup));
+        try {
+            jsoup.equals(jsoup);
+        } catch (Exception e) {
+            fail("jsoup.equals(jsoup) throws an exception");
+        }
+        try {
+            jsoup.hashCode();
+        } catch (Exception e) {
+            fail("jsoup.hashCode() throws an exception");
+        }
+        try {
+            jsoup.toString();
+        } catch (Exception e) {
+            fail("jsoup.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testJsoupparse8612() throws Exception {
         Jsoup jsoup = new Jsoup();
         jsoup.parse((URL) null,-100);
         assertTrue(jsoup.equals(jsoup));
@@ -6144,30 +19920,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11151722() throws Exception {
+    public void testJsoupparse9603() throws Exception {
         Jsoup jsoup = new Jsoup();
-        jsoup.parse((URL) null,1114211);
-        assertTrue(jsoup.equals(jsoup));
-        try {
-            jsoup.equals(jsoup);
-        } catch (Exception e) {
-            fail("jsoup.equals(jsoup) throws an exception");
-        }
-        try {
-            jsoup.hashCode();
-        } catch (Exception e) {
-            fail("jsoup.hashCode() throws an exception");
-        }
-        try {
-            jsoup.toString();
-        } catch (Exception e) {
-            fail("jsoup.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testJsoupparse9633() throws Exception {
-        Jsoup jsoup = new Jsoup();
-        jsoup.parse((URL) null,2);
+        jsoup.parse((URL) null,-1);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6207,9 +19962,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1688542510() {
+    public void testJsoupclean4841856220() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("basefons","spam",(Whitelist) null);
+        jsoup.clean(":emptx","disablec",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6228,9 +19983,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean7685717331() {
+    public void testJsoupclean789869721() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean(":nth-last-child(","h0",(Whitelist) null);
+        jsoup.clean("option","p",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6249,9 +20004,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean9116113702() {
+    public void testJsoupclean11917057572() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean(":nth-last-of-type'","[a-zA-Z_:][-a-zA-Z0-9_:.]+",(Whitelist) null);
+        jsoup.clean("select","lj",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6270,9 +20025,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1065724203() {
+    public void testJsoupclean13499988883() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("tr","linj",(Whitelist) null);
+        jsoup.clean("thead","!<",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6291,9 +20046,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean9172656074() {
+    public void testJsoupclean18443983654() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("rubx","]]?",(Whitelist) null);
+        jsoup.clean("math",":only-of-typf",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6312,9 +20067,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean16597408690() {
+    public void testJsoupclean996178180() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean(":first-chile",(Whitelist) null);
+        jsoup.clean("htto",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6333,9 +20088,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean16437928461() {
+    public void testJsoupclean19265157981() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("DOCTYPF",(Whitelist) null);
+        jsoup.clean("script",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6354,9 +20109,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean15368951952() {
+    public void testJsoupclean1044702() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("checkec",(Whitelist) null);
+        jsoup.clean("hs",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6375,9 +20130,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1080353() {
+    public void testJsoupclean9987065413() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("lj",(Whitelist) null);
+        jsoup.clean(":contains'",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6396,9 +20151,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean996178494() {
+    public void testJsoupclean4262638594() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("http",(Whitelist) null);
+        jsoup.clean(":only-chilc",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6417,9 +20172,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean20654860820() {
+    public void testJsoupclean18151257830() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("forn","caption",(Whitelist) null,(Document.OutputSettings) null);
+        jsoup.clean("even",":not)",(Whitelist) null,(Document.OutputSettings) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6438,9 +20193,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean18195005551() {
+    public void testJsoupclean8522171631() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("br",":first-of-typf",(Whitelist) null,(Document.OutputSettings) null);
+        jsoup.clean("type",".",(Whitelist) null,(Document.OutputSettings) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6459,9 +20214,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean2164379842() {
+    public void testJsoupclean7013039632() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("noembee","plaintexu",(Whitelist) null,(Document.OutputSettings) null);
+        jsoup.clean("http:0",":matchText",(Whitelist) null,(Document.OutputSettings) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6480,9 +20235,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean14543163923() {
+    public void testJsoupclean11945471423() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("h6","captiom",(Whitelist) null,(Document.OutputSettings) null);
+        jsoup.clean(":containsData'",":nth-last-of-type'",(Whitelist) null,(Document.OutputSettings) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6501,9 +20256,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean13333121014() {
+    public void testJsoupclean6438852854() {
         Jsoup jsoup = new Jsoup();
-        jsoup.clean("]]?","text0",(Whitelist) null,(Document.OutputSettings) null);
+        jsoup.clean("checkboy","noframet",(Whitelist) null,(Document.OutputSettings) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6522,9 +20277,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid16803279420() {
+    public void testJsoupisValid345650() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("noframes",(Whitelist) null);
+        jsoup.isValid("!=",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6543,9 +20298,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid12634923331() {
+    public void testJsoupisValid1079731() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("Set-Cookid",(Whitelist) null);
+        jsoup.isValid("lh",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6564,9 +20319,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid996178492() {
+    public void testJsoupisValid27902() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("http",(Whitelist) null);
+        jsoup.isValid(";",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6585,9 +20340,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid28523() {
+    public void testJsoupisValid16803279733() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("=",(Whitelist) null);
+        jsoup.isValid("noframer",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6606,9 +20361,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid860672534() {
+    public void testJsoupisValid21016540654() {
         Jsoup jsoup = new Jsoup();
-        jsoup.isValid("\"\"",(Whitelist) null);
+        jsoup.isValid(":matches)",(Whitelist) null);
         assertTrue(jsoup.equals(jsoup));
         try {
             jsoup.equals(jsoup);
@@ -6627,9 +20382,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput16342668510() {
+    public void testParserparseInput7664580030() {
         Parser parser = new Parser();
-        parser.parseInput(":nth-last-child(","ruby");
+        parser.parseInput(":only-child","noframes");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6648,9 +20403,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput180892981() {
+    public void testParserparseInput1409987281() {
         Parser parser = new Parser();
-        parser.parseInput("gzip","optgrouo");
+        parser.parseInput("tbody","charseu");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6669,9 +20424,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput21016575182() {
+    public void testParserparseInput21374472592() {
         Parser parser = new Parser();
-        parser.parseInput(":matches)","li");
+        parser.parseInput("bgsound",":matches'");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6690,9 +20445,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput16468729443() {
+    public void testParserparseInput9023376573() {
         Parser parser = new Parser();
-        parser.parseInput(":matchesOwn(","*");
+        parser.parseInput("xml","selecu");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6711,9 +20466,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput1137997754() {
+    public void testParserparseInput8103173014() {
         Parser parser = new Parser();
-        parser.parseInput("svf","text.");
+        parser.parseInput(":matchTexs","https");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6732,9 +20487,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput1197730() {
+    public void testParserparseInput15368928030() {
         Parser parser = new Parser();
-        parser.parseInput((Reader) null,"xmq");
+        parser.parseInput((Reader) null,"checkbow");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6753,9 +20508,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput567602651() {
+    public void testParserparseInput23861() {
         Parser parser = new Parser();
-        parser.parseInput((Reader) null,":has(");
+        parser.parseInput((Reader) null,"*{");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6774,9 +20529,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput996502() {
+    public void testParserparseInput33489342() {
         Parser parser = new Parser();
-        parser.parseInput((Reader) null,"com");
+        parser.parseInput((Reader) null,"meta");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6795,9 +20550,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput1082715473() {
+    public void testParserparseInput35765723() {
         Parser parser = new Parser();
-        parser.parseInput((Reader) null,"radin");
+        parser.parseInput((Reader) null,"typf");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6816,9 +20571,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput46584() {
+    public void testParserparseInput358808504() {
         Parser parser = new Parser();
-        parser.parseInput((Reader) null,"te");
+        parser.parseInput((Reader) null,"#texu");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6837,9 +20592,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput10401885910() {
+    public void testParserparseFragmentInput11916023780() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("nobs",(Element) null,"--");
+        parser.parseFragmentInput("select",(Element) null,"tc");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6858,9 +20613,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput1338862791() {
+    public void testParserparseFragmentInput18677219591() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("http:.",(Element) null,"^<");
+        parser.parseFragmentInput("^",(Element) null,"[a-zA-Z_:][-a-zA-Z0-9_:.])");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6879,9 +20634,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput6750618772() {
+    public void testParserparseFragmentInput61626712() {
         Parser parser = new Parser();
-        parser.parseFragmentInput(":emptz",(Element) null,"imf");
+        parser.parseFragmentInput("h1",(Element) null,"abs9");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6900,9 +20655,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput13722043() {
+    public void testParserparseFragmentInput15005360383() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("metb",(Element) null,":contains(");
+        parser.parseFragmentInput("colgroup",(Element) null,"lh");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -6921,9 +20676,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput1872662284() {
+    public void testParserparseFragmentInput11632030264() {
         Parser parser = new Parser();
-        parser.parseFragmentInput("#texs",(Element) null,":last-chilc");
+        parser.parseFragmentInput("body",(Element) null,"DOCTYPD");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7257,9 +21012,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors11141430() {
+    public void testParsersetTrackErrors11142420() {
         Parser parser = new Parser();
-        parser.setTrackErrors(1114112);
+        parser.setTrackErrors(1114211);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7278,9 +21033,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors4321() {
+    public void testParsersetTrackErrors573731() {
         Parser parser = new Parser();
-        parser.setTrackErrors(401);
+        parser.setTrackErrors(57342);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7299,51 +21054,51 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors553282() {
+    public void testParsersetTrackErrors11142422() {
+        Parser parser = new Parser();
+        parser.setTrackErrors(1114211);
+        assertTrue(parser.equals(parser));
+        try {
+            parser.equals(parser);
+        } catch (Exception e) {
+            fail("parser.equals(parser) throws an exception");
+        }
+        try {
+            parser.hashCode();
+        } catch (Exception e) {
+            fail("parser.hashCode() throws an exception");
+        }
+        try {
+            parser.toString();
+        } catch (Exception e) {
+            fail("parser.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testParsersetTrackErrors2713() {
+        Parser parser = new Parser();
+        parser.setTrackErrors(240);
+        assertTrue(parser.equals(parser));
+        try {
+            parser.equals(parser);
+        } catch (Exception e) {
+            fail("parser.equals(parser) throws an exception");
+        }
+        try {
+            parser.hashCode();
+        } catch (Exception e) {
+            fail("parser.hashCode() throws an exception");
+        }
+        try {
+            parser.toString();
+        } catch (Exception e) {
+            fail("parser.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testParsersetTrackErrors553284() {
         Parser parser = new Parser();
         parser.setTrackErrors(55297);
-        assertTrue(parser.equals(parser));
-        try {
-            parser.equals(parser);
-        } catch (Exception e) {
-            fail("parser.equals(parser) throws an exception");
-        }
-        try {
-            parser.hashCode();
-        } catch (Exception e) {
-            fail("parser.hashCode() throws an exception");
-        }
-        try {
-            parser.toString();
-        } catch (Exception e) {
-            fail("parser.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testParsersetTrackErrors553273() {
-        Parser parser = new Parser();
-        parser.setTrackErrors(55296);
-        assertTrue(parser.equals(parser));
-        try {
-            parser.equals(parser);
-        } catch (Exception e) {
-            fail("parser.equals(parser) throws an exception");
-        }
-        try {
-            parser.hashCode();
-        } catch (Exception e) {
-            fail("parser.hashCode() throws an exception");
-        }
-        try {
-            parser.toString();
-        } catch (Exception e) {
-            fail("parser.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testParsersetTrackErrors553274() {
-        Parser parser = new Parser();
-        parser.setTrackErrors(55296);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7677,9 +21432,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse12143142910() {
+    public void testParserparse19221466280() {
         Parser parser = new Parser();
-        parser.parse(":containsOwn'",":alk");
+        parser.parse(":gt'",":containsOwn(");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7698,9 +21453,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse5316369221() {
+    public void testParserparse12426083451() {
         Parser parser = new Parser();
-        parser.parse("[a-zA-Z_:][-a-zA-Z0-9_:.]*","checkbow");
+        parser.parse("http:.","*>");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7719,9 +21474,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse17560844932() {
+    public void testParserparse12276339912() {
         Parser parser = new Parser();
-        parser.parse("colgrouo","namd");
+        parser.parse("bodx","templatd");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7740,9 +21495,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse15594274343() {
+    public void testParserparse926183263() {
         Parser parser = new Parser();
-        parser.parse(":first-chile","image");
+        parser.parse("abs;","~<");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7761,9 +21516,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse20928180014() {
+    public void testParserparse20919152604() {
         Parser parser = new Parser();
-        parser.parse("type","isindex");
+        parser.parse("*}",":only-chile");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7782,9 +21537,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment28878470() {
+    public void testParserparseFragment14986970780() {
         Parser parser = new Parser();
-        parser.parseFragment("^<",(Element) null,"*");
+        parser.parseFragment("command",(Element) null,"--");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7803,9 +21558,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment20914245481() {
+    public void testParserparseFragment13673372011() {
         Parser parser = new Parser();
-        parser.parseFragment("^",(Element) null,"isindew");
+        parser.parseFragment("htto",(Element) null,"bgsounc");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7824,9 +21579,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment10062723142() {
+    public void testParserparseFragment5568774182() {
         Parser parser = new Parser();
-        parser.parseFragment("plaintext",(Element) null,"iframe");
+        parser.parseFragment(":matchText",(Element) null,"tg");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7845,9 +21600,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment69732843() {
+    public void testParserparseFragment10005786953() {
         Parser parser = new Parser();
-        parser.parseFragment("ti",(Element) null,"nobq");
+        parser.parseFragment(":has(",(Element) null,":nth-child)");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7866,9 +21621,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment20160789364() {
+    public void testParserparseFragment3570774724() {
         Parser parser = new Parser();
-        parser.parseFragment("forn",(Element) null,"optiom");
+        parser.parseFragment("bgsound",(Element) null,"xml");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7887,9 +21642,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment17759387170() {
+    public void testParserparseFragment18250841070() {
         Parser parser = new Parser();
-        parser.parseFragment("tablf",(Element) null,"tablf",(ParseErrorList) null);
+        parser.parseFragment(":first-chile",(Element) null,"styld",(ParseErrorList) null);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7908,9 +21663,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment14824680761() {
+    public void testParserparseFragment19162119511() {
         Parser parser = new Parser();
-        parser.parseFragment("boundary",(Element) null,"svf",(ParseErrorList) null);
+        parser.parseFragment("mati",(Element) null,"checked",(ParseErrorList) null);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7929,9 +21684,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment7478987402() {
+    public void testParserparseFragment1279654012() {
         Parser parser = new Parser();
-        parser.parseFragment("imagf",(Element) null,"typd",(ParseErrorList) null);
+        parser.parseFragment("httpr",(Element) null,"ode",(ParseErrorList) null);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7950,9 +21705,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment21245588083() {
+    public void testParserparseFragment12812167353() {
         Parser parser = new Parser();
-        parser.parseFragment("nobs",(Element) null,":all",(ParseErrorList) null);
+        parser.parseFragment(":containsOwn'",(Element) null,":has(",(ParseErrorList) null);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7971,9 +21726,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment15067719184() {
+    public void testParserparseFragment11266303424() {
         Parser parser = new Parser();
-        parser.parseFragment(":only-chile",(Element) null,"typd",(ParseErrorList) null);
+        parser.parseFragment(":last-chilc",(Element) null,"h1",(ParseErrorList) null);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -7992,9 +21747,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment18100970350() {
+    public void testParserparseXmlFragment10762609900() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("basefons","</");
+        parser.parseXmlFragment("bs",":contains'");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8013,9 +21768,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment11491159461() {
+    public void testParserparseXmlFragment16082972921() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("optioo","inpuu");
+        parser.parseXmlFragment(":gt(","noscript");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8034,9 +21789,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment11625576312() {
+    public void testParserparseXmlFragment1016192() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("radio",":matchTexu");
+        parser.parseXmlFragment("de","*}");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8055,9 +21810,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment1037921213() {
+    public void testParserparseXmlFragment1083407583() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("metb","~<");
+        parser.parseXmlFragment("nobr","metb");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8076,9 +21831,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment3493715994() {
+    public void testParserparseXmlFragment34102034() {
         Parser parser = new Parser();
-        parser.parseXmlFragment("iframe","button");
+        parser.parseXmlFragment("odc","h0");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8097,9 +21852,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment32256910() {
+    public void testParserparseBodyFragment568027400() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("dd","even");
+        parser.parseBodyFragment(":eq)","xmk");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8118,9 +21873,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment2846651331() {
+    public void testParserparseBodyFragment36878441() {
         Parser parser = new Parser();
-        parser.parseBodyFragment(":nth-of-type)","hidden");
+        parser.parseBodyFragment("xmq","ts");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8139,9 +21894,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment15368985012() {
+    public void testParserparseBodyFragment16485632002() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("checked","h3");
+        parser.parseBodyFragment("US-ASCII","US-ASCIH");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8160,9 +21915,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment5460467263() {
+    public void testParserparseBodyFragment15700010433() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("frameses","$=");
+        parser.parseBodyFragment("noframet","thead");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8181,9 +21936,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment821057444() {
+    public void testParserparseBodyFragment21152113834() {
         Parser parser = new Parser();
-        parser.parseBodyFragment("iframf","frameses");
+        parser.parseBodyFragment("de","boundarx");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8202,9 +21957,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities8770200830() {
+    public void testParserunescapeEntities357960() {
         Parser parser = new Parser();
-        parser.unescapeEntities("text0",true);
+        parser.unescapeEntities("!=",true);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8223,9 +21978,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities28640811() {
+    public void testParserunescapeEntities51991() {
         Parser parser = new Parser();
-        parser.unescapeEntities("]]?",true);
+        parser.unescapeEntities("a",true);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8244,9 +21999,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities17691913812() {
+    public void testParserunescapeEntities11501471932() {
         Parser parser = new Parser();
-        parser.unescapeEntities(":roos",true);
+        parser.unescapeEntities("boundarx",true);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8265,9 +22020,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities11618014153() {
+    public void testParserunescapeEntities36853333() {
         Parser parser = new Parser();
-        parser.unescapeEntities("actioo",true);
+        parser.unescapeEntities("xmp",true);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8286,9 +22041,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities943864() {
+    public void testParserunescapeEntities9125970614() {
         Parser parser = new Parser();
-        parser.unescapeEntities("^<",true);
+        parser.unescapeEntities("hiddeo",true);
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8307,9 +22062,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed2657440790() {
+    public void testParserparseBodyFragmentRelaxed16926321460() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed(":containsOwn)","commane");
+        parser.parseBodyFragmentRelaxed("table","basefons");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8328,9 +22083,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed1922313011() {
+    public void testParserparseBodyFragmentRelaxed8702391821() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed("abs9","https");
+        parser.parseBodyFragmentRelaxed("titlf","htmk");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8349,9 +22104,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed598718972() {
+    public void testParserparseBodyFragmentRelaxed12896142222() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed(":gt(","evem");
+        parser.parseBodyFragmentRelaxed("even","noframes");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8370,9 +22125,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed1074885233() {
+    public void testParserparseBodyFragmentRelaxed17860872713() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed(":empty",":nth-last-child'");
+        parser.parseBodyFragmentRelaxed(":last-of-typf","scripu");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8391,9 +22146,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed7808619304() {
+    public void testParserparseBodyFragmentRelaxed587306254() {
         Parser parser = new Parser();
-        parser.parseBodyFragmentRelaxed("optgrouo","optiom");
+        parser.parseBodyFragmentRelaxed(":lt(",":lt(");
         assertTrue(parser.equals(parser));
         try {
             parser.equals(parser);
@@ -8832,9 +22587,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf601090() {
+    public void testTagvalueOf20460() {
         Tag tag = new Tag();
-        tag.valueOf("<0",(ParseSettings) null);
+        tag.valueOf("#",(ParseSettings) null);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8853,9 +22608,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1156921() {
+    public void testTagvalueOf8148937751() {
         Tag tag = new Tag();
-        tag.valueOf("ti",(ParseSettings) null);
+        tag.valueOf("keygem",(ParseSettings) null);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8874,9 +22629,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1088658002() {
+    public void testTagvalueOf17270593882() {
         Tag tag = new Tag();
-        tag.valueOf("rubx",(ParseSettings) null);
+        tag.valueOf("iframf",(ParseSettings) null);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8895,9 +22650,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf8784015873() {
+    public void testTagvalueOf6193703333() {
         Tag tag = new Tag();
-        tag.valueOf(":last-of-typf",(ParseSettings) null);
+        tag.valueOf(":containsData'",(ParseSettings) null);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8916,9 +22671,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf10407179634() {
+    public void testTagvalueOf11501483624() {
         Tag tag = new Tag();
-        tag.valueOf("plaintexs",(ParseSettings) null);
+        tag.valueOf("boundarz",(ParseSettings) null);
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8937,9 +22692,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf31840() {
+    public void testTagvalueOf1082706180() {
         Tag tag = new Tag();
-        tag.valueOf("bs");
+        tag.valueOf("radio");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8958,9 +22713,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf358296691() {
+    public void testTagvalueOf18690634821() {
         Tag tag = new Tag();
-        tag.valueOf("#roou");
+        tag.valueOf("sarcasl");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -8979,9 +22734,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf15451126492() {
+    public void testTagvalueOf14562253632() {
         Tag tag = new Tag();
-        tag.valueOf("deflatd");
+        tag.valueOf(":matches'");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9000,9 +22755,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf3081290273() {
+    public void testTagvalueOf996170353() {
         Tag tag = new Tag();
-        tag.valueOf(":last-chilc");
+        tag.valueOf("httpt");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9021,9 +22776,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf17480897444() {
+    public void testTagvalueOf18305284() {
         Tag tag = new Tag();
-        tag.valueOf("DOCTYPD");
+        tag.valueOf(":gt(");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9882,9 +23637,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag10032436870() {
+    public void testTagisKnownTag1143060() {
         Tag tag = new Tag();
-        tag.isKnownTag("textarea");
+        tag.isKnownTag("svf");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9903,9 +23658,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag9060216051() {
+    public void testTagisKnownTag18690634821() {
         Tag tag = new Tag();
-        tag.isKnownTag("select");
+        tag.isKnownTag("sarcasl");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9924,9 +23679,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag30062() {
+    public void testTagisKnownTag18678420522() {
         Tag tag = new Tag();
-        tag.isKnownTag("^=");
+        tag.isKnownTag("[a-zA-Z_:][-a-zA-Z0-9_:.]*");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9945,9 +23700,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag37263() {
+    public void testTagisKnownTag16449536123() {
         Tag tag = new Tag();
-        tag.isKnownTag("tc");
+        tag.isKnownTag("frameset");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -9966,9 +23721,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag923484() {
+    public void testTagisKnownTag15368918754() {
         Tag tag = new Tag();
-        tag.isKnownTag("]]=");
+        tag.isKnownTag("checkboy");
         assertTrue(tag.equals(tag));
         try {
             tag.equals(tag);
@@ -10617,9 +24372,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking11141430() {
+    public void testParseErrorListtracking573730() {
         ParseErrorList parseerrorlist = new ParseErrorList();
-        parseerrorlist.tracking(1114112);
+        parseerrorlist.tracking(57342);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
             parseerrorlist.equals(parseerrorlist);
@@ -10638,9 +24393,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking554271() {
+    public void testParseErrorListtracking2301() {
         ParseErrorList parseerrorlist = new ParseErrorList();
-        parseerrorlist.tracking(55396);
+        parseerrorlist.tracking(199);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
             parseerrorlist.equals(parseerrorlist);
@@ -10659,9 +24414,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking2222() {
+    public void testParseErrorListtracking692() {
         ParseErrorList parseerrorlist = new ParseErrorList();
-        parseerrorlist.tracking(191);
+        parseerrorlist.tracking(-100);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
             parseerrorlist.equals(parseerrorlist);
@@ -10680,9 +24435,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking1343() {
+    public void testParseErrorListtracking573733() {
         ParseErrorList parseerrorlist = new ParseErrorList();
-        parseerrorlist.tracking(103);
+        parseerrorlist.tracking(57342);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
             parseerrorlist.equals(parseerrorlist);
@@ -10701,9 +24456,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking2234() {
+    public void testParseErrorListtracking694() {
         ParseErrorList parseerrorlist = new ParseErrorList();
-        parseerrorlist.tracking(192);
+        parseerrorlist.tracking(-100);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
             parseerrorlist.equals(parseerrorlist);
@@ -11142,9 +24897,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo1230() {
+    public void testCharacterReaderconsumeTo890() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo('\\');
+        characterreader.consumeTo(':');
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11163,9 +24918,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo1421() {
+    public void testCharacterReaderconsumeTo1331() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo('o');
+        characterreader.consumeTo('f');
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11184,9 +24939,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo1002() {
+    public void testCharacterReaderconsumeTo1332() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo('E');
+        characterreader.consumeTo('f');
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11205,9 +24960,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo1243() {
+    public void testCharacterReaderconsumeTo743() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo(']');
+        characterreader.consumeTo('+');
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11226,9 +24981,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo924() {
+    public void testCharacterReaderconsumeTo884() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeTo('=');
+        characterreader.consumeTo('9');
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11247,7 +25002,70 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1010() {
+    public void testCharacterReaderconsumeToAny690() {
+        CharacterReader characterreader = new CharacterReader();
+        characterreader.consumeToAny('&');
+        assertTrue(characterreader.equals(characterreader));
+        try {
+            characterreader.equals(characterreader);
+        } catch (Exception e) {
+            fail("characterreader.equals(characterreader) throws an exception");
+        }
+        try {
+            characterreader.hashCode();
+        } catch (Exception e) {
+            fail("characterreader.hashCode() throws an exception");
+        }
+        try {
+            characterreader.toString();
+        } catch (Exception e) {
+            fail("characterreader.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCharacterReaderconsumeToAny691() {
+        CharacterReader characterreader = new CharacterReader();
+        characterreader.consumeToAny('&');
+        assertTrue(characterreader.equals(characterreader));
+        try {
+            characterreader.equals(characterreader);
+        } catch (Exception e) {
+            fail("characterreader.equals(characterreader) throws an exception");
+        }
+        try {
+            characterreader.hashCode();
+        } catch (Exception e) {
+            fail("characterreader.hashCode() throws an exception");
+        }
+        try {
+            characterreader.toString();
+        } catch (Exception e) {
+            fail("characterreader.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCharacterReaderconsumeToAny1532() {
+        CharacterReader characterreader = new CharacterReader();
+        characterreader.consumeToAny('z');
+        assertTrue(characterreader.equals(characterreader));
+        try {
+            characterreader.equals(characterreader);
+        } catch (Exception e) {
+            fail("characterreader.equals(characterreader) throws an exception");
+        }
+        try {
+            characterreader.hashCode();
+        } catch (Exception e) {
+            fail("characterreader.hashCode() throws an exception");
+        }
+        try {
+            characterreader.toString();
+        } catch (Exception e) {
+            fail("characterreader.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCharacterReaderconsumeToAny1013() {
         CharacterReader characterreader = new CharacterReader();
         characterreader.consumeToAny('F');
         assertTrue(characterreader.equals(characterreader));
@@ -11268,9 +25086,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny781() {
+    public void testCharacterReaderconsumeToAny1024() {
         CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny('/');
+        characterreader.consumeToAny('G');
         assertTrue(characterreader.equals(characterreader));
         try {
             characterreader.equals(characterreader);
@@ -11289,72 +25107,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny672() {
-        CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny('$');
-        assertTrue(characterreader.equals(characterreader));
-        try {
-            characterreader.equals(characterreader);
-        } catch (Exception e) {
-            fail("characterreader.equals(characterreader) throws an exception");
-        }
-        try {
-            characterreader.hashCode();
-        } catch (Exception e) {
-            fail("characterreader.hashCode() throws an exception");
-        }
-        try {
-            characterreader.toString();
-        } catch (Exception e) {
-            fail("characterreader.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testCharacterReaderconsumeToAny1263() {
-        CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny('_');
-        assertTrue(characterreader.equals(characterreader));
-        try {
-            characterreader.equals(characterreader);
-        } catch (Exception e) {
-            fail("characterreader.equals(characterreader) throws an exception");
-        }
-        try {
-            characterreader.hashCode();
-        } catch (Exception e) {
-            fail("characterreader.hashCode() throws an exception");
-        }
-        try {
-            characterreader.toString();
-        } catch (Exception e) {
-            fail("characterreader.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testCharacterReaderconsumeToAny914() {
-        CharacterReader characterreader = new CharacterReader();
-        characterreader.consumeToAny('<');
-        assertTrue(characterreader.equals(characterreader));
-        try {
-            characterreader.equals(characterreader);
-        } catch (Exception e) {
-            fail("characterreader.equals(characterreader) throws an exception");
-        }
-        try {
-            characterreader.hashCode();
-        } catch (Exception e) {
-            fail("characterreader.hashCode() throws an exception");
-        }
-        try {
-            characterreader.toString();
-        } catch (Exception e) {
-            fail("characterreader.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testDataUtilload10275930790() throws Exception {
+    public void testDataUtilload11806877510() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((File) null,"[CDATA[","bodx");
+        datautil.load((File) null,"inpus","forl");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11373,9 +25128,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload369091() throws Exception {
+    public void testDataUtilload976497811() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((File) null,"|","h2");
+        datautil.load((File) null,"forn","!<");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11394,9 +25149,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload9055222322() throws Exception {
+    public void testDataUtilload1036992152() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((File) null,"namf","option");
+        datautil.load((File) null,"mati","$=");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11415,9 +25170,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload19740850663() throws Exception {
+    public void testDataUtilload17767718383() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((File) null,"nobr","sarcasm");
+        datautil.load((File) null,":only-child",":only-chilc");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11436,9 +25191,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload97224054() throws Exception {
+    public void testDataUtilload6044583484() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((File) null,":matches(",":only-child");
+        datautil.load((File) null,":first-chile",":matchesOwn(");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11457,9 +25212,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload11154318790() throws Exception {
+    public void testDataUtilload2815252190() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"#texu","evem");
+        datautil.load((InputStream) null,"selecs",":first-of-type");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11478,9 +25233,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload1448931() throws Exception {
+    public void testDataUtilload21064234111() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"ts","=");
+        datautil.load((InputStream) null,"sarcasn","*{");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11499,9 +25254,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload3705805932() throws Exception {
+    public void testDataUtilload12601416232() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"htmk","disabled");
+        datautil.load((InputStream) null,"Set-Cookie","linj");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11520,9 +25275,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload6598993583() throws Exception {
+    public void testDataUtilload1985083053() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"text0","checkbow");
+        datautil.load((InputStream) null,"gzio","https");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11541,9 +25296,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload15402720604() throws Exception {
+    public void testDataUtilload18910533494() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"checkee","meta");
+        datautil.load((InputStream) null,"~>",":nth-of-type'");
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11562,9 +25317,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload7390856630() throws Exception {
+    public void testDataUtilload10881028250() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"namd","optgroup",(Parser) null);
+        datautil.load((InputStream) null,"com","inpuu",(Parser) null);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11583,9 +25338,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload9964135951() throws Exception {
+    public void testDataUtilload3687682121() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"*|",":contains'",(Parser) null);
+        datautil.load((InputStream) null,"tfoot",":not(",(Parser) null);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11604,9 +25359,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload7694222182() throws Exception {
+    public void testDataUtilload1577407132() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,":nth-last-child'","<0",(Parser) null);
+        datautil.load((InputStream) null,":nth-child'","template",(Parser) null);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11625,9 +25380,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload5647632413() throws Exception {
+    public void testDataUtilload5016913233() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"text/","template",(Parser) null);
+        datautil.load((InputStream) null,"com","isindew",(Parser) null);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11646,9 +25401,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload14085057654() throws Exception {
+    public void testDataUtilload1416118514() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.load((InputStream) null,"html","noframes",(Parser) null);
+        datautil.load((InputStream) null,"base","checked",(Parser) null);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11688,9 +25443,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer9601() throws Exception {
+    public void testDataUtilreadToByteBuffer562571() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.readToByteBuffer((InputStream) null,-1);
+        datautil.readToByteBuffer((InputStream) null,55296);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11709,9 +25464,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer14612() throws Exception {
+    public void testDataUtilreadToByteBuffer11852() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.readToByteBuffer((InputStream) null,500);
+        datautil.readToByteBuffer((InputStream) null,224);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11730,9 +25485,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer9653() throws Exception {
+    public void testDataUtilreadToByteBuffer10633() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.readToByteBuffer((InputStream) null,4);
+        datautil.readToByteBuffer((InputStream) null,102);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11751,9 +25506,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer563574() throws Exception {
+    public void testDataUtilreadToByteBuffer9644() throws Exception {
         DataUtil datautil = new DataUtil();
-        datautil.readToByteBuffer((InputStream) null,55396);
+        datautil.readToByteBuffer((InputStream) null,3);
         assertTrue(datautil.equals(datautil));
         try {
             datautil.equals(datautil);
@@ -11877,9 +25632,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull11346646210() {
+    public void testValidatenotNull33228120() {
         Validate validate = new Validate();
-        validate.notNull((Object) null,"keygeo");
+        validate.notNull((Object) null,"linl");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11898,9 +25653,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull1101167511() {
+    public void testValidatenotNull1108311() {
         Validate validate = new Validate();
-        validate.notNull((Object) null,"table");
+        validate.notNull((Object) null,"odc");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11919,9 +25674,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull33877932() {
+    public void testValidatenotNull10552() {
         Validate validate = new Validate();
-        validate.notNull((Object) null,"nobq");
+        validate.notNull((Object) null,"^");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11940,9 +25695,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull1103723763() {
+    public void testValidatenotNull20443() {
         Validate validate = new Validate();
-        validate.notNull((Object) null,"titld");
+        validate.notNull((Object) null,"!<");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -11961,9 +25716,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull19788920054() {
+    public void testValidatenotNull16183964914() {
         Validate validate = new Validate();
-        validate.notNull((Object) null,":containsOwn'");
+        validate.notNull((Object) null,":only-of-typf");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12087,9 +25842,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue1102954120() {
+    public void testValidateisTrue1103659900() {
         Validate validate = new Validate();
-        validate.isTrue(true,"text/");
+        validate.isTrue(true,"thead");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12108,9 +25863,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue423231() {
+    public void testValidateisTrue18691025741() {
         Validate validate = new Validate();
-        validate.isTrue(true,"de");
+        validate.isTrue(true,"sarcasm");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12129,9 +25884,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue430892() {
+    public void testValidateisTrue19803813742() {
         Validate validate = new Validate();
-        validate.isTrue(true,"~=");
+        validate.isTrue(true,"Set-Cookif");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12150,9 +25905,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue571097433() {
+    public void testValidateisTrue402063() {
         Validate validate = new Validate();
-        validate.isTrue(true,":roou");
+        validate.isTrue(true,"!=");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12171,9 +25926,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue423984() {
+    public void testValidateisTrue996561254() {
         Validate validate = new Validate();
-        validate.isTrue(true,"h4");
+        validate.isTrue(true,"https");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12297,9 +26052,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse996561240() {
+    public void testValidateisFalse20913435470() {
         Validate validate = new Validate();
-        validate.isFalse(true,"httpr");
+        validate.isFalse(true,"isindey");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12318,9 +26073,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse19732732881() {
+    public void testValidateisFalse428211() {
         Validate validate = new Validate();
-        validate.isFalse(true,"plaintexs");
+        validate.isFalse(true,"tg");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12339,28 +26094,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse410302() {
-        Validate validate = new Validate();
-        validate.isFalse(true,"<0");
-        assertTrue(validate.equals(validate));
-        try {
-            validate.equals(validate);
-        } catch (Exception e) {
-            fail("validate.equals(validate) throws an exception");
-        }
-        try {
-            validate.hashCode();
-        } catch (Exception e) {
-            fail("validate.hashCode() throws an exception");
-        }
-        try {
-            validate.toString();
-        } catch (Exception e) {
-            fail("validate.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testValidateisFalse34259543() {
+    public void testValidateisFalse34259542() {
         Validate validate = new Validate();
         validate.isFalse(true,"nobq");
         assertTrue(validate.equals(validate));
@@ -12381,9 +26115,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse34128284() {
+    public void testValidateisFalse11911753053() {
         Validate validate = new Validate();
-        validate.isFalse(true,"namd");
+        validate.isFalse(true,"iframf");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12402,9 +26136,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements267280800() {
+    public void testValidateisFalse19788538434() {
         Validate validate = new Validate();
-        validate.noNullElements(new Object[]{});
+        validate.isFalse(true,":containsOwn(");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12423,28 +26157,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements10767707791() {
-        Validate validate = new Validate();
-        validate.noNullElements(new Object[]{});
-        assertTrue(validate.equals(validate));
-        try {
-            validate.equals(validate);
-        } catch (Exception e) {
-            fail("validate.equals(validate) throws an exception");
-        }
-        try {
-            validate.hashCode();
-        } catch (Exception e) {
-            fail("validate.hashCode() throws an exception");
-        }
-        try {
-            validate.toString();
-        } catch (Exception e) {
-            fail("validate.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testValidatenoNullElements20414165262() {
+    public void testValidatenoNullElements3639881600() {
         Validate validate = new Validate();
         validate.noNullElements(new Object[]{});
         assertTrue(validate.equals(validate));
@@ -12465,7 +26178,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements5028009753() {
+    public void testValidatenoNullElements19979632221() {
         Validate validate = new Validate();
         validate.noNullElements(new Object[]{});
         assertTrue(validate.equals(validate));
@@ -12486,7 +26199,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements5769368954() {
+    public void testValidatenoNullElements5349062792() {
         Validate validate = new Validate();
         validate.noNullElements(new Object[]{});
         assertTrue(validate.equals(validate));
@@ -12507,9 +26220,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements16840431770() {
+    public void testValidatenoNullElements18266997153() {
         Validate validate = new Validate();
-        validate.noNullElements(new Object[]{},"ds");
+        validate.noNullElements(new Object[]{});
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12528,9 +26241,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements8491034601() {
+    public void testValidatenoNullElements17691933964() {
         Validate validate = new Validate();
-        validate.noNullElements(new Object[]{},"^<");
+        validate.noNullElements(new Object[]{});
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12549,9 +26262,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements10599036512() {
+    public void testValidatenoNullElements8413354830() {
         Validate validate = new Validate();
-        validate.noNullElements(new Object[]{},"noframes");
+        validate.noNullElements(new Object[]{},":contains(");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12570,9 +26283,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements2704102993() {
+    public void testValidatenoNullElements8254433981() {
         Validate validate = new Validate();
-        validate.noNullElements(new Object[]{},"br");
+        validate.noNullElements(new Object[]{},"body");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12591,9 +26304,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements11903865754() {
+    public void testValidatenoNullElements6458747542() {
         Validate validate = new Validate();
-        validate.noNullElements(new Object[]{},"$>");
+        validate.noNullElements(new Object[]{},":only-chilc");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12612,9 +26325,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty14700() {
+    public void testValidatenoNullElements21070170033() {
         Validate validate = new Validate();
-        validate.notEmpty("-,");
+        validate.noNullElements(new Object[]{},":contains(");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12633,9 +26346,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty35367461() {
+    public void testValidatenoNullElements12985519424() {
         Validate validate = new Validate();
-        validate.notEmpty("spao");
+        validate.noNullElements(new Object[]{},"noembed");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12654,9 +26367,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty14722() {
+    public void testValidatenotEmpty9060216050() {
         Validate validate = new Validate();
-        validate.notEmpty("-.");
+        validate.notEmpty("select");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12675,9 +26388,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty29875583() {
+    public void testValidatenotEmpty1650854871() {
         Validate validate = new Validate();
-        validate.notEmpty("abs9");
+        validate.notEmpty("http-equiw");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12696,9 +26409,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty17571249774() {
+    public void testValidatenotEmpty1143062() {
         Validate validate = new Validate();
-        validate.notEmpty(":emptx");
+        validate.notEmpty("svf");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12717,9 +26430,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty17527139400() {
+    public void testValidatenotEmpty31984633() {
         Validate validate = new Validate();
-        validate.notEmpty("colgrouo","bs");
+        validate.notEmpty("head");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12738,9 +26451,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty807386701() {
+    public void testValidatenotEmpty31984644() {
         Validate validate = new Validate();
-        validate.notEmpty("!<","optgroup");
+        validate.notEmpty("heae");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12759,9 +26472,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty8783976212() {
+    public void testValidatenotEmpty20684144570() {
         Validate validate = new Validate();
-        validate.notEmpty(":last-of-typf","~<");
+        validate.notEmpty("[a-zA-Z_:][-a-zA-Z0-9_:.]+","svg");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12780,9 +26493,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty16769392253() {
+    public void testValidatenotEmpty288658901() {
         Validate validate = new Validate();
-        validate.notEmpty("action",":matches'");
+        validate.notEmpty("span","optgrouo");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12801,9 +26514,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty36841934() {
+    public void testValidatenotEmpty18856717312() {
         Validate validate = new Validate();
-        validate.notEmpty("xmp","[");
+        validate.notEmpty("optiom","colgrouq");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12822,9 +26535,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail33040() {
+    public void testValidatenotEmpty15522917863() {
         Validate validate = new Validate();
-        validate.fail("h1");
+        validate.notEmpty("thead","[a-zA-Z_:][-a-zA-Z0-9_:.]*");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12843,9 +26556,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail1103268991() {
+    public void testValidatenotEmpty1036324() {
         Validate validate = new Validate();
-        validate.fail("thead");
+        validate.notEmpty("h5","!=");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12864,9 +26577,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail11414281682() {
+    public void testValidatefail30070() {
         Validate validate = new Validate();
-        validate.fail("[CDATA[");
+        validate.fail("^>");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12885,9 +26598,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail1097804313() {
+    public void testValidatefail12269462991() {
         Validate validate = new Validate();
-        validate.fail("styld");
+        validate.fail(":containsData)");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12906,9 +26619,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail39974() {
+    public void testValidatefail712() {
         Validate validate = new Validate();
-        validate.fail("~<");
+        validate.fail("(");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -12927,9 +26640,51 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect807731740() {
+    public void testValidatefail31891133() {
+        Validate validate = new Validate();
+        validate.fail("gzip");
+        assertTrue(validate.equals(validate));
+        try {
+            validate.equals(validate);
+        } catch (Exception e) {
+            fail("validate.equals(validate) throws an exception");
+        }
+        try {
+            validate.hashCode();
+        } catch (Exception e) {
+            fail("validate.hashCode() throws an exception");
+        }
+        try {
+            validate.toString();
+        } catch (Exception e) {
+            fail("validate.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testValidatefail19394() {
+        Validate validate = new Validate();
+        validate.fail("<0");
+        assertTrue(validate.equals(validate));
+        try {
+            validate.equals(validate);
+        } catch (Exception e) {
+            fail("validate.equals(validate) throws an exception");
+        }
+        try {
+            validate.hashCode();
+        } catch (Exception e) {
+            fail("validate.hashCode() throws an exception");
+        }
+        try {
+            validate.toString();
+        } catch (Exception e) {
+            fail("validate.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectionconnect5525734460() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("optgrouo");
+        httpconnection.connect("captioo");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -12948,9 +26703,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect13776877281() {
+    public void testHttpConnectionconnect358296681() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("buttom");
+        httpconnection.connect("#root");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -12969,9 +26724,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect31842() {
+    public void testHttpConnectionconnect19732341982() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("bs");
+        httpconnection.connect("plaintext");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -12990,9 +26745,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect567593363() {
+    public void testHttpConnectionconnect3081290273() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect(":has)");
+        httpconnection.connect(":last-chilc");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13011,9 +26766,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect16449536114() {
+    public void testHttpConnectionconnect1101578784() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.connect("frameseu");
+        httpconnection.connect("tbodz");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13242,9 +26997,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl569515650() {
+    public void testHttpConnectionurl33090() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url(":not'");
+        httpconnection.url("h6");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13263,9 +27018,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl1605222301() {
+    public void testHttpConnectionurl1188371() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("bgsoune");
+        httpconnection.url("xmk");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13284,9 +27039,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl11927218622() {
+    public void testHttpConnectionurl21153115422() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("noframes");
+        httpconnection.url("boundarz");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13305,9 +27060,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl1857353263() {
+    public void testHttpConnectionurl37303() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("US-ASCIJ");
+        httpconnection.url("tg");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13326,9 +27081,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl17480897424() {
+    public void testHttpConnectionurl19374() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.url("DOCTYPF");
+        httpconnection.url("<.");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13452,9 +27207,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy11852497480() {
+    public void testHttpConnectionproxy11107198410() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("image",102);
+        httpconnection.proxy("#roou",102);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13473,9 +27228,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy1006571() {
+    public void testHttpConnectionproxy999766831() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("dt",0);
+        httpconnection.proxy("gzio",1114211);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13494,9 +27249,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy434062() {
+    public void testHttpConnectionproxy44322() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("*=",192);
+        httpconnection.proxy("p",-1);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13515,9 +27270,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy968926143() {
+    public void testHttpConnectionproxy600503() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("eveo",192);
+        httpconnection.proxy("<.",3);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13536,9 +27291,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy19817283644() {
+    public void testHttpConnectionproxy13693450004() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.proxy("templatd",4);
+        httpconnection.proxy(":only-of-type",192);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13557,9 +27312,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent1099010() {
+    public void testHttpConnectionuserAgent26152050() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("odc");
+        httpconnection.userAgent("UTF-");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13578,9 +27333,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent30294401() {
+    public void testHttpConnectionuserAgent2709408261() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("bodx");
+        httpconnection.userAgent("disablec");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13599,9 +27354,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent6361976022() {
+    public void testHttpConnectionuserAgent16449536132() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("colgroup");
+        httpconnection.userAgent("frameses");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13620,9 +27375,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent37273() {
+    public void testHttpConnectionuserAgent10032436873() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("td");
+        httpconnection.userAgent("textarea");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13641,9 +27396,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent31844() {
+    public void testHttpConnectionuserAgent19732341984() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.userAgent("bs");
+        httpconnection.userAgent("plaintext");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13662,9 +27417,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout2550() {
+    public void testHttpConnectiontimeout1320() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.timeout(224);
+        httpconnection.timeout(101);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13683,9 +27438,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout331() {
+    public void testHttpConnectiontimeout573731() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.timeout(2);
+        httpconnection.timeout(57342);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13704,9 +27459,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout573742() {
+    public void testHttpConnectiontimeout2232() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.timeout(57343);
+        httpconnection.timeout(192);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13725,9 +27480,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout303() {
+    public void testHttpConnectiontimeout2303() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.timeout(-1);
+        httpconnection.timeout(199);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13746,9 +27501,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout1334() {
+    public void testHttpConnectiontimeout5314() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.timeout(102);
+        httpconnection.timeout(500);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13767,9 +27522,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize573730() {
+    public void testHttpConnectionmaxBodySize350() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.maxBodySize(57342);
+        httpconnection.maxBodySize(4);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13788,9 +27543,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize1331() {
+    public void testHttpConnectionmaxBodySize2221() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.maxBodySize(102);
+        httpconnection.maxBodySize(191);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13809,9 +27564,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize11142422() {
+    public void testHttpConnectionmaxBodySize682() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.maxBodySize(1114211);
+        httpconnection.maxBodySize(-99);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13830,30 +27585,30 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize1313() {
+    public void testHttpConnectionmaxBodySize5313() {
+        HttpConnection httpconnection = new HttpConnection();
+        httpconnection.maxBodySize(500);
+        assertTrue(httpconnection.equals(httpconnection));
+        try {
+            httpconnection.equals(httpconnection);
+        } catch (Exception e) {
+            fail("httpconnection.equals(httpconnection) throws an exception");
+        }
+        try {
+            httpconnection.hashCode();
+        } catch (Exception e) {
+            fail("httpconnection.hashCode() throws an exception");
+        }
+        try {
+            httpconnection.toString();
+        } catch (Exception e) {
+            fail("httpconnection.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testHttpConnectionmaxBodySize1314() {
         HttpConnection httpconnection = new HttpConnection();
         httpconnection.maxBodySize(100);
-        assertTrue(httpconnection.equals(httpconnection));
-        try {
-            httpconnection.equals(httpconnection);
-        } catch (Exception e) {
-            fail("httpconnection.equals(httpconnection) throws an exception");
-        }
-        try {
-            httpconnection.hashCode();
-        } catch (Exception e) {
-            fail("httpconnection.hashCode() throws an exception");
-        }
-        try {
-            httpconnection.toString();
-        } catch (Exception e) {
-            fail("httpconnection.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionmaxBodySize2234() {
-        HttpConnection httpconnection = new HttpConnection();
-        httpconnection.maxBodySize(192);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13977,9 +27732,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer29875600() {
+    public void testHttpConnectionreferrer1097804330() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("abs;");
+        httpconnection.referrer("stylf");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -13998,9 +27753,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer31490261() {
+    public void testHttpConnectionreferrer1003581221() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("forl");
+        httpconnection.referrer("inpuu");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14019,9 +27774,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer1082706182() {
+    public void testHttpConnectionreferrer33702() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("radio");
+        httpconnection.referrer("hs");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14040,9 +27795,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer30294403() {
+    public void testHttpConnectionreferrer29223() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("bodx");
+        httpconnection.referrer("\'");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14061,9 +27816,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer1605222314() {
+    public void testHttpConnectionreferrer21065455194() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.referrer("bgsound");
+        httpconnection.referrer(":last-of-typd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14397,9 +28152,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata14426219220() {
+    public void testHttpConnectiondata3470061650() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("titlf",":containsOwn'");
+        httpconnection.data(":has(",":last-of-typd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14418,9 +28173,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata996210181() {
+    public void testHttpConnectiondata997297751() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("htto","dd");
+        httpconnection.data("htmk","xmm");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14439,9 +28194,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata16279133592() {
+    public void testHttpConnectiondata20685268882() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("US-ASCII","http-equiw");
+        httpconnection.data("[a-zA-Z_:][-a-zA-Z0-9_:.])","</");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14460,9 +28215,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata21099048653() {
+    public void testHttpConnectiondata15367572273() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("sarcasl","rubz");
+        httpconnection.data(":matchesOwn'","table");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14481,9 +28236,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9385781064() {
+    public void testHttpConnectiondata31031574() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("radin","?");
+        httpconnection.data("tg","abs9");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14607,9 +28362,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata13334400070() {
+    public void testHttpConnectiondata7628190190() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("command","US-ASCIJ",(InputStream) null);
+        httpconnection.data("xml","text.",(InputStream) null);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14628,9 +28383,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9723589311() {
+    public void testHttpConnectiondata13961752141() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("matg","rubx",(InputStream) null);
+        httpconnection.data("basd","=",(InputStream) null);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14649,9 +28404,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9962088602() {
+    public void testHttpConnectiondata8111632242() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("gziq","[a-zA-Z_:][-a-zA-Z0-9_:.]+",(InputStream) null);
+        httpconnection.data("isindex","#texs",(InputStream) null);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14670,9 +28425,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata888479223() {
+    public void testHttpConnectiondata38004143() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("]]=","h2",(InputStream) null);
+        httpconnection.data("[","xmq",(InputStream) null);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14691,9 +28446,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata1242311414() {
+    public void testHttpConnectiondata16784664854() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":matches)","commanc",(InputStream) null);
+        httpconnection.data("</","noframes",(InputStream) null);
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14712,9 +28467,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata35367460() {
+    public void testHttpConnectiondata5525734440() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("spao");
+        httpconnection.data("captiom");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14733,9 +28488,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9503947291() {
+    public void testHttpConnectiondata1101578761() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("commanc");
+        httpconnection.data("tbodx");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14754,9 +28509,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata26152062() {
+    public void testHttpConnectiondata11142() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("UTF.");
+        httpconnection.data("!<");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14775,9 +28530,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata35756413() {
+    public void testHttpConnectiondata569515673() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("type");
+        httpconnection.data(":not)");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14796,9 +28551,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata33737374() {
+    public void testHttpConnectiondata31984624() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("namd");
+        httpconnection.data("heac");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14817,9 +28572,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata21065455180() {
+    public void testHttpConnectiondata29875580() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":last-of-type");
+        httpconnection.data("abs9");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14838,9 +28593,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata10176250981() {
+    public void testHttpConnectiondata16183955611() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":nth-last-of-type)");
+        httpconnection.data(":only-of-typf");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14859,9 +28614,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata37272() {
+    public void testHttpConnectiondata21153115422() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("td");
+        httpconnection.data("boundarz");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14880,9 +28635,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata11346655523() {
+    public void testHttpConnectiondata26152043() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("keygen");
+        httpconnection.data("UTF,");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -14901,9 +28656,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata17571249784() {
+    public void testHttpConnectiondata16183955594() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":empty");
+        httpconnection.data(":only-of-typd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15027,9 +28782,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata31255610() {
+    public void testHttpConnectiondata35367450() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("even");
+        httpconnection.data("span");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15048,9 +28803,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata3081290261() {
+    public void testHttpConnectiondata1102563211() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":last-child");
+        httpconnection.data("text/");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15069,9 +28824,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata33868642() {
+    public void testHttpConnectiondata33441682() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data("nobr");
+        httpconnection.data("mati");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15090,9 +28845,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata18245813() {
+    public void testHttpConnectiondata10761623193() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":alk");
+        httpconnection.data(":contains)");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15111,9 +28866,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata14562253634() {
+    public void testHttpConnectiondata19732341994() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.data(":matches'");
+        httpconnection.data("plaintexu");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15132,9 +28887,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody1188370() {
+    public void testHttpConnectionrequestBody20919604280() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("xmk");
+        httpconnection.requestBody(":only-child");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15153,9 +28908,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody17480897421() {
+    public void testHttpConnectionrequestBody1103268981() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("DOCTYPF");
+        httpconnection.requestBody("theac");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15174,9 +28929,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody32134802() {
+    public void testHttpConnectionrequestBody30072() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("httq");
+        httpconnection.requestBody("^>");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15195,9 +28950,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody33693() {
+    public void testHttpConnectionrequestBody13215466003() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("hr");
+        httpconnection.requestBody("templatd");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15216,9 +28971,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody19374() {
+    public void testHttpConnectionrequestBody1605222324() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.requestBody("<.");
+        httpconnection.requestBody("bgsounc");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15237,9 +28992,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader2665947100() {
+    public void testHttpConnectionheader1604235590() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header("thead","[CDATA[");
+        httpconnection.header("bs","bgsounc");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15258,9 +29013,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader6029971471() {
+    public void testHttpConnectionheader1500181() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header("frameseu",":not)");
+        httpconnection.header("-.","imf");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15279,9 +29034,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader991524302() {
+    public void testHttpConnectionheader18911461002() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header("heae",".");
+        httpconnection.header("<.",":nth-of-type(");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15300,9 +29055,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader6227183373() {
+    public void testHttpConnectionheader18789706143() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header(":containsData(","meta");
+        httpconnection.header(":roou","stylf");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15321,9 +29076,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader13495346154() {
+    public void testHttpConnectionheader8734512314() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.header("colgrouq","noframet");
+        httpconnection.header("titlf","$=");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15342,9 +29097,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders2709408280() {
+    public void testHttpConnectionheaders29875580() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.headers("disablee");
+        httpconnection.headers("abs9");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15363,9 +29118,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders32461() {
+    public void testHttpConnectionheaders1281() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.headers("ds");
+        httpconnection.headers("a");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15384,9 +29139,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders14711890862() {
+    public void testHttpConnectionheaders1101578782() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.headers(":nth-last-child)");
+        httpconnection.headers("tbodz");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15405,9 +29160,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders16449536123() {
+    public void testHttpConnectionheaders33083() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.headers("frameset");
+        httpconnection.headers("h5");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15426,9 +29181,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders30294414() {
+    public void testHttpConnectionheaders1284() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.headers("body");
+        httpconnection.headers("a");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15447,9 +29202,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie32506760() {
+    public void testHttpConnectioncookie33028710() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie("$=","htmm");
+        httpconnection.cookie("hr","head");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15468,9 +29223,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie11107197121() {
+    public void testHttpConnectioncookie11311220661() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie("#roos","#");
+        httpconnection.cookie("svg","keygen");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15489,9 +29244,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie568966562() {
+    public void testHttpConnectioncookie5325930232() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie(":lt'","*>");
+        httpconnection.cookie(":has'",":containsData(");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15510,9 +29265,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie5483054563() {
+    public void testHttpConnectioncookie8519494233() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie("disablee","charset");
+        httpconnection.cookie(":last-child","tablf");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15531,9 +29286,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie18758253824() {
+    public void testHttpConnectioncookie17909564914() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookie(":not'","theac");
+        httpconnection.cookie(":only-of-typd","keygeo");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15552,9 +29307,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies2709408270() {
+    public void testHttpConnectioncookies1099030() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookies("disabled");
+        httpconnection.cookies("ode");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15573,9 +29328,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies1101158201() {
+    public void testHttpConnectioncookies1650854871() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookies("tabld");
+        httpconnection.cookies("http-equiw");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15594,9 +29349,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies33062() {
+    public void testHttpConnectioncookies1857353262() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookies("h3");
+        httpconnection.cookies("US-ASCIJ");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15615,9 +29370,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies19383() {
+    public void testHttpConnectioncookies35118023() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookies("</");
+        httpconnection.cookies("rubz");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -15636,9 +29391,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies32134794() {
+    public void testHttpConnectioncookies1102563204() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.cookies("http");
+        httpconnection.cookies("text.");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16497,9 +30252,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset20919604270() {
+    public void testHttpConnectionpostDataCharset20919604280() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset(":only-chile");
+        httpconnection.postDataCharset(":only-child");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16518,9 +30273,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset2709408271() {
+    public void testHttpConnectionpostDataCharset14581() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("disabled");
+        httpconnection.postDataCharset("*}");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16539,9 +30294,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset1097804332() {
+    public void testHttpConnectionpostDataCharset1101578772() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("stylf");
+        httpconnection.postDataCharset("tbody");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16560,9 +30315,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset11153() {
+    public void testHttpConnectionpostDataCharset33480043() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("!=");
+        httpconnection.postDataCharset("meta");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -16581,9 +30336,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset35756404() {
+    public void testHttpConnectionpostDataCharset18285144() {
         HttpConnection httpconnection = new HttpConnection();
-        httpconnection.postDataCharset("typd");
+        httpconnection.postDataCharset(":eq)");
         assertTrue(httpconnection.equals(httpconnection));
         try {
             httpconnection.equals(httpconnection);
@@ -17148,28 +30903,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1261() {
-        TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst('_');
-        assertTrue(tokenqueue.equals(tokenqueue));
-        try {
-            tokenqueue.equals(tokenqueue);
-        } catch (Exception e) {
-            fail("tokenqueue.equals(tokenqueue) throws an exception");
-        }
-        try {
-            tokenqueue.hashCode();
-        } catch (Exception e) {
-            fail("tokenqueue.hashCode() throws an exception");
-        }
-        try {
-            tokenqueue.toString();
-        } catch (Exception e) {
-            fail("tokenqueue.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testTokenQueueaddFirst672() {
+    public void testTokenQueueaddFirst671() {
         TokenQueue tokenqueue = new TokenQueue();
         tokenqueue.addFirst('$');
         assertTrue(tokenqueue.equals(tokenqueue));
@@ -17190,9 +30924,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst953() {
+    public void testTokenQueueaddFirst1422() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst('@');
+        tokenqueue.addFirst('o');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17211,9 +30945,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst924() {
+    public void testTokenQueueaddFirst1003() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst('=');
+        tokenqueue.addFirst('E');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17232,9 +30966,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst923490() {
+    public void testTokenQueueaddFirst1564() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("]]>");
+        tokenqueue.addFirst('}');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17253,9 +30987,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1103714481() {
+    public void testTokenQueueaddFirst11912143970() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("titlf");
+        tokenqueue.addFirst("iframe");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17274,9 +31008,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst31832() {
+    public void testTokenQueueaddFirst18678420531() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("br");
+        tokenqueue.addFirst("[a-zA-Z_:][-a-zA-Z0-9_:.])");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17295,9 +31029,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst14713() {
+    public void testTokenQueueaddFirst15451126492() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("--");
+        tokenqueue.addFirst("deflatd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17316,9 +31050,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1650854884() {
+    public void testTokenQueueaddFirst569515663() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.addFirst("http-equiv");
+        tokenqueue.addFirst(":not(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17337,9 +31071,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches1103714460() {
+    public void testTokenQueueaddFirst10176250974() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("titld");
+        tokenqueue.addFirst(":nth-last-of-type(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17358,9 +31092,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches9060216041() {
+    public void testTokenQueuematches18305290() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("selecu");
+        tokenqueue.matches(":gt)");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17379,9 +31113,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches20919604272() {
+    public void testTokenQueuematches2709408281() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches(":only-chile");
+        tokenqueue.matches("disablee");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17400,9 +31134,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches9076856533() {
+    public void testTokenQueuematches33032() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("scripu");
+        tokenqueue.matches("h0");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17421,9 +31155,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches1284() {
+    public void testTokenQueuematches17209582743() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matches("a");
+        tokenqueue.matches("basefons");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17442,9 +31176,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS11414281680() {
+    public void testTokenQueuematches32474() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS("[CDATA[");
+        tokenqueue.matches("dt");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17463,9 +31197,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS1082706171() {
+    public void testTokenQueuematchesCS10101369410() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS("radin");
+        tokenqueue.matchesCS("optiom");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17484,9 +31218,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS26152042() {
+    public void testTokenQueuematchesCS32461() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS("UTF,");
+        tokenqueue.matchesCS("ds");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17505,9 +31239,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS18305273() {
+    public void testTokenQueuematchesCS12068418922() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS(":gt'");
+        tokenqueue.matchesCS("http:/");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17526,9 +31260,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS21156131444() {
+    public void testTokenQueuematchesCS6361976033() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesCS("noembee");
+        tokenqueue.matchesCS("colgrouo");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17547,9 +31281,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny32134780() {
+    public void testTokenQueuematchesCS358296674() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("htto");
+        tokenqueue.matchesCS("#roos");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17568,9 +31302,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny18305291() {
+    public void testTokenQueuematchesAny6361976030() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny(":gt)");
+        tokenqueue.matchesAny("colgrouo");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17589,7 +31323,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1103268982() {
+    public void testTokenQueuematchesAny1103268981() {
         TokenQueue tokenqueue = new TokenQueue();
         tokenqueue.matchesAny("theac");
         assertTrue(tokenqueue.equals(tokenqueue));
@@ -17610,9 +31344,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny33693() {
+    public void testTokenQueuematchesAny1099022() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("hr");
+        tokenqueue.matchesAny("odd");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17631,9 +31365,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny32110814() {
+    public void testTokenQueuematchesAny1082706183() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("hree");
+        tokenqueue.matchesAny("radio");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17652,9 +31386,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny740() {
+    public void testTokenQueuematchesAny14574() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny('+');
+        tokenqueue.matchesAny("*|");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17673,9 +31407,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny701() {
+    public void testTokenQueuematchesAny1240() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny("'");
+        tokenqueue.matchesAny(']');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17694,9 +31428,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1022() {
+    public void testTokenQueuematchesAny881() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny('G');
+        tokenqueue.matchesAny('9');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17715,9 +31449,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1423() {
+    public void testTokenQueuematchesAny932() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny('o');
+        tokenqueue.matchesAny('>');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17736,9 +31470,30 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1214() {
+    public void testTokenQueuematchesAny793() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchesAny('Z');
+        tokenqueue.matchesAny('0');
+        assertTrue(tokenqueue.equals(tokenqueue));
+        try {
+            tokenqueue.equals(tokenqueue);
+        } catch (Exception e) {
+            fail("tokenqueue.equals(tokenqueue) throws an exception");
+        }
+        try {
+            tokenqueue.hashCode();
+        } catch (Exception e) {
+            fail("tokenqueue.hashCode() throws an exception");
+        }
+        try {
+            tokenqueue.toString();
+        } catch (Exception e) {
+            fail("tokenqueue.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTokenQueuematchesAny1014() {
+        TokenQueue tokenqueue = new TokenQueue();
+        tokenqueue.matchesAny('F');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17862,9 +31617,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp1605222320() {
+    public void testTokenQueuematchChomp16183955600() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("bgsounc");
+        tokenqueue.matchChomp(":only-of-type");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17883,9 +31638,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp19804204671() {
+    public void testTokenQueuematchChomp1101158201() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("Set-Cookid");
+        tokenqueue.matchChomp("tabld");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17904,9 +31659,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp33480042() {
+    public void testTokenQueuematchChomp19788929352() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("meta");
+        tokenqueue.matchChomp(":containsOwn'");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17925,9 +31680,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp923() {
+    public void testTokenQueuematchChomp32132573() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("=");
+        tokenqueue.matchChomp("htmk");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -17946,9 +31701,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp2709408264() {
+    public void testTokenQueuematchChomp11164() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.matchChomp("disablec");
+        tokenqueue.matchChomp("!>");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18387,9 +32142,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume900() {
+    public void testTokenQueueconsume996170350() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume(";");
+        tokenqueue.consume("httpt");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18408,9 +32163,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume1082706171() {
+    public void testTokenQueueconsume9060216061() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("radin");
+        tokenqueue.consume("selecs");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18429,9 +32184,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume26152052() {
+    public void testTokenQueueconsume17571249792() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("UTF-");
+        tokenqueue.consume(":emptz");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18450,9 +32205,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume33218823() {
+    public void testTokenQueueconsume2709408283() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("linl");
+        tokenqueue.consume("disablee");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18471,9 +32226,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume1857353284() {
+    public void testTokenQueueconsume15451126514() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consume("US-ASCIH");
+        tokenqueue.consume("deflatf");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18492,9 +32247,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo31984630() {
+    public void testTokenQueueconsumeTo1101578770() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("head");
+        tokenqueue.consumeTo("tbody");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18513,9 +32268,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo19788929351() {
+    public void testTokenQueueconsumeTo18690634821() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo(":containsOwn'");
+        tokenqueue.consumeTo("sarcasl");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18534,9 +32289,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo1188372() {
+    public void testTokenQueueconsumeTo16449536132() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("xmk");
+        tokenqueue.consumeTo("frameses");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18555,9 +32310,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo13215465993() {
+    public void testTokenQueueconsumeTo26152043() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("template");
+        tokenqueue.consumeTo("UTF,");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18576,9 +32331,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo7390744104() {
+    public void testTokenQueueconsumeTo35118004() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeTo("charses");
+        tokenqueue.consumeTo("rubx");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18597,9 +32352,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase21156131440() {
+    public void testTokenQueueconsumeToIgnoreCase17480897440() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("noembee");
+        tokenqueue.consumeToIgnoreCase("DOCTYPD");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18618,9 +32373,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase941() {
+    public void testTokenQueueconsumeToIgnoreCase19788929331() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("?");
+        tokenqueue.consumeToIgnoreCase(":containsOwn)");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18639,9 +32394,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase1044192() {
+    public void testTokenQueueconsumeToIgnoreCase9060216042() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("imh");
+        tokenqueue.consumeToIgnoreCase("selecu");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18660,9 +32415,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase10552537223() {
+    public void testTokenQueueconsumeToIgnoreCase1188433() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase(":matchesOwn(");
+        tokenqueue.consumeToIgnoreCase("xmq");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18681,9 +32436,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase1003581214() {
+    public void testTokenQueueconsumeToIgnoreCase14562253614() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToIgnoreCase("input");
+        tokenqueue.consumeToIgnoreCase(":matches)");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18702,9 +32457,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny13776877270() {
+    public void testTokenQueueconsumeToAny37320() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny("button");
+        tokenqueue.consumeToAny("ti");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18723,9 +32478,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny19381() {
+    public void testTokenQueueconsumeToAny1102773771() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny("</");
+        tokenqueue.consumeToAny("tfoot");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18744,9 +32499,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny19804204662() {
+    public void testTokenQueueconsumeToAny17480897432() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny("Set-Cookie");
+        tokenqueue.consumeToAny("DOCTYPE");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18765,9 +32520,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny903() {
+    public void testTokenQueueconsumeToAny16449536123() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny(";");
+        tokenqueue.consumeToAny("frameset");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18786,9 +32541,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny1082706194() {
+    public void testTokenQueueconsumeToAny33480034() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.consumeToAny("radip");
+        tokenqueue.consumeToAny("met`");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18807,9 +32562,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo13940() {
+    public void testTokenQueuechompTo923490() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("*=");
+        tokenqueue.chompTo("]]>");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18828,9 +32583,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo19804204661() {
+    public void testTokenQueuechompTo14571() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("Set-Cookie");
+        tokenqueue.chompTo("*|");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18849,9 +32604,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo19804204672() {
+    public void testTokenQueuechompTo1097804332() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("Set-Cookid");
+        tokenqueue.chompTo("stylf");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18870,9 +32625,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo9076856543() {
+    public void testTokenQueuechompTo663() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("script");
+        tokenqueue.chompTo("#");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18891,9 +32646,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo14714() {
+    public void testTokenQueuechompTo10761623174() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompTo("--");
+        tokenqueue.chompTo(":contains'");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18912,9 +32667,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase1082706190() {
+    public void testTokenQueuechompToIgnoreCase33080() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("radip");
+        tokenqueue.chompToIgnoreCase("h5");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18933,9 +32688,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase14581() {
+    public void testTokenQueuechompToIgnoreCase15451126511() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("*}");
+        tokenqueue.chompToIgnoreCase("deflatf");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18954,9 +32709,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase31842() {
+    public void testTokenQueuechompToIgnoreCase37262() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("bs");
+        tokenqueue.chompToIgnoreCase("tc");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18975,9 +32730,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase17571249783() {
+    public void testTokenQueuechompToIgnoreCase33441663() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase(":empty");
+        tokenqueue.chompToIgnoreCase("matg");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -18996,9 +32751,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase714() {
+    public void testTokenQueuechompToIgnoreCase16183955614() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompToIgnoreCase("(");
+        tokenqueue.chompToIgnoreCase(":only-of-typf");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19017,9 +32772,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced25400() {
+    public void testTokenQueuechompBalanced45120() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced('/','z');
+        tokenqueue.chompBalanced('q','0');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19038,9 +32793,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced28541() {
+    public void testTokenQueuechompBalanced44981() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced(':','_');
+        tokenqueue.chompBalanced('o','`');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19059,9 +32814,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced41612() {
+    public void testTokenQueuechompBalanced32222() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced('e','E');
+        tokenqueue.chompBalanced('E','z');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19080,9 +32835,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced31763() {
+    public void testTokenQueuechompBalanced41493() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced('F','-');
+        tokenqueue.chompBalanced('e','9');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19101,9 +32856,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced28234() {
+    public void testTokenQueuechompBalanced28204() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.chompBalanced(':','@');
+        tokenqueue.chompBalanced('9','\\');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19122,9 +32877,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape29875590() {
+    public void testTokenQueueunescape39980() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("abs:");
+        tokenqueue.unescape("~=");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19143,9 +32898,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape12068418921() {
+    public void testTokenQueueunescape5525734441() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("http:/");
+        tokenqueue.unescape("captiom");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19164,9 +32919,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape37412() {
+    public void testTokenQueueunescape2709408282() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("tr");
+        tokenqueue.unescape("disablee");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19185,9 +32940,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape1103268993() {
+    public void testTokenQueueunescape32323() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("thead");
+        tokenqueue.unescape("de");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -19206,9 +32961,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape13215466004() {
+    public void testTokenQueueunescape32304() {
         TokenQueue tokenqueue = new TokenQueue();
-        tokenqueue.unescape("templatd");
+        tokenqueue.unescape("dc");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -20172,9 +33927,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag21153115430() {
+    public void testParseSettingsnormalizeTag569515660() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("boundary");
+        parsesettings.normalizeTag(":not(");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20193,9 +33948,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag13215465981() {
+    public void testParseSettingsnormalizeTag807731741() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("templatf");
+        parsesettings.normalizeTag("optgrouo");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20214,9 +33969,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag1103268982() {
+    public void testParseSettingsnormalizeTag33218802() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("theac");
+        parsesettings.normalizeTag("linj");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20235,9 +33990,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag11163() {
+    public void testParseSettingsnormalizeTag358296693() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("!>");
+        parsesettings.normalizeTag("#roou");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20256,9 +34011,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag14229508264() {
+    public void testParseSettingsnormalizeTag37324() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeTag("actioo");
+        parsesettings.normalizeTag("ti");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20277,9 +34032,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute9060216050() {
+    public void testParseSettingsnormalizeAttribute21011357980() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute("select");
+        parsesettings.normalizeAttribute(":matchTexs");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20298,9 +34053,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute32461() {
+    public void testParseSettingsnormalizeAttribute14562253611() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute("ds");
+        parsesettings.normalizeAttribute(":matches)");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20319,9 +34074,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute27763632() {
+    public void testParseSettingsnormalizeAttribute37272() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute("\"\"");
+        parsesettings.normalizeAttribute("td");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20340,9 +34095,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute21153115433() {
+    public void testParseSettingsnormalizeAttribute12174874143() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute("boundary");
+        parsesettings.normalizeAttribute("hiddeo");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20361,9 +34116,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute10761623174() {
+    public void testParseSettingsnormalizeAttribute1003581214() {
         ParseSettings parsesettings = new ParseSettings();
-        parsesettings.normalizeAttribute(":contains'");
+        parsesettings.normalizeAttribute("input");
         assertTrue(parsesettings.equals(parsesettings));
         try {
             parsesettings.equals(parsesettings);
@@ -20592,9 +34347,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml12174874140() {
+    public void testCleanerisValidBodyHtml14560() {
         Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("hiddeo");
+        cleaner.isValidBodyHtml("*{");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -20613,9 +34368,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml1650854871() {
+    public void testCleanerisValidBodyHtml10761623191() {
         Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("http-equiw");
+        cleaner.isValidBodyHtml(":contains)");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -20634,51 +34389,51 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml32322() {
-        Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("de");
-        assertTrue(cleaner.equals(cleaner));
-        try {
-            cleaner.equals(cleaner);
-        } catch (Exception e) {
-            fail("cleaner.equals(cleaner) throws an exception");
-        }
-        try {
-            cleaner.hashCode();
-        } catch (Exception e) {
-            fail("cleaner.hashCode() throws an exception");
-        }
-        try {
-            cleaner.toString();
-        } catch (Exception e) {
-            fail("cleaner.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testCleanerisValidBodyHtml35367443() {
-        Cleaner cleaner = new Cleaner();
-        cleaner.isValidBodyHtml("spam");
-        assertTrue(cleaner.equals(cleaner));
-        try {
-            cleaner.equals(cleaner);
-        } catch (Exception e) {
-            fail("cleaner.equals(cleaner) throws an exception");
-        }
-        try {
-            cleaner.hashCode();
-        } catch (Exception e) {
-            fail("cleaner.hashCode() throws an exception");
-        }
-        try {
-            cleaner.toString();
-        } catch (Exception e) {
-            fail("cleaner.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testCleanerisValidBodyHtml1101158204() {
+    public void testCleanerisValidBodyHtml1101158202() {
         Cleaner cleaner = new Cleaner();
         cleaner.isValidBodyHtml("tabld");
+        assertTrue(cleaner.equals(cleaner));
+        try {
+            cleaner.equals(cleaner);
+        } catch (Exception e) {
+            fail("cleaner.equals(cleaner) throws an exception");
+        }
+        try {
+            cleaner.hashCode();
+        } catch (Exception e) {
+            fail("cleaner.hashCode() throws an exception");
+        }
+        try {
+            cleaner.toString();
+        } catch (Exception e) {
+            fail("cleaner.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCleanerisValidBodyHtml31255613() {
+        Cleaner cleaner = new Cleaner();
+        cleaner.isValidBodyHtml("even");
+        assertTrue(cleaner.equals(cleaner));
+        try {
+            cleaner.equals(cleaner);
+        } catch (Exception e) {
+            fail("cleaner.equals(cleaner) throws an exception");
+        }
+        try {
+            cleaner.hashCode();
+        } catch (Exception e) {
+            fail("cleaner.hashCode() throws an exception");
+        }
+        try {
+            cleaner.toString();
+        } catch (Exception e) {
+            fail("cleaner.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testCleanerisValidBodyHtml29875584() {
+        Cleaner cleaner = new Cleaner();
+        cleaner.isValidBodyHtml("abs9");
         assertTrue(cleaner.equals(cleaner));
         try {
             cleaner.equals(cleaner);
@@ -21222,9 +34977,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags358799200() {
+    public void testWhitelistaddTags35118020() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("#texu");
+        whitelist.addTags("rubz");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21243,9 +34998,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags20353119921() {
+    public void testWhitelistaddTags10101369401() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags(":first-of-type");
+        whitelist.addTags("option");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21264,9 +35019,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags30052() {
+    public void testWhitelistaddTags3081290252() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("^<");
+        whitelist.addTags(":last-chile");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21285,9 +35040,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags996170343() {
+    public void testWhitelistaddTags9060216053() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("https");
+        whitelist.addTags("select");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21306,9 +35061,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags1044174() {
+    public void testWhitelistaddTags1099014() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addTags("imf");
+        whitelist.addTags("odc");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21327,9 +35082,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags32132580() {
+    public void testWhitelistremoveTags29875590() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("html");
+        whitelist.removeTags("abs:");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21348,9 +35103,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags31255601() {
+    public void testWhitelistremoveTags1044171() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("evem");
+        whitelist.removeTags("imf");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21369,9 +35124,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags31255602() {
+    public void testWhitelistremoveTags6361976032() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("evem");
+        whitelist.removeTags("colgrouo");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21390,9 +35145,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags15451126493() {
+    public void testWhitelistremoveTags15515509563() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("deflatd");
+        whitelist.removeTags("noscripu");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21411,9 +35166,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags35756424() {
+    public void testWhitelistremoveTags15515509564() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeTags("typf");
+        whitelist.removeTags("noscripu");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21432,9 +35187,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes11491663300() {
+    public void testWhitelistaddAttributes8640696720() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("bodx",":matchesOwn'");
+        whitelist.addAttributes("disablee",":first-chilc");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21453,9 +35208,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes18232722411() {
+    public void testWhitelistaddAttributes16597372361() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("boundarx","templatd");
+        whitelist.addAttributes(":first-chilc","tc");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21474,9 +35229,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes34781472() {
+    public void testWhitelistaddAttributes3990115392() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("hr","namf");
+        whitelist.addAttributes("checkbox","ti");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21495,9 +35250,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes1104874183() {
+    public void testWhitelistaddAttributes996212173() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("ts","title");
+        whitelist.addAttributes("httq","hq");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21516,9 +35271,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes9076836384() {
+    public void testWhitelistaddAttributes11805214394() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addAttributes("#","scripu");
+        whitelist.addAttributes("inpus","mati");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21537,9 +35292,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes12458054140() {
+    public void testWhitelistremoveAttributes17302726160() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("http:.","heae");
+        whitelist.removeAttributes("iframf","htmm");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21558,9 +35313,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes2431779751() {
+    public void testWhitelistremoveAttributes11584546731() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("button",":alm");
+        whitelist.removeAttributes("actioo","meta");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21579,9 +35334,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes15053415992() {
+    public void testWhitelistremoveAttributes7745199612() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes(":nth-of-type'","gzip");
+        whitelist.removeAttributes("theae","image");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21600,9 +35355,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes1019287163() {
+    public void testWhitelistremoveAttributes16372533463() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("heae","\"\"");
+        whitelist.removeAttributes("checkee","inpus");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21621,9 +35376,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes21250409784() {
+    public void testWhitelistremoveAttributes9049946254() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeAttributes("deflatf",":nth-last-child'");
+        whitelist.removeAttributes(":last-chilc",":root");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21642,9 +35397,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute1316769700() {
+    public void testWhitelistaddEnforcedAttribute16213438450() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute("theac",":nth-last-of-type)","img");
+        whitelist.addEnforcedAttribute(";","]]=",":only-of-typd");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21663,9 +35418,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute5145255641() {
+    public void testWhitelistaddEnforcedAttribute743530181() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute(":emptx","^>","bgsoune");
+        whitelist.addEnforcedAttribute("li",":matches'","noembed");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21684,9 +35439,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute17564928582() {
+    public void testWhitelistaddEnforcedAttribute7339251792() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute("forl",":matchText","Set-Cookif");
+        whitelist.addEnforcedAttribute(":containsData'","checked","spam");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21705,9 +35460,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute21307297493() {
+    public void testWhitelistaddEnforcedAttribute7879426073() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute(":containsData'","[","tabld");
+        whitelist.addEnforcedAttribute(":empty","spam","metb");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21726,9 +35481,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute19948671674() {
+    public void testWhitelistaddEnforcedAttribute15421030114() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addEnforcedAttribute(":last-chilc","DOCTYPD","theac");
+        whitelist.addEnforcedAttribute("script","tq","keygem");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21747,9 +35502,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute16252975620() {
+    public void testWhitelistremoveEnforcedAttribute2490503360() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("US-ASCIJ","http:.");
+        whitelist.removeEnforcedAttribute(":only-of-type",":only-of-typd");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21768,9 +35523,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute2070082121() {
+    public void testWhitelistremoveEnforcedAttribute35464081() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("eveo","table");
+        whitelist.removeEnforcedAttribute("svg","\'");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21789,9 +35544,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute288658902() {
+    public void testWhitelistremoveEnforcedAttribute1375519562() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("span","optgrouo");
+        whitelist.removeEnforcedAttribute("tbody",":nth-last-of-type'");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21810,9 +35565,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute561320863() {
+    public void testWhitelistremoveEnforcedAttribute10568593913() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute(":contains(",":first-chilc");
+        whitelist.removeEnforcedAttribute("stylf","http-equiw");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21831,9 +35586,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute1088659554() {
+    public void testWhitelistremoveEnforcedAttribute14597984304() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeEnforcedAttribute("ruby","|");
+        whitelist.removeEnforcedAttribute("US-ASCII","bodz");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21957,9 +35712,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols13197642680() {
+    public void testWhitelistaddProtocols18371935850() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("</",":nth-of-type'",":nth-last-child(");
+        whitelist.addProtocols("xmk","optgrouo","captiom");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21978,9 +35733,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols996113531() {
+    public void testWhitelistaddProtocols56914171() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("^>","basd","htmk");
+        whitelist.addProtocols("\'","li","\"\"");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -21999,9 +35754,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols9898804142() {
+    public void testWhitelistaddProtocols63021592() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("disablee",":only-chile",":matchesOwn)");
+        whitelist.addProtocols("th","h2","UTF-");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22020,9 +35775,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols21462471913() {
+    public void testWhitelistaddProtocols4147921083() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("Set-Cookie",":nth-last-child(","UTF.");
+        whitelist.addProtocols("image","heae","sarcasl");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22041,9 +35796,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols7665801724() {
+    public void testWhitelistaddProtocols1993568934() {
         Whitelist whitelist = new Whitelist();
-        whitelist.addProtocols("hr","tbody","text.");
+        whitelist.addProtocols("http:/","httq","http-equiu");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22062,9 +35817,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols17079971030() {
+    public void testWhitelistremoveProtocols16470164650() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("cok",":nth-last-child(","http-equiv");
+        whitelist.removeProtocols("hiddem","text0","namf");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22083,9 +35838,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols17140552321() {
+    public void testWhitelistremoveProtocols17965963801() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("eveo",":only-child","rubz");
+        whitelist.removeProtocols("lh","colgroup","checkee");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22104,9 +35859,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols3761509732() {
+    public void testWhitelistremoveProtocols20882127002() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("disablec","http:.","svh");
+        whitelist.removeProtocols("odd","a",":matchTexs");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22125,9 +35880,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols21296316543() {
+    public void testWhitelistremoveProtocols18371315853() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("inpuu","type","httpr");
+        whitelist.removeProtocols("[a-zA-Z_:][-a-zA-Z0-9_:.])","~<","checkboy");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22146,9 +35901,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols19632581064() {
+    public void testWhitelistremoveProtocols1953347574() {
         Whitelist whitelist = new Whitelist();
-        whitelist.removeProtocols("option","option","textareb");
+        whitelist.removeProtocols("h6",":containsOwn(",":nth-last-of-type'");
         assertTrue(whitelist.equals(whitelist));
         try {
             whitelist.equals(whitelist);
@@ -22167,9 +35922,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain1857353260() throws Exception {
+    public void testHtmlToPlainTextmain37410() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("US-ASCIJ");
+        htmltoplaintext.main("tr");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22188,9 +35943,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain32132581() throws Exception {
+    public void testHtmlToPlainTextmain31831() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("html");
+        htmltoplaintext.main("br");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22209,9 +35964,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain1650854882() throws Exception {
+    public void testHtmlToPlainTextmain987192() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("http-equiv");
+        htmltoplaintext.main("col");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22230,9 +35985,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain30294413() throws Exception {
+    public void testHtmlToPlainTextmain13215466003() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main("body");
+        htmltoplaintext.main("templatd");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22251,9 +36006,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain567593364() throws Exception {
+    public void testHtmlToPlainTextmain12174874154() throws Exception {
         HtmlToPlainText htmltoplaintext = new HtmlToPlainText();
-        htmltoplaintext.main(":has)");
+        htmltoplaintext.main("hidden");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -22377,9 +36132,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain21434371480() throws Exception {
+    public void testWikipediamain8156744940() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:."});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22398,9 +36153,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain2608409561() throws Exception {
+    public void testWikipediamain14537742771() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22419,9 +36174,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain18915026662() throws Exception {
+    public void testWikipediamain4161536792() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]="});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx","#texs","rubx","command","rubz","heac"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22440,9 +36195,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain5570235983() throws Exception {
+    public void testWikipediamain715874003() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22461,9 +36216,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWikipediamain12765040924() throws Exception {
+    public void testWikipediamain11697946414() throws Exception {
         Wikipedia wikipedia = new Wikipedia();
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -22482,9 +36237,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain5971910300() throws Exception {
+    public void testListLinksmain6345402610() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22503,9 +36258,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain6034433241() throws Exception {
+    public void testListLinksmain13079050031() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22524,9 +36279,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain5108543242() throws Exception {
+    public void testListLinksmain17977122282() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn("});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22545,9 +36300,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain21009619923() throws Exception {
+    public void testListLinksmain16718464683() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -22566,9 +36321,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testListLinksmain4870754954() throws Exception {
+    public void testListLinksmain14222221024() throws Exception {
         ListLinks listlinks = new ListLinks();
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^="});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -23742,9 +37497,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr32134780() {
+    public void testElementsattr358296680() {
         Elements elements = new Elements();
-        elements.attr("htto");
+        elements.attr("#root");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23763,9 +37518,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr27763631() {
+    public void testElementsattr570706511() {
         Elements elements = new Elements();
-        elements.attr("\"\"");
+        elements.attr(":root");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23784,9 +37539,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr18305292() {
+    public void testElementsattr18245832() {
         Elements elements = new Elements();
-        elements.attr(":gt)");
+        elements.attr(":alm");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23805,9 +37560,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr5525734453() {
+    public void testElementsattr570706523() {
         Elements elements = new Elements();
-        elements.attr("caption");
+        elements.attr(":roou");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23826,9 +37581,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr26152044() {
+    public void testElementsattr1003134674() {
         Elements elements = new Elements();
-        elements.attr("UTF,");
+        elements.attr("imagf");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23847,9 +37602,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr21156131440() {
+    public void testElementshasAttr18690634830() {
         Elements elements = new Elements();
-        elements.hasAttr("noembee");
+        elements.hasAttr("sarcasm");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23868,9 +37623,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr32110831() {
+    public void testElementshasAttr33218821() {
         Elements elements = new Elements();
-        elements.hasAttr("hreg");
+        elements.hasAttr("linl");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23889,9 +37644,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr17480897422() {
+    public void testElementshasAttr1552() {
         Elements elements = new Elements();
-        elements.hasAttr("DOCTYPF");
+        elements.hasAttr("|");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23910,9 +37665,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr10101369393() {
+    public void testElementshasAttr31843() {
         Elements elements = new Elements();
-        elements.hasAttr("optioo");
+        elements.hasAttr("bs");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23931,9 +37686,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr31824() {
+    public void testElementshasAttr35756404() {
         Elements elements = new Elements();
-        elements.hasAttr("bq");
+        elements.hasAttr("typd");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23952,9 +37707,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr33868650() {
+    public void testElementseachAttr18353330() {
         Elements elements = new Elements();
-        elements.eachAttr("nobs");
+        elements.eachAttr(":lt(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -23973,7 +37728,70 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr33681() {
+    public void testElementseachAttr35756401() {
+        Elements elements = new Elements();
+        elements.eachAttr("typd");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementseachAttr1082706182() {
+        Elements elements = new Elements();
+        elements.eachAttr("radio");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementseachAttr1101158223() {
+        Elements elements = new Elements();
+        elements.eachAttr("tablf");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementseachAttr33684() {
         Elements elements = new Elements();
         elements.eachAttr("hq");
         assertTrue(elements.equals(elements));
@@ -23994,9 +37812,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr33062() {
+    public void testElementsattr70576850() {
         Elements elements = new Elements();
-        elements.eachAttr("h3");
+        elements.attr("xml","name");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24015,9 +37833,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr1099033() {
+    public void testElementsattr11805214391() {
         Elements elements = new Elements();
-        elements.eachAttr("ode");
+        elements.attr("inpus","mati");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24036,9 +37854,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr15368918744() {
+    public void testElementsattr11345751562() {
         Elements elements = new Elements();
-        elements.eachAttr("checkbox");
+        elements.attr("\"","keygen");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24057,9 +37875,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr11483238430() {
+    public void testElementsattr15279354223() {
         Elements elements = new Elements();
-        elements.attr("boundary",":alk");
+        elements.attr(":gt(",":nth-last-child(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24078,9 +37896,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr8148903221() {
+    public void testElementsattr11617997604() {
         Elements elements = new Elements();
-        elements.attr("keygem","li");
+        elements.attr("actioo","\"");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24099,9 +37917,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr8782873422() {
+    public void testElementsremoveAttr940() {
         Elements elements = new Elements();
-        elements.attr(":last-of-type","svg");
+        elements.removeAttr("?");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24120,9 +37938,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr996110593() {
+    public void testElementsremoveAttr20919604271() {
         Elements elements = new Elements();
-        elements.attr("html","=");
+        elements.removeAttr(":only-chile");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24141,9 +37959,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr10210320294() {
+    public void testElementsremoveAttr21153115422() {
         Elements elements = new Elements();
-        elements.attr("odd",":nth-last-of-type)");
+        elements.removeAttr("boundarz");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24162,9 +37980,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr39990() {
+    public void testElementsremoveAttr29173() {
         Elements elements = new Elements();
-        elements.removeAttr("~>");
+        elements.removeAttr("\"");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24183,9 +38001,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr17209582731() {
+    public void testElementsremoveAttr11164() {
         Elements elements = new Elements();
-        elements.removeAttr("basefont");
+        elements.removeAttr("!>");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24204,9 +38022,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr1103268992() {
+    public void testElementsaddClass18912061150() {
         Elements elements = new Elements();
-        elements.removeAttr("thead");
+        elements.addClass(":nth-of-type)");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24225,9 +38043,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr1188393() {
+    public void testElementsaddClass19371() {
         Elements elements = new Elements();
-        elements.removeAttr("xmm");
+        elements.addClass("<.");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24246,9 +38064,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr358296694() {
+    public void testElementsaddClass923502() {
         Elements elements = new Elements();
-        elements.removeAttr("#roou");
+        elements.addClass("]]?");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24267,9 +38085,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass30164310() {
+    public void testElementsaddClass30164333() {
         Elements elements = new Elements();
-        elements.addClass("basd");
+        elements.addClass("basf");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24288,9 +38106,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass15368918751() {
+    public void testElementsaddClass996170354() {
         Elements elements = new Elements();
-        elements.addClass("checkboy");
+        elements.addClass("httpt");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24309,9 +38127,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass29875602() {
+    public void testElementsremoveClass15368918730() {
         Elements elements = new Elements();
-        elements.addClass("abs;");
+        elements.removeClass("checkbow");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24330,9 +38148,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass34853() {
+    public void testElementsremoveClass35756411() {
         Elements elements = new Elements();
-        elements.addClass("lj");
+        elements.removeClass("type");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24351,9 +38169,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass11912143964() {
+    public void testElementsremoveClass358799182() {
         Elements elements = new Elements();
-        elements.addClass("iframf");
+        elements.removeClass("#texs");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24372,9 +38190,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass31891140() {
+    public void testElementsremoveClass1553() {
         Elements elements = new Elements();
-        elements.removeClass("gziq");
+        elements.removeClass("|");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24393,9 +38211,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass1101158201() {
+    public void testElementsremoveClass21011357984() {
         Elements elements = new Elements();
-        elements.removeClass("tabld");
+        elements.removeClass(":matchTexs");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24414,9 +38232,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass9076856552() {
+    public void testElementstoggleClass12090() {
         Elements elements = new Elements();
-        elements.removeClass("scrips");
+        elements.toggleClass("$>");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24435,9 +38253,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass17571249793() {
+    public void testElementstoggleClass13931() {
         Elements elements = new Elements();
-        elements.removeClass(":emptz");
+        elements.toggleClass("*<");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24456,9 +38274,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass17480897424() {
+    public void testElementstoggleClass1143062() {
         Elements elements = new Elements();
-        elements.removeClass("DOCTYPF");
+        elements.toggleClass("svf");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24477,9 +38295,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass569515650() {
+    public void testElementstoggleClass29875593() {
         Elements elements = new Elements();
-        elements.toggleClass(":not'");
+        elements.toggleClass("abs:");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24498,9 +38316,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass358296691() {
+    public void testElementstoggleClass15451126494() {
         Elements elements = new Elements();
-        elements.toggleClass("#roou");
+        elements.toggleClass("deflatd");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24519,9 +38337,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass3081290272() {
+    public void testElementshasClass14560() {
         Elements elements = new Elements();
-        elements.toggleClass(":last-chilc");
+        elements.hasClass("*{");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24540,9 +38358,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass19788929333() {
+    public void testElementshasClass987191() {
         Elements elements = new Elements();
-        elements.toggleClass(":containsOwn)");
+        elements.hasClass("col");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24561,9 +38379,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass33218814() {
+    public void testElementshasClass987182() {
         Elements elements = new Elements();
-        elements.toggleClass("link");
+        elements.hasClass("cok");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24582,9 +38400,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass17209582730() {
+    public void testElementshasClass11927218633() {
         Elements elements = new Elements();
-        elements.hasClass("basefont");
+        elements.hasClass("noframet");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24603,72 +38421,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass10101369401() {
+    public void testElementshasClass18690634844() {
         Elements elements = new Elements();
-        elements.hasClass("option");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementshasClass35367462() {
-        Elements elements = new Elements();
-        elements.hasClass("spao");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementshasClass1102563223() {
-        Elements elements = new Elements();
-        elements.hasClass("text0");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementshasClass13776877284() {
-        Elements elements = new Elements();
-        elements.hasClass("buttom");
+        elements.hasClass("sarcasn");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24792,9 +38547,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval15368918740() {
+    public void testElementsval31255600() {
         Elements elements = new Elements();
-        elements.val("checkbox");
+        elements.val("evem");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24813,9 +38568,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval1605222311() {
+    public void testElementsval26152041() {
         Elements elements = new Elements();
-        elements.val("bgsound");
+        elements.val("UTF,");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24834,9 +38589,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval18353332() {
+    public void testElementsval20919604272() {
         Elements elements = new Elements();
-        elements.val(":lt(");
+        elements.val(":only-chile");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24855,9 +38610,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval29875593() {
+    public void testElementsval16449536113() {
         Elements elements = new Elements();
-        elements.val("abs:");
+        elements.val("frameseu");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -24876,9 +38631,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval14229508284() {
+    public void testElementsval1082706174() {
         Elements elements = new Elements();
-        elements.val("actiom");
+        elements.val("radin");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25422,9 +39177,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName26152050() {
+    public void testElementstagName1103268980() {
         Elements elements = new Elements();
-        elements.tagName("UTF-");
+        elements.tagName("theac");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25443,9 +39198,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName19391() {
+    public void testElementstagName14711890841() {
         Elements elements = new Elements();
-        elements.tagName("<0");
+        elements.tagName(":nth-last-child'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25464,9 +39219,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName34852() {
+    public void testElementstagName32134802() {
         Elements elements = new Elements();
-        elements.tagName("lj");
+        elements.tagName("httq");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25485,9 +39240,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName20913044553() {
+    public void testElementstagName9076856553() {
         Elements elements = new Elements();
-        elements.tagName("isindex");
+        elements.tagName("scrips");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25506,9 +39261,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName5525734464() {
+    public void testElementstagName2882752484() {
         Elements elements = new Elements();
-        elements.tagName("captioo");
+        elements.tagName(":nth-child(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25527,9 +39282,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml30294400() {
+    public void testElementshtml13930() {
         Elements elements = new Elements();
-        elements.html("bodx");
+        elements.html("*<");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25548,9 +39303,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml31841() {
+    public void testElementshtml35756411() {
         Elements elements = new Elements();
-        elements.html("bs");
+        elements.html("type");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25569,9 +39324,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml32134782() {
+    public void testElementshtml1103714472() {
         Elements elements = new Elements();
-        elements.html("htto");
+        elements.html("title");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25590,9 +39345,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml11346655533() {
+    public void testElementshtml6361976033() {
         Elements elements = new Elements();
-        elements.html("keygem");
+        elements.html("colgrouo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25611,9 +39366,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml30294424() {
+    public void testElementshtml32324() {
         Elements elements = new Elements();
-        elements.html("bodz");
+        elements.html("de");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25632,9 +39387,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend1188370() {
+    public void testElementsprepend30294410() {
         Elements elements = new Elements();
-        elements.prepend("xmk");
+        elements.prepend("body");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25653,9 +39408,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend31821() {
+    public void testElementsprepend10101369411() {
         Elements elements = new Elements();
-        elements.prepend("bq");
+        elements.prepend("optiom");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25674,9 +39429,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend1650854892() {
+    public void testElementsprepend996170352() {
         Elements elements = new Elements();
-        elements.prepend("http-equiu");
+        elements.prepend("httpt");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25695,9 +39450,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend1103714463() {
+    public void testElementsprepend17571249773() {
         Elements elements = new Elements();
-        elements.prepend("titld");
+        elements.prepend(":emptx");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25716,9 +39471,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend1101578784() {
+    public void testElementsprepend17571249774() {
         Elements elements = new Elements();
-        elements.prepend("tbodz");
+        elements.prepend(":emptx");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25737,9 +39492,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend1044180() {
+    public void testElementsappend3081290270() {
         Elements elements = new Elements();
-        elements.append("img");
+        elements.append(":last-chilc");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25758,9 +39513,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend18690634831() {
+    public void testElementsappend1281() {
         Elements elements = new Elements();
-        elements.append("sarcasm");
+        elements.append("a");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25779,9 +39534,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend13215465992() {
+    public void testElementsappend19788929332() {
         Elements elements = new Elements();
-        elements.append("template");
+        elements.append(":containsOwn)");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25800,9 +39555,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend10548386283() {
+    public void testElementsappend569515673() {
         Elements elements = new Elements();
-        elements.append(":first-child");
+        elements.append(":not)");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25821,9 +39576,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend31891134() {
+    public void testElementsappend12174874144() {
         Elements elements = new Elements();
-        elements.append("gzip");
+        elements.append("hiddeo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25842,9 +39597,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore20913044540() {
+    public void testElementsbefore33218820() {
         Elements elements = new Elements();
-        elements.before("isindew");
+        elements.before("linl");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25863,9 +39618,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore2709408281() {
+    public void testElementsbefore19788929341() {
         Elements elements = new Elements();
-        elements.before("disablee");
+        elements.before(":containsOwn(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25884,9 +39639,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore11346655522() {
+    public void testElementsbefore1552() {
         Elements elements = new Elements();
-        elements.before("keygen");
+        elements.before("|");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25905,9 +39660,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore18245823() {
+    public void testElementsbefore1003134673() {
         Elements elements = new Elements();
-        elements.before(":all");
+        elements.before("imagf");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25926,9 +39681,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore15451126494() {
+    public void testElementsbefore35118004() {
         Elements elements = new Elements();
-        elements.before("deflatd");
+        elements.before("rubx");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25947,9 +39702,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter5525734440() {
+    public void testElementsafter33480050() {
         Elements elements = new Elements();
-        elements.after("captiom");
+        elements.after("metb");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25968,9 +39723,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter32110831() {
+    public void testElementsafter31255621() {
         Elements elements = new Elements();
-        elements.after("hreg");
+        elements.after("eveo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -25989,9 +39744,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter3081290272() {
+    public void testElementsafter1082706172() {
         Elements elements = new Elements();
-        elements.after(":last-chilc");
+        elements.after("radin");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26010,9 +39765,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter11927218633() {
+    public void testElementsafter21153115443() {
         Elements elements = new Elements();
-        elements.after("noframet");
+        elements.after("boundarx");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26031,9 +39786,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter29224() {
+    public void testElementsafter14704() {
         Elements elements = new Elements();
-        elements.after("\'");
+        elements.after("-,");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26052,9 +39807,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap35118020() {
+    public void testElementswrap18353330() {
         Elements elements = new Elements();
-        elements.wrap("rubz");
+        elements.wrap(":lt(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26073,9 +39828,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap1099011() {
+    public void testElementswrap12068418921() {
         Elements elements = new Elements();
-        elements.wrap("odc");
+        elements.wrap("http:/");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26094,9 +39849,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap923502() {
+    public void testElementswrap1003581212() {
         Elements elements = new Elements();
-        elements.wrap("]]?");
+        elements.wrap("input");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26115,9 +39870,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap1283() {
+    public void testElementswrap10101369413() {
         Elements elements = new Elements();
-        elements.wrap("a");
+        elements.wrap("optiom");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26136,9 +39891,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap6361976014() {
+    public void testElementswrap14229508264() {
         Elements elements = new Elements();
-        elements.wrap("colgrouq");
+        elements.wrap("actioo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26472,9 +40227,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect32132570() {
+    public void testElementsselect987200() {
         Elements elements = new Elements();
-        elements.select("htmk");
+        elements.select("com");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26493,9 +40248,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect11912143971() {
+    public void testElementsselect1143081() {
         Elements elements = new Elements();
-        elements.select("iframe");
+        elements.select("svh");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26514,9 +40269,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect37412() {
+    public void testElementsselect17480897432() {
         Elements elements = new Elements();
-        elements.select("tr");
+        elements.select("DOCTYPE");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26535,9 +40290,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect14711890843() {
+    public void testElementsselect5525734463() {
         Elements elements = new Elements();
-        elements.select(":nth-last-child'");
+        elements.select("captioo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26556,9 +40311,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect11912143984() {
+    public void testElementsselect1102773774() {
         Elements elements = new Elements();
-        elements.select("iframd");
+        elements.select("tfoot");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26577,9 +40332,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot2709408260() {
+    public void testElementsnot9503947310() {
         Elements elements = new Elements();
-        elements.not("disablec");
+        elements.not("commane");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26598,9 +40353,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot1101158211() {
+    public void testElementsnot32481() {
         Elements elements = new Elements();
-        elements.not("table");
+        elements.not("du");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26619,9 +40374,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot987192() {
+    public void testElementsnot12269463012() {
         Elements elements = new Elements();
-        elements.not("col");
+        elements.not(":containsData'");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26640,9 +40395,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot15515509553() {
+    public void testElementsnot31255613() {
         Elements elements = new Elements();
-        elements.not("noscript");
+        elements.not("even");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26661,9 +40416,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot20913044544() {
+    public void testElementsnot10176250984() {
         Elements elements = new Elements();
-        elements.not("isindew");
+        elements.not(":nth-last-of-type)");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26682,9 +40437,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq680() {
+    public void testElementseq573740() {
         Elements elements = new Elements();
-        elements.eq(-99);
+        elements.eq(57343);
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26703,49 +40458,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq5311() {
-        Elements elements = new Elements();
-        elements.eq(500);
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementseq352() {
-        Elements elements = new Elements();
-        elements.eq(4);
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementseq2183() {
+    public void testElementseq2181() {
         Elements elements = new Elements();
         elements.eq(187);
         assertTrue(elements.equals(elements));
@@ -26766,9 +40479,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq11141434() {
+    public void testElementseq553282() {
         Elements elements = new Elements();
-        elements.eq(1114112);
+        elements.eq(55297);
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26787,9 +40500,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis31984630() {
+    public void testElementseq2223() {
         Elements elements = new Elements();
-        elements.is("head");
+        elements.eq(191);
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26808,9 +40521,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis26152041() {
+    public void testElementseq554274() {
         Elements elements = new Elements();
-        elements.is("UTF,");
+        elements.eq(55396);
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26829,9 +40542,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis1097804332() {
+    public void testElementsis10176250970() {
         Elements elements = new Elements();
-        elements.is("stylf");
+        elements.is(":nth-last-of-type(");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26850,9 +40563,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis1101158213() {
+    public void testElementsis1101578761() {
         Elements elements = new Elements();
-        elements.is("table");
+        elements.is("tbodx");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26871,9 +40584,51 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis17480897424() {
+    public void testElementsis10176250962() {
         Elements elements = new Elements();
-        elements.is("DOCTYPF");
+        elements.is(":nth-last-of-type'");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsis11153() {
+        Elements elements = new Elements();
+        elements.is("!=");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsis32132574() {
+        Elements elements = new Elements();
+        elements.is("htmk");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -26997,93 +40752,93 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext16183955600() {
-        Elements elements = new Elements();
-        elements.next(":only-of-type");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementsnext1103714481() {
-        Elements elements = new Elements();
-        elements.next("titlf");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementsnext9503947312() {
-        Elements elements = new Elements();
-        elements.next("commane");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementsnext32110813() {
-        Elements elements = new Elements();
-        elements.next("hree");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementsnext19732341984() {
+    public void testElementsnext19732341980() {
         Elements elements = new Elements();
         elements.next("plaintext");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsnext10761623191() {
+        Elements elements = new Elements();
+        elements.next(":contains)");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsnext11346655532() {
+        Elements elements = new Elements();
+        elements.next("keygem");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsnext19732341973() {
+        Elements elements = new Elements();
+        elements.next("plaintexs");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsnext18690634844() {
+        Elements elements = new Elements();
+        elements.next("sarcasn");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27207,9 +40962,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll30294400() {
+    public void testElementsnextAll1003581200() {
         Elements elements = new Elements();
-        elements.nextAll("bodx");
+        elements.nextAll("inpus");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27228,9 +40983,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll569515671() {
+    public void testElementsnextAll1099011() {
         Elements elements = new Elements();
-        elements.nextAll(":not)");
+        elements.nextAll("odc");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27249,9 +41004,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll18690634832() {
+    public void testElementsnextAll11152() {
         Elements elements = new Elements();
-        elements.nextAll("sarcasm");
+        elements.nextAll("!=");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27270,9 +41025,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll33218803() {
+    public void testElementsnextAll12083() {
         Elements elements = new Elements();
-        elements.nextAll("linj");
+        elements.nextAll("$=");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27291,9 +41046,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll1103269004() {
+    public void testElementsnextAll1102773764() {
         Elements elements = new Elements();
-        elements.nextAll("theae");
+        elements.nextAll("tfoos");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27417,9 +41172,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev29170() {
+    public void testElementsprev1103269000() {
         Elements elements = new Elements();
-        elements.prev("\"");
+        elements.prev("theae");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27438,9 +41193,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev31891141() {
+    public void testElementsprev37401() {
         Elements elements = new Elements();
-        elements.prev("gziq");
+        elements.prev("tq");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27459,9 +41214,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev1143062() {
+    public void testElementsprev1605222302() {
         Elements elements = new Elements();
-        elements.prev("svf");
+        elements.prev("bgsoune");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27480,9 +41235,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev12269463003() {
+    public void testElementsprev11927218633() {
         Elements elements = new Elements();
-        elements.prev(":containsData(");
+        elements.prev("noframet");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27501,9 +41256,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev14714() {
+    public void testElementsprev33480034() {
         Elements elements = new Elements();
-        elements.prev("--");
+        elements.prev("met`");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27627,9 +41382,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll1188430() {
+    public void testElementsprevAll30060() {
         Elements elements = new Elements();
-        elements.prevAll("xmq");
+        elements.prevAll("^=");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27648,9 +41403,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll570706521() {
+    public void testElementsprevAll33071() {
         Elements elements = new Elements();
-        elements.prevAll(":roou");
+        elements.prevAll("h4");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -27669,7 +41424,28 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll31822() {
+    public void testElementsprevAll18305282() {
+        Elements elements = new Elements();
+        elements.prevAll(":gt(");
+        assertTrue(elements.equals(elements));
+        try {
+            elements.equals(elements);
+        } catch (Exception e) {
+            fail("elements.equals(elements) throws an exception");
+        }
+        try {
+            elements.hashCode();
+        } catch (Exception e) {
+            fail("elements.hashCode() throws an exception");
+        }
+        try {
+            elements.toString();
+        } catch (Exception e) {
+            fail("elements.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementsprevAll31823() {
         Elements elements = new Elements();
         elements.prevAll("bq");
         assertTrue(elements.equals(elements));
@@ -27690,30 +41466,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll358296683() {
+    public void testElementsprevAll31255624() {
         Elements elements = new Elements();
-        elements.prevAll("#root");
-        assertTrue(elements.equals(elements));
-        try {
-            elements.equals(elements);
-        } catch (Exception e) {
-            fail("elements.equals(elements) throws an exception");
-        }
-        try {
-            elements.hashCode();
-        } catch (Exception e) {
-            fail("elements.hashCode() throws an exception");
-        }
-        try {
-            elements.toString();
-        } catch (Exception e) {
-            fail("elements.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementsprevAll1143064() {
-        Elements elements = new Elements();
-        elements.prevAll("svf");
+        elements.prevAll("eveo");
         assertTrue(elements.equals(elements));
         try {
             elements.equals(elements);
@@ -28362,9 +42117,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse1044180() {
+    public void testQueryParserparse11927218610() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse("img");
+        queryparser.parse("noframer");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28383,9 +42138,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse21156131421() {
+    public void testQueryParserparse11927218621() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse("noembec");
+        queryparser.parse("noframes");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28404,9 +42159,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse35118002() {
+    public void testQueryParserparse11162() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse("rubx");
+        queryparser.parse("!>");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28425,9 +42180,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse31490273() {
+    public void testQueryParserparse10552537233() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse("form");
+        queryparser.parse(":matchesOwn)");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28446,9 +42201,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse10761623174() {
+    public void testQueryParserparse7390744104() {
         QueryParser queryparser = new QueryParser();
-        queryparser.parse(":contains'");
+        queryparser.parse("charses");
         assertTrue(queryparser.equals(queryparser));
         try {
             queryparser.equals(queryparser);
@@ -28467,9 +42222,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect1006260() {
+    public void testSelectorselect345650() {
         Selector selector = new Selector();
-        selector.select("ds",(Element) null);
+        selector.select("!=",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28509,9 +42264,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect12426069812() {
+    public void testSelectorselect9987065412() {
         Selector selector = new Selector();
-        selector.select("http:.",(Element) null);
+        selector.select(":contains'",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28530,9 +42285,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect1045858473() {
+    public void testSelectorselect2413534543() {
         Selector selector = new Selector();
-        selector.select("namd",(Element) null);
+        selector.select("buttoo",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28551,9 +42306,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect36839474() {
+    public void testSelectorselect939127024() {
         Selector selector = new Selector();
-        selector.select("xmk",(Element) null);
+        selector.select("bodz",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28677,9 +42432,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect935093610() {
+    public void testSelectorselect4059286960() {
         Selector selector = new Selector();
-        selector.select("basd",(Iterable<Element>) null);
+        selector.select("isindey",(Iterable<Element>) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28698,9 +42453,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect6025344731() {
+    public void testSelectorselect14364702611() {
         Selector selector = new Selector();
-        selector.select("commanc",(Iterable<Element>) null);
+        selector.select("charset",(Iterable<Element>) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28719,9 +42474,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect13298376572() {
+    public void testSelectorselect9987064792() {
         Selector selector = new Selector();
-        selector.select(":first-of-typf",(Iterable<Element>) null);
+        selector.select(":contains)",(Iterable<Element>) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28740,9 +42495,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect13298377193() {
+    public void testSelectorselect1108449023() {
         Selector selector = new Selector();
-        selector.select(":first-of-typd",(Iterable<Element>) null);
+        selector.select("typf",(Iterable<Element>) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28761,9 +42516,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect1024554() {
+    public void testSelectorselect10407180254() {
         Selector selector = new Selector();
-        selector.select("h2",(Iterable<Element>) null);
+        selector.select("plaintexu",(Iterable<Element>) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28782,9 +42537,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst12634922710() {
+    public void testSelectorselectFirst1088658000() {
         Selector selector = new Selector();
-        selector.selectFirst("Set-Cookif",(Element) null);
+        selector.selectFirst("rubx",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28803,9 +42558,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst345651() {
+    public void testSelectorselectFirst13693452231() {
         Selector selector = new Selector();
-        selector.selectFirst("!=",(Element) null);
+        selector.selectFirst(":only-of-typd",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28824,9 +42579,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst456322() {
+    public void testSelectorselectFirst30602892() {
         Selector selector = new Selector();
-        selector.selectFirst("-.",(Element) null);
+        selector.selectFirst("col",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28845,9 +42600,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst8917738733() {
+    public void testSelectorselectFirst6025344423() {
         Selector selector = new Selector();
-        selector.selectFirst("stylf",(Element) null);
+        selector.selectFirst("command",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
@@ -28866,9 +42621,9 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst4059286344() {
+    public void testSelectorselectFirst986424() {
         Selector selector = new Selector();
-        selector.selectFirst("isindew",(Element) null);
+        selector.selectFirst("bq",(Element) null);
         assertTrue(selector.equals(selector));
         try {
             selector.equals(selector);
