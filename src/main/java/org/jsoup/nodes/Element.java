@@ -1045,6 +1045,7 @@ public class Element extends Node {
     public String text() {
         final StringBuilder accum = StringUtil.borrowBuilder();
         NodeTraversor.traverse(new NodeVisitor() {
+            @Override
             public void head(Node node, int depth) {
                 if (node instanceof TextNode) {
                     TextNode textNode = (TextNode) node;
@@ -1058,6 +1059,8 @@ public class Element extends Node {
                 }
             }
 
+
+            @Override
             public void tail(Node node, int depth) {
                 // make sure there is a space between block tags and immediately following text nodes <div>One</div>Two should be "One Two".
                 if (node instanceof Element) {
@@ -1082,6 +1085,7 @@ public class Element extends Node {
     public String wholeText() {
         final StringBuilder accum = StringUtil.borrowBuilder();
         NodeTraversor.traverse(new NodeVisitor() {
+            @Override
             public void head(Node node, int depth) {
                 if (node instanceof TextNode) {
                     TextNode textNode = (TextNode) node;
@@ -1089,6 +1093,7 @@ public class Element extends Node {
                 }
             }
 
+            @Override
             public void tail(Node node, int depth) {
             }
         }, this);
