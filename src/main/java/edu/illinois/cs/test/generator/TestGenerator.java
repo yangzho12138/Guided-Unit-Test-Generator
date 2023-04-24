@@ -31,7 +31,7 @@ public class TestGenerator extends VoidVisitorAdapter {
     Set<Character> charactersPool;
     Set<Long> longsPool;
     Set<Boolean> booleansPool;
-    Set<Object> objectsPool;
+    static Set<Object> objectsPool;
 
     List<MethodDeclaration> methods;
     List<ConstructorDeclaration> constructors;
@@ -39,6 +39,44 @@ public class TestGenerator extends VoidVisitorAdapter {
 //    List<List<Object>> argumentsList;
 
     StringBuilder sb;
+
+
+    public static Object get(String type){
+        Random random = new Random();
+        // find a random object in the object pool
+        Iterator<Object> it = objectsPool.iterator();
+        List<Object> list = new ArrayList<>(objectsPool);
+
+        // create a set of indexes of such type
+        Set<Integer> indexes = new HashSet<>();
+
+        // add indexes of objects of such type
+        for (int i = 0; i < list.size(); i++) {
+            Object s = it.next();
+            if (s.getClass().toString().equals(type)) {
+                indexes.add(i);
+            }
+        }
+
+        // get a random index from the set
+        if (indexes.size() == 0) {
+            return null;
+        }
+        int randomIndex = random.nextInt(indexes.size());
+        int i = 0;
+        for (Integer idx : indexes) {
+            if (i == randomIndex) {
+                return list.get(idx);
+            }
+            i++;
+        }
+
+        return null;
+    }
+
+    public static void put(Object obj){
+        objectsPool.add(obj);
+    }
 
     public TestGenerator(String target) {
         integersPool = PoolInit.valuePool.integersPool;
@@ -239,37 +277,38 @@ public class TestGenerator extends VoidVisitorAdapter {
             int index = random.nextInt(1);
 
             return index == 0;
-        } else {
-            Random random = new Random();
-//            System.out.println(type);
-            // find a random object in the object pool
-            Iterator<Object> it = objectsPool.iterator();
-            List<Object> list = new ArrayList<>(objectsPool);
-
-            // create a set of indexes of such type
-            Set<Integer> indexes = new HashSet<>();
-
-            // add indexes of objects of such type
-            for (int i = 0; i < list.size(); i++) {
-                Object s = it.next();
-                if (s.getClass().toString().equals(type)) {
-                    indexes.add(i);
-                }
-            }
-
-            // get a random index from the set
-            if (indexes.size() == 0) {
-                return null;
-            }
-            int randomIndex = random.nextInt(indexes.size());
-            int i = 0;
-            for (Integer idx : indexes) {
-                if (i == randomIndex) {
-                    return list.get(idx);
-                }
-                i++;
-            }
         }
+//        else {
+//            Random random = new Random();
+////            System.out.println(type);
+//            // find a random object in the object pool
+//            Iterator<Object> it = objectsPool.iterator();
+//            List<Object> list = new ArrayList<>(objectsPool);
+//
+//            // create a set of indexes of such type
+//            Set<Integer> indexes = new HashSet<>();
+//
+//            // add indexes of objects of such type
+//            for (int i = 0; i < list.size(); i++) {
+//                Object s = it.next();
+//                if (s.getClass().toString().equals(type)) {
+//                    indexes.add(i);
+//                }
+//            }
+//
+//            // get a random index from the set
+//            if (indexes.size() == 0) {
+//                return null;
+//            }
+//            int randomIndex = random.nextInt(indexes.size());
+//            int i = 0;
+//            for (Integer idx : indexes) {
+//                if (i == randomIndex) {
+//                    return list.get(idx);
+//                }
+//                i++;
+//            }
+//        }
         return null;
     }
 
