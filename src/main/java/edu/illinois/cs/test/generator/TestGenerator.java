@@ -31,7 +31,7 @@ public class TestGenerator extends VoidVisitorAdapter {
     Set<Character> charactersPool;
     Set<Long> longsPool;
     Set<Boolean> booleansPool;
-    Set<Object> objectsPool;
+    static Set<Object> objectsPool;
 
     List<MethodDeclaration> methods;
     List<ConstructorDeclaration> constructors;
@@ -39,6 +39,44 @@ public class TestGenerator extends VoidVisitorAdapter {
 //    List<List<Object>> argumentsList;
 
     StringBuilder sb;
+
+
+    public static Object getObjectFromPool(String type){
+        Random random = new Random();
+        // find a random object in the object pool
+        Iterator<Object> it = objectsPool.iterator();
+        List<Object> list = new ArrayList<>(objectsPool);
+
+        // create a set of indexes of such type
+        Set<Integer> indexes = new HashSet<>();
+
+        // add indexes of objects of such type
+        for (int i = 0; i < list.size(); i++) {
+            Object s = it.next();
+            if (s.getClass().toString().equals(type)) {
+                indexes.add(i);
+            }
+        }
+
+        // get a random index from the set
+        if (indexes.size() == 0) {
+            return null;
+        }
+        int randomIndex = random.nextInt(indexes.size());
+        int i = 0;
+        for (Integer idx : indexes) {
+            if (i == randomIndex) {
+                return list.get(idx);
+            }
+            i++;
+        }
+
+        return null;
+    }
+
+    public static void putObjectToPool(Object obj){
+        objectsPool.add(obj);
+    }
 
     public TestGenerator(String target) {
         integersPool = PoolInit.valuePool.integersPool;
@@ -248,6 +286,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             return index == 0;
         }
 //        } else {
+//        else {
 //            Random random = new Random();
 ////            System.out.println(type);
 //            // find a random object in the object pool
@@ -727,11 +766,12 @@ public class TestGenerator extends VoidVisitorAdapter {
                                 }
                             }else{
 //                                System.out.println("Object array");
-                                // TODO: Object
+                                // Get object array from pool as parameter
+                                parameterList.append("String type = " + type + ";");
                                 parameterList.append("new Object[]{");
                                 for (int k = 0; k < ((Object[]) o).length; k++) {
 //                                    System.out.println(type);
-                                    parameterList.append("TestGenerator.get(\"type\")");
+                                    parameterList.append("TestGenerator.getObjectFromPool(\"type\")");
                                     if (k != ((Object[]) o).length - 1) {
                                         parameterList.append(",");
                                     }
@@ -754,16 +794,25 @@ public class TestGenerator extends VoidVisitorAdapter {
                         } else {
                             parameterList.append("\'" + o + "\'");
                         }
+                    }
+                    else if (o instanceof Integer) {
+                        parameterList.append(o);
+                    } else if (o instanceof Long) {
+                        parameterList.append(o);
+                    } else if (o instanceof Boolean) {
+                        parameterList.append(o);
                     } else {
-                        // TODO: Cast null to the correct type
+                        // Get object from pool as parameter
 //                        System.out.println(o.getClass());
 //                        parameterList.append(o);
                         String type = parametersList.get(j);
+//                        parameterList.append("String type = " + type + ";");
 //                        System.out.println(type);
                         if(o == null){
+//                            System.out.println("null");
                             parameterList.append("(" + type + ") " + "null");
                         }else{
-                            parameterList.append(o);
+                            parameterList.append("TestGenerator.getObjectFromPool(\"" + type + "\")");
                         }
                     }
                     if(j != currentArguments.size() - 1){
