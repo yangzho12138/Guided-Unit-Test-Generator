@@ -490,6 +490,58 @@ public class TestGenerator extends VoidVisitorAdapter {
         }
     }
 
+    public Object[] getConstructorParam(List<String> parametersTypeList){
+        Object[] arguments = new Object[parametersTypeList.size()];
+        for(int i = 0; i < parametersTypeList.size(); i++){
+            String type = parametersTypeList.get(i);
+            if(type.contains("[]")) {
+                if (type.contains("String")) {
+                    String[] strs = (String[]) getValueFromPool(type);
+                    arguments[i] = strs;
+                } else if (type.contains("Integer") || type.contains("int")) {
+                    int[] ints = (int[]) getValueFromPool(type);
+                    arguments[i] = ints;
+                } else if (type.contains("Long") || type.contains("long")) {
+                    long[] longs = (long[]) getValueFromPool(type);
+                    arguments[i] = longs;
+                } else if (type.contains("boolean")) {
+                    boolean[] bools = (boolean[]) getValueFromPool(type);
+                    arguments[i] = bools;
+                } else if (type.contains("Character") || type.contains("char")) {
+                    Character[] chars = (Character[]) getValueFromPool(type);
+                    arguments[i] = chars;
+                } else {
+                    Random random = new Random();
+                    int randomNumber = random.nextInt(objectsPool.size());
+                    Object[] objectArray = new Object[randomNumber];
+                    for(int j = 0; j < randomNumber; j++){
+                        objectArray[j] = getObjectFromPool(type);
+                    }
+                    arguments[i] = objectArray;
+                }
+            }else if (type.contains("String")) {
+                String s = (String) getValueFromPool(type);
+                arguments[i] = s;
+            } else if (type.contains("Integer") || type.contains("int")) {
+                int in = (int) getValueFromPool(type);
+                arguments[i] = in;
+            } else if (type.contains("Long") || type.contains("long")) {
+                long l = (long) getValueFromPool(type);
+                arguments[i] = l;
+            } else if (type.contains("boolean")) {
+                boolean b = (boolean) getValueFromPool(type);
+                arguments[i] = b;
+            } else if (type.contains("Character") || type.contains("char")) {
+                char ch = (char) getValueFromPool(type);
+                arguments[i] = ch;
+            } else {
+                Object o = getObjectFromPool(type);
+                arguments[i] = o;
+            }
+        }
+        return arguments;
+    }
+
     public void construct() {
         for (ClassOrInterfaceDeclaration c : classes){
             String className = c.getNameAsString();
@@ -531,59 +583,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                                 for (Class<?> parameterType : parameterTypes) {
                                     parametersTypeList.add(parameterType.toString());
                                 }
-//                                System.out.println(parametersTypeList);
-//                                System.out.println(parametersTypeList.size());
-//                                System.out.println("-------------------------------------");
-                                Object[] arguments = new Object[parametersTypeList.size()];
-                                for(int i = 0; i < parametersTypeList.size(); i++){
-                                    String type = parametersTypeList.get(i);
-                                    if(type.contains("[]")) {
-                                        if (type.contains("String")) {
-                                            String[] strs = (String[]) getValueFromPool(type);
-                                            arguments[i] = strs;
-                                        } else if (type.contains("Integer") || type.contains("int")) {
-                                            int[] ints = (int[]) getValueFromPool(type);
-                                            arguments[i] = ints;
-                                        } else if (type.contains("Long") || type.contains("long")) {
-                                            long[] longs = (long[]) getValueFromPool(type);
-                                            arguments[i] = longs;
-                                        } else if (type.contains("boolean")) {
-                                            boolean[] bools = (boolean[]) getValueFromPool(type);
-                                            arguments[i] = bools;
-                                        } else if (type.contains("Character") || type.contains("char")) {
-                                            Character[] chars = (Character[]) getValueFromPool(type);
-                                            arguments[i] = chars;
-                                        } else {
-                                            Object[] objects = (Object[]) getValueFromPool(type);
-                                            arguments[i] = objects;
-                                        }
-                                    }else if (type.contains("String")) {
-                                        String s = (String) getValueFromPool(type);
-                                        arguments[i] = s;
-                                    } else if (type.contains("Integer") || type.contains("int")) {
-                                        int in = (int) getValueFromPool(type);
-                                        arguments[i] = in;
-                                    } else if (type.contains("Long") || type.contains("long")) {
-                                        long l = (long) getValueFromPool(type);
-                                        arguments[i] = l;
-                                    } else if (type.contains("boolean")) {
-                                        boolean b = (boolean) getValueFromPool(type);
-                                        arguments[i] = b;
-                                    } else if (type.contains("Character") || type.contains("char")) {
-                                        char ch = (char) getValueFromPool(type);
-                                        arguments[i] = ch;
-                                    } else {
-                                        Object o = getValueFromPool(type);
-                                        arguments[i] = o;
-                                    }
-                                }
-//                                for(Object o : arguments){
-//                                    System.out.print(o.getClass().toString() + " ");
-//                                }
-//                                System.out.println("=====================================");
+                                Object[] arguments = getConstructorParam(parametersTypeList);
                                 Object obj = constructor.newInstance(arguments);
                                 objectsPool.add(obj);
-//                                System.out.println("add");
                             }
                         }
                     }
@@ -694,6 +696,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             // 根据方法所在的类，去constructor list中找到对应的实体，调用该函数，生成test
             // TODO: Object can not be put into the code directly!!!
             for (int i = 0; i < argumentsList.size(); i++) {
+
                 // get the parameter list
                 List<Object> currentArguments = argumentsList.get(i);
 
@@ -707,7 +710,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() " + throwException + "{\n");
 
                 // TODO: add parameters
-                sb.append("        " + className + " " + className.toLowerCase() + " = new " + className + "();\n");
+                sb.append("        " + className + " " + className.toLowerCase() + " = TestGenerator.getObjectFromPool(" + className + ") + ;\n");
 
                 StringBuilder parameterList = new StringBuilder();
                 parameterList.append("(");
@@ -820,6 +823,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                     }
                 }
                 parameterList.append(")");
+
                 sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
 
                 // o.equals(o)==true
