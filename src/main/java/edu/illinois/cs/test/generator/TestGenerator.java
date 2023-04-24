@@ -75,6 +75,9 @@ public class TestGenerator extends VoidVisitorAdapter {
     }
 
     public static void putObjectToPool(Object obj){
+        if (obj.getClass().toString().equals("class java.lang.String") || obj.getClass().toString().equals("class java.lang.Integer") || obj.getClass().toString().equals("class java.lang.Character") || obj.getClass().toString().equals("class java.lang.Long") || obj.getClass().toString().equals("class java.lang.Boolean")) {
+            return;
+        }
         objectsPool.add(obj);
     }
 
@@ -93,6 +96,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         MethodTraverse(target);
         sb = new StringBuilder();
         sb.append("package " + "org.jsoup.mytests" + ";\n");
+        sb.append("import edu.illinois.cs.test.generator.TestGenerator;\n");
         sb.append("import org.junit.Test;\n");
         sb.append("import static org.junit.Assert.*;\n");
         sb.append("import org.jsoup.nodes.*;\n");
@@ -103,12 +107,10 @@ public class TestGenerator extends VoidVisitorAdapter {
         sb.append("import org.jsoup.internal.*;\n");
         sb.append("import org.jsoup.safety.*;\n");
         sb.append("import org.jsoup.*;\n");
-        // TODO: add import statements
-        /*
-        import java.io.InputStream;
-        import java.nio.charset.Charset;
-        import java.util.regex.Pattern;
-        */
+
+        sb.append("import java.io.InputStream;\n");
+        sb.append("import java.nio.charset.Charset;\n");
+        sb.append("import java.util.regex.Pattern;\n");
         sb.append("\n");
         sb.append("public class " + "AutomatedTest" + " {\n");
 
@@ -673,21 +675,19 @@ public class TestGenerator extends VoidVisitorAdapter {
                         }else if(type.contains("Character") || type.contains("char")) {
                             Character[] chars = (Character[]) getValueFromPool(type);
                             arguments.add(chars);
+                        }else{
+                            Object[] objects = (Object[]) getValueFromPool(type);
+                            arguments.add(objects);
                         }
-//                        }else{
-//                            Object[] objects = (Object[]) getValueFromPool(type);
-//                            arguments.add(objects);
-//                        }
+                    } else {
+//                        System.out.println(type);
+                        Object o = getValueFromPool(type);
+                        arguments.add(o);
                     }
-//                    else {
-////                        System.out.println(type);
-//                        Object o = getValueFromPool(type);
-//                        arguments.add(o);
-//                    }
                 }
                 argumentsList.add(arguments);
             }
-            if(method.getName().toString().equals("consumeTo")){
+            if(method.getName().toString().equals("put")){
                 System.out.println(argumentsList);
             }
 
@@ -715,7 +715,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                     Object o = currentArguments.get(j);
                     if(o != null){
                         String type = o.getClass().toString();
-
+                        if (method.getName().toString().equals("put")){
+                            System.out.println(type);
+                        }
                         if(type.contains("[L") || type.contains("[I")){
                             if(type.contains("String")) {
                                 parameterList.append("new String[]{");
@@ -808,20 +810,30 @@ public class TestGenerator extends VoidVisitorAdapter {
                         String type = parametersList.get(j);
 //                        parameterList.append("String type = " + type + ";");
 //                        System.out.println(type);
-                        if(o == null){
-//                            System.out.println("null");
-                            parameterList.append("(" + type + ") " + "null");
-                        }else{
-                            parameterList.append("TestGenerator.getObjectFromPool(\"" + type + "\")");
-                        }
+//                        if(o == null){
+////                            System.out.println("null");
+//                            parameterList.append("(" + type + ") " + "null");
+//                        }else{
+                        parameterList.append("(" + type + ") " + "TestGenerator.getObjectFromPool(\"" + type + "\")");
+//                        }
                     }
                     if(j != currentArguments.size() - 1){
                         parameterList.append(",");
                     }
                 }
-                parameterList.append(")");
-                sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
 
+                parameterList.append(")");
+//                sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                // get the return value of invoking the method
+                if (!Objects.equals(method.getType().toString(), "void")) {
+                    sb.append("        " + method.getType() + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                } else {
+                    sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                }
+                // add the return value from previous step
+                if (!Objects.equals(method.getType().toString(), "void")) {
+                    sb.append("        " + "TestGenerator.putObjectToPool(result);\n");
+                }
                 // o.equals(o)==true
                 sb.append("        " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
                 // o.equals(o) throws no exception
