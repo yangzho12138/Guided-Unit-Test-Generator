@@ -175,6 +175,7 @@ public class TestGenerator extends VoidVisitorAdapter {
             } else if (type.contains("String")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(stringsPool.size());
+
                 String[] stringArray = new String[randomNumber];
                 int j = 0;
                 Iterator<String> it = stringsPool.iterator();
@@ -710,7 +711,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() " + throwException + "{\n");
 
                 // TODO: add parameters
-                sb.append("        " + className + " " + className.toLowerCase() + " = TestGenerator.getObjectFromPool(" + className + ") + ;\n");
+                sb.append("        " + className + " " + className.toLowerCase() + " = TestGenerator.getObjectFromPool(" + className + ");\n");
 
                 StringBuilder parameterList = new StringBuilder();
                 parameterList.append("(");
