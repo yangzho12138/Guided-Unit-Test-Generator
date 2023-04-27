@@ -6,8 +6,12 @@ import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.Parameter;
+import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
+import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
+import com.github.javaparser.resolution.types.ResolvedReferenceType;
+import com.github.javaparser.resolution.types.ResolvedType;
 import com.github.javaparser.utils.SourceRoot;
 
 
@@ -124,6 +128,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         sb.append("import org.jsoup.Connection.Method;\n");
         sb.append("import org.jsoup.parser.helper.Validate;\n");
         sb.append("import javax.net.ssl.SSLSocketFactory;\n\n");
+        sb.append("import java.net.Proxy;\n");
         sb.append("\n");
         sb.append("public class " + "AutomatedTest" + " {\n");
 
@@ -955,7 +960,15 @@ public class TestGenerator extends VoidVisitorAdapter {
                     System.out.println(method.getType());
                 }
 
+                // get the return type of the MethodDeclaration method
+
                 if (!Objects.equals(method.getType().toString(), "void")) {
+                    Type returnType = method.getType(); // obtain the Type object representing the return type
+                    if (returnType.isClassOrInterfaceType()) {
+                        ClassOrInterfaceType type = (ClassOrInterfaceType) returnType;
+                        String interfaceName = type.getNameAsString();
+                        System.out.println(interfaceName);
+                    }
                     sb.append("        " + method.getType() + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                 } else {
                     sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
