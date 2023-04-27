@@ -179,8 +179,22 @@ public class TestGenerator extends VoidVisitorAdapter {
         }
     }
 
+    public Map constructMap(String type){
+        type = type.substring(type.indexOf("<") + 1, type.indexOf(">"));
+        String[] types = type.split(",");
+        Map map = new HashMap();
+        Random random = new Random();
+        int randomNumber = random.nextInt(10);
+        while(randomNumber -- > 0){
+            map.put(getValueFromPool(types[0]), getValueFromPool(types[1]));
+        }
+        return map;
+    }
+
     public Object getValueFromPool(String type) {
-        if (type.contains("[]") || type.contains("List") || type.contains("Set")) {
+        if(type.contains("Map")){
+            return constructMap(type);
+        }else if (type.contains("[]") || type.contains("List") || type.contains("Set")) {
             if (type.contains("Integer") || type.contains("int")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(integersPool.size());
@@ -814,9 +828,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 argumentsList.add(arguments);
             }
-            if(method.getName().toString().equals("put")){
-                System.out.println(argumentsList);
-            }
+//            if(method.getName().toString().equals("put")){
+//                System.out.println(argumentsList);
+//            }
 
             // 根据方法所在的类，去constructor list中找到对应的实体，调用该函数，生成test
             // TODO: Object can not be put into the code directly!!!
@@ -846,9 +860,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                     Object o = currentArguments.get(j);
                     if(o != null){
                         String type = o.getClass().toString();
-                        if (method.getName().toString().equals("put")){
-                            System.out.println(type);
-                        }
+//                        if (method.getName().toString().equals("put")){
+//                            System.out.println(type);
+//                        }
                         if(type.contains("[L") || type.contains("[I")){
                             if(type.contains("String")) {
                                 parameterList.append("new String[]{");
@@ -955,21 +969,12 @@ public class TestGenerator extends VoidVisitorAdapter {
 
                 parameterList.append(")");
 //                sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
-                // get the return value of invoking the method
-                if (method.getName().equals("getTreeBuilder")) {
-                    System.out.println(method.getType());
-                }
 
                 // get the return type of the MethodDeclaration method
 
                 if (!Objects.equals(method.getType().toString(), "void")) {
-                    Type returnType = method.getType(); // obtain the Type object representing the return type
-                    if (returnType.isClassOrInterfaceType()) {
-                        ClassOrInterfaceType type = (ClassOrInterfaceType) returnType;
-                        String interfaceName = type.getNameAsString();
-                        System.out.println(interfaceName);
-                    }
-                    sb.append("        " + method.getType() + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                    String returnType = method.getType().toString();
+                    sb.append("        " + returnType + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                 } else {
                     sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                 }
