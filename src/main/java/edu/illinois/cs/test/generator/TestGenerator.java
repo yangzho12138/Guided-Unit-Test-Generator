@@ -171,8 +171,22 @@ public class TestGenerator extends VoidVisitorAdapter {
         }
     }
 
+    public Map constructMap(String type){
+        type = type.substring(type.indexOf("<") + 1, type.indexOf(">"));
+        String[] types = type.split(",");
+        Map map = new HashMap();
+        Random random = new Random();
+        int randomNumber = random.nextInt(10);
+        while(randomNumber -- > 0){
+            map.put(getValueFromPool(types[0]), getValueFromPool(types[1]));
+        }
+        return map;
+    }
+
     public Object getValueFromPool(String type) {
-        if (type.contains("[]") || type.contains("List") || type.contains("Set")) {
+        if(type.contains("Map")){
+            return constructMap(type);
+        }else if (type.contains("[]") || type.contains("List") || type.contains("Set")) {
             if (type.contains("Integer") || type.contains("int")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(integersPool.size());
