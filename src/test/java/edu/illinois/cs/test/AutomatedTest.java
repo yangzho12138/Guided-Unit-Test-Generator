@@ -1,5 +1,6 @@
 package org.jsoup.mytests;
 import edu.illinois.cs.test.generator.TestGenerator;
+import org.jsoup.parser.helper.Validate;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.jsoup.nodes.*;
@@ -10,7 +11,9 @@ import org.jsoup.helper.*;
 import org.jsoup.internal.*;
 import org.jsoup.safety.*;
 import org.jsoup.*;
+import org.jsoup.Connection.Method;
 import java.io.InputStream;
+import java.net.Proxy;
 import java.nio.charset.Charset;
 import java.util.regex.Pattern;
 import java.io.File;
@@ -23,14 +26,16 @@ import java.util.*;
 import org.jsoup.nodes.Document.OutputSettings;
 import org.jsoup.nodes.Document.QuirksMode;
 
+import javax.net.ssl.SSLSocketFactory;
+
 public class AutomatedTest {
     @Test
-    public void testAttributesget15515509550() {
+    public void testAttributesget1102563210() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.get("noscript");
+        String result = attributes.get("text/");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -50,12 +55,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget10761623171() {
+    public void testAttributesget14581() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.get(":contains'");
+        String result = attributes.get("*}");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -75,12 +80,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget39972() {
+    public void testAttributesget14572() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.get("~<");
+        String result = attributes.get("*|");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -100,12 +105,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget14711890843() {
+    public void testAttributesget18305283() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.get(":nth-last-child'");
+        String result = attributes.get(":gt(");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -125,12 +130,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesget1101578774() {
+    public void testAttributesget35118004() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.get("tbody");
+        String result = attributes.get("rubx");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -150,12 +155,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase31830() {
+    public void testAttributesgetIgnoreCase35756400() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.getIgnoreCase("br");
+        String result = attributes.getIgnoreCase("typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -175,12 +180,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase1857353271() {
+    public void testAttributesgetIgnoreCase12174874161() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.getIgnoreCase("US-ASCII");
+        String result = attributes.getIgnoreCase("hiddem");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -200,12 +205,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase923482() {
+    public void testAttributesgetIgnoreCase30072() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.getIgnoreCase("]]=");
+        String result = attributes.getIgnoreCase("^>");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -225,12 +230,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase1101578783() {
+    public void testAttributesgetIgnoreCase1650854883() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.getIgnoreCase("tbodz");
+        String result = attributes.getIgnoreCase("http-equiv");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -250,12 +255,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesgetIgnoreCase35367444() {
+    public void testAttributesgetIgnoreCase19788929344() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.getIgnoreCase("spam");
+        String result = attributes.getIgnoreCase(":containsOwn(");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -275,12 +280,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd9588520170() {
+    public void testAttributesadd19682153300() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.add(":last-chilc","htmm");
+        Attributes result = attributes.add("[a-zA-Z_:][-a-zA-Z0-9_:.]*","imagd");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -300,12 +305,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd1003601351() {
+    public void testAttributesadd35741631() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.add("#","inpus");
+        Attributes result = attributes.add("$=","spao");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -325,12 +330,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd20073932262() {
+    public void testAttributesadd7224297872() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.add("heac",":last-of-typf");
+        Attributes result = attributes.add("http-equiv","deflate");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -350,12 +355,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd31941953() {
+    public void testAttributesadd8147838423() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.add("*}","forn");
+        Attributes result = attributes.add("keygeo","odd");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -375,12 +380,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesadd75854() {
+    public void testAttributesadd13603786794() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.add("^","tr");
+        Attributes result = attributes.add(":empty","linl");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -400,12 +405,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput17723157120() {
+    public void testAttributesput1038804730() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put(":root","eveo");
+        Attributes result = attributes.put("metb","]]>");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -425,12 +430,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput2074621() {
+    public void testAttributesput18912022731() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put("^=","svg");
+        Attributes result = attributes.put("^",":nth-of-type'");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -450,12 +455,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput15067363212() {
+    public void testAttributesput806826232() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put("buttoo","DOCTYPD");
+        Attributes result = attributes.put("\'","optgrouo");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -475,12 +480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput10357818153() {
+    public void testAttributesput6028049143() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put("textare`","-.");
+        Attributes result = attributes.put("frameseu",":has'");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -500,12 +505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput3449590884() {
+    public void testAttributesput11628716994() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put(":eq'",":nth-child'");
+        Attributes result = attributes.put("noembed","namd");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -525,12 +530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput8763673470() {
+    public void testAttributesput996191110() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put("tfoou",true);
+        Attributes result = attributes.put("httq",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -550,12 +555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput1108460711() {
+    public void testAttributesput16468717551() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put("typd",true);
+        Attributes result = attributes.put(":matchesOwn(",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -575,12 +580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput16377773592() {
+    public void testAttributesput11838643142() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put(":nth-last-child)",true);
+        Attributes result = attributes.put("input",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -600,12 +605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput28640193() {
+    public void testAttributesput3465992963() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put("]]=",true);
+        Attributes result = attributes.put(":nth-child'",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -625,12 +630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesput2413546234() {
+    public void testAttributesput12426082744() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.put("buttom",true);
+        Attributes result = attributes.put("http:0",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -655,7 +660,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
+        Attributes result = attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -680,7 +685,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
+        Attributes result = attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -705,7 +710,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
+        Attributes result = attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -730,7 +735,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
+        Attributes result = attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -755,7 +760,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
+        Attributes result = attributes.put((Attribute) TestGenerator.getObjectFromPool("Attribute"));
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -775,12 +780,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove10552537230() {
+    public void testAttributesremove569515650() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.remove(":matchesOwn)");
+        attributes.remove(":not'");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -799,12 +804,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove13776877261() {
+    public void testAttributesremove33681() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.remove("buttoo");
+        attributes.remove("hq");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -823,12 +828,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove17480897422() {
+    public void testAttributesremove358799192() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.remove("DOCTYPF");
+        attributes.remove("#text");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -847,12 +852,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove10032436863() {
+    public void testAttributesremove1003581203() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.remove("textareb");
+        attributes.remove("inpus");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -871,12 +876,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremove37304() {
+    public void testAttributesremove31255624() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.remove("tg");
+        attributes.remove("eveo");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -895,12 +900,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase1143080() {
+    public void testAttributesremoveIgnoreCase18245820() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.removeIgnoreCase("svh");
+        attributes.removeIgnoreCase(":all");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -919,55 +924,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase34851() {
-        Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
-        if (attributes == null) {
-            return;
-        }
-        attributes.removeIgnoreCase("lj");
-        assertTrue(attributes.equals(attributes));
-        try {
-            attributes.equals(attributes);
-        } catch (Exception e) {
-            fail("attributes.equals(attributes) throws an exception");
-        }
-        try {
-            attributes.hashCode();
-        } catch (Exception e) {
-            fail("attributes.hashCode() throws an exception");
-        }
-        try {
-            attributes.toString();
-        } catch (Exception e) {
-            fail("attributes.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testAttributesremoveIgnoreCase12269462992() {
-        Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
-        if (attributes == null) {
-            return;
-        }
-        attributes.removeIgnoreCase(":containsData)");
-        assertTrue(attributes.equals(attributes));
-        try {
-            attributes.equals(attributes);
-        } catch (Exception e) {
-            fail("attributes.equals(attributes) throws an exception");
-        }
-        try {
-            attributes.hashCode();
-        } catch (Exception e) {
-            fail("attributes.hashCode() throws an exception");
-        }
-        try {
-            attributes.toString();
-        } catch (Exception e) {
-            fail("attributes.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testAttributesremoveIgnoreCase1003581213() {
+    public void testAttributesremoveIgnoreCase1003581211() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
@@ -991,12 +948,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesremoveIgnoreCase32134784() {
+    public void testAttributesremoveIgnoreCase33092() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        attributes.removeIgnoreCase("htto");
+        attributes.removeIgnoreCase("h6");
         assertTrue(attributes.equals(attributes));
         try {
             attributes.equals(attributes);
@@ -1015,12 +972,60 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey35756410() {
+    public void testAttributesremoveIgnoreCase14713() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKey("type");
+        attributes.removeIgnoreCase("--");
+        assertTrue(attributes.equals(attributes));
+        try {
+            attributes.equals(attributes);
+        } catch (Exception e) {
+            fail("attributes.equals(attributes) throws an exception");
+        }
+        try {
+            attributes.hashCode();
+        } catch (Exception e) {
+            fail("attributes.hashCode() throws an exception");
+        }
+        try {
+            attributes.toString();
+        } catch (Exception e) {
+            fail("attributes.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributesremoveIgnoreCase1101158214() {
+        Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
+        if (attributes == null) {
+            return;
+        }
+        attributes.removeIgnoreCase("table");
+        assertTrue(attributes.equals(attributes));
+        try {
+            attributes.equals(attributes);
+        } catch (Exception e) {
+            fail("attributes.equals(attributes) throws an exception");
+        }
+        try {
+            attributes.hashCode();
+        } catch (Exception e) {
+            fail("attributes.hashCode() throws an exception");
+        }
+        try {
+            attributes.toString();
+        } catch (Exception e) {
+            fail("attributes.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testAttributeshasKey16183955610() {
+        Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
+        if (attributes == null) {
+            return;
+        }
+        boolean result = attributes.hasKey(":only-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1040,12 +1045,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey20919604291() {
+    public void testAttributeshasKey32132581() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKey(":only-chilc");
+        boolean result = attributes.hasKey("html");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1065,12 +1070,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey13215465982() {
+    public void testAttributeshasKey21065455192() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKey("templatf");
+        boolean result = attributes.hasKey(":last-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1090,12 +1095,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey567593363() {
+    public void testAttributeshasKey807731743() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKey(":has)");
+        boolean result = attributes.hasKey("optgrouo");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1115,12 +1120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKey774() {
+    public void testAttributeshasKey37274() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKey(".");
+        boolean result = attributes.hasKey("td");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1140,12 +1145,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase11346655510() {
+    public void testAttributeshasKeyIgnoreCase26152040() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKeyIgnoreCase("keygeo");
+        boolean result = attributes.hasKeyIgnoreCase("UTF,");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1165,12 +1170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase11912143981() {
+    public void testAttributeshasKeyIgnoreCase9503947291() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKeyIgnoreCase("iframd");
+        boolean result = attributes.hasKeyIgnoreCase("commanc");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1190,12 +1195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase35756422() {
+    public void testAttributeshasKeyIgnoreCase19392() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKeyIgnoreCase("typf");
+        boolean result = attributes.hasKeyIgnoreCase("<0");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1215,12 +1220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase21065455193() {
+    public void testAttributeshasKeyIgnoreCase35118013() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKeyIgnoreCase(":last-of-typd");
+        boolean result = attributes.hasKeyIgnoreCase("ruby");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1240,12 +1245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributeshasKeyIgnoreCase27763634() {
+    public void testAttributeshasKeyIgnoreCase996170344() {
         Attributes attributes = (Attributes) TestGenerator.getObjectFromPool("Attributes");
         if (attributes == null) {
             return;
         }
-        boolean result = attributes.hasKeyIgnoreCase("\"\"");
+        boolean result = attributes.hasKeyIgnoreCase("https");
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1640,7 +1645,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.asList();
+        List<Attribute> result = attributes.asList();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1665,7 +1670,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.asList();
+        List<Attribute> result = attributes.asList();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1690,7 +1695,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.asList();
+        List<Attribute> result = attributes.asList();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1715,7 +1720,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.asList();
+        List<Attribute> result = attributes.asList();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1740,7 +1745,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.asList();
+        List<Attribute> result = attributes.asList();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1765,7 +1770,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.dataset();
+        Map<String, String> result = attributes.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1790,7 +1795,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.dataset();
+        Map<String, String> result = attributes.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1815,7 +1820,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.dataset();
+        Map<String, String> result = attributes.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1840,7 +1845,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.dataset();
+        Map<String, String> result = attributes.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1865,7 +1870,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.dataset();
+        Map<String, String> result = attributes.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1890,7 +1895,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.html();
+        String result = attributes.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1915,7 +1920,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.html();
+        String result = attributes.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1940,7 +1945,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.html();
+        String result = attributes.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1965,7 +1970,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.html();
+        String result = attributes.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -1990,7 +1995,7 @@ public class AutomatedTest {
         if (attributes == null) {
             return;
         }
-        attributes.html();
+        String result = attributes.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attributes.equals(attributes));
         try {
@@ -2260,7 +2265,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tagName();
+        String result = element.tagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2285,7 +2290,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tagName();
+        String result = element.tagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2310,7 +2315,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tagName();
+        String result = element.tagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2335,7 +2340,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tagName();
+        String result = element.tagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2360,7 +2365,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tagName();
+        String result = element.tagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2385,7 +2390,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.normalName();
+        String result = element.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2410,7 +2415,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.normalName();
+        String result = element.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2435,7 +2440,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.normalName();
+        String result = element.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2460,7 +2465,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.normalName();
+        String result = element.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2485,7 +2490,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.normalName();
+        String result = element.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2505,12 +2510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtagName32300() {
+    public void testElementtagName33680() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.tagName("dc");
+        Element result = element.tagName("hq");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2530,12 +2535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtagName1101158201() {
+    public void testElementtagName358799201() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.tagName("tabld");
+        Element result = element.tagName("#texu");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2555,12 +2560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtagName1552() {
+    public void testElementtagName18245812() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.tagName("|");
+        Element result = element.tagName(":alk");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2580,12 +2585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtagName18353343() {
+    public void testElementtagName33868643() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.tagName(":lt)");
+        Element result = element.tagName("nobr");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2605,12 +2610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtagName33737374() {
+    public void testElementtagName31255624() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.tagName("namd");
+        Element result = element.tagName("eveo");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2635,7 +2640,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tag();
+        Tag result = element.tag();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2660,7 +2665,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tag();
+        Tag result = element.tag();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2685,7 +2690,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tag();
+        Tag result = element.tag();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2710,7 +2715,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tag();
+        Tag result = element.tag();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2735,7 +2740,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.tag();
+        Tag result = element.tag();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2885,7 +2890,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.id();
+        String result = element.id();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2910,7 +2915,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.id();
+        String result = element.id();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2935,7 +2940,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.id();
+        String result = element.id();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2960,7 +2965,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.id();
+        String result = element.id();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -2985,7 +2990,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.id();
+        String result = element.id();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3005,12 +3010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr9585284700() {
+    public void testElementattr20819751320() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr(":last-chile","spam");
+        Element result = element.attr("disablec",":nth-of-type)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3030,12 +3035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr36872241() {
+    public void testElementattr1037735651() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("xmm","ds");
+        Element result = element.attr("math","imh");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3055,12 +3060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr777001502() {
+    public void testElementattr1001058712() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr(":matches(","noembed");
+        Element result = element.attr("eveo","httq");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3080,12 +3085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr1828725693() {
+    public void testElementattr64470923() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("]]=","US-ASCIJ");
+        Element result = element.attr("cok","nobs");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3105,12 +3110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr388434() {
+    public void testElementattr16564190804() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("$>","*>");
+        Element result = element.attr(":first-chilc","linl");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3130,12 +3135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr358270() {
+    public void testElementattr16468717550() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("!>",true);
+        Element result = element.attr(":matchesOwn(",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3155,12 +3160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr28640501() {
+    public void testElementattr10407191941() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("]]>",true);
+        Element result = element.attr("plaintexs",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3180,12 +3185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr8226816322() {
+    public void testElementattr988637032() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("http-equiu",true);
+        Element result = element.attr("gzio",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3205,12 +3210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr500911583() {
+    public void testElementattr976210683() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("caption",true);
+        Element result = element.attr("form",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3230,12 +3235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementattr17270605884() {
+    public void testElementattr1168614() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.attr("iframe",true);
+        Element result = element.attr("tg",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3260,7 +3265,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataset();
+        Map<String, String> result = element.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3285,7 +3290,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataset();
+        Map<String, String> result = element.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3310,7 +3315,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataset();
+        Map<String, String> result = element.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3335,7 +3340,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataset();
+        Map<String, String> result = element.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3360,7 +3365,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataset();
+        Map<String, String> result = element.dataset();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3385,7 +3390,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.parents();
+        Elements result = element.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3410,7 +3415,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.parents();
+        Elements result = element.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3435,7 +3440,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.parents();
+        Elements result = element.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3460,7 +3465,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.parents();
+        Elements result = element.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3485,7 +3490,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.parents();
+        Elements result = element.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3505,12 +3510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementchild1340() {
+    public void testElementchild11142420() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.child(103);
+        Element result = element.child(1114211);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3530,12 +3535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementchild573731() {
+    public void testElementchild681() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.child(57342);
+        Element result = element.child(-99);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3560,7 +3565,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.child(240);
+        Element result = element.child(240);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3580,12 +3585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementchild572743() {
+    public void testElementchild343() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.child(57243);
+        Element result = element.child(3);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3605,12 +3610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementchild4314() {
+    public void testElementchild324() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.child(400);
+        Element result = element.child(1);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3635,7 +3640,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.children();
+        Elements result = element.children();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3660,7 +3665,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.children();
+        Elements result = element.children();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3685,7 +3690,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.children();
+        Elements result = element.children();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3710,7 +3715,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.children();
+        Elements result = element.children();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3735,7 +3740,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.children();
+        Elements result = element.children();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3760,7 +3765,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.textNodes();
+        List<TextNode> result = element.textNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3785,7 +3790,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.textNodes();
+        List<TextNode> result = element.textNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3810,7 +3815,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.textNodes();
+        List<TextNode> result = element.textNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3835,7 +3840,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.textNodes();
+        List<TextNode> result = element.textNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3860,7 +3865,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.textNodes();
+        List<TextNode> result = element.textNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3885,7 +3890,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataNodes();
+        List<DataNode> result = element.dataNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3910,7 +3915,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataNodes();
+        List<DataNode> result = element.dataNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3935,7 +3940,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataNodes();
+        List<DataNode> result = element.dataNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3960,7 +3965,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataNodes();
+        List<DataNode> result = element.dataNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -3985,7 +3990,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.dataNodes();
+        List<DataNode> result = element.dataNodes();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4005,12 +4010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselect1857353270() {
+    public void testElementselect1099030() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.select("US-ASCII");
+        Elements result = element.select("ode");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4030,12 +4035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselect10101369411() {
+    public void testElementselect31891141() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.select("optiom");
+        Elements result = element.select("gziq");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4055,12 +4060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselect37312() {
+    public void testElementselect18912061152() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.select("th");
+        Elements result = element.select(":nth-of-type)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4080,12 +4085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselect9503947313() {
+    public void testElementselect17480897443() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.select("commane");
+        Elements result = element.select("DOCTYPD");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4105,12 +4110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselect1103268984() {
+    public void testElementselect12174874164() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.select("theac");
+        Elements result = element.select("hiddem");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4130,12 +4135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselectFirst10761623190() {
+    public void testElementselectFirst1102563200() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.selectFirst(":contains)");
+        Element result = element.selectFirst("text.");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4155,12 +4160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselectFirst14562253621() {
+    public void testElementselectFirst1101158211() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.selectFirst(":matches(");
+        Element result = element.selectFirst("table");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4180,12 +4185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselectFirst6361976022() {
+    public void testElementselectFirst20353119912() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.selectFirst("colgroup");
+        Element result = element.selectFirst(":first-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4205,12 +4210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselectFirst1223() {
+    public void testElementselectFirst10548386283() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.selectFirst("[");
+        Element result = element.selectFirst(":first-child");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4230,12 +4235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementselectFirst1003581204() {
+    public void testElementselectFirst15368918734() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.selectFirst("inpus");
+        Element result = element.selectFirst("checkbow");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4255,12 +4260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementis15451126510() {
+    public void testElementis15368918740() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.is("deflatf");
+        boolean result = element.is("checkbox");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4280,12 +4285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementis34831() {
+    public void testElementis31984621() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.is("lh");
+        boolean result = element.is("heac");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4305,12 +4310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementis1099032() {
+    public void testElementis33737392() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.is("ode");
+        boolean result = element.is("namf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4330,12 +4335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementis35367463() {
+    public void testElementis7390744103() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.is("spao");
+        boolean result = element.is("charses");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4355,12 +4360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementis10176250964() {
+    public void testElementis18245814() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.is(":nth-last-of-type'");
+        boolean result = element.is(":alk");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4510,7 +4515,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4535,7 +4540,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4560,7 +4565,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4585,7 +4590,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4610,7 +4615,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4635,7 +4640,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4660,7 +4665,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4685,7 +4690,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4710,7 +4715,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4735,7 +4740,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = element.appendTo((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4760,7 +4765,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4785,7 +4790,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4810,7 +4815,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4835,7 +4840,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4860,7 +4865,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.prependChild((Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4880,12 +4885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren133610() {
+    public void testElementinsertChildren69130() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(400,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        Element result = element.insertChildren(192,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4905,12 +4910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren67581() {
+    public void testElementinsertChildren10541() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(187,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        Element result = element.insertChildren(3,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4930,12 +4935,137 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren83702() {
+    public void testElementinsertChildren17785942() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(239,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        Element result = element.insertChildren(57343,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        TestGenerator.putObjectToPool(result);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren345415023() {
+        Element element = (Element) TestGenerator.getObjectFromPool("Element");
+        if (element == null) {
+            return;
+        }
+        Element result = element.insertChildren(1114211,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        TestGenerator.putObjectToPool(result);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren9614() {
+        Element element = (Element) TestGenerator.getObjectFromPool("Element");
+        if (element == null) {
+            return;
+        }
+        Element result = element.insertChildren(0,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        TestGenerator.putObjectToPool(result);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren17785940() {
+        Element element = (Element) TestGenerator.getObjectFromPool("Element");
+        if (element == null) {
+            return;
+        }
+        Element result = element.insertChildren(57343,(Node) TestGenerator.getObjectFromPool("Node"));
+        TestGenerator.putObjectToPool(result);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren41541() {
+        Element element = (Element) TestGenerator.getObjectFromPool("Element");
+        if (element == null) {
+            return;
+        }
+        Element result = element.insertChildren(103,(Node) TestGenerator.getObjectFromPool("Node"));
+        TestGenerator.putObjectToPool(result);
+        assertTrue(element.equals(element));
+        try {
+            element.equals(element);
+        } catch (Exception e) {
+            fail("element.equals(element) throws an exception");
+        }
+        try {
+            element.hashCode();
+        } catch (Exception e) {
+            fail("element.hashCode() throws an exception");
+        }
+        try {
+            element.toString();
+        } catch (Exception e) {
+            fail("element.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testElementinsertChildren68822() {
+        Element element = (Element) TestGenerator.getObjectFromPool("Element");
+        if (element == null) {
+            return;
+        }
+        Element result = element.insertChildren(191,(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4960,7 +5090,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.insertChildren(0,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        Element result = element.insertChildren(0,(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -4980,12 +5110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren40614() {
+    public void testElementinsertChildren133614() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(100,(Collection<? extends Node>) TestGenerator.getObjectFromPool("Collection<? extends Node>"));
+        Element result = element.insertChildren(400,(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5005,12 +5135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren84010() {
+    public void testElementappendElement18690634820() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(240,(Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendElement("sarcasl");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5030,12 +5160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren17182371() {
+    public void testElementappendElement1099021() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(55396,(Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendElement("odd");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5055,12 +5185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren345415022() {
+    public void testElementappendElement31984642() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(1114211,(Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendElement("heae");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5080,12 +5210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren41543() {
+    public void testElementappendElement37323() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(103,(Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendElement("ti");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5105,12 +5235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementinsertChildren345415024() {
+    public void testElementappendElement30294414() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.insertChildren(1114211,(Node) TestGenerator.getObjectFromPool("Node"));
+        Element result = element.appendElement("body");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5130,12 +5260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendElement30164310() {
+    public void testElementprependElement21011358000() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendElement("basd");
+        Element result = element.prependElement(":matchTexu");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5155,12 +5285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendElement31490271() {
+    public void testElementprependElement11346655531() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendElement("form");
+        Element result = element.prependElement("keygem");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5180,12 +5310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendElement12068418922() {
+    public void testElementprependElement15515509542() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendElement("http:/");
+        Element result = element.prependElement("noscrips");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5205,12 +5335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendElement18353333() {
+    public void testElementprependElement1102563223() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendElement(":lt(");
+        Element result = element.prependElement("text0");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5230,12 +5360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendElement11927218624() {
+    public void testElementprependElement18912061164() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendElement("noframes");
+        Element result = element.prependElement(":nth-of-type(");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5255,12 +5385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependElement1101158210() {
+    public void testElementappendText987200() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependElement("table");
+        Element result = element.appendText("com");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5280,12 +5410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependElement807731731() {
+    public void testElementappendText567593341() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependElement("optgroup");
+        Element result = element.appendText(":has'");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5305,12 +5435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependElement33218812() {
+    public void testElementappendText35367452() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependElement("link");
+        Element result = element.appendText("span");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5330,12 +5460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependElement11927218613() {
+    public void testElementappendText33053() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependElement("noframer");
+        Element result = element.appendText("h2");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5355,12 +5485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependElement570706524() {
+    public void testElementappendText734() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependElement(":roou");
+        Element result = element.appendText("*");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5380,12 +5510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendText1102563220() {
+    public void testElementprependText33441680() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendText("text0");
+        Element result = element.prependText("mati");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5405,12 +5535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendText1102773771() {
+    public void testElementprependText10552537231() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendText("tfoot");
+        Element result = element.prependText(":matchesOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5430,12 +5560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendText1605222312() {
+    public void testElementprependText662() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendText("bgsound");
+        Element result = element.prependText("#");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5455,12 +5585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendText14562253613() {
+    public void testElementprependText18285143() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendText(":matches)");
+        Element result = element.prependText(":eq)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5480,12 +5610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappendText32474() {
+    public void testElementprependText2709408284() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.appendText("dt");
+        Element result = element.prependText("disablee");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5505,12 +5635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependText11140() {
+    public void testElementappend10032436880() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependText("!<");
+        Element result = element.append("textare`");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5530,12 +5660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependText11161() {
+    public void testElementappend1099031() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependText("!>");
+        Element result = element.append("ode");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5555,12 +5685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependText30164332() {
+    public void testElementappend1082706172() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependText("basf");
+        Element result = element.append("radin");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5580,12 +5710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependText10552537213() {
+    public void testElementappend11346655533() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependText(":matchesOwn'");
+        Element result = element.append("keygem");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5605,12 +5735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementprependText5525734454() {
+    public void testElementappend1650854894() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.prependText("caption");
+        Element result = element.append("http-equiu");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5630,12 +5760,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappend30294400() {
+    public void testElementprepend1044190() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.append("bodx");
+        Element result = element.prepend("imh");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5655,12 +5785,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappend31984621() {
+    public void testElementprepend987201() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.append("heac");
+        Element result = element.prepend("com");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5680,12 +5810,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappend13952() {
+    public void testElementprepend1102773782() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.append("*>");
+        Element result = element.prepend("tfoou");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5705,12 +5835,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappend11346655523() {
+    public void testElementprepend9060216053() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.append("keygen");
+        Element result = element.prepend("select");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5730,137 +5860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementappend1101158214() {
+    public void testElementprepend18305284() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.append("table");
-        TestGenerator.putObjectToPool(result);
-        assertTrue(element.equals(element));
-        try {
-            element.equals(element);
-        } catch (Exception e) {
-            fail("element.equals(element) throws an exception");
-        }
-        try {
-            element.hashCode();
-        } catch (Exception e) {
-            fail("element.hashCode() throws an exception");
-        }
-        try {
-            element.toString();
-        } catch (Exception e) {
-            fail("element.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementprepend12174874140() {
-        Element element = (Element) TestGenerator.getObjectFromPool("Element");
-        if (element == null) {
-            return;
-        }
-        element.prepend("hiddeo");
-        TestGenerator.putObjectToPool(result);
-        assertTrue(element.equals(element));
-        try {
-            element.equals(element);
-        } catch (Exception e) {
-            fail("element.equals(element) throws an exception");
-        }
-        try {
-            element.hashCode();
-        } catch (Exception e) {
-            fail("element.hashCode() throws an exception");
-        }
-        try {
-            element.toString();
-        } catch (Exception e) {
-            fail("element.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementprepend39981() {
-        Element element = (Element) TestGenerator.getObjectFromPool("Element");
-        if (element == null) {
-            return;
-        }
-        element.prepend("~=");
-        TestGenerator.putObjectToPool(result);
-        assertTrue(element.equals(element));
-        try {
-            element.equals(element);
-        } catch (Exception e) {
-            fail("element.equals(element) throws an exception");
-        }
-        try {
-            element.hashCode();
-        } catch (Exception e) {
-            fail("element.hashCode() throws an exception");
-        }
-        try {
-            element.toString();
-        } catch (Exception e) {
-            fail("element.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementprepend14562253632() {
-        Element element = (Element) TestGenerator.getObjectFromPool("Element");
-        if (element == null) {
-            return;
-        }
-        element.prepend(":matches'");
-        TestGenerator.putObjectToPool(result);
-        assertTrue(element.equals(element));
-        try {
-            element.equals(element);
-        } catch (Exception e) {
-            fail("element.equals(element) throws an exception");
-        }
-        try {
-            element.hashCode();
-        } catch (Exception e) {
-            fail("element.hashCode() throws an exception");
-        }
-        try {
-            element.toString();
-        } catch (Exception e) {
-            fail("element.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementprepend12174874143() {
-        Element element = (Element) TestGenerator.getObjectFromPool("Element");
-        if (element == null) {
-            return;
-        }
-        element.prepend("hiddeo");
-        TestGenerator.putObjectToPool(result);
-        assertTrue(element.equals(element));
-        try {
-            element.equals(element);
-        } catch (Exception e) {
-            fail("element.equals(element) throws an exception");
-        }
-        try {
-            element.hashCode();
-        } catch (Exception e) {
-            fail("element.hashCode() throws an exception");
-        }
-        try {
-            element.toString();
-        } catch (Exception e) {
-            fail("element.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testElementprepend20353119924() {
-        Element element = (Element) TestGenerator.getObjectFromPool("Element");
-        if (element == null) {
-            return;
-        }
-        element.prepend(":first-of-type");
+        Element result = element.prepend(":gt(");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5885,7 +5890,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.empty();
+        Element result = element.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5910,7 +5915,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.empty();
+        Element result = element.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5935,7 +5940,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.empty();
+        Element result = element.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5960,7 +5965,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.empty();
+        Element result = element.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -5985,7 +5990,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.empty();
+        Element result = element.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6010,7 +6015,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.cssSelector();
+        String result = element.cssSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6035,7 +6040,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.cssSelector();
+        String result = element.cssSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6060,7 +6065,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.cssSelector();
+        String result = element.cssSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6085,7 +6090,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.cssSelector();
+        String result = element.cssSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6110,7 +6115,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.cssSelector();
+        String result = element.cssSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6135,7 +6140,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.siblingElements();
+        Elements result = element.siblingElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6160,7 +6165,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.siblingElements();
+        Elements result = element.siblingElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6185,7 +6190,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.siblingElements();
+        Elements result = element.siblingElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6210,7 +6215,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.siblingElements();
+        Elements result = element.siblingElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6235,7 +6240,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.siblingElements();
+        Elements result = element.siblingElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6260,7 +6265,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSibling();
+        Element result = element.nextElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6285,7 +6290,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSibling();
+        Element result = element.nextElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6310,7 +6315,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSibling();
+        Element result = element.nextElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6335,7 +6340,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSibling();
+        Element result = element.nextElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6360,7 +6365,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSibling();
+        Element result = element.nextElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6385,7 +6390,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSiblings();
+        Elements result = element.nextElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6410,7 +6415,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSiblings();
+        Elements result = element.nextElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6435,7 +6440,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSiblings();
+        Elements result = element.nextElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6460,7 +6465,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSiblings();
+        Elements result = element.nextElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6485,7 +6490,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.nextElementSiblings();
+        Elements result = element.nextElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6510,7 +6515,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSibling();
+        Element result = element.previousElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6535,7 +6540,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSibling();
+        Element result = element.previousElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6560,7 +6565,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSibling();
+        Element result = element.previousElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6585,7 +6590,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSibling();
+        Element result = element.previousElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6610,7 +6615,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSibling();
+        Element result = element.previousElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6635,7 +6640,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSiblings();
+        Elements result = element.previousElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6660,7 +6665,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSiblings();
+        Elements result = element.previousElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6685,7 +6690,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSiblings();
+        Elements result = element.previousElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6710,7 +6715,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSiblings();
+        Elements result = element.previousElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6735,7 +6740,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.previousElementSiblings();
+        Elements result = element.previousElementSiblings();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6760,7 +6765,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.firstElementSibling();
+        Element result = element.firstElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6785,7 +6790,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.firstElementSibling();
+        Element result = element.firstElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6810,7 +6815,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.firstElementSibling();
+        Element result = element.firstElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6835,7 +6840,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.firstElementSibling();
+        Element result = element.firstElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -6860,7 +6865,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.firstElementSibling();
+        Element result = element.firstElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7010,7 +7015,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.lastElementSibling();
+        Element result = element.lastElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7035,7 +7040,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.lastElementSibling();
+        Element result = element.lastElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7060,7 +7065,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.lastElementSibling();
+        Element result = element.lastElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7085,7 +7090,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.lastElementSibling();
+        Element result = element.lastElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7110,7 +7115,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.lastElementSibling();
+        Element result = element.lastElementSibling();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7130,12 +7135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByTag10176250960() {
+    public void testElementgetElementsByTag32132580() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByTag(":nth-last-of-type'");
+        Elements result = element.getElementsByTag("html");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7155,12 +7160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByTag1188421() {
+    public void testElementgetElementsByTag33071() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByTag("xmp");
+        Elements result = element.getElementsByTag("h4");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7180,12 +7185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByTag18285132() {
+    public void testElementgetElementsByTag20353119922() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByTag(":eq(");
+        Elements result = element.getElementsByTag(":first-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7205,12 +7210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByTag18678420533() {
+    public void testElementgetElementsByTag30294423() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByTag("[a-zA-Z_:][-a-zA-Z0-9_:.])");
+        Elements result = element.getElementsByTag("bodz");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7230,12 +7235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByTag2709408274() {
+    public void testElementgetElementsByTag10101369404() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByTag("disabled");
+        Elements result = element.getElementsByTag("option");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7255,12 +7260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementById11927218630() {
+    public void testElementgetElementById29875580() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementById("noframet");
+        Element result = element.getElementById("abs9");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7280,12 +7285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementById923501() {
+    public void testElementgetElementById31984621() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementById("]]?");
+        Element result = element.getElementById("heac");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7305,12 +7310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementById1044192() {
+    public void testElementgetElementById10552537232() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementById("imh");
+        Element result = element.getElementById(":matchesOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7330,12 +7335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementById10548386283() {
+    public void testElementgetElementById1102773783() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementById(":first-child");
+        Element result = element.getElementById("tfoou");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7355,12 +7360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementById29875594() {
+    public void testElementgetElementById19788929334() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementById("abs:");
+        Element result = element.getElementById(":containsOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7380,12 +7385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByClass32134790() {
+    public void testElementgetElementsByClass21156131420() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByClass("http");
+        Elements result = element.getElementsByClass("noembec");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7405,12 +7410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByClass32311() {
+    public void testElementgetElementsByClass35118021() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByClass("dd");
+        Elements result = element.getElementsByClass("rubz");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7430,12 +7435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByClass33052() {
+    public void testElementgetElementsByClass33441672() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByClass("h2");
+        Elements result = element.getElementsByClass("math");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7455,12 +7460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByClass773() {
+    public void testElementgetElementsByClass14713() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByClass(".");
+        Elements result = element.getElementsByClass("--");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7480,12 +7485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByClass9060216064() {
+    public void testElementgetElementsByClass569515654() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByClass("selecs");
+        Elements result = element.getElementsByClass(":not'");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7505,12 +7510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttribute1097804310() {
+    public void testElementgetElementsByAttribute16449536130() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttribute("styld");
+        Elements result = element.getElementsByAttribute("frameses");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7530,12 +7535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttribute1082706181() {
+    public void testElementgetElementsByAttribute30051() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttribute("radio");
+        Elements result = element.getElementsByAttribute("^<");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7555,12 +7560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttribute996170332() {
+    public void testElementgetElementsByAttribute32482() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttribute("httpr");
+        Elements result = element.getElementsByAttribute("du");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7580,12 +7585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttribute1553() {
+    public void testElementgetElementsByAttribute10552537233() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttribute("|");
+        Elements result = element.getElementsByAttribute(":matchesOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7605,12 +7610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttribute19804204654() {
+    public void testElementgetElementsByAttribute33218814() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttribute("Set-Cookif");
+        Elements result = element.getElementsByAttribute("link");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7630,12 +7635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeStarting807731730() {
+    public void testElementgetElementsByAttributeStarting12174874160() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeStarting("optgroup");
+        Elements result = element.getElementsByAttributeStarting("hiddem");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7655,12 +7660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeStarting9060216051() {
+    public void testElementgetElementsByAttributeStarting2882752491() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeStarting("select");
+        Elements result = element.getElementsByAttributeStarting(":nth-child)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7680,12 +7685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeStarting12269463002() {
+    public void testElementgetElementsByAttributeStarting19788929342() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeStarting(":containsData(");
+        Elements result = element.getElementsByAttributeStarting(":containsOwn(");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7705,12 +7710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeStarting10032436883() {
+    public void testElementgetElementsByAttributeStarting37323() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeStarting("textare`");
+        Elements result = element.getElementsByAttributeStarting("ti");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7730,12 +7735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeStarting2882752494() {
+    public void testElementgetElementsByAttributeStarting11144() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeStarting(":nth-child)");
+        Elements result = element.getElementsByAttributeStarting("!<");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7755,12 +7760,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValue9951947700() {
+    public void testElementgetElementsByAttributeValue587238360() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValue(":contains'","rubz");
+        Elements result = element.getElementsByAttributeValue(":lt)",":eq(");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7780,12 +7785,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValue779104171() {
+    public void testElementgetElementsByAttributeValue11122804961() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValue("]]=","optgrouo");
+        Elements result = element.getElementsByAttributeValue("#texu","^>");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7805,12 +7810,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValue1027668132() {
+    public void testElementgetElementsByAttributeValue995446252() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValue("htto","forl");
+        Elements result = element.getElementsByAttributeValue("href","!<");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7830,12 +7835,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValue3080051193() {
+    public void testElementgetElementsByAttributeValue5614963603() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValue("~=",":last-child");
+        Elements result = element.getElementsByAttributeValue("colgrouo","iframf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7855,12 +7860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValue16259134444() {
+    public void testElementgetElementsByAttributeValue6570629774() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValue("optgrouq","http-equiu");
+        Elements result = element.getElementsByAttributeValue("deflatf","hreg");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7880,12 +7885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueNot14561908270() {
+    public void testElementgetElementsByAttributeValueNot11107234380() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueNot("!=",":matches)");
+        Elements result = element.getElementsByAttributeValueNot("#roou","tg");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7905,12 +7910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueNot1504609261() {
+    public void testElementgetElementsByAttributeValueNot15053635981() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueNot("base",":not'");
+        Elements result = element.getElementsByAttributeValueNot(":nth-of-type(","hree");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7930,12 +7935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueNot3352324162() {
+    public void testElementgetElementsByAttributeValueNot15516589582() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueNot("[a-zA-Z_:][-a-zA-Z0-9_:.]+",":nth-of-type(");
+        Elements result = element.getElementsByAttributeValueNot("lj","noscrips");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7955,12 +7960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueNot3080834553() {
+    public void testElementgetElementsByAttributeValueNot11271062413() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueNot("--",":last-chile");
+        Elements result = element.getElementsByAttributeValueNot("input",":has(");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -7980,12 +7985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueNot2167304() {
+    public void testElementgetElementsByAttributeValueNot36577924() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueNot("h2","svf");
+        Elements result = element.getElementsByAttributeValueNot("svg","svf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8005,12 +8010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueStarting1082062000() {
+    public void testElementgetElementsByAttributeValueStarting3288033990() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueStarting("nobq","htto");
+        Elements result = element.getElementsByAttributeValueStarting("tablf","captioo");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8030,12 +8035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueStarting10977050371() {
+    public void testElementgetElementsByAttributeValueStarting7951767341() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueStarting("base","iframd");
+        Elements result = element.getElementsByAttributeValueStarting("typf","select");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8055,12 +8060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueStarting4244333312() {
+    public void testElementgetElementsByAttributeValueStarting36781282() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueStarting(":only-child",":gt(");
+        Elements result = element.getElementsByAttributeValueStarting("h4","typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8080,12 +8085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueStarting2413534823() {
+    public void testElementgetElementsByAttributeValueStarting995436543() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueStarting("button",";");
+        Elements result = element.getElementsByAttributeValueStarting("href","p");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8105,12 +8110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueStarting601662984() {
+    public void testElementgetElementsByAttributeValueStarting8786004824() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueStarting("ode",":has)");
+        Elements result = element.getElementsByAttributeValueStarting("tablf","\"\"");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8130,12 +8135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueEnding19418048300() {
+    public void testElementgetElementsByAttributeValueEnding4077532480() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueEnding("textareb","select");
+        Elements result = element.getElementsByAttributeValueEnding("isindey",":alm");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8155,12 +8160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueEnding19817284021() {
+    public void testElementgetElementsByAttributeValueEnding1668393881() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueEnding("templatd","*");
+        Elements result = element.getElementsByAttributeValueEnding(":all","tfoot");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8180,12 +8185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueEnding11798314952() {
+    public void testElementgetElementsByAttributeValueEnding18953482() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueEnding("mati",":contains(");
+        Elements result = element.getElementsByAttributeValueEnding("<.",":lt'");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8205,12 +8210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueEnding8727929683() {
+    public void testElementgetElementsByAttributeValueEnding20694883943() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueEnding("tfoou","type");
+        Elements result = element.getElementsByAttributeValueEnding("actiom","scrips");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8230,12 +8235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueEnding1275001614() {
+    public void testElementgetElementsByAttributeValueEnding36869544() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueEnding("sarcasm",":containsOwn)");
+        Elements result = element.getElementsByAttributeValueEnding("xml","^>");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8255,12 +8260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueContaining13605749990() {
+    public void testElementgetElementsByAttributeValueContaining12027157440() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueContaining(":empty","eveo");
+        Elements result = element.getElementsByAttributeValueContaining("hiddeo","boundary");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8280,12 +8285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueContaining1885518451() {
+    public void testElementgetElementsByAttributeValueContaining17725770451() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueContaining(":first-child",":nth-last-child)");
+        Elements result = element.getElementsByAttributeValueContaining(":roou","nobr");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8305,12 +8310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueContaining925759752() {
+    public void testElementgetElementsByAttributeValueContaining19402442() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueContaining(":gt'","#roou");
+        Elements result = element.getElementsByAttributeValueContaining("ti",":alm");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8330,12 +8335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueContaining11142315083() {
+    public void testElementgetElementsByAttributeValueContaining8226827723() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueContaining("#roou","rubx");
+        Elements result = element.getElementsByAttributeValueContaining("http-equiu","[");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8355,12 +8360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueContaining1085294984() {
+    public void testElementgetElementsByAttributeValueContaining5973150534() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueContaining("nobr","span");
+        Elements result = element.getElementsByAttributeValueContaining("isindex","textarea");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8380,12 +8385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching1001300() {
+    public void testElementgetElementsByAttributeValueMatching996178490() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("dc",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsByAttributeValueMatching("http",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8405,12 +8410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching939126401() {
+    public void testElementgetElementsByAttributeValueMatching8800731401() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("bodx",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsByAttributeValueMatching("tbodx",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8430,12 +8435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching2413534232() {
+    public void testElementgetElementsByAttributeValueMatching987042() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("button",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsByAttributeValueMatching("bs",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8455,12 +8460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching8800730783() {
+    public void testElementgetElementsByAttributeValueMatching16597409313() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("tbodz",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsByAttributeValueMatching(":first-chilc",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8480,12 +8485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching6812218344() {
+    public void testElementgetElementsByAttributeValueMatching27904() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("bgsoune",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsByAttributeValueMatching(";",(Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8505,12 +8510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching16185110670() {
+    public void testElementgetElementsByAttributeValueMatching9059136020() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("td",":only-of-typf");
+        Elements result = element.getElementsByAttributeValueMatching("lj","selecs");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8530,12 +8535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching571692931() {
+    public void testElementgetElementsByAttributeValueMatching10438669891() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("br",":root");
+        Elements result = element.getElementsByAttributeValueMatching("plaintext","forl");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8555,12 +8560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching53322() {
+    public void testElementgetElementsByAttributeValueMatching13181396362() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("a","*>");
+        Elements result = element.getElementsByAttributeValueMatching("ode","templatf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8580,12 +8585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching8770180993() {
+    public void testElementgetElementsByAttributeValueMatching19660352893() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching("text.","h5");
+        Elements result = element.getElementsByAttributeValueMatching(":first-of-typf","colgrouq");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8605,12 +8610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByAttributeValueMatching16437239894() {
+    public void testElementgetElementsByAttributeValueMatching17596581664() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByAttributeValueMatching(":matchesOwn(","forn");
+        Elements result = element.getElementsByAttributeValueMatching(":has'","xmq");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8630,12 +8635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexLessThan553280() {
+    public void testElementgetElementsByIndexLessThan2220() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexLessThan(55297);
+        Elements result = element.getElementsByIndexLessThan(191);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8655,12 +8660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexLessThan2221() {
+    public void testElementgetElementsByIndexLessThan691() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexLessThan(191);
+        Elements result = element.getElementsByIndexLessThan(-100);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8685,7 +8690,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsByIndexLessThan(1);
+        Elements result = element.getElementsByIndexLessThan(1);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8705,12 +8710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexLessThan553273() {
+    public void testElementgetElementsByIndexLessThan4323() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexLessThan(55296);
+        Elements result = element.getElementsByIndexLessThan(401);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8730,12 +8735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexLessThan2554() {
+    public void testElementgetElementsByIndexLessThan11141434() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexLessThan(224);
+        Elements result = element.getElementsByIndexLessThan(1114112);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8755,12 +8760,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexGreaterThan340() {
+    public void testElementgetElementsByIndexGreaterThan1320() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexGreaterThan(3);
+        Elements result = element.getElementsByIndexGreaterThan(101);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8780,12 +8785,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexGreaterThan681() {
+    public void testElementgetElementsByIndexGreaterThan1341() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexGreaterThan(-99);
+        Elements result = element.getElementsByIndexGreaterThan(103);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8805,12 +8810,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexGreaterThan2712() {
+    public void testElementgetElementsByIndexGreaterThan2182() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexGreaterThan(240);
+        Elements result = element.getElementsByIndexGreaterThan(187);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8830,12 +8835,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexGreaterThan4323() {
+    public void testElementgetElementsByIndexGreaterThan1343() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexGreaterThan(401);
+        Elements result = element.getElementsByIndexGreaterThan(103);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8855,12 +8860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexGreaterThan1314() {
+    public void testElementgetElementsByIndexGreaterThan694() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexGreaterThan(100);
+        Elements result = element.getElementsByIndexGreaterThan(-100);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8880,12 +8885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexEquals554270() {
+    public void testElementgetElementsByIndexEquals2180() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexEquals(55396);
+        Elements result = element.getElementsByIndexEquals(187);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8905,12 +8910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexEquals554271() {
+    public void testElementgetElementsByIndexEquals2701() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexEquals(55396);
+        Elements result = element.getElementsByIndexEquals(239);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8930,12 +8935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexEquals1312() {
+    public void testElementgetElementsByIndexEquals342() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexEquals(100);
+        Elements result = element.getElementsByIndexEquals(3);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8955,12 +8960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexEquals1323() {
+    public void testElementgetElementsByIndexEquals2223() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexEquals(101);
+        Elements result = element.getElementsByIndexEquals(191);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -8980,12 +8985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsByIndexEquals11142424() {
+    public void testElementgetElementsByIndexEquals2304() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsByIndexEquals(1114211);
+        Elements result = element.getElementsByIndexEquals(199);
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9005,12 +9010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingText10548386270() {
+    public void testElementgetElementsContainingText12080() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingText(":first-chilc");
+        Elements result = element.getElementsContainingText("$=");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9030,12 +9035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingText9060216061() {
+    public void testElementgetElementsContainingText14562253611() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingText("selecs");
+        Elements result = element.getElementsContainingText(":matches)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9055,12 +9060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingText12082() {
+    public void testElementgetElementsContainingText1099022() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingText("$=");
+        Elements result = element.getElementsContainingText("odd");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9080,12 +9085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingText1101158223() {
+    public void testElementgetElementsContainingText16183955593() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingText("tablf");
+        Elements result = element.getElementsContainingText(":only-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9105,12 +9110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingText10552537234() {
+    public void testElementgetElementsContainingText13776877264() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingText(":matchesOwn)");
+        Elements result = element.getElementsContainingText("buttoo");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9130,12 +9135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingOwnText987190() {
+    public void testElementgetElementsContainingOwnText30164310() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingOwnText("col");
+        Elements result = element.getElementsContainingOwnText("basd");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9155,12 +9160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingOwnText7423139251() {
+    public void testElementgetElementsContainingOwnText17209582721() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingOwnText("checkec");
+        Elements result = element.getElementsContainingOwnText("basefonu");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9180,12 +9185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingOwnText30294412() {
+    public void testElementgetElementsContainingOwnText30062() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingOwnText("body");
+        Elements result = element.getElementsContainingOwnText("^=");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9205,12 +9210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingOwnText18353323() {
+    public void testElementgetElementsContainingOwnText32132573() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingOwnText(":lt'");
+        Elements result = element.getElementsContainingOwnText("htmk");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9230,12 +9235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsContainingOwnText33480044() {
+    public void testElementgetElementsContainingOwnText30164324() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsContainingOwnText("meta");
+        Elements result = element.getElementsContainingOwnText("base");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9260,7 +9265,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9285,7 +9290,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9310,7 +9315,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9335,7 +9340,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9360,7 +9365,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9380,12 +9385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingText34830() {
+    public void testElementgetElementsMatchingText20919604280() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText("lh");
+        Elements result = element.getElementsMatchingText(":only-child");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9405,12 +9410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingText13941() {
+    public void testElementgetElementsMatchingText20353119931() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText("*=");
+        Elements result = element.getElementsMatchingText(":first-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9430,12 +9435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingText6361976032() {
+    public void testElementgetElementsMatchingText13942() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText("colgrouo");
+        Elements result = element.getElementsMatchingText("*=");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9455,12 +9460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingText31891133() {
+    public void testElementgetElementsMatchingText19732341983() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText("gzip");
+        Elements result = element.getElementsMatchingText("plaintext");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9480,12 +9485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingText18912061164() {
+    public void testElementgetElementsMatchingText11912143964() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingText(":nth-of-type(");
+        Elements result = element.getElementsMatchingText("iframf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9510,7 +9515,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9535,7 +9540,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9560,7 +9565,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9585,7 +9590,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9610,7 +9615,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
+        Elements result = element.getElementsMatchingOwnText((Pattern) TestGenerator.getObjectFromPool("Pattern"));
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9630,12 +9635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingOwnText1188380() {
+    public void testElementgetElementsMatchingOwnText1143060() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText("xml");
+        Elements result = element.getElementsMatchingOwnText("svf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9655,12 +9660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingOwnText37421() {
+    public void testElementgetElementsMatchingOwnText10176250981() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText("ts");
+        Elements result = element.getElementsMatchingOwnText(":nth-last-of-type)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9680,12 +9685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingOwnText987182() {
+    public void testElementgetElementsMatchingOwnText1432() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText("cok");
+        Elements result = element.getElementsMatchingOwnText("p");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9705,12 +9710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingOwnText1605222303() {
+    public void testElementgetElementsMatchingOwnText6361976033() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText("bgsoune");
+        Elements result = element.getElementsMatchingOwnText("colgrouo");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9730,12 +9735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementgetElementsMatchingOwnText11912143964() {
+    public void testElementgetElementsMatchingOwnText14562253634() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.getElementsMatchingOwnText("iframf");
+        Elements result = element.getElementsMatchingOwnText(":matches'");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9760,7 +9765,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getAllElements();
+        Elements result = element.getAllElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9785,7 +9790,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getAllElements();
+        Elements result = element.getAllElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9810,7 +9815,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getAllElements();
+        Elements result = element.getAllElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9835,7 +9840,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getAllElements();
+        Elements result = element.getAllElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9860,7 +9865,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.getAllElements();
+        Elements result = element.getAllElements();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9885,7 +9890,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.text();
+        String result = element.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9910,7 +9915,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.text();
+        String result = element.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9935,7 +9940,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.text();
+        String result = element.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9960,7 +9965,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.text();
+        String result = element.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -9985,7 +9990,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.text();
+        String result = element.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10010,7 +10015,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.wholeText();
+        String result = element.wholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10035,7 +10040,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.wholeText();
+        String result = element.wholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10060,7 +10065,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.wholeText();
+        String result = element.wholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10085,7 +10090,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.wholeText();
+        String result = element.wholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10110,7 +10115,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.wholeText();
+        String result = element.wholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10135,7 +10140,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.ownText();
+        String result = element.ownText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10160,7 +10165,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.ownText();
+        String result = element.ownText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10185,7 +10190,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.ownText();
+        String result = element.ownText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10210,7 +10215,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.ownText();
+        String result = element.ownText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10235,7 +10240,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.ownText();
+        String result = element.ownText();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10255,12 +10260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtext33441680() {
+    public void testElementtext570706520() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.text("mati");
+        Element result = element.text(":roou");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10280,12 +10285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtext33041() {
+    public void testElementtext9503947311() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.text("h1");
+        Element result = element.text("commane");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10305,12 +10310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtext33072() {
+    public void testElementtext14229508282() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.text("h4");
+        Element result = element.text("actiom");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10330,12 +10335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtext31490283() {
+    public void testElementtext32110823() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.text("forn");
+        Element result = element.text("href");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10355,12 +10360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtext21011357984() {
+    public void testElementtext1188414() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.text(":matchTexs");
+        Element result = element.text("xmo");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10510,7 +10515,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.data();
+        String result = element.data();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10535,7 +10540,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.data();
+        String result = element.data();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10560,7 +10565,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.data();
+        String result = element.data();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10585,7 +10590,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.data();
+        String result = element.data();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10610,7 +10615,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.data();
+        String result = element.data();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10635,7 +10640,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.className();
+        String result = element.className();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10660,7 +10665,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.className();
+        String result = element.className();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10685,7 +10690,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.className();
+        String result = element.className();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10710,7 +10715,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.className();
+        String result = element.className();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10735,7 +10740,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.className();
+        String result = element.className();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10760,7 +10765,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.classNames();
+        Set<String> result = element.classNames();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10785,7 +10790,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.classNames();
+        Set<String> result = element.classNames();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10810,7 +10815,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.classNames();
+        Set<String> result = element.classNames();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10835,7 +10840,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.classNames();
+        Set<String> result = element.classNames();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10860,7 +10865,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.classNames();
+        Set<String> result = element.classNames();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10880,12 +10885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementclassNames18353330() {
+    public void testElementclassNames35756420() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.classNames(":lt(");
+        Element result = element.classNames("typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10905,12 +10910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementclassNames10761623171() {
+    public void testElementclassNames567593361() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.classNames(":contains'");
+        Element result = element.classNames(":has)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10930,12 +10935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementclassNames31984622() {
+    public void testElementclassNames21156131432() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.classNames("heac");
+        Element result = element.classNames("noembed");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10955,12 +10960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementclassNames569515653() {
+    public void testElementclassNames1188383() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.classNames(":not'");
+        Element result = element.classNames("xml");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -10980,12 +10985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementclassNames7423139274() {
+    public void testElementclassNames1082706194() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.classNames("checkee");
+        Element result = element.classNames("radip");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11005,12 +11010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhasClass13950() {
+    public void testElementhasClass13940() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.hasClass("*>");
+        boolean result = element.hasClass("*=");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11030,12 +11035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhasClass21065455171() {
+    public void testElementhasClass33868631() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.hasClass(":last-of-typf");
+        boolean result = element.hasClass("nobq");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11055,12 +11060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhasClass31984622() {
+    public void testElementhasClass7390744102() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.hasClass("heac");
+        boolean result = element.hasClass("charses");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11080,12 +11085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhasClass29173() {
+    public void testElementhasClass11414281683() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.hasClass("\"");
+        boolean result = element.hasClass("[CDATA[");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11105,12 +11110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhasClass12068418914() {
+    public void testElementhasClass18285124() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        boolean result = element.hasClass("http:0");
+        boolean result = element.hasClass(":eq'");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11130,12 +11135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementaddClass18245810() {
+    public void testElementaddClass807731740() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.addClass(":alk");
+        Element result = element.addClass("optgrouo");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11155,12 +11160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementaddClass33031() {
+    public void testElementaddClass807731731() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.addClass("h0");
+        Element result = element.addClass("optgroup");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11180,12 +11185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementaddClass12068418912() {
+    public void testElementaddClass13215466002() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.addClass("http:0");
+        Element result = element.addClass("templatd");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11205,12 +11210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementaddClass10548386283() {
+    public void testElementaddClass10176250983() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.addClass(":first-child");
+        Element result = element.addClass(":nth-last-of-type)");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11230,12 +11235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementaddClass21065455184() {
+    public void testElementaddClass358296684() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.addClass(":last-of-type");
+        Element result = element.addClass("#root");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11255,12 +11260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementremoveClass17571249790() {
+    public void testElementremoveClass1857353280() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.removeClass(":emptz");
+        Element result = element.removeClass("US-ASCIH");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11280,12 +11285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementremoveClass1650854871() {
+    public void testElementremoveClass19381() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.removeClass("http-equiw");
+        Element result = element.removeClass("</");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11305,12 +11310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementremoveClass2882752482() {
+    public void testElementremoveClass13942() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.removeClass(":nth-child(");
+        Element result = element.removeClass("*=");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11330,12 +11335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementremoveClass14711890863() {
+    public void testElementremoveClass17571249783() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.removeClass(":nth-last-child)");
+        Element result = element.removeClass(":empty");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11355,12 +11360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementremoveClass18678420514() {
+    public void testElementremoveClass20353119924() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.removeClass("[a-zA-Z_:][-a-zA-Z0-9_:.]+");
+        Element result = element.removeClass(":first-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11380,12 +11385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtoggleClass31255610() {
+    public void testElementtoggleClass1099010() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.toggleClass("even");
+        Element result = element.toggleClass("odc");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11405,12 +11410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtoggleClass18245811() {
+    public void testElementtoggleClass26152061() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.toggleClass(":alk");
+        Element result = element.toggleClass("UTF.");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11430,12 +11435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtoggleClass1003134652() {
+    public void testElementtoggleClass1605222312() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.toggleClass("imagd");
+        Element result = element.toggleClass("bgsound");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11455,12 +11460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtoggleClass21153115433() {
+    public void testElementtoggleClass15451126503() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.toggleClass("boundary");
+        Element result = element.toggleClass("deflate");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11480,12 +11485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementtoggleClass1102563224() {
+    public void testElementtoggleClass12174874164() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.toggleClass("text0");
+        Element result = element.toggleClass("hiddem");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11510,7 +11515,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.val();
+        String result = element.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11535,7 +11540,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.val();
+        String result = element.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11560,7 +11565,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.val();
+        String result = element.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11585,7 +11590,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.val();
+        String result = element.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11610,7 +11615,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.val();
+        String result = element.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11630,12 +11635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementval31984620() {
+    public void testElementval18245810() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.val("heac");
+        Element result = element.val(":alk");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11655,12 +11660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementval39971() {
+    public void testElementval567593341() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.val("~<");
+        Element result = element.val(":has'");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11680,12 +11685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementval7390744122() {
+    public void testElementval12092() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.val("charseu");
+        Element result = element.val("$>");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11705,12 +11710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementval18690634833() {
+    public void testElementval14703() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.val("sarcasm");
+        Element result = element.val("-,");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11730,12 +11735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementval31824() {
+    public void testElementval29174() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.val("bq");
+        Element result = element.val("\"");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11760,7 +11765,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.html();
+        String result = element.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11785,7 +11790,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.html();
+        String result = element.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11810,7 +11815,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.html();
+        String result = element.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11835,7 +11840,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.html();
+        String result = element.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11860,7 +11865,7 @@ public class AutomatedTest {
         if (element == null) {
             return;
         }
-        element.html();
+        String result = element.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11880,12 +11885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhtml1099030() {
+    public void testElementhtml35367450() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.html("ode");
+        Element result = element.html("span");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11905,12 +11910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhtml9060216051() {
+    public void testElementhtml33218811() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.html("select");
+        Element result = element.html("link");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11930,12 +11935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhtml30164332() {
+    public void testElementhtml358799202() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.html("basf");
+        Element result = element.html("#texu");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11955,12 +11960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhtml7423139263() {
+    public void testElementhtml16449536123() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.html("checked");
+        Element result = element.html("frameset");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -11980,12 +11985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementhtml21011357984() {
+    public void testElementhtml33218804() {
         Element element = (Element) TestGenerator.getObjectFromPool("Element");
         if (element == null) {
             return;
         }
-        element.html(":matchTexs");
+        Element result = element.html("linj");
         TestGenerator.putObjectToPool(result);
         assertTrue(element.equals(element));
         try {
@@ -12005,12 +12010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateShell21065455180() {
+    public void testDocumentcreateShell30294410() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createShell(":last-of-type");
+        Document result = document.createShell("body");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12030,12 +12035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateShell32110821() {
+    public void testDocumentcreateShell570706511() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createShell("href");
+        Document result = document.createShell(":root");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12055,12 +12060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateShell33062() {
+    public void testDocumentcreateShell1102773782() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createShell("h3");
+        Document result = document.createShell("tfoou");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12080,12 +12085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateShell903() {
+    public void testDocumentcreateShell30164333() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createShell(";");
+        Document result = document.createShell("basf");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12105,12 +12110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateShell1003134654() {
+    public void testDocumentcreateShell32132574() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createShell("imagd");
+        Document result = document.createShell("htmk");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12135,7 +12140,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.location();
+        String result = document.location();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12160,7 +12165,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.location();
+        String result = document.location();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12185,7 +12190,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.location();
+        String result = document.location();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12210,7 +12215,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.location();
+        String result = document.location();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12235,7 +12240,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.location();
+        String result = document.location();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12260,7 +12265,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.head();
+        Element result = document.head();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12285,7 +12290,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.head();
+        Element result = document.head();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12310,7 +12315,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.head();
+        Element result = document.head();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12335,7 +12340,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.head();
+        Element result = document.head();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12360,7 +12365,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.head();
+        Element result = document.head();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12385,7 +12390,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.body();
+        Element result = document.body();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12410,7 +12415,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.body();
+        Element result = document.body();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12435,7 +12440,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.body();
+        Element result = document.body();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12460,7 +12465,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.body();
+        Element result = document.body();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12485,7 +12490,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.body();
+        Element result = document.body();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12510,7 +12515,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.title();
+        String result = document.title();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12535,7 +12540,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.title();
+        String result = document.title();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12560,7 +12565,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.title();
+        String result = document.title();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12585,7 +12590,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.title();
+        String result = document.title();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12610,7 +12615,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.title();
+        String result = document.title();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12630,12 +12635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumenttitle358799190() {
+    public void testDocumenttitle358296690() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.title("#text");
+        document.title("#roou");
         assertTrue(document.equals(document));
         try {
             document.equals(document);
@@ -12654,12 +12659,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumenttitle21011357991() {
+    public void testDocumenttitle13215465991() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.title(":matchText");
+        document.title("template");
         assertTrue(document.equals(document));
         try {
             document.equals(document);
@@ -12678,12 +12683,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumenttitle19392() {
+    public void testDocumenttitle2709408282() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.title("<0");
+        document.title("disablee");
         assertTrue(document.equals(document));
         try {
             document.equals(document);
@@ -12702,12 +12707,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumenttitle18678420523() {
+    public void testDocumenttitle32132583() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.title("[a-zA-Z_:][-a-zA-Z0-9_:.]*");
+        document.title("html");
         assertTrue(document.equals(document));
         try {
             document.equals(document);
@@ -12726,12 +12731,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumenttitle32132574() {
+    public void testDocumenttitle18285144() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.title("htmk");
+        document.title(":eq)");
         assertTrue(document.equals(document));
         try {
             document.equals(document);
@@ -12750,12 +12755,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateElement16183955610() {
+    public void testDocumentcreateElement19804204660() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createElement(":only-of-typf");
+        Element result = document.createElement("Set-Cookie");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12775,12 +12780,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateElement21065455191() {
+    public void testDocumentcreateElement771() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createElement(":last-of-typd");
+        Element result = document.createElement(".");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12800,12 +12805,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateElement21156131422() {
+    public void testDocumentcreateElement10761623182() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createElement("noembec");
+        Element result = document.createElement(":contains(");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12825,12 +12830,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateElement32132573() {
+    public void testDocumentcreateElement34843() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createElement("htmk");
+        Element result = document.createElement("li");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12850,12 +12855,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentcreateElement1284() {
+    public void testDocumentcreateElement35118014() {
         Document document = (Document) TestGenerator.getObjectFromPool("Document");
         if (document == null) {
             return;
         }
-        document.createElement("a");
+        Element result = document.createElement("ruby");
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12880,7 +12885,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.normalise();
+        Document result = document.normalise();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12905,7 +12910,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.normalise();
+        Document result = document.normalise();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12930,7 +12935,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.normalise();
+        Document result = document.normalise();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12955,7 +12960,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.normalise();
+        Document result = document.normalise();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -12980,7 +12985,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.normalise();
+        Document result = document.normalise();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13125,7 +13130,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.charset();
+        Charset result = document.charset();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13150,7 +13155,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.charset();
+        Charset result = document.charset();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13175,7 +13180,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.charset();
+        Charset result = document.charset();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13200,7 +13205,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.charset();
+        Charset result = document.charset();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13225,7 +13230,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.charset();
+        Charset result = document.charset();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13495,7 +13500,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings();
+        OutputSettings result = document.outputSettings();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13520,7 +13525,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings();
+        OutputSettings result = document.outputSettings();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13545,7 +13550,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings();
+        OutputSettings result = document.outputSettings();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13570,7 +13575,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings();
+        OutputSettings result = document.outputSettings();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13595,7 +13600,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings();
+        OutputSettings result = document.outputSettings();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13620,7 +13625,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
+        Document result = document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13645,7 +13650,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
+        Document result = document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13670,7 +13675,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
+        Document result = document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13695,7 +13700,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
+        Document result = document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13720,7 +13725,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
+        Document result = document.outputSettings((OutputSettings) TestGenerator.getObjectFromPool("OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13745,7 +13750,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode();
+        QuirksMode result = document.quirksMode();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13770,7 +13775,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode();
+        QuirksMode result = document.quirksMode();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13795,7 +13800,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode();
+        QuirksMode result = document.quirksMode();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13820,7 +13825,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode();
+        QuirksMode result = document.quirksMode();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13845,7 +13850,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode();
+        QuirksMode result = document.quirksMode();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13870,7 +13875,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
+        Document result = document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13895,7 +13900,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
+        Document result = document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13920,7 +13925,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
+        Document result = document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13945,7 +13950,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
+        Document result = document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13970,7 +13975,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
+        Document result = document.quirksMode((QuirksMode) TestGenerator.getObjectFromPool("QuirksMode"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -13995,7 +14000,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser();
+        Parser result = document.parser();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14020,7 +14025,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser();
+        Parser result = document.parser();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14045,7 +14050,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser();
+        Parser result = document.parser();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14070,7 +14075,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser();
+        Parser result = document.parser();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14095,7 +14100,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser();
+        Parser result = document.parser();
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14120,7 +14125,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14145,7 +14150,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14170,7 +14175,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14195,7 +14200,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14220,7 +14225,7 @@ public class AutomatedTest {
         if (document == null) {
             return;
         }
-        document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = document.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(document.equals(document));
         try {
@@ -14240,12 +14245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity10176250960() {
+    public void testEntitiesisNamedEntity15451126490() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isNamedEntity(":nth-last-of-type'");
+        boolean result = entities.isNamedEntity("deflatd");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14265,12 +14270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity2709408261() {
+    public void testEntitiesisNamedEntity33031() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isNamedEntity("disablec");
+        boolean result = entities.isNamedEntity("h0");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14290,12 +14295,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity37272() {
+    public void testEntitiesisNamedEntity27763632() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isNamedEntity("td");
+        boolean result = entities.isNamedEntity("\"\"");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14315,12 +14320,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity32110813() {
+    public void testEntitiesisNamedEntity7423139253() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isNamedEntity("hree");
+        boolean result = entities.isNamedEntity("checkec");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14340,12 +14345,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisNamedEntity1650854884() {
+    public void testEntitiesisNamedEntity987184() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isNamedEntity("http-equiv");
+        boolean result = entities.isNamedEntity("cok");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14365,12 +14370,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity33218820() {
+    public void testEntitiesisBaseNamedEntity15368918730() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isBaseNamedEntity("linl");
+        boolean result = entities.isBaseNamedEntity("checkbow");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14390,12 +14395,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity9076856541() {
+    public void testEntitiesisBaseNamedEntity11346655531() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isBaseNamedEntity("script");
+        boolean result = entities.isBaseNamedEntity("keygem");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14415,12 +14420,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity21153115442() {
+    public void testEntitiesisBaseNamedEntity20919604272() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isBaseNamedEntity("boundarx");
+        boolean result = entities.isBaseNamedEntity(":only-chile");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14440,12 +14445,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity1188433() {
+    public void testEntitiesisBaseNamedEntity33737383() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isBaseNamedEntity("xmq");
+        boolean result = entities.isBaseNamedEntity("name");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14465,12 +14470,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesisBaseNamedEntity10761623194() {
+    public void testEntitiesisBaseNamedEntity7423139264() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        boolean result = entities.isBaseNamedEntity(":contains)");
+        boolean result = entities.isBaseNamedEntity("checked");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14490,12 +14495,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName37410() {
+    public void testEntitiesgetCharacterByName33441660() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getCharacterByName("tr");
+        Character result = entities.getCharacterByName("matg");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14515,12 +14520,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName35756411() {
+    public void testEntitiesgetCharacterByName12071() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getCharacterByName("type");
+        Character result = entities.getCharacterByName("$<");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14540,12 +14545,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName19392() {
+    public void testEntitiesgetCharacterByName17571249772() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getCharacterByName("<0");
+        Character result = entities.getCharacterByName(":emptx");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14565,12 +14570,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName21156131443() {
+    public void testEntitiesgetCharacterByName33703() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getCharacterByName("noembee");
+        Character result = entities.getCharacterByName("hs");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14590,12 +14595,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetCharacterByName15451126494() {
+    public void testEntitiesgetCharacterByName18690634834() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getCharacterByName("deflatd");
+        Character result = entities.getCharacterByName("sarcasm");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14615,12 +14620,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName14711890860() {
+    public void testEntitiesgetByName21156131420() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getByName(":nth-last-child)");
+        String result = entities.getByName("noembec");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14640,12 +14645,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName1143081() {
+    public void testEntitiesgetByName31255611() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getByName("svh");
+        String result = entities.getByName("even");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14665,12 +14670,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName31891142() {
+    public void testEntitiesgetByName19788929352() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getByName("gziq");
+        String result = entities.getByName(":containsOwn'");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14690,12 +14695,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName14711890863() {
+    public void testEntitiesgetByName15451126513() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getByName(":nth-last-child)");
+        String result = entities.getByName("deflatf");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14715,12 +14720,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesgetByName1101158204() {
+    public void testEntitiesgetByName5525734454() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.getByName("tabld");
+        String result = entities.getByName("caption");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14740,12 +14745,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName20659566370() {
+    public void testEntitiescodepointsForName20157655440() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        int result = entities.codepointsForName("bs",new int[]{0,-1,55296,192,1,55297,2,3,4});
+        int result = entities.codepointsForName("caption",new int[]{0,-1});
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14765,12 +14770,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName19953728981() {
+    public void testEntitiescodepointsForName19144172041() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        int result = entities.codepointsForName("UTF-",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239,240,1114211});
+        int result = entities.codepointsForName("th",new int[]{0,-1,55296,192});
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14790,12 +14795,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName15043248372() {
+    public void testEntitiescodepointsForName3350439092() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        int result = entities.codepointsForName(":nth-child(",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243});
+        int result = entities.codepointsForName("http-equiv",new int[]{0,-1,55296,192,1,55297});
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14815,12 +14820,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName4847426103() {
+    public void testEntitiescodepointsForName17086158193() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        int result = entities.codepointsForName(":matches'",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102,103,239,240,1114211,500,187});
+        int result = entities.codepointsForName("*{",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401});
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14840,12 +14845,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiescodepointsForName2255748294() {
+    public void testEntitiescodepointsForName2823676354() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        int result = entities.codepointsForName("h5",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400,1114112,401,57243,224,-99,-100,100,55396,101,102});
+        int result = entities.codepointsForName(":lt)",new int[]{0,-1,55296,192,1,55297,2,3,4,199,400});
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14865,12 +14870,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape8917739350() {
+    public void testEntitiesescape810713550() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape("styld",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = entities.escape("UTF-",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14890,12 +14895,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape1045859091() {
+    public void testEntitiesescape1159401() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape("namf",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = entities.escape("tq",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14915,12 +14920,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape10407179632() {
+    public void testEntitiesescape1907689552() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape("plaintexs",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = entities.escape("disabled",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14940,12 +14945,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape15021525793() {
+    public void testEntitiesescape1036691463() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape(":nth-of-type)",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = entities.escape("matg",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14965,12 +14970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape12161388414() {
+    public void testEntitiesescape11838655144() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape(":containsOwn'",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = entities.escape("inpuu",(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -14990,12 +14995,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape30164310() {
+    public void testEntitiesescape9060216060() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape("basd");
+        String result = entities.escape("selecs");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15015,12 +15020,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape10176250981() {
+    public void testEntitiesescape11141() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape(":nth-last-of-type)");
+        String result = entities.escape("!<");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15040,12 +15045,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape31822() {
+    public void testEntitiesescape19732341982() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape("bq");
+        String result = entities.escape("plaintext");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15065,12 +15070,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape18353333() {
+    public void testEntitiesescape35756403() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape(":lt(");
+        String result = entities.escape("typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15090,12 +15095,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesescape29875594() {
+    public void testEntitiesescape1101158214() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.escape("abs:");
+        String result = entities.escape("table");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15115,12 +15120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape20913044540() {
+    public void testEntitiesunescape7423139260() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.unescape("isindew");
+        String result = entities.unescape("checked");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15140,12 +15145,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape996170341() {
+    public void testEntitiesunescape19804204661() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.unescape("https");
+        String result = entities.unescape("Set-Cookie");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15165,12 +15170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape1044172() {
+    public void testEntitiesunescape26152052() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.unescape("imf");
+        String result = entities.unescape("UTF-");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15190,12 +15195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape33737383() {
+    public void testEntitiesunescape5525734453() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.unescape("name");
+        String result = entities.unescape("caption");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15215,12 +15220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testEntitiesunescape14562253634() {
+    public void testEntitiesunescape13776877274() {
         Entities entities = (Entities) TestGenerator.getObjectFromPool("Entities");
         if (entities == null) {
             return;
         }
-        entities.unescape(":matches'");
+        String result = entities.unescape("button");
         TestGenerator.putObjectToPool(result);
         assertTrue(entities.equals(entities));
         try {
@@ -15245,7 +15250,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.nodeName();
+        String result = datanode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15270,7 +15275,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.nodeName();
+        String result = datanode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15295,7 +15300,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.nodeName();
+        String result = datanode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15320,7 +15325,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.nodeName();
+        String result = datanode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15345,7 +15350,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.nodeName();
+        String result = datanode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15370,7 +15375,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.getWholeData();
+        String result = datanode.getWholeData();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15395,7 +15400,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.getWholeData();
+        String result = datanode.getWholeData();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15420,7 +15425,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.getWholeData();
+        String result = datanode.getWholeData();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15445,7 +15450,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.getWholeData();
+        String result = datanode.getWholeData();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15470,7 +15475,7 @@ public class AutomatedTest {
         if (datanode == null) {
             return;
         }
-        datanode.getWholeData();
+        String result = datanode.getWholeData();
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15490,12 +15495,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodesetWholeData17480897440() {
+    public void testDataNodesetWholeData21156131440() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.setWholeData("DOCTYPD");
+        DataNode result = datanode.setWholeData("noembee");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15515,12 +15520,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodesetWholeData33701() {
+    public void testDataNodesetWholeData1003581211() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.setWholeData("hs");
+        DataNode result = datanode.setWholeData("input");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15540,12 +15545,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodesetWholeData14711890852() {
+    public void testDataNodesetWholeData987182() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.setWholeData(":nth-last-child(");
+        DataNode result = datanode.setWholeData("cok");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15565,12 +15570,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodesetWholeData27763633() {
+    public void testDataNodesetWholeData1103268983() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.setWholeData("\"\"");
+        DataNode result = datanode.setWholeData("theac");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15590,12 +15595,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodesetWholeData33480034() {
+    public void testDataNodesetWholeData17480897444() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.setWholeData("met`");
+        DataNode result = datanode.setWholeData("DOCTYPD");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15615,12 +15620,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodecreateFromEncoded67736720() {
+    public void testDataNodecreateFromEncoded4089580750() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.createFromEncoded("img","span");
+        DataNode result = datanode.createFromEncoded("isindex","body");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15640,12 +15645,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodecreateFromEncoded11282982831() {
+    public void testDataNodecreateFromEncoded6889820231() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.createFromEncoded("imagf",":not)");
+        DataNode result = datanode.createFromEncoded("captioo","charseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15665,12 +15670,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodecreateFromEncoded11851454322() {
+    public void testDataNodecreateFromEncoded21077642752() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.createFromEncoded("imagf","img");
+        DataNode result = datanode.createFromEncoded("\"\"",":matchText");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15690,12 +15695,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodecreateFromEncoded957372233() {
+    public void testDataNodecreateFromEncoded16185194353() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.createFromEncoded("body",":alm");
+        DataNode result = datanode.createFromEncoded("~<",":only-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15715,12 +15720,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataNodecreateFromEncoded20261328324() {
+    public void testDataNodecreateFromEncoded9654647494() {
         DataNode datanode = (DataNode) TestGenerator.getObjectFromPool("DataNode");
         if (datanode == null) {
             return;
         }
-        datanode.createFromEncoded("scripu","https");
+        DataNode result = datanode.createFromEncoded("boundarz","noembec");
         TestGenerator.putObjectToPool(result);
         assertTrue(datanode.equals(datanode));
         try {
@@ -15745,7 +15750,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.nodeName();
+        String result = comment.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15770,7 +15775,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.nodeName();
+        String result = comment.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15795,7 +15800,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.nodeName();
+        String result = comment.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15820,7 +15825,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.nodeName();
+        String result = comment.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15845,7 +15850,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.nodeName();
+        String result = comment.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15870,7 +15875,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.getData();
+        String result = comment.getData();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15895,7 +15900,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.getData();
+        String result = comment.getData();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15920,7 +15925,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.getData();
+        String result = comment.getData();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15945,7 +15950,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.getData();
+        String result = comment.getData();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -15970,7 +15975,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.getData();
+        String result = comment.getData();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -16120,7 +16125,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.asXmlDeclaration();
+        XmlDeclaration result = comment.asXmlDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -16145,7 +16150,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.asXmlDeclaration();
+        XmlDeclaration result = comment.asXmlDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -16170,7 +16175,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.asXmlDeclaration();
+        XmlDeclaration result = comment.asXmlDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -16195,7 +16200,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.asXmlDeclaration();
+        XmlDeclaration result = comment.asXmlDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -16220,7 +16225,7 @@ public class AutomatedTest {
         if (comment == null) {
             return;
         }
-        comment.asXmlDeclaration();
+        XmlDeclaration result = comment.asXmlDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(comment.equals(comment));
         try {
@@ -16245,7 +16250,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.nodeName();
+        String result = xmldeclaration.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16270,7 +16275,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.nodeName();
+        String result = xmldeclaration.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16295,7 +16300,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.nodeName();
+        String result = xmldeclaration.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16320,7 +16325,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.nodeName();
+        String result = xmldeclaration.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16345,7 +16350,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.nodeName();
+        String result = xmldeclaration.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16370,7 +16375,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.name();
+        String result = xmldeclaration.name();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16395,7 +16400,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.name();
+        String result = xmldeclaration.name();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16420,7 +16425,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.name();
+        String result = xmldeclaration.name();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16445,7 +16450,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.name();
+        String result = xmldeclaration.name();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16470,7 +16475,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.name();
+        String result = xmldeclaration.name();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16495,7 +16500,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.getWholeDeclaration();
+        String result = xmldeclaration.getWholeDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16520,7 +16525,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.getWholeDeclaration();
+        String result = xmldeclaration.getWholeDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16545,7 +16550,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.getWholeDeclaration();
+        String result = xmldeclaration.getWholeDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16570,7 +16575,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.getWholeDeclaration();
+        String result = xmldeclaration.getWholeDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16595,7 +16600,7 @@ public class AutomatedTest {
         if (xmldeclaration == null) {
             return;
         }
-        xmldeclaration.getWholeDeclaration();
+        String result = xmldeclaration.getWholeDeclaration();
         TestGenerator.putObjectToPool(result);
         assertTrue(xmldeclaration.equals(xmldeclaration));
         try {
@@ -16620,7 +16625,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.elements();
+        Elements result = formelement.elements();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16645,7 +16650,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.elements();
+        Elements result = formelement.elements();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16670,7 +16675,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.elements();
+        Elements result = formelement.elements();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16695,7 +16700,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.elements();
+        Elements result = formelement.elements();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16720,7 +16725,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.elements();
+        Elements result = formelement.elements();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16745,7 +16750,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
+        FormElement result = formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16770,7 +16775,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
+        FormElement result = formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16795,7 +16800,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
+        FormElement result = formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16820,7 +16825,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
+        FormElement result = formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16845,7 +16850,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
+        FormElement result = formelement.addElement((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16870,7 +16875,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.submit();
+        Connection result = formelement.submit();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16895,7 +16900,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.submit();
+        Connection result = formelement.submit();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16920,7 +16925,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.submit();
+        Connection result = formelement.submit();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16945,7 +16950,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.submit();
+        Connection result = formelement.submit();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16970,7 +16975,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.submit();
+        Connection result = formelement.submit();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -16995,7 +17000,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.formData();
+        List<Connection.KeyVal> result = formelement.formData();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -17020,7 +17025,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.formData();
+        List<Connection.KeyVal> result = formelement.formData();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -17045,7 +17050,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.formData();
+        List<Connection.KeyVal> result = formelement.formData();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -17070,7 +17075,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.formData();
+        List<Connection.KeyVal> result = formelement.formData();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -17095,7 +17100,7 @@ public class AutomatedTest {
         if (formelement == null) {
             return;
         }
-        formelement.formData();
+        List<Connection.KeyVal> result = formelement.formData();
         TestGenerator.putObjectToPool(result);
         assertTrue(formelement.equals(formelement));
         try {
@@ -17115,12 +17120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentTypesetPubSysKey358799180() {
+    public void testDocumentTypesetPubSysKey1101158210() {
         DocumentType documenttype = (DocumentType) TestGenerator.getObjectFromPool("DocumentType");
         if (documenttype == null) {
             return;
         }
-        documenttype.setPubSysKey("#texs");
+        documenttype.setPubSysKey("table");
         assertTrue(documenttype.equals(documenttype));
         try {
             documenttype.equals(documenttype);
@@ -17139,12 +17144,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentTypesetPubSysKey18353331() {
+    public void testDocumentTypesetPubSysKey1103268981() {
         DocumentType documenttype = (DocumentType) TestGenerator.getObjectFromPool("DocumentType");
         if (documenttype == null) {
             return;
         }
-        documenttype.setPubSysKey(":lt(");
+        documenttype.setPubSysKey("theac");
         assertTrue(documenttype.equals(documenttype));
         try {
             documenttype.equals(documenttype);
@@ -17163,12 +17168,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentTypesetPubSysKey12068418932() {
+    public void testDocumentTypesetPubSysKey1188412() {
         DocumentType documenttype = (DocumentType) TestGenerator.getObjectFromPool("DocumentType");
         if (documenttype == null) {
             return;
         }
-        documenttype.setPubSysKey("http:.");
+        documenttype.setPubSysKey("xmo");
         assertTrue(documenttype.equals(documenttype));
         try {
             documenttype.equals(documenttype);
@@ -17187,12 +17192,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentTypesetPubSysKey33737383() {
+    public void testDocumentTypesetPubSysKey30063() {
         DocumentType documenttype = (DocumentType) TestGenerator.getObjectFromPool("DocumentType");
         if (documenttype == null) {
             return;
         }
-        documenttype.setPubSysKey("name");
+        documenttype.setPubSysKey("^=");
         assertTrue(documenttype.equals(documenttype));
         try {
             documenttype.equals(documenttype);
@@ -17211,12 +17216,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDocumentTypesetPubSysKey1284() {
+    public void testDocumentTypesetPubSysKey10032436884() {
         DocumentType documenttype = (DocumentType) TestGenerator.getObjectFromPool("DocumentType");
         if (documenttype == null) {
             return;
         }
-        documenttype.setPubSysKey("a");
+        documenttype.setPubSysKey("textare`");
         assertTrue(documenttype.equals(documenttype));
         try {
             documenttype.equals(documenttype);
@@ -17240,7 +17245,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getKey();
+        String result = attribute.getKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17265,7 +17270,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getKey();
+        String result = attribute.getKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17290,7 +17295,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getKey();
+        String result = attribute.getKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17315,7 +17320,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getKey();
+        String result = attribute.getKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17340,7 +17345,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getKey();
+        String result = attribute.getKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17360,12 +17365,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetKey10552537230() {
+    public void testAttributesetKey11912143980() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setKey(":matchesOwn)");
+        attribute.setKey("iframd");
         assertTrue(attribute.equals(attribute));
         try {
             attribute.equals(attribute);
@@ -17384,12 +17389,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetKey19804204661() {
+    public void testAttributesetKey9060216051() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setKey("Set-Cookie");
+        attribute.setKey("select");
         assertTrue(attribute.equals(attribute));
         try {
             attribute.equals(attribute);
@@ -17408,12 +17413,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetKey21011357992() {
+    public void testAttributesetKey15515509562() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setKey(":matchText");
+        attribute.setKey("noscripu");
         assertTrue(attribute.equals(attribute));
         try {
             attribute.equals(attribute);
@@ -17432,12 +17437,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetKey570706513() {
+    public void testAttributesetKey33093() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setKey(":root");
+        attribute.setKey("h6");
         assertTrue(attribute.equals(attribute));
         try {
             attribute.equals(attribute);
@@ -17456,12 +17461,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetKey32132574() {
+    public void testAttributesetKey37404() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setKey("htmk");
+        attribute.setKey("tq");
         assertTrue(attribute.equals(attribute));
         try {
             attribute.equals(attribute);
@@ -17485,7 +17490,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getValue();
+        String result = attribute.getValue();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17510,7 +17515,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getValue();
+        String result = attribute.getValue();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17535,7 +17540,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getValue();
+        String result = attribute.getValue();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17560,7 +17565,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getValue();
+        String result = attribute.getValue();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17585,7 +17590,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.getValue();
+        String result = attribute.getValue();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17605,12 +17610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetValue34830() {
+    public void testAttributesetValue14562253610() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setValue("lh");
+        String result = attribute.setValue(":matches)");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17630,12 +17635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetValue33737381() {
+    public void testAttributesetValue941() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setValue("name");
+        String result = attribute.setValue("?");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17655,12 +17660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetValue18285122() {
+    public void testAttributesetValue1432() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setValue(":eq'");
+        String result = attribute.setValue("p");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17680,12 +17685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetValue1188393() {
+    public void testAttributesetValue13776877283() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setValue("xmm");
+        String result = attribute.setValue("buttom");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17705,12 +17710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributesetValue21011357994() {
+    public void testAttributesetValue11927218624() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.setValue(":matchText");
+        String result = attribute.setValue("noframes");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17735,7 +17740,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.html();
+        String result = attribute.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17760,7 +17765,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.html();
+        String result = attribute.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17785,7 +17790,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.html();
+        String result = attribute.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17810,7 +17815,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.html();
+        String result = attribute.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17835,7 +17840,7 @@ public class AutomatedTest {
         if (attribute == null) {
             return;
         }
-        attribute.html();
+        String result = attribute.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17855,12 +17860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributecreateFromEncoded5460469900() {
+    public void testAttributecreateFromEncoded16597371580() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.createFromEncoded("frameses","-.");
+        Attribute result = attribute.createFromEncoded(":first-chile","ts");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17880,12 +17885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributecreateFromEncoded14709385181() {
+    public void testAttributecreateFromEncoded32916001() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.createFromEncoded(":root",":first-child");
+        Attribute result = attribute.createFromEncoded("h4","gziq");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17905,12 +17910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributecreateFromEncoded11940234612() {
+    public void testAttributecreateFromEncoded19266346372() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.createFromEncoded(":nth-of-type'",":last-chile");
+        Attribute result = attribute.createFromEncoded("scripu","xmm");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17930,12 +17935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributecreateFromEncoded360213() {
+    public void testAttributecreateFromEncoded18598528213() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.createFromEncoded("!>","*{");
+        Attribute result = attribute.createFromEncoded(":has(","imagf");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17955,12 +17960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testAttributecreateFromEncoded7424162884() {
+    public void testAttributecreateFromEncoded10100768934() {
         Attribute attribute = (Attribute) TestGenerator.getObjectFromPool("Attribute");
         if (attribute == null) {
             return;
         }
-        attribute.createFromEncoded("h0","checked");
+        Attribute result = attribute.createFromEncoded("</","option");
         TestGenerator.putObjectToPool(result);
         assertTrue(attribute.equals(attribute));
         try {
@@ -17985,7 +17990,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.nodeName();
+        String result = textnode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18010,7 +18015,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.nodeName();
+        String result = textnode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18035,7 +18040,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.nodeName();
+        String result = textnode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18060,7 +18065,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.nodeName();
+        String result = textnode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18085,7 +18090,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.nodeName();
+        String result = textnode.nodeName();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18110,7 +18115,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.text();
+        String result = textnode.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18135,7 +18140,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.text();
+        String result = textnode.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18160,7 +18165,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.text();
+        String result = textnode.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18185,7 +18190,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.text();
+        String result = textnode.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18210,7 +18215,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.text();
+        String result = textnode.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18230,12 +18235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodetext19788929350() {
+    public void testTextNodetext730() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.text(":containsOwn'");
+        TextNode result = textnode.text("*");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18255,12 +18260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodetext21156131431() {
+    public void testTextNodetext1188421() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.text("noembed");
+        TextNode result = textnode.text("xmp");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18280,12 +18285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodetext1003134672() {
+    public void testTextNodetext21156131432() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.text("imagf");
+        TextNode result = textnode.text("noembed");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18305,12 +18310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodetext10176250963() {
+    public void testTextNodetext15368918733() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.text(":nth-last-of-type'");
+        TextNode result = textnode.text("checkbow");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18330,12 +18335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodetext31824() {
+    public void testTextNodetext15451126514() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.text("bq");
+        TextNode result = textnode.text("deflatf");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18360,7 +18365,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.getWholeText();
+        String result = textnode.getWholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18385,7 +18390,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.getWholeText();
+        String result = textnode.getWholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18410,7 +18415,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.getWholeText();
+        String result = textnode.getWholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18435,7 +18440,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.getWholeText();
+        String result = textnode.getWholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18460,7 +18465,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.getWholeText();
+        String result = textnode.getWholeText();
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18605,12 +18610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodesplitText572740() {
+    public void testTextNodesplitText300() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.splitText(57243);
+        TextNode result = textnode.splitText(-1);
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18630,12 +18635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodesplitText341() {
+    public void testTextNodesplitText1331() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.splitText(3);
+        TextNode result = textnode.splitText(102);
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18660,7 +18665,7 @@ public class AutomatedTest {
         if (textnode == null) {
             return;
         }
-        textnode.splitText(-99);
+        TextNode result = textnode.splitText(-99);
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18680,12 +18685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodesplitText2303() {
+    public void testTextNodesplitText5313() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.splitText(199);
+        TextNode result = textnode.splitText(500);
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18705,12 +18710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodesplitText11142424() {
+    public void testTextNodesplitText1344() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.splitText(1114211);
+        TextNode result = textnode.splitText(103);
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18730,12 +18735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded15902409000() {
+    public void testTextNodecreateFromEncoded8813749680() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("[a-zA-Z_:][-a-zA-Z0-9_:.]*","colgrouq");
+        TextNode result = textnode.createFromEncoded("tabld","<0");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18755,12 +18760,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded3365885281() {
+    public void testTextNodecreateFromEncoded4332265421() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded(":has(","actioo");
+        TextNode result = textnode.createFromEncoded("charset","textare`");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18780,12 +18785,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded7125250172() {
+    public void testTextNodecreateFromEncoded11222109432() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("http-equiu","tbody");
+        TextNode result = textnode.createFromEncoded("name",":nth-last-of-type'");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18805,12 +18810,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded10100214333() {
+    public void testTextNodecreateFromEncoded37828213() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("td","optioo");
+        TextNode result = textnode.createFromEncoded("xmq","col");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18830,12 +18835,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded500909634() {
+    public void testTextNodecreateFromEncoded7971557754() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("caption","*|");
+        TextNode result = textnode.createFromEncoded("rubz","selecs");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18855,12 +18860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded1101578760() {
+    public void testTextNodecreateFromEncoded19804204650() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("tbodx");
+        TextNode result = textnode.createFromEncoded("Set-Cookif");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18880,12 +18885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded19804204651() {
+    public void testTextNodecreateFromEncoded16449536111() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("Set-Cookif");
+        TextNode result = textnode.createFromEncoded("frameseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18905,12 +18910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded1101578772() {
+    public void testTextNodecreateFromEncoded358296682() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("tbody");
+        TextNode result = textnode.createFromEncoded("#root");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18930,12 +18935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded9076856543() {
+    public void testTextNodecreateFromEncoded1101578773() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("script");
+        TextNode result = textnode.createFromEncoded("tbody");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18955,12 +18960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTextNodecreateFromEncoded1188414() {
+    public void testTextNodecreateFromEncoded12174874154() {
         TextNode textnode = (TextNode) TestGenerator.getObjectFromPool("TextNode");
         if (textnode == null) {
             return;
         }
-        textnode.createFromEncoded("xmo");
+        TextNode result = textnode.createFromEncoded("hidden");
         TestGenerator.putObjectToPool(result);
         assertTrue(textnode.equals(textnode));
         try {
@@ -18985,7 +18990,7 @@ public class AutomatedTest {
         if (uncheckedioexception == null) {
             return;
         }
-        uncheckedioexception.ioException();
+        IOException result = uncheckedioexception.ioException();
         TestGenerator.putObjectToPool(result);
         assertTrue(uncheckedioexception.equals(uncheckedioexception));
         try {
@@ -19010,7 +19015,7 @@ public class AutomatedTest {
         if (uncheckedioexception == null) {
             return;
         }
-        uncheckedioexception.ioException();
+        IOException result = uncheckedioexception.ioException();
         TestGenerator.putObjectToPool(result);
         assertTrue(uncheckedioexception.equals(uncheckedioexception));
         try {
@@ -19035,7 +19040,7 @@ public class AutomatedTest {
         if (uncheckedioexception == null) {
             return;
         }
-        uncheckedioexception.ioException();
+        IOException result = uncheckedioexception.ioException();
         TestGenerator.putObjectToPool(result);
         assertTrue(uncheckedioexception.equals(uncheckedioexception));
         try {
@@ -19060,7 +19065,7 @@ public class AutomatedTest {
         if (uncheckedioexception == null) {
             return;
         }
-        uncheckedioexception.ioException();
+        IOException result = uncheckedioexception.ioException();
         TestGenerator.putObjectToPool(result);
         assertTrue(uncheckedioexception.equals(uncheckedioexception));
         try {
@@ -19085,7 +19090,7 @@ public class AutomatedTest {
         if (uncheckedioexception == null) {
             return;
         }
-        uncheckedioexception.ioException();
+        IOException result = uncheckedioexception.ioException();
         TestGenerator.putObjectToPool(result);
         assertTrue(uncheckedioexception.equals(uncheckedioexception));
         try {
@@ -19105,12 +19110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin15368928040() {
+    public void testStringUtiljoin11927227920() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"checkbox");
+        String result = stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"noframes");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19130,12 +19135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin41611() {
+    public void testStringUtiljoin31900441() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"dd");
+        String result = stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"gziq");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19155,12 +19160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin26161342() {
+    public void testStringUtiljoin12174864862() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"UTF,");
+        String result = stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"hiddem");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19180,12 +19185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin996179643() {
+    public void testStringUtiljoin1053473() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"https");
+        String result = stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"imf");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19205,12 +19210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin31900424() {
+    public void testStringUtiljoin1108314() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"gzio");
+        String result = stringutil.join((Collection) TestGenerator.getObjectFromPool("Collection"),"odc");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19230,12 +19235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin18912051850() {
+    public void testStringUtiljoin24000() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),":nth-of-type)");
+        String result = stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),"-,");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19255,12 +19260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin14562244311() {
+    public void testStringUtiljoin31993921() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),":matches)");
+        String result = stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),"heac");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19280,12 +19285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin33450962() {
+    public void testStringUtiljoin6361966712() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),"matg");
+        String result = stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),"colgrouq");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19305,12 +19310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin7390753403() {
+    public void testStringUtiljoin7390753423() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),"charses");
+        String result = stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),"charseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19330,12 +19335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin1152364() {
+    public void testStringUtiljoin3081280954() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),"svf");
+        String result = stringutil.join((Iterator) TestGenerator.getObjectFromPool("Iterator"),":last-chile");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19355,12 +19360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin6177312010() {
+    public void testStringUtiljoin4284591300() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg"},"US-ASCII");
+        String result = stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam"},"spam");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19380,12 +19385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin10855716121() {
+    public void testStringUtiljoin10954029571() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo"},"isindex");
+        String result = stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^="},":matchTexu");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19405,12 +19410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin19598776782() {
+    public void testStringUtiljoin11240503022() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col"},":nth-of-type'");
+        String result = stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn"},"noframet");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19430,12 +19435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin982263723() {
+    public void testStringUtiljoin7369873173() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden"},"charses");
+        String result = stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,"},"imagd");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19455,12 +19460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtiljoin1034023054() {
+    public void testStringUtiljoin2639260054() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de"},"-,");
+        String result = stringutil.join(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto"},"bgsoune");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19480,12 +19485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding5310() {
+    public void testStringUtilpadding2180() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.padding(500);
+        String result = stringutil.padding(187);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19505,12 +19510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding2301() {
+    public void testStringUtilpadding2551() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.padding(199);
+        String result = stringutil.padding(224);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19530,12 +19535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding572742() {
+    public void testStringUtilpadding573732() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.padding(57243);
+        String result = stringutil.padding(57342);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19555,12 +19560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding4313() {
+    public void testStringUtilpadding333() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.padding(400);
+        String result = stringutil.padding(2);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19580,12 +19585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilpadding354() {
+    public void testStringUtilpadding553284() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.padding(4);
+        String result = stringutil.padding(55297);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19605,12 +19610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank1605222300() {
+    public void testStringUtilisBlank5525734450() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isBlank("bgsoune");
+        boolean result = stringutil.isBlank("caption");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19630,12 +19635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank15515509551() {
+    public void testStringUtilisBlank1003134651() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isBlank("noscript");
+        boolean result = stringutil.isBlank("imagd");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19680,12 +19685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank11927218613() {
+    public void testStringUtilisBlank1102773773() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isBlank("noframer");
+        boolean result = stringutil.isBlank("tfoot");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19705,12 +19710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisBlank32484() {
+    public void testStringUtilisBlank33868634() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isBlank("du");
+        boolean result = stringutil.isBlank("nobq");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19730,12 +19735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric21156131430() {
+    public void testStringUtilisNumeric5525734460() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isNumeric("noembed");
+        boolean result = stringutil.isNumeric("captioo");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19755,12 +19760,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric21153115421() {
+    public void testStringUtilisNumeric11912143961() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isNumeric("boundarz");
+        boolean result = stringutil.isNumeric("iframf");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19780,12 +19785,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric9503947312() {
+    public void testStringUtilisNumeric662() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isNumeric("commane");
+        boolean result = stringutil.isNumeric("#");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19805,12 +19810,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric12174874153() {
+    public void testStringUtilisNumeric12083() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isNumeric("hidden");
+        boolean result = stringutil.isNumeric("$=");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19830,12 +19835,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisNumeric19788929344() {
+    public void testStringUtilisNumeric18305274() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isNumeric(":containsOwn(");
+        boolean result = stringutil.isNumeric(":gt'");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19855,12 +19860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace1320() {
+    public void testStringUtilisWhitespace1340() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isWhitespace(101);
+        boolean result = stringutil.isWhitespace(103);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19880,12 +19885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace11141431() {
+    public void testStringUtilisWhitespace2221() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isWhitespace(1114112);
+        boolean result = stringutil.isWhitespace(191);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19905,12 +19910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace692() {
+    public void testStringUtilisWhitespace1332() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isWhitespace(-100);
+        boolean result = stringutil.isWhitespace(102);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19930,12 +19935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace2233() {
+    public void testStringUtilisWhitespace333() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isWhitespace(192);
+        boolean result = stringutil.isWhitespace(2);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19955,12 +19960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisWhitespace1314() {
+    public void testStringUtilisWhitespace304() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isWhitespace(100);
+        boolean result = stringutil.isWhitespace(-1);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -19980,12 +19985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace553270() {
+    public void testStringUtilisActuallyWhitespace300() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isActuallyWhitespace(55296);
+        boolean result = stringutil.isActuallyWhitespace(-1);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20005,12 +20010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace4311() {
+    public void testStringUtilisActuallyWhitespace1311() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isActuallyWhitespace(400);
+        boolean result = stringutil.isActuallyWhitespace(100);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20030,12 +20035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace11141432() {
+    public void testStringUtilisActuallyWhitespace1312() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isActuallyWhitespace(1114112);
+        boolean result = stringutil.isActuallyWhitespace(100);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20055,12 +20060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace2183() {
+    public void testStringUtilisActuallyWhitespace693() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isActuallyWhitespace(187);
+        boolean result = stringutil.isActuallyWhitespace(-100);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20080,12 +20085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisActuallyWhitespace5314() {
+    public void testStringUtilisActuallyWhitespace344() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isActuallyWhitespace(500);
+        boolean result = stringutil.isActuallyWhitespace(3);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20105,12 +20110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar573730() {
+    public void testStringUtilisInvisibleChar2700() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isInvisibleChar(57342);
+        boolean result = stringutil.isInvisibleChar(239);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20130,57 +20135,7 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar11141431() {
-        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
-        if (stringutil == null) {
-            return;
-        }
-        boolean result = stringutil.isInvisibleChar(1114112);
-        TestGenerator.putObjectToPool(result);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilisInvisibleChar5312() {
-        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
-        if (stringutil == null) {
-            return;
-        }
-        boolean result = stringutil.isInvisibleChar(500);
-        TestGenerator.putObjectToPool(result);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilisInvisibleChar1313() {
+    public void testStringUtilisInvisibleChar1311() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
@@ -20205,12 +20160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilisInvisibleChar2234() {
+    public void testStringUtilisInvisibleChar1322() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.isInvisibleChar(192);
+        boolean result = stringutil.isInvisibleChar(101);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20230,12 +20185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace29875600() {
+    public void testStringUtilisInvisibleChar353() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.normaliseWhitespace("abs;");
+        boolean result = stringutil.isInvisibleChar(4);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20255,12 +20210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace11161() {
+    public void testStringUtilisInvisibleChar11141434() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.normaliseWhitespace("!>");
+        boolean result = stringutil.isInvisibleChar(1114112);
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20280,12 +20235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace31490262() {
+    public void testStringUtilnormaliseWhitespace5525734450() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.normaliseWhitespace("forl");
+        String result = stringutil.normaliseWhitespace("caption");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20305,12 +20260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace9503947293() {
+    public void testStringUtilnormaliseWhitespace17480897431() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.normaliseWhitespace("commanc");
+        String result = stringutil.normaliseWhitespace("DOCTYPE");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20330,12 +20285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilnormaliseWhitespace26152054() {
+    public void testStringUtilnormaliseWhitespace19382() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.normaliseWhitespace("UTF-");
+        String result = stringutil.normaliseWhitespace("</");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20355,132 +20310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilappendNormalisedWhitespace3102230380() {
+    public void testStringUtilnormaliseWhitespace1102563203() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.appendNormalisedWhitespace("selecu","tabld",true);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilappendNormalisedWhitespace7745687281() {
-        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
-        if (stringutil == null) {
-            return;
-        }
-        stringutil.appendNormalisedWhitespace(":emptz","htmk",true);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilappendNormalisedWhitespace12634180662() {
-        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
-        if (stringutil == null) {
-            return;
-        }
-        stringutil.appendNormalisedWhitespace(".","Set-Cookid",true);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilappendNormalisedWhitespace1539543593() {
-        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
-        if (stringutil == null) {
-            return;
-        }
-        stringutil.appendNormalisedWhitespace("radin","keygen",true);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilappendNormalisedWhitespace568586084() {
-        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
-        if (stringutil == null) {
-            return;
-        }
-        stringutil.appendNormalisedWhitespace("link","noembed",true);
-        assertTrue(stringutil.equals(stringutil));
-        try {
-            stringutil.equals(stringutil);
-        } catch (Exception e) {
-            fail("stringutil.equals(stringutil) throws an exception");
-        }
-        try {
-            stringutil.hashCode();
-        } catch (Exception e) {
-            fail("stringutil.hashCode() throws an exception");
-        }
-        try {
-            stringutil.toString();
-        } catch (Exception e) {
-            fail("stringutil.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testStringUtilin464610() {
-        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
-        if (stringutil == null) {
-            return;
-        }
-        boolean result = stringutil.in("*>","dt");
+        String result = stringutil.normaliseWhitespace("text.");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20500,12 +20335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin14628238741() {
+    public void testStringUtilnormaliseWhitespace18353324() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.in("US-ASCII","~=");
+        String result = stringutil.normaliseWhitespace(":lt'");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20525,12 +20360,132 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin52382() {
+    public void testStringUtilappendNormalisedWhitespace10443037550() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.in("*","^=");
+        stringutil.appendNormalisedWhitespace("th","plaintext",true);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilappendNormalisedWhitespace6569128321() {
+        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
+        if (stringutil == null) {
+            return;
+        }
+        stringutil.appendNormalisedWhitespace(":containsData)",":emptz",true);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilappendNormalisedWhitespace5704835092() {
+        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
+        if (stringutil == null) {
+            return;
+        }
+        stringutil.appendNormalisedWhitespace("abs:","noscrips",true);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilappendNormalisedWhitespace6302958943() {
+        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
+        if (stringutil == null) {
+            return;
+        }
+        stringutil.appendNormalisedWhitespace("image","colgroup",true);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilappendNormalisedWhitespace4877564274() {
+        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
+        if (stringutil == null) {
+            return;
+        }
+        stringutil.appendNormalisedWhitespace("]]?","checkbow",true);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilin1114636470() {
+        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
+        if (stringutil == null) {
+            return;
+        }
+        boolean result = stringutil.in("span",":alm");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20550,12 +20505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin32384163() {
+    public void testStringUtilin20651419631() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.in("imh","*}");
+        boolean result = stringutil.in("[a-zA-Z_:][-a-zA-Z0-9_:.])","nobq");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20575,12 +20530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilin1064032994() {
+    public void testStringUtilin17627284972() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.in("meta","UTF.");
+        boolean result = stringutil.in(":has)","gzio");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20600,12 +20555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted8946536340() {
+    public void testStringUtilin3499849613() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.inSorted("namd",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx","#texs","rubx","command","rubz","heac","commanc","ruby",":emptz","#texu","#text"});
+        boolean result = stringutil.in(":nth-child)","nobs");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20625,12 +20580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted1531364161() {
+    public void testStringUtilin12459288304() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.inSorted(":last-chile",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type"});
+        boolean result = stringutil.in("http:.","linj");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20650,12 +20605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted3439725722() {
+    public void testStringUtilinSorted4167714550() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.inSorted("th",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx"});
+        boolean result = stringutil.inSorted("https",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf"});
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20675,12 +20630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted7737515153() {
+    public void testStringUtilinSorted11152920261() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.inSorted("tfoos",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz","img","boundarx","imf","imh","link","linl","linj","basefont","basefonu","head","heae","nobs","nobr","nobq",":empty","commane",":emptx"});
+        boolean result = stringutil.inSorted("\"",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com"});
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20700,12 +20655,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilinSorted20614707164() {
+    public void testStringUtilinSorted3439500662() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        boolean result = stringutil.inSorted("scripu",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3"});
+        boolean result = stringutil.inSorted("^<",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd"});
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20725,12 +20680,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve570715820() throws Exception {
+    public void testStringUtilinSorted1026195123() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),":roou");
+        boolean result = stringutil.inSorted(".",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc","DOCTYPE","htmm","DOCTYPF","^<","DOCTYPD","-,","^=","UTF.","noembee","--","^>","UTF-","noembed","[CDATA[","-.","UTF,","#roou","#roos","#root","US-ASCIH","http:/","http:.","US-ASCIJ","noembec","US-ASCII","http:0","noscrips","noscript","noscripu","optioo","optiom","option","boundary","boundarz"});
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20750,12 +20705,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve42381() throws Exception {
+    public void testStringUtilinSorted5079129934() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"h5");
+        boolean result = stringutil.inSorted("keygen",new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb"});
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20775,12 +20730,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve567602662() throws Exception {
+    public void testStringUtilresolve13776867970() throws Exception {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),":has)");
+        URL result = stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"button");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20800,12 +20755,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve1103278303() throws Exception {
+    public void testStringUtilresolve10851() throws Exception {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"theae");
+        URL result = stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"|");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20825,12 +20780,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve44144() throws Exception {
+    public void testStringUtilresolve9076847252() throws Exception {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"li");
+        URL result = stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"scrips");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20850,12 +20805,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve12269088530() {
+    public void testStringUtilresolve13776867963() throws Exception {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve("$>",":containsData'");
+        URL result = stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"buttoo");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20875,12 +20830,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve13763729641() {
+    public void testStringUtilresolve12174864864() throws Exception {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve("checked","bgsound");
+        URL result = stringutil.resolve((URL) TestGenerator.getObjectFromPool("URL"),"hiddem");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20900,12 +20855,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve1111742() {
+    public void testStringUtilresolve21064999480() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve("lh","de");
+        String result = stringutil.resolve("--",":last-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20925,12 +20880,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve2012363() {
+    public void testStringUtilresolve11584808271() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve("h5","col");
+        String result = stringutil.resolve("action","link");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20950,12 +20905,62 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilresolve2189816524() {
+    public void testStringUtilresolve8534430802() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.resolve("rubz","table");
+        String result = stringutil.resolve("noscripu","th");
+        TestGenerator.putObjectToPool(result);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilresolve12198956343() {
+        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
+        if (stringutil == null) {
+            return;
+        }
+        String result = stringutil.resolve("inpuu",":nth-of-type'");
+        TestGenerator.putObjectToPool(result);
+        assertTrue(stringutil.equals(stringutil));
+        try {
+            stringutil.equals(stringutil);
+        } catch (Exception e) {
+            fail("stringutil.equals(stringutil) throws an exception");
+        }
+        try {
+            stringutil.hashCode();
+        } catch (Exception e) {
+            fail("stringutil.hashCode() throws an exception");
+        }
+        try {
+            stringutil.toString();
+        } catch (Exception e) {
+            fail("stringutil.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testStringUtilresolve16734250514() {
+        StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
+        if (stringutil == null) {
+            return;
+        }
+        String result = stringutil.resolve("titld","DOCTYPD");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -20980,7 +20985,7 @@ public class AutomatedTest {
         if (stringutil == null) {
             return;
         }
-        stringutil.borrowBuilder();
+        StringBuilder result = stringutil.borrowBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21005,7 +21010,7 @@ public class AutomatedTest {
         if (stringutil == null) {
             return;
         }
-        stringutil.borrowBuilder();
+        StringBuilder result = stringutil.borrowBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21030,7 +21035,7 @@ public class AutomatedTest {
         if (stringutil == null) {
             return;
         }
-        stringutil.borrowBuilder();
+        StringBuilder result = stringutil.borrowBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21055,7 +21060,7 @@ public class AutomatedTest {
         if (stringutil == null) {
             return;
         }
-        stringutil.borrowBuilder();
+        StringBuilder result = stringutil.borrowBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21080,7 +21085,7 @@ public class AutomatedTest {
         if (stringutil == null) {
             return;
         }
-        stringutil.borrowBuilder();
+        StringBuilder result = stringutil.borrowBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21100,12 +21105,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder19788929340() {
+    public void testStringUtilreleaseBuilder570706520() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.releaseBuilder(":containsOwn(");
+        String result = stringutil.releaseBuilder(":roou");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21125,12 +21130,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder10548386281() {
+    public void testStringUtilreleaseBuilder32132591() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.releaseBuilder(":first-child");
+        String result = stringutil.releaseBuilder("htmm");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21150,12 +21155,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder33737372() {
+    public void testStringUtilreleaseBuilder29875602() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.releaseBuilder("namd");
+        String result = stringutil.releaseBuilder("abs;");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21175,12 +21180,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder10101369393() {
+    public void testStringUtilreleaseBuilder1433() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.releaseBuilder("optioo");
+        String result = stringutil.releaseBuilder("p");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21200,12 +21205,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testStringUtilreleaseBuilder18678420534() {
+    public void testStringUtilreleaseBuilder1188434() {
         StringUtil stringutil = (StringUtil) TestGenerator.getObjectFromPool("StringUtil");
         if (stringutil == null) {
             return;
         }
-        stringutil.releaseBuilder("[a-zA-Z_:][-a-zA-Z0-9_:.])");
+        String result = stringutil.releaseBuilder("xmq");
         TestGenerator.putObjectToPool(result);
         assertTrue(stringutil.equals(stringutil));
         try {
@@ -21225,12 +21230,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase10101369390() {
+    public void testNormalizerlowerCase20913044550() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.lowerCase("optioo");
+        String result = normalizer.lowerCase("isindex");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21250,12 +21255,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase1605222301() {
+    public void testNormalizerlowerCase12068418911() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.lowerCase("bgsoune");
+        String result = normalizer.lowerCase("http:0");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21275,12 +21280,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase17209582742() {
+    public void testNormalizerlowerCase32462() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.lowerCase("basefons");
+        String result = normalizer.lowerCase("ds");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21300,12 +21305,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase10032436863() {
+    public void testNormalizerlowerCase1223() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.lowerCase("textareb");
+        String result = normalizer.lowerCase("[");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21325,12 +21330,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizerlowerCase1097804314() {
+    public void testNormalizerlowerCase29174() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.lowerCase("styld");
+        String result = normalizer.lowerCase("\"");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21350,12 +21355,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize21156131420() {
+    public void testNormalizernormalize33700() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.normalize("noembec");
+        String result = normalizer.normalize("hs");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21375,12 +21380,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize14711890851() {
+    public void testNormalizernormalize13931() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.normalize(":nth-last-child(");
+        String result = normalizer.normalize("*<");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21400,12 +21405,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize21156131442() {
+    public void testNormalizernormalize16183955602() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.normalize("noembee");
+        String result = normalizer.normalize(":only-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21425,12 +21430,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize10761623173() {
+    public void testNormalizernormalize20353119933() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.normalize(":contains'");
+        String result = normalizer.normalize(":first-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21450,12 +21455,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testNormalizernormalize1103714474() {
+    public void testNormalizernormalize1003134654() {
         Normalizer normalizer = (Normalizer) TestGenerator.getObjectFromPool("Normalizer");
         if (normalizer == null) {
             return;
         }
-        normalizer.normalize("title");
+        String result = normalizer.normalize("imagd");
         TestGenerator.putObjectToPool(result);
         assertTrue(normalizer.equals(normalizer));
         try {
@@ -21475,12 +21480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap451910() {
+    public void testConstrainableInputStreamwrap871640() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),500,-100);
+        ConstrainableInputStream result = constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),1,57342);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21500,12 +21505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap329911() {
+    public void testConstrainableInputStreamwrap421221() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),100,100);
+        ConstrainableInputStream result = constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),401,-100);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21525,12 +21530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap330542() {
+    public void testConstrainableInputStreamwrap356892() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),102,101);
+        ConstrainableInputStream result = constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),187,101);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21550,12 +21555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap357753() {
+    public void testConstrainableInputStreamwrap17473073() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),187,187);
+        ConstrainableInputStream result = constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),55396,240);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21575,12 +21580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamwrap267254() {
+    public void testConstrainableInputStreamwrap266944() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),-99,3);
+        ConstrainableInputStream result = constrainableinputstream.wrap((InputStream) TestGenerator.getObjectFromPool("InputStream"),-100,3);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21600,12 +21605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer680() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer2230() throws Exception {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.readToByteBuffer(-99);
+        ByteBuffer result = constrainableinputstream.readToByteBuffer(192);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21625,12 +21630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer321() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer1341() throws Exception {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.readToByteBuffer(1);
+        ByteBuffer result = constrainableinputstream.readToByteBuffer(103);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21650,12 +21655,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer2302() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer553282() throws Exception {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.readToByteBuffer(199);
+        ByteBuffer result = constrainableinputstream.readToByteBuffer(55297);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21675,12 +21680,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer2703() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer4323() throws Exception {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.readToByteBuffer(239);
+        ByteBuffer result = constrainableinputstream.readToByteBuffer(401);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21700,12 +21705,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamreadToByteBuffer554274() throws Exception {
+    public void testConstrainableInputStreamreadToByteBuffer1314() throws Exception {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.readToByteBuffer(55396);
+        ByteBuffer result = constrainableinputstream.readToByteBuffer(100);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21725,12 +21730,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout9610() {
+    public void testConstrainableInputStreamtimeout10600() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.timeout(0,-1);
+        ConstrainableInputStream result = constrainableinputstream.timeout(-1,-100);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21750,12 +21755,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout40301() {
+    public void testConstrainableInputStreamtimeout9921() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.timeout(-100,0);
+        ConstrainableInputStream result = constrainableinputstream.timeout(1,0);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21775,12 +21780,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout9922() {
+    public void testConstrainableInputStreamtimeout41612() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.timeout(1,-1);
+        ConstrainableInputStream result = constrainableinputstream.timeout(100,100);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21800,12 +21805,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout9613() {
+    public void testConstrainableInputStreamtimeout9923() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.timeout(-1,0);
+        ConstrainableInputStream result = constrainableinputstream.timeout(1,-1);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21825,12 +21830,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testConstrainableInputStreamtimeout9924() {
+    public void testConstrainableInputStreamtimeout9934() {
         ConstrainableInputStream constrainableinputstream = (ConstrainableInputStream) TestGenerator.getObjectFromPool("ConstrainableInputStream");
         if (constrainableinputstream == null) {
             return;
         }
-        constrainableinputstream.timeout(1,0);
+        ConstrainableInputStream result = constrainableinputstream.timeout(1,1);
         TestGenerator.putObjectToPool(result);
         assertTrue(constrainableinputstream.equals(constrainableinputstream));
         try {
@@ -21850,12 +21855,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse6360820650() {
+    public void testJsoupparse11626235240() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("te","colgroup");
+        Document result = jsoup.parse("noembed","eveo");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -21875,12 +21880,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse12198955731() {
+    public void testJsoupparse1073611() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("inpus",":nth-of-type(");
+        Document result = jsoup.parse("hs","\'");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -21900,12 +21905,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8730467582() {
+    public void testJsoupparse11749127252() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("tfoot","linl");
+        Document result = jsoup.parse("frameset","basefons");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -21925,12 +21930,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse12426102423() {
+    public void testJsoupparse20327160133() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("http:0","dc");
+        Document result = jsoup.parse(":matchTexu","noscrips");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -21950,12 +21955,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse9538016914() {
+    public void testJsoupparse12067487074() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("ode","commanc");
+        Document result = jsoup.parse("^>","http:.");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -21975,12 +21980,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse2900925920() {
+    public void testJsoupparse15249166920() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse(":only-child",":containsData'",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse("title","US-ASCIJ",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22000,12 +22005,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11792148491() {
+    public void testJsoupparse990324761() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse(":has)","spam",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse("--","forl",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22025,12 +22030,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse10281289802() {
+    public void testJsoupparse21037971672() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("tr","[CDATA[",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse(":eq'",":nth-child(",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22050,12 +22055,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse6650692983() {
+    public void testJsoupparse1529145843() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse(":not(",":root",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse("frameses","href",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22075,12 +22080,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse14975907134() {
+    public void testJsoupparse10104986454() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("http:.",":emptz",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse(":only-chile","bgsound",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22100,12 +22105,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse10032436880() {
+    public void testJsoupparse730() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("textare`");
+        Document result = jsoup.parse("*");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22125,12 +22130,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse2882752491() {
+    public void testJsoupparse27763631() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse(":nth-child)");
+        Document result = jsoup.parse("\"\"");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22150,12 +22155,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse18305282() {
+    public void testJsoupparse37422() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse(":gt(");
+        Document result = jsoup.parse("ts");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22175,12 +22180,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse10032436863() {
+    public void testJsoupparse570706523() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("textareb");
+        Document result = jsoup.parse(":roou");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22200,12 +22205,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse37284() {
+    public void testJsoupparse1097804324() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse("te");
+        Document result = jsoup.parse("style");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22225,12 +22230,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect21011357990() {
+    public void testJsoupconnect13930() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.connect(":matchText");
+        Connection result = jsoup.connect("*<");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22250,12 +22255,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect1143081() {
+    public void testJsoupconnect11912143981() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.connect("svh");
+        Connection result = jsoup.connect("iframd");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22275,12 +22280,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect15451126492() {
+    public void testJsoupconnect10552537212() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.connect("deflatd");
+        Connection result = jsoup.connect(":matchesOwn'");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22300,12 +22305,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect26152063() {
+    public void testJsoupconnect35367453() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.connect("UTF.");
+        Connection result = jsoup.connect("span");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22325,12 +22330,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupconnect37274() {
+    public void testJsoupconnect11414281684() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.connect("td");
+        Connection result = jsoup.connect("[CDATA[");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22350,12 +22355,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse758700() throws Exception {
+    public void testJsoupparse17209250400() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"--","-,");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"p","basefonu");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22375,12 +22380,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1276151() throws Exception {
+    public void testJsoupparse1138900711() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"br","p");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"typd","base");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22400,12 +22405,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse16597087942() throws Exception {
+    public void testJsoupparse7392076502() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),":first-child","h4");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"hr","charseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22425,12 +22430,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse10562065843() throws Exception {
+    public void testJsoupparse16442727883() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),":nth-last-of-type(",":empty");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"metb","DOCTYPF");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22450,12 +22455,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse6716889794() throws Exception {
+    public void testJsoupparse18066963434() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"titld","deflate");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"basefonu","name");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22475,12 +22480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1003143950() throws Exception {
+    public void testJsoupparse7390753420() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"imagd");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"charseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22500,12 +22505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse10761632491() throws Exception {
+    public void testJsoupparse31993931() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),":contains)");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"head");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22525,12 +22530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse19732351292() throws Exception {
+    public void testJsoupparse31900442() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"plaintexu");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"gziq");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22550,12 +22555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse1003143963() throws Exception {
+    public void testJsoupparse1605213013() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"image");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"bgsound");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22575,12 +22580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse31499574() throws Exception {
+    public void testJsoupparse11912134674() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"form");
+        Document result = jsoup.parse((File) TestGenerator.getObjectFromPool("File"),"iframe");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22600,12 +22605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8071303350() throws Exception {
+    public void testJsoupparse15057180600() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"gzio","selecs");
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),":nth-of-type'","spam");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22625,12 +22630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse10753964831() throws Exception {
+    public void testJsoupparse10549130581() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),":empty",":nth-child(");
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"-.",":first-chilc");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22650,12 +22655,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17910291562() throws Exception {
+    public void testJsoupparse12226552972() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"optgrouq","*<");
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"gzip","template");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22675,12 +22680,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse13929551053() throws Exception {
+    public void testJsoupparse7299044443() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"deflate","charseu");
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"noframer","command");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22700,12 +22705,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17834344214() throws Exception {
+    public void testJsoupparse636010094() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),":roos","checked");
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"eveo","bgsoune");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22725,12 +22730,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse5126607280() throws Exception {
+    public void testJsoupparse5293423460() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"Set-Cookie","(",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"body","noscripu",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22750,12 +22755,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse5948223611() throws Exception {
+    public void testJsoupparse11053960841() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"tbodx","sarcasn",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"svh",":containsOwn'",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22775,12 +22780,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse8367361462() throws Exception {
+    public void testJsoupparse10987642() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"body","frameset",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"?","th",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22800,12 +22805,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse9177210663() throws Exception {
+    public void testJsoupparse18460198443() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"http-equiv","imagf",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"actioo","disabled",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22825,12 +22830,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse17958540594() throws Exception {
+    public void testJsoupparse17675096094() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),"[CDATA[","heac",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = jsoup.parse((InputStream) TestGenerator.getObjectFromPool("InputStream"),":lt'","]]=",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22850,12 +22855,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment8193609820() {
+    public void testJsoupparseBodyFragment21288213840() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment("http-equiv","link");
+        Document result = jsoup.parseBodyFragment("basf",":first-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22875,12 +22880,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment12409416241() {
+    public void testJsoupparseBodyFragment378111() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment(":last-child",":only-chile");
+        Document result = jsoup.parseBodyFragment("!<","h5");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22900,12 +22905,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment21028614172() {
+    public void testJsoupparseBodyFragment1103752922() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment("xmq",":last-of-typd");
+        Document result = jsoup.parseBodyFragment("^","titlf");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22925,12 +22930,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment5104063273() {
+    public void testJsoupparseBodyFragment14394866943() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment("US-ASCII","plaintexu");
+        Document result = jsoup.parseBodyFragment("charseu","basf");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22950,12 +22955,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment10177275214() {
+    public void testJsoupparseBodyFragment16377767464() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment("h2",":nth-last-of-type(");
+        Document result = jsoup.parseBodyFragment(":nth-last-child'","<.");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -22975,12 +22980,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment18353340() {
+    public void testJsoupparseBodyFragment9060216060() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment(":lt)");
+        Document result = jsoup.parseBodyFragment("selecs");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23000,12 +23005,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment12269463011() {
+    public void testJsoupparseBodyFragment1003134671() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment(":containsData'");
+        Document result = jsoup.parseBodyFragment("imagf");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23025,12 +23030,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment14722() {
+    public void testJsoupparseBodyFragment29875592() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment("-.");
+        Document result = jsoup.parseBodyFragment("abs:");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23050,12 +23055,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment20353119933() {
+    public void testJsoupparseBodyFragment1044193() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment(":first-of-typf");
+        Document result = jsoup.parseBodyFragment("imh");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23075,12 +23080,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparseBodyFragment17480897424() {
+    public void testJsoupparseBodyFragment19788929354() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parseBodyFragment("DOCTYPF");
+        Document result = jsoup.parseBodyFragment(":containsOwn'");
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23100,12 +23105,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11530() throws Exception {
+    public void testJsoupparse8610() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),192);
+        Document result = jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),-100);
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23125,12 +23130,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse9641() throws Exception {
+    public void testJsoupparse13611() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),3);
+        Document result = jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),400);
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23150,12 +23155,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11150732() throws Exception {
+    public void testJsoupparse12012() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),1114112);
+        Document result = jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),240);
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23175,12 +23180,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11603() throws Exception {
+    public void testJsoupparse9613() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),199);
+        Document result = jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),0);
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23200,12 +23205,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupparse11151724() throws Exception {
+    public void testJsoupparse582044() throws Exception {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),1114211);
+        Document result = jsoup.parse((URL) TestGenerator.getObjectFromPool("URL"),57243);
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23225,12 +23230,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean17927832780() {
+    public void testJsoupclean37570140() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("optgrouo","sarcasm",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean(".","xml",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23250,12 +23255,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean10527685911() {
+    public void testJsoupclean20631827771() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("name","$=",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean(":last-of-typd","commanc",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23275,12 +23280,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1004221442() {
+    public void testJsoupclean12067207602() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("\"","forn",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean("httq","^>",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23300,12 +23305,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean788824713() {
+    public void testJsoupclean20206457043() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("optioo","lh",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean(":containsData(","!=",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23325,12 +23330,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1994548684() {
+    public void testJsoupclean14376291964() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("com","namf",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean("$<","charses",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23350,12 +23355,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean14816069660() {
+    public void testJsoupclean566839340() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean(":nth-last-of-type)",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean(":eq)",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23375,12 +23380,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean16597409311() {
+    public void testJsoupclean19817283911() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean(":first-chilc",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean("template",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23400,12 +23405,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean996109672() {
+    public void testJsoupclean11122774892() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("htmk",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean("#text",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23425,12 +23430,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean988625343() {
+    public void testJsoupclean905823() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("gziq",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean("\'",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23450,12 +23455,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean986424() {
+    public void testJsoupclean935093614() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("bq",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        String result = jsoup.clean("basd",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23475,12 +23480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean20273925120() {
+    public void testJsoupclean10528022270() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("rubz",":matchesOwn'",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = jsoup.clean("h1",":containsOwn(",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23500,12 +23505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean18680996441() {
+    public void testJsoupclean11545228921() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("titlf","!=",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = jsoup.clean("textare`","svg",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23525,12 +23530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean11406920422() {
+    public void testJsoupclean7000052632() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("namd","DOCTYPF",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = jsoup.clean("metb","action",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23550,12 +23555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean5624138373() {
+    public void testJsoupclean4786720133() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("forn","xml",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = jsoup.clean(":emptx","#roos",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23575,12 +23580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupclean1816925204() {
+    public void testJsoupclean12900256044() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        jsoup.clean("linj","~>",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
+        String result = jsoup.clean("deflatf","tc",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"),(Document.OutputSettings) TestGenerator.getObjectFromPool("Document.OutputSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23600,12 +23605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid34069310() {
+    public void testJsoupisValid8734524080() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        boolean result = jsoup.isValid("odc",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        boolean result = jsoup.isValid("titlf",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23625,12 +23630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid22011() {
+    public void testJsoupisValid17909989331() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        boolean result = jsoup.isValid("(",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        boolean result = jsoup.isValid("optgroup",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23650,12 +23655,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid1029782802() {
+    public void testJsoupisValid986422() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        boolean result = jsoup.isValid("linj",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        boolean result = jsoup.isValid("bq",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23675,12 +23680,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid1155373() {
+    public void testJsoupisValid11501483623() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        boolean result = jsoup.isValid("td",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        boolean result = jsoup.isValid("boundarz",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23700,12 +23705,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testJsoupisValid565620114() {
+    public void testJsoupisValid1001304() {
         Jsoup jsoup = (Jsoup) TestGenerator.getObjectFromPool("Jsoup");
         if (jsoup == null) {
             return;
         }
-        boolean result = jsoup.isValid(":alk",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
+        boolean result = jsoup.isValid("dc",(Whitelist) TestGenerator.getObjectFromPool("Whitelist"));
         TestGenerator.putObjectToPool(result);
         assertTrue(jsoup.equals(jsoup));
         try {
@@ -23725,12 +23730,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput2413571220() {
+    public void testParserparseInput13585977680() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput("button","tg");
+        Document result = parser.parseInput(":matchesOwn(",":nth-child)");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23750,12 +23755,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput8748296951() {
+    public void testParserparseInput19803217941() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput("theae","ti");
+        Document result = parser.parseInput("bs","Set-Cookid");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23775,12 +23780,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput1029814312() {
+    public void testParserparseInput20918442122() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput("linj","bq");
+        Document result = parser.parseInput("templatf","table");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23800,12 +23805,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput1049957913() {
+    public void testParserparseInput11641195543() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput("nobs","^>");
+        Document result = parser.parseInput("rubz",":matchesOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23825,12 +23830,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput21012363954() {
+    public void testParserparseInput14284187044() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput("ds",":matchTexu");
+        Document result = parser.parseInput(":contains(","[a-zA-Z_:][-a-zA-Z0-9_:.]+");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23850,12 +23855,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput15515518860() {
+    public void testParserparseInput32141870() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"noscripu");
+        Document result = parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"htmk");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23880,7 +23885,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"h1");
+        Document result = parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"h1");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23900,12 +23905,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput10548395592() {
+    public void testParserparseInput23862() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),":first-chile");
+        Document result = parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"*{");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23925,12 +23930,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput1102572503() {
+    public void testParserparseInput570715813() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"text.");
+        Document result = parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),":root");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23950,12 +23955,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseInput32144084() {
+    public void testParserparseInput11346646224() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"htto");
+        Document result = parser.parseInput((Reader) TestGenerator.getObjectFromPool("Reader"),"keygen");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -23975,12 +23980,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput886019080() {
+    public void testParserparseFragmentInput8552654860() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragmentInput(":not(",(Element) TestGenerator.getObjectFromPool("Element"),"noframer");
+        List<Node> result = parser.parseFragmentInput("typd",(Element) TestGenerator.getObjectFromPool("Element"),"ruby");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24000,12 +24005,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput3605333131() {
+    public void testParserparseFragmentInput887512411() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragmentInput("bgsounc",(Element) TestGenerator.getObjectFromPool("Element"),"typd");
+        List<Node> result = parser.parseFragmentInput("]]?",(Element) TestGenerator.getObjectFromPool("Element"),"\'");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24025,12 +24030,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput3569633262() {
+    public void testParserparseFragmentInput4381915622() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragmentInput("bgsoune",(Element) TestGenerator.getObjectFromPool("Element"),"th");
+        List<Node> result = parser.parseFragmentInput("frameset",(Element) TestGenerator.getObjectFromPool("Element"),"US-ASCII");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24050,12 +24055,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput9201232603() {
+    public void testParserparseFragmentInput4896714763() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragmentInput("ruby",(Element) TestGenerator.getObjectFromPool("Element"),"h3");
+        List<Node> result = parser.parseFragmentInput(":matchesOwn)",(Element) TestGenerator.getObjectFromPool("Element"),"evem");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24075,12 +24080,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragmentInput14031824() {
+    public void testParserparseFragmentInput5799813724() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragmentInput("*{",(Element) TestGenerator.getObjectFromPool("Element"),"~<");
+        List<Node> result = parser.parseFragmentInput("actioo",(Element) TestGenerator.getObjectFromPool("Element"),":contains'");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24105,7 +24110,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getTreeBuilder();
+        TreeBuilder result = parser.getTreeBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24130,7 +24135,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getTreeBuilder();
+        TreeBuilder result = parser.getTreeBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24155,7 +24160,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getTreeBuilder();
+        TreeBuilder result = parser.getTreeBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24180,7 +24185,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getTreeBuilder();
+        TreeBuilder result = parser.getTreeBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24205,7 +24210,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getTreeBuilder();
+        TreeBuilder result = parser.getTreeBuilder();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24230,7 +24235,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
+        Parser result = parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24255,7 +24260,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
+        Parser result = parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24280,7 +24285,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
+        Parser result = parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24305,7 +24310,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
+        Parser result = parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24330,7 +24335,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
+        Parser result = parser.setTreeBuilder((TreeBuilder) TestGenerator.getObjectFromPool("TreeBuilder"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24475,12 +24480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors11142420() {
+    public void testParsersetTrackErrors554270() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.setTrackErrors(1114211);
+        Parser result = parser.setTrackErrors(55396);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24500,12 +24505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors331() {
+    public void testParsersetTrackErrors2231() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.setTrackErrors(2);
+        Parser result = parser.setTrackErrors(192);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24530,7 +24535,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.setTrackErrors(102);
+        Parser result = parser.setTrackErrors(102);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24550,12 +24555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors313() {
+    public void testParsersetTrackErrors2303() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.setTrackErrors(0);
+        Parser result = parser.setTrackErrors(199);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24575,12 +24580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParsersetTrackErrors4314() {
+    public void testParsersetTrackErrors573734() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.setTrackErrors(400);
+        Parser result = parser.setTrackErrors(57342);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24605,7 +24610,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getErrors();
+        ParseErrorList result = parser.getErrors();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24630,7 +24635,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getErrors();
+        ParseErrorList result = parser.getErrors();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24655,7 +24660,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getErrors();
+        ParseErrorList result = parser.getErrors();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24680,7 +24685,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getErrors();
+        ParseErrorList result = parser.getErrors();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24705,7 +24710,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.getErrors();
+        ParseErrorList result = parser.getErrors();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24730,7 +24735,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Parser result = parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24755,7 +24760,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Parser result = parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24780,7 +24785,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Parser result = parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24805,7 +24810,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Parser result = parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24830,7 +24835,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Parser result = parser.settings((ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24855,7 +24860,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings();
+        ParseSettings result = parser.settings();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24880,7 +24885,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings();
+        ParseSettings result = parser.settings();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24905,7 +24910,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings();
+        ParseSettings result = parser.settings();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24930,7 +24935,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings();
+        ParseSettings result = parser.settings();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24955,7 +24960,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.settings();
+        ParseSettings result = parser.settings();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -24975,12 +24980,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse8208160880() {
+    public void testParserparse16184387110() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parse(":matchTexs","table");
+        Document result = parser.parse("*<",":only-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25000,12 +25005,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse9620619091() {
+    public void testParserparse18756563601() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parse(":last-chile","h2");
+        Document result = parser.parse(":not'","tbodx");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25025,12 +25030,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse15646984762() {
+    public void testParserparse35024632() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parse("basf",":nth-last-child'");
+        Document result = parser.parse("tg","nobr");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25050,12 +25055,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse997297743() {
+    public void testParserparse10794797153() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parse("htmk","xml");
+        Document result = parser.parse(":contains(","optgrouo");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25075,12 +25080,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparse2084828044() {
+    public void testParserparse1114695914() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parse("rubx","httpt");
+        Document result = parser.parse("span",":gt'");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25100,12 +25105,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment20206163340() {
+    public void testParserparseFragment4053806040() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment(":containsData)",(Element) TestGenerator.getObjectFromPool("Element"),"h1");
+        List<Node> result = parser.parseFragment("checkboy",(Element) TestGenerator.getObjectFromPool("Element"),"tfoos");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25125,12 +25130,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment195734561() {
+    public void testParserparseFragment1305004971() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("imh",(Element) TestGenerator.getObjectFromPool("Element"),"optgrouq");
+        List<Node> result = parser.parseFragment("http:0",(Element) TestGenerator.getObjectFromPool("Element"),"nobs");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25150,12 +25155,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment8645669332() {
+    public void testParserparseFragment11642272() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("iframe",(Element) TestGenerator.getObjectFromPool("Element"),"keygeo");
+        List<Node> result = parser.parseFragment("$=",(Element) TestGenerator.getObjectFromPool("Element"),"hs");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25175,12 +25180,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment1574634003() {
+    public void testParserparseFragment568227293() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("br",(Element) TestGenerator.getObjectFromPool("Element"),"bgsounc");
+        List<Node> result = parser.parseFragment("#",(Element) TestGenerator.getObjectFromPool("Element"),":has'");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25200,12 +25205,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment16739888284() {
+    public void testParserparseFragment11916026184() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("hiddem",(Element) TestGenerator.getObjectFromPool("Element"),"imagf");
+        List<Node> result = parser.parseFragment("selecu",(Element) TestGenerator.getObjectFromPool("Element"),"^<");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25225,12 +25230,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment5123659350() {
+    public void testParserparseFragment12083047720() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("checkec",(Element) TestGenerator.getObjectFromPool("Element"),"h2",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
+        List<Node> result = parser.parseFragment("thead",(Element) TestGenerator.getObjectFromPool("Element"),"spam",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25250,12 +25255,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment1357337491() {
+    public void testParserparseFragment20374824201() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment(":not)",(Element) TestGenerator.getObjectFromPool("Element"),"xmq",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
+        List<Node> result = parser.parseFragment("typf",(Element) TestGenerator.getObjectFromPool("Element"),"imagd",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25275,12 +25280,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment17661639872() {
+    public void testParserparseFragment12370032662() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("titlf",(Element) TestGenerator.getObjectFromPool("Element"),"linl",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
+        List<Node> result = parser.parseFragment("html",(Element) TestGenerator.getObjectFromPool("Element"),"th",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25300,12 +25305,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment824397333() {
+    public void testParserparseFragment11779026773() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("col",(Element) TestGenerator.getObjectFromPool("Element"),"charset",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
+        List<Node> result = parser.parseFragment("http-equiu",(Element) TestGenerator.getObjectFromPool("Element"),":nth-of-type'",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25325,12 +25330,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseFragment7051228594() {
+    public void testParserparseFragment14294792804() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseFragment("UTF,",(Element) TestGenerator.getObjectFromPool("Element"),"nobr",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
+        List<Node> result = parser.parseFragment("boundarx",(Element) TestGenerator.getObjectFromPool("Element"),":alm",(ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList"));
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25350,12 +25355,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment15515965260() {
+    public void testParserparseXmlFragment17718053240() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseXmlFragment("--","noscripu");
+        List<Node> result = parser.parseXmlFragment(":roos","UTF-");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25375,12 +25380,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment5163001131() {
+    public void testParserparseXmlFragment995468201() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseXmlFragment("isindey","titlf");
+        List<Node> result = parser.parseXmlFragment("href","h6");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25400,12 +25405,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment5517027052() {
+    public void testParserparseXmlFragment21227921122() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseXmlFragment(":roos","hiddeo");
+        List<Node> result = parser.parseXmlFragment(":alm","noembec");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25425,12 +25430,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment15493695143() {
+    public void testParserparseXmlFragment8795522943() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseXmlFragment(":first-chilc","titlf");
+        List<Node> result = parser.parseXmlFragment("table",":all");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25450,12 +25455,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseXmlFragment12241143924() {
+    public void testParserparseXmlFragment8752525904() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseXmlFragment("text.",":matchText");
+        List<Node> result = parser.parseXmlFragment(":last-of-typf","forn");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25475,12 +25480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment16847253100() {
+    public void testParserparseBodyFragment1068181410() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragment(":not'","optgrouo");
+        Document result = parser.parseBodyFragment("matg","forl");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25500,12 +25505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment8745401281() {
+    public void testParserparseBodyFragment972568061() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragment("tfoot",":eq'");
+        Document result = parser.parseBodyFragment("body","matg");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25525,12 +25530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment565652272() {
+    public void testParserparseBodyFragment32585842() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragment(":alk","dt");
+        Document result = parser.parseBodyFragment("*{","http");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25550,12 +25555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment8899433763() {
+    public void testParserparseBodyFragment12462606213() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragment("stylf",":gt(");
+        Document result = parser.parseBodyFragment("option","htto");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25575,12 +25580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragment1103736784() {
+    public void testParserparseBodyFragment666095594() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragment("*","titld");
+        Document result = parser.parseBodyFragment("bodz","bgsoune");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25600,12 +25605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities566851650() {
+    public void testParserunescapeEntities8813755830() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.unescapeEntities(":eq)",true);
+        String result = parser.unescapeEntities("tablf",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25625,12 +25630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities8770201451() {
+    public void testParserunescapeEntities9987053101() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.unescapeEntities("text.",true);
+        String result = parser.unescapeEntities(":contains'",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25650,12 +25655,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities36182() {
+    public void testParserunescapeEntities8800718782() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.unescapeEntities(".",true);
+        String result = parser.unescapeEntities("tbody",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25675,12 +25680,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities11594992553() {
+    public void testParserunescapeEntities17595406473() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.unescapeEntities("noembee",true);
+        String result = parser.unescapeEntities(":has)",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25700,12 +25705,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserunescapeEntities7107015914() {
+    public void testParserunescapeEntities464294() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.unescapeEntities(":matchTexu",true);
+        String result = parser.unescapeEntities("*}",true);
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25725,12 +25730,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed20130671690() {
+    public void testParserparseBodyFragmentRelaxed17687118030() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragmentRelaxed(":last-of-typf","keygeo");
+        Document result = parser.parseBodyFragmentRelaxed(":not)","htmk");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25750,12 +25755,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed406941() {
+    public void testParserparseBodyFragmentRelaxed15479754691() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragmentRelaxed("$>","ds");
+        Document result = parser.parseBodyFragmentRelaxed("]]?","deflate");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25775,12 +25780,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed16377775062() {
+    public void testParserparseBodyFragmentRelaxed8783978912() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragmentRelaxed(":nth-last-child)","!=");
+        Document result = parser.parseBodyFragmentRelaxed(":last-of-typf","td");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25800,12 +25805,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed13775721893() {
+    public void testParserparseBodyFragmentRelaxed15369875753() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragmentRelaxed("te","buttoo");
+        Document result = parser.parseBodyFragmentRelaxed("checkee","]]>");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25825,12 +25830,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParserparseBodyFragmentRelaxed32371014() {
+    public void testParserparseBodyFragmentRelaxed8200676904() {
         Parser parser = (Parser) TestGenerator.getObjectFromPool("Parser");
         if (parser == null) {
             return;
         }
-        parser.parseBodyFragmentRelaxed("imh","p");
+        Document result = parser.parseBodyFragmentRelaxed("http-equiu","UTF,");
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25855,7 +25860,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.htmlParser();
+        Parser result = parser.htmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25880,7 +25885,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.htmlParser();
+        Parser result = parser.htmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25905,7 +25910,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.htmlParser();
+        Parser result = parser.htmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25930,7 +25935,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.htmlParser();
+        Parser result = parser.htmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25955,7 +25960,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.htmlParser();
+        Parser result = parser.htmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -25980,7 +25985,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.xmlParser();
+        Parser result = parser.xmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -26005,7 +26010,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.xmlParser();
+        Parser result = parser.xmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -26030,7 +26035,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.xmlParser();
+        Parser result = parser.xmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -26055,7 +26060,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.xmlParser();
+        Parser result = parser.xmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -26080,7 +26085,7 @@ public class AutomatedTest {
         if (parser == null) {
             return;
         }
-        parser.xmlParser();
+        Parser result = parser.xmlParser();
         TestGenerator.putObjectToPool(result);
         assertTrue(parser.equals(parser));
         try {
@@ -26105,7 +26110,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.getName();
+        String result = tag.getName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26130,7 +26135,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.getName();
+        String result = tag.getName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26155,7 +26160,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.getName();
+        String result = tag.getName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26180,7 +26185,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.getName();
+        String result = tag.getName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26205,7 +26210,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.getName();
+        String result = tag.getName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26230,7 +26235,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.normalName();
+        String result = tag.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26255,7 +26260,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.normalName();
+        String result = tag.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26280,7 +26285,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.normalName();
+        String result = tag.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26305,7 +26310,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.normalName();
+        String result = tag.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26330,7 +26335,7 @@ public class AutomatedTest {
         if (tag == null) {
             return;
         }
-        tag.normalName();
+        String result = tag.normalName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26350,12 +26355,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1096390950() {
+    public void testTagvalueOf1029783110() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("span",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Tag result = tag.valueOf("link",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26375,12 +26380,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf11852498191() {
+    public void testTagvalueOf567463991() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("imagf",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Tag result = tag.valueOf(":gt)",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26400,12 +26405,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1108449022() {
+    public void testTagvalueOf8748333962() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("typf",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Tag result = tag.valueOf("theae",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26425,12 +26430,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf9620652453() {
+    public void testTagvalueOf18100989423() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf(":last-chilc",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Tag result = tag.valueOf("basefons",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26450,12 +26455,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1025794() {
+    public void testTagvalueOf20685287644() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("h6",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
+        Tag result = tag.valueOf("[a-zA-Z_:][-a-zA-Z0-9_:.]*",(ParseSettings) TestGenerator.getObjectFromPool("ParseSettings"));
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26475,12 +26480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf900() {
+    public void testTagvalueOf1003134660() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf(";");
+        Tag result = tag.valueOf("image");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26500,12 +26505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1044191() {
+    public void testTagvalueOf987181() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("imh");
+        Tag result = tag.valueOf("cok");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26525,12 +26530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf19732341992() {
+    public void testTagvalueOf16183955612() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("plaintexu");
+        Tag result = tag.valueOf(":only-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26550,12 +26555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1003134653() {
+    public void testTagvalueOf21153115443() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("imagd");
+        Tag result = tag.valueOf("boundarx");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -26575,12 +26580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagvalueOf1003581224() {
+    public void testTagvalueOf39984() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        tag.valueOf("inpuu");
+        Tag result = tag.valueOf("~=");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -27600,12 +27605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag569515650() {
+    public void testTagisKnownTag10176250980() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        boolean result = tag.isKnownTag(":not'");
+        boolean result = tag.isKnownTag(":nth-last-of-type)");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -27625,12 +27630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag2882752471() {
+    public void testTagisKnownTag34851() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        boolean result = tag.isKnownTag(":nth-child'");
+        boolean result = tag.isKnownTag("lj");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -27650,12 +27655,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag21153115432() {
+    public void testTagisKnownTag30294402() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        boolean result = tag.isKnownTag("boundary");
+        boolean result = tag.isKnownTag("bodx");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -27675,12 +27680,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag14562253613() {
+    public void testTagisKnownTag16449536123() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        boolean result = tag.isKnownTag(":matches)");
+        boolean result = tag.isKnownTag("frameset");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -27700,12 +27705,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTagisKnownTag1650854894() {
+    public void testTagisKnownTag33694() {
         Tag tag = (Tag) TestGenerator.getObjectFromPool("Tag");
         if (tag == null) {
             return;
         }
-        boolean result = tag.isKnownTag("http-equiu");
+        boolean result = tag.isKnownTag("hr");
         TestGenerator.putObjectToPool(result);
         assertTrue(tag.equals(tag));
         try {
@@ -28105,7 +28110,7 @@ public class AutomatedTest {
         if (parseerror == null) {
             return;
         }
-        parseerror.getErrorMessage();
+        String result = parseerror.getErrorMessage();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerror.equals(parseerror));
         try {
@@ -28130,7 +28135,7 @@ public class AutomatedTest {
         if (parseerror == null) {
             return;
         }
-        parseerror.getErrorMessage();
+        String result = parseerror.getErrorMessage();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerror.equals(parseerror));
         try {
@@ -28155,7 +28160,7 @@ public class AutomatedTest {
         if (parseerror == null) {
             return;
         }
-        parseerror.getErrorMessage();
+        String result = parseerror.getErrorMessage();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerror.equals(parseerror));
         try {
@@ -28180,7 +28185,7 @@ public class AutomatedTest {
         if (parseerror == null) {
             return;
         }
-        parseerror.getErrorMessage();
+        String result = parseerror.getErrorMessage();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerror.equals(parseerror));
         try {
@@ -28205,7 +28210,7 @@ public class AutomatedTest {
         if (parseerror == null) {
             return;
         }
-        parseerror.getErrorMessage();
+        String result = parseerror.getErrorMessage();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerror.equals(parseerror));
         try {
@@ -28355,7 +28360,7 @@ public class AutomatedTest {
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.noTracking();
+        ParseErrorList result = parseerrorlist.noTracking();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28380,7 +28385,7 @@ public class AutomatedTest {
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.noTracking();
+        ParseErrorList result = parseerrorlist.noTracking();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28405,7 +28410,7 @@ public class AutomatedTest {
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.noTracking();
+        ParseErrorList result = parseerrorlist.noTracking();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28430,7 +28435,7 @@ public class AutomatedTest {
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.noTracking();
+        ParseErrorList result = parseerrorlist.noTracking();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28455,7 +28460,7 @@ public class AutomatedTest {
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.noTracking();
+        ParseErrorList result = parseerrorlist.noTracking();
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28475,12 +28480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking554270() {
+    public void testParseErrorListtracking2300() {
         ParseErrorList parseerrorlist = (ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList");
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.tracking(55396);
+        ParseErrorList result = parseerrorlist.tracking(199);
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28500,12 +28505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking2711() {
+    public void testParseErrorListtracking1311() {
         ParseErrorList parseerrorlist = (ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList");
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.tracking(240);
+        ParseErrorList result = parseerrorlist.tracking(100);
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28525,12 +28530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking2302() {
+    public void testParseErrorListtracking11142422() {
         ParseErrorList parseerrorlist = (ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList");
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.tracking(199);
+        ParseErrorList result = parseerrorlist.tracking(1114211);
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28550,12 +28555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking553273() {
+    public void testParseErrorListtracking303() {
         ParseErrorList parseerrorlist = (ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList");
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.tracking(55296);
+        ParseErrorList result = parseerrorlist.tracking(-1);
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -28575,12 +28580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseErrorListtracking11141434() {
+    public void testParseErrorListtracking11142424() {
         ParseErrorList parseerrorlist = (ParseErrorList) TestGenerator.getObjectFromPool("ParseErrorList");
         if (parseerrorlist == null) {
             return;
         }
-        parseerrorlist.tracking(1114112);
+        ParseErrorList result = parseerrorlist.tracking(1114211);
         TestGenerator.putObjectToPool(result);
         assertTrue(parseerrorlist.equals(parseerrorlist));
         try {
@@ -29095,12 +29100,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo950() {
+    public void testCharacterReaderconsumeTo920() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeTo('@');
+        String result = characterreader.consumeTo('=');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29120,12 +29125,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo721() {
+    public void testCharacterReaderconsumeTo741() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeTo(')');
+        String result = characterreader.consumeTo('+');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29145,12 +29150,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo962() {
+    public void testCharacterReaderconsumeTo1572() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeTo('A');
+        String result = characterreader.consumeTo('~');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29170,12 +29175,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo753() {
+    public void testCharacterReaderconsumeTo743() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeTo(',');
+        String result = characterreader.consumeTo('+');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29195,12 +29200,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeTo754() {
+    public void testCharacterReaderconsumeTo1344() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeTo(',');
+        String result = characterreader.consumeTo('g');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29220,12 +29225,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1330() {
+    public void testCharacterReaderconsumeToAny1290() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeToAny('f');
+        String result = characterreader.consumeToAny('b');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29245,12 +29250,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1541() {
+    public void testCharacterReaderconsumeToAny1231() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeToAny('{');
+        String result = characterreader.consumeToAny('\\');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29270,12 +29275,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1542() {
+    public void testCharacterReaderconsumeToAny1332() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeToAny('{');
+        String result = characterreader.consumeToAny('f');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29295,12 +29300,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1533() {
+    public void testCharacterReaderconsumeToAny703() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeToAny('z');
+        String result = characterreader.consumeToAny("'");
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29320,12 +29325,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCharacterReaderconsumeToAny1234() {
+    public void testCharacterReaderconsumeToAny1534() {
         CharacterReader characterreader = (CharacterReader) TestGenerator.getObjectFromPool("CharacterReader");
         if (characterreader == null) {
             return;
         }
-        characterreader.consumeToAny('\\');
+        String result = characterreader.consumeToAny('z');
         TestGenerator.putObjectToPool(result);
         assertTrue(characterreader.equals(characterreader));
         try {
@@ -29345,12 +29350,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload14560809030() throws Exception {
+    public void testDataUtilload5460778320() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((File) TestGenerator.getObjectFromPool("File"),"th",":matches'");
+        Document result = datautil.load((File) TestGenerator.getObjectFromPool("File"),"frameses","li");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29370,12 +29375,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload10763150541() throws Exception {
+    public void testDataUtilload1096679711() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((File) TestGenerator.getObjectFromPool("File"),"~=",":contains'");
+        Document result = datautil.load((File) TestGenerator.getObjectFromPool("File"),"span",".");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29395,12 +29400,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload939444772() throws Exception {
+    public void testDataUtilload1090587652() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((File) TestGenerator.getObjectFromPool("File"),"body","^>");
+        Document result = datautil.load((File) TestGenerator.getObjectFromPool("File"),"imagd",":contains'");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29420,12 +29425,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload5011374183() throws Exception {
+    public void testDataUtilload2448940533() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((File) TestGenerator.getObjectFromPool("File"),"textare`","checkboy");
+        Document result = datautil.load((File) TestGenerator.getObjectFromPool("File"),"buttoo","rubx");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29445,12 +29450,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload31322994() throws Exception {
+    public void testDataUtilload927354474() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((File) TestGenerator.getObjectFromPool("File"),"tq","abs;");
+        Document result = datautil.load((File) TestGenerator.getObjectFromPool("File"),"abs9","]]?");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29470,12 +29475,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload1004855610() throws Exception {
+    public void testDataUtilload7391378050() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"bq","inpus");
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"!>","charses");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29495,12 +29500,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload17689507811() throws Exception {
+    public void testDataUtilload12199244041() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"gzio","[a-zA-Z_:][-a-zA-Z0-9_:.]*");
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"inpus",":nth-of-type)");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29520,12 +29525,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload10322176492() throws Exception {
+    public void testDataUtilload12784817362() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"textareb","spao");
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"http-equiu",":matchTexu");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29545,12 +29550,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload19764999563() throws Exception {
+    public void testDataUtilload997654563() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"img","plaintexu");
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"htto","xmm");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29570,12 +29575,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload11155195774() throws Exception {
+    public void testDataUtilload21164121464() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"#texu","html");
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"UTF-",":first-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29595,12 +29600,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload4874425910() throws Exception {
+    public void testDataUtilload17257203780() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),":matchesOwn)","^",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),":first-of-typd","~=",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29620,12 +29625,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload17675192001() throws Exception {
+    public void testDataUtilload23936341() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"*|","du",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29645,12 +29650,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload6929402012() throws Exception {
+    public void testDataUtilload14977692622() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"noframer","http:0",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"commanc","$=",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29670,12 +29675,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload958068953() throws Exception {
+    public void testDataUtilload71897063() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"col","*|",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"hq","col",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29695,12 +29700,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilload36988584() throws Exception {
+    public void testDataUtilload11052163934() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"\"","=",(Parser) TestGenerator.getObjectFromPool("Parser"));
+        Document result = datautil.load((InputStream) TestGenerator.getObjectFromPool("InputStream"),"captiom",":nth-last-child'",(Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29720,12 +29725,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer11850() throws Exception {
+    public void testDataUtilreadToByteBuffer8620() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),224);
+        ByteBuffer result = datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),-99);
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29745,12 +29750,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer10611() throws Exception {
+    public void testDataUtilreadToByteBuffer12001() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),100);
+        ByteBuffer result = datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),239);
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29770,12 +29775,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer11602() throws Exception {
+    public void testDataUtilreadToByteBuffer11852() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),199);
+        ByteBuffer result = datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),224);
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29795,12 +29800,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer562573() throws Exception {
+    public void testDataUtilreadToByteBuffer14613() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),55296);
+        ByteBuffer result = datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),500);
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29820,12 +29825,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testDataUtilreadToByteBuffer9654() throws Exception {
+    public void testDataUtilreadToByteBuffer9644() throws Exception {
         DataUtil datautil = (DataUtil) TestGenerator.getObjectFromPool("DataUtil");
         if (datautil == null) {
             return;
         }
-        datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),4);
+        ByteBuffer result = datautil.readToByteBuffer((InputStream) TestGenerator.getObjectFromPool("InputStream"),3);
         TestGenerator.putObjectToPool(result);
         assertTrue(datautil.equals(datautil));
         try {
@@ -29965,12 +29970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull19788920040() {
+    public void testValidatenotNull41770() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),":containsOwn(");
+        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),"dt");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -29989,12 +29994,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull996179651() {
+    public void testValidatenotNull18294441() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),"httpt");
+        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),":eq)");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30013,12 +30018,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull10552546512() {
+    public void testValidatenotNull10582() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),":matchesOwn'");
+        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),"a");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30037,12 +30042,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull11927227933() {
+    public void testValidatenotNull41133() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),"noframet");
+        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),"br");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30061,12 +30066,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotNull17571259074() {
+    public void testValidatenotNull33450964() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),":emptx");
+        validate.notNull((Object) TestGenerator.getObjectFromPool("Object"),"matg");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30205,12 +30210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue425760() {
+    public void testValidateisTrue31646530() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isTrue(true,"lj");
+        validate.isTrue(true,"eveo");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30229,12 +30234,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue18636741() {
+    public void testValidateisTrue11414672591() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isTrue(true,":alm");
+        validate.isTrue(true,"[CDATA[");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30253,12 +30258,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue10176641872() {
+    public void testValidateisTrue1003972122() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isTrue(true,":nth-last-of-type'");
+        validate.isTrue(true,"input");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30277,12 +30282,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue423983() {
+    public void testValidateisTrue34259563() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isTrue(true,"h4");
+        validate.isTrue(true,"nobs");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30301,12 +30306,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisTrue1579324() {
+    public void testValidateisTrue392194() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isTrue(true,"xmo");
+        validate.isTrue(true,"a");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30445,12 +30450,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse9076465630() {
+    public void testValidateisFalse1378090() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isFalse(true,"script");
+        validate.isFalse(true,"cok");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30469,12 +30474,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse34128301() {
+    public void testValidateisFalse11911753051() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isFalse(true,"namf");
+        validate.isFalse(true,"iframf");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30493,12 +30498,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse428312() {
+    public void testValidateisFalse1103164692() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isFalse(true,"tq");
+        validate.isFalse(true,"tfoou");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30517,12 +30522,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse15515900453() {
+    public void testValidateisFalse18744233() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isFalse(true,"noscrips");
+        validate.isFalse(true,":lt'");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30541,12 +30546,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidateisFalse1650463984() {
+    public void testValidateisFalse428324() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.isFalse(true,"http-equiu");
+        validate.isFalse(true,"tr");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30685,12 +30690,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements10850() {
+    public void testValidatenoNullElements11912134680() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"|");
+        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"iframd");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30709,12 +30714,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements1152371() {
+    public void testValidatenoNullElements23861() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"svg");
+        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"*{");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30733,12 +30738,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements31264912() {
+    public void testValidatenoNullElements17571259092() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"even");
+        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),":emptz");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30757,12 +30762,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements31499563() {
+    public void testValidatenoNullElements11414290983() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"forl");
+        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"[CDATA[");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30781,12 +30786,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenoNullElements46584() {
+    public void testValidatenoNullElements18690644134() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"te");
+        validate.noNullElements((Object[]) TestGenerator.getObjectFromPool("Object[]"),"sarcasm");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30805,7 +30810,103 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty2882752470() {
+    public void testValidatenotEmpty14562253620() {
+        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
+        if (validate == null) {
+            return;
+        }
+        validate.notEmpty(":matches(");
+        assertTrue(validate.equals(validate));
+        try {
+            validate.equals(validate);
+        } catch (Exception e) {
+            fail("validate.equals(validate) throws an exception");
+        }
+        try {
+            validate.hashCode();
+        } catch (Exception e) {
+            fail("validate.hashCode() throws an exception");
+        }
+        try {
+            validate.toString();
+        } catch (Exception e) {
+            fail("validate.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testValidatenotEmpty1003134671() {
+        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
+        if (validate == null) {
+            return;
+        }
+        validate.notEmpty("imagf");
+        assertTrue(validate.equals(validate));
+        try {
+            validate.equals(validate);
+        } catch (Exception e) {
+            fail("validate.equals(validate) throws an exception");
+        }
+        try {
+            validate.hashCode();
+        } catch (Exception e) {
+            fail("validate.hashCode() throws an exception");
+        }
+        try {
+            validate.toString();
+        } catch (Exception e) {
+            fail("validate.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testValidatenotEmpty358799202() {
+        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
+        if (validate == null) {
+            return;
+        }
+        validate.notEmpty("#texu");
+        assertTrue(validate.equals(validate));
+        try {
+            validate.equals(validate);
+        } catch (Exception e) {
+            fail("validate.equals(validate) throws an exception");
+        }
+        try {
+            validate.hashCode();
+        } catch (Exception e) {
+            fail("validate.hashCode() throws an exception");
+        }
+        try {
+            validate.toString();
+        } catch (Exception e) {
+            fail("validate.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testValidatenotEmpty37403() {
+        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
+        if (validate == null) {
+            return;
+        }
+        validate.notEmpty("tq");
+        assertTrue(validate.equals(validate));
+        try {
+            validate.equals(validate);
+        } catch (Exception e) {
+            fail("validate.equals(validate) throws an exception");
+        }
+        try {
+            validate.hashCode();
+        } catch (Exception e) {
+            fail("validate.hashCode() throws an exception");
+        }
+        try {
+            validate.toString();
+        } catch (Exception e) {
+            fail("validate.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testValidatenotEmpty2882752474() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
@@ -30829,12 +30930,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty35367461() {
+    public void testValidatenotEmpty2413565430() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("spao");
+        validate.notEmpty("buttom","bq");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30853,12 +30954,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty1143072() {
+    public void testValidatenotEmpty17288898861() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("svg");
+        validate.notEmpty("iframf",":gt)");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30877,12 +30978,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty21156131423() {
+    public void testValidatenotEmpty1014355182() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("noembec");
+        validate.notEmpty("htmk",":all");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30901,12 +31002,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty32324() {
+    public void testValidatenotEmpty14610032583() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("de");
+        validate.notEmpty("US-ASCIJ",":alm");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30925,12 +31026,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty8088231500() {
+    public void testValidatenotEmpty7663948934() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("gziq","scripu");
+        validate.notEmpty("httpr","plaintexs");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30949,12 +31050,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty844581561() {
+    public void testValidatefail15515509550() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("UTF,","nobq");
+        validate.fail("noscript");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30973,12 +31074,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty1004486732() {
+    public void testValidatefail2709408261() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("\'","inpuu");
+        validate.fail("disablec");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -30997,12 +31098,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty4059318823() {
+    public void testValidatefail37312() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("isindex","du");
+        validate.fail("th");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -31021,12 +31122,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatenotEmpty1036729184() {
+    public void testValidatefail1605222313() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.notEmpty("mati","tr");
+        validate.fail("bgsound");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -31045,12 +31146,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail34840() {
+    public void testValidatefail12269463014() {
         Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
         if (validate == null) {
             return;
         }
-        validate.fail("li");
+        validate.fail(":containsData'");
         assertTrue(validate.equals(validate));
         try {
             validate.equals(validate);
@@ -31069,108 +31170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testValidatefail1103714471() {
-        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
-        if (validate == null) {
-            return;
-        }
-        validate.fail("title");
-        assertTrue(validate.equals(validate));
-        try {
-            validate.equals(validate);
-        } catch (Exception e) {
-            fail("validate.equals(validate) throws an exception");
-        }
-        try {
-            validate.hashCode();
-        } catch (Exception e) {
-            fail("validate.hashCode() throws an exception");
-        }
-        try {
-            validate.toString();
-        } catch (Exception e) {
-            fail("validate.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testValidatefail12174874142() {
-        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
-        if (validate == null) {
-            return;
-        }
-        validate.fail("hiddeo");
-        assertTrue(validate.equals(validate));
-        try {
-            validate.equals(validate);
-        } catch (Exception e) {
-            fail("validate.equals(validate) throws an exception");
-        }
-        try {
-            validate.hashCode();
-        } catch (Exception e) {
-            fail("validate.hashCode() throws an exception");
-        }
-        try {
-            validate.toString();
-        } catch (Exception e) {
-            fail("validate.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testValidatefail20919604283() {
-        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
-        if (validate == null) {
-            return;
-        }
-        validate.fail(":only-child");
-        assertTrue(validate.equals(validate));
-        try {
-            validate.equals(validate);
-        } catch (Exception e) {
-            fail("validate.equals(validate) throws an exception");
-        }
-        try {
-            validate.hashCode();
-        } catch (Exception e) {
-            fail("validate.hashCode() throws an exception");
-        }
-        try {
-            validate.toString();
-        } catch (Exception e) {
-            fail("validate.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testValidatefail17480897424() {
-        Validate validate = (Validate) TestGenerator.getObjectFromPool("Validate");
-        if (validate == null) {
-            return;
-        }
-        validate.fail("DOCTYPF");
-        assertTrue(validate.equals(validate));
-        try {
-            validate.equals(validate);
-        } catch (Exception e) {
-            fail("validate.equals(validate) throws an exception");
-        }
-        try {
-            validate.hashCode();
-        } catch (Exception e) {
-            fail("validate.hashCode() throws an exception");
-        }
-        try {
-            validate.toString();
-        } catch (Exception e) {
-            fail("validate.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testHttpConnectionconnect37260() {
+    public void testHttpConnectionconnect35367440() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect("tc");
+        Connection result = httpconnection.connect("spam");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31190,12 +31195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect35367461() {
+    public void testHttpConnectionconnect18305291() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect("spao");
+        Connection result = httpconnection.connect(":gt)");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31215,12 +31220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect1101578782() {
+    public void testHttpConnectionconnect32482() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect("tbodz");
+        Connection result = httpconnection.connect("du");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31240,12 +31245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect32134793() {
+    public void testHttpConnectionconnect10176250963() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect("http");
+        Connection result = httpconnection.connect(":nth-last-of-type'");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31265,12 +31270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionconnect1103714474() {
+    public void testHttpConnectionconnect13954() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect("title");
+        Connection result = httpconnection.connect("*>");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31295,7 +31300,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31320,7 +31325,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31345,7 +31350,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31370,7 +31375,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31395,7 +31400,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.connect((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31420,7 +31425,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31445,7 +31450,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31470,7 +31475,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31495,7 +31500,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31520,7 +31525,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
+        Connection result = httpconnection.url((URL) TestGenerator.getObjectFromPool("URL"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31540,12 +31545,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl1082706190() {
+    public void testHttpConnectionurl11346655510() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url("radip");
+        Connection result = httpconnection.url("keygeo");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31565,12 +31570,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl21011357991() {
+    public void testHttpConnectionurl1097804321() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url(":matchText");
+        Connection result = httpconnection.url("style");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31590,12 +31595,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl27763632() {
+    public void testHttpConnectionurl1188432() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url("\"\"");
+        Connection result = httpconnection.url("xmq");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31615,12 +31620,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl996170343() {
+    public void testHttpConnectionurl13776877283() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url("https");
+        Connection result = httpconnection.url("buttom");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31640,12 +31645,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionurl10032436884() {
+    public void testHttpConnectionurl32314() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.url("textare`");
+        Connection result = httpconnection.url("dd");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31670,7 +31675,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
+        Connection result = httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31695,7 +31700,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
+        Connection result = httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31720,7 +31725,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
+        Connection result = httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31745,7 +31750,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
+        Connection result = httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31770,7 +31775,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
+        Connection result = httpconnection.proxy((Proxy) TestGenerator.getObjectFromPool("Proxy"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31790,12 +31795,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy16437928140() {
+    public void testHttpConnectionproxy10245349410() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy("DOCTYPE",-1);
+        Connection result = httpconnection.proxy("[CDATA[",101);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31815,12 +31820,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy16437930231() {
+    public void testHttpConnectionproxy568952961() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy("DOCTYPD",239);
+        Connection result = httpconnection.proxy(":lt'",4);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31840,12 +31845,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy968928912() {
+    public void testHttpConnectionproxy11107196812() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy("even",500);
+        Connection result = httpconnection.proxy("#roos",4);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31865,12 +31870,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy988643() {
+    public void testHttpConnectionproxy8813768423() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy("br",191);
+        Connection result = httpconnection.proxy("table",3);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31890,12 +31895,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionproxy28630434() {
+    public void testHttpConnectionproxy1161324() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.proxy("]]>",224);
+        Connection result = httpconnection.proxy("tq",192);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31915,12 +31920,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent33480040() {
+    public void testHttpConnectionuserAgent1102563220() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.userAgent("meta");
+        Connection result = httpconnection.userAgent("text0");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31940,12 +31945,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent9076856541() {
+    public void testHttpConnectionuserAgent31891141() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.userAgent("script");
+        Connection result = httpconnection.userAgent("gziq");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31965,12 +31970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent9076856552() {
+    public void testHttpConnectionuserAgent33868652() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.userAgent("scrips");
+        Connection result = httpconnection.userAgent("nobs");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -31990,12 +31995,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent33703() {
+    public void testHttpConnectionuserAgent10032436883() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.userAgent("hs");
+        Connection result = httpconnection.userAgent("textare`");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32015,12 +32020,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionuserAgent14714() {
+    public void testHttpConnectionuserAgent20913044554() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.userAgent("--");
+        Connection result = httpconnection.userAgent("isindex");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32045,7 +32050,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.timeout(500);
+        Connection result = httpconnection.timeout(500);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32065,12 +32070,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout573741() {
+    public void testHttpConnectiontimeout4321() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.timeout(57343);
+        Connection result = httpconnection.timeout(401);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32090,12 +32095,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout11142422() {
+    public void testHttpConnectiontimeout11141432() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.timeout(1114211);
+        Connection result = httpconnection.timeout(1114112);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32115,12 +32120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout1313() {
+    public void testHttpConnectiontimeout2303() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.timeout(100);
+        Connection result = httpconnection.timeout(199);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32140,12 +32145,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiontimeout554274() {
+    public void testHttpConnectiontimeout4314() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.timeout(55396);
+        Connection result = httpconnection.timeout(400);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32165,12 +32170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize5310() {
+    public void testHttpConnectionmaxBodySize320() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.maxBodySize(500);
+        Connection result = httpconnection.maxBodySize(1);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32190,12 +32195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize301() {
+    public void testHttpConnectionmaxBodySize2181() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.maxBodySize(-1);
+        Connection result = httpconnection.maxBodySize(187);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32215,12 +32220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize332() {
+    public void testHttpConnectionmaxBodySize2182() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.maxBodySize(2);
+        Connection result = httpconnection.maxBodySize(187);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32240,12 +32245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize323() {
+    public void testHttpConnectionmaxBodySize353() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.maxBodySize(1);
+        Connection result = httpconnection.maxBodySize(4);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32265,12 +32270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionmaxBodySize354() {
+    public void testHttpConnectionmaxBodySize1324() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.maxBodySize(4);
+        Connection result = httpconnection.maxBodySize(101);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32295,7 +32300,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.followRedirects(true);
+        Connection result = httpconnection.followRedirects(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32320,7 +32325,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.followRedirects(true);
+        Connection result = httpconnection.followRedirects(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32345,7 +32350,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.followRedirects(true);
+        Connection result = httpconnection.followRedirects(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32370,7 +32375,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.followRedirects(true);
+        Connection result = httpconnection.followRedirects(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32395,7 +32400,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.followRedirects(true);
+        Connection result = httpconnection.followRedirects(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32415,12 +32420,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer2882752470() {
+    public void testHttpConnectionreferrer2709408280() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.referrer(":nth-child'");
+        Connection result = httpconnection.referrer("disablee");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32440,12 +32445,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer1082706191() {
+    public void testHttpConnectionreferrer34851() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.referrer("radip");
+        Connection result = httpconnection.referrer("lj");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32465,12 +32470,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer17480897422() {
+    public void testHttpConnectionreferrer996170352() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.referrer("DOCTYPF");
+        Connection result = httpconnection.referrer("httpt");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32490,12 +32495,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer21156131423() {
+    public void testHttpConnectionreferrer923() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.referrer("noembec");
+        Connection result = httpconnection.referrer("=");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32515,12 +32520,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionreferrer14574() {
+    public void testHttpConnectionreferrer1188424() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.referrer("*|");
+        Connection result = httpconnection.referrer("xmp");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32545,7 +32550,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
+        Connection result = httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32570,7 +32575,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
+        Connection result = httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32595,7 +32600,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
+        Connection result = httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32620,7 +32625,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
+        Connection result = httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32645,7 +32650,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
+        Connection result = httpconnection.method((Method) TestGenerator.getObjectFromPool("Method"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32670,7 +32675,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreHttpErrors(true);
+        Connection result = httpconnection.ignoreHttpErrors(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32695,7 +32700,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreHttpErrors(true);
+        Connection result = httpconnection.ignoreHttpErrors(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32720,7 +32725,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreHttpErrors(true);
+        Connection result = httpconnection.ignoreHttpErrors(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32745,7 +32750,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreHttpErrors(true);
+        Connection result = httpconnection.ignoreHttpErrors(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32770,7 +32775,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreHttpErrors(true);
+        Connection result = httpconnection.ignoreHttpErrors(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32795,7 +32800,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreContentType(true);
+        Connection result = httpconnection.ignoreContentType(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32820,7 +32825,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreContentType(true);
+        Connection result = httpconnection.ignoreContentType(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32845,7 +32850,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreContentType(true);
+        Connection result = httpconnection.ignoreContentType(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32870,7 +32875,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreContentType(true);
+        Connection result = httpconnection.ignoreContentType(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32895,7 +32900,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.ignoreContentType(true);
+        Connection result = httpconnection.ignoreContentType(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32915,12 +32920,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata12122755390() {
+    public void testHttpConnectiondata15680814760() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data(":first-child","actioo");
+        Connection result = httpconnection.data("eveo",":nth-last-child(");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32940,12 +32945,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9587433641() {
+    public void testHttpConnectiondata21238245261() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data(":last-child","link");
+        Connection result = httpconnection.data(":containsOwn'","script");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32965,12 +32970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata3517201582() {
+    public void testHttpConnectiondata33893342() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data(":only-of-typd",":nth-last-of-type'");
+        Connection result = httpconnection.data("*}","math");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -32990,12 +32995,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata2746248063() {
+    public void testHttpConnectiondata17302704093() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("xmm","disablee");
+        Connection result = httpconnection.data("iframe","hreg");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33015,12 +33020,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata21065426344() {
+    public void testHttpConnectiondata377474() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("?",":last-of-typf");
+        Connection result = httpconnection.data("!>","bq");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33045,7 +33050,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
+        Connection result = httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33070,7 +33075,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
+        Connection result = httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33095,7 +33100,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
+        Connection result = httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33120,7 +33125,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
+        Connection result = httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33145,7 +33150,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
+        Connection result = httpconnection.sslSocketFactory((SSLSocketFactory) TestGenerator.getObjectFromPool("SSLSocketFactory"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33165,12 +33170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata16954607980() {
+    public void testHttpConnectiondata14108355730() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("theae","optioo",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
+        Connection result = httpconnection.data("[a-zA-Z_:][-a-zA-Z0-9_:.])","#roou",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33190,12 +33195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata20537343811() {
+    public void testHttpConnectiondata8749559081() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("inpus","gziq",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
+        Connection result = httpconnection.data("--","tfoou",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33215,12 +33220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata5515758412() {
+    public void testHttpConnectiondata8549925372() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("deflatf","deflatf",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
+        Connection result = httpconnection.data("frameses","commane",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33240,12 +33245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata19029339243() {
+    public void testHttpConnectiondata12129426363() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("gzip","actiom",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
+        Connection result = httpconnection.data("disabled","isindew",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33265,12 +33270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata15894275834() {
+    public void testHttpConnectiondata7971098614() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("commanc","httpr",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
+        Connection result = httpconnection.data("optgrouo","#root",(InputStream) TestGenerator.getObjectFromPool("InputStream"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33290,12 +33295,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata26152040() {
+    public void testHttpConnectiondata37320() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("UTF,");
+        Connection result = httpconnection.data("ti");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33315,12 +33320,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata39991() {
+    public void testHttpConnectiondata11346655521() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("~>");
+        Connection result = httpconnection.data("keygen");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33340,12 +33345,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata9060216042() {
+    public void testHttpConnectiondata31255622() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("selecu");
+        Connection result = httpconnection.data("eveo");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33365,12 +33370,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata11346655533() {
+    public void testHttpConnectiondata20353119913() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("keygem");
+        Connection result = httpconnection.data(":first-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33390,12 +33395,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata18690634824() {
+    public void testHttpConnectiondata30164334() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("sarcasl");
+        Connection result = httpconnection.data("basf");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33415,12 +33420,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata1101578760() {
+    public void testHttpConnectiondata9076856550() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("tbodx");
+        Connection result = httpconnection.data("scrips");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33440,12 +33445,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata1103714481() {
+    public void testHttpConnectiondata20919604281() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("titlf");
+        Connection result = httpconnection.data(":only-child");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33465,12 +33470,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata1097804332() {
+    public void testHttpConnectiondata18305292() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("stylf");
+        Connection result = httpconnection.data(":gt)");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33490,12 +33495,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata1605222323() {
+    public void testHttpConnectiondata2709408273() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("bgsounc");
+        Connection result = httpconnection.data("disabled");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33515,12 +33520,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata10032436874() {
+    public void testHttpConnectiondata569515654() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("textarea");
+        Connection result = httpconnection.data(":not'");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33545,7 +33550,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
+        Connection result = httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33570,7 +33575,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
+        Connection result = httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33595,7 +33600,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
+        Connection result = httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33620,7 +33625,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
+        Connection result = httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33645,7 +33650,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
+        Connection result = httpconnection.data((Collection<Connection.KeyVal>) TestGenerator.getObjectFromPool("Collection<Connection.KeyVal>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33665,12 +33670,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata10101369390() {
+    public void testHttpConnectiondata567593350() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("optioo");
+        Connection.KeyVal result = httpconnection.data(":has(");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33690,12 +33695,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata13776877261() {
+    public void testHttpConnectiondata33868631() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("buttoo");
+        Connection.KeyVal result = httpconnection.data("nobq");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33715,12 +33720,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata14562() {
+    public void testHttpConnectiondata31984632() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("*{");
+        Connection.KeyVal result = httpconnection.data("head");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33740,12 +33745,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata10101369393() {
+    public void testHttpConnectiondata19788929333() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("optioo");
+        Connection.KeyVal result = httpconnection.data(":containsOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33765,12 +33770,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectiondata31984634() {
+    public void testHttpConnectiondata34834() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.data("head");
+        Connection.KeyVal result = httpconnection.data("lh");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33790,12 +33795,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody9076856540() {
+    public void testHttpConnectionrequestBody33480040() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.requestBody("script");
+        Connection result = httpconnection.requestBody("meta");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33815,12 +33820,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody17209582721() {
+    public void testHttpConnectionrequestBody567593361() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.requestBody("basefonu");
+        Connection result = httpconnection.requestBody(":has)");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33840,12 +33845,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody15368918732() {
+    public void testHttpConnectionrequestBody1044182() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.requestBody("checkbow");
+        Connection result = httpconnection.requestBody("img");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33865,12 +33870,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody569515653() {
+    public void testHttpConnectionrequestBody10761623183() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.requestBody(":not'");
+        Connection result = httpconnection.requestBody(":contains(");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33890,12 +33895,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionrequestBody31891144() {
+    public void testHttpConnectionrequestBody7423139264() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.requestBody("gziq");
+        Connection result = httpconnection.requestBody("checked");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33915,12 +33920,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader2913355370() {
+    public void testHttpConnectionheader12644286670() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.header("com",":nth-child(");
+        Connection result = httpconnection.header("radin",":only-chilc");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33940,12 +33945,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader9421270791() {
+    public void testHttpConnectionheader7467972391() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.header("deflatd",":nth-child'");
+        Connection result = httpconnection.header("noframer","[a-zA-Z_:][-a-zA-Z0-9_:.])");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33965,12 +33970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader20782967952() {
+    public void testHttpConnectionheader13268213182() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.header("sarcasn","tfoos");
+        Connection result = httpconnection.header(":first-of-typd","base");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -33990,12 +33995,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader15771082543() {
+    public void testHttpConnectionheader10339527283() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.header("[CDATA[","caption");
+        Connection result = httpconnection.header("textarea",":gt(");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34015,12 +34020,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheader8733522084() {
+    public void testHttpConnectionheader7677709174() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.header("tfoot","base");
+        Connection result = httpconnection.header(":matchTexs",":roos");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34040,12 +34045,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders21065455180() {
+    public void testHttpConnectionheaders14562253630() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.headers(":last-of-type");
+        Connection result = httpconnection.headers(":matches'");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34065,12 +34070,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders1003134661() {
+    public void testHttpConnectionheaders14562253631() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.headers("image");
+        Connection result = httpconnection.headers(":matches'");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34090,12 +34095,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders1605222322() {
+    public void testHttpConnectionheaders1857353272() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.headers("bgsounc");
+        Connection result = httpconnection.headers("US-ASCII");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34115,12 +34120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders39983() {
+    public void testHttpConnectionheaders16183955593() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.headers("~=");
+        Connection result = httpconnection.headers(":only-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34140,12 +34145,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionheaders33441684() {
+    public void testHttpConnectionheaders39984() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.headers("mati");
+        Connection result = httpconnection.headers("~=");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34165,12 +34170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie3276246990() {
+    public void testHttpConnectioncookie11489355970() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookie(":eq(","disabled");
+        Connection result = httpconnection.cookie("#roou",":first-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34190,12 +34195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie10552993231() {
+    public void testHttpConnectioncookie8450251021() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookie("-.",":matchesOwn(");
+        Connection result = httpconnection.cookie("colgrouo","script");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34215,12 +34220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie3919443942() {
+    public void testHttpConnectioncookie16345653952() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookie("math",":nth-child(");
+        Connection result = httpconnection.cookie(":nth-last-child(","htmk");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34240,12 +34245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie18611817243() {
+    public void testHttpConnectioncookie3582214473() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookie("https",":containsData)");
+        Connection result = httpconnection.cookie("caption",":last-chilc");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34265,12 +34270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookie9877683524() {
+    public void testHttpConnectioncookie5526108944() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookie("http-equiv","http-equiu");
+        Connection result = httpconnection.cookie("$>","captioo");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34290,12 +34295,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies9503947300() {
+    public void testHttpConnectioncookies9060216050() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookies("command");
+        Connection result = httpconnection.cookies("select");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34315,12 +34320,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies15515509541() {
+    public void testHttpConnectioncookies37421() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookies("noscrips");
+        Connection result = httpconnection.cookies("ts");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34340,12 +34345,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies1103268982() {
+    public void testHttpConnectioncookies12068418912() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookies("theac");
+        Connection result = httpconnection.cookies("http:0");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34365,12 +34370,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectioncookies1102563223() {
+    public void testHttpConnectioncookies1605222313() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookies("text0");
+        Connection result = httpconnection.cookies("bgsound");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34395,7 +34400,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.cookies(":nth-last-of-type'");
+        Connection result = httpconnection.cookies(":nth-last-of-type'");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34420,7 +34425,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Connection result = httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34445,7 +34450,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Connection result = httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34470,7 +34475,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Connection result = httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34495,7 +34500,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Connection result = httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34520,7 +34525,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
+        Connection result = httpconnection.parser((Parser) TestGenerator.getObjectFromPool("Parser"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34545,7 +34550,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.get();
+        Document result = httpconnection.get();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34570,7 +34575,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.get();
+        Document result = httpconnection.get();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34595,7 +34600,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.get();
+        Document result = httpconnection.get();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34620,7 +34625,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.get();
+        Document result = httpconnection.get();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34645,7 +34650,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.get();
+        Document result = httpconnection.get();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34670,7 +34675,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.post();
+        Document result = httpconnection.post();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34695,7 +34700,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.post();
+        Document result = httpconnection.post();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34720,7 +34725,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.post();
+        Document result = httpconnection.post();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34745,7 +34750,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.post();
+        Document result = httpconnection.post();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34770,7 +34775,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.post();
+        Document result = httpconnection.post();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34795,7 +34800,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.execute();
+        Connection.Response result = httpconnection.execute();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34820,7 +34825,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.execute();
+        Connection.Response result = httpconnection.execute();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34845,7 +34850,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.execute();
+        Connection.Response result = httpconnection.execute();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34870,7 +34875,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.execute();
+        Connection.Response result = httpconnection.execute();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34895,7 +34900,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.execute();
+        Connection.Response result = httpconnection.execute();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34920,7 +34925,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request();
+        Connection.Request result = httpconnection.request();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34945,7 +34950,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request();
+        Connection.Request result = httpconnection.request();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34970,7 +34975,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request();
+        Connection.Request result = httpconnection.request();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -34995,7 +35000,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request();
+        Connection.Request result = httpconnection.request();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35020,7 +35025,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request();
+        Connection.Request result = httpconnection.request();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35045,7 +35050,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
+        Connection result = httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35070,7 +35075,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
+        Connection result = httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35095,7 +35100,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
+        Connection result = httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35120,7 +35125,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
+        Connection result = httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35145,7 +35150,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
+        Connection result = httpconnection.request((Connection.Request) TestGenerator.getObjectFromPool("Connection.Request"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35170,7 +35175,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response();
+        Connection.Response result = httpconnection.response();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35195,7 +35200,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response();
+        Connection.Response result = httpconnection.response();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35220,7 +35225,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response();
+        Connection.Response result = httpconnection.response();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35245,7 +35250,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response();
+        Connection.Response result = httpconnection.response();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35270,7 +35275,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response();
+        Connection.Response result = httpconnection.response();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35295,7 +35300,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
+        Connection result = httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35320,7 +35325,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
+        Connection result = httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35345,7 +35350,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
+        Connection result = httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35370,7 +35375,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
+        Connection result = httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35395,7 +35400,7 @@ public class AutomatedTest {
         if (httpconnection == null) {
             return;
         }
-        httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
+        Connection result = httpconnection.response((Connection.Response) TestGenerator.getObjectFromPool("Connection.Response"));
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35415,12 +35420,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset11927218620() {
+    public void testHttpConnectionpostDataCharset1103268990() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.postDataCharset("noframes");
+        Connection result = httpconnection.postDataCharset("thead");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35440,12 +35445,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset12174874141() {
+    public void testHttpConnectionpostDataCharset18912061161() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.postDataCharset("hiddeo");
+        Connection result = httpconnection.postDataCharset(":nth-of-type(");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35465,12 +35470,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset19788929352() {
+    public void testHttpConnectionpostDataCharset20353119932() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.postDataCharset(":containsOwn'");
+        Connection result = httpconnection.postDataCharset(":first-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35490,12 +35495,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset33073() {
+    public void testHttpConnectionpostDataCharset33868643() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.postDataCharset("h4");
+        Connection result = httpconnection.postDataCharset("nobr");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35515,12 +35520,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHttpConnectionpostDataCharset1097804324() {
+    public void testHttpConnectionpostDataCharset11912143974() {
         HttpConnection httpconnection = (HttpConnection) TestGenerator.getObjectFromPool("HttpConnection");
         if (httpconnection == null) {
             return;
         }
-        httpconnection.postDataCharset("style");
+        Connection result = httpconnection.postDataCharset("iframe");
         TestGenerator.putObjectToPool(result);
         assertTrue(httpconnection.equals(httpconnection));
         try {
@@ -35545,7 +35550,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
+        Document result = w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35570,7 +35575,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
+        Document result = w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35595,7 +35600,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
+        Document result = w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35620,7 +35625,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
+        Document result = w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35645,7 +35650,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
+        Document result = w3cdom.fromJsoup((org.jsoup.nodes.Document) TestGenerator.getObjectFromPool("org.jsoup.nodes.Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35790,7 +35795,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
+        String result = w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35815,7 +35820,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
+        String result = w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35840,7 +35845,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
+        String result = w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35865,7 +35870,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
+        String result = w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -35890,7 +35895,7 @@ public class AutomatedTest {
         if (w3cdom == null) {
             return;
         }
-        w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
+        String result = w3cdom.asString((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(w3cdom.equals(w3cdom));
         try {
@@ -36160,12 +36165,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1260() {
+    public void testTokenQueueaddFirst1010() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst('_');
+        tokenqueue.addFirst('F');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36184,12 +36189,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst761() {
+    public void testTokenQueueaddFirst771() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst('-');
+        tokenqueue.addFirst('.');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36208,12 +36213,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst882() {
+    public void testTokenQueueaddFirst1292() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst('9');
+        tokenqueue.addFirst('b');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36232,12 +36237,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst693() {
+    public void testTokenQueueaddFirst1233() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst('&');
+        tokenqueue.addFirst('\\');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36256,12 +36261,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst744() {
+    public void testTokenQueueaddFirst774() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst('+');
+        tokenqueue.addFirst('.');
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36280,12 +36285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst35756400() {
+    public void testTokenQueueaddFirst17571249790() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst("typd");
+        tokenqueue.addFirst(":emptz");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36304,12 +36309,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst19371() {
+    public void testTokenQueueaddFirst9503947311() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst("<.");
+        tokenqueue.addFirst("commane");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36328,12 +36333,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst17480897432() {
+    public void testTokenQueueaddFirst996170352() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst("DOCTYPE");
+        tokenqueue.addFirst("httpt");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36352,12 +36357,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst1650854893() {
+    public void testTokenQueueaddFirst30294403() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst("http-equiu");
+        tokenqueue.addFirst("bodx");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36376,12 +36381,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueaddFirst35118014() {
+    public void testTokenQueueaddFirst567593364() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.addFirst("ruby");
+        tokenqueue.addFirst(":has)");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -36400,12 +36405,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches358799200() {
+    public void testTokenQueuematches570706520() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matches("#texu");
+        boolean result = tokenqueue.matches(":roou");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36425,12 +36430,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches12269463011() {
+    public void testTokenQueuematches37271() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matches(":containsData'");
+        boolean result = tokenqueue.matches("td");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36450,12 +36455,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches1857353272() {
+    public void testTokenQueuematches358799182() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matches("US-ASCII");
+        boolean result = tokenqueue.matches("#texs");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36475,12 +36480,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches12269463003() {
+    public void testTokenQueuematches31823() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matches(":containsData(");
+        boolean result = tokenqueue.matches("bq");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36500,12 +36505,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematches18912061154() {
+    public void testTokenQueuematches33480044() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matches(":nth-of-type)");
+        boolean result = tokenqueue.matches("meta");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36525,12 +36530,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS1102563210() {
+    public void testTokenQueuematchesCS11927218610() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesCS("text/");
+        boolean result = tokenqueue.matchesCS("noframer");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36550,12 +36555,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS32311() {
+    public void testTokenQueuematchesCS32481() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesCS("dd");
+        boolean result = tokenqueue.matchesCS("du");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36575,12 +36580,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS30294422() {
+    public void testTokenQueuematchesCS33218802() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesCS("bodz");
+        boolean result = tokenqueue.matchesCS("linj");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36600,12 +36605,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS10176250983() {
+    public void testTokenQueuematchesCS33063() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesCS(":nth-last-of-type)");
+        boolean result = tokenqueue.matchesCS("h3");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36625,12 +36630,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesCS12074() {
+    public void testTokenQueuematchesCS21156131424() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesCS("$<");
+        boolean result = tokenqueue.matchesCS("noembec");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36650,12 +36655,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny14562253620() {
+    public void testTokenQueuematchesAny15368918750() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesAny(":matches(");
+        boolean result = tokenqueue.matchesAny("checkboy");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36675,12 +36680,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny901() {
+    public void testTokenQueuematchesAny29875591() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesAny(";");
+        boolean result = tokenqueue.matchesAny("abs:");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36700,12 +36705,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny18912061162() {
+    public void testTokenQueuematchesAny33682() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesAny(":nth-of-type(");
+        boolean result = tokenqueue.matchesAny("hq");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36725,12 +36730,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny12269463003() {
+    public void testTokenQueuematchesAny18353343() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesAny(":containsData(");
+        boolean result = tokenqueue.matchesAny(":lt)");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36750,12 +36755,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny14574() {
+    public void testTokenQueuematchesAny21011357994() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesAny("*|");
+        boolean result = tokenqueue.matchesAny(":matchText");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36775,7 +36780,57 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny770() {
+    public void testTokenQueuematchesAny1210() {
+        TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
+        if (tokenqueue == null) {
+            return;
+        }
+        boolean result = tokenqueue.matchesAny('Z');
+        TestGenerator.putObjectToPool(result);
+        assertTrue(tokenqueue.equals(tokenqueue));
+        try {
+            tokenqueue.equals(tokenqueue);
+        } catch (Exception e) {
+            fail("tokenqueue.equals(tokenqueue) throws an exception");
+        }
+        try {
+            tokenqueue.hashCode();
+        } catch (Exception e) {
+            fail("tokenqueue.hashCode() throws an exception");
+        }
+        try {
+            tokenqueue.toString();
+        } catch (Exception e) {
+            fail("tokenqueue.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTokenQueuematchesAny1321() {
+        TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
+        if (tokenqueue == null) {
+            return;
+        }
+        boolean result = tokenqueue.matchesAny('e');
+        TestGenerator.putObjectToPool(result);
+        assertTrue(tokenqueue.equals(tokenqueue));
+        try {
+            tokenqueue.equals(tokenqueue);
+        } catch (Exception e) {
+            fail("tokenqueue.equals(tokenqueue) throws an exception");
+        }
+        try {
+            tokenqueue.hashCode();
+        } catch (Exception e) {
+            fail("tokenqueue.hashCode() throws an exception");
+        }
+        try {
+            tokenqueue.toString();
+        } catch (Exception e) {
+            fail("tokenqueue.toString() throws an exception");
+        }
+    }
+    @Test
+    public void testTokenQueuematchesAny772() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
@@ -36800,12 +36855,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1021() {
+    public void testTokenQueuematchesAny773() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesAny('G');
+        boolean result = tokenqueue.matchesAny('.');
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -36825,62 +36880,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchesAny1422() {
+    public void testTokenQueuematchesAny774() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchesAny('o');
-        TestGenerator.putObjectToPool(result);
-        assertTrue(tokenqueue.equals(tokenqueue));
-        try {
-            tokenqueue.equals(tokenqueue);
-        } catch (Exception e) {
-            fail("tokenqueue.equals(tokenqueue) throws an exception");
-        }
-        try {
-            tokenqueue.hashCode();
-        } catch (Exception e) {
-            fail("tokenqueue.hashCode() throws an exception");
-        }
-        try {
-            tokenqueue.toString();
-        } catch (Exception e) {
-            fail("tokenqueue.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testTokenQueuematchesAny723() {
-        TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
-        if (tokenqueue == null) {
-            return;
-        }
-        boolean result = tokenqueue.matchesAny(')');
-        TestGenerator.putObjectToPool(result);
-        assertTrue(tokenqueue.equals(tokenqueue));
-        try {
-            tokenqueue.equals(tokenqueue);
-        } catch (Exception e) {
-            fail("tokenqueue.equals(tokenqueue) throws an exception");
-        }
-        try {
-            tokenqueue.hashCode();
-        } catch (Exception e) {
-            fail("tokenqueue.hashCode() throws an exception");
-        }
-        try {
-            tokenqueue.toString();
-        } catch (Exception e) {
-            fail("tokenqueue.toString() throws an exception");
-        }
-    }
-    @Test
-    public void testTokenQueuematchesAny1344() {
-        TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
-        if (tokenqueue == null) {
-            return;
-        }
-        boolean result = tokenqueue.matchesAny('g');
+        boolean result = tokenqueue.matchesAny('.');
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37025,12 +37030,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp12090() {
+    public void testTokenQueuematchChomp35756400() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchChomp("$>");
+        boolean result = tokenqueue.matchChomp("typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37050,12 +37055,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp21153115421() {
+    public void testTokenQueuematchChomp1044181() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchChomp("boundarz");
+        boolean result = tokenqueue.matchChomp("img");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37075,12 +37080,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp1003134662() {
+    public void testTokenQueuematchChomp16449536132() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchChomp("image");
+        boolean result = tokenqueue.matchChomp("frameses");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37100,12 +37105,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp1188423() {
+    public void testTokenQueuematchChomp1857353263() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchChomp("xmp");
+        boolean result = tokenqueue.matchChomp("US-ASCIJ");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37125,12 +37130,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuematchChomp20919604274() {
+    public void testTokenQueuematchChomp32110824() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        boolean result = tokenqueue.matchChomp(":only-chile");
+        boolean result = tokenqueue.matchChomp("href");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37645,12 +37650,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume1082706190() {
+    public void testTokenQueueconsume1220() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consume("radip");
+        tokenqueue.consume("[");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -37669,12 +37674,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume1003581211() {
+    public void testTokenQueueconsume358296671() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consume("input");
+        tokenqueue.consume("#roos");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -37693,12 +37698,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume20353119922() {
+    public void testTokenQueueconsume10548386282() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consume(":first-of-type");
+        tokenqueue.consume(":first-child");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -37717,12 +37722,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume33868643() {
+    public void testTokenQueueconsume10761623183() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consume("nobr");
+        tokenqueue.consume(":contains(");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -37741,12 +37746,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsume10552537234() {
+    public void testTokenQueueconsume20919604294() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consume(":matchesOwn)");
+        tokenqueue.consume(":only-chilc");
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
             tokenqueue.equals(tokenqueue);
@@ -37765,12 +37770,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo1003581220() {
+    public void testTokenQueueconsumeTo358799180() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTo("inpuu");
+        String result = tokenqueue.consumeTo("#texs");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37790,12 +37795,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo10032436861() {
+    public void testTokenQueueconsumeTo14711890861() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTo("textareb");
+        String result = tokenqueue.consumeTo(":nth-last-child)");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37815,12 +37820,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo35118012() {
+    public void testTokenQueueconsumeTo35756422() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTo("ruby");
+        String result = tokenqueue.consumeTo("typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37840,12 +37845,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo16183955613() {
+    public void testTokenQueueconsumeTo1253() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTo(":only-of-typf");
+        String result = tokenqueue.consumeTo("^");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37865,12 +37870,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeTo358296694() {
+    public void testTokenQueueconsumeTo21153115444() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTo("#roou");
+        String result = tokenqueue.consumeTo("boundarx");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37890,12 +37895,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase1044170() {
+    public void testTokenQueueconsumeToIgnoreCase10032436880() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToIgnoreCase("imf");
+        String result = tokenqueue.consumeToIgnoreCase("textare`");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37915,12 +37920,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase35756421() {
+    public void testTokenQueueconsumeToIgnoreCase20353119911() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToIgnoreCase("typf");
+        String result = tokenqueue.consumeToIgnoreCase(":first-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37940,12 +37945,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase996170342() {
+    public void testTokenQueueconsumeToIgnoreCase12269463012() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToIgnoreCase("https");
+        String result = tokenqueue.consumeToIgnoreCase(":containsData'");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37965,12 +37970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase34843() {
+    public void testTokenQueueconsumeToIgnoreCase29173() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToIgnoreCase("li");
+        String result = tokenqueue.consumeToIgnoreCase("\"");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -37990,12 +37995,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToIgnoreCase7390744104() {
+    public void testTokenQueueconsumeToIgnoreCase30294424() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToIgnoreCase("charses");
+        String result = tokenqueue.consumeToIgnoreCase("bodz");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38015,12 +38020,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny14562253630() {
+    public void testTokenQueueconsumeToAny567593350() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToAny(":matches'");
+        String result = tokenqueue.consumeToAny(":has(");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38040,12 +38045,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny1188431() {
+    public void testTokenQueueconsumeToAny11346655511() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToAny("xmq");
+        String result = tokenqueue.consumeToAny("keygeo");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38065,12 +38070,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny17480897442() {
+    public void testTokenQueueconsumeToAny358296672() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToAny("DOCTYPD");
+        String result = tokenqueue.consumeToAny("#roos");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38090,12 +38095,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny12083() {
+    public void testTokenQueueconsumeToAny33218813() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToAny("$=");
+        String result = tokenqueue.consumeToAny("link");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38115,12 +38120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueconsumeToAny10176250974() {
+    public void testTokenQueueconsumeToAny1003134674() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeToAny(":nth-last-of-type(");
+        String result = tokenqueue.consumeToAny("imagf");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38140,12 +38145,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo33441660() {
+    public void testTokenQueuechompTo18305290() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompTo("matg");
+        String result = tokenqueue.chompTo(":gt)");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38165,12 +38170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo1097804311() {
+    public void testTokenQueuechompTo1650854881() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompTo("styld");
+        String result = tokenqueue.chompTo("http-equiv");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38190,12 +38195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo1188372() {
+    public void testTokenQueuechompTo30294402() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompTo("xmk");
+        String result = tokenqueue.chompTo("bodx");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38215,12 +38220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo32110813() {
+    public void testTokenQueuechompTo2709408273() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompTo("hree");
+        String result = tokenqueue.chompTo("disabled");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38240,12 +38245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompTo10101369404() {
+    public void testTokenQueuechompTo35756414() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompTo("option");
+        String result = tokenqueue.chompTo("type");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38265,12 +38270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase15515509540() {
+    public void testTokenQueuechompToIgnoreCase1102563200() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompToIgnoreCase("noscrips");
+        String result = tokenqueue.chompToIgnoreCase("text.");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38290,12 +38295,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase18912061161() {
+    public void testTokenQueuechompToIgnoreCase12071() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompToIgnoreCase(":nth-of-type(");
+        String result = tokenqueue.chompToIgnoreCase("$<");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38315,12 +38320,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase1101578762() {
+    public void testTokenQueuechompToIgnoreCase987192() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompToIgnoreCase("tbodx");
+        String result = tokenqueue.chompToIgnoreCase("col");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38340,12 +38345,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase18353323() {
+    public void testTokenQueuechompToIgnoreCase18245823() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompToIgnoreCase(":lt'");
+        String result = tokenqueue.chompToIgnoreCase(":all");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38365,12 +38370,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompToIgnoreCase1102563214() {
+    public void testTokenQueuechompToIgnoreCase10101369394() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompToIgnoreCase("text/");
+        String result = tokenqueue.chompToIgnoreCase("optioo");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38390,12 +38395,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced41990() {
+    public void testTokenQueuechompBalanced32310() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompBalanced('g','-');
+        String result = tokenqueue.chompBalanced('G','E');
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38415,12 +38420,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced40391() {
+    public void testTokenQueuechompBalanced39131() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompBalanced('a','G');
+        String result = tokenqueue.chompBalanced(']','E');
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38440,12 +38445,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced38222() {
+    public void testTokenQueuechompBalanced48842() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompBalanced('Z','G');
+        String result = tokenqueue.chompBalanced('}','0');
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38465,12 +38470,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced32543() {
+    public void testTokenQueuechompBalanced40653() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompBalanced('G','\\');
+        String result = tokenqueue.chompBalanced('a','a');
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38490,12 +38495,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueuechompBalanced40384() {
+    public void testTokenQueuechompBalanced40924() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.chompBalanced('b',"'");
+        String result = tokenqueue.chompBalanced('b',']');
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38515,12 +38520,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape33218800() {
+    public void testTokenQueueunescape569515650() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.unescape("linj");
+        String result = tokenqueue.unescape(":not'");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38540,12 +38545,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape15515509551() {
+    public void testTokenQueueunescape1003581211() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.unescape("noscript");
+        String result = tokenqueue.unescape("input");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38565,12 +38570,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape37402() {
+    public void testTokenQueueunescape7423139272() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.unescape("tq");
+        String result = tokenqueue.unescape("checkee");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38590,12 +38595,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape13215465983() {
+    public void testTokenQueueunescape14711890863() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.unescape("templatf");
+        String result = tokenqueue.unescape(":nth-last-child)");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38615,12 +38620,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testTokenQueueunescape12174874164() {
+    public void testTokenQueueunescape35367464() {
         TokenQueue tokenqueue = (TokenQueue) TestGenerator.getObjectFromPool("TokenQueue");
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.unescape("hiddem");
+        String result = tokenqueue.unescape("spao");
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38770,7 +38775,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeWord();
+        String result = tokenqueue.consumeWord();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38795,7 +38800,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeWord();
+        String result = tokenqueue.consumeWord();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38820,7 +38825,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeWord();
+        String result = tokenqueue.consumeWord();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38845,7 +38850,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeWord();
+        String result = tokenqueue.consumeWord();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38870,7 +38875,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeWord();
+        String result = tokenqueue.consumeWord();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38895,7 +38900,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTagName();
+        String result = tokenqueue.consumeTagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38920,7 +38925,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTagName();
+        String result = tokenqueue.consumeTagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38945,7 +38950,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTagName();
+        String result = tokenqueue.consumeTagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38970,7 +38975,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTagName();
+        String result = tokenqueue.consumeTagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -38995,7 +39000,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeTagName();
+        String result = tokenqueue.consumeTagName();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39020,7 +39025,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeElementSelector();
+        String result = tokenqueue.consumeElementSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39045,7 +39050,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeElementSelector();
+        String result = tokenqueue.consumeElementSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39070,7 +39075,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeElementSelector();
+        String result = tokenqueue.consumeElementSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39095,7 +39100,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeElementSelector();
+        String result = tokenqueue.consumeElementSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39120,7 +39125,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeElementSelector();
+        String result = tokenqueue.consumeElementSelector();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39145,7 +39150,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeCssIdentifier();
+        String result = tokenqueue.consumeCssIdentifier();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39170,7 +39175,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeCssIdentifier();
+        String result = tokenqueue.consumeCssIdentifier();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39195,7 +39200,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeCssIdentifier();
+        String result = tokenqueue.consumeCssIdentifier();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39220,7 +39225,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeCssIdentifier();
+        String result = tokenqueue.consumeCssIdentifier();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39245,7 +39250,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeCssIdentifier();
+        String result = tokenqueue.consumeCssIdentifier();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39270,7 +39275,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeAttributeKey();
+        String result = tokenqueue.consumeAttributeKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39295,7 +39300,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeAttributeKey();
+        String result = tokenqueue.consumeAttributeKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39320,7 +39325,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeAttributeKey();
+        String result = tokenqueue.consumeAttributeKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39345,7 +39350,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeAttributeKey();
+        String result = tokenqueue.consumeAttributeKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39370,7 +39375,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.consumeAttributeKey();
+        String result = tokenqueue.consumeAttributeKey();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39395,7 +39400,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.remainder();
+        String result = tokenqueue.remainder();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39420,7 +39425,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.remainder();
+        String result = tokenqueue.remainder();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39445,7 +39450,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.remainder();
+        String result = tokenqueue.remainder();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39470,7 +39475,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.remainder();
+        String result = tokenqueue.remainder();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39495,7 +39500,7 @@ public class AutomatedTest {
         if (tokenqueue == null) {
             return;
         }
-        tokenqueue.remainder();
+        String result = tokenqueue.remainder();
         TestGenerator.putObjectToPool(result);
         assertTrue(tokenqueue.equals(tokenqueue));
         try {
@@ -39765,12 +39770,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag32480() {
+    public void testParseSettingsnormalizeTag7423139250() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeTag("du");
+        String result = parsesettings.normalizeTag("checkec");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39790,12 +39795,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag33061() {
+    public void testParseSettingsnormalizeTag15368918741() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeTag("h3");
+        String result = parsesettings.normalizeTag("checkbox");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39815,12 +39820,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag35367462() {
+    public void testParseSettingsnormalizeTag11346655532() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeTag("spao");
+        String result = parsesettings.normalizeTag("keygem");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39840,12 +39845,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag21011357983() {
+    public void testParseSettingsnormalizeTag14573() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeTag(":matchTexs");
+        String result = parsesettings.normalizeTag("*|");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39865,12 +39870,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeTag1044174() {
+    public void testParseSettingsnormalizeTag33737374() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeTag("imf");
+        String result = parsesettings.normalizeTag("namd");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39890,12 +39895,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute10176250960() {
+    public void testParseSettingsnormalizeAttribute1103269000() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeAttribute(":nth-last-of-type'");
+        String result = parsesettings.normalizeAttribute("theae");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39915,12 +39920,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute5525734451() {
+    public void testParseSettingsnormalizeAttribute1103268981() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeAttribute("caption");
+        String result = parsesettings.normalizeAttribute("theac");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39940,12 +39945,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute35118012() {
+    public void testParseSettingsnormalizeAttribute19732341972() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeAttribute("ruby");
+        String result = parsesettings.normalizeAttribute("plaintexs");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39965,12 +39970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute1103268993() {
+    public void testParseSettingsnormalizeAttribute9060216063() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeAttribute("thead");
+        String result = parsesettings.normalizeAttribute("selecs");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -39990,12 +39995,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testParseSettingsnormalizeAttribute31844() {
+    public void testParseSettingsnormalizeAttribute1102773784() {
         ParseSettings parsesettings = (ParseSettings) TestGenerator.getObjectFromPool("ParseSettings");
         if (parsesettings == null) {
             return;
         }
-        parsesettings.normalizeAttribute("bs");
+        String result = parsesettings.normalizeAttribute("tfoou");
         TestGenerator.putObjectToPool(result);
         assertTrue(parsesettings.equals(parsesettings));
         try {
@@ -40020,7 +40025,7 @@ public class AutomatedTest {
         if (cleaner == null) {
             return;
         }
-        cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
+        Document result = cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40045,7 +40050,7 @@ public class AutomatedTest {
         if (cleaner == null) {
             return;
         }
-        cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
+        Document result = cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40070,7 +40075,7 @@ public class AutomatedTest {
         if (cleaner == null) {
             return;
         }
-        cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
+        Document result = cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40095,7 +40100,7 @@ public class AutomatedTest {
         if (cleaner == null) {
             return;
         }
-        cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
+        Document result = cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40120,7 +40125,7 @@ public class AutomatedTest {
         if (cleaner == null) {
             return;
         }
-        cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
+        Document result = cleaner.clean((Document) TestGenerator.getObjectFromPool("Document"));
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40265,12 +40270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml21153115420() {
+    public void testCleanerisValidBodyHtml923490() {
         Cleaner cleaner = (Cleaner) TestGenerator.getObjectFromPool("Cleaner");
         if (cleaner == null) {
             return;
         }
-        boolean result = cleaner.isValidBodyHtml("boundarz");
+        boolean result = cleaner.isValidBodyHtml("]]>");
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40290,12 +40295,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml5525734451() {
+    public void testCleanerisValidBodyHtml29221() {
         Cleaner cleaner = (Cleaner) TestGenerator.getObjectFromPool("Cleaner");
         if (cleaner == null) {
             return;
         }
-        boolean result = cleaner.isValidBodyHtml("caption");
+        boolean result = cleaner.isValidBodyHtml("\'");
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40315,12 +40320,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml996170332() {
+    public void testCleanerisValidBodyHtml19788929342() {
         Cleaner cleaner = (Cleaner) TestGenerator.getObjectFromPool("Cleaner");
         if (cleaner == null) {
             return;
         }
-        boolean result = cleaner.isValidBodyHtml("httpr");
+        boolean result = cleaner.isValidBodyHtml(":containsOwn(");
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40340,12 +40345,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml12073() {
+    public void testCleanerisValidBodyHtml35118023() {
         Cleaner cleaner = (Cleaner) TestGenerator.getObjectFromPool("Cleaner");
         if (cleaner == null) {
             return;
         }
-        boolean result = cleaner.isValidBodyHtml("$<");
+        boolean result = cleaner.isValidBodyHtml("rubz");
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40365,12 +40370,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testCleanerisValidBodyHtml1103268984() {
+    public void testCleanerisValidBodyHtml14562253624() {
         Cleaner cleaner = (Cleaner) TestGenerator.getObjectFromPool("Cleaner");
         if (cleaner == null) {
             return;
         }
-        boolean result = cleaner.isValidBodyHtml("theac");
+        boolean result = cleaner.isValidBodyHtml(":matches(");
         TestGenerator.putObjectToPool(result);
         assertTrue(cleaner.equals(cleaner));
         try {
@@ -40395,7 +40400,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.none();
+        Whitelist result = whitelist.none();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40420,7 +40425,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.none();
+        Whitelist result = whitelist.none();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40445,7 +40450,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.none();
+        Whitelist result = whitelist.none();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40470,7 +40475,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.none();
+        Whitelist result = whitelist.none();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40495,7 +40500,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.none();
+        Whitelist result = whitelist.none();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40520,7 +40525,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.simpleText();
+        Whitelist result = whitelist.simpleText();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40545,7 +40550,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.simpleText();
+        Whitelist result = whitelist.simpleText();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40570,7 +40575,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.simpleText();
+        Whitelist result = whitelist.simpleText();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40595,7 +40600,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.simpleText();
+        Whitelist result = whitelist.simpleText();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40620,7 +40625,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.simpleText();
+        Whitelist result = whitelist.simpleText();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40645,7 +40650,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basic();
+        Whitelist result = whitelist.basic();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40670,7 +40675,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basic();
+        Whitelist result = whitelist.basic();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40695,7 +40700,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basic();
+        Whitelist result = whitelist.basic();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40720,7 +40725,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basic();
+        Whitelist result = whitelist.basic();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40745,7 +40750,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basic();
+        Whitelist result = whitelist.basic();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40770,7 +40775,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basicWithImages();
+        Whitelist result = whitelist.basicWithImages();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40795,7 +40800,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basicWithImages();
+        Whitelist result = whitelist.basicWithImages();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40820,7 +40825,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basicWithImages();
+        Whitelist result = whitelist.basicWithImages();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40845,7 +40850,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basicWithImages();
+        Whitelist result = whitelist.basicWithImages();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40870,7 +40875,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.basicWithImages();
+        Whitelist result = whitelist.basicWithImages();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40895,7 +40900,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.relaxed();
+        Whitelist result = whitelist.relaxed();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40920,7 +40925,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.relaxed();
+        Whitelist result = whitelist.relaxed();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40945,7 +40950,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.relaxed();
+        Whitelist result = whitelist.relaxed();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40970,7 +40975,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.relaxed();
+        Whitelist result = whitelist.relaxed();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -40995,7 +41000,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.relaxed();
+        Whitelist result = whitelist.relaxed();
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41015,12 +41020,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags567593360() {
+    public void testWhitelistaddTags32300() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addTags(":has)");
+        Whitelist result = whitelist.addTags("dc");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41040,12 +41045,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags1221() {
+    public void testWhitelistaddTags16449536111() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addTags("[");
+        Whitelist result = whitelist.addTags("frameseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41065,12 +41070,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags19804204662() {
+    public void testWhitelistaddTags32312() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addTags("Set-Cookie");
+        Whitelist result = whitelist.addTags("dd");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41090,12 +41095,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags32132593() {
+    public void testWhitelistaddTags31490273() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addTags("htmm");
+        Whitelist result = whitelist.addTags("form");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41115,12 +41120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddTags12269463014() {
+    public void testWhitelistaddTags1857353284() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addTags(":containsData'");
+        Whitelist result = whitelist.addTags("US-ASCIH");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41140,12 +41145,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags1099020() {
+    public void testWhitelistremoveTags39970() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeTags("odd");
+        Whitelist result = whitelist.removeTags("~<");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41165,12 +41170,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags39991() {
+    public void testWhitelistremoveTags7390744111() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeTags("~>");
+        Whitelist result = whitelist.removeTags("charset");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41190,12 +41195,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags16449536122() {
+    public void testWhitelistremoveTags33868642() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeTags("frameset");
+        Whitelist result = whitelist.removeTags("nobr");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41215,12 +41220,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags33218813() {
+    public void testWhitelistremoveTags17571249773() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeTags("link");
+        Whitelist result = whitelist.removeTags(":emptx");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41240,12 +41245,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveTags35756404() {
+    public void testWhitelistremoveTags31984634() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeTags("typd");
+        Whitelist result = whitelist.removeTags("head");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41265,12 +41270,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes17629130930() {
+    public void testWhitelistaddAttributes55124300() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addAttributes(":has(","namf");
+        Whitelist result = whitelist.addAttributes("xmk",":eq)");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41290,12 +41295,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes1044851() {
+    public void testWhitelistaddAttributes17628835211() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addAttributes("hr",".");
+        Whitelist result = whitelist.addAttributes(":has(","math");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41315,12 +41320,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes19265158332() {
+    public void testWhitelistaddAttributes6558260132() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addAttributes("script","#");
+        Whitelist result = whitelist.addAttributes("frameseu","stylf");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41340,12 +41345,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes11878415873() {
+    public void testWhitelistaddAttributes7125356013() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addAttributes("bgsound","sarcasm");
+        Whitelist result = whitelist.addAttributes(":matchTexs",":lt)");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41365,12 +41370,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddAttributes17540701614() {
+    public void testWhitelistaddAttributes1061038714() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addAttributes("DOCTYPE","tfoot");
+        Whitelist result = whitelist.addAttributes("linl","evem");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41390,12 +41395,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes18248264180() {
+    public void testWhitelistremoveAttributes17641728740() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeAttributes(":first-child","http-equiw");
+        Whitelist result = whitelist.removeAttributes("mati","[a-zA-Z_:][-a-zA-Z0-9_:.]+");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41415,12 +41420,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes1101179921() {
+    public void testWhitelistremoveAttributes568988081() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeAttributes("(","tablf");
+        Whitelist result = whitelist.removeAttributes(":lt)","lj");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41440,12 +41445,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes21348555332() {
+    public void testWhitelistremoveAttributes9620651532() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeAttributes("hreg",":first-of-typd");
+        Whitelist result = whitelist.removeAttributes(":last-child","=");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41465,12 +41470,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes16803266113() {
+    public void testWhitelistremoveAttributes1000413563() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeAttributes("noframer","*<");
+        Whitelist result = whitelist.removeAttributes("evem","form");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41490,12 +41495,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveAttributes12161358054() {
+    public void testWhitelistremoveAttributes14805892834() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeAttributes(":containsOwn)","^<");
+        Whitelist result = whitelist.removeAttributes(":has)",":first-child");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41515,12 +41520,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute17204301180() {
+    public void testWhitelistaddEnforcedAttribute3259167780() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addEnforcedAttribute("html",":only-of-typf",":lt(");
+        Whitelist result = whitelist.addEnforcedAttribute("imf",":only-child","h2");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41540,12 +41545,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute15134030611() {
+    public void testWhitelistaddEnforcedAttribute21267711251() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addEnforcedAttribute("#texu",":nth-last-child(","rubx");
+        Whitelist result = whitelist.addEnforcedAttribute("href",":last-chilc","abs;");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41565,12 +41570,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute11318609972() {
+    public void testWhitelistaddEnforcedAttribute12142404872() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addEnforcedAttribute("xmk","!<",":nth-last-of-type)");
+        Whitelist result = whitelist.addEnforcedAttribute("*<",":last-of-typd","isindex");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41590,12 +41595,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute5523221043() {
+    public void testWhitelistaddEnforcedAttribute11950740213() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addEnforcedAttribute(":nth-last-child)",":lt)","buttom");
+        Whitelist result = whitelist.addEnforcedAttribute("selecs","\"","nobr");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41615,12 +41620,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddEnforcedAttribute9200337954() {
+    public void testWhitelistaddEnforcedAttribute9077748124() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addEnforcedAttribute("ruby","\"","h2");
+        Whitelist result = whitelist.addEnforcedAttribute("noscrips","typf","tabld");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41640,12 +41645,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute15889075200() {
+    public void testWhitelistremoveEnforcedAttribute20389960950() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeEnforcedAttribute("bgsoune","scrips");
+        Whitelist result = whitelist.removeEnforcedAttribute("xmq",":first-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41665,12 +41670,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute13266382281() {
+    public void testWhitelistremoveEnforcedAttribute19185729961() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeEnforcedAttribute("tfoot",":only-child");
+        Whitelist result = whitelist.removeEnforcedAttribute(":contains'","buttom");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41690,12 +41695,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute499609982() {
+    public void testWhitelistremoveEnforcedAttribute15022668552() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeEnforcedAttribute("commane","captiom");
+        Whitelist result = whitelist.removeEnforcedAttribute(":nth-of-type)","svg");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41715,12 +41720,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute21041726913() {
+    public void testWhitelistremoveEnforcedAttribute3159865133() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeEnforcedAttribute("bgsoune","actioo");
+        Whitelist result = whitelist.removeEnforcedAttribute(":only-chilc","tfoot");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41740,12 +41745,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveEnforcedAttribute5162460014() {
+    public void testWhitelistremoveEnforcedAttribute8766993724() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeEnforcedAttribute(":matchText",":containsData)");
+        Whitelist result = whitelist.removeEnforcedAttribute("tbodz","namd");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41770,7 +41775,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.preserveRelativeLinks(true);
+        Whitelist result = whitelist.preserveRelativeLinks(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41795,7 +41800,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.preserveRelativeLinks(true);
+        Whitelist result = whitelist.preserveRelativeLinks(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41820,7 +41825,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.preserveRelativeLinks(true);
+        Whitelist result = whitelist.preserveRelativeLinks(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41845,7 +41850,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.preserveRelativeLinks(true);
+        Whitelist result = whitelist.preserveRelativeLinks(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41870,7 +41875,7 @@ public class AutomatedTest {
         if (whitelist == null) {
             return;
         }
-        whitelist.preserveRelativeLinks(true);
+        Whitelist result = whitelist.preserveRelativeLinks(true);
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41890,12 +41895,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols13975766890() {
+    public void testWhitelistaddProtocols2552183610() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addProtocols("tfoos","*{","dd");
+        Whitelist result = whitelist.addProtocols("optgroup",":all",":eq)");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41915,12 +41920,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols4139534151() {
+    public void testWhitelistaddProtocols10437829181() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addProtocols("bgsoune","*=",":not)");
+        Whitelist result = whitelist.addProtocols(":nth-last-of-type(","h4","disablee");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41940,12 +41945,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols1992693802() {
+    public void testWhitelistaddProtocols3780896612() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addProtocols("isindey",":only-of-typf",":nth-last-child(");
+        Whitelist result = whitelist.addProtocols("[a-zA-Z_:][-a-zA-Z0-9_:.])","bgsounc","base");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41965,12 +41970,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols16739267643() {
+    public void testWhitelistaddProtocols3613116043() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addProtocols("checkbow","actioo","span");
+        Whitelist result = whitelist.addProtocols("httpr","tablf","$>");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -41990,12 +41995,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistaddProtocols13048288954() {
+    public void testWhitelistaddProtocols11019322514() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.addProtocols("optgrouo","*=",":only-of-typd");
+        Whitelist result = whitelist.addProtocols("xmm",":containsOwn'","h0");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -42015,12 +42020,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols6354449430() {
+    public void testWhitelistremoveProtocols17272189440() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeProtocols("[a-zA-Z_:][-a-zA-Z0-9_:.]*","radio","basd");
+        Whitelist result = whitelist.removeProtocols("(","iframe","]]=");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -42040,12 +42045,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols8061919601() {
+    public void testWhitelistremoveProtocols13354196261() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeProtocols("htmk","checkbox",":eq(");
+        Whitelist result = whitelist.removeProtocols("hiddeo","imagf","lh");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -42065,12 +42070,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols8476736272() {
+    public void testWhitelistremoveProtocols12696311272() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeProtocols(":last-of-typf","radin","noscript");
+        Whitelist result = whitelist.removeProtocols("styld","boundarx","*{");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -42090,12 +42095,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols576829993() {
+    public void testWhitelistremoveProtocols1690326903() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeProtocols("abs9",":nth-last-of-type(","!<");
+        Whitelist result = whitelist.removeProtocols("buttom","optioo",":last-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -42115,12 +42120,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testWhitelistremoveProtocols6889895554() {
+    public void testWhitelistremoveProtocols5196655754() {
         Whitelist whitelist = (Whitelist) TestGenerator.getObjectFromPool("Whitelist");
         if (whitelist == null) {
             return;
         }
-        whitelist.removeProtocols("tabld","bgsoune","deflatf");
+        Whitelist result = whitelist.removeProtocols("rubz","charset","linj");
         TestGenerator.putObjectToPool(result);
         assertTrue(whitelist.equals(whitelist));
         try {
@@ -42140,12 +42145,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain6361976030() throws Exception {
+    public void testHtmlToPlainTextmain15368918730() throws Exception {
         HtmlToPlainText htmltoplaintext = (HtmlToPlainText) TestGenerator.getObjectFromPool("HtmlToPlainText");
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.main("colgrouo");
+        htmltoplaintext.main("checkbow");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -42164,12 +42169,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain13776877281() throws Exception {
+    public void testHtmlToPlainTextmain807731731() throws Exception {
         HtmlToPlainText htmltoplaintext = (HtmlToPlainText) TestGenerator.getObjectFromPool("HtmlToPlainText");
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.main("buttom");
+        htmltoplaintext.main("optgroup");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -42188,12 +42193,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain12082() throws Exception {
+    public void testHtmlToPlainTextmain33737382() throws Exception {
         HtmlToPlainText htmltoplaintext = (HtmlToPlainText) TestGenerator.getObjectFromPool("HtmlToPlainText");
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.main("$=");
+        htmltoplaintext.main("name");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -42212,12 +42217,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain11346655533() throws Exception {
+    public void testHtmlToPlainTextmain21065455173() throws Exception {
         HtmlToPlainText htmltoplaintext = (HtmlToPlainText) TestGenerator.getObjectFromPool("HtmlToPlainText");
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.main("keygem");
+        htmltoplaintext.main(":last-of-typf");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -42236,12 +42241,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testHtmlToPlainTextmain15515509554() throws Exception {
+    public void testHtmlToPlainTextmain9503947294() throws Exception {
         HtmlToPlainText htmltoplaintext = (HtmlToPlainText) TestGenerator.getObjectFromPool("HtmlToPlainText");
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.main("noscript");
+        htmltoplaintext.main("commanc");
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
             htmltoplaintext.equals(htmltoplaintext);
@@ -42265,7 +42270,7 @@ public class AutomatedTest {
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
+        String result = htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
@@ -42290,7 +42295,7 @@ public class AutomatedTest {
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
+        String result = htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
@@ -42315,7 +42320,7 @@ public class AutomatedTest {
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
+        String result = htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
@@ -42340,7 +42345,7 @@ public class AutomatedTest {
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
+        String result = htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
@@ -42365,7 +42370,7 @@ public class AutomatedTest {
         if (htmltoplaintext == null) {
             return;
         }
-        htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
+        String result = htmltoplaintext.getPlainText((Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(htmltoplaintext.equals(htmltoplaintext));
         try {
@@ -42390,7 +42395,7 @@ public class AutomatedTest {
         if (wikipedia == null) {
             return;
         }
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -42414,7 +42419,7 @@ public class AutomatedTest {
         if (wikipedia == null) {
             return;
         }
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -42438,7 +42443,7 @@ public class AutomatedTest {
         if (wikipedia == null) {
             return;
         }
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has("});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -42462,7 +42467,7 @@ public class AutomatedTest {
         if (wikipedia == null) {
             return;
         }
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -42486,7 +42491,7 @@ public class AutomatedTest {
         if (wikipedia == null) {
             return;
         }
-        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)"});
+        wikipedia.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio"});
         assertTrue(wikipedia.equals(wikipedia));
         try {
             wikipedia.equals(wikipedia);
@@ -42510,7 +42515,7 @@ public class AutomatedTest {
         if (listlinks == null) {
             return;
         }
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child","htmk","Set-Cookid",":first-chilc"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -42534,7 +42539,7 @@ public class AutomatedTest {
         if (listlinks == null) {
             return;
         }
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com","~>","col","bgsound","bgsoune","Set-Cookif","bgsounc","radip",":not(",":not'","body","bodz",":nth-last-child'","radin",":nth-last-child(","radio","bodx",":nth-last-child)","*{","*|","*}",":not)","checkee","checkec","checked",":first-chile","html","Set-Cookie",":first-child"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex",":nth-last-of-type'","isindey",":containsOwn)","*<","*=","*>",":containsOwn'",":containsOwn(","tabld","table","tablf",":has'","gzio","gzip",":has(","gziq",":has)","<.","</","[a-zA-Z_:][-a-zA-Z0-9_:.]+","<0","[a-zA-Z_:][-a-zA-Z0-9_:.])","[a-zA-Z_:][-a-zA-Z0-9_:.]*",":root",":roou","lh","spam",":last-chilc","li",":roos",":last-child","lj","spao","cok","~<","span","~=","com"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -42558,7 +42563,7 @@ public class AutomatedTest {
         if (listlinks == null) {
             return;
         }
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math",":lt)",":all",":alk","template","charseu","isindew","templatf","charset",":last-chile","templatd","charses","\"","\'",":nth-last-of-type)",":nth-last-of-type(","isindex"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -42582,7 +42587,7 @@ public class AutomatedTest {
         if (listlinks == null) {
             return;
         }
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type("});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -42606,7 +42611,7 @@ public class AutomatedTest {
         if (listlinks == null) {
             return;
         }
-        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'"});
+        listlinks.main(new String[]{":last-of-typd",":last-of-type",":last-of-typf",":first-of-typd",":first-of-type",":first-of-typf","xml","xmk","xmm","xmp","xmo","xmq","#","abs;","abs:","frameseu","frameset","frameses","(","abs9","*",".","inpuu","text/","input","text0","inpus","deflatd","text.","deflate","deflatf","metb","meta","met`",":containsData)",":only-chile",":only-child",":containsData'",";",":only-chilc",":containsData(","!<",":nth-child)","!=","!>","=",":nth-child'","?",":nth-child(","bq","br","bs","checkbox","checkbow",":matchesOwn)","disabled","iframf","disablee","iframe","[","iframd","disablec",":matchesOwn(","^","checkboy",":matchesOwn'","a","svf","svh","svg","plaintexu","plaintext","plaintexs","tc","p","td","tfoot","te","tfoou","tfoos","tg","th","ti",":gt)","sarcasn",":gt(","sarcasm",":gt'","sarcasl","|","tq","tr","ts","dc","dd","de","optgrouq","optgroup","optgrouo","tbodx","tbody","tbodz","ds","dt","du","http-equiu",":eq)","$<","http-equiv",":eq(","$=","http-equiw",":eq'","$>","]]=","]]?","]]>","imagd","image",":matches)",":matchText",":matchTexu","imagf",":matchTexs","noframes","noframer","htto","name","httq",":nth-of-type)","namd","http",":nth-of-type'",":nth-of-type(",":matches(",":matches'","noframet","namf","theac","titld","hidden","hiddeo","theae","hiddem","thead","h0","h1","h2",":contains'","h3",":contains(","title","keygeo","h4","titlf","h5","keygem","h6","keygen","button","buttoo","buttom",":contains)","colgrouo","colgroup","forl","form","forn","basf","basd","base","selecu","select","selecs","textareb","captioo","textarea","hq","caption","textare`","hr","captiom","hs","type","typf","typd","colgrouq","actioo","action","hree","actiom","httpr","href","https","hreg","httpt","\"\"","scripu","script","odd","scrips","odc","ode",":alm","matg","eveo","even","evem","stylf",":lt'","style","mati",":lt(","styld","math"});
         assertTrue(listlinks.equals(listlinks));
         try {
             listlinks.equals(listlinks);
@@ -42630,7 +42635,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getMimeType();
+        String result = unsupportedmimetypeexception.getMimeType();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42655,7 +42660,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getMimeType();
+        String result = unsupportedmimetypeexception.getMimeType();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42680,7 +42685,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getMimeType();
+        String result = unsupportedmimetypeexception.getMimeType();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42705,7 +42710,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getMimeType();
+        String result = unsupportedmimetypeexception.getMimeType();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42730,7 +42735,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getMimeType();
+        String result = unsupportedmimetypeexception.getMimeType();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42755,7 +42760,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getUrl();
+        String result = unsupportedmimetypeexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42780,7 +42785,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getUrl();
+        String result = unsupportedmimetypeexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42805,7 +42810,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getUrl();
+        String result = unsupportedmimetypeexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42830,7 +42835,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getUrl();
+        String result = unsupportedmimetypeexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -42855,7 +42860,7 @@ public class AutomatedTest {
         if (unsupportedmimetypeexception == null) {
             return;
         }
-        unsupportedmimetypeexception.getUrl();
+        String result = unsupportedmimetypeexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(unsupportedmimetypeexception.equals(unsupportedmimetypeexception));
         try {
@@ -43005,7 +43010,7 @@ public class AutomatedTest {
         if (httpstatusexception == null) {
             return;
         }
-        httpstatusexception.getUrl();
+        String result = httpstatusexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpstatusexception.equals(httpstatusexception));
         try {
@@ -43030,7 +43035,7 @@ public class AutomatedTest {
         if (httpstatusexception == null) {
             return;
         }
-        httpstatusexception.getUrl();
+        String result = httpstatusexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpstatusexception.equals(httpstatusexception));
         try {
@@ -43055,7 +43060,7 @@ public class AutomatedTest {
         if (httpstatusexception == null) {
             return;
         }
-        httpstatusexception.getUrl();
+        String result = httpstatusexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpstatusexception.equals(httpstatusexception));
         try {
@@ -43080,7 +43085,7 @@ public class AutomatedTest {
         if (httpstatusexception == null) {
             return;
         }
-        httpstatusexception.getUrl();
+        String result = httpstatusexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpstatusexception.equals(httpstatusexception));
         try {
@@ -43105,7 +43110,7 @@ public class AutomatedTest {
         if (httpstatusexception == null) {
             return;
         }
-        httpstatusexception.getUrl();
+        String result = httpstatusexception.getUrl();
         TestGenerator.putObjectToPool(result);
         assertTrue(httpstatusexception.equals(httpstatusexception));
         try {
@@ -43490,7 +43495,7 @@ public class AutomatedTest {
         if (nodetraversor == null) {
             return;
         }
-        nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
+        NodeFilter.FilterResult result = nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(nodetraversor.equals(nodetraversor));
         try {
@@ -43515,7 +43520,7 @@ public class AutomatedTest {
         if (nodetraversor == null) {
             return;
         }
-        nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
+        NodeFilter.FilterResult result = nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(nodetraversor.equals(nodetraversor));
         try {
@@ -43540,7 +43545,7 @@ public class AutomatedTest {
         if (nodetraversor == null) {
             return;
         }
-        nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
+        NodeFilter.FilterResult result = nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(nodetraversor.equals(nodetraversor));
         try {
@@ -43565,7 +43570,7 @@ public class AutomatedTest {
         if (nodetraversor == null) {
             return;
         }
-        nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
+        NodeFilter.FilterResult result = nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(nodetraversor.equals(nodetraversor));
         try {
@@ -43590,7 +43595,7 @@ public class AutomatedTest {
         if (nodetraversor == null) {
             return;
         }
-        nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
+        NodeFilter.FilterResult result = nodetraversor.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"),(Node) TestGenerator.getObjectFromPool("Node"));
         TestGenerator.putObjectToPool(result);
         assertTrue(nodetraversor.equals(nodetraversor));
         try {
@@ -43735,7 +43740,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43760,7 +43765,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43785,7 +43790,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43810,7 +43815,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43835,7 +43840,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = collector.collect((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43860,7 +43865,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43885,7 +43890,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43910,7 +43915,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43935,7 +43940,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43960,7 +43965,7 @@ public class AutomatedTest {
         if (collector == null) {
             return;
         }
-        collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = collector.findFirst((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(collector.equals(collector));
         try {
@@ -43980,12 +43985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr16449536120() {
+    public void testElementsattr31984640() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("frameset");
+        String result = elements.attr("heae");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44005,12 +44010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr17209582731() {
+    public void testElementsattr14581() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("basefont");
+        String result = elements.attr("*}");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44030,12 +44035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr19382() {
+    public void testElementsattr11346655512() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("</");
+        String result = elements.attr("keygeo");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44055,12 +44060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr33053() {
+    public void testElementsattr1103268983() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("h2");
+        String result = elements.attr("theac");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44080,12 +44085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr18353324() {
+    public void testElementsattr714() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr(":lt'");
+        String result = elements.attr("(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44105,12 +44110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr807731730() {
+    public void testElementshasAttr31984630() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasAttr("optgroup");
+        boolean result = elements.hasAttr("head");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44130,12 +44135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr18245831() {
+    public void testElementshasAttr16183955591() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasAttr(":alm");
+        boolean result = elements.hasAttr(":only-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44155,12 +44160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr11346655532() {
+    public void testElementshasAttr16183955602() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasAttr("keygem");
+        boolean result = elements.hasAttr(":only-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44180,12 +44185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr18912061153() {
+    public void testElementshasAttr33441663() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasAttr(":nth-of-type)");
+        boolean result = elements.hasAttr("matg");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44205,12 +44210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasAttr37414() {
+    public void testElementshasAttr31824() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasAttr("tr");
+        boolean result = elements.hasAttr("bq");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44230,12 +44235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr32480() {
+    public void testElementseachAttr35118010() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eachAttr("du");
+        List<String> result = elements.eachAttr("ruby");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44255,12 +44260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr11414281681() {
+    public void testElementseachAttr18305271() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eachAttr("[CDATA[");
+        List<String> result = elements.eachAttr(":gt'");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44280,12 +44285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr17571249782() {
+    public void testElementseachAttr1143082() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eachAttr(":empty");
+        List<String> result = elements.eachAttr("svh");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44305,12 +44310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr20913044563() {
+    public void testElementseachAttr10176250973() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eachAttr("isindey");
+        List<String> result = elements.eachAttr(":nth-last-of-type(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44330,12 +44335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseachAttr18245834() {
+    public void testElementseachAttr31891124() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eachAttr(":alm");
+        List<String> result = elements.eachAttr("gzio");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44355,12 +44360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr9987054250() {
+    public void testElementsattr5997845370() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr(":contains(","!>");
+        Elements result = elements.attr("optgrouq","iframf");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44380,12 +44385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr604775811() {
+    public void testElementsattr8148937021() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("odd",":roos");
+        Elements result = elements.attr("keygen","*");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44405,12 +44410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr11137490872() {
+    public void testElementsattr969846792() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("#roos","body");
+        Elements result = elements.attr("evem","]]?");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44430,12 +44435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr994551403() {
+    public void testElementsattr8841666183() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("form",":lt)");
+        Elements result = elements.attr(":matches)","hiddem");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44455,12 +44460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsattr3990118044() {
+    public void testElementsattr924419614() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.attr("checkbox","~<");
+        Elements result = elements.attr(":alm","#text");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44480,12 +44485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr19732341990() {
+    public void testElementsremoveAttr17480897440() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeAttr("plaintexu");
+        Elements result = elements.removeAttr("DOCTYPD");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44505,12 +44510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr1044191() {
+    public void testElementsremoveAttr1103269001() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeAttr("imh");
+        Elements result = elements.removeAttr("theae");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44530,12 +44535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr31891122() {
+    public void testElementsremoveAttr987192() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeAttr("gzio");
+        Elements result = elements.removeAttr("col");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44555,12 +44560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr32134803() {
+    public void testElementsremoveAttr6361976013() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeAttr("httq");
+        Elements result = elements.removeAttr("colgrouq");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44580,12 +44585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveAttr18305274() {
+    public void testElementsremoveAttr10176250984() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeAttr(":gt'");
+        Elements result = elements.removeAttr(":nth-last-of-type)");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44605,12 +44610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass1082706170() {
+    public void testElementsaddClass807731720() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.addClass("radin");
+        Elements result = elements.addClass("optgrouq");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44630,12 +44635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass13215465981() {
+    public void testElementsaddClass32311() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.addClass("templatf");
+        Elements result = elements.addClass("dd");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44655,12 +44660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass923482() {
+    public void testElementsaddClass11414281682() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.addClass("]]=");
+        Elements result = elements.addClass("[CDATA[");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44680,12 +44685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass15368918753() {
+    public void testElementsaddClass16183955593() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.addClass("checkboy");
+        Elements result = elements.addClass(":only-of-typd");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44705,12 +44710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsaddClass20913044554() {
+    public void testElementsaddClass33694() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.addClass("isindex");
+        Elements result = elements.addClass("hr");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44730,12 +44735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass12068418920() {
+    public void testElementsremoveClass20913044550() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeClass("http:/");
+        Elements result = elements.removeClass("isindex");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44755,12 +44760,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass7423139271() {
+    public void testElementsremoveClass13931() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeClass("checkee");
+        Elements result = elements.removeClass("*<");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44780,12 +44785,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass5525734462() {
+    public void testElementsremoveClass1103268992() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeClass("captioo");
+        Elements result = elements.removeClass("thead");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44805,12 +44810,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass17209582733() {
+    public void testElementsremoveClass21153115433() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeClass("basefont");
+        Elements result = elements.removeClass("boundary");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44830,12 +44835,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsremoveClass32132594() {
+    public void testElementsremoveClass26152054() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.removeClass("htmm");
+        Elements result = elements.removeClass("UTF-");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44855,12 +44860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass1188420() {
+    public void testElementstoggleClass10552537230() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.toggleClass("xmp");
+        Elements result = elements.toggleClass(":matchesOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44880,12 +44885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass11927218621() {
+    public void testElementstoggleClass14711() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.toggleClass("noframes");
+        Elements result = elements.toggleClass("--");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44905,12 +44910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass14722() {
+    public void testElementstoggleClass1103268992() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.toggleClass("-.");
+        Elements result = elements.toggleClass("thead");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44930,12 +44935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass35118023() {
+    public void testElementstoggleClass20919604273() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.toggleClass("rubz");
+        Elements result = elements.toggleClass(":only-chile");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44955,12 +44960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstoggleClass32134784() {
+    public void testElementstoggleClass567593344() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.toggleClass("htto");
+        Elements result = elements.toggleClass(":has'");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -44980,12 +44985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass19390() {
+    public void testElementshasClass32480() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasClass("<0");
+        boolean result = elements.hasClass("du");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45005,12 +45010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass33480041() {
+    public void testElementshasClass32471() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasClass("meta");
+        boolean result = elements.hasClass("dt");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45030,12 +45035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass18690634842() {
+    public void testElementshasClass18305282() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasClass("sarcasn");
+        boolean result = elements.hasClass(":gt(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45055,12 +45060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass1003134653() {
+    public void testElementshasClass11927218633() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasClass("imagd");
+        boolean result = elements.hasClass("noframet");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45080,12 +45085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshasClass33480054() {
+    public void testElementshasClass12074() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.hasClass("metb");
+        boolean result = elements.hasClass("$<");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45110,7 +45115,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.val();
+        String result = elements.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45135,7 +45140,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.val();
+        String result = elements.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45160,7 +45165,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.val();
+        String result = elements.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45185,7 +45190,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.val();
+        String result = elements.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45210,7 +45215,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.val();
+        String result = elements.val();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45230,12 +45235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval10101369410() {
+    public void testElementsval11150() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.val("optiom");
+        Elements result = elements.val("!=");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45255,12 +45260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval33737391() {
+    public void testElementsval15451126491() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.val("namf");
+        Elements result = elements.val("deflatd");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45280,12 +45285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval29222() {
+    public void testElementsval33441682() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.val("\'");
+        Elements result = elements.val("mati");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45305,12 +45310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval12269463013() {
+    public void testElementsval807731743() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.val(":containsData'");
+        Elements result = elements.val("optgrouo");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45330,12 +45335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsval1188394() {
+    public void testElementsval33868644() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.val("xmm");
+        Elements result = elements.val("nobr");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45360,7 +45365,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.text();
+        String result = elements.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45385,7 +45390,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.text();
+        String result = elements.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45410,7 +45415,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.text();
+        String result = elements.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45435,7 +45440,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.text();
+        String result = elements.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45460,7 +45465,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.text();
+        String result = elements.text();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45610,7 +45615,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.eachText();
+        List<String> result = elements.eachText();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45635,7 +45640,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.eachText();
+        List<String> result = elements.eachText();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45660,7 +45665,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.eachText();
+        List<String> result = elements.eachText();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45685,7 +45690,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.eachText();
+        List<String> result = elements.eachText();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45710,7 +45715,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.eachText();
+        List<String> result = elements.eachText();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45735,7 +45740,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.html();
+        String result = elements.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45760,7 +45765,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.html();
+        String result = elements.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45785,7 +45790,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.html();
+        String result = elements.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45810,7 +45815,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.html();
+        String result = elements.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45835,7 +45840,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.html();
+        String result = elements.html();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45860,7 +45865,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.outerHtml();
+        String result = elements.outerHtml();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45885,7 +45890,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.outerHtml();
+        String result = elements.outerHtml();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45910,7 +45915,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.outerHtml();
+        String result = elements.outerHtml();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45935,7 +45940,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.outerHtml();
+        String result = elements.outerHtml();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45960,7 +45965,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.outerHtml();
+        String result = elements.outerHtml();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -45980,12 +45985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName33060() {
+    public void testElementstagName10548386290() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.tagName("h3");
+        Elements result = elements.tagName(":first-chile");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46005,12 +46010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName19788929351() {
+    public void testElementstagName12068418931() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.tagName(":containsOwn'");
+        Elements result = elements.tagName("http:.");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46030,12 +46035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName1082706182() {
+    public void testElementstagName1044182() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.tagName("radio");
+        Elements result = elements.tagName("img");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46055,12 +46060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName33043() {
+    public void testElementstagName29875583() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.tagName("h1");
+        Elements result = elements.tagName("abs9");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46080,12 +46085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementstagName21011357994() {
+    public void testElementstagName7390744104() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.tagName(":matchText");
+        Elements result = elements.tagName("charses");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46105,12 +46110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml15368918740() {
+    public void testElementshtml10101369400() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.html("checkbox");
+        Elements result = elements.html("option");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46130,12 +46135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml21011357991() {
+    public void testElementshtml18678420521() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.html(":matchText");
+        Elements result = elements.html("[a-zA-Z_:][-a-zA-Z0-9_:.]*");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46155,12 +46160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml14582() {
+    public void testElementshtml11927218632() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.html("*}");
+        Elements result = elements.html("noframet");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46180,12 +46185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml35367443() {
+    public void testElementshtml33441683() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.html("spam");
+        Elements result = elements.html("mati");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46205,12 +46210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementshtml10548386294() {
+    public void testElementshtml1103268984() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.html(":first-chile");
+        Elements result = elements.html("theac");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46230,12 +46235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend21011357990() {
+    public void testElementsprepend1101158200() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prepend(":matchText");
+        Elements result = elements.prepend("tabld");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46255,12 +46260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend807731721() {
+    public void testElementsprepend2882752481() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prepend("optgrouq");
+        Elements result = elements.prepend(":nth-child(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46280,12 +46285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend6361976022() {
+    public void testElementsprepend30164332() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prepend("colgroup");
+        Elements result = elements.prepend("basf");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46305,12 +46310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend14562253613() {
+    public void testElementsprepend32134783() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prepend(":matches)");
+        Elements result = elements.prepend("htto");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46330,12 +46335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprepend18690634844() {
+    public void testElementsprepend35118024() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prepend("sarcasn");
+        Elements result = elements.prepend("rubz");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46355,12 +46360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend7390744120() {
+    public void testElementsappend10761623180() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.append("charseu");
+        Elements result = elements.append(":contains(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46380,12 +46385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend15368918741() {
+    public void testElementsappend7423139271() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.append("checkbox");
+        Elements result = elements.append("checkee");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46405,12 +46410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend17209582742() {
+    public void testElementsappend567593362() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.append("basefons");
+        Elements result = elements.append(":has)");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46430,12 +46435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend17480897443() {
+    public void testElementsappend32132573() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.append("DOCTYPD");
+        Elements result = elements.append("htmk");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46455,12 +46460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsappend33737394() {
+    public void testElementsappend10032436864() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.append("namf");
+        Elements result = elements.append("textareb");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46480,12 +46485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore32134790() {
+    public void testElementsbefore35118020() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.before("http");
+        Elements result = elements.before("rubz");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46505,12 +46510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore18353331() {
+    public void testElementsbefore1101578771() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.before(":lt(");
+        Elements result = elements.before("tbody");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46530,12 +46535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore358296672() {
+    public void testElementsbefore10101369402() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.before("#roos");
+        Elements result = elements.before("option");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46555,12 +46560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore1188433() {
+    public void testElementsbefore18245813() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.before("xmq");
+        Elements result = elements.before(":alk");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46580,12 +46585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsbefore33684() {
+    public void testElementsbefore7390744124() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.before("hq");
+        Elements result = elements.before("charseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46605,12 +46610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter31830() {
+    public void testElementsafter996170330() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.after("br");
+        Elements result = elements.after("httpr");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46630,12 +46635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter31984631() {
+    public void testElementsafter29875581() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.after("head");
+        Elements result = elements.after("abs9");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46655,12 +46660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter18305282() {
+    public void testElementsafter31255612() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.after(":gt(");
+        Elements result = elements.after("even");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46680,12 +46685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter18678420513() {
+    public void testElementsafter1188373() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.after("[a-zA-Z_:][-a-zA-Z0-9_:.]+");
+        Elements result = elements.after("xmk");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46705,12 +46710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsafter15368918744() {
+    public void testElementsafter12068418934() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.after("checkbox");
+        Elements result = elements.after("http:.");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46730,12 +46735,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap16183955590() {
+    public void testElementswrap30294410() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.wrap(":only-of-typd");
+        Elements result = elements.wrap("body");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46755,12 +46760,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap16449536121() {
+    public void testElementswrap569515661() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.wrap("frameset");
+        Elements result = elements.wrap(":not(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46780,12 +46785,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap32132592() {
+    public void testElementswrap19788929342() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.wrap("htmm");
+        Elements result = elements.wrap(":containsOwn(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46805,12 +46810,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap10176250983() {
+    public void testElementswrap903() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.wrap(":nth-last-of-type)");
+        Elements result = elements.wrap(";");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46830,12 +46835,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementswrap10176250974() {
+    public void testElementswrap14574() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.wrap(":nth-last-of-type(");
+        Elements result = elements.wrap("*|");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46860,7 +46865,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.unwrap();
+        Elements result = elements.unwrap();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46885,7 +46890,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.unwrap();
+        Elements result = elements.unwrap();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46910,7 +46915,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.unwrap();
+        Elements result = elements.unwrap();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46935,7 +46940,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.unwrap();
+        Elements result = elements.unwrap();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46960,7 +46965,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.unwrap();
+        Elements result = elements.unwrap();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -46985,7 +46990,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.empty();
+        Elements result = elements.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47010,7 +47015,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.empty();
+        Elements result = elements.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47035,7 +47040,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.empty();
+        Elements result = elements.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47060,7 +47065,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.empty();
+        Elements result = elements.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47085,7 +47090,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.empty();
+        Elements result = elements.empty();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47110,7 +47115,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.remove();
+        Elements result = elements.remove();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47135,7 +47140,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.remove();
+        Elements result = elements.remove();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47160,7 +47165,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.remove();
+        Elements result = elements.remove();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47185,7 +47190,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.remove();
+        Elements result = elements.remove();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47210,7 +47215,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.remove();
+        Elements result = elements.remove();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47230,12 +47235,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect2882752490() {
+    public void testElementsselect19804204670() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.select(":nth-child)");
+        Elements result = elements.select("Set-Cookid");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47255,12 +47260,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect358799201() {
+    public void testElementsselect1102563211() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.select("#texu");
+        Elements result = elements.select("text/");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47280,12 +47285,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect1103268982() {
+    public void testElementsselect18305272() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.select("theac");
+        Elements result = elements.select(":gt'");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47305,12 +47310,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect30294413() {
+    public void testElementsselect10761623173() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.select("body");
+        Elements result = elements.select(":contains'");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47330,12 +47335,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsselect1102563204() {
+    public void testElementsselect12269463004() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.select("text.");
+        Elements result = elements.select(":containsData(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47355,12 +47360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot33090() {
+    public void testElementsnot1099030() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.not("h6");
+        Elements result = elements.not("ode");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47380,12 +47385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot10176250971() {
+    public void testElementsnot33480051() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.not(":nth-last-of-type(");
+        Elements result = elements.not("metb");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47405,12 +47410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot33737372() {
+    public void testElementsnot10032436882() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.not("namd");
+        Elements result = elements.not("textare`");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47430,12 +47435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot21156131443() {
+    public void testElementsnot18305293() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.not("noembee");
+        Elements result = elements.not(":gt)");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47455,12 +47460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnot31891134() {
+    public void testElementsnot7423139264() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.not("gzip");
+        Elements result = elements.not("checked");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47480,12 +47485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq300() {
+    public void testElementseq690() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eq(-1);
+        Elements result = elements.eq(-100);
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47505,12 +47510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq2711() {
+    public void testElementseq4321() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eq(240);
+        Elements result = elements.eq(401);
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47530,12 +47535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq1332() {
+    public void testElementseq2182() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eq(102);
+        Elements result = elements.eq(187);
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47555,12 +47560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq2553() {
+    public void testElementseq4323() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eq(224);
+        Elements result = elements.eq(401);
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47580,12 +47585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementseq553274() {
+    public void testElementseq1344() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.eq(55296);
+        Elements result = elements.eq(103);
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47605,12 +47610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis14562253630() {
+    public void testElementsis1003581200() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.is(":matches'");
+        boolean result = elements.is("inpus");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47630,12 +47635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis21011358001() {
+    public void testElementsis1857353281() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.is(":matchTexu");
+        boolean result = elements.is("US-ASCIH");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47655,12 +47660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis16449536112() {
+    public void testElementsis19788929332() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.is("frameseu");
+        boolean result = elements.is(":containsOwn)");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47680,12 +47685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis37273() {
+    public void testElementsis20353119923() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.is("td");
+        boolean result = elements.is(":first-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47705,12 +47710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsis11912143984() {
+    public void testElementsis18245824() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        boolean result = elements.is("iframd");
+        boolean result = elements.is(":all");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47735,7 +47740,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.next();
+        Elements result = elements.next();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47760,7 +47765,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.next();
+        Elements result = elements.next();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47785,7 +47790,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.next();
+        Elements result = elements.next();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47810,7 +47815,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.next();
+        Elements result = elements.next();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47835,7 +47840,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.next();
+        Elements result = elements.next();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47855,12 +47860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext14711890860() {
+    public void testElementsnext358799200() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.next(":nth-last-child)");
+        Elements result = elements.next("#texu");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47880,12 +47885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext21065455171() {
+    public void testElementsnext807731731() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.next(":last-of-typf");
+        Elements result = elements.next("optgroup");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47905,12 +47910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext39972() {
+    public void testElementsnext570706512() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.next("~<");
+        Elements result = elements.next(":root");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47930,12 +47935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext11912143973() {
+    public void testElementsnext17480897423() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.next("iframe");
+        Elements result = elements.next("DOCTYPF");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47955,12 +47960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnext904() {
+    public void testElementsnext1101578764() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.next(";");
+        Elements result = elements.next("tbodx");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -47985,7 +47990,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.nextAll();
+        Elements result = elements.nextAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48010,7 +48015,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.nextAll();
+        Elements result = elements.nextAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48035,7 +48040,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.nextAll();
+        Elements result = elements.nextAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48060,7 +48065,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.nextAll();
+        Elements result = elements.nextAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48085,7 +48090,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.nextAll();
+        Elements result = elements.nextAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48105,12 +48110,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll1188370() {
+    public void testElementsnextAll7390744120() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.nextAll("xmk");
+        Elements result = elements.nextAll("charseu");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48130,12 +48135,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll11927218611() {
+    public void testElementsnextAll1082706181() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.nextAll("noframer");
+        Elements result = elements.nextAll("radio");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48155,12 +48160,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll13942() {
+    public void testElementsnextAll20353119932() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.nextAll("*=");
+        Elements result = elements.nextAll(":first-of-typf");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48180,12 +48185,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll1044183() {
+    public void testElementsnextAll18353333() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.nextAll("img");
+        Elements result = elements.nextAll(":lt(");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48205,12 +48210,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsnextAll39994() {
+    public void testElementsnextAll9060216044() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.nextAll("~>");
+        Elements result = elements.nextAll("selecu");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48235,7 +48240,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prev();
+        Elements result = elements.prev();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48260,7 +48265,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prev();
+        Elements result = elements.prev();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48285,7 +48290,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prev();
+        Elements result = elements.prev();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48310,7 +48315,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prev();
+        Elements result = elements.prev();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48335,7 +48340,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prev();
+        Elements result = elements.prev();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48355,12 +48360,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev29875580() {
+    public void testElementsprev10101369390() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prev("abs9");
+        Elements result = elements.prev("optioo");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48380,12 +48385,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev6361976021() {
+    public void testElementsprev20913044551() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prev("colgroup");
+        Elements result = elements.prev("isindex");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48405,12 +48410,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev21011357982() {
+    public void testElementsprev1650854892() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prev(":matchTexs");
+        Elements result = elements.prev("http-equiu");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48430,12 +48435,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev1097804313() {
+    public void testElementsprev11912143973() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prev("styld");
+        Elements result = elements.prev("iframe");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48455,12 +48460,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprev10548386294() {
+    public void testElementsprev5525734444() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prev(":first-chile");
+        Elements result = elements.prev("captiom");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48485,7 +48490,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prevAll();
+        Elements result = elements.prevAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48510,7 +48515,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prevAll();
+        Elements result = elements.prevAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48535,7 +48540,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prevAll();
+        Elements result = elements.prevAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48560,7 +48565,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prevAll();
+        Elements result = elements.prevAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48585,7 +48590,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.prevAll();
+        Elements result = elements.prevAll();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48605,12 +48610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll14711890840() {
+    public void testElementsprevAll19804204650() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prevAll(":nth-last-child'");
+        Elements result = elements.prevAll("Set-Cookif");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48630,12 +48635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll13941() {
+    public void testElementsprevAll2709408281() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prevAll("*=");
+        Elements result = elements.prevAll("disablee");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48655,12 +48660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll9060216042() {
+    public void testElementsprevAll11346655532() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prevAll("selecu");
+        Elements result = elements.prevAll("keygem");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48680,12 +48685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll12269463003() {
+    public void testElementsprevAll16183955603() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prevAll(":containsData(");
+        Elements result = elements.prevAll(":only-of-type");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48705,12 +48710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testElementsprevAll30294414() {
+    public void testElementsprevAll10552537214() {
         Elements elements = (Elements) TestGenerator.getObjectFromPool("Elements");
         if (elements == null) {
             return;
         }
-        elements.prevAll("body");
+        Elements result = elements.prevAll(":matchesOwn'");
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48735,7 +48740,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.parents();
+        Elements result = elements.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48760,7 +48765,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.parents();
+        Elements result = elements.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48785,7 +48790,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.parents();
+        Elements result = elements.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48810,7 +48815,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.parents();
+        Elements result = elements.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48835,7 +48840,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.parents();
+        Elements result = elements.parents();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48860,7 +48865,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.first();
+        Element result = elements.first();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48885,7 +48890,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.first();
+        Element result = elements.first();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48910,7 +48915,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.first();
+        Element result = elements.first();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48935,7 +48940,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.first();
+        Element result = elements.first();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48960,7 +48965,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.first();
+        Element result = elements.first();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -48985,7 +48990,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.last();
+        Element result = elements.last();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49010,7 +49015,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.last();
+        Element result = elements.last();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49035,7 +49040,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.last();
+        Element result = elements.last();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49060,7 +49065,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.last();
+        Element result = elements.last();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49085,7 +49090,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.last();
+        Element result = elements.last();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49110,7 +49115,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
+        Elements result = elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49135,7 +49140,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
+        Elements result = elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49160,7 +49165,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
+        Elements result = elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49185,7 +49190,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
+        Elements result = elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49210,7 +49215,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
+        Elements result = elements.traverse((NodeVisitor) TestGenerator.getObjectFromPool("NodeVisitor"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49235,7 +49240,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
+        Elements result = elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49260,7 +49265,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
+        Elements result = elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49285,7 +49290,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
+        Elements result = elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49310,7 +49315,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
+        Elements result = elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49335,7 +49340,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
+        Elements result = elements.filter((NodeFilter) TestGenerator.getObjectFromPool("NodeFilter"));
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49360,7 +49365,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.forms();
+        List<FormElement> result = elements.forms();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49385,7 +49390,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.forms();
+        List<FormElement> result = elements.forms();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49410,7 +49415,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.forms();
+        List<FormElement> result = elements.forms();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49435,7 +49440,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.forms();
+        List<FormElement> result = elements.forms();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49460,7 +49465,7 @@ public class AutomatedTest {
         if (elements == null) {
             return;
         }
-        elements.forms();
+        List<FormElement> result = elements.forms();
         TestGenerator.putObjectToPool(result);
         assertTrue(elements.equals(elements));
         try {
@@ -49480,12 +49485,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse33868630() {
+    public void testQueryParserparse16449536130() {
         QueryParser queryparser = (QueryParser) TestGenerator.getObjectFromPool("QueryParser");
         if (queryparser == null) {
             return;
         }
-        queryparser.parse("nobq");
+        Evaluator result = queryparser.parse("frameses");
         TestGenerator.putObjectToPool(result);
         assertTrue(queryparser.equals(queryparser));
         try {
@@ -49505,12 +49510,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse567593361() {
+    public void testQueryParserparse1003581211() {
         QueryParser queryparser = (QueryParser) TestGenerator.getObjectFromPool("QueryParser");
         if (queryparser == null) {
             return;
         }
-        queryparser.parse(":has)");
+        Evaluator result = queryparser.parse("input");
         TestGenerator.putObjectToPool(result);
         assertTrue(queryparser.equals(queryparser));
         try {
@@ -49530,12 +49535,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse17480897442() {
+    public void testQueryParserparse33441662() {
         QueryParser queryparser = (QueryParser) TestGenerator.getObjectFromPool("QueryParser");
         if (queryparser == null) {
             return;
         }
-        queryparser.parse("DOCTYPD");
+        Evaluator result = queryparser.parse("matg");
         TestGenerator.putObjectToPool(result);
         assertTrue(queryparser.equals(queryparser));
         try {
@@ -49555,12 +49560,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse358799203() {
+    public void testQueryParserparse807731743() {
         QueryParser queryparser = (QueryParser) TestGenerator.getObjectFromPool("QueryParser");
         if (queryparser == null) {
             return;
         }
-        queryparser.parse("#texu");
+        Evaluator result = queryparser.parse("optgrouo");
         TestGenerator.putObjectToPool(result);
         assertTrue(queryparser.equals(queryparser));
         try {
@@ -49580,12 +49585,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testQueryParserparse5525734444() {
+    public void testQueryParserparse10552537224() {
         QueryParser queryparser = (QueryParser) TestGenerator.getObjectFromPool("QueryParser");
         if (queryparser == null) {
             return;
         }
-        queryparser.parse("captiom");
+        Evaluator result = queryparser.parse(":matchesOwn(");
         TestGenerator.putObjectToPool(result);
         assertTrue(queryparser.equals(queryparser));
         try {
@@ -49605,12 +49610,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect345960() {
+    public void testSelectorselect2413534230() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("!>",(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select("button",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49630,12 +49635,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect11852498811() {
+    public void testSelectorselect8763686401() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("imagd",(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select("tfoos",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49655,12 +49660,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect2413534232() {
+    public void testSelectorselect810713242() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("button",(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select("UTF,",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49680,12 +49685,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect7107002983() {
+    public void testSelectorselect1045859093() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select(":matchTexs",(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select("namf",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49705,12 +49710,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect1006264() {
+    public void testSelectorselect16377785904() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("ds",(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select(":nth-last-child)",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49735,7 +49740,7 @@ public class AutomatedTest {
         if (selector == null) {
             return;
         }
-        selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49760,7 +49765,7 @@ public class AutomatedTest {
         if (selector == null) {
             return;
         }
-        selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49785,7 +49790,7 @@ public class AutomatedTest {
         if (selector == null) {
             return;
         }
-        selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49810,7 +49815,7 @@ public class AutomatedTest {
         if (selector == null) {
             return;
         }
-        selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49835,7 +49840,7 @@ public class AutomatedTest {
         if (selector == null) {
             return;
         }
-        selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
+        Elements result = selector.select((Evaluator) TestGenerator.getObjectFromPool("Evaluator"),(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49855,12 +49860,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect601090() {
+    public void testSelectorselect18100989420() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("<0",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
+        Elements result = selector.select("basefons",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49880,12 +49885,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect12494740681() {
+    public void testSelectorselect931861() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("option",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
+        Elements result = selector.select("^=",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49905,12 +49910,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect14628278102() {
+    public void testSelectorselect13298376572() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("US-ASCIJ",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
+        Elements result = selector.select(":first-of-typf",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49930,12 +49935,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect996178183() {
+    public void testSelectorselect17595393543() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select("htto",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
+        Elements result = selector.select(":has'",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49955,12 +49960,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselect3465980654() {
+    public void testSelectorselect6025344424() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.select(":nth-child'",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
+        Elements result = selector.select("command",(Iterable<Element>) TestGenerator.getObjectFromPool("Iterable<Element>"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -49980,12 +49985,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst1096390640() {
+    public void testSelectorselectFirst8770213450() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.selectFirst("spam",(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = selector.selectFirst("text/",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -50005,12 +50010,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst37821() {
+    public void testSelectorselectFirst600471() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.selectFirst("[",(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = selector.selectFirst("<.",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -50030,12 +50035,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst1096390952() {
+    public void testSelectorselectFirst8770213762() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.selectFirst("span",(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = selector.selectFirst("text.",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -50055,12 +50060,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst8748334583() {
+    public void testSelectorselectFirst1024863() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.selectFirst("theac",(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = selector.selectFirst("h3",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {
@@ -50080,12 +50085,12 @@ public class AutomatedTest {
         }
     }
     @Test
-    public void testSelectorselectFirst21016540654() {
+    public void testSelectorselectFirst8770213764() {
         Selector selector = (Selector) TestGenerator.getObjectFromPool("Selector");
         if (selector == null) {
             return;
         }
-        selector.selectFirst(":matches)",(Element) TestGenerator.getObjectFromPool("Element"));
+        Element result = selector.selectFirst("text.",(Element) TestGenerator.getObjectFromPool("Element"));
         TestGenerator.putObjectToPool(result);
         assertTrue(selector.equals(selector));
         try {

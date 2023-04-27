@@ -121,6 +121,9 @@ public class TestGenerator extends VoidVisitorAdapter {
         sb.append("import java.util.*;\n");
         sb.append("import org.jsoup.nodes.Document.OutputSettings;\n");
         sb.append("import org.jsoup.nodes.Document.QuirksMode;\n");
+        sb.append("import org.jsoup.Connection.Method;\n");
+        sb.append("import org.jsoup.parser.helper.Validate;\n");
+        sb.append("import javax.net.ssl.SSLSocketFactory;\n\n");
         sb.append("\n");
         sb.append("public class " + "AutomatedTest" + " {\n");
 
@@ -845,7 +848,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                     System.out.println(method.getType());
                 }
 
-                if (!Objects.equals(method.getType().toString(), "void") && !method.getType().isClassOrInterfaceType()) {
+                if (!Objects.equals(method.getType().toString(), "void")) {
                     sb.append("        " + method.getType() + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                 } else {
                     sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
