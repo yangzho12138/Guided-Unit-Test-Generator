@@ -175,10 +175,30 @@ public class TestGenerator extends VoidVisitorAdapter {
     }
 
     public Object getValueFromPool(String type) {
-        if (type.contains("[]")) {
+        if (type.contains("[]") || type.contains("List") || type.contains("Set")) {
             if (type.contains("Integer") || type.contains("int")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(integersPool.size());
+
+                if(type.contains("List")){
+                    List<Integer> intList = new ArrayList<>();
+                    int j = 0;
+                    Iterator<Integer> it = integersPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        intList.add(it.next());
+                        j++;
+                    }
+                    return intList;
+                } else if(type.contains("Set")){
+                    Set<Integer> intSet = new HashSet<>();
+                    int j = 0;
+                    Iterator<Integer> it = integersPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        intSet.add(it.next());
+                        j++;
+                    }
+                    return intSet;
+                }
                 int[] intArray = new int[randomNumber];
                 int j = 0;
                 Iterator<Integer> it = integersPool.iterator();
@@ -190,6 +210,38 @@ public class TestGenerator extends VoidVisitorAdapter {
             } else if (type.contains("String")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(stringsPool.size());
+
+                if(type.contains("List")){
+                    List<String> stringList = new ArrayList<>();
+                    int j = 0;
+                    Iterator<String> it = stringsPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        stringList.add(it.next());
+                        j++;
+                    }
+                    return stringList;
+                } else if(type.contains("Set")){
+                    Set<String> stringSet = new HashSet<>();
+                    int j = 0;
+                    Iterator<String> it = stringsPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        stringSet.add(it.next());
+                        j++;
+                    }
+                    return stringSet;
+                }
+
+                if(type.contains("StringBuilder")){
+                    StringBuilder[] stringArray = new StringBuilder[randomNumber];
+                    int j = 0;
+                    Iterator<String> it = stringsPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        stringArray[j] = new StringBuilder(it.next());
+                        j++;
+                    }
+                    return stringArray;
+                }
+
                 String[] stringArray = new String[randomNumber];
                 int j = 0;
                 Iterator<String> it = stringsPool.iterator();
@@ -201,6 +253,27 @@ public class TestGenerator extends VoidVisitorAdapter {
             } else if (type.contains("Character") || type.contains("char")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(charactersPool.size());
+
+                if(type.contains("List")){
+                    List<Character> charList = new ArrayList<>();
+                    int j = 0;
+                    Iterator<Character> it = charactersPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        charList.add(it.next());
+                        j++;
+                    }
+                    return charList;
+                } else if(type.contains("Set")){
+                    Set<Character> charSet = new HashSet<>();
+                    int j = 0;
+                    Iterator<Character> it = charactersPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        charSet.add(it.next());
+                        j++;
+                    }
+                    return charSet;
+                }
+
                 Character[] charArray = new Character[randomNumber];
                 int j = 0;
                 Iterator<Character> it = charactersPool.iterator();
@@ -212,6 +285,27 @@ public class TestGenerator extends VoidVisitorAdapter {
             } else if (type.contains("Long") || type.contains("long")) {
                 Random random = new Random();
                 int randomNumber = random.nextInt(longsPool.size());
+
+                if(type.contains("List")){
+                    List<Long> longList = new ArrayList<>();
+                    int j = 0;
+                    Iterator<Long> it = longsPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        longList.add(it.next());
+                        j++;
+                    }
+                    return longList;
+                } else if(type.contains("Set")){
+                    Set<Long> longSet = new HashSet<>();
+                    int j = 0;
+                    Iterator<Long> it = longsPool.iterator();
+                    while (it.hasNext() && j < randomNumber) {
+                        longSet.add(it.next());
+                        j++;
+                    }
+                    return longSet;
+                }
+
                 long[] longArray = new long[randomNumber];
                 int j = 0;
                 Iterator<Long> it = longsPool.iterator();
@@ -241,6 +335,19 @@ public class TestGenerator extends VoidVisitorAdapter {
         } else if (type.contains("String")) {
             Random random = new Random();
             int index = random.nextInt(stringsPool.size());
+
+            if(type.contains("StringBuilder")){
+                Iterator<String> it = stringsPool.iterator();
+                int i = 0;
+                while(it.hasNext()){
+                    String s = it.next();
+                    if(i == index){
+                        StringBuilder sb = new StringBuilder(s);
+                        return sb;
+                    }
+                    i++;
+                }
+            }
 
             // find a random string in the string pool
             Iterator<String> it = stringsPool.iterator();
