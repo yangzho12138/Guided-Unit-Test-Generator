@@ -44,6 +44,9 @@ public class TestGenerator extends VoidVisitorAdapter {
 
     StringBuilder sb;
 
+    // to prevent the duplicate test methods name
+    Set<String> testMethodsName;
+
 
     public static Object getObjectFromPool(String type){
         Random random = new Random();
@@ -95,6 +98,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         methods = new ArrayList<>();
         constructors = new ArrayList<>();
         classes = new ArrayList<>();
+        testMethodsName = new HashSet<>();
 
 //        argumentsList = new ArrayList<>();
         MethodTraverse(target);
@@ -846,7 +850,18 @@ public class TestGenerator extends VoidVisitorAdapter {
                 } else {
                     throwException = "";
                 }
-                sb.append("    public void test" + className + method.getName() + Math.abs(currentArguments.hashCode()) + i + "() " + throwException + "{\n");
+
+                Random random = new Random();
+                int randomNum = random.nextInt(99999999);
+                String methodName = "test" + className + method.getName() + randomNum;
+                while(testMethodsName.contains(methodName)){
+                    randomNum = random.nextInt(99999999);
+                    methodName = "test" + className + method.getName() + randomNum;
+                }
+
+                testMethodsName.add(methodName);
+
+                sb.append("    public void " + methodName + "() " + throwException + "{\n");
 
                 // TODO: add parameters
                 sb.append("        " + className + " " + className.toLowerCase() + " = (" + className + ") " + "TestGenerator.getObjectFromPool(\"" + className + "\");\n");
