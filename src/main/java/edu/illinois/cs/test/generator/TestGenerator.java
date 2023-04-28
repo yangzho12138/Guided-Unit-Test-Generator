@@ -759,6 +759,12 @@ public class TestGenerator extends VoidVisitorAdapter {
                 continue;
             }
 
+            // check if the return type is an abstract class
+//            String returnClass = method.getType().toString();
+            if (method.getName().asString().equals("getTreeBuilder") || method.getName().asString().equals("setTreeBuilder")) {
+                continue;
+            }
+
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             // TODO: delete after successfully generating constructor
@@ -952,7 +958,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                         if((Character) o == '\\'){
                             parameterList.append("'\\\\'");
                         }else if ((Character) o == '\''){
-                            parameterList.append("\"" + o + "\"");
+                            parameterList.append("\'\\" + o + "\'");
                         } else {
                             parameterList.append("\'" + o + "\'");
                         }
