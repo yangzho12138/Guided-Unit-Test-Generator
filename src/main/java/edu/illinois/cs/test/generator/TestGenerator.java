@@ -6,14 +6,9 @@ import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.Parameter;
-import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
-import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import com.github.javaparser.resolution.types.ResolvedReferenceType;
-import com.github.javaparser.resolution.types.ResolvedType;
 import com.github.javaparser.utils.SourceRoot;
-
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -130,9 +125,10 @@ public class TestGenerator extends VoidVisitorAdapter {
         sb.append("import org.jsoup.nodes.Document.OutputSettings;\n");
         sb.append("import org.jsoup.nodes.Document.QuirksMode;\n");
         sb.append("import org.jsoup.Connection.Method;\n");
-        sb.append("import org.jsoup.parser.helper.Validate;\n");
+//        sb.append("import org.jsoup.parser.helper.Validate;\n");
         sb.append("import javax.net.ssl.SSLSocketFactory;\n\n");
         sb.append("import java.net.Proxy;\n");
+        sb.append("import org.jsoup.select.NodeFilter.FilterResult;\n");
         sb.append("\n");
         sb.append("public class " + "AutomatedTest" + " {\n");
 
@@ -600,7 +596,8 @@ public class TestGenerator extends VoidVisitorAdapter {
 //    }
 
     public void generateTestFile() {
-        Path dir = Paths.get("src/test/java/edu/illinois/cs/test");
+//        Path dir = Paths.get("src/test/java/edu/illinois/cs/test");
+        Path dir = Paths.get("src/test/java/org/jsoup/mytests");
         if (!Files.exists(dir)) {
             try {
                 Files.createDirectories(dir);
@@ -765,6 +762,9 @@ public class TestGenerator extends VoidVisitorAdapter {
                 continue;
             }
 
+            if (method.getName().asString().equals("data") && method.getParameters().toString().equals("[String... keyvals]")) {
+                continue;
+            }
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             // TODO: delete after successfully generating constructor
