@@ -759,6 +759,12 @@ public class TestGenerator extends VoidVisitorAdapter {
                 continue;
             }
 
+            // check if the return type is an abstract class
+//            String returnClass = method.getType().toString();
+            if (method.getName().asString().equals("getTreeBuilder") || method.getName().asString().equals("setTreeBuilder")) {
+                continue;
+            }
+
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             NodeList<ReferenceType> exceptionList = method.getThrownExceptions();
@@ -866,9 +872,6 @@ public class TestGenerator extends VoidVisitorAdapter {
                     Object o = currentArguments.get(j);
                     if(o != null){
                         String type = o.getClass().toString();
-//                        if (method.getName().toString().equals("put")){
-//                            System.out.println(type);
-//                        }
                         if(type.contains("[L") || type.contains("[I")){
                             if(type.contains("String")) {
                                 parameterList.append("new String[]{");
@@ -943,7 +946,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                         if((Character) o == '\\'){
                             parameterList.append("'\\\\'");
                         }else if ((Character) o == '\''){
-                            parameterList.append("\"" + o + "\"");
+                            parameterList.append("\'\\" + o + "\'");
                         } else {
                             parameterList.append("\'" + o + "\'");
                         }
@@ -966,6 +969,18 @@ public class TestGenerator extends VoidVisitorAdapter {
 //                            parameterList.append("(" + type + ") " + "null");
 //                        }else{
 
+                        if(className.toLowerCase().contains("w3cdom")){
+                            if(method.getName().toString().contains("convert")){
+                                if (j == 1){
+                                    type = "org.w3c.dom.Document";
+                                }
+                            }else{
+                                type = "org.w3c.dom.Document";
+                            }
+                        }
+                        if(method.getName().toString().contains("fromJsoup")) {
+                            type = "Document";
+                        }
                         parameterList.append("(" + type + ") " + "TestGenerator.getObjectFromPool(\"" + type + "\")");
 //                        }
                     }
@@ -981,7 +996,11 @@ public class TestGenerator extends VoidVisitorAdapter {
 
                 if (!Objects.equals(method.getType().toString(), "void")) {
                     String returnType = method.getType().toString();
-                    sb.append("        " + returnType + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                    if(method.getName().toString().contains("fromJsoup")){
+                        sb.append("        " + returnType + " result = (Document) " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                    }else{
+                        sb.append("        " + returnType + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                    }
                 } else {
                     sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                 }
