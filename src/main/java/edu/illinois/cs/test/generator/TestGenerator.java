@@ -761,15 +761,6 @@ public class TestGenerator extends VoidVisitorAdapter {
 
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
-            // TODO: delete after successfully generating constructor
-//            if(className.equals("Element") || className.equals("Document") || className.equals("CDataNode")
-//                    || className.equals("DataNode") || className.equals("Comment") || className.equals("XmlDeclaration")
-//                    || className.equals("FormElement") || className.equals("DocumentType") || className.equals("Attribute")
-//                    || className.equals("TextNode") || className.equals("UncheckedIOException") || className.equals("Entity")
-//            ) {
-//                continue;
-//            }
-
             NodeList<ReferenceType> exceptionList = method.getThrownExceptions();
 
             // find parameter types
@@ -974,6 +965,7 @@ public class TestGenerator extends VoidVisitorAdapter {
 ////                            System.out.println("null");
 //                            parameterList.append("(" + type + ") " + "null");
 //                        }else{
+
                         parameterList.append("(" + type + ") " + "TestGenerator.getObjectFromPool(\"" + type + "\")");
 //                        }
                     }
