@@ -6,12 +6,9 @@ import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.body.Parameter;
-import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
-import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
-
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -34,7 +31,7 @@ public class TestGenerator extends VoidVisitorAdapter{
     Set<Character> charactersPool;
     Set<Long> longsPool;
     Set<Boolean> booleansPool;
-    Set<Object> objectsPool;
+    public static Set<Object> objectsPool = PoolInit.valuePool.objectsPool;
 
     List<MethodDeclaration> methods;
     List<ConstructorDeclaration> constructors;
@@ -96,7 +93,7 @@ public class TestGenerator extends VoidVisitorAdapter{
         charactersPool = PoolInit.valuePool.charactersPool;
         longsPool = PoolInit.valuePool.longsPool;
         booleansPool = PoolInit.valuePool.booleansPool;
-        objectsPool = PoolInit.valuePool.objectsPool;
+//        objectsPool = PoolInit.valuePool.objectsPool;
         methods = new ArrayList<>();
         constructors = new ArrayList<>();
         classes = new ArrayList<>();
@@ -107,13 +104,16 @@ public class TestGenerator extends VoidVisitorAdapter{
         sb = new StringBuilder();
         sb.append("package " + "org.jsoup.mytests" + ";\n");
         sb.append("import edu.illinois.cs.test.generator.TestGenerator;\n");
+        sb.append("import edu.illinois.cs.test.generator.PoolGenerator;\n");
+        sb.append("import edu.illinois.cs.test.generator.PoolInit;\n");
         sb.append("import org.junit.Test;\n");
         sb.append("import static org.junit.Assert.*;\n");
         sb.append("import org.jsoup.nodes.*;\n");
         sb.append("import org.jsoup.select.*;\n");
         sb.append("import org.jsoup.examples.*;\n");
         sb.append("import org.jsoup.parser.*;\n");
-        sb.append("import org.jsoup.helper.*;\n");
+        sb.append("import org.jsoup.parser.helper.*;\n");
+//        sb.append("import org.jsoup.helper.*;\n");
         sb.append("import org.jsoup.internal.*;\n");
         sb.append("import org.jsoup.safety.*;\n");
         sb.append("import org.jsoup.*;\n");
@@ -135,9 +135,12 @@ public class TestGenerator extends VoidVisitorAdapter{
         sb.append("import org.jsoup.parser.helper.Validate;\n");
         sb.append("import javax.net.ssl.SSLSocketFactory;\n\n");
         sb.append("import java.net.Proxy;\n");
+        sb.append("import org.jsoup.select.NodeFilter.FilterResult;\n");
         sb.append("\n");
         sb.append("public class " + "AutomatedTest" + " {\n");
-
+        sb.append("    PoolInit pool = new PoolInit(\"src/main/java/org/jsoup/\");\n");
+        sb.append("    PoolGenerator pg = new PoolGenerator(\"src/main/java/org/jsoup/\");\n");
+        sb.append("\n");
 //        System.out.println(objectsPool);
         construct();
 
@@ -613,6 +616,7 @@ public class TestGenerator extends VoidVisitorAdapter{
 
     public void generateTestFile() {
         Path dir = Paths.get("src/test/java/edu/illinois/cs/test");
+//        Path dir = Paths.get("src/test/java/org/jsoup/mytests");
         if (!Files.exists(dir)) {
             try {
                 Files.createDirectories(dir);
@@ -777,6 +781,9 @@ public class TestGenerator extends VoidVisitorAdapter{
                 continue;
             }
 
+            if (method.getName().asString().equals("data") && method.getParameters().toString().equals("[String... keyvals]")) {
+                continue;
+            }
             String className = method.findAncestor(ClassOrInterfaceDeclaration.class).get().getNameAsString();
 
             NodeList<ReferenceType> exceptionList = method.getThrownExceptions();
@@ -873,7 +880,7 @@ public class TestGenerator extends VoidVisitorAdapter{
                 sb.append("    public void " + methodName + "() " + throwException + "{\n");
 
                 // TODO: add parameters
-                sb.append("        " + className + " " + className.toLowerCase() + " = (" + className + ") " + "TestGenerator.getObjectFromPool(\"" + className + "\");\n");
+                sb.append("        " + className + " " + className.toLowerCase() + " = (" + className + ") " + "PoolGenerator.getObjectFromPool(\"" + className + "\");\n");
                 sb.append("        " + "if (" + className.toLowerCase() + " == null) {\n");
                 sb.append("            return;\n");
                 sb.append("        }\n");
@@ -939,7 +946,7 @@ public class TestGenerator extends VoidVisitorAdapter{
                                 parameterList.append("new Object[]{");
                                 for (int k = 0; k < ((Object[]) o).length; k++) {
 //                                    System.out.println(type);
-                                    parameterList.append("TestGenerator.getObjectFromPool(\"type\")");
+                                    parameterList.append("PoolGenerator.getObjectFromPool(\"type\")");
                                     if (k != ((Object[]) o).length - 1) {
                                         parameterList.append(",");
                                     }
@@ -993,7 +1000,7 @@ public class TestGenerator extends VoidVisitorAdapter{
                         if(method.getName().toString().contains("fromJsoup")) {
                             type = "Document";
                         }
-                        parameterList.append("(" + type + ") " + "TestGenerator.getObjectFromPool(\"" + type + "\")");
+                        parameterList.append("(" + type + ") " + "PoolGenerator.getObjectFromPool(\"" + type + "\")");
 //                        }
                     }
                     if(j != currentArguments.size() - 1){
@@ -1018,7 +1025,7 @@ public class TestGenerator extends VoidVisitorAdapter{
                 }
                 // add the return value from previous step
                 if (!Objects.equals(method.getType().toString(), "void")) {
-                    sb.append("        " + "TestGenerator.putObjectToPool(result);\n");
+                    sb.append("        " + "PoolGenerator.putObjectToPool(result);\n");
                 }
                 // o.equals(o)==true
                 sb.append("        " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
