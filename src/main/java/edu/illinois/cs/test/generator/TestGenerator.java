@@ -10,14 +10,13 @@ import com.github.javaparser.ast.type.ClassOrInterfaceType;
 import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.type.Type;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import com.github.javaparser.resolution.types.ResolvedReferenceType;
-import com.github.javaparser.resolution.types.ResolvedType;
 import com.github.javaparser.utils.SourceRoot;
 
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -28,14 +27,14 @@ import java.util.*;
 
 import static com.github.javaparser.StaticJavaParser.parse;
 
-public class TestGenerator extends VoidVisitorAdapter {
+public class TestGenerator extends VoidVisitorAdapter{
 
     Set<Integer> integersPool;
     Set<String> stringsPool;
     Set<Character> charactersPool;
     Set<Long> longsPool;
     Set<Boolean> booleansPool;
-    static Set<Object> objectsPool;
+    Set<Object> objectsPool;
 
     List<MethodDeclaration> methods;
     List<ConstructorDeclaration> constructors;
@@ -47,8 +46,11 @@ public class TestGenerator extends VoidVisitorAdapter {
     // to prevent the duplicate test methods name
     Set<String> testMethodsName;
 
+    public Set<Object> getObjectPoolSize(){
+        return objectsPool;
+    }
 
-    public static Object getObjectFromPool(String type){
+    public Object getObjectFromPool(String type){
         Random random = new Random();
         // find a random object in the object pool
         Iterator<Object> it = objectsPool.iterator();
@@ -60,7 +62,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         // add indexes of objects of such type
         for (int i = 0; i < list.size(); i++) {
             Object s = it.next();
-            if (s.getClass().toString().equals(type)) {
+            if (s.getClass().toString().contains(type)) {
                 indexes.add(i);
             }
         }
@@ -81,7 +83,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         return null;
     }
 
-    public static void putObjectToPool(Object obj){
+    public void putObjectToPool(Object obj){
         if (obj.getClass().toString().equals("class java.lang.String") || obj.getClass().toString().equals("class java.lang.Integer") || obj.getClass().toString().equals("class java.lang.Character") || obj.getClass().toString().equals("class java.lang.Long") || obj.getClass().toString().equals("class java.lang.Boolean")) {
             return;
         }
@@ -141,6 +143,16 @@ public class TestGenerator extends VoidVisitorAdapter {
 
         generateTest();
         generateTestFile();
+
+//        for(Object obj : objectsPool){
+//            System.out.println(obj.getClass());
+//        }
+//        try{
+//            Thread.sleep(10000000);
+//        }catch (Exception e){
+//            e.printStackTrace();
+//        }
+
 
 //        System.out.println(objectsPool);
     }
