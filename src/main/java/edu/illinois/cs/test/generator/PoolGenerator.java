@@ -23,7 +23,7 @@ import java.util.*;
 
 import static com.github.javaparser.StaticJavaParser.parse;
 
-public class TestGenerator extends VoidVisitorAdapter {
+public class PoolGenerator extends VoidVisitorAdapter {
 
     Set<Integer> integersPool;
     Set<String> stringsPool;
@@ -83,7 +83,7 @@ public class TestGenerator extends VoidVisitorAdapter {
         objectsPool.add(obj);
     }
 
-    public TestGenerator(String target) {
+    public PoolGenerator(String target) {
         integersPool = PoolInit.valuePool.integersPool;
         stringsPool = PoolInit.valuePool.stringsPool;
         charactersPool = PoolInit.valuePool.charactersPool;
@@ -101,15 +101,13 @@ public class TestGenerator extends VoidVisitorAdapter {
         sb.append("package " + "org.jsoup.mytests" + ";\n");
         sb.append("import edu.illinois.cs.test.generator.TestGenerator;\n");
         sb.append("import edu.illinois.cs.test.generator.PoolGenerator;\n");
-        sb.append("import edu.illinois.cs.test.generator.PoolInit;\n");
         sb.append("import org.junit.Test;\n");
         sb.append("import static org.junit.Assert.*;\n");
         sb.append("import org.jsoup.nodes.*;\n");
         sb.append("import org.jsoup.select.*;\n");
         sb.append("import org.jsoup.examples.*;\n");
         sb.append("import org.jsoup.parser.*;\n");
-        sb.append("import org.jsoup.parser.helper.*;\n");
-//        sb.append("import org.jsoup.helper.*;\n");
+        sb.append("import org.jsoup.helper.*;\n");
         sb.append("import org.jsoup.internal.*;\n");
         sb.append("import org.jsoup.safety.*;\n");
         sb.append("import org.jsoup.*;\n");
@@ -134,14 +132,15 @@ public class TestGenerator extends VoidVisitorAdapter {
         sb.append("import org.jsoup.select.NodeFilter.FilterResult;\n");
         sb.append("\n");
         sb.append("public class " + "AutomatedTest" + " {\n");
-        sb.append("    PoolInit pool = new PoolInit(\"src/main/java/org/jsoup/\");\n");
-        sb.append("    PoolGenerator pg = new PoolGenerator(\"src/main/java/org/jsoup/\");\n");
+        sb.append("PoolInit pool = new PoolInit(\"src/main/java/org/jsoup/\");\n");
+        sb.append("PoolGenerator pg = new PoolGenerator(\"src/main/java/org/jsoup/\");\n");
         sb.append("\n");
+
 //        System.out.println(objectsPool);
         construct();
 
         generateTest();
-        generateTestFile();
+//        generateTestFile();
 
 //        System.out.println(objectsPool);
     }
@@ -866,7 +865,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 sb.append("    public void " + methodName + "() " + throwException + "{\n");
 
                 // TODO: add parameters
-                sb.append("        " + className + " " + className.toLowerCase() + " = (" + className + ") " + "PoolGenerator.getObjectFromPool(\"" + className + "\");\n");
+                sb.append("        " + className + " " + className.toLowerCase() + " = (" + className + ") " + "TestGenerator.getObjectFromPool(\"" + className + "\");\n");
                 sb.append("        " + "if (" + className.toLowerCase() + " == null) {\n");
                 sb.append("            return;\n");
                 sb.append("        }\n");
@@ -932,7 +931,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                                 parameterList.append("new Object[]{");
                                 for (int k = 0; k < ((Object[]) o).length; k++) {
 //                                    System.out.println(type);
-                                    parameterList.append("PoolGenerator.getObjectFromPool(\"type\")");
+                                    parameterList.append("TestGenerator.getObjectFromPool(\"type\")");
                                     if (k != ((Object[]) o).length - 1) {
                                         parameterList.append(",");
                                     }
@@ -986,7 +985,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                         if(method.getName().toString().contains("fromJsoup")) {
                             type = "Document";
                         }
-                        parameterList.append("(" + type + ") " + "PoolGenerator.getObjectFromPool(\"" + type + "\")");
+                        parameterList.append("(" + type + ") " + "TestGenerator.getObjectFromPool(\"" + type + "\")");
 //                        }
                     }
                     if(j != currentArguments.size() - 1){
@@ -1011,7 +1010,7 @@ public class TestGenerator extends VoidVisitorAdapter {
                 }
                 // add the return value from previous step
                 if (!Objects.equals(method.getType().toString(), "void")) {
-                    sb.append("        " + "PoolGenerator.putObjectToPool(result);\n");
+                    sb.append("        " + "TestGenerator.putObjectToPool(result);\n");
                 }
                 // o.equals(o)==true
                 sb.append("        " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
