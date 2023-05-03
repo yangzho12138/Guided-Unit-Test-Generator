@@ -99,18 +99,14 @@ public class PoolInit extends VoidVisitorAdapter {
                     candidateValues.add(boundValue);
                 }else if(operator.equals(BinaryExpr.Operator.LESS)){
                     candidateValues.add(boundValue - 1L); // double precise
-                    candidateValues.add(boundValue - 100L);
                 }else if(operator.equals(BinaryExpr.Operator.LESS_EQUALS)){
                     candidateValues.add(boundValue);
                     candidateValues.add(boundValue - 1L);
-                    candidateValues.add(boundValue - 100L);
                 }else if(operator.equals(BinaryExpr.Operator.GREATER)){
                     candidateValues.add(boundValue + 1L);
-                    candidateValues.add(boundValue + 100L);
                 }else if(operator.equals(BinaryExpr.Operator.GREATER_EQUALS)){
                     candidateValues.add(boundValue);
                     candidateValues.add(boundValue + 1L);
-                    candidateValues.add(boundValue + 100L);
                 }
             }
             // Integer Type
@@ -142,18 +138,14 @@ public class PoolInit extends VoidVisitorAdapter {
                     candidateValues.add(boundValue);
                 }else if(operator.equals(BinaryExpr.Operator.LESS)){
                     candidateValues.add(boundValue - 1);
-                    candidateValues.add(boundValue - 100);
                 }else if(operator.equals(BinaryExpr.Operator.LESS_EQUALS)){
                     candidateValues.add(boundValue);
                     candidateValues.add(boundValue - 1);
-                    candidateValues.add(boundValue - 100);
                 }else if(operator.equals(BinaryExpr.Operator.GREATER)){
                     candidateValues.add(boundValue + 1);
-                    candidateValues.add(boundValue + 100);
                 }else if(operator.equals(BinaryExpr.Operator.GREATER_EQUALS)){
                     candidateValues.add(boundValue);
                     candidateValues.add(boundValue + 1);
-                    candidateValues.add(boundValue + 100);
                 }
             }
             // String Type
