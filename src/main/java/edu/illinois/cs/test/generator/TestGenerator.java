@@ -13,7 +13,6 @@ import com.github.javaparser.utils.SourceRoot;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.Serializable;
 import java.lang.reflect.Constructor;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
@@ -59,6 +58,9 @@ public class TestGenerator extends VoidVisitorAdapter{
         // add indexes of objects of such type
         for (int i = 0; i < list.size(); i++) {
             Object s = it.next();
+//            System.out.println(s.getClass().toString());
+//            System.out.println(type);
+//            System.out.println("=====================================");
             if (s.getClass().toString().contains(type)) {
                 indexes.add(i);
             }
@@ -112,7 +114,7 @@ public class TestGenerator extends VoidVisitorAdapter{
         sb.append("import org.jsoup.select.*;\n");
         sb.append("import org.jsoup.examples.*;\n");
         sb.append("import org.jsoup.parser.*;\n");
-        sb.append("import org.jsoup.parser.helper.*;\n");
+        sb.append("import org.jsoup.helper.*;\n");
 //        sb.append("import org.jsoup.helper.*;\n");
         sb.append("import org.jsoup.internal.*;\n");
         sb.append("import org.jsoup.safety.*;\n");
@@ -132,7 +134,7 @@ public class TestGenerator extends VoidVisitorAdapter{
         sb.append("import org.jsoup.nodes.Document.OutputSettings;\n");
         sb.append("import org.jsoup.nodes.Document.QuirksMode;\n");
         sb.append("import org.jsoup.Connection.Method;\n");
-        sb.append("import org.jsoup.parser.helper.Validate;\n");
+//        sb.append("import org.jsoup.parser.helper.Validate;\n");
         sb.append("import javax.net.ssl.SSLSocketFactory;\n\n");
         sb.append("import java.net.Proxy;\n");
         sb.append("import org.jsoup.select.NodeFilter.FilterResult;\n");
@@ -147,9 +149,9 @@ public class TestGenerator extends VoidVisitorAdapter{
         generateTest();
         generateTestFile();
 
-//        for(Object obj : objectsPool){
-//            System.out.println(obj.getClass());
-//        }
+        for(Object obj : objectsPool){
+            System.out.println(obj.getClass());
+        }
 //        try{
 //            Thread.sleep(10000000);
 //        }catch (Exception e){
@@ -615,7 +617,7 @@ public class TestGenerator extends VoidVisitorAdapter{
 //    }
 
     public void generateTestFile() {
-        Path dir = Paths.get("src/test/java/edu/illinois/cs/test");
+        Path dir = Paths.get("src/test/java/org/jsoup/mytests");
 //        Path dir = Paths.get("src/test/java/org/jsoup/mytests");
         if (!Files.exists(dir)) {
             try {
@@ -800,7 +802,7 @@ public class TestGenerator extends VoidVisitorAdapter{
             List<List<Object>> argumentsList = new ArrayList<>();
 
             // generate 3 groups of arguments for each method
-            for (int num = 0; num < 5; num++) {
+            for (int num = 0; num < 6; num++) {
                 List<Object> arguments = new ArrayList<>();
                 for (int i = 0; i < parametersList.size(); i++) {
                     String type = parametersList.get(i);
@@ -880,10 +882,15 @@ public class TestGenerator extends VoidVisitorAdapter{
                 sb.append("    public void " + methodName + "() " + throwException + "{\n");
 
                 // TODO: add parameters
-                sb.append("        " + className + " " + className.toLowerCase() + " = (" + className + ") " + "PoolGenerator.getObjectFromPool(\"" + className + "\");\n");
-                sb.append("        " + "if (" + className.toLowerCase() + " == null) {\n");
-                sb.append("            return;\n");
-                sb.append("        }\n");
+                sb.append("        try {\n");
+                sb.append("            " + className + " " + className.toLowerCase() + " = (" + className + ") " + "PoolGenerator.getObjectFromPool(\"" + className + "\");\n");
+                sb.append("            " + "if (" + className.toLowerCase() + " == null) {\n");
+                sb.append("                pg.getInstance(\"" + className + "\", false);\n");
+                sb.append("                " + className.toLowerCase() + " = (" + className + ") " + "PoolGenerator.getObjectFromPool(\"" + className + "\");\n");
+                sb.append("                if (" + className.toLowerCase() + " == null) {\n");
+                sb.append("                    return;\n");
+                sb.append("                }\n");
+                sb.append("            }\n");
 
                 StringBuilder parameterList = new StringBuilder();
                 parameterList.append("(");
@@ -1016,37 +1023,38 @@ public class TestGenerator extends VoidVisitorAdapter{
                 if (!Objects.equals(method.getType().toString(), "void")) {
                     String returnType = method.getType().toString();
                     if(method.getName().toString().contains("fromJsoup")){
-                        sb.append("        " + returnType + " result = (Document) " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                        sb.append("            " + returnType + " result = (Document) " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                     }else{
-                        sb.append("        " + returnType + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                        sb.append("            " + returnType + " result = " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                     }
                 } else {
-                    sb.append("        " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
+                    sb.append("            " + className.toLowerCase() + "." + method.getName() + parameterList + ";\n");
                 }
                 // add the return value from previous step
                 if (!Objects.equals(method.getType().toString(), "void")) {
-                    sb.append("        " + "PoolGenerator.putObjectToPool(result);\n");
+                    sb.append("            " + "PoolGenerator.putObjectToPool(result);\n");
                 }
                 // o.equals(o)==true
-                sb.append("        " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
+                sb.append("            " + "assertTrue(" + className.toLowerCase() + ".equals(" + className.toLowerCase() + "));\n");
                 // o.equals(o) throws no exception
-                sb.append("        " + "try {\n");
-                sb.append("            " + className.toLowerCase() + ".equals(" + className.toLowerCase() + ");\n");
-                sb.append("        " + "} catch (Exception e) {\n");
-                sb.append("            " + "fail(\""+ className.toLowerCase() + ".equals(" + className.toLowerCase() +") throws an exception\");\n");
-                sb.append("        " + "}\n");
+                sb.append("            " + "try {\n");
+                sb.append("                " + className.toLowerCase() + ".equals(" + className.toLowerCase() + ");\n");
+                sb.append("            " + "} catch (Exception e) {\n");
+                sb.append("                " + "fail(\""+ className.toLowerCase() + ".equals(" + className.toLowerCase() +") throws an exception\");\n");
+                sb.append("            " + "}\n");
                 // o.hashCode() throws no exception
-                sb.append("        " + "try {\n");
-                sb.append("            " + className.toLowerCase() + ".hashCode();\n");
-                sb.append("        " + "} catch (Exception e) {\n");
-                sb.append("            " + "fail(\""+ className.toLowerCase() + ".hashCode() throws an exception\");\n");
-                sb.append("        " + "}\n");
+                sb.append("            " + "try {\n");
+                sb.append("                " + className.toLowerCase() + ".hashCode();\n");
+                sb.append("            " + "} catch (Exception e) {\n");
+                sb.append("                " + "fail(\""+ className.toLowerCase() + ".hashCode() throws an exception\");\n");
+                sb.append("            " + "}\n");
                 // o.toString() throws no exception
-                sb.append("        " + "try {\n");
-                sb.append("            " + className.toLowerCase() + ".toString();\n");
-                sb.append("        " + "} catch (Exception e) {\n");
-                sb.append("            " + "fail(\""+ className.toLowerCase() + ".toString() throws an exception\");\n");
-                sb.append("        " + "}\n");
+                sb.append("            " + "try {\n");
+                sb.append("                " + className.toLowerCase() + ".toString();\n");
+                sb.append("            " + "} catch (Exception e) {\n");
+                sb.append("                " + "fail(\""+ className.toLowerCase() + ".toString() throws an exception\");\n");
+                sb.append("            " + "}\n");
+                sb.append("        " + "}catch(Exception e){}\n");
 
                 sb.append("    }\n");
             }

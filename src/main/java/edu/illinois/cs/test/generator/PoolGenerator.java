@@ -1,12 +1,9 @@
 package edu.illinois.cs.test.generator;
 
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.NodeList;
 import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
 import com.github.javaparser.ast.body.ConstructorDeclaration;
 import com.github.javaparser.ast.body.MethodDeclaration;
-import com.github.javaparser.ast.body.Parameter;
-import com.github.javaparser.ast.type.ReferenceType;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
 
@@ -15,7 +12,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.net.URL;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -40,6 +36,12 @@ public class PoolGenerator extends VoidVisitorAdapter {
 
 
     public static Object getObjectFromPool(String type) {
+        boolean flag = false;
+        if(type.contains("Collection")){
+            String[] s = type.split(" ");
+            type = s[s.length-1].substring(0, s[s.length-1].length()-1);
+            flag = true;
+        }
         Random random = new Random();
         // find a random object in the object pool
         Iterator<Object> it = objectsPool.iterator();
@@ -48,11 +50,18 @@ public class PoolGenerator extends VoidVisitorAdapter {
         // create a set of indexes of such type
         Set<Integer> indexes = new HashSet<>();
 
+        List<Object> resultList = new ArrayList<>();
         // add indexes of objects of such type
         for (int i = 0; i < list.size(); i++) {
             Object s = it.next();
-            if (s.getClass().toString().equals(type)) {
+            String[] ss = s.getClass().toString().split("\\.");
+            String[] tt = type.split("\\.");
+            if (ss[ss.length - 1].equals(tt[tt.length - 1])) {
+                System.out.println(s.getClass().toString());
+                System.out.println(type);
+                System.out.println("=====================================");
                 indexes.add(i);
+                resultList.add(list.get(i));
             }
         }
 
@@ -60,6 +69,11 @@ public class PoolGenerator extends VoidVisitorAdapter {
         if (indexes.size() == 0) {
             return null;
         }
+
+        if(flag){
+            return resultList;
+        }
+
         int randomIndex = random.nextInt(indexes.size());
         int i = 0;
         for (Integer idx : indexes) {
@@ -73,6 +87,9 @@ public class PoolGenerator extends VoidVisitorAdapter {
     }
 
     public static void putObjectToPool(Object obj) {
+        if (obj == null) {
+            return;
+        }
         if (obj.getClass().toString().equals("class java.lang.String") || obj.getClass().toString().equals("class java.lang.Integer") || obj.getClass().toString().equals("class java.lang.Character") || obj.getClass().toString().equals("class java.lang.Long") || obj.getClass().toString().equals("class java.lang.Boolean")) {
             return;
         }
@@ -94,6 +111,10 @@ public class PoolGenerator extends VoidVisitorAdapter {
 //        argumentsList = new ArrayList<>();
         MethodTraverse(target);
         construct();
+
+//        for(Object obj : objectsPool){
+//            System.out.println(obj.getClass());
+//        }
 
     }
 
@@ -443,27 +464,25 @@ public class PoolGenerator extends VoidVisitorAdapter {
         return arguments;
     }
 
-    public void construct() {
-        for (ClassOrInterfaceDeclaration c : classes) {
-            String className = c.getNameAsString();
+    public void getInstance(String className, boolean flag){
+        List<Class<?>> clazzes = new ArrayList<>();
 
-            List<Class<?>> clazzes = new ArrayList<>();
-
-            try {
-                ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-                Enumeration<URL> resources = classLoader.getResources("org/jsoup");
-                while (resources.hasMoreElements()) {
-                    URL resource = resources.nextElement();
-                    File directory = new File(resource.getFile());
-                    searchForClass(directory, className, clazzes);
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
+        try {
+            ClassLoader classLoader = ClassLoader.getSystemClassLoader();
+            Enumeration<URL> resources = classLoader.getResources("org/jsoup");
+            while (resources.hasMoreElements()) {
+                URL resource = resources.nextElement();
+                File directory = new File(resource.getFile());
+                searchForClass(directory, className, clazzes);
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-            if (clazzes.size() != 0) {
-                try {
-                    // generate the constructor without arguments
+        if (clazzes.size() != 0) {
+            try {
+                // generate the constructor without arguments
+                if(flag){
                     for (Class<?> cl : clazzes) {
                         Constructor<?>[] constructors = cl.getConstructors();
                         for (Constructor<?> constructor : constructors) {
@@ -473,28 +492,36 @@ public class PoolGenerator extends VoidVisitorAdapter {
                             }
                         }
                     }
+                }
 
-                    // generate the constructor with arguments
-                    for (Class<?> cl : clazzes) {
-                        Constructor<?>[] constructors = cl.getConstructors();
-                        for (Constructor<?> constructor : constructors) {
-                            if (constructor.getParameterCount() != 0) {
-                                Class<?>[] parameterTypes = constructor.getParameterTypes();
-                                List<String> parametersTypeList = new ArrayList<>();
-                                for (Class<?> parameterType : parameterTypes) {
-                                    parametersTypeList.add(parameterType.toString());
-                                }
-                                Object[] arguments = getConstructorParam(parametersTypeList);
-                                Object obj = constructor.newInstance(arguments);
-                                objectsPool.add(obj);
+                // generate the constructor with arguments
+                for (Class<?> cl : clazzes) {
+                    Constructor<?>[] constructors = cl.getConstructors();
+                    for (Constructor<?> constructor : constructors) {
+                        if (constructor.getParameterCount() != 0) {
+                            Class<?>[] parameterTypes = constructor.getParameterTypes();
+                            List<String> parametersTypeList = new ArrayList<>();
+                            for (Class<?> parameterType : parameterTypes) {
+                                parametersTypeList.add(parameterType.toString());
                             }
+                            Object[] arguments = getConstructorParam(parametersTypeList);
+                            Object obj = constructor.newInstance(arguments);
+                            objectsPool.add(obj);
                         }
                     }
-
-                } catch (Exception e) {
-//                    e.printStackTrace();
                 }
+
+            } catch (Exception e) {
+//                    e.printStackTrace();
             }
+        }
+    }
+
+    public void construct() {
+        for (ClassOrInterfaceDeclaration c : classes) {
+            String className = c.getNameAsString();
+
+            getInstance(className, true);
         }
     }
 }

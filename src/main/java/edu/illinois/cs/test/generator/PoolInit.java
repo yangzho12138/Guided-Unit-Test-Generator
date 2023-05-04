@@ -1,26 +1,20 @@
 package edu.illinois.cs.test.generator;
 
 import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.ast.expr.BinaryExpr;
 import com.github.javaparser.ast.expr.CharLiteralExpr;
 import com.github.javaparser.ast.expr.Expression;
 import com.github.javaparser.ast.expr.StringLiteralExpr;
-import com.github.javaparser.ast.stmt.BlockStmt;
 import com.github.javaparser.ast.stmt.IfStmt;
 import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
-import com.github.javaparser.utils.SourceRoot;
 import edu.illinois.cs.test.pojo.ValuePool;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.lang.reflect.Parameter;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.HashSet;
-import java.util.Optional;
 import java.util.Set;
 
 import static com.github.javaparser.StaticJavaParser.parse;
@@ -84,7 +78,7 @@ public class PoolInit extends VoidVisitorAdapter {
 //            System.out.println(o);
 //            System.out.println(o.getClass().toString());
             // Long type
-            if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
+            if(o instanceof BinaryExpr &&
                     (((BinaryExpr) o).getLeft().isLongLiteralExpr() ||
                             ((BinaryExpr) o).getRight().isLongLiteralExpr())){
                 BinaryExpr expr = (BinaryExpr) o;
@@ -110,7 +104,7 @@ public class PoolInit extends VoidVisitorAdapter {
                 }
             }
             // Integer Type
-            if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
+            if(o instanceof BinaryExpr &&
                     (((BinaryExpr) o).getLeft().isIntegerLiteralExpr() ||
                             ((BinaryExpr) o).getRight().isIntegerLiteralExpr())){
                 BinaryExpr expr = (BinaryExpr) o;
@@ -149,7 +143,7 @@ public class PoolInit extends VoidVisitorAdapter {
                 }
             }
             // String Type
-            if(o instanceof com.github.javaparser.ast.expr.StringLiteralExpr){
+            if(o instanceof StringLiteralExpr){
                 String s = ((StringLiteralExpr) o).asString().trim();
                 if (s.length() == 1) {
                     char c = s.charAt(s.length() - 1);
@@ -185,7 +179,7 @@ public class PoolInit extends VoidVisitorAdapter {
                 }
             }
             // Char Type
-            if(o instanceof com.github.javaparser.ast.expr.CharLiteralExpr){
+            if(o instanceof CharLiteralExpr){
                 char c = ((CharLiteralExpr) o).asChar();
                 // continue when unmeaningful char
 
@@ -202,7 +196,7 @@ public class PoolInit extends VoidVisitorAdapter {
                 }
             }
             // Double type
-            if(o instanceof com.github.javaparser.ast.expr.BinaryExpr &&
+            if(o instanceof BinaryExpr &&
                     (((BinaryExpr) o).getLeft().isDoubleLiteralExpr() ||
                             ((BinaryExpr) o).getRight().isDoubleLiteralExpr())){
 
