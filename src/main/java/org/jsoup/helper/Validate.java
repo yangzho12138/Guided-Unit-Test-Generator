@@ -5,7 +5,7 @@ package org.jsoup.helper;
  */
 public final class Validate {
     
-    private Validate() {}
+    public Validate() {}
 
     /**
      * Validates that the object is not null

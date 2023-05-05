@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.nodes.AttributesTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testIteratorRemovable" classname="org.jsoup.nodes.AttributesTest" time="0.0"/>
+  <testcase name="testIteratorHasNext" classname="org.jsoup.nodes.AttributesTest" time="0.0"/>
+  <testcase name="removeCaseSensitive" classname="org.jsoup.nodes.AttributesTest" time="0.0"/>
+  <testcase name="html" classname="org.jsoup.nodes.AttributesTest" time="0.001"/>
+  <testcase name="testSetKeyConsistency" classname="org.jsoup.nodes.AttributesTest" time="0.0"/>
+  <testcase name="testIteratorEmpty" classname="org.jsoup.nodes.AttributesTest" time="0.0"/>
+  <testcase name="testIterator" classname="org.jsoup.nodes.AttributesTest" time="0.0"/>
+  <testcase name="testIteratorUpdateable" classname="org.jsoup.nodes.AttributesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

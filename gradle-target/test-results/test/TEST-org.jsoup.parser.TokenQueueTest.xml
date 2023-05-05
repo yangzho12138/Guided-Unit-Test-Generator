@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.parser.TokenQueueTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:52:59" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="addFirst" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="unescape" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="chompToIgnoreCase" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="chompEscapedBalanced" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="consumeToIgnoreSecondCallTest" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="chompBalancedThrowIllegalArgumentException" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="chompBalanced" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="testNestedQuotes" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <testcase name="chompBalancedMatchesAsMuchAsPossible" classname="org.jsoup.parser.TokenQueueTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

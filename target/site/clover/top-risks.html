@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Thu May 4 2023 21:58:36 CDT</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = topRisksDescription();
+                var title = 'Top Risks';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/jsoup/nodes/Attribute.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 1.75 , Coverage - 65% ">Attribute</a>
+            
+    
+            <a href="org/jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.114 , Coverage - 94.6% ">Attributes</a>
+            
+    
+            <a href="org/jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">Attributes.Dataset</a>
+            
+    
+            <a href="org/jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">Attributes.Dataset.DatasetIterator</a>
+            
+    
+            <a href="org/jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">Attributes.Dataset.EntrySet</a>
+            
+    
+            <a href="org/jsoup/nodes/BooleanAttribute.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">BooleanAttribute</a>
+            
+    
+            <a href="org/jsoup/nodes/CDataNode.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 91.7% ">CDataNode</a>
+            
+    
+            <a href="org/jsoup/helper/ChangeNotifyingArrayList.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 57.1% ">ChangeNotifyingArrayList</a>
+            
+    
+            <a href="org/jsoup/parser/CharacterReader.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 3.268 , Coverage - 96.7% ">CharacterReader</a>
+            
+    
+            <a href="org/jsoup/safety/Cleaner.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">Cleaner</a>
+            
+    
+            <a href="org/jsoup/safety/Cleaner.html" class="tag"
+            style="font-size: 24px;color:#89c495"
+            title="Average Method Complexity - 3.667 , Coverage - 100% ">Cleaner.CleaningVisitor</a>
+            
+    
+            <a href="org/jsoup/safety/Cleaner.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Cleaner.ElementMeta</a>
+            
+    
+            <a href="org/jsoup/select/Collector.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Collector</a>
+            
+    
+            <a href="org/jsoup/select/Collector.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">Collector.Accumulator</a>
+            
+    
+            <a href="org/jsoup/select/Collector.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">Collector.FirstFinder</a>
+            
+    
+            <a href="org/jsoup/select/CombiningEvaluator.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 93.3% ">CombiningEvaluator</a>
+            
+    
+            <a href="org/jsoup/select/CombiningEvaluator.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">CombiningEvaluator.And</a>
+            
+    
+            <a href="org/jsoup/select/CombiningEvaluator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 85.2% ">CombiningEvaluator.Or</a>
+            
+    
+            <a href="org/jsoup/nodes/Comment.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.222 , Coverage - 90.3% ">Comment</a>
+            
+    
+            <a href="org/jsoup/Connection.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Connection.Method</a>
+            
+    
+            <a href="org/jsoup/internal/ConstrainableInputStream.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 3.143 , Coverage - 88.2% ">ConstrainableInputStream</a>
+            
+    
+            <a href="org/jsoup/nodes/DataNode.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DataNode</a>
+            
+    
+            <a href="org/jsoup/helper/DataUtil.html" class="tag"
+            style="font-size: 29px;color:#14892c"
+            title="Average Method Complexity - 5.083 , Coverage - 91.6% ">DataUtil</a>
+            
+    
+            <a href="org/jsoup/helper/DataUtil.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DataUtil.BomCharset</a>
+            
+    
+            <a href="org/jsoup/nodes/Document.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.815 , Coverage - 89.2% ">Document</a>
+            
+    
+            <a href="org/jsoup/nodes/Document.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.118 , Coverage - 98.1% ">Document.OutputSettings</a>
+            
+    
+            <a href="org/jsoup/nodes/DocumentType.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 2.375 , Coverage - 96.7% ">DocumentType</a>
+            
+    
+            <a href="org/jsoup/nodes/Element.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 1.873 , Coverage - 95.8% ">Element</a>
+            
+    
+            <a href="org/jsoup/nodes/Element.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Element.NodeList</a>
+            
+    
+            <a href="org/jsoup/select/Elements.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.404 , Coverage - 99.6% ">Elements</a>
+            
+    
+            <a href="org/jsoup/nodes/Entities.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 3.214 , Coverage - 97.1% ">Entities</a>
+            
+    
+            <a href="org/jsoup/nodes/Entities.html" class="tag"
+            style="font-size: 22px;color:#89c495"
+            title="Average Method Complexity - 3 , Coverage - 100% ">Entities.CoreCharset</a>
+            
+    
+            <a href="org/jsoup/nodes/Entities.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 88.9% ">Entities.EscapeMode</a>
+            
+    
+            <a href="org/jsoup/nodes/EntitiesData.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">EntitiesData</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.AllElements</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">Evaluator.Attribute</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 29px;color:#89c495"
+            title="Average Method Complexity - 5 , Coverage - 100% ">Evaluator.AttributeKeyPair</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.333 , Coverage - 84.6% ">Evaluator.AttributeStarting</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.AttributeWithValue</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.AttributeWithValueContaining</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">Evaluator.AttributeWithValueEnding</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">Evaluator.AttributeWithValueMatching</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.AttributeWithValueNot</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">Evaluator.AttributeWithValueStarting</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.Class</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.ContainsData</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.ContainsOwnText</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.ContainsText</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 2.25 , Coverage - 77.8% ">Evaluator.CssNthEvaluator</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">Evaluator.Id</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IndexEquals</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IndexEvaluator</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IndexGreaterThan</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IndexLessThan</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 2.5 , Coverage - 100% ">Evaluator.IsEmpty</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IsFirstChild</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IsFirstOfType</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IsLastChild</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IsLastOfType</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">Evaluator.IsNthChild</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">Evaluator.IsNthLastChild</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">Evaluator.IsNthLastOfType</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.667 , Coverage - 88.2% ">Evaluator.IsNthOfType</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.IsOnlyChild</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 87.5% ">Evaluator.IsOnlyOfType</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.5 , Coverage - 71.4% ">Evaluator.IsRoot</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 84.6% ">Evaluator.MatchText</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.Matches</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.MatchesOwn</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.Tag</a>
+            
+    
+            <a href="org/jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Evaluator.TagEndsWith</a>
+            
+    
+            <a href="org/jsoup/nodes/FormElement.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 3.167 , Coverage - 85.3% ">FormElement</a>
+            
+    
+            <a href="org/jsoup/examples/HtmlToPlainText.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 19% ">HtmlToPlainText</a>
+            
+    
+            <a href="org/jsoup/examples/HtmlToPlainText.html" class="tag"
+            style="font-size: 27px;color:#e28e87"
+            title="Average Method Complexity - 4.5 , Coverage - 47.5% ">HtmlToPlainText.FormattingVisitor</a>
+            
+    
+            <a href="org/jsoup/parser/HtmlTreeBuilder.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.289 , Coverage - 87.5% ">HtmlTreeBuilder</a>
+            
+    
+            <a href="org/jsoup/parser/HtmlTreeBuilderState.html" class="tag"
+            style="font-size: 48px;color:#fae1a0"
+            title="Average Method Complexity - 10.366 , Coverage - 75% ">HtmlTreeBuilderState</a>
+            
+    
+            <a href="org/jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.171 , Coverage - 86.1% ">HttpConnection</a>
+            
+    
+            <a href="org/jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.913 , Coverage - 86.3% ">HttpConnection.Base</a>
+            
+    
+            <a href="org/jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">HttpConnection.KeyVal</a>
+            
+    
+            <a href="org/jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.042 , Coverage - 90.7% ">HttpConnection.Request</a>
+            
+    
+            <a href="org/jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 25px;color:#d5584c"
+            title="Average Method Complexity - 3.792 , Coverage - 14.7% ">HttpConnection.Response</a>
+            
+    
+            <a href="org/jsoup/HttpStatusException.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">HttpStatusException</a>
+            
+    
+            <a href="org/jsoup/Jsoup.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 95% ">Jsoup</a>
+            
+    
+            <a href="org/jsoup/nodes/LeafNode.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">LeafNode</a>
+            
+    
+            <a href="org/jsoup/nodes/Node.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.611 , Coverage - 95.1% ">Node</a>
+            
+    
+            <a href="org/jsoup/nodes/Node.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 86.7% ">Node.OuterHtmlVisitor</a>
+            
+    
+            <a href="org/jsoup/select/NodeTraversor.html" class="tag"
+            style="font-size: 27px;color:#14892c"
+            title="Average Method Complexity - 4.5 , Coverage - 93.8% ">NodeTraversor</a>
+            
+    
+            <a href="org/jsoup/nodes/NodeUtils.html" class="tag"
+            style="font-size: 20px;color:#89c495"
+            title="Average Method Complexity - 2.5 , Coverage - 100% ">NodeUtils</a>
+            
+    
+            <a href="org/jsoup/internal/Normalizer.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 83.3% ">Normalizer</a>
+            
+    
+            <a href="org/jsoup/parser/ParseError.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 83.3% ">ParseError</a>
+            
+    
+            <a href="org/jsoup/parser/ParseErrorList.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ParseErrorList</a>
+            
+    
+            <a href="org/jsoup/parser/ParseSettings.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.429 , Coverage - 100% ">ParseSettings</a>
+            
+    
+            <a href="org/jsoup/parser/Parser.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.1 , Coverage - 100% ">Parser</a>
+            
+    
+            <a href="org/jsoup/nodes/PseudoTextElement.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PseudoTextElement</a>
+            
+    
+            <a href="org/jsoup/select/QueryParser.html" class="tag"
+            style="font-size: 27px;color:#89c495"
+            title="Average Method Complexity - 4.429 , Coverage - 98.1% ">QueryParser</a>
+            
+    
+            <a href="org/jsoup/select/Selector.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 97.6% ">Selector</a>
+            
+    
+            <a href="org/jsoup/select/Selector.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Selector.SelectorParseException</a>
+            
+    
+            <a href="org/jsoup/internal/StringUtil.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 2.765 , Coverage - 97.3% ">StringUtil</a>
+            
+    
+            <a href="org/jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 81.8% ">StructuralEvaluator.Has</a>
+            
+    
+            <a href="org/jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">StructuralEvaluator.ImmediateParent</a>
+            
+    
+            <a href="org/jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.333 , Coverage - 81.8% ">StructuralEvaluator.ImmediatePreviousSibling</a>
+            
+    
+            <a href="org/jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">StructuralEvaluator.Not</a>
+            
+    
+            <a href="org/jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 90.5% ">StructuralEvaluator.Parent</a>
+            
+    
+            <a href="org/jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 68.4% ">StructuralEvaluator.PreviousSibling</a>
+            
+    
+            <a href="org/jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StructuralEvaluator.Root</a>
+            
+    
+            <a href="org/jsoup/parser/Tag.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 1.87 , Coverage - 73.5% ">Tag</a>
+            
+    
+            <a href="org/jsoup/nodes/TextNode.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.562 , Coverage - 86.3% ">TextNode</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.067 , Coverage - 96.9% ">Token</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">Token.CData</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Token.Character</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">Token.Comment</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Token.Doctype</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Token.EOF</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">Token.EndTag</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">Token.StartTag</a>
+            
+    
+            <a href="org/jsoup/parser/Token.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.611 , Coverage - 96.9% ">Token.Tag</a>
+            
+    
+            <a href="org/jsoup/parser/TokenQueue.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2.625 , Coverage - 93.2% ">TokenQueue</a>
+            
+    
+            <a href="org/jsoup/parser/Tokeniser.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 2.593 , Coverage - 90.2% ">Tokeniser</a>
+            
+    
+            <a href="org/jsoup/parser/TokeniserState.html" class="tag"
+            style="font-size: 31px;color:#f6c342"
+            title="Average Method Complexity - 5.521 , Coverage - 63.2% ">TokeniserState</a>
+            
+    
+            <a href="org/jsoup/parser/TreeBuilder.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.75 , Coverage - 94.6% ">TreeBuilder</a>
+            
+    
+            <a href="org/jsoup/UncheckedIOException.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">UncheckedIOException</a>
+            
+    
+            <a href="org/jsoup/helper/Validate.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 1.917 , Coverage - 92.2% ">Validate</a>
+            
+    
+            <a href="org/jsoup/helper/W3CDom.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 92.6% ">W3CDom</a>
+            
+    
+            <a href="org/jsoup/helper/W3CDom.html" class="tag"
+            style="font-size: 24px;color:#89c495"
+            title="Average Method Complexity - 3.6 , Coverage - 98.6% ">W3CDom.W3CBuilder</a>
+            
+    
+            <a href="org/jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.3 , Coverage - 90.2% ">Whitelist</a>
+            
+    
+            <a href="org/jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Whitelist.AttributeKey</a>
+            
+    
+            <a href="org/jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Whitelist.AttributeValue</a>
+            
+    
+            <a href="org/jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Whitelist.Protocol</a>
+            
+    
+            <a href="org/jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Whitelist.TagName</a>
+            
+    
+            <a href="org/jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.25 , Coverage - 71% ">Whitelist.TypedValue</a>
+            
+    
+            <a href="org/jsoup/nodes/XmlDeclaration.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 1.444 , Coverage - 97.1% ">XmlDeclaration</a>
+            
+    
+            <a href="org/jsoup/parser/XmlTreeBuilder.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.308 , Coverage - 95% ">XmlTreeBuilder</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu May 4 2023 21:58:45 CDT using coverage data from Thu May 4 2023 21:58:43 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

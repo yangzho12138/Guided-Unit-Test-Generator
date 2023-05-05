@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Xipeng-Songs-MacBook-Pro.local" name="org.jsoup.parser.ParserSettingsTest" skipped="0" tests="3" time="0.043" timestamp="2023-01-23T18:32:06">
+  <properties>
+    <property name="ant.library.dir" value="/opt/homebrew/Cellar/ant/1.10.12/libexec/lib" />
+    <property name="env.TERM" value="xterm-256color" />
+    <property name="java.specification.version" value="18" />
+    <property name="ant.project.name" value="xipengs2" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="env.TERMINAL_EMULATOR" value="JetBrains-JediTerm" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues" />
+    <property name="env._CE_CONDA" value="" />
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home/lib" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner org.jsoup.parser.ParserSettingsTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/songxipeng/Desktop/CS 527/MP1/ant-target/reports/TEST-org.jsoup.parser.ParserSettingsTest.xml crashfile=/Users/songxipeng/Desktop/CS 527/MP1/junitvmwatcher8161711835188572286.properties propsfile=/Users/songxipeng/Desktop/CS 527/MP1/junit5385972986538721412.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="sun.stderr.encoding" value="UTF-8" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.version.date" value="2022-08-18" />
+    <property name="env.JAVA_HOME" value="/opt/homebrew/opt/openjdk" />
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home" />
+    <property name="env.CONDA_PREFIX" value="/Users/songxipeng/opt/anaconda3" />
+    <property name="basedir" value="/Users/songxipeng/Desktop/CS 527/MP1" />
+    <property name="file.separator" value="/" />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="sun.stdout.encoding" value="UTF-8" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="env.HOMEBREW_REPOSITORY" value="/opt/homebrew" />
+    <property name="env.MANPATH" value="/opt/homebrew/share/man::" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="java.runtime.version" value="18.0.2.1+0" />
+    <property name="user.name" value="songxipeng" />
+    <property name="env.PATH" value="/Users/songxipeng/opt/anaconda3/bin:/Users/songxipeng/opt/anaconda3/condabin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin" />
+    <property name="env.XPC_FLAGS" value="0x0" />
+    <property name="env.LOGNAME" value="songxipeng" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0x0:0x0" />
+    <property name="env.__CFBundleIdentifier" value="com.jetbrains.intellij" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.vendor.version" value="Homebrew" />
+    <property name="env.TERM_SESSION_ID" value="05a2eba8-30ad-4995-88de-87156233ac8b" />
+    <property name="env.SHLVL" value="1" />
+    <property name="java.io.tmpdir" value="/var/folders/tj/qfwb3mxj4hl54_0vtx068cxc0000gn/T/" />
+    <property name="java.version" value="18.0.2.1" />
+    <property name="env.CONDA_DEFAULT_ENV" value="base" />
+    <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.qcDHzzQDb8/Listeners" />
+    <property name="env.CONDA_PYTHON_EXE" value="/Users/songxipeng/opt/anaconda3/bin/python" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="/opt/homebrew/Cellar/ant/1.10.12/libexec" />
+    <property name="junit.output.dir" value="ant-target/reports" />
+    <property name="native.encoding" value="UTF-8" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+    <property name="java.library.path" value="/Users/songxipeng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:." />
+    <property name="env.TMPDIR" value="/var/folders/tj/qfwb3mxj4hl54_0vtx068cxc0000gn/T/" />
+    <property name="java.vendor" value="Homebrew" />
+    <property name="ant.file.type.xipengs2" value="file" />
+    <property name="sun.io.unicode.encoding" value="UnicodeBig" />
+    <property name="env.INFOPATH" value="/opt/homebrew/share/info:" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.file.type" value="file" />
+    <property name="env.PWD" value="/Users/songxipeng/Desktop/CS 527/MP1" />
+    <property name="env.LC_CTYPE" value="en_US.UTF-8" />
+    <property name="java.class.path" value="/Users/songxipeng/Desktop/CS 527/MP1/target/test-classes:/Users/songxipeng/Desktop/CS 527/MP1/target/classes:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/gson-2.7.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/hamcrest-core-1.3.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/javax.servlet-api-3.1.0.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/jetty-http-9.2.28.v20190418.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/jetty-io-9.2.28.v20190418.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/jetty-security-9.2.28.v20190418.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/jetty-server-9.2.28.v20190418.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/jetty-servlet-9.2.28.v20190418.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/jetty-util-9.2.28.v20190418.jar:/Users/songxipeng/Desktop/CS 527/MP1/ant-libs/junit-4.12.jar:/opt/homebrew/Cellar/ant/1.10.12/libexec/lib/ant-launcher.jar:/opt/homebrew/Cellar/ant/1.10.12/libexec/lib/ant.jar:/opt/homebrew/Cellar/ant/1.10.12/libexec/lib/ant-junit.jar:/opt/homebrew/Cellar/ant/1.10.12/libexec/lib/ant-junit4.jar" />
+    <property name="env.HOME" value="/Users/songxipeng" />
+    <property name="env.COMMAND_MODE" value="unix2003" />
+    <property name="source" value="1.8" />
+    <property name="java.vm.vendor" value="Homebrew" />
+    <property name="env.CONDA_SHLVL" value="1" />
+    <property name="env.__INTELLIJ_COMMAND_HISTFILE__" value="/Users/songxipeng/Library/Caches/JetBrains/IntelliJIdea2022.2/terminal/history/MP1-history" />
+    <property name="java.vm.specification.version" value="18" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="CN" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="/Users/songxipeng" />
+    <property name="user.language" value="en" />
+    <property name="env.CONDA_EXE" value="/Users/songxipeng/opt/anaconda3/bin/conda" />
+    <property name="ant.file.xipengs2" value="/Users/songxipeng/Desktop/CS 527/MP1/build.xml" />
+    <property name="ant.java.version" value="18" />
+    <property name="env.HOMEBREW_CELLAR" value="/opt/homebrew/Cellar" />
+    <property name="apple.awt.application.name" value="JUnitTestRunner" />
+    <property name="env.XPC_SERVICE_NAME" value="0" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.HOMEBREW_PREFIX" value="/opt/homebrew" />
+    <property name="ant.file" value="/Users/songxipeng/Desktop/CS 527/MP1/build.xml" />
+    <property name="path.separator" value=":" />
+    <property name="os.version" value="13.1" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="env.CONDA_PROMPT_MODIFIER" value="(base) " />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="env.SHELL" value="/bin/zsh" />
+    <property name="ant.core.lib" value="/opt/homebrew/Cellar/ant/1.10.12/libexec/lib/ant.jar" />
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues" />
+    <property name="user.dir" value="/Users/songxipeng/Desktop/CS 527/MP1" />
+    <property name="os.arch" value="aarch64" />
+    <property name="target" value="1.8" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="18.0.2.1+0" />
+    <property name="env._CE_M" value="" />
+    <property name="env.LOGIN_SHELL" value="1" />
+    <property name="java.class.version" value="62.0" />
+    <property name="env.USER" value="songxipeng" />
+    <property name="ant.project.default-target" value="build" />
+  </properties>
+  <testcase classname="org.jsoup.parser.ParserSettingsTest" name="attributesCaseNormalization" time="0.002" />
+  <testcase classname="org.jsoup.parser.ParserSettingsTest" name="caseSupport" time="0.0" />
+  <testcase classname="org.jsoup.parser.ParserSettingsTest" name="attributeCaseNormalization" time="0.001" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

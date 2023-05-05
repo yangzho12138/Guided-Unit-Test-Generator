@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="34" failures="0" name="org.jsoup.safety.CleanerTest" time="0.02" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.2.1+0"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/songxipeng/Downloads/MP1"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/songxipeng/Downloads/MP1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="18.0.2.1+0"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/tj/qfwb3mxj4hl54_0vtx068cxc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/songxipeng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/songxipeng"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="songxipeng"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean clover:setup test clover:aggregate clover:clover"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.8.6/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testHandlesEmptyAttributes" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="basicBehaviourTest" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="handlesCustomProtocols" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testIsValidBodyHtml" time="0.002"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="handlesNoHrefAttribute" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="preservesRelativeLinksIfConfigured" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testCleanAnchorProtocol" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="bailsIfRemovingProtocolThatsNotSet" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testDropScript" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testRemoveTags" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testRemoveAttributes" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testRemoveEnforcedAttributes" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testRelaxed" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="resolvesRelativeLinks" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testDropComments" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="handlesFramesets" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="handlesControlCharactersAfterTagName" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="simpleBehaviourTest2" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testRemoveProtocols" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testDropImageScript" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="simpleBehaviourTest" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="handlesAttributesWithNoValue" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="dropsUnresolvableRelativeLinks" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testScriptTagInWhiteList" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="addsTagOnAttributesIfNotSet" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testDropsUnknownTags" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testCleanJavascriptHref" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="basicWithImagesTest" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="whitelistedProtocolShouldBeRetained" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testDropXmlProc" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="testIsValidDocument" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="handlesAllPseudoTag" time="0"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="supplyOutputSettings" time="0.001"/>
+  <testcase classname="org.jsoup.safety.CleanerTest" name="cleansInternationalText" time="0.001"/>
+</testsuite>

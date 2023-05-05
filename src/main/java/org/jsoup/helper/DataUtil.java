@@ -40,7 +40,7 @@ public final class DataUtil {
             "-_1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
     static final int boundaryLength = 32;
 
-    private DataUtil() {}
+    public DataUtil() {}
 
     /**
      * Loads a file to a Document.

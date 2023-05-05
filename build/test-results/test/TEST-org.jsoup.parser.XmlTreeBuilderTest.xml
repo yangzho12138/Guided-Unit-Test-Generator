@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.parser.XmlTreeBuilderTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="testPopToClose" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001"/>
+  <testcase name="handlesXmlDeclarationAsDeclaration" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="dropsDuplicateAttributes" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="caseSensitiveDeclaration" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="handlesDodgyXmlDecl" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="handlesLTinScript" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testSupplyParserToJsoupClass" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="normalizesDiscordantTags" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testDoesNotForceSelfClosingKnownTags" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testCommentAndDocType" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testSimpleXmlParse" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="xmlFragment" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001"/>
+  <testcase name="appendPreservesCaseByDefault" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testDetectCharsetEncodingDeclaration" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="roundTripsCdata" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="canNormalizeCase" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="cdataPreservesWhiteSpace" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="preservesCaseByDefault" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testParseDeclarationAttributes" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testSupplyParserToDataStream" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.001"/>
+  <testcase name="xmlParseDefaultsToHtmlOutputSyntax" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testCreatesValidProlog" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <testcase name="testDoesHandleEOFInTag" classname="org.jsoup.parser.XmlTreeBuilderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

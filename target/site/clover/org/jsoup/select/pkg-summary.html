@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.jsoup.select">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Thu May 4 2023 21:58:36 CDT</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package org.jsoup.select
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+
+            <ul class="tabs-menu">
+                <li class="menu-item active-tab">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+            <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">286</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">704</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">228</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">60</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">10</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">2,532</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">1,551</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">387</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.55</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.09</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3.8</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">1.7</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this package">Branches:</label></div>
+        <div class="stats-box-value">286</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this package">Statements:</label></div>
+        <div class="stats-box-value">704</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this package">Methods:</label></div>
+        <div class="stats-box-value">228</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this package">Classes:</label></div>
+        <div class="stats-box-value">60</div>
+    </div>
+            <div class="stats-box">
+            <div class="stats-box-label"><label title="Total number of files in this package">Files:</label></div>
+            <div class="stats-box-value">10</div>
+        </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this package">LOC:</label></div>
+        <div class="stats-box-value">2,532</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this package">NCLOC:</label></div>
+        <div class="stats-box-value">1,551</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this package">Total complexity:</label></div>
+        <div class="stats-box-value">387</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this package">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.55</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3.09</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">3.8</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this package">Average method complexity:</label></div>
+        <div class="stats-box-value">1.7</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+        
+
+
+        
+
+        
+        <table id="packageSummaryTable" class="aui">
+                        <thead>
+    <tr>
+        <th width="30%">Package</th>
+                    <th colspan="1">
+                <label >Files</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The average number of paths per method.">Average Method Complexity</label>
+            </th>
+                    <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+            </th>
+                    <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+            </th>
+            </tr>
+</thead>
+            <tbody>
+                                <tr>
+    <td>
+                <span class="sortValue">org.jsoup.select</span>
+                    org.jsoup.select
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">10.0</span>
+            10
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6973684</span>
+            1.7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">64.0</span>
+            64
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.94745487</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.94745487</span>94.7%</div><div style="display: table-cell">
+ <div title="94.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:94.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+            </tbody>
+        </table>
+
+        <div>&#160;</div>
+
+        
+        <table id="packageClassesTable" class="aui aui-table-sortable">
+                        <thead>
+    <tr>
+        <th width="30%">Class</th>
+                            <th colspan="1">
+                <label >
+                    Methods
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The percentage of elements that have been filtered from this report.">
+                    % Filtered
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The average number of paths per method.">
+                    Average Method Complexity
+                </label>
+            </th>
+                                <th colspan="1">
+                <label  title="The number of statements and branches that were not covered during testing.">
+                    Uncovered Elements
+                </label>
+            </th>
+                                <th colspan="2">
+                <label  title="The amount of code that was hit at least once during testing.">
+                    TOTAL Coverage
+                </label>
+            </th>
+                        </tr>
+</thead>
+            <tbody>
+                                                                                                                                                                                                                                                                                                                                                            <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.Attribute</span>
+                    <a href="Evaluator.html" title="Evaluator.Attribute">Evaluator.Attribute</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeWithValueEnding</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeWithValueEnding">Evaluator.AttributeWithValueEnding</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeWithValueStarting</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeWithValueStarting">Evaluator.AttributeWithValueStarting</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.Id</span>
+                    <a href="Evaluator.html" title="Evaluator.Id">Evaluator.Id</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsNthChild</span>
+                    <a href="Evaluator.html" title="Evaluator.IsNthChild">Evaluator.IsNthChild</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsNthLastChild</span>
+                    <a href="Evaluator.html" title="Evaluator.IsNthLastChild">Evaluator.IsNthLastChild</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">StructuralEvaluator.Not</span>
+                    <a href="StructuralEvaluator.html" title="StructuralEvaluator.Not">StructuralEvaluator.Not</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.6666667</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.6666667</span>66.7%</div><div style="display: table-cell">
+ <div title="66.7% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:66.7%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">StructuralEvaluator.PreviousSibling</span>
+                    <a href="StructuralEvaluator.html" title="StructuralEvaluator.PreviousSibling">StructuralEvaluator.PreviousSibling</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.68421054</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.68421054</span>68.4%</div><div style="display: table-cell">
+ <div title="68.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:68.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeWithValueMatching</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeWithValueMatching">Evaluator.AttributeWithValueMatching</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.71428573</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.71428573</span>71.4%</div><div style="display: table-cell">
+ <div title="71.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsRoot</span>
+                    <a href="Evaluator.html" title="Evaluator.IsRoot">Evaluator.IsRoot</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.71428573</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.71428573</span>71.4%</div><div style="display: table-cell">
+ <div title="71.4% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:71.4%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.CssNthEvaluator</span>
+                    <a href="Evaluator.html" title="Evaluator.CssNthEvaluator">Evaluator.CssNthEvaluator</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.25</span>
+            2.25
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.7777778</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.7777778</span>77.8%</div><div style="display: table-cell">
+ <div title="77.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:77.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">StructuralEvaluator.Has</span>
+                    <a href="StructuralEvaluator.html" title="StructuralEvaluator.Has">StructuralEvaluator.Has</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6666666</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8181818</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8181818</span>81.8%</div><div style="display: table-cell">
+ <div title="81.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:81.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">StructuralEvaluator.ImmediatePreviousSibling</span>
+                    <a href="StructuralEvaluator.html" title="StructuralEvaluator.ImmediatePreviousSibling">StructuralEvaluator.ImmediatePreviousSibling</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1.33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8181818</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8181818</span>81.8%</div><div style="display: table-cell">
+ <div title="81.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:81.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeStarting</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeStarting">Evaluator.AttributeStarting</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1.33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.84615386</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.84615386</span>84.6%</div><div style="display: table-cell">
+ <div title="84.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:84.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.MatchText</span>
+                    <a href="Evaluator.html" title="Evaluator.MatchText">Evaluator.MatchText</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.84615386</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.84615386</span>84.6%</div><div style="display: table-cell">
+ <div title="84.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:84.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CombiningEvaluator.Or</span>
+                    <a href="CombiningEvaluator.html" title="CombiningEvaluator.Or">CombiningEvaluator.Or</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.8518519</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8518519</span>85.2%</div><div style="display: table-cell">
+ <div title="85.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:85.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsOnlyOfType</span>
+                    <a href="Evaluator.html" title="Evaluator.IsOnlyOfType">Evaluator.IsOnlyOfType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.875</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.875</span>87.5%</div><div style="display: table-cell">
+ <div title="87.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:87.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsNthOfType</span>
+                    <a href="Evaluator.html" title="Evaluator.IsNthOfType">Evaluator.IsNthOfType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6666666</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.88235295</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.88235295</span>88.2%</div><div style="display: table-cell">
+ <div title="88.2% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:88.2%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">StructuralEvaluator.Parent</span>
+                    <a href="StructuralEvaluator.html" title="StructuralEvaluator.Parent">StructuralEvaluator.Parent</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9047619</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9047619</span>90.5%</div><div style="display: table-cell">
+ <div title="90.5% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90.5%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CombiningEvaluator</span>
+                    <a href="CombiningEvaluator.html" title="CombiningEvaluator">CombiningEvaluator</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.2</span>
+            1.2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.93333334</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.93333334</span>93.3%</div><div style="display: table-cell">
+ <div title="93.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:93.3%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">NodeTraversor</span>
+                    <a href="NodeTraversor.html" title="NodeTraversor">NodeTraversor</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.5</span>
+            4.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9375</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9375</span>93.8%</div><div style="display: table-cell">
+ <div title="93.8% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:93.8%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Selector</span>
+                    <a href="Selector.html" title="Selector">Selector</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">6.0</span>
+            6
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9756098</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9756098</span>97.6%</div><div style="display: table-cell">
+ <div title="97.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:97.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">QueryParser</span>
+                    <a href="QueryParser.html" title="QueryParser">QueryParser</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">21.0</span>
+            21
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">4.428571</span>
+            4.43
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">7.0</span>
+            7
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.9811321</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9811321</span>98.1%</div><div style="display: table-cell">
+ <div title="98.1% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:98.1%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Elements</span>
+                    <a href="Elements.html" title="Elements">Elements</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">52.0</span>
+            52
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.4038461</span>
+            1.4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.99590164</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.99590164</span>99.6%</div><div style="display: table-cell">
+ <div title="99.6% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:99.6%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Collector</span>
+                    <a href="Collector.html" title="Collector">Collector</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Collector.Accumulator</span>
+                    <a href="Collector.html" title="Collector.Accumulator">Collector.Accumulator</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6666666</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Collector.FirstFinder</span>
+                    <a href="Collector.html" title="Collector.FirstFinder">Collector.FirstFinder</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6666666</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">CombiningEvaluator.And</span>
+                    <a href="CombiningEvaluator.html" title="CombiningEvaluator.And">CombiningEvaluator.And</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">4.0</span>
+            4
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.5</span>
+            1.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator</span>
+                    <a href="Evaluator.html" title="Evaluator">Evaluator</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AllElements</span>
+                    <a href="Evaluator.html" title="Evaluator.AllElements">Evaluator.AllElements</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeKeyPair</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeKeyPair">Evaluator.AttributeKeyPair</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">5.0</span>
+            5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeWithValue</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeWithValue">Evaluator.AttributeWithValue</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeWithValueContaining</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeWithValueContaining">Evaluator.AttributeWithValueContaining</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.AttributeWithValueNot</span>
+                    <a href="Evaluator.html" title="Evaluator.AttributeWithValueNot">Evaluator.AttributeWithValueNot</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.Class</span>
+                    <a href="Evaluator.html" title="Evaluator.Class">Evaluator.Class</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.ContainsData</span>
+                    <a href="Evaluator.html" title="Evaluator.ContainsData">Evaluator.ContainsData</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.ContainsOwnText</span>
+                    <a href="Evaluator.html" title="Evaluator.ContainsOwnText">Evaluator.ContainsOwnText</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.ContainsText</span>
+                    <a href="Evaluator.html" title="Evaluator.ContainsText">Evaluator.ContainsText</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IndexEquals</span>
+                    <a href="Evaluator.html" title="Evaluator.IndexEquals">Evaluator.IndexEquals</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IndexEvaluator</span>
+                    <a href="Evaluator.html" title="Evaluator.IndexEvaluator">Evaluator.IndexEvaluator</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IndexGreaterThan</span>
+                    <a href="Evaluator.html" title="Evaluator.IndexGreaterThan">Evaluator.IndexGreaterThan</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IndexLessThan</span>
+                    <a href="Evaluator.html" title="Evaluator.IndexLessThan">Evaluator.IndexLessThan</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsEmpty</span>
+                    <a href="Evaluator.html" title="Evaluator.IsEmpty">Evaluator.IsEmpty</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">2.5</span>
+            2.5
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsFirstChild</span>
+                    <a href="Evaluator.html" title="Evaluator.IsFirstChild">Evaluator.IsFirstChild</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsFirstOfType</span>
+                    <a href="Evaluator.html" title="Evaluator.IsFirstOfType">Evaluator.IsFirstOfType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsLastChild</span>
+                    <a href="Evaluator.html" title="Evaluator.IsLastChild">Evaluator.IsLastChild</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsLastOfType</span>
+                    <a href="Evaluator.html" title="Evaluator.IsLastOfType">Evaluator.IsLastOfType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsNthLastOfType</span>
+                    <a href="Evaluator.html" title="Evaluator.IsNthLastOfType">Evaluator.IsNthLastOfType</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.6666666</span>
+            1.67
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.IsOnlyChild</span>
+                    <a href="Evaluator.html" title="Evaluator.IsOnlyChild">Evaluator.IsOnlyChild</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">2.0</span>
+            2
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.Matches</span>
+                    <a href="Evaluator.html" title="Evaluator.Matches">Evaluator.Matches</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.MatchesOwn</span>
+                    <a href="Evaluator.html" title="Evaluator.MatchesOwn">Evaluator.MatchesOwn</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.Tag</span>
+                    <a href="Evaluator.html" title="Evaluator.Tag">Evaluator.Tag</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Evaluator.TagEndsWith</span>
+                    <a href="Evaluator.html" title="Evaluator.TagEndsWith">Evaluator.TagEndsWith</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">Selector.SelectorParseException</span>
+                    <a href="Selector.html" title="Selector.SelectorParseException">Selector.SelectorParseException</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">StructuralEvaluator.ImmediateParent</span>
+                    <a href="StructuralEvaluator.html" title="StructuralEvaluator.ImmediateParent">StructuralEvaluator.ImmediateParent</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">3.0</span>
+            3
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.3333334</span>
+            1.33
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                                                                                                <tr>
+    <td>
+                    
+                <span class="sortValue">StructuralEvaluator.Root</span>
+                    <a href="StructuralEvaluator.html" title="StructuralEvaluator.Root">StructuralEvaluator.Root</a>
+                    </td>
+
+                
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0%
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            1
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">0.0</span>
+            0
+        </td>
+        
+            
+        <td class=" " align="right">
+            <span class="sortValue">1.0</span>
+            <div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div>
+        </td>
+        
+    </tr>
+                                                </tbody>
+        </table>
+                    <div>
+                <small>
+                    This package contains 4 empty classes or
+                    interfaces which are not listed.
+                </small>
+            </div>
+        
+    </div> <!-- tabs-pane active-pane -->
+</div>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu May 4 2023 21:58:45 CDT using coverage data from Thu May 4 2023 21:58:43 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

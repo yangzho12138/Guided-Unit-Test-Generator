@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":85,"id":39573,"methods":[{"el":28,"sc":5,"sl":16},{"el":48,"sc":5,"sl":30},{"el":60,"sc":5,"sl":50},{"el":70,"sc":5,"sl":62},{"el":76,"sc":5,"sl":72},{"el":84,"sc":5,"sl":78}],"name":"TextNodeTest","sl":15}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_1206":{"methods":[{"sl":50}],"name":"testSplitText","pass":true,"statements":[{"sl":51},{"sl":52},{"sl":53},{"sl":54},{"sl":55},{"sl":56},{"sl":57},{"sl":58},{"sl":59}]},"test_240":{"methods":[{"sl":72}],"name":"testWithSupplementaryCharacter","pass":true,"statements":[{"sl":73},{"sl":74},{"sl":75}]},"test_269":{"methods":[{"sl":16}],"name":"testBlank","pass":true,"statements":[{"sl":17},{"sl":18},{"sl":19},{"sl":20},{"sl":21},{"sl":23},{"sl":24},{"sl":25},{"sl":26},{"sl":27}]},"test_684":{"methods":[{"sl":30}],"name":"testTextBean","pass":true,"statements":[{"sl":31},{"sl":32},{"sl":34},{"sl":35},{"sl":36},{"sl":37},{"sl":39},{"sl":40},{"sl":42},{"sl":43},{"sl":45},{"sl":46},{"sl":47}]},"test_862":{"methods":[{"sl":62}],"name":"testSplitAnEmbolden","pass":true,"statements":[{"sl":63},{"sl":64},{"sl":65},{"sl":66},{"sl":67},{"sl":69}]},"test_919":{"methods":[{"sl":78}],"name":"testLeadNodesHaveNoChildren","pass":true,"statements":[{"sl":79},{"sl":80},{"sl":81},{"sl":82},{"sl":83}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [269], [269], [269], [269], [269], [269], [], [269], [269], [269], [269], [269], [], [], [684], [684], [684], [], [684], [684], [684], [684], [], [684], [684], [], [684], [684], [], [684], [684], [684], [], [], [1206], [1206], [1206], [1206], [1206], [1206], [1206], [1206], [1206], [1206], [], [], [862], [862], [862], [862], [862], [862], [], [862], [], [], [240], [240], [240], [240], [], [], [919], [919], [919], [919], [919], [919], [], []]

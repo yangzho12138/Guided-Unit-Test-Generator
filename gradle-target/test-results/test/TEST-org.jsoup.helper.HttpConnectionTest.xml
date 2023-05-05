@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.helper.HttpConnectionTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:52:59" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.007">
+  <properties/>
+  <testcase name="throwsExceptionOnParseWithoutExecute" classname="org.jsoup.helper.HttpConnectionTest" time="0.002"/>
+  <testcase name="connectWithUrl" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="ignoresEmptySetCookies" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="throwsOnMalformedUrl" classname="org.jsoup.helper.HttpConnectionTest" time="0.001"/>
+  <testcase name="multipleHeaders" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="cookie" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="timeout" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="method" classname="org.jsoup.helper.HttpConnectionTest" time="0.001"/>
+  <testcase name="handlesHeaderEncodingOnRequest" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="referrer" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="sameHeadersCombineWithComma" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="inputStream" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="throwsExceptionOnBodyAsBytesWithoutExecute" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="data" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="userAgent" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="throwsExceptionOnBodyWithoutExecute" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="headers" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="noUrlThrowsValidationError" classname="org.jsoup.helper.HttpConnectionTest" time="0.001"/>
+  <testcase name="requestBody" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="ignoresEmptyCookieNameAndVals" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="encodeUrl" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="throwsOnOddData" classname="org.jsoup.helper.HttpConnectionTest" time="0.0"/>
+  <testcase name="caseInsensitiveHeaders" classname="org.jsoup.helper.HttpConnectionTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

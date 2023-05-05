@@ -73,7 +73,7 @@ public class Entities {
         }
     }
 
-    private Entities() {
+    public Entities() {
     }
 
     /**

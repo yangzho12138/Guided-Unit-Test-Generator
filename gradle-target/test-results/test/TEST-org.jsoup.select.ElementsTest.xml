@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.select.ElementsTest" tests="34" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:52:59" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.003">
+  <properties/>
+  <testcase name="classWithHyphen" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="before" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="filter" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="eachAttr" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="eachText" classname="org.jsoup.select.ElementsTest" time="0.001"/>
+  <testcase name="absAttr" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="remove" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="unwrap" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="parents" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="unwrapP" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="unwrapKeepsSpace" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="eq" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="is" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="not" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="val" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="attr" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="html" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="text" classname="org.jsoup.select.ElementsTest" time="0.001"/>
+  <testcase name="wrap" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="hasClassCaseInsensitive" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="after" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="empty" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="forms" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="siblings" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="attributes" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="hasAttr" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="hasText" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="hasAbsAttr" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="classes" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="traverse" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="wrapDiv" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="outerHtml" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="tagNameSet" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <testcase name="setHtml" classname="org.jsoup.select.ElementsTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

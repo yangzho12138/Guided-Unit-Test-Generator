@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.safety.CleanerTest" tests="34" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="testHandlesEmptyAttributes" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="basicBehaviourTest" classname="org.jsoup.safety.CleanerTest" time="0.001"/>
+  <testcase name="handlesCustomProtocols" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testIsValidBodyHtml" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="handlesNoHrefAttribute" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="preservesRelativeLinksIfConfigured" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testCleanAnchorProtocol" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="bailsIfRemovingProtocolThatsNotSet" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testDropScript" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testRemoveTags" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testRemoveAttributes" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testRemoveEnforcedAttributes" classname="org.jsoup.safety.CleanerTest" time="0.001"/>
+  <testcase name="testRelaxed" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="resolvesRelativeLinks" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testDropComments" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="handlesFramesets" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="handlesControlCharactersAfterTagName" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="simpleBehaviourTest2" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testRemoveProtocols" classname="org.jsoup.safety.CleanerTest" time="0.001"/>
+  <testcase name="testDropImageScript" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="simpleBehaviourTest" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="handlesAttributesWithNoValue" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="dropsUnresolvableRelativeLinks" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testScriptTagInWhiteList" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="addsTagOnAttributesIfNotSet" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testDropsUnknownTags" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testCleanJavascriptHref" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="basicWithImagesTest" classname="org.jsoup.safety.CleanerTest" time="0.001"/>
+  <testcase name="whitelistedProtocolShouldBeRetained" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testDropXmlProc" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="testIsValidDocument" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="handlesAllPseudoTag" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="supplyOutputSettings" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <testcase name="cleansInternationalText" classname="org.jsoup.safety.CleanerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

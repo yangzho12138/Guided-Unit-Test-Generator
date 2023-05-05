@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * @author Jonathan Hedley
  */
-abstract class TreeBuilder {
+public abstract class TreeBuilder {
     protected Parser parser;
     CharacterReader reader;
     Tokeniser tokeniser;

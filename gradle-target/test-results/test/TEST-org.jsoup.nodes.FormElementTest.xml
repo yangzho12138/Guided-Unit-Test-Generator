@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.nodes.FormElementTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:52:59" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="createsFormData" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="actionWithNoValue" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="removeFormElement" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="formsAddedAfterParseAreFormElements" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="createsSubmitableConnection" classname="org.jsoup.nodes.FormElementTest" time="0.001"/>
+  <testcase name="formDataUsesFirstAttribute" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="controlsAddedAfterParseAreLinkedWithForms" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="adoptedFormsRetainInputs" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="usesOnForCheckboxValueIfNoValueSet" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <testcase name="hasAssociatedControls" classname="org.jsoup.nodes.FormElementTest" time="0.001"/>
+  <testcase name="actionWithNoBaseUri" classname="org.jsoup.nodes.FormElementTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

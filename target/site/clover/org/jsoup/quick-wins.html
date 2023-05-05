@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../style.css');
+        @import url('../../tree.css');
+        
+    </style>
+
+    <script src="../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../clover.js" type="text/javascript"></script>
+    <script src="../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../" data-package-name="org.jsoup">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../dashboard.html">Project Clover database Thu May 4 2023 21:58:36 CDT</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package org.jsoup
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+                            <button id="cloudDepthCheckbox" class="aui-button active"
+                        onclick="showDeepPackageCloud(this)">Include classes from sub-packages</button>
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="../jsoup/nodes/Attribute.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 103 , # Elements Covered - 67 ">Attribute</a>
+            
+    
+            <a href="../jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 240 , # Elements Covered - 227 ">Attributes</a>
+            
+    
+            <a href="../jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">Attributes.Dataset</a>
+            
+    
+            <a href="../jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">Attributes.Dataset.DatasetIterator</a>
+            
+    
+            <a href="../jsoup/nodes/Attributes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">Attributes.Dataset.EntrySet</a>
+            
+    
+            <a href="../jsoup/nodes/BooleanAttribute.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">BooleanAttribute</a>
+            
+    
+            <a href="../jsoup/nodes/CDataNode.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 11 ">CDataNode</a>
+            
+    
+            <a href="../jsoup/helper/ChangeNotifyingArrayList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 20 ">ChangeNotifyingArrayList</a>
+            
+    
+            <a href="../jsoup/parser/CharacterReader.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 421 , # Elements Covered - 407 ">CharacterReader</a>
+            
+    
+            <a href="../jsoup/safety/Cleaner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 43 ">Cleaner</a>
+            
+    
+            <a href="../jsoup/safety/Cleaner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 38 ">Cleaner.CleaningVisitor</a>
+            
+    
+            <a href="../jsoup/safety/Cleaner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">Cleaner.ElementMeta</a>
+            
+    
+            <a href="../jsoup/select/Collector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">Collector</a>
+            
+    
+            <a href="../jsoup/select/Collector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 14 ">Collector.Accumulator</a>
+            
+    
+            <a href="../jsoup/select/Collector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">Collector.FirstFinder</a>
+            
+    
+            <a href="../jsoup/select/CombiningEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 14 ">CombiningEvaluator</a>
+            
+    
+            <a href="../jsoup/select/CombiningEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">CombiningEvaluator.And</a>
+            
+    
+            <a href="../jsoup/select/CombiningEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 23 ">CombiningEvaluator.Or</a>
+            
+    
+            <a href="../jsoup/nodes/Comment.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 28 ">Comment</a>
+            
+    
+            <a href="../jsoup/Connection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Connection.Method</a>
+            
+    
+            <a href="../jsoup/internal/ConstrainableInputStream.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 76 , # Elements Covered - 67 ">ConstrainableInputStream</a>
+            
+    
+            <a href="../jsoup/nodes/DataNode.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">DataNode</a>
+            
+    
+            <a href="../jsoup/helper/DataUtil.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 178 , # Elements Covered - 163 ">DataUtil</a>
+            
+    
+            <a href="../jsoup/helper/DataUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">DataUtil.BomCharset</a>
+            
+    
+            <a href="../jsoup/nodes/Document.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 186 , # Elements Covered - 166 ">Document</a>
+            
+    
+            <a href="../jsoup/nodes/Document.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 53 ">Document.OutputSettings</a>
+            
+    
+            <a href="../jsoup/nodes/DocumentType.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 58 ">DocumentType</a>
+            
+    
+            <a href="../jsoup/nodes/Element.html" class="tag"
+            style="font-size: 25px;color:#e28e87"
+            title="# Elements - 661 , # Elements Covered - 633 ">Element</a>
+            
+    
+            <a href="../jsoup/nodes/Element.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">Element.NodeList</a>
+            
+    
+            <a href="../jsoup/select/Elements.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 244 , # Elements Covered - 243 ">Elements</a>
+            
+    
+            <a href="../jsoup/nodes/Entities.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 175 , # Elements Covered - 170 ">Entities</a>
+            
+    
+            <a href="../jsoup/nodes/Entities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">Entities.CoreCharset</a>
+            
+    
+            <a href="../jsoup/nodes/Entities.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 16 ">Entities.EscapeMode</a>
+            
+    
+            <a href="../jsoup/nodes/EntitiesData.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">EntitiesData</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 1 , # Elements Covered - 1 ">Evaluator</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Evaluator.AllElements</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">Evaluator.Attribute</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">Evaluator.AttributeKeyPair</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">Evaluator.AttributeStarting</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.AttributeWithValue</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.AttributeWithValueContaining</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">Evaluator.AttributeWithValueEnding</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">Evaluator.AttributeWithValueMatching</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.AttributeWithValueNot</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">Evaluator.AttributeWithValueStarting</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.Class</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.ContainsData</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.ContainsOwnText</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.ContainsText</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 21 ">Evaluator.CssNthEvaluator</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">Evaluator.Id</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.IndexEquals</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">Evaluator.IndexEvaluator</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.IndexGreaterThan</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.IndexLessThan</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">Evaluator.IsEmpty</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">Evaluator.IsFirstChild</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Evaluator.IsFirstOfType</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">Evaluator.IsLastChild</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Evaluator.IsLastOfType</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">Evaluator.IsNthChild</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">Evaluator.IsNthLastChild</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 15 ">Evaluator.IsNthLastOfType</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 15 ">Evaluator.IsNthOfType</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">Evaluator.IsOnlyChild</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 14 ">Evaluator.IsOnlyOfType</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">Evaluator.IsRoot</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">Evaluator.MatchText</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">Evaluator.Matches</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">Evaluator.MatchesOwn</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.Tag</a>
+            
+    
+            <a href="../jsoup/select/Evaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Evaluator.TagEndsWith</a>
+            
+    
+            <a href="../jsoup/nodes/FormElement.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 58 ">FormElement</a>
+            
+    
+            <a href="../jsoup/examples/HtmlToPlainText.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 4 ">HtmlToPlainText</a>
+            
+    
+            <a href="../jsoup/examples/HtmlToPlainText.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 61 , # Elements Covered - 29 ">HtmlToPlainText.FormattingVisitor</a>
+            
+    
+            <a href="../jsoup/parser/HtmlTreeBuilder.html" class="tag"
+            style="font-size: 24px;color:#e28e87"
+            title="# Elements - 586 , # Elements Covered - 513 ">HtmlTreeBuilder</a>
+            
+    
+            <a href="../jsoup/parser/HtmlTreeBuilderState.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="# Elements - 1,702 , # Elements Covered - 1,276 ">HtmlTreeBuilderState</a>
+            
+    
+            <a href="../jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 165 , # Elements Covered - 142 ">HttpConnection</a>
+            
+    
+            <a href="../jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 161 , # Elements Covered - 139 ">HttpConnection.Base</a>
+            
+    
+            <a href="../jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 33 ">HttpConnection.KeyVal</a>
+            
+    
+            <a href="../jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 75 , # Elements Covered - 68 ">HttpConnection.Request</a>
+            
+    
+            <a href="../jsoup/helper/HttpConnection.html" class="tag"
+            style="font-size: 19px;color:#d04437"
+            title="# Elements - 361 , # Elements Covered - 53 ">HttpConnection.Response</a>
+            
+    
+            <a href="../jsoup/HttpStatusException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">HttpStatusException</a>
+            
+    
+            <a href="../jsoup/Jsoup.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 38 ">Jsoup</a>
+            
+    
+            <a href="../jsoup/nodes/LeafNode.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 55 , # Elements Covered - 55 ">LeafNode</a>
+            
+    
+            <a href="../jsoup/nodes/Node.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 307 , # Elements Covered - 292 ">Node</a>
+            
+    
+            <a href="../jsoup/nodes/Node.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 13 ">Node.OuterHtmlVisitor</a>
+            
+    
+            <a href="../jsoup/select/NodeTraversor.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 96 , # Elements Covered - 90 ">NodeTraversor</a>
+            
+    
+            <a href="../jsoup/nodes/NodeUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">NodeUtils</a>
+            
+    
+            <a href="../jsoup/internal/Normalizer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 5 ">Normalizer</a>
+            
+    
+            <a href="../jsoup/parser/ParseError.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 10 ">ParseError</a>
+            
+    
+            <a href="../jsoup/parser/ParseErrorList.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">ParseErrorList</a>
+            
+    
+            <a href="../jsoup/parser/ParseSettings.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 30 ">ParseSettings</a>
+            
+    
+            <a href="../jsoup/parser/Parser.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 65 , # Elements Covered - 65 ">Parser</a>
+            
+    
+            <a href="../jsoup/nodes/PseudoTextElement.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">PseudoTextElement</a>
+            
+    
+            <a href="../jsoup/select/QueryParser.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="# Elements - 371 , # Elements Covered - 364 ">QueryParser</a>
+            
+    
+            <a href="../jsoup/select/Selector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 40 ">Selector</a>
+            
+    
+            <a href="../jsoup/select/Selector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">Selector.SelectorParseException</a>
+            
+    
+            <a href="../jsoup/internal/StringUtil.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 149 , # Elements Covered - 145 ">StringUtil</a>
+            
+    
+            <a href="../jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">StructuralEvaluator.Has</a>
+            
+    
+            <a href="../jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 11 ">StructuralEvaluator.ImmediateParent</a>
+            
+    
+            <a href="../jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">StructuralEvaluator.ImmediatePreviousSibling</a>
+            
+    
+            <a href="../jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">StructuralEvaluator.Not</a>
+            
+    
+            <a href="../jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 19 ">StructuralEvaluator.Parent</a>
+            
+    
+            <a href="../jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 13 ">StructuralEvaluator.PreviousSibling</a>
+            
+    
+            <a href="../jsoup/select/StructuralEvaluator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">StructuralEvaluator.Root</a>
+            
+    
+            <a href="../jsoup/parser/Tag.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 155 , # Elements Covered - 114 ">Tag</a>
+            
+    
+            <a href="../jsoup/nodes/TextNode.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 44 ">TextNode</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 31 ">Token</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 3 ">Token.CData</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">Token.Character</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">Token.Comment</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">Token.Doctype</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Token.EOF</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 3 ">Token.EndTag</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">Token.StartTag</a>
+            
+    
+            <a href="../jsoup/parser/Token.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 98 , # Elements Covered - 95 ">Token.Tag</a>
+            
+    
+            <a href="../jsoup/parser/TokenQueue.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 236 , # Elements Covered - 220 ">TokenQueue</a>
+            
+    
+            <a href="../jsoup/parser/Tokeniser.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 214 , # Elements Covered - 193 ">Tokeniser</a>
+            
+    
+            <a href="../jsoup/parser/TokeniserState.html" class="tag"
+            style="font-size: 42px;color:#f6c342"
+            title="# Elements - 1,445 , # Elements Covered - 913 ">TokeniserState</a>
+            
+    
+            <a href="../jsoup/parser/TreeBuilder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 56 , # Elements Covered - 53 ">TreeBuilder</a>
+            
+    
+            <a href="../jsoup/UncheckedIOException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">UncheckedIOException</a>
+            
+    
+            <a href="../jsoup/helper/Validate.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 47 ">Validate</a>
+            
+    
+            <a href="../jsoup/helper/W3CDom.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 25 ">W3CDom</a>
+            
+    
+            <a href="../jsoup/helper/W3CDom.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 72 , # Elements Covered - 71 ">W3CDom.W3CBuilder</a>
+            
+    
+            <a href="../jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 225 , # Elements Covered - 203 ">Whitelist</a>
+            
+    
+            <a href="../jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Whitelist.AttributeKey</a>
+            
+    
+            <a href="../jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Whitelist.AttributeValue</a>
+            
+    
+            <a href="../jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Whitelist.Protocol</a>
+            
+    
+            <a href="../jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">Whitelist.TagName</a>
+            
+    
+            <a href="../jsoup/safety/Whitelist.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 22 ">Whitelist.TypedValue</a>
+            
+    
+            <a href="../jsoup/nodes/XmlDeclaration.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 33 ">XmlDeclaration</a>
+            
+    
+            <a href="../jsoup/parser/XmlTreeBuilder.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 100 , # Elements Covered - 95 ">XmlTreeBuilder</a>
+           </div>
+   
+          <div id="shallowPackageCloud"  style="display: none"  >
+                          
+    
+        
+    
+            <a href="../jsoup/Connection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 4 , # Elements Covered - 4 ">Connection.Method</a>
+            
+    
+            <a href="../jsoup/HttpStatusException.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="# Elements - 10 , # Elements Covered - 8 ">HttpStatusException</a>
+            
+    
+            <a href="../jsoup/Jsoup.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="# Elements - 40 , # Elements Covered - 38 ">Jsoup</a>
+            
+    
+            <a href="../jsoup/UncheckedIOException.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="# Elements - 6 , # Elements Covered - 4 ">UncheckedIOException</a>
+           </div>
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu May 4 2023 21:58:45 CDT using coverage data from Thu May 4 2023 21:58:43 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

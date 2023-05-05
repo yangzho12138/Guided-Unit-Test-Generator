@@ -5,7 +5,7 @@ import org.jsoup.helper.Validate;
 import java.util.Collections;
 import java.util.List;
 
-abstract class LeafNode extends Node {
+public abstract class LeafNode extends Node {
     private static final List<Node> EmptyNodes = Collections.emptyList();
 
     Object value; // either a string value, or an attribute map (in the rare case multiple attributes are set)

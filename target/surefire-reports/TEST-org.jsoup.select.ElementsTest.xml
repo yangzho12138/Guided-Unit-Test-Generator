@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="34" failures="0" name="org.jsoup.select.ElementsTest" time="0.015" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="18.0.2.1+0"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/songxipeng/Downloads/MP1"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/songxipeng/Downloads/MP1"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="18.0.2.1+0"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.io.tmpdir" value="/var/folders/tj/qfwb3mxj4hl54_0vtx068cxc0000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/songxipeng/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="maven.conf" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="62.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="library.jansi.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/lib/jansi-native"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/songxipeng"/>
+    <property name="user.timezone" value="America/Chicago"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="18"/>
+    <property name="user.name" value="songxipeng"/>
+    <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.6/libexec/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean clover:setup test clover:aggregate clover:clover"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/18.0.2.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="apple.awt.application.name" value="Launcher"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="18.0.2.1"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="maven.home" value="/opt/homebrew/Cellar/maven/3.8.6/libexec"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2022-08-18"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+  </properties>
+  <testcase classname="org.jsoup.select.ElementsTest" name="classWithHyphen" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="before" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="filter" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="eachAttr" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="eachText" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="absAttr" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="remove" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="unwrap" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="parents" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="unwrapP" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="unwrapKeepsSpace" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="eq" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="is" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="not" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="val" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="attr" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="html" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="text" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="wrap" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="hasClassCaseInsensitive" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="after" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="empty" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="forms" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="siblings" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="attributes" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="hasAttr" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="hasText" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="hasAbsAttr" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="classes" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="traverse" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="wrapDiv" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="outerHtml" time="0"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="tagNameSet" time="0.001"/>
+  <testcase classname="org.jsoup.select.ElementsTest" name="setHtml" time="0"/>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.nodes.DocumentTypeTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="outerHtmlGeneration" classname="org.jsoup.nodes.DocumentTypeTest" time="0.0"/>
+  <testcase name="constructorValidationOkWithBlankName" classname="org.jsoup.nodes.DocumentTypeTest" time="0.0"/>
+  <testcase name="constructorValidationOkWithBlankPublicAndSystemIds" classname="org.jsoup.nodes.DocumentTypeTest" time="0.0"/>
+  <testcase name="testRoundTrip" classname="org.jsoup.nodes.DocumentTypeTest" time="0.0"/>
+  <testcase name="constructorValidationThrowsExceptionOnNulls" classname="org.jsoup.nodes.DocumentTypeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

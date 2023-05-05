@@ -11,7 +11,7 @@ public class ParseErrorList extends ArrayList<ParseError>{
     private static final int INITIAL_CAPACITY = 16;
     private final int maxSize;
     
-    ParseErrorList(int initialCapacity, int maxSize) {
+    public ParseErrorList(int initialCapacity, int maxSize) {
         super(initialCapacity);
         this.maxSize = maxSize;
     }

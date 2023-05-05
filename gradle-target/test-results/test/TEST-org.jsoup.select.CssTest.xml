@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.select.CssTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:52:59" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.021">
+  <properties/>
+  <testcase name="nthLastOfType_advanced" classname="org.jsoup.select.CssTest" time="0.002"/>
+  <testcase name="nthChild_advanced" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <testcase name="nthOfType_advanced" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <testcase name="nthOfType_simple" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <testcase name="firstOfType" classname="org.jsoup.select.CssTest" time="0.008"/>
+  <testcase name="firstChild" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <testcase name="nthLastOfType_simple" classname="org.jsoup.select.CssTest" time="0.002"/>
+  <testcase name="root" classname="org.jsoup.select.CssTest" time="0.0"/>
+  <testcase name="onlyOfType" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <testcase name="nthLastChild_simple" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <testcase name="empty" classname="org.jsoup.select.CssTest" time="0.0"/>
+  <testcase name="onlyChild" classname="org.jsoup.select.CssTest" time="0.0"/>
+  <testcase name="nthChild_simple" classname="org.jsoup.select.CssTest" time="0.0"/>
+  <testcase name="nthLastChild_advanced" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <testcase name="lastOfType" classname="org.jsoup.select.CssTest" time="0.0"/>
+  <testcase name="lastChild" classname="org.jsoup.select.CssTest" time="0.0"/>
+  <testcase name="nthOfType_unknownTag" classname="org.jsoup.select.CssTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

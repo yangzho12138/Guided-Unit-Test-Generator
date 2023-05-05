@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('jsoup Java HTML Parser 1.12.2-SNAPSHOT: org.jsoup.nodes.Comment.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.jsoup.nodes">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Thu May 4 2023 21:58:36 CDT</a></li> 
+        <li><a href="pkg-summary.html">        Package org.jsoup.nodes</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File Comment.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../img/srcFileCovDistChart9.png" alt="../../../img/srcFileCovDistChart9.png"
+                         usemap="#srcFileCovDistChart9.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart9.png" name="srcFileCovDistChart9.png">
+<area shape="rect" coords="100,8,107,65" title="36 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,49,98,66" title="11 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,62,89,66" title="3 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,62,80,66" title="3 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,63,71,66" title="2 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="1 file has 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,65,54,66" title="1 file has 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,66,45,67" title="0 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="0 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="0 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,28,18,66" title="24 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>44% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">85</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">47</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">11</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.61</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.22</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">4</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">85</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">47</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">11</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.61</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">9</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.22</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="Comment">
+        <span><a href="#12" title="Comment" onclick="closeDialogAndScrollTo('dialog-Comment', '12');">Comment</a></span>
+</td>
+<td>12<a name="sl-12"></a></td>
+    <td class="">18</td>
+    <td class="">0%</td>
+    <td class="">11</td>
+    <td class="">3</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9032258</span>90.3%</div><div style="display: table-cell">
+ <div title="90.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90.3%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-Comment" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-Comment" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class Comment</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-Comment-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-Comment-methods-body', 'dialog-Comment-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                    <thead>
+                                                 <tr> <th id="Comment">
+    Class<br/>    <span><a href="#12" title="Comment" onclick="closeDialogAndScrollTo('dialog-Comment', '12');">Comment</a></span>
+</th>
+<th>Line #<br/>12<a name="sl-12"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>18</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>11</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>3</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.9032258</span>90.3%</div><div style="display: table-cell">
+ <div title="90.3% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:90.3%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-Comment-methods-body">
+                                                                                                            <tr id="Comment-1">
+<td id="summary-19-5">
+ <span class="sortValue">Comment(String)</span>
+&#160;&#160;<a href="?line=29#19" title="Comment(String)" name="sl-19" onclick="closeDialogAndScrollTo('dialog-Comment', '19');">Comment(String)</a>
+</td>
+<td align="right"><span class="sortValue">19</span>19</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-2">
+<td id="summary-29-5">
+ <span class="sortValue">Comment(String,String)</span>
+&#160;&#160;<a href="?line=29#29" title="Comment(String,String)" name="sl-29" onclick="closeDialogAndScrollTo('dialog-Comment', '29');">Comment(String,String)</a>
+</td>
+<td align="right"><span class="sortValue">29</span>29</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-3">
+<td id="summary-33-5">
+ <span class="sortValue">nodeName()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#33" title="nodeName()&#160;:&#160;String" name="sl-33" onclick="closeDialogAndScrollTo('dialog-Comment', '33');">nodeName()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">33</span>33</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-4">
+<td id="summary-41-5">
+ <span class="sortValue">getData()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#41" title="getData()&#160;:&#160;String" name="sl-41" onclick="closeDialogAndScrollTo('dialog-Comment', '41');">getData()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">41</span>41</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-5">
+<td id="summary-45-2">
+ <span class="sortValue">outerHtmlHead(Appendable,int,Document.OutputSettings)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#45" title="outerHtmlHead(Appendable,int,Document.OutputSettings)&#160;:&#160;void" name="sl-45" onclick="closeDialogAndScrollTo('dialog-Comment', '45');">outerHtmlHead(Appendable,int,Document.OutputSettings)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">45</span>45</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.8</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-6">
+<td id="summary-54-2">
+ <span class="sortValue">outerHtmlTail(Appendable,int,Document.OutputSettings)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#54" title="outerHtmlTail(Appendable,int,Document.OutputSettings)&#160;:&#160;void" name="sl-54" onclick="closeDialogAndScrollTo('dialog-Comment', '54');">outerHtmlTail(Appendable,int,Document.OutputSettings)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">54</span>54</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">-1.0</span> - </td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">-1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">-1.0</span> - </div><div style="display: table-cell">
+<div title="Empty" class="barEmpty" style="min-width:200px;"></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-7">
+<td id="summary-56-5">
+ <span class="sortValue">toString()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#56" title="toString()&#160;:&#160;String" name="sl-56" onclick="closeDialogAndScrollTo('dialog-Comment', '56');">toString()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">56</span>56</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-8">
+<td id="summary-65-5">
+ <span class="sortValue">isXmlDeclaration()&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#65" title="isXmlDeclaration()&#160;:&#160;boolean" name="sl-65" onclick="closeDialogAndScrollTo('dialog-Comment', '65');">isXmlDeclaration()&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">65</span>65</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="Comment-9">
+<td id="summary-74-5">
+ <span class="sortValue">asXmlDeclaration()&#160;:&#160;XmlDeclaration</span>
+&#160;&#160;<a href="?line=29#74" title="asXmlDeclaration()&#160;:&#160;XmlDeclaration" name="sl-74" onclick="closeDialogAndScrollTo('dialog-Comment', '74');">asXmlDeclaration()&#160;:&#160;XmlDeclaration</a>
+</td>
+<td align="right"><span class="sortValue">74</span>74</td>
+<td class="" align="right"><span class="sortValue">8.0</span>8</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-Comment">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 47 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-818">
+<td><a name="testA-818"></a><input type="checkbox" id="cb-818" value="818" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/XmlTreeBuilderTest_handlesXmlDeclarationAsDeclaration_mq.html';">
+<span class="sortValue">0.8064516</span>
+<div>
+<div title="80.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:80.6%"></div></div></div></td>
+<td id="tc-818">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.handlesXmlDeclarationAsDeclaration</span><a href="../../../org/jsoup/parser/XmlTreeBuilderTest_handlesXmlDeclarationAsDeclaration_mq.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.handlesXmlDeclarationAsDeclaration</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/XmlTreeBuilderTest.html?line=110#src-110" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/XmlTreeBuilderTest_handlesXmlDeclarationAsDeclaration_mq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-956">
+<td><a name="testA-956"></a><input type="checkbox" id="cb-956" value="956" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/XmlTreeBuilderTest_handlesLTinScript_qk.html';">
+<span class="sortValue">0.7096774</span>
+<div>
+<div title="71% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:71%"></div></div></div></td>
+<td id="tc-956">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.handlesLTinScript</span><a href="../../../org/jsoup/parser/XmlTreeBuilderTest_handlesLTinScript_qk.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.handlesLTinScript</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/XmlTreeBuilderTest.html?line=242#src-242" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/XmlTreeBuilderTest_handlesLTinScript_qk.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-965">
+<td><a name="testA-965"></a><input type="checkbox" id="cb-965" value="965" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/XmlTreeBuilderTest_testParseDeclarationAttributes_qt.html';">
+<span class="sortValue">0.61290324</span>
+<div>
+<div title="61.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:61.3%"></div></div></div></td>
+<td id="tc-965">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testParseDeclarationAttributes</span><a href="../../../org/jsoup/parser/XmlTreeBuilderTest_testParseDeclarationAttributes_qt.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testParseDeclarationAttributes</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/XmlTreeBuilderTest.html?line=151#src-151" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/XmlTreeBuilderTest_testParseDeclarationAttributes_qt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1572">
+<td><a name="testA-1572"></a><input type="checkbox" id="cb-1572" value="1572" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/XmlTreeBuilderTest_caseSensitiveDeclaration_17o.html';">
+<span class="sortValue">0.61290324</span>
+<div>
+<div title="61.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:61.3%"></div></div></div></td>
+<td id="tc-1572">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.caseSensitiveDeclaration</span><a href="../../../org/jsoup/parser/XmlTreeBuilderTest_caseSensitiveDeclaration_17o.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.caseSensitiveDeclaration</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/XmlTreeBuilderTest.html?line=163#src-163" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/XmlTreeBuilderTest_caseSensitiveDeclaration_17o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1000">
+<td><a name="testA-1000"></a><input type="checkbox" id="cb-1000" value="1000" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/XmlTreeBuilderTest_testDetectCharsetEncodingDeclaration_rs.html';">
+<span class="sortValue">0.61290324</span>
+<div>
+<div title="61.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:61.3%"></div></div></div></td>
+<td id="tc-1000">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testDetectCharsetEncodingDeclaration</span><a href="../../../org/jsoup/parser/XmlTreeBuilderTest_testDetectCharsetEncodingDeclaration_rs.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testDetectCharsetEncodingDeclaration</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/XmlTreeBuilderTest.html?line=141#src-141" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/XmlTreeBuilderTest_testDetectCharsetEncodingDeclaration_rs.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-34">
+<td><a name="testA-34"></a><input type="checkbox" id="cb-34" value="34" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/helper/DataUtilTest_supportsXmlCharsetDeclaration_y.html';">
+<span class="sortValue">0.61290324</span>
+<div>
+<div title="61.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:61.3%"></div></div></div></td>
+<td id="tc-34">  <span class="sortValue">org.jsoup.helper.DataUtilTest.supportsXmlCharsetDeclaration</span><a href="../../../org/jsoup/helper/DataUtilTest_supportsXmlCharsetDeclaration_y.html" title="View Test Summary Page">org.jsoup.helper.DataUtilTest.supportsXmlCharsetDeclaration</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/helper/DataUtilTest.html?line=168#src-168" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/helper/DataUtilTest_supportsXmlCharsetDeclaration_y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1384">
+<td><a name="testA-1384"></a><input type="checkbox" id="cb-1384" value="1384" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/XmlTreeBuilderTest_handlesDodgyXmlDecl_12g.html';">
+<span class="sortValue">0.516129</span>
+<div>
+<div title="51.6% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:51.6%"></div></div></div></td>
+<td id="tc-1384">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.handlesDodgyXmlDecl</span><a href="../../../org/jsoup/parser/XmlTreeBuilderTest_handlesDodgyXmlDecl_12g.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.handlesDodgyXmlDecl</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/XmlTreeBuilderTest.html?line=235#src-235" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/XmlTreeBuilderTest_handlesDodgyXmlDecl_12g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-810">
+<td><a name="testA-810"></a><input type="checkbox" id="cb-810" value="810" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_handlesNullInComments_mi.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-810">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesNullInComments</span><a href="../../../org/jsoup/parser/HtmlParserTest_handlesNullInComments_mi.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesNullInComments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=805#src-805" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_handlesNullInComments_mi.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1420">
+<td><a name="testA-1420"></a><input type="checkbox" id="cb-1420" value="1420" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_parsesBodyFragment_13g.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-1420">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.parsesBodyFragment</span><a href="../../../org/jsoup/parser/HtmlParserTest_parsesBodyFragment_13g.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.parsesBodyFragment</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=439#src-439" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_parsesBodyFragment_13g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-46">
+<td><a name="testA-46"></a><input type="checkbox" id="cb-46" value="46" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/XmlTreeBuilderTest_testCommentAndDocType_1a.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-46">  <span class="sortValue">org.jsoup.parser.XmlTreeBuilderTest.testCommentAndDocType</span><a href="../../../org/jsoup/parser/XmlTreeBuilderTest_testCommentAndDocType_1a.html" title="View Test Summary Page">org.jsoup.parser.XmlTreeBuilderTest.testCommentAndDocType</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/XmlTreeBuilderTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/XmlTreeBuilderTest_testCommentAndDocType_1a.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1373">
+<td><a name="testA-1373"></a><input type="checkbox" id="cb-1373" value="1373" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/nodes/ElementTest_after_125.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-1373">  <span class="sortValue">org.jsoup.nodes.ElementTest.after</span><a href="../../../org/jsoup/nodes/ElementTest_after_125.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.after</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/nodes/ElementTest.html?line=543#src-543" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/nodes/ElementTest_after_125.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1633">
+<td><a name="testA-1633"></a><input type="checkbox" id="cb-1633" value="1633" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_testInvalidTableContents_19d.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-1633">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testInvalidTableContents</span><a href="../../../org/jsoup/parser/HtmlParserTest_testInvalidTableContents_19d.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testInvalidTableContents</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=1025#src-1025" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_testInvalidTableContents_19d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1513">
+<td><a name="testA-1513"></a><input type="checkbox" id="cb-1513" value="1513" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_handlesCommentsInTable_161.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-1513">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesCommentsInTable</span><a href="../../../org/jsoup/parser/HtmlParserTest_handlesCommentsInTable_161.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesCommentsInTable</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=858#src-858" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_handlesCommentsInTable_161.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-554">
+<td><a name="testA-554"></a><input type="checkbox" id="cb-554" value="554" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/nodes/ElementTest_before_fe.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-554">  <span class="sortValue">org.jsoup.nodes.ElementTest.before</span><a href="../../../org/jsoup/nodes/ElementTest_before_fe.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.before</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/nodes/ElementTest.html?line=533#src-533" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/nodes/ElementTest_before_fe.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1203">
+<td><a name="testA-1203"></a><input type="checkbox" id="cb-1203" value="1203" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/nodes/ElementTest_testOuterHtml_xf.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-1203">  <span class="sortValue">org.jsoup.nodes.ElementTest.testOuterHtml</span><a href="../../../org/jsoup/nodes/ElementTest_testOuterHtml_xf.html" title="View Test Summary Page">org.jsoup.nodes.ElementTest.testOuterHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/nodes/ElementTest.html?line=313#src-313" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/nodes/ElementTest_testOuterHtml_xf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-196">
+<td><a name="testA-196"></a><input type="checkbox" id="cb-196" value="196" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_commentBeforeHtml_5g.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-196">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.commentBeforeHtml</span><a href="../../../org/jsoup/parser/HtmlParserTest_commentBeforeHtml_5g.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.commentBeforeHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=709#src-709" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_commentBeforeHtml_5g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-133">
+<td><a name="testA-133"></a><input type="checkbox" id="cb-133" value="133" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_handlesXmlDeclAndCommentsBeforeDoctype_3p.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-133">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesXmlDeclAndCommentsBeforeDoctype</span><a href="../../../org/jsoup/parser/HtmlParserTest_handlesXmlDeclAndCommentsBeforeDoctype_3p.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesXmlDeclAndCommentsBeforeDoctype</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=1224#src-1224" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_handlesXmlDeclAndCommentsBeforeDoctype_3p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1782">
+<td><a name="testA-1782"></a><input type="checkbox" id="cb-1782" value="1782" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_handlesXmlDeclarationAsBogusComment_1di.html';">
+<span class="sortValue">0.38709676</span>
+<div>
+<div title="38.7% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:38.7%"></div></div></div></td>
+<td id="tc-1782">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.handlesXmlDeclarationAsBogusComment</span><a href="../../../org/jsoup/parser/HtmlParserTest_handlesXmlDeclarationAsBogusComment_1di.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.handlesXmlDeclarationAsBogusComment</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=902#src-902" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_handlesXmlDeclarationAsBogusComment_1di.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1284">
+<td><a name="testA-1284"></a><input type="checkbox" id="cb-1284" value="1284" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/mytests/RegressionTest1_test0591_zo.html';">
+<span class="sortValue">0.3548387</span>
+<div>
+<div title="35.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.5%"></div></div></div></td>
+<td id="tc-1284">  <span class="sortValue">org.jsoup.mytests.RegressionTest1.test0591</span><a href="../../../org/jsoup/mytests/RegressionTest1_test0591_zo.html" title="View Test Summary Page">org.jsoup.mytests.RegressionTest1.test0591</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/mytests/RegressionTest1.html?line=2612#src-2612" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/mytests/RegressionTest1_test0591_zo.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1006">
+<td><a name="testA-1006"></a><input type="checkbox" id="cb-1006" value="1006" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/mytests/RegressionTest1_test0831_ry.html';">
+<span class="sortValue">0.3548387</span>
+<div>
+<div title="35.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:35.5%"></div></div></div></td>
+<td id="tc-1006">  <span class="sortValue">org.jsoup.mytests.RegressionTest1.test0831</span><a href="../../../org/jsoup/mytests/RegressionTest1_test0831_ry.html" title="View Test Summary Page">org.jsoup.mytests.RegressionTest1.test0831</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/mytests/RegressionTest1.html?line=8679#src-8679" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/mytests/RegressionTest1_test0831_ry.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-254">
+<td><a name="testA-254"></a><input type="checkbox" id="cb-254" value="254" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/mytests/RegressionTest1_test0809_72.html';">
+<span class="sortValue">0.2580645</span>
+<div>
+<div title="25.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:25.8%"></div></div></div></td>
+<td id="tc-254">  <span class="sortValue">org.jsoup.mytests.RegressionTest1.test0809</span><a href="../../../org/jsoup/mytests/RegressionTest1_test0809_72.html" title="View Test Summary Page">org.jsoup.mytests.RegressionTest1.test0809</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/mytests/RegressionTest1.html?line=8208#src-8208" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/mytests/RegressionTest1_test0809_72.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-674">
+<td><a name="testA-674"></a><input type="checkbox" id="cb-674" value="674" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_parsesUnterminatedComments_iq.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-674">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.parsesUnterminatedComments</span><a href="../../../org/jsoup/parser/HtmlParserTest_parsesUnterminatedComments_iq.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.parsesUnterminatedComments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=103#src-103" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_parsesUnterminatedComments_iq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1463">
+<td><a name="testA-1463"></a><input type="checkbox" id="cb-1463" value="1463" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_parsesComments_14n.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-1463">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.parsesComments</span><a href="../../../org/jsoup/parser/HtmlParserTest_parsesComments_14n.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.parsesComments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=91#src-91" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_parsesComments_14n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-524">
+<td><a name="testA-524"></a><input type="checkbox" id="cb-524" value="524" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/TokeniserStateTest_testCommentEndCoverage_ek.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-524">  <span class="sortValue">org.jsoup.parser.TokeniserStateTest.testCommentEndCoverage</span><a href="../../../org/jsoup/parser/TokeniserStateTest_testCommentEndCoverage_ek.html" title="View Test Summary Page">org.jsoup.parser.TokeniserStateTest.testCommentEndCoverage</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/TokeniserStateTest.html?line=115#src-115" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/TokeniserStateTest_testCommentEndCoverage_ek.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1427">
+<td><a name="testA-1427"></a><input type="checkbox" id="cb-1427" value="1427" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/helper/W3CDomTest_convertsGoogle_13n.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-1427">  <span class="sortValue">org.jsoup.helper.W3CDomTest.convertsGoogle</span><a href="../../../org/jsoup/helper/W3CDomTest_convertsGoogle_13n.html" title="View Test Summary Page">org.jsoup.helper.W3CDomTest.convertsGoogle</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/helper/W3CDomTest.html?line=35#src-35" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/helper/W3CDomTest_convertsGoogle_13n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-910">
+<td><a name="testA-910"></a><input type="checkbox" id="cb-910" value="910" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/TokeniserTest_handleLargeComment_pa.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-910">  <span class="sortValue">org.jsoup.parser.TokeniserTest.handleLargeComment</span><a href="../../../org/jsoup/parser/TokeniserTest_handleLargeComment_pa.html" title="View Test Summary Page">org.jsoup.parser.TokeniserTest.handleLargeComment</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/TokeniserTest.html?line=102#src-102" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/TokeniserTest_handleLargeComment_pa.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-767">
+<td><a name="testA-767"></a><input type="checkbox" id="cb-767" value="767" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/TokeniserStateTest_testCommentEndBangCoverage_lb.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-767">  <span class="sortValue">org.jsoup.parser.TokeniserStateTest.testCommentEndBangCoverage</span><a href="../../../org/jsoup/parser/TokeniserStateTest_testCommentEndBangCoverage_lb.html" title="View Test Summary Page">org.jsoup.parser.TokeniserStateTest.testCommentEndBangCoverage</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/TokeniserStateTest.html?line=128#src-128" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/TokeniserStateTest_testCommentEndBangCoverage_lb.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-859">
+<td><a name="testA-859"></a><input type="checkbox" id="cb-859" value="859" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/helper/W3CDomTest_simpleConversion_nv.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-859">  <span class="sortValue">org.jsoup.helper.W3CDomTest.simpleConversion</span><a href="../../../org/jsoup/helper/W3CDomTest_simpleConversion_nv.html" title="View Test Summary Page">org.jsoup.helper.W3CDomTest.simpleConversion</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/helper/W3CDomTest.html?line=19#src-19" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/helper/W3CDomTest_simpleConversion_nv.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-749">
+<td><a name="testA-749"></a><input type="checkbox" id="cb-749" value="749" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/select/SelectorTest_containsData_kt.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-749">  <span class="sortValue">org.jsoup.select.SelectorTest.containsData</span><a href="../../../org/jsoup/select/SelectorTest_containsData_kt.html" title="View Test Summary Page">org.jsoup.select.SelectorTest.containsData</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/select/SelectorTest.html?line=725#src-725" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/select/SelectorTest_containsData_kt.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-105">
+<td><a name="testA-105"></a><input type="checkbox" id="cb-105" value="105" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/helper/W3CDomTest_convertsGoogleLocation_2x.html';">
+<span class="sortValue">0.19354838</span>
+<div>
+<div title="19.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:19.4%"></div></div></div></td>
+<td id="tc-105">  <span class="sortValue">org.jsoup.helper.W3CDomTest.convertsGoogleLocation</span><a href="../../../org/jsoup/helper/W3CDomTest_convertsGoogleLocation_2x.html" title="View Test Summary Page">org.jsoup.helper.W3CDomTest.convertsGoogleLocation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/helper/W3CDomTest.html?line=52#src-52" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/helper/W3CDomTest_convertsGoogleLocation_2x.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1142">
+<td><a name="testA-1142"></a><input type="checkbox" id="cb-1142" value="1142" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/helper/DataUtilTest_supportsUTF8BOM_vq.html';">
+<span class="sortValue">0.12903225</span>
+<div>
+<div title="12.9% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12.9%"></div></div></div></td>
+<td id="tc-1142">  <span class="sortValue">org.jsoup.helper.DataUtilTest.supportsUTF8BOM</span><a href="../../../org/jsoup/helper/DataUtilTest_supportsUTF8BOM_vq.html" title="View Test Summary Page">org.jsoup.helper.DataUtilTest.supportsUTF8BOM</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/helper/DataUtilTest.html?line=161#src-161" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/helper/DataUtilTest_supportsUTF8BOM_vq.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1249">
+<td><a name="testA-1249"></a><input type="checkbox" id="cb-1249" value="1249" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/integration/ParseTest_testGoogleSearchIpod_yp.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1249">  <span class="sortValue">org.jsoup.integration.ParseTest.testGoogleSearchIpod</span><a href="../../../org/jsoup/integration/ParseTest_testGoogleSearchIpod_yp.html" title="View Test Summary Page">org.jsoup.integration.ParseTest.testGoogleSearchIpod</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/integration/ParseTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/integration/ParseTest_testGoogleSearchIpod_yp.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-881">
+<td><a name="testA-881"></a><input type="checkbox" id="cb-881" value="881" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/integration/ParseTest_testNytArticle_oh.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-881">  <span class="sortValue">org.jsoup.integration.ParseTest.testNytArticle</span><a href="../../../org/jsoup/integration/ParseTest_testNytArticle_oh.html" title="View Test Summary Page">org.jsoup.integration.ParseTest.testNytArticle</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/integration/ParseTest.html?line=159#src-159" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/integration/ParseTest_testNytArticle_oh.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1543">
+<td><a name="testA-1543"></a><input type="checkbox" id="cb-1543" value="1543" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/integration/ParseTest_testSmhBizArticle_16v.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1543">  <span class="sortValue">org.jsoup.integration.ParseTest.testSmhBizArticle</span><a href="../../../org/jsoup/integration/ParseTest_testSmhBizArticle_16v.html" title="View Test Summary Page">org.jsoup.integration.ParseTest.testSmhBizArticle</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/integration/ParseTest.html?line=21#src-21" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/integration/ParseTest_testSmhBizArticle_16v.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1521">
+<td><a name="testA-1521"></a><input type="checkbox" id="cb-1521" value="1521" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/integration/ParseTest_testBaidu_169.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1521">  <span class="sortValue">org.jsoup.integration.ParseTest.testBaidu</span><a href="../../../org/jsoup/integration/ParseTest_testBaidu_169.html" title="View Test Summary Page">org.jsoup.integration.ParseTest.testBaidu</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/integration/ParseTest.html?line=93#src-93" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/integration/ParseTest_testBaidu_169.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1350">
+<td><a name="testA-1350"></a><input type="checkbox" id="cb-1350" value="1350" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/mytests/RegressionTest1_test0631_11i.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1350">  <span class="sortValue">org.jsoup.mytests.RegressionTest1.test0631</span><a href="../../../org/jsoup/mytests/RegressionTest1_test0631_11i.html" title="View Test Summary Page">org.jsoup.mytests.RegressionTest1.test0631</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/mytests/RegressionTest1.html?line=3580#src-3580" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/mytests/RegressionTest1_test0631_11i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-5">
+<td><a name="testA-5"></a><input type="checkbox" id="cb-5" value="5" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_commentAtEnd_5.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-5">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.commentAtEnd</span><a href="../../../org/jsoup/parser/HtmlParserTest_commentAtEnd_5.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.commentAtEnd</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=1212#src-1212" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_commentAtEnd_5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1224">
+<td><a name="testA-1224"></a><input type="checkbox" id="cb-1224" value="1224" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/integration/ParseTest_testYahooJp_y0.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1224">  <span class="sortValue">org.jsoup.integration.ParseTest.testYahooJp</span><a href="../../../org/jsoup/integration/ParseTest_testYahooJp_y0.html" title="View Test Summary Page">org.jsoup.integration.ParseTest.testYahooJp</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/integration/ParseTest.html?line=82#src-82" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/integration/ParseTest_testYahooJp_y0.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-214">
+<td><a name="testA-214"></a><input type="checkbox" id="cb-214" value="214" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/safety/CleanerTest_testDropComments_5y.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-214">  <span class="sortValue">org.jsoup.safety.CleanerTest.testDropComments</span><a href="../../../org/jsoup/safety/CleanerTest_testDropComments_5y.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testDropComments</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/safety/CleanerTest.html?line=96#src-96" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/safety/CleanerTest_testDropComments_5y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-85">
+<td><a name="testA-85"></a><input type="checkbox" id="cb-85" value="85" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/nodes/DocumentTest_testLocation_2d.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-85">  <span class="sortValue">org.jsoup.nodes.DocumentTest.testLocation</span><a href="../../../org/jsoup/nodes/DocumentTest_testLocation_2d.html" title="View Test Summary Page">org.jsoup.nodes.DocumentTest.testLocation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/nodes/DocumentTest.html?line=106#src-106" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/nodes/DocumentTest_testLocation_2d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1029">
+<td><a name="testA-1029"></a><input type="checkbox" id="cb-1029" value="1029" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/safety/CleanerTest_testIsValidBodyHtml_sl.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1029">  <span class="sortValue">org.jsoup.safety.CleanerTest.testIsValidBodyHtml</span><a href="../../../org/jsoup/safety/CleanerTest_testIsValidBodyHtml_sl.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testIsValidBodyHtml</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/safety/CleanerTest.html?line=160#src-160" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/safety/CleanerTest_testIsValidBodyHtml_sl.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1353">
+<td><a name="testA-1353"></a><input type="checkbox" id="cb-1353" value="1353" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/HtmlParserTest_testSupportsNonAsciiTags_11l.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1353">  <span class="sortValue">org.jsoup.parser.HtmlParserTest.testSupportsNonAsciiTags</span><a href="../../../org/jsoup/parser/HtmlParserTest_testSupportsNonAsciiTags_11l.html" title="View Test Summary Page">org.jsoup.parser.HtmlParserTest.testSupportsNonAsciiTags</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/HtmlParserTest.html?line=1058#src-1058" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/HtmlParserTest_testSupportsNonAsciiTags_11l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-832">
+<td><a name="testA-832"></a><input type="checkbox" id="cb-832" value="832" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/helper/W3CDomTest_namespacePreservation_n4.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-832">  <span class="sortValue">org.jsoup.helper.W3CDomTest.namespacePreservation</span><a href="../../../org/jsoup/helper/W3CDomTest_namespacePreservation_n4.html" title="View Test Summary Page">org.jsoup.helper.W3CDomTest.namespacePreservation</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/helper/W3CDomTest.html?line=66#src-66" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/helper/W3CDomTest_namespacePreservation_n4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1374">
+<td><a name="testA-1374"></a><input type="checkbox" id="cb-1374" value="1374" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/parser/TokeniserStateTest_testEndTagOpen_126.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1374">  <span class="sortValue">org.jsoup.parser.TokeniserStateTest.testEndTagOpen</span><a href="../../../org/jsoup/parser/TokeniserStateTest_testEndTagOpen_126.html" title="View Test Summary Page">org.jsoup.parser.TokeniserStateTest.testEndTagOpen</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/parser/TokeniserStateTest.html?line=56#src-56" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/parser/TokeniserStateTest_testEndTagOpen_126.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1604">
+<td><a name="testA-1604"></a><input type="checkbox" id="cb-1604" value="1604" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/integration/ParseTest_testNewsHomepage_18k.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1604">  <span class="sortValue">org.jsoup.integration.ParseTest.testNewsHomepage</span><a href="../../../org/jsoup/integration/ParseTest_testNewsHomepage_18k.html" title="View Test Summary Page">org.jsoup.integration.ParseTest.testNewsHomepage</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/integration/ParseTest.html?line=36#src-36" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/integration/ParseTest_testNewsHomepage_18k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1060">
+<td><a name="testA-1060"></a><input type="checkbox" id="cb-1060" value="1060" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/safety/CleanerTest_testDropXmlProc_tg.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1060">  <span class="sortValue">org.jsoup.safety.CleanerTest.testDropXmlProc</span><a href="../../../org/jsoup/safety/CleanerTest_testDropXmlProc_tg.html" title="View Test Summary Page">org.jsoup.safety.CleanerTest.testDropXmlProc</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/safety/CleanerTest.html?line=102#src-102" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/safety/CleanerTest_testDropXmlProc_tg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1476">
+<td><a name="testA-1476"></a><input type="checkbox" id="cb-1476" value="1476" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/integration/ParseTest_testYahooArticle_150.html';">
+<span class="sortValue">0.06451613</span>
+<div>
+<div title="6.5% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:6.5%"></div></div></div></td>
+<td id="tc-1476">  <span class="sortValue">org.jsoup.integration.ParseTest.testYahooArticle</span><a href="../../../org/jsoup/integration/ParseTest_testYahooArticle_150.html" title="View Test Summary Page">org.jsoup.integration.ParseTest.testYahooArticle</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/integration/ParseTest.html?line=169#src-169" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/integration/ParseTest_testYahooArticle_150.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../nodes/pkg-summary.html">nodes</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="keyword">import</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../parser/pkg-summary.html">parser</a>.<a href="../../../org/jsoup/parser/Parser.html#Parser">Parser</a>;</span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="keyword">import</span> java.io.IOException;</span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> A comment node.</span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> </span><span class="javadoc">@author</span><span class="comment"> Jonathan Hedley, jonathan</span><span class="comment">@hedley.net */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="12" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-12' onclick="toggleInlineStats(this, 'inlinestats-12');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-12" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-12'), 'inlinestats-12');return true;">
+                <td><div>
+<div title="90.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:90.3%"></div></div></div></td><td>90.3%</td>
+                <td class="inlineStat">Uncovered Elements: 3 (31)</td>
+                <td class="inlineStat">Complexity: 11</td>
+                <td class="inlineStat">Complexity Density: 0.61</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 12, 'Tests that hit Comment');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-12"><span class="spacer"></span><span id="src-12" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../org/jsoup/nodes/Comment.html#Comment">Comment</a> <span class="keyword">extends</span> <a href="../../../org/jsoup/nodes/LeafNode.html#LeafNode">LeafNode</a> {</span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> String COMMENT_KEY = <span class="string">&quot;comment&quot;</span>;</span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="comment">     Create a new comment node.</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="comment">     </span><span class="javadoc">@param</span><span class="comment"> data The contents of the comment</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="19" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-19' onclick="toggleInlineStats(this, 'inlinestats-19');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-19" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-19'), 'inlinestats-19');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l19">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 19, 'Tests that hit Comment(String)');" ><span title="Line 19, Col 5: method entered 1,145 times." class="nolink">&#160;1145</span></td>
+<td class=" methodStart  srcCell" id="id-19"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 19,21);" id="img-19" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-19" class="srcLine"><span class="nolink" title="Line 19, Col 5: method entered 1,145 times.">    <span class="keyword">public</span> <a href="../../../org/jsoup/nodes/Comment.html#Comment">Comment</a>(String data) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-19'), 19,21);" id="e19" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 20, 'Tests that hit line # 20');" ><span title="Line 20, Col 9: statement executed 1,145 times." class="nolink">&#160;1145</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"><span class="nolink" title="Line 20, Col 9: statement executed 1,145 times.">        value = data;</span></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"><span class="comment">     Create a new comment node.</span></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="comment">     </span><span class="javadoc">@param</span><span class="comment"> data The contents of the comment</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="comment">     </span><span class="javadoc">@param</span><span class="comment"> baseUri base URI not used. This is a leaf node.</span></span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="comment">     </span><span class="javadoc">@deprecated</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="29" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-29' onclick="toggleInlineStats(this, 'inlinestats-29');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-29" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-29'), 'inlinestats-29');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l29">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 29, 'Tests that hit Comment(String,String)');" ><span title="Line 29, Col 5: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-29"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 29,31);" id="img-29" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-29" class="srcLine"><span class="nolink" title="Line 29, Col 5: method entered 3 times.">    <span class="keyword">public</span> <a href="../../../org/jsoup/nodes/Comment.html#Comment">Comment</a>(String data, String baseUri) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-29'), 29,31);" id="e29" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 30, 'Tests that hit line # 30');" ><span title="Line 30, Col 9: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="nolink" title="Line 30, Col 9: statement executed 3 times.">        <span class="keyword">this</span>(data);</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="33" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-33' onclick="toggleInlineStats(this, 'inlinestats-33');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-33" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-33'), 'inlinestats-33');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l33">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 33, 'Tests that hit nodeName()&#160;:&#160;String');" ><span title="Line 33, Col 5: method entered 268 times." class="nolink">&#160;268</span></td>
+<td class=" methodStart  srcCell" id="id-33"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 33,35);" id="img-33" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-33" class="srcLine"><span class="nolink" title="Line 33, Col 5: method entered 268 times.">    <span class="keyword">public</span> String nodeName() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-33'), 33,35);" id="e33" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 34, 'Tests that hit line # 34');" ><span title="Line 34, Col 9: statement executed 268 times." class="nolink">&#160;268</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="nolink" title="Line 34, Col 9: statement executed 268 times.">        <span class="keyword">return</span> <span class="string">&quot;#comment&quot;</span>;</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="comment">     Get the contents of the comment.</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"><span class="comment">     </span><span class="javadoc">@return</span><span class="comment"> comment content</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="41" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-41' onclick="toggleInlineStats(this, 'inlinestats-41');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-41" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-41'), 'inlinestats-41');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l41">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 41, 'Tests that hit getData()&#160;:&#160;String');" ><span title="Line 41, Col 5: method entered 121 times." class="nolink">&#160;121</span></td>
+<td class=" methodStart  srcCell" id="id-41"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 41,43);" id="img-41" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-41" class="srcLine"><span class="nolink" title="Line 41, Col 5: method entered 121 times.">    <span class="keyword">public</span> String getData() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-41'), 41,43);" id="e41" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 42, 'Tests that hit line # 42');" ><span title="Line 42, Col 9: statement executed 121 times." class="nolink">&#160;121</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine"><span class="nolink" title="Line 42, Col 9: statement executed 121 times.">        <span class="keyword">return</span> coreValue();</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="45" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-45' onclick="toggleInlineStats(this, 'inlinestats-45');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-45" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-45'), 'inlinestats-45');return true;">
+                <td><div>
+<div title="80% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:80%"></div></div></div></td><td>80%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (5)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.67</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l45">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 45, 'Tests that hit outerHtmlHead(Appendable,int,Document.OutputSettings)&#160;:&#160;void');" ><span title="Line 45, Col 2: method entered 18 times." class="nolink">&#160;18</span></td>
+<td class=" methodStart  srcCell" id="id-45"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 45,52);" id="img-45" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-45" class="srcLine"><span class="nolink" title="Line 45, Col 2: method entered 18 times.">    <span class="keyword">void</span> outerHtmlHead(Appendable accum, <span class="keyword">int</span> depth, <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a>.OutputSettings out) <span class="keyword">throws</span> IOException {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-45'), 45,52);" id="e45" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Bad hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit line # 46');" ><span title="Line 46, Col 12: true branch executed 18 times, false branch executed 0 times." class="nolink">&#160;18</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLineHilight"><span class="nolink" title="Line 46, Col 12: true branch executed 18 times, false branch executed 0 times.">        <span class="keyword">if</span> (out.prettyPrint())</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit line # 47');" ><span title="Line 47, Col 13: statement executed 18 times." class="nolink">&#160;18</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine"><span class="nolink" title="Line 47, Col 13: statement executed 18 times.">            indent(accum, depth, out);</span></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 9: statement executed 18 times." class="nolink">&#160;18</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 9: statement executed 18 times.">        accum</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine">                .append(<span class="string">&quot;&lt;!--&quot;</span>)</span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">                .append(getData())</span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">                .append(<span class="string">&quot;--&gt;&quot;</span>);</span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="54" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-54' onclick="toggleInlineStats(this, 'inlinestats-54');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-54" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-54'), 'inlinestats-54');return true;">
+                <td><div>
+<div title="Empty" class="barEmpty" style="min-width:40px;"></div>
+</div></td><td> - </td>
+                <td class="inlineStat">Uncovered Elements: 0 (0)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: -</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l54">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 54, 'Tests that hit outerHtmlTail(Appendable,int,Document.OutputSettings)&#160;:&#160;void');" ><span title="Line 54, Col 2: method entered 18 times." class="nolink">&#160;18</span></td>
+<td class=" methodStart  srcCell" id="id-54"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 54,54);" id="img-54" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-54" class="srcLine"><span class="nolink" title="Line 54, Col 2: method entered 18 times.">    <span class="keyword">void</span> outerHtmlTail(Appendable accum, <span class="keyword">int</span> depth, <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a>.OutputSettings out) {}</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-54'), 54,54);" id="e54" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="56" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-56' onclick="toggleInlineStats(this, 'inlinestats-56');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-56" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-56'), 'inlinestats-56');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l56">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 56, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-56"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 56,59);" id="img-56" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-56" class="srcLineHilight"><span class="nolink" title="Line 56, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-56'), 56,59);" id="e56" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine">    <span class="keyword">public</span> String toString() {</span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 58, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLineHilight"><span class="nolink" title="Line 58, Col 9: statement not executed.">        <span class="keyword">return</span> outerHtml();</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLine"></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine"><span class="comment">     * Check if this comment looks like an XML Declaration.</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> true if it looks like, maybe, it's an XML Declaration.</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="65" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-65' onclick="toggleInlineStats(this, 'inlinestats-65');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-65" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-65'), 'inlinestats-65');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l65">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 65, 'Tests that hit isXmlDeclaration()&#160;:&#160;boolean');" ><span title="Line 65, Col 5: method entered 9 times." class="nolink">&#160;9</span></td>
+<td class=" methodStart  srcCell" id="id-65"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 65,68);" id="img-65" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-65" class="srcLine"><span class="nolink" title="Line 65, Col 5: method entered 9 times.">    <span class="keyword">public</span> <span class="keyword">boolean</span> isXmlDeclaration() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-65'), 65,68);" id="e65" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 66, 'Tests that hit line # 66');" ><span title="Line 66, Col 9: statement executed 9 times." class="nolink">&#160;9</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"><span class="nolink" title="Line 66, Col 9: statement executed 9 times.">        String data = getData();</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 67, 'Tests that hit line # 67');" ><span title="Line 67, Col 9: statement executed 9 times." class="nolink">&#160;9</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine"><span class="nolink" title="Line 67, Col 9: statement executed 9 times.">        <span class="keyword">return</span> (data.length() &gt; 1 &amp;&amp; (data.startsWith(<span class="string">&quot;!&quot;</span>) || data.startsWith(<span class="string">&quot;?&quot;</span>)));</span></span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine"></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine">    <span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="comment">     * Attempt to cast this comment to an XML Declaration note.</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="comment">     * </span><span class="javadoc">@return</span><span class="comment"> an XML declaration if it could be parsed as one, null otherwise.</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="comment">     */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="74" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-74' onclick="toggleInlineStats(this, 'inlinestats-74');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-74" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-74'), 'inlinestats-74');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (10)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l74">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 74, 'Tests that hit asXmlDeclaration()&#160;:&#160;XmlDeclaration');" ><span title="Line 74, Col 5: method entered 9 times." class="nolink">&#160;9</span></td>
+<td class=" methodStart  srcCell" id="id-74"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 74,84);" id="img-74" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-74" class="srcLine"><span class="nolink" title="Line 74, Col 5: method entered 9 times.">    <span class="keyword">public</span> <a href="../../../org/jsoup/nodes/XmlDeclaration.html#XmlDeclaration">XmlDeclaration</a> asXmlDeclaration() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-74'), 74,84);" id="e74" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 75, 'Tests that hit line # 75');" ><span title="Line 75, Col 9: statement executed 9 times." class="nolink">&#160;9</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine"><span class="nolink" title="Line 75, Col 9: statement executed 9 times.">        String data = getData();</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 76, 'Tests that hit line # 76');" ><span title="Line 76, Col 9: statement executed 9 times." class="nolink">&#160;9</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine"><span class="nolink" title="Line 76, Col 9: statement executed 9 times.">        <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a> doc = <a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>.parse(<span class="string">&quot;&lt;&quot;</span> + data.substring(1, data.length() -1) + <span class="string">&quot;&gt;&quot;</span>, baseUri(), <a href="../../../org/jsoup/parser/Parser.html#Parser">Parser</a>.xmlParser());</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 77, 'Tests that hit line # 77');" ><span title="Line 77, Col 9: statement executed 8 times." class="nolink">&#160;8</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"><span class="nolink" title="Line 77, Col 9: statement executed 8 times.">        <a href="../../../org/jsoup/nodes/XmlDeclaration.html#XmlDeclaration">XmlDeclaration</a> decl = <span class="keyword">null</span>;</span></span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit line # 78');" ><span title="Line 78, Col 12: true branch executed 6 times, false branch executed 2 times." class="nolink">&#160;8</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 12: true branch executed 6 times, false branch executed 2 times.">        <span class="keyword">if</span> (doc.children().size() &gt; 0) {</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 79, 'Tests that hit line # 79');" ><span title="Line 79, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine"><span class="nolink" title="Line 79, Col 13: statement executed 6 times.">            <a href="../../../org/jsoup/nodes/Element.html#Element">Element</a> el = doc.child(0);</span></span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 80, 'Tests that hit line # 80');" ><span title="Line 80, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"><span class="nolink" title="Line 80, Col 13: statement executed 6 times.">            decl = <span class="keyword">new</span> <a href="../../../org/jsoup/nodes/XmlDeclaration.html#XmlDeclaration">XmlDeclaration</a>(<a href="../../../org/jsoup/nodes/NodeUtils.html#NodeUtils">NodeUtils</a>.parser(doc).settings().normalizeTag(el.tagName()), data.startsWith(<span class="string">&quot;!&quot;</span>));</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 81, 'Tests that hit line # 81');" ><span title="Line 81, Col 13: statement executed 6 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"><span class="nolink" title="Line 81, Col 13: statement executed 6 times.">            decl.attributes().addAll(el.attributes());</span></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 83, 'Tests that hit line # 83');" ><span title="Line 83, Col 9: statement executed 8 times." class="nolink">&#160;8</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="nolink" title="Line 83, Col 9: statement executed 8 times.">        <span class="keyword">return</span> decl;</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="Comment.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu May 4 2023 21:58:45 CDT using coverage data from Thu May 4 2023 21:58:43 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

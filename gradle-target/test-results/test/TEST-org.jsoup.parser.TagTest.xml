@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.parser.TagTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:52:59" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.0">
+  <properties/>
+  <testcase name="divSemantics" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="trims" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="imgSemantics" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="valueOfChecksNotEmpty" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="pSemantics" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="equality" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="defaultSemantics" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="canBeInsensitive" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="valueOfChecksNotNull" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <testcase name="isCaseSensitive" classname="org.jsoup.parser.TagTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -26,7 +26,7 @@ public class QueryParser {
      * Create a new QueryParser.
      * @param query CSS query
      */
-    private QueryParser(String query) {
+    public QueryParser(String query) {
         this.query = query;
         this.tq = new TokenQueue(query);
     }

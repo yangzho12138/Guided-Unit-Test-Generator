@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.nodes.TextNodeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="testWithSupplementaryCharacter" classname="org.jsoup.nodes.TextNodeTest" time="0.0"/>
+  <testcase name="testLeadNodesHaveNoChildren" classname="org.jsoup.nodes.TextNodeTest" time="0.0"/>
+  <testcase name="testBlank" classname="org.jsoup.nodes.TextNodeTest" time="0.0"/>
+  <testcase name="testTextBean" classname="org.jsoup.nodes.TextNodeTest" time="0.0"/>
+  <testcase name="testSplitText" classname="org.jsoup.nodes.TextNodeTest" time="0.0"/>
+  <testcase name="testSplitAnEmbolden" classname="org.jsoup.nodes.TextNodeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

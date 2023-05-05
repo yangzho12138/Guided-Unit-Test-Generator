@@ -13,7 +13,7 @@ import static org.jsoup.select.NodeFilter.FilterResult.STOP;
  */
 public class Collector {
 
-    private Collector() {
+    public Collector() {
     }
 
     /**

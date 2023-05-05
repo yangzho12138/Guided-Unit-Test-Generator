@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.parser.TokeniserStateTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.005">
+  <properties/>
+  <testcase name="testEndTagOpen" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testPublicIdentifiersWithWhitespace" classname="org.jsoup.parser.TokeniserStateTest" time="0.002"/>
+  <testcase name="handlesLessInTagThanAsNewTag" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testRCDATAEndTagName" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testCharacterReferenceInRcdata" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testRcdataLessthanSign" classname="org.jsoup.parser.TokeniserStateTest" time="0.001"/>
+  <testcase name="ensureSearchArraysAreSorted" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testCommentEndCoverage" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testBeforeTagName" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testPublicAndSystemIdentifiersWithWhitespace" classname="org.jsoup.parser.TokeniserStateTest" time="0.0"/>
+  <testcase name="testSystemIdentifiersWithWhitespace" classname="org.jsoup.parser.TokeniserStateTest" time="0.001"/>
+  <testcase name="testCommentEndBangCoverage" classname="org.jsoup.parser.TokeniserStateTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

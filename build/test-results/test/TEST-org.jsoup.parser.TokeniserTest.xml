@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.parser.TokeniserTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.018">
+  <properties/>
+  <testcase name="handleLargeComment" classname="org.jsoup.parser.TokeniserTest" time="0.001"/>
+  <testcase name="handleLargeCdata" classname="org.jsoup.parser.TokeniserTest" time="0.0"/>
+  <testcase name="handleLargeTitle" classname="org.jsoup.parser.TokeniserTest" time="0.001"/>
+  <testcase name="bufferUpInAttributeVal" classname="org.jsoup.parser.TokeniserTest" time="0.003"/>
+  <testcase name="cp1252EntitiesProduceError" classname="org.jsoup.parser.TokeniserTest" time="0.0"/>
+  <testcase name="handleSuperLargeTagNames" classname="org.jsoup.parser.TokeniserTest" time="0.001"/>
+  <testcase name="handleSuperLargeAttributeName" classname="org.jsoup.parser.TokeniserTest" time="0.001"/>
+  <testcase name="cp1252SubstitutionTable" classname="org.jsoup.parser.TokeniserTest" time="0.0"/>
+  <testcase name="cp1252Entities" classname="org.jsoup.parser.TokeniserTest" time="0.0"/>
+  <testcase name="handleLargeText" classname="org.jsoup.parser.TokeniserTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

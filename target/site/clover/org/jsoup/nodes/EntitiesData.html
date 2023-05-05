@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('jsoup Java HTML Parser 1.12.2-SNAPSHOT: org.jsoup.nodes.EntitiesData.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.jsoup.nodes">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Thu May 4 2023 21:58:36 CDT</a></li> 
+        <li><a href="pkg-summary.html">        Package org.jsoup.nodes</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File EntitiesData.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../img/srcFileCovDistChart10.png" alt="../../../img/srcFileCovDistChart10.png"
+                         usemap="#srcFileCovDistChart10.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart10.png" name="srcFileCovDistChart10.png">
+<area shape="rect" coords="100,8,107,65" title="36 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,49,98,66" title="11 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,62,89,66" title="3 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,62,80,66" title="3 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,63,71,66" title="2 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,65,63,66" title="1 file has 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,65,54,66" title="1 file has 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,66,45,67" title="0 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,66,36,67" title="0 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,66,27,67" title="0 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,28,18,66" title="24 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>0% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">11</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.33</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">0</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">11</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.33</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">3</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="EntitiesData">
+        <span><a href="#6" title="EntitiesData" onclick="closeDialogAndScrollTo('dialog-EntitiesData', '6');">EntitiesData</a></span>
+</td>
+<td>6<a name="sl-6"></a></td>
+    <td class="">3</td>
+    <td class="">0%</td>
+    <td class="">1</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-EntitiesData" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-EntitiesData" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class EntitiesData</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-EntitiesData-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-EntitiesData-methods-body', 'dialog-EntitiesData-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                            
+                    <thead>
+                                                 <tr> <th id="EntitiesData">
+    Class<br/>    <span><a href="#6" title="EntitiesData" onclick="closeDialogAndScrollTo('dialog-EntitiesData', '6');">EntitiesData</a></span>
+</th>
+<th>Line #<br/>6<a name="sl-6"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>3</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>1</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-EntitiesData-methods-body">
+                                                                                                            <tr id="EntitiesData-1">
+<td id="summary-13-5">
+ <span class="sortValue">&lt;clinit&gt;,&#160;line&#160;13()</span>
+&#160;&#160;<a href="?line=29#13" title="&lt;clinit&gt;,&#160;line&#160;13()" name="sl-13" onclick="closeDialogAndScrollTo('dialog-EntitiesData', '13');">&lt;clinit&gt;,&#160;line&#160;13()</a>
+</td>
+<td align="right"><span class="sortValue">13</span>13</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-EntitiesData">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 1 test.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-240">
+<td><a name="testA-240"></a><input type="checkbox" id="cb-240" value="240" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/nodes/TextNodeTest_testWithSupplementaryCharacter_6o.html';">
+<span class="sortValue">1.0</span>
+<div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:100%"></div></div></div></td>
+<td id="tc-240">  <span class="sortValue">org.jsoup.nodes.TextNodeTest.testWithSupplementaryCharacter</span><a href="../../../org/jsoup/nodes/TextNodeTest_testWithSupplementaryCharacter_6o.html" title="View Test Summary Page">org.jsoup.nodes.TextNodeTest.testWithSupplementaryCharacter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/nodes/TextNodeTest.html?line=72#src-72" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/nodes/TextNodeTest_testWithSupplementaryCharacter_6o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../nodes/pkg-summary.html">nodes</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * Holds packed data that represents Entity name=value pairs. Parsed by Entities, created by BuildEntities.</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="6" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-6' onclick="toggleInlineStats(this, 'inlinestats-6');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-6" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-6'), 'inlinestats-6');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 6, 'Tests that hit EntitiesData');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-6"><span class="spacer"></span><span id="src-6" class="srcLine"><span class="keyword">class</span> <a href="../../../org/jsoup/nodes/EntitiesData.html#EntitiesData">EntitiesData</a> {</span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine">    <span class="keyword">static</span> <span class="keyword">final</span> String xmlPoints;</span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine">    <span class="keyword">static</span> <span class="keyword">final</span> String basePoints;</span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine">    <span class="keyword">static</span> <span class="keyword">final</span> String fullPoints;</span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine">    <span class="comment">// https://bugs.java.com/bugdatabase/view_bug.do?bug_id=6447475</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine">    <span class="comment">// allocated in static here so not inlined in users; saves 16K from .jar (!)</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="13" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-13' onclick="toggleInlineStats(this, 'inlinestats-13');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-13" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-13'), 'inlinestats-13');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l13">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 13, 'Tests that hit &lt;clinit&gt;,&#160;line&#160;13()');" ><span title="Line 13, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-13"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 13,17);" id="img-13" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-13" class="srcLine"><span class="nolink" title="Line 13, Col 5: method entered 1 time.">    <span class="keyword">static</span> {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-13'), 13,17);" id="e13" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 14, 'Tests that hit line # 14');" ><span title="Line 14, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="nolink" title="Line 14, Col 9: statement executed 1 time.">        xmlPoints = <span class="string">&quot;amp=12;1&amp;gt=1q;3&amp;lt=1o;2&amp;quot=y;0&amp;&quot;</span>;</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 15, 'Tests that hit line # 15');" ><span title="Line 15, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="nolink" title="Line 15, Col 9: statement executed 1 time.">        basePoints = <span class="string">&quot;AElig=5i;1c&amp;AMP=12;2&amp;Aacute=5d;17&amp;Acirc=5e;18&amp;Agrave=5c;16&amp;Aring=5h;1b&amp;Atilde=5f;19&amp;Auml=5g;1a&amp;COPY=4p;h&amp;Ccedil=5j;1d&amp;ETH=5s;1m&amp;Eacute=5l;1f&amp;Ecirc=5m;1g&amp;Egrave=5k;1e&amp;Euml=5n;1h&amp;GT=1q;6&amp;Iacute=5p;1j&amp;Icirc=5q;1k&amp;Igrave=5o;1i&amp;Iuml=5r;1l&amp;LT=1o;4&amp;Ntilde=5t;1n&amp;Oacute=5v;1p&amp;Ocirc=5w;1q&amp;Ograve=5u;1o&amp;Oslash=60;1u&amp;Otilde=5x;1r&amp;Ouml=5y;1s&amp;QUOT=y;0&amp;REG=4u;n&amp;THORN=66;20&amp;Uacute=62;1w&amp;Ucirc=63;1x&amp;Ugrave=61;1v&amp;Uuml=64;1y&amp;Yacute=65;1z&amp;aacute=69;23&amp;acirc=6a;24&amp;acute=50;u&amp;aelig=6e;28&amp;agrave=68;22&amp;amp=12;3&amp;aring=6d;27&amp;atilde=6b;25&amp;auml=6c;26&amp;brvbar=4m;e&amp;ccedil=6f;29&amp;cedil=54;y&amp;cent=4i;a&amp;copy=4p;i&amp;curren=4k;c&amp;deg=4w;q&amp;divide=6v;2p&amp;eacute=6h;2b&amp;ecirc=6i;2c&amp;egrave=6g;2a&amp;eth=6o;2i&amp;euml=6j;2d&amp;frac12=59;13&amp;frac14=58;12&amp;frac34=5a;14&amp;gt=1q;7&amp;iacute=6l;2f&amp;icirc=6m;2g&amp;iexcl=4h;9&amp;igrave=6k;2e&amp;iquest=5b;15&amp;iuml=6n;2h&amp;laquo=4r;k&amp;lt=1o;5&amp;macr=4v;p&amp;micro=51;v&amp;middot=53;x&amp;nbsp=4g;8&amp;not=4s;l&amp;ntilde=6p;2j&amp;oacute=6r;2l&amp;ocirc=6s;2m&amp;ograve=6q;2k&amp;ordf=4q;j&amp;ordm=56;10&amp;oslash=6w;2q&amp;otilde=6t;2n&amp;ouml=6u;2o&amp;para=52;w&amp;plusmn=4x;r&amp;pound=4j;b&amp;quot=y;1&amp;raquo=57;11&amp;reg=4u;o&amp;sect=4n;f&amp;shy=4t;m&amp;sup1=55;z&amp;sup2=4y;s&amp;sup3=4z;t&amp;szlig=67;21&amp;thorn=72;2w&amp;times=5z;1t&amp;uacute=6y;2s&amp;ucirc=6z;2t&amp;ugrave=6x;2r&amp;uml=4o;g&amp;uuml=70;2u&amp;yacute=71;2v&amp;yen=4l;d&amp;yuml=73;2x&amp;&quot;</span>;</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 16, 'Tests that hit line # 16');" ><span title="Line 16, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="nolink" title="Line 16, Col 9: statement executed 1 time.">        fullPoints = <span class="string">&quot;AElig=5i;2v&amp;AMP=12;8&amp;Aacute=5d;2p&amp;Abreve=76;4k&amp;Acirc=5e;2q&amp;Acy=sw;av&amp;Afr=2kn8;1kh&amp;Agrave=5c;2o&amp;Alpha=pd;8d&amp;Amacr=74;4i&amp;And=8cz;1e1&amp;Aogon=78;4m&amp;Aopf=2koo;1ls&amp;ApplyFunction=6e9;ew&amp;Aring=5h;2t&amp;Ascr=2kkc;1jc&amp;Assign=6s4;s6&amp;Atilde=5f;2r&amp;Auml=5g;2s&amp;Backslash=6qe;o1&amp;Barv=8h3;1it&amp;Barwed=6x2;120&amp;Bcy=sx;aw&amp;Because=6r9;pw&amp;Bernoullis=6jw;gn&amp;Beta=pe;8e&amp;Bfr=2kn9;1ki&amp;Bopf=2kop;1lt&amp;Breve=k8;82&amp;Bscr=6jw;gp&amp;Bumpeq=6ry;ro&amp;CHcy=tj;bi&amp;COPY=4p;1q&amp;Cacute=7a;4o&amp;Cap=6vm;zz&amp;CapitalDifferentialD=6kl;h8&amp;Cayleys=6jx;gq&amp;Ccaron=7g;4u&amp;Ccedil=5j;2w&amp;Ccirc=7c;4q&amp;Cconint=6r4;pn&amp;Cdot=7e;4s&amp;Cedilla=54;2e&amp;CenterDot=53;2b&amp;Cfr=6jx;gr&amp;Chi=pz;8y&amp;CircleDot=6u1;x8&amp;CircleMinus=6ty;x3&amp;CirclePlus=6tx;x1&amp;CircleTimes=6tz;x5&amp;ClockwiseContourIntegral=6r6;pp&amp;CloseCurlyDoubleQuote=6cd;e0&amp;CloseCurlyQuote=6c9;dt&amp;Colon=6rb;q1&amp;Colone=8dw;1en&amp;Congruent=6sh;sn&amp;Conint=6r3;pm&amp;ContourIntegral=6r2;pi&amp;Copf=6iq;f7&amp;Coproduct=6q8;nq&amp;CounterClockwiseContourIntegral=6r7;pr&amp;Cross=8bz;1d8&amp;Cscr=2kke;1jd&amp;Cup=6vn;100&amp;CupCap=6rx;rk&amp;DD=6kl;h9&amp;DDotrahd=841;184&amp;DJcy=si;ai&amp;DScy=sl;al&amp;DZcy=sv;au&amp;Dagger=6ch;e7&amp;Darr=6n5;j5&amp;Dashv=8h0;1ir&amp;Dcaron=7i;4w&amp;Dcy=t0;az&amp;Del=6pz;n9&amp;Delta=pg;8g&amp;Dfr=2knb;1kj&amp;DiacriticalAcute=50;27&amp;DiacriticalDot=k9;84&amp;DiacriticalDoubleAcute=kd;8a&amp;DiacriticalGrave=2o;13&amp;DiacriticalTilde=kc;88&amp;Diamond=6v8;za&amp;DifferentialD=6km;ha&amp;Dopf=2kor;1lu&amp;Dot=4o;1n&amp;DotDot=6ho;f5&amp;DotEqual=6s0;rw&amp;DoubleContourIntegral=6r3;pl&amp;DoubleDot=4o;1m&amp;DoubleDownArrow=6oj;m0&amp;DoubleLeftArrow=6og;lq&amp;DoubleLeftRightArrow=6ok;m3&amp;DoubleLeftTee=8h0;1iq&amp;DoubleLongLeftArrow=7w8;17g&amp;DoubleLongLeftRightArrow=7wa;17m&amp;DoubleLongRightArrow=7w9;17j&amp;DoubleRightArrow=6oi;lw&amp;DoubleRightTee=6ug;xz&amp;DoubleUpArrow=6oh;lt&amp;DoubleUpDownArrow=6ol;m7&amp;DoubleVerticalBar=6qt;ov&amp;DownArrow=6mr;i8&amp;DownArrowBar=843;186&amp;DownArrowUpArrow=6ph;mn&amp;DownBreve=lt;8c&amp;DownLeftRightVector=85s;198&amp;DownLeftTeeVector=866;19m&amp;DownLeftVector=6nx;ke&amp;DownLeftVectorBar=85y;19e&amp;DownRightTeeVector=867;19n&amp;DownRightVector=6o1;kq&amp;DownRightVectorBar=85z;19f&amp;DownTee=6uc;xs&amp;DownTeeArrow=6nb;jh&amp;Downarrow=6oj;m1&amp;Dscr=2kkf;1je&amp;Dstrok=7k;4y&amp;ENG=96;6g&amp;ETH=5s;35&amp;Eacute=5l;2y&amp;Ecaron=7u;56&amp;Ecirc=5m;2z&amp;Ecy=tp;bo&amp;Edot=7q;52&amp;Efr=2knc;1kk&amp;Egrave=5k;2x&amp;Element=6q0;na&amp;Emacr=7m;50&amp;EmptySmallSquare=7i3;15x&amp;EmptyVerySmallSquare=7fv;150&amp;Eogon=7s;54&amp;Eopf=2kos;1lv&amp;Epsilon=ph;8h&amp;Equal=8dx;1eo&amp;EqualTilde=6rm;qp&amp;Equilibrium=6oc;li&amp;Escr=6k0;gu&amp;Esim=8dv;1em&amp;Eta=pj;8j&amp;Euml=5n;30&amp;Exists=6pv;mz&amp;ExponentialE=6kn;hc&amp;Fcy=tg;bf&amp;Ffr=2knd;1kl&amp;FilledSmallSquare=7i4;15y&amp;FilledVerySmallSquare=7fu;14w&amp;Fopf=2kot;1lw&amp;ForAll=6ps;ms&amp;Fouriertrf=6k1;gv&amp;Fscr=6k1;gw&amp;GJcy=sj;aj&amp;GT=1q;r&amp;Gamma=pf;8f&amp;Gammad=rg;a5&amp;Gbreve=7y;5a&amp;Gcedil=82;5e&amp;Gcirc=7w;58&amp;Gcy=sz;ay&amp;Gdot=80;5c&amp;Gfr=2kne;1km&amp;Gg=6vt;10c&amp;Gopf=2kou;1lx&amp;GreaterEqual=6sl;sv&amp;GreaterEqualLess=6vv;10i&amp;GreaterFullEqual=6sn;t6&amp;GreaterGreater=8f6;1gh&amp;GreaterLess=6t3;ul&amp;GreaterSlantEqual=8e6;1f5&amp;GreaterTilde=6sz;ub&amp;Gscr=2kki;1jf&amp;Gt=6sr;tr&amp;HARDcy=tm;bl&amp;Hacek=jr;80&amp;Hat=2m;10&amp;Hcirc=84;5f&amp;Hfr=6j0;fe&amp;HilbertSpace=6iz;fa&amp;Hopf=6j1;fg&amp;HorizontalLine=7b4;13i&amp;Hscr=6iz;fc&amp;Hstrok=86;5h&amp;HumpDownHump=6ry;rn&amp;HumpEqual=6rz;rs&amp;IEcy=t1;b0&amp;IJlig=8i;5s&amp;IOcy=sh;ah&amp;Iacute=5p;32&amp;Icirc=5q;33&amp;Icy=t4;b3&amp;Idot=8g;5p&amp;Ifr=6j5;fq&amp;Igrave=5o;31&amp;Im=6j5;fr&amp;Imacr=8a;5l&amp;ImaginaryI=6ko;hf&amp;Implies=6oi;ly&amp;Int=6r0;pf&amp;Integral=6qz;pd&amp;Intersection=6v6;z4&amp;InvisibleComma=6eb;f0&amp;InvisibleTimes=6ea;ey&amp;Iogon=8e;5n&amp;Iopf=2kow;1ly&amp;Iota=pl;8l&amp;Iscr=6j4;fn&amp;Itilde=88;5j&amp;Iukcy=sm;am&amp;Iuml=5r;34&amp;Jcirc=8k;5u&amp;Jcy=t5;b4&amp;Jfr=2knh;1kn&amp;Jopf=2kox;1lz&amp;Jscr=2kkl;1jg&amp;Jsercy=so;ao&amp;Jukcy=sk;ak&amp;KHcy=th;bg&amp;KJcy=ss;as&amp;Kappa=pm;8m&amp;Kcedil=8m;5w&amp;Kcy=t6;b5&amp;Kfr=2kni;1ko&amp;Kopf=2koy;1m0&amp;Kscr=2kkm;1jh&amp;LJcy=sp;ap&amp;LT=1o;m&amp;Lacute=8p;5z&amp;Lambda=pn;8n&amp;Lang=7vu;173&amp;Laplacetrf=6j6;fs&amp;Larr=6n2;j1&amp;Lcaron=8t;63&amp;Lcedil=8r;61&amp;Lcy=t7;b6&amp;LeftAngleBracket=7vs;16x&amp;LeftArrow=6mo;hu&amp;LeftArrowBar=6p0;mj&amp;LeftArrowRightArrow=6o6;l3&amp;LeftCeiling=6x4;121&amp;LeftDoubleBracket=7vq;16t&amp;LeftDownTeeVector=869;19p&amp;LeftDownVector=6o3;kw&amp;LeftDownVectorBar=861;19h&amp;LeftFloor=6x6;125&amp;LeftRightArrow=6ms;ib&amp;LeftRightVector=85q;196&amp;LeftTee=6ub;xq&amp;LeftTeeArrow=6n8;ja&amp;LeftTeeVector=862;19i&amp;LeftTriangle=6uq;ya&amp;LeftTriangleBar=89b;1c0&amp;LeftTriangleEqual=6us;yg&amp;LeftUpDownVector=85t;199&amp;LeftUpTeeVector=868;19o&amp;LeftUpVector=6nz;kk&amp;LeftUpVectorBar=860;19g&amp;LeftVector=6nw;kb&amp;LeftVectorBar=85u;19a&amp;Leftarrow=6og;lr&amp;Leftrightarrow=6ok;m4&amp;LessEqualGreater=6vu;10e&amp;LessFullEqual=6sm;t0&amp;LessGreater=6t2;ui&amp;LessLess=8f5;1gf&amp;LessSlantEqual=8e5;1ez&amp;LessTilde=6sy;u8&amp;Lfr=2knj;1kp&amp;Ll=6vs;109&amp;Lleftarrow=6oq;me&amp;Lmidot=8v;65&amp;LongLeftArrow=7w5;177&amp;LongLeftRightArrow=7w7;17d&amp;LongRightArrow=7w6;17a&amp;Longleftarrow=7w8;17h&amp;Longleftrightarrow=7wa;17n&amp;Longrightarrow=7w9;17k&amp;Lopf=2koz;1m1&amp;LowerLeftArrow=6mx;iq&amp;LowerRightArrow=6mw;in&amp;Lscr=6j6;fu&amp;Lsh=6nk;jv&amp;Lstrok=8x;67&amp;Lt=6sq;tl&amp;Map=83p;17v&amp;Mcy=t8;b7&amp;MediumSpace=6e7;eu&amp;Mellintrf=6k3;gx&amp;Mfr=2knk;1kq&amp;MinusPlus=6qb;nv&amp;Mopf=2kp0;1m2&amp;Mscr=6k3;gz&amp;Mu=po;8o&amp;NJcy=sq;aq&amp;Nacute=8z;69&amp;Ncaron=93;6d&amp;Ncedil=91;6b&amp;Ncy=t9;b8&amp;NegativeMediumSpace=6bv;dc&amp;NegativeThickSpace=6bv;dd&amp;NegativeThinSpace=6bv;de&amp;NegativeVeryThinSpace=6bv;db&amp;NestedGreaterGreater=6sr;tq&amp;NestedLessLess=6sq;tk&amp;NewLine=a;1&amp;Nfr=2knl;1kr&amp;NoBreak=6e8;ev&amp;NonBreakingSpace=4g;1d&amp;Nopf=6j9;fx&amp;Not=8h8;1ix&amp;NotCongruent=6si;sp&amp;NotCupCap=6st;tv&amp;NotDoubleVerticalBar=6qu;p0&amp;NotElement=6q1;ne&amp;NotEqual=6sg;sk&amp;NotEqualTilde=6rm,mw;qn&amp;NotExists=6pw;n1&amp;NotGreater=6sv;tz&amp;NotGreaterEqual=6sx;u5&amp;NotGreaterFullEqual=6sn,mw;t3&amp;NotGreaterGreater=6sr,mw;tn&amp;NotGreaterLess=6t5;uq&amp;NotGreaterSlantEqual=8e6,mw;1f2&amp;NotGreaterTilde=6t1;ug&amp;NotHumpDownHump=6ry,mw;rl&amp;NotHumpEqual=6rz,mw;rq&amp;NotLeftTriangle=6wa;113&amp;NotLeftTriangleBar=89b,mw;1bz&amp;NotLeftTriangleEqual=6wc;119&amp;NotLess=6su;tw&amp;NotLessEqual=6sw;u2&amp;NotLessGreater=6t4;uo&amp;NotLessLess=6sq,mw;th&amp;NotLessSlantEqual=8e5,mw;1ew&amp;NotLessTilde=6t0;ue&amp;NotNestedGreaterGreater=8f6,mw;1gg&amp;NotNestedLessLess=8f5,mw;1ge&amp;NotPrecedes=6tc;vb&amp;NotPrecedesEqual=8fj,mw;1gv&amp;NotPrecedesSlantEqual=6w0;10p&amp;NotReverseElement=6q4;nl&amp;NotRightTriangle=6wb;116&amp;NotRightTriangleBar=89c,mw;1c1&amp;NotRightTriangleEqual=6wd;11c&amp;NotSquareSubset=6tr,mw;wh&amp;NotSquareSubsetEqual=6w2;10t&amp;NotSquareSuperset=6ts,mw;wl&amp;NotSquareSupersetEqual=6w3;10v&amp;NotSubset=6te,6he;vh&amp;NotSubsetEqual=6tk;w0&amp;NotSucceeds=6td;ve&amp;NotSucceedsEqual=8fk,mw;1h1&amp;NotSucceedsSlantEqual=6w1;10r&amp;NotSucceedsTilde=6tb,mw;v7&amp;NotSuperset=6tf,6he;vm&amp;NotSupersetEqual=6tl;w3&amp;NotTilde=6rl;ql&amp;NotTildeEqual=6ro;qv&amp;NotTildeFullEqual=6rr;r1&amp;NotTildeTilde=6rt;r9&amp;NotVerticalBar=6qs;or&amp;Nscr=2kkp;1ji&amp;Ntilde=5t;36&amp;Nu=pp;8p&amp;OElig=9e;6m&amp;Oacute=5v;38&amp;Ocirc=5w;39&amp;Ocy=ta;b9&amp;Odblac=9c;6k&amp;Ofr=2knm;1ks&amp;Ograve=5u;37&amp;Omacr=98;6i&amp;Omega=q1;90&amp;Omicron=pr;8r&amp;Oopf=2kp2;1m3&amp;OpenCurlyDoubleQuote=6cc;dy&amp;OpenCurlyQuote=6c8;dr&amp;Or=8d0;1e2&amp;Oscr=2kkq;1jj&amp;Oslash=60;3d&amp;Otilde=5x;3a&amp;Otimes=8c7;1df&amp;Ouml=5y;3b&amp;OverBar=6da;em&amp;OverBrace=732;13b&amp;OverBracket=71w;134&amp;OverParenthesis=730;139&amp;PartialD=6pu;mx&amp;Pcy=tb;ba&amp;Pfr=2knn;1kt&amp;Phi=py;8x&amp;Pi=ps;8s&amp;PlusMinus=4x;22&amp;Poincareplane=6j0;fd&amp;Popf=6jd;g3&amp;Pr=8fv;1hl&amp;Precedes=6t6;us&amp;PrecedesEqual=8fj;1gy&amp;PrecedesSlantEqual=6t8;uy&amp;PrecedesTilde=6ta;v4&amp;Prime=6cz;eg&amp;Product=6q7;no&amp;Proportion=6rb;q0&amp;Proportional=6ql;oa&amp;Pscr=2kkr;1jk&amp;Psi=q0;8z&amp;QUOT=y;3&amp;Qfr=2kno;1ku&amp;Qopf=6je;g5&amp;Qscr=2kks;1jl&amp;RBarr=840;183&amp;REG=4u;1x&amp;Racute=9g;6o&amp;Rang=7vv;174&amp;Rarr=6n4;j4&amp;Rarrtl=846;187&amp;Rcaron=9k;6s&amp;Rcedil=9i;6q&amp;Rcy=tc;bb&amp;Re=6jg;gb&amp;ReverseElement=6q3;nh&amp;ReverseEquilibrium=6ob;le&amp;ReverseUpEquilibrium=86n;1a4&amp;Rfr=6jg;ga&amp;Rho=pt;8t&amp;RightAngleBracket=7vt;170&amp;RightArrow=6mq;i3&amp;RightArrowBar=6p1;ml&amp;RightArrowLeftArrow=6o4;ky&amp;RightCeiling=6x5;123&amp;RightDoubleBracket=7vr;16v&amp;RightDownTeeVector=865;19l&amp;RightDownVector=6o2;kt&amp;RightDownVectorBar=85x;19d&amp;RightFloor=6x7;127&amp;RightTee=6ua;xo&amp;RightTeeArrow=6na;je&amp;RightTeeVector=863;19j&amp;RightTriangle=6ur;yd&amp;RightTriangleBar=89c;1c2&amp;RightTriangleEqual=6ut;yk&amp;RightUpDownVector=85r;197&amp;RightUpTeeVector=864;19k&amp;RightUpVector=6ny;kh&amp;RightUpVectorBar=85w;19c&amp;RightVector=6o0;kn&amp;RightVectorBar=85v;19b&amp;Rightarrow=6oi;lx&amp;Ropf=6jh;gd&amp;RoundImplies=86o;1a6&amp;Rrightarrow=6or;mg&amp;Rscr=6jf;g7&amp;Rsh=6nl;jx&amp;RuleDelayed=8ac;1cb&amp;SHCHcy=tl;bk&amp;SHcy=tk;bj&amp;SOFTcy=to;bn&amp;Sacute=9m;6u&amp;Sc=8fw;1hm&amp;Scaron=9s;70&amp;Scedil=9q;6y&amp;Scirc=9o;6w&amp;Scy=td;bc&amp;Sfr=2knq;1kv&amp;ShortDownArrow=6mr;i7&amp;ShortLeftArrow=6mo;ht&amp;ShortRightArrow=6mq;i2&amp;ShortUpArrow=6mp;hy&amp;Sigma=pv;8u&amp;SmallCircle=6qg;o6&amp;Sopf=2kp6;1m4&amp;Sqrt=6qi;o9&amp;Square=7fl;14t&amp;SquareIntersection=6tv;ww&amp;SquareSubset=6tr;wi&amp;SquareSubsetEqual=6tt;wp&amp;SquareSuperset=6ts;wm&amp;SquareSupersetEqual=6tu;ws&amp;SquareUnion=6tw;wz&amp;Sscr=2kku;1jm&amp;Star=6va;zf&amp;Sub=6vk;zw&amp;Subset=6vk;zv&amp;SubsetEqual=6ti;vu&amp;Succeeds=6t7;uv&amp;SucceedsEqual=8fk;1h4&amp;SucceedsSlantEqual=6t9;v1&amp;SucceedsTilde=6tb;v8&amp;SuchThat=6q3;ni&amp;Sum=6q9;ns&amp;Sup=6vl;zy&amp;Superset=6tf;vp&amp;SupersetEqual=6tj;vx&amp;Supset=6vl;zx&amp;THORN=66;3j&amp;TRADE=6jm;gf&amp;TSHcy=sr;ar&amp;TScy=ti;bh&amp;Tab=9;0&amp;Tau=pw;8v&amp;Tcaron=9w;74&amp;Tcedil=9u;72&amp;Tcy=te;bd&amp;Tfr=2knr;1kw&amp;Therefore=6r8;pt&amp;Theta=pk;8k&amp;ThickSpace=6e7,6bu;et&amp;ThinSpace=6bt;d7&amp;Tilde=6rg;q9&amp;TildeEqual=6rn;qs&amp;TildeFullEqual=6rp;qy&amp;TildeTilde=6rs;r4&amp;Topf=2kp7;1m5&amp;TripleDot=6hn;f3&amp;Tscr=2kkv;1jn&amp;Tstrok=9y;76&amp;Uacute=62;3f&amp;Uarr=6n3;j2&amp;Uarrocir=85l;193&amp;Ubrcy=su;at&amp;Ubreve=a4;7c&amp;Ucirc=63;3g&amp;Ucy=tf;be&amp;Udblac=a8;7g&amp;Ufr=2kns;1kx&amp;Ugrave=61;3e&amp;Umacr=a2;7a&amp;UnderBar=2n;11&amp;UnderBrace=733;13c&amp;UnderBracket=71x;136&amp;UnderParenthesis=731;13a&amp;Union=6v7;z8&amp;UnionPlus=6tq;wf&amp;Uogon=aa;7i&amp;Uopf=2kp8;1m6&amp;UpArrow=6mp;hz&amp;UpArrowBar=842;185&amp;UpArrowDownArrow=6o5;l1&amp;UpDownArrow=6mt;ie&amp;UpEquilibrium=86m;1a2&amp;UpTee=6ud;xv&amp;UpTeeArrow=6n9;jc&amp;Uparrow=6oh;lu&amp;Updownarrow=6ol;m8&amp;UpperLeftArrow=6mu;ih&amp;UpperRightArrow=6mv;ik&amp;Upsi=r6;9z&amp;Upsilon=px;8w&amp;Uring=a6;7e&amp;Uscr=2kkw;1jo&amp;Utilde=a0;78&amp;Uuml=64;3h&amp;VDash=6uj;y3&amp;Vbar=8h7;1iw&amp;Vcy=sy;ax&amp;Vdash=6uh;y1&amp;Vdashl=8h2;1is&amp;Vee=6v5;z3&amp;Verbar=6c6;dp&amp;Vert=6c6;dq&amp;VerticalBar=6qr;on&amp;VerticalLine=3g;18&amp;VerticalSeparator=7rs;16o&amp;VerticalTilde=6rk;qi&amp;VeryThinSpace=6bu;d9&amp;Vfr=2knt;1ky&amp;Vopf=2kp9;1m7&amp;Vscr=2kkx;1jp&amp;Vvdash=6ui;y2&amp;Wcirc=ac;7k&amp;Wedge=6v4;z0&amp;Wfr=2knu;1kz&amp;Wopf=2kpa;1m8&amp;Wscr=2kky;1jq&amp;Xfr=2knv;1l0&amp;Xi=pq;8q&amp;Xopf=2kpb;1m9&amp;Xscr=2kkz;1jr&amp;YAcy=tr;bq&amp;YIcy=sn;an&amp;YUcy=tq;bp&amp;Yacute=65;3i&amp;Ycirc=ae;7m&amp;Ycy=tn;bm&amp;Yfr=2knw;1l1&amp;Yopf=2kpc;1ma&amp;Yscr=2kl0;1js&amp;Yuml=ag;7o&amp;ZHcy=t2;b1&amp;Zacute=ah;7p&amp;Zcaron=al;7t&amp;Zcy=t3;b2&amp;Zdot=aj;7r&amp;ZeroWidthSpace=6bv;df&amp;Zeta=pi;8i&amp;Zfr=6js;gl&amp;Zopf=6jo;gi&amp;Zscr=2kl1;1jt&amp;aacute=69;3m&amp;abreve=77;4l&amp;ac=6ri;qg&amp;acE=6ri,mr;qe&amp;acd=6rj;qh&amp;acirc=6a;3n&amp;acute=50;28&amp;acy=ts;br&amp;aelig=6e;3r&amp;af=6e9;ex&amp;afr=2kny;1l2&amp;agrave=68;3l&amp;alefsym=6k5;h3&amp;aleph=6k5;h4&amp;alpha=q9;92&amp;amacr=75;4j&amp;amalg=8cf;1dm&amp;amp=12;9&amp;and=6qv;p6&amp;andand=8d1;1e3&amp;andd=8d8;1e9&amp;andslope=8d4;1e6&amp;andv=8d6;1e7&amp;ang=6qo;oj&amp;ange=884;1b1&amp;angle=6qo;oi&amp;angmsd=6qp;ol&amp;angmsdaa=888;1b5&amp;angmsdab=889;1b6&amp;angmsdac=88a;1b7&amp;angmsdad=88b;1b8&amp;angmsdae=88c;1b9&amp;angmsdaf=88d;1ba&amp;angmsdag=88e;1bb&amp;angmsdah=88f;1bc&amp;angrt=6qn;og&amp;angrtvb=6v2;yw&amp;angrtvbd=87x;1b0&amp;angsph=6qq;om&amp;angst=5h;2u&amp;angzarr=70c;12z&amp;aogon=79;4n&amp;aopf=2kpe;1mb&amp;ap=6rs;r8&amp;apE=8ds;1ej&amp;apacir=8dr;1eh&amp;ape=6ru;rd&amp;apid=6rv;rf&amp;apos=13;a&amp;approx=6rs;r5&amp;approxeq=6ru;rc&amp;aring=6d;3q&amp;ascr=2kl2;1ju&amp;ast=16;e&amp;asymp=6rs;r6&amp;asympeq=6rx;rj&amp;atilde=6b;3o&amp;auml=6c;3p&amp;awconint=6r7;ps&amp;awint=8b5;1cr&amp;bNot=8h9;1iy&amp;backcong=6rw;rg&amp;backepsilon=s6;af&amp;backprime=6d1;ei&amp;backsim=6rh;qc&amp;backsimeq=6vh;zp&amp;barvee=6v1;yv&amp;barwed=6x1;11y&amp;barwedge=6x1;11x&amp;bbrk=71x;137&amp;bbrktbrk=71y;138&amp;bcong=6rw;rh&amp;bcy=tt;bs&amp;bdquo=6ce;e4&amp;becaus=6r9;py&amp;because=6r9;px&amp;bemptyv=88g;1bd&amp;bepsi=s6;ag&amp;bernou=6jw;go&amp;beta=qa;93&amp;beth=6k6;h5&amp;between=6ss;tt&amp;bfr=2knz;1l3&amp;bigcap=6v6;z5&amp;bigcirc=7hr;15s&amp;bigcup=6v7;z7&amp;bigodot=8ao;1cd&amp;bigoplus=8ap;1cf&amp;bigotimes=8aq;1ch&amp;bigsqcup=8au;1cl&amp;bigstar=7id;15z&amp;bigtriangledown=7gd;15e&amp;bigtriangleup=7g3;154&amp;biguplus=8as;1cj&amp;bigvee=6v5;z1&amp;bigwedge=6v4;yy&amp;bkarow=83x;17x&amp;blacklozenge=8a3;1c9&amp;blacksquare=7fu;14x&amp;blacktriangle=7g4;156&amp;blacktriangledown=7ge;15g&amp;blacktriangleleft=7gi;15k&amp;blacktriangleright=7g8;15a&amp;blank=74z;13f&amp;blk12=7f6;14r&amp;blk14=7f5;14q&amp;blk34=7f7;14s&amp;block=7ew;14p&amp;bne=1p,6hx;o&amp;bnequiv=6sh,6hx;sm&amp;bnot=6xc;12d&amp;bopf=2kpf;1mc&amp;bot=6ud;xx&amp;bottom=6ud;xu&amp;bowtie=6vc;zi&amp;boxDL=7dj;141&amp;boxDR=7dg;13y&amp;boxDl=7di;140&amp;boxDr=7df;13x&amp;boxH=7dc;13u&amp;boxHD=7dy;14g&amp;boxHU=7e1;14j&amp;boxHd=7dw;14e&amp;boxHu=7dz;14h&amp;boxUL=7dp;147&amp;boxUR=7dm;144&amp;boxUl=7do;146&amp;boxUr=7dl;143&amp;boxV=7dd;13v&amp;boxVH=7e4;14m&amp;boxVL=7dv;14d&amp;boxVR=7ds;14a&amp;boxVh=7e3;14l&amp;boxVl=7du;14c&amp;boxVr=7dr;149&amp;boxbox=895;1bw&amp;boxdL=7dh;13z&amp;boxdR=7de;13w&amp;boxdl=7bk;13m&amp;boxdr=7bg;13l&amp;boxh=7b4;13j&amp;boxhD=7dx;14f&amp;boxhU=7e0;14i&amp;boxhd=7cc;13r&amp;boxhu=7ck;13s&amp;boxminus=6u7;xi&amp;boxplus=6u6;xg&amp;boxtimes=6u8;xk&amp;boxuL=7dn;145&amp;boxuR=7dk;142&amp;boxul=7bs;13o&amp;boxur=7bo;13n&amp;boxv=7b6;13k&amp;boxvH=7e2;14k&amp;boxvL=7dt;14b&amp;boxvR=7dq;148&amp;boxvh=7cs;13t&amp;boxvl=7c4;13q&amp;boxvr=7bw;13p&amp;bprime=6d1;ej&amp;breve=k8;83&amp;brvbar=4m;1k&amp;bscr=2kl3;1jv&amp;bsemi=6dr;er&amp;bsim=6rh;qd&amp;bsime=6vh;zq&amp;bsol=2k;x&amp;bsolb=891;1bv&amp;bsolhsub=7uw;16r&amp;bull=6ci;e9&amp;bullet=6ci;e8&amp;bump=6ry;rp&amp;bumpE=8fi;1gu&amp;bumpe=6rz;ru&amp;bumpeq=6rz;rt&amp;cacute=7b;4p&amp;cap=6qx;pa&amp;capand=8ck;1dq&amp;capbrcup=8cp;1dv&amp;capcap=8cr;1dx&amp;capcup=8cn;1dt&amp;capdot=8cg;1dn&amp;caps=6qx,1e68;p9&amp;caret=6dd;eo&amp;caron=jr;81&amp;ccaps=8ct;1dz&amp;ccaron=7h;4v&amp;ccedil=6f;3s&amp;ccirc=7d;4r&amp;ccups=8cs;1dy&amp;ccupssm=8cw;1e0&amp;cdot=7f;4t&amp;cedil=54;2f&amp;cemptyv=88i;1bf&amp;cent=4i;1g&amp;centerdot=53;2c&amp;cfr=2ko0;1l4&amp;chcy=uf;ce&amp;check=7pv;16j&amp;checkmark=7pv;16i&amp;chi=qv;9s&amp;cir=7gr;15q&amp;cirE=88z;1bt&amp;circ=jq;7z&amp;circeq=6s7;sc&amp;circlearrowleft=6nu;k6&amp;circlearrowright=6nv;k8&amp;circledR=4u;1w&amp;circledS=79k;13g&amp;circledast=6u3;xc&amp;circledcirc=6u2;xa&amp;circleddash=6u5;xe&amp;cire=6s7;sd&amp;cirfnint=8b4;1cq&amp;cirmid=8hb;1j0&amp;cirscir=88y;1bs&amp;clubs=7kz;168&amp;clubsuit=7kz;167&amp;colon=1m;j&amp;colone=6s4;s7&amp;coloneq=6s4;s5&amp;comma=18;g&amp;commat=1s;u&amp;comp=6pt;mv&amp;compfn=6qg;o7&amp;complement=6pt;mu&amp;complexes=6iq;f6&amp;cong=6rp;qz&amp;congdot=8dp;1ef&amp;conint=6r2;pj&amp;copf=2kpg;1md&amp;coprod=6q8;nr&amp;copy=4p;1r&amp;copysr=6jb;fz&amp;crarr=6np;k1&amp;cross=7pz;16k&amp;cscr=2kl4;1jw&amp;csub=8gf;1id&amp;csube=8gh;1if&amp;csup=8gg;1ie&amp;csupe=8gi;1ig&amp;ctdot=6wf;11g&amp;cudarrl=854;18x&amp;cudarrr=851;18u&amp;cuepr=6vy;10m&amp;cuesc=6vz;10o&amp;cularr=6nq;k3&amp;cularrp=859;190&amp;cup=6qy;pc&amp;cupbrcap=8co;1du&amp;cupcap=8cm;1ds&amp;cupcup=8cq;1dw&amp;cupdot=6tp;we&amp;cupor=8cl;1dr&amp;cups=6qy,1e68;pb&amp;curarr=6nr;k5&amp;curarrm=858;18z&amp;curlyeqprec=6vy;10l&amp;curlyeqsucc=6vz;10n&amp;curlyvee=6vi;zr&amp;curlywedge=6vj;zt&amp;curren=4k;1i&amp;curvearrowleft=6nq;k2&amp;curvearrowright=6nr;k4&amp;cuvee=6vi;zs&amp;cuwed=6vj;zu&amp;cwconint=6r6;pq&amp;cwint=6r5;po&amp;cylcty=6y5;12u&amp;dArr=6oj;m2&amp;dHar=86d;19t&amp;dagger=6cg;e5&amp;daleth=6k8;h7&amp;darr=6mr;ia&amp;dash=6c0;dl&amp;dashv=6ub;xr&amp;dbkarow=83z;180&amp;dblac=kd;8b&amp;dcaron=7j;4x&amp;dcy=tw;bv&amp;dd=6km;hb&amp;ddagger=6ch;e6&amp;ddarr=6oa;ld&amp;ddotseq=8dz;1ep&amp;deg=4w;21&amp;delta=qc;95&amp;demptyv=88h;1be&amp;dfisht=873;1aj&amp;dfr=2ko1;1l5&amp;dharl=6o3;kx&amp;dharr=6o2;ku&amp;diam=6v8;zc&amp;diamond=6v8;zb&amp;diamondsuit=7l2;16b&amp;diams=7l2;16c&amp;die=4o;1o&amp;digamma=rh;a6&amp;disin=6wi;11j&amp;div=6v;49&amp;divide=6v;48&amp;divideontimes=6vb;zg&amp;divonx=6vb;zh&amp;djcy=uq;co&amp;dlcorn=6xq;12n&amp;dlcrop=6x9;12a&amp;dollar=10;6&amp;dopf=2kph;1me&amp;dot=k9;85&amp;doteq=6s0;rx&amp;doteqdot=6s1;rz&amp;dotminus=6rc;q2&amp;dotplus=6qc;ny&amp;dotsquare=6u9;xm&amp;doublebarwedge=6x2;11z&amp;downarrow=6mr;i9&amp;downdownarrows=6oa;lc&amp;downharpoonleft=6o3;kv&amp;downharpoonright=6o2;ks&amp;drbkarow=840;182&amp;drcorn=6xr;12p&amp;drcrop=6x8;129&amp;dscr=2kl5;1jx&amp;dscy=ut;cr&amp;dsol=8ae;1cc&amp;dstrok=7l;4z&amp;dtdot=6wh;11i&amp;dtri=7gf;15j&amp;dtrif=7ge;15h&amp;duarr=6ph;mo&amp;duhar=86n;1a5&amp;dwangle=886;1b3&amp;dzcy=v3;d0&amp;dzigrarr=7wf;17r&amp;eDDot=8dz;1eq&amp;eDot=6s1;s0&amp;eacute=6h;3u&amp;easter=8dq;1eg&amp;ecaron=7v;57&amp;ecir=6s6;sb&amp;ecirc=6i;3v&amp;ecolon=6s5;s9&amp;ecy=ul;ck&amp;edot=7r;53&amp;ee=6kn;he&amp;efDot=6s2;s2&amp;efr=2ko2;1l6&amp;eg=8ey;1g9&amp;egrave=6g;3t&amp;egs=8eu;1g5&amp;egsdot=8ew;1g7&amp;el=8ex;1g8&amp;elinters=73b;13e&amp;ell=6j7;fv&amp;els=8et;1g3&amp;elsdot=8ev;1g6&amp;emacr=7n;51&amp;empty=6px;n7&amp;emptyset=6px;n5&amp;emptyv=6px;n6&amp;emsp=6bn;d2&amp;emsp13=6bo;d3&amp;emsp14=6bp;d4&amp;eng=97;6h&amp;ensp=6bm;d1&amp;eogon=7t;55&amp;eopf=2kpi;1mf&amp;epar=6vp;103&amp;eparsl=89v;1c6&amp;eplus=8dt;1ek&amp;epsi=qd;97&amp;epsilon=qd;96&amp;epsiv=s5;ae&amp;eqcirc=6s6;sa&amp;eqcolon=6s5;s8&amp;eqsim=6rm;qq&amp;eqslantgtr=8eu;1g4&amp;eqslantless=8et;1g2&amp;equals=1p;p&amp;equest=6sf;sj&amp;equiv=6sh;so&amp;equivDD=8e0;1er&amp;eqvparsl=89x;1c8&amp;erDot=6s3;s4&amp;erarr=86p;1a7&amp;escr=6jz;gs&amp;esdot=6s0;ry&amp;esim=6rm;qr&amp;eta=qf;99&amp;eth=6o;41&amp;euml=6j;3w&amp;euro=6gc;f2&amp;excl=x;2&amp;exist=6pv;n0&amp;expectation=6k0;gt&amp;exponentiale=6kn;hd&amp;fallingdotseq=6s2;s1&amp;fcy=uc;cb&amp;female=7k0;163&amp;ffilig=1dkz;1ja&amp;fflig=1dkw;1j7&amp;ffllig=1dl0;1jb&amp;ffr=2ko3;1l7&amp;filig=1dkx;1j8&amp;fjlig=2u,2y;15&amp;flat=7l9;16e&amp;fllig=1dky;1j9&amp;fltns=7g1;153&amp;fnof=b6;7v&amp;fopf=2kpj;1mg&amp;forall=6ps;mt&amp;fork=6vo;102&amp;forkv=8gp;1in&amp;fpartint=8b1;1cp&amp;frac12=59;2k&amp;frac13=6kz;hh&amp;frac14=58;2j&amp;frac15=6l1;hj&amp;frac16=6l5;hn&amp;frac18=6l7;hp&amp;frac23=6l0;hi&amp;frac25=6l2;hk&amp;frac34=5a;2m&amp;frac35=6l3;hl&amp;frac38=6l8;hq&amp;frac45=6l4;hm&amp;frac56=6l6;ho&amp;frac58=6l9;hr&amp;frac78=6la;hs&amp;frasl=6dg;eq&amp;frown=6xu;12r&amp;fscr=2kl7;1jy&amp;gE=6sn;t8&amp;gEl=8ek;1ft&amp;gacute=dx;7x&amp;gamma=qb;94&amp;gammad=rh;a7&amp;gap=8ee;1fh&amp;gbreve=7z;5b&amp;gcirc=7x;59&amp;gcy=tv;bu&amp;gdot=81;5d&amp;ge=6sl;sx&amp;gel=6vv;10k&amp;geq=6sl;sw&amp;geqq=6sn;t7&amp;geqslant=8e6;1f6&amp;ges=8e6;1f7&amp;gescc=8fd;1gn&amp;gesdot=8e8;1f9&amp;gesdoto=8ea;1fb&amp;gesdotol=8ec;1fd&amp;gesl=6vv,1e68;10h&amp;gesles=8es;1g1&amp;gfr=2ko4;1l8&amp;gg=6sr;ts&amp;ggg=6vt;10b&amp;gimel=6k7;h6&amp;gjcy=ur;cp&amp;gl=6t3;un&amp;glE=8eq;1fz&amp;gla=8f9;1gj&amp;glj=8f8;1gi&amp;gnE=6sp;tg&amp;gnap=8ei;1fp&amp;gnapprox=8ei;1fo&amp;gne=8eg;1fl&amp;gneq=8eg;1fk&amp;gneqq=6sp;tf&amp;gnsim=6w7;10y&amp;gopf=2kpk;1mh&amp;grave=2o;14&amp;gscr=6iy;f9&amp;gsim=6sz;ud&amp;gsime=8em;1fv&amp;gsiml=8eo;1fx&amp;gt=1q;s&amp;gtcc=8fb;1gl&amp;gtcir=8e2;1et&amp;gtdot=6vr;107&amp;gtlPar=87p;1aw&amp;gtquest=8e4;1ev&amp;gtrapprox=8ee;1fg&amp;gtrarr=86w;1ad&amp;gtrdot=6vr;106&amp;gtreqless=6vv;10j&amp;gtreqqless=8ek;1fs&amp;gtrless=6t3;um&amp;gtrsim=6sz;uc&amp;gvertneqq=6sp,1e68;td&amp;gvnE=6sp,1e68;te&amp;hArr=6ok;m5&amp;hairsp=6bu;da&amp;half=59;2l&amp;hamilt=6iz;fb&amp;hardcy=ui;ch&amp;harr=6ms;id&amp;harrcir=85k;192&amp;harrw=6nh;js&amp;hbar=6j3;fl&amp;hcirc=85;5g&amp;hearts=7l1;16a&amp;heartsuit=7l1;169&amp;hellip=6cm;eb&amp;hercon=6ux;yr&amp;hfr=2ko5;1l9&amp;hksearow=84l;18i&amp;hkswarow=84m;18k&amp;hoarr=6pr;mr&amp;homtht=6rf;q5&amp;hookleftarrow=6nd;jj&amp;hookrightarrow=6ne;jl&amp;hopf=2kpl;1mi&amp;horbar=6c5;do&amp;hscr=2kl9;1jz&amp;hslash=6j3;fi&amp;hstrok=87;5i&amp;hybull=6df;ep&amp;hyphen=6c0;dk&amp;iacute=6l;3y&amp;ic=6eb;f1&amp;icirc=6m;3z&amp;icy=u0;bz&amp;iecy=tx;bw&amp;iexcl=4h;1f&amp;iff=6ok;m6&amp;ifr=2ko6;1la&amp;igrave=6k;3x&amp;ii=6ko;hg&amp;iiiint=8b0;1cn&amp;iiint=6r1;pg&amp;iinfin=89o;1c3&amp;iiota=6jt;gm&amp;ijlig=8j;5t&amp;imacr=8b;5m&amp;image=6j5;fp&amp;imagline=6j4;fm&amp;imagpart=6j5;fo&amp;imath=8h;5r&amp;imof=6uv;yo&amp;imped=c5;7w&amp;in=6q0;nd&amp;incare=6it;f8&amp;infin=6qm;of&amp;infintie=89p;1c4&amp;inodot=8h;5q&amp;int=6qz;pe&amp;intcal=6uy;yt&amp;integers=6jo;gh&amp;intercal=6uy;ys&amp;intlarhk=8bb;1cx&amp;intprod=8cc;1dk&amp;iocy=up;cn&amp;iogon=8f;5o&amp;iopf=2kpm;1mj&amp;iota=qh;9b&amp;iprod=8cc;1dl&amp;iquest=5b;2n&amp;iscr=2kla;1k0&amp;isin=6q0;nc&amp;isinE=6wp;11r&amp;isindot=6wl;11n&amp;isins=6wk;11l&amp;isinsv=6wj;11k&amp;isinv=6q0;nb&amp;it=6ea;ez&amp;itilde=89;5k&amp;iukcy=uu;cs&amp;iuml=6n;40&amp;jcirc=8l;5v&amp;jcy=u1;c0&amp;jfr=2ko7;1lb&amp;jmath=fr;7y&amp;jopf=2kpn;1mk&amp;jscr=2klb;1k1&amp;jsercy=uw;cu&amp;jukcy=us;cq&amp;kappa=qi;9c&amp;kappav=s0;a9&amp;kcedil=8n;5x&amp;kcy=u2;c1&amp;kfr=2ko8;1lc&amp;kgreen=8o;5y&amp;khcy=ud;cc&amp;kjcy=v0;cy&amp;kopf=2kpo;1ml&amp;kscr=2klc;1k2&amp;lAarr=6oq;mf&amp;lArr=6og;ls&amp;lAtail=84b;18a&amp;lBarr=83y;17z&amp;lE=6sm;t2&amp;lEg=8ej;1fr&amp;lHar=86a;19q&amp;lacute=8q;60&amp;laemptyv=88k;1bh&amp;lagran=6j6;ft&amp;lambda=qj;9d&amp;lang=7vs;16z&amp;langd=87l;1as&amp;langle=7vs;16y&amp;lap=8ed;1ff&amp;laquo=4r;1t&amp;larr=6mo;hx&amp;larrb=6p0;mk&amp;larrbfs=84f;18e&amp;larrfs=84d;18c&amp;larrhk=6nd;jk&amp;larrlp=6nf;jo&amp;larrpl=855;18y&amp;larrsim=86r;1a9&amp;larrtl=6n6;j7&amp;lat=8ff;1gp&amp;latail=849;188&amp;late=8fh;1gt&amp;lates=8fh,1e68;1gs&amp;lbarr=83w;17w&amp;lbbrk=7si;16p&amp;lbrace=3f;16&amp;lbrack=2j;v&amp;lbrke=87f;1am&amp;lbrksld=87j;1aq&amp;lbrkslu=87h;1ao&amp;lcaron=8u;64&amp;lcedil=8s;62&amp;lceil=6x4;122&amp;lcub=3f;17&amp;lcy=u3;c2&amp;ldca=852;18v&amp;ldquo=6cc;dz&amp;ldquor=6ce;e3&amp;ldrdhar=86f;19v&amp;ldrushar=85n;195&amp;ldsh=6nm;jz&amp;le=6sk;st&amp;leftarrow=6mo;hv&amp;leftarrowtail=6n6;j6&amp;leftharpoondown=6nx;kd&amp;leftharpoonup=6nw;ka&amp;leftleftarrows=6o7;l6&amp;leftrightarrow=6ms;ic&amp;leftrightarrows=6o6;l4&amp;leftrightharpoons=6ob;lf&amp;leftrightsquigarrow=6nh;jr&amp;leftthreetimes=6vf;zl&amp;leg=6vu;10g&amp;leq=6sk;ss&amp;leqq=6sm;t1&amp;leqslant=8e5;1f0&amp;les=8e5;1f1&amp;lescc=8fc;1gm&amp;lesdot=8e7;1f8&amp;lesdoto=8e9;1fa&amp;lesdotor=8eb;1fc&amp;lesg=6vu,1e68;10d&amp;lesges=8er;1g0&amp;lessapprox=8ed;1fe&amp;lessdot=6vq;104&amp;lesseqgtr=6vu;10f&amp;lesseqqgtr=8ej;1fq&amp;lessgtr=6t2;uj&amp;lesssim=6sy;u9&amp;lfisht=870;1ag&amp;lfloor=6x6;126&amp;lfr=2ko9;1ld&amp;lg=6t2;uk&amp;lgE=8ep;1fy&amp;lhard=6nx;kf&amp;lharu=6nw;kc&amp;lharul=86i;19y&amp;lhblk=7es;14o&amp;ljcy=ux;cv&amp;ll=6sq;tm&amp;llarr=6o7;l7&amp;llcorner=6xq;12m&amp;llhard=86j;19z&amp;lltri=7i2;15w&amp;lmidot=8w;66&amp;lmoust=71s;131&amp;lmoustache=71s;130&amp;lnE=6so;tc&amp;lnap=8eh;1fn&amp;lnapprox=8eh;1fm&amp;lne=8ef;1fj&amp;lneq=8ef;1fi&amp;lneqq=6so;tb&amp;lnsim=6w6;10x&amp;loang=7vw;175&amp;loarr=6pp;mp&amp;lobrk=7vq;16u&amp;longleftarrow=7w5;178&amp;longleftrightarrow=7w7;17e&amp;longmapsto=7wc;17p&amp;longrightarrow=7w6;17b&amp;looparrowleft=6nf;jn&amp;looparrowright=6ng;jp&amp;lopar=879;1ak&amp;lopf=2kpp;1mm&amp;loplus=8bx;1d6&amp;lotimes=8c4;1dc&amp;lowast=6qf;o5&amp;lowbar=2n;12&amp;loz=7gq;15p&amp;lozenge=7gq;15o&amp;lozf=8a3;1ca&amp;lpar=14;b&amp;lparlt=87n;1au&amp;lrarr=6o6;l5&amp;lrcorner=6xr;12o&amp;lrhar=6ob;lg&amp;lrhard=86l;1a1&amp;lrm=6by;di&amp;lrtri=6v3;yx&amp;lsaquo=6d5;ek&amp;lscr=2kld;1k3&amp;lsh=6nk;jw&amp;lsim=6sy;ua&amp;lsime=8el;1fu&amp;lsimg=8en;1fw&amp;lsqb=2j;w&amp;lsquo=6c8;ds&amp;lsquor=6ca;dw&amp;lstrok=8y;68&amp;lt=1o;n&amp;ltcc=8fa;1gk&amp;ltcir=8e1;1es&amp;ltdot=6vq;105&amp;lthree=6vf;zm&amp;ltimes=6vd;zj&amp;ltlarr=86u;1ac&amp;ltquest=8e3;1eu&amp;ltrPar=87q;1ax&amp;ltri=7gj;15n&amp;ltrie=6us;yi&amp;ltrif=7gi;15l&amp;lurdshar=85m;194&amp;luruhar=86e;19u&amp;lvertneqq=6so,1e68;t9&amp;lvnE=6so,1e68;ta&amp;mDDot=6re;q4&amp;macr=4v;20&amp;male=7k2;164&amp;malt=7q8;16m&amp;maltese=7q8;16l&amp;map=6na;jg&amp;mapsto=6na;jf&amp;mapstodown=6nb;ji&amp;mapstoleft=6n8;jb&amp;mapstoup=6n9;jd&amp;marker=7fy;152&amp;mcomma=8bt;1d4&amp;mcy=u4;c3&amp;mdash=6c4;dn&amp;measuredangle=6qp;ok&amp;mfr=2koa;1le&amp;mho=6jr;gj&amp;micro=51;29&amp;mid=6qr;oq&amp;midast=16;d&amp;midcir=8hc;1j1&amp;middot=53;2d&amp;minus=6qa;nu&amp;minusb=6u7;xj&amp;minusd=6rc;q3&amp;minusdu=8bu;1d5&amp;mlcp=8gr;1ip&amp;mldr=6cm;ec&amp;mnplus=6qb;nw&amp;models=6uf;xy&amp;mopf=2kpq;1mn&amp;mp=6qb;nx&amp;mscr=2kle;1k4&amp;mstpos=6ri;qf&amp;mu=qk;9e&amp;multimap=6uw;yp&amp;mumap=6uw;yq&amp;nGg=6vt,mw;10a&amp;nGt=6sr,6he;tp&amp;nGtv=6sr,mw;to&amp;nLeftarrow=6od;lk&amp;nLeftrightarrow=6oe;lm&amp;nLl=6vs,mw;108&amp;nLt=6sq,6he;tj&amp;nLtv=6sq,mw;ti&amp;nRightarrow=6of;lo&amp;nVDash=6un;y7&amp;nVdash=6um;y6&amp;nabla=6pz;n8&amp;nacute=90;6a&amp;nang=6qo,6he;oh&amp;nap=6rt;rb&amp;napE=8ds,mw;1ei&amp;napid=6rv,mw;re&amp;napos=95;6f&amp;napprox=6rt;ra&amp;natur=7la;16g&amp;natural=7la;16f&amp;naturals=6j9;fw&amp;nbsp=4g;1e&amp;nbump=6ry,mw;rm&amp;nbumpe=6rz,mw;rr&amp;ncap=8cj;1dp&amp;ncaron=94;6e&amp;ncedil=92;6c&amp;ncong=6rr;r2&amp;ncongdot=8dp,mw;1ee&amp;ncup=8ci;1do&amp;ncy=u5;c4&amp;ndash=6c3;dm&amp;ne=6sg;sl&amp;neArr=6on;mb&amp;nearhk=84k;18h&amp;nearr=6mv;im&amp;nearrow=6mv;il&amp;nedot=6s0,mw;rv&amp;nequiv=6si;sq&amp;nesear=84o;18n&amp;nesim=6rm,mw;qo&amp;nexist=6pw;n3&amp;nexists=6pw;n2&amp;nfr=2kob;1lf&amp;ngE=6sn,mw;t4&amp;nge=6sx;u7&amp;ngeq=6sx;u6&amp;ngeqq=6sn,mw;t5&amp;ngeqslant=8e6,mw;1f3&amp;nges=8e6,mw;1f4&amp;ngsim=6t1;uh&amp;ngt=6sv;u1&amp;ngtr=6sv;u0&amp;nhArr=6oe;ln&amp;nharr=6ni;ju&amp;nhpar=8he;1j3&amp;ni=6q3;nk&amp;nis=6ws;11u&amp;nisd=6wq;11s&amp;niv=6q3;nj&amp;njcy=uy;cw&amp;nlArr=6od;ll&amp;nlE=6sm,mw;sy&amp;nlarr=6my;iu&amp;nldr=6cl;ea&amp;nle=6sw;u4&amp;nleftarrow=6my;it&amp;nleftrightarrow=6ni;jt&amp;nleq=6sw;u3&amp;nleqq=6sm,mw;sz&amp;nleqslant=8e5,mw;1ex&amp;nles=8e5,mw;1ey&amp;nless=6su;tx&amp;nlsim=6t0;uf&amp;nlt=6su;ty&amp;nltri=6wa;115&amp;nltrie=6wc;11b&amp;nmid=6qs;ou&amp;nopf=2kpr;1mo&amp;not=4s;1u&amp;notin=6q1;ng&amp;notinE=6wp,mw;11q&amp;notindot=6wl,mw;11m&amp;notinva=6q1;nf&amp;notinvb=6wn;11p&amp;notinvc=6wm;11o&amp;notni=6q4;nn&amp;notniva=6q4;nm&amp;notnivb=6wu;11w&amp;notnivc=6wt;11v&amp;npar=6qu;p4&amp;nparallel=6qu;p2&amp;nparsl=8hp,6hx;1j5&amp;npart=6pu,mw;mw&amp;npolint=8b8;1cu&amp;npr=6tc;vd&amp;nprcue=6w0;10q&amp;npre=8fj,mw;1gw&amp;nprec=6tc;vc&amp;npreceq=8fj,mw;1gx&amp;nrArr=6of;lp&amp;nrarr=6mz;iw&amp;nrarrc=84z,mw;18s&amp;nrarrw=6n1,mw;ix&amp;nrightarrow=6mz;iv&amp;nrtri=6wb;118&amp;nrtrie=6wd;11e&amp;nsc=6td;vg&amp;nsccue=6w1;10s&amp;nsce=8fk,mw;1h2&amp;nscr=2klf;1k5&amp;nshortmid=6qs;os&amp;nshortparallel=6qu;p1&amp;nsim=6rl;qm&amp;nsime=6ro;qx&amp;nsimeq=6ro;qw&amp;nsmid=6qs;ot&amp;nspar=6qu;p3&amp;nsqsube=6w2;10u&amp;nsqsupe=6w3;10w&amp;nsub=6tg;vs&amp;nsubE=8g5,mw;1hv&amp;nsube=6tk;w2&amp;nsubset=6te,6he;vi&amp;nsubseteq=6tk;w1&amp;nsubseteqq=8g5,mw;1hw&amp;nsucc=6td;vf&amp;nsucceq=8fk,mw;1h3&amp;nsup=6th;vt&amp;nsupE=8g6,mw;1hz&amp;nsupe=6tl;w5&amp;nsupset=6tf,6he;vn&amp;nsupseteq=6tl;w4&amp;nsupseteqq=8g6,mw;1i0&amp;ntgl=6t5;ur&amp;ntilde=6p;42&amp;ntlg=6t4;up&amp;ntriangleleft=6wa;114&amp;ntrianglelefteq=6wc;11a&amp;ntriangleright=6wb;117&amp;ntrianglerighteq=6wd;11d&amp;nu=ql;9f&amp;num=z;5&amp;numero=6ja;fy&amp;numsp=6br;d5&amp;nvDash=6ul;y5&amp;nvHarr=83o;17u&amp;nvap=6rx,6he;ri&amp;nvdash=6uk;y4&amp;nvge=6sl,6he;su&amp;nvgt=1q,6he;q&amp;nvinfin=89q;1c5&amp;nvlArr=83m;17s&amp;nvle=6sk,6he;sr&amp;nvlt=1o,6he;l&amp;nvltrie=6us,6he;yf&amp;nvrArr=83n;17t&amp;nvrtrie=6ut,6he;yj&amp;nvsim=6rg,6he;q6&amp;nwArr=6om;ma&amp;nwarhk=84j;18g&amp;nwarr=6mu;ij&amp;nwarrow=6mu;ii&amp;nwnear=84n;18m&amp;oS=79k;13h&amp;oacute=6r;44&amp;oast=6u3;xd&amp;ocir=6u2;xb&amp;ocirc=6s;45&amp;ocy=u6;c5&amp;odash=6u5;xf&amp;odblac=9d;6l&amp;odiv=8c8;1dg&amp;odot=6u1;x9&amp;odsold=88s;1bn&amp;oelig=9f;6n&amp;ofcir=88v;1bp&amp;ofr=2koc;1lg&amp;ogon=kb;87&amp;ograve=6q;43&amp;ogt=88x;1br&amp;ohbar=88l;1bi&amp;ohm=q1;91&amp;oint=6r2;pk&amp;olarr=6nu;k7&amp;olcir=88u;1bo&amp;olcross=88r;1bm&amp;oline=6da;en&amp;olt=88w;1bq&amp;omacr=99;6j&amp;omega=qx;9u&amp;omicron=qn;9h&amp;omid=88m;1bj&amp;ominus=6ty;x4&amp;oopf=2kps;1mp&amp;opar=88n;1bk&amp;operp=88p;1bl&amp;oplus=6tx;x2&amp;or=6qw;p8&amp;orarr=6nv;k9&amp;ord=8d9;1ea&amp;order=6k4;h1&amp;orderof=6k4;h0&amp;ordf=4q;1s&amp;ordm=56;2h&amp;origof=6uu;yn&amp;oror=8d2;1e4&amp;orslope=8d3;1e5&amp;orv=8d7;1e8&amp;oscr=6k4;h2&amp;oslash=6w;4a&amp;osol=6u0;x7&amp;otilde=6t;46&amp;otimes=6tz;x6&amp;otimesas=8c6;1de&amp;ouml=6u;47&amp;ovbar=6yl;12x&amp;par=6qt;oz&amp;para=52;2a&amp;parallel=6qt;ox&amp;parsim=8hf;1j4&amp;parsl=8hp;1j6&amp;part=6pu;my&amp;pcy=u7;c6&amp;percnt=11;7&amp;period=1a;h&amp;permil=6cw;ed&amp;perp=6ud;xw&amp;pertenk=6cx;ee&amp;pfr=2kod;1lh&amp;phi=qu;9r&amp;phiv=r9;a2&amp;phmmat=6k3;gy&amp;phone=7im;162&amp;pi=qo;9i&amp;pitchfork=6vo;101&amp;piv=ra;a4&amp;planck=6j3;fj&amp;planckh=6j2;fh&amp;plankv=6j3;fk&amp;plus=17;f&amp;plusacir=8bn;1cz&amp;plusb=6u6;xh&amp;pluscir=8bm;1cy&amp;plusdo=6qc;nz&amp;plusdu=8bp;1d1&amp;pluse=8du;1el&amp;plusmn=4x;23&amp;plussim=8bq;1d2&amp;plustwo=8br;1d3&amp;pm=4x;24&amp;pointint=8b9;1cv&amp;popf=2kpt;1mq&amp;pound=4j;1h&amp;pr=6t6;uu&amp;prE=8fn;1h7&amp;prap=8fr;1he&amp;prcue=6t8;v0&amp;pre=8fj;1h0&amp;prec=6t6;ut&amp;precapprox=8fr;1hd&amp;preccurlyeq=6t8;uz&amp;preceq=8fj;1gz&amp;precnapprox=8ft;1hh&amp;precneqq=8fp;1h9&amp;precnsim=6w8;10z&amp;precsim=6ta;v5&amp;prime=6cy;ef&amp;primes=6jd;g2&amp;prnE=8fp;1ha&amp;prnap=8ft;1hi&amp;prnsim=6w8;110&amp;prod=6q7;np&amp;profalar=6y6;12v&amp;profline=6xe;12e&amp;profsurf=6xf;12f&amp;prop=6ql;oe&amp;propto=6ql;oc&amp;prsim=6ta;v6&amp;prurel=6uo;y8&amp;pscr=2klh;1k6&amp;psi=qw;9t&amp;puncsp=6bs;d6&amp;qfr=2koe;1li&amp;qint=8b0;1co&amp;qopf=2kpu;1mr&amp;qprime=6dz;es&amp;qscr=2kli;1k7&amp;quaternions=6j1;ff&amp;quatint=8ba;1cw&amp;quest=1r;t&amp;questeq=6sf;si&amp;quot=y;4&amp;rAarr=6or;mh&amp;rArr=6oi;lz&amp;rAtail=84c;18b&amp;rBarr=83z;181&amp;rHar=86c;19s&amp;race=6rh,mp;qb&amp;racute=9h;6p&amp;radic=6qi;o8&amp;raemptyv=88j;1bg&amp;rang=7vt;172&amp;rangd=87m;1at&amp;range=885;1b2&amp;rangle=7vt;171&amp;raquo=57;2i&amp;rarr=6mq;i6&amp;rarrap=86t;1ab&amp;rarrb=6p1;mm&amp;rarrbfs=84g;18f&amp;rarrc=84z;18t&amp;rarrfs=84e;18d&amp;rarrhk=6ne;jm&amp;rarrlp=6ng;jq&amp;rarrpl=85h;191&amp;rarrsim=86s;1aa&amp;rarrtl=6n7;j9&amp;rarrw=6n1;iz&amp;ratail=84a;189&amp;ratio=6ra;pz&amp;rationals=6je;g4&amp;rbarr=83x;17y&amp;rbbrk=7sj;16q&amp;rbrace=3h;1b&amp;rbrack=2l;y&amp;rbrke=87g;1an&amp;rbrksld=87i;1ap&amp;rbrkslu=87k;1ar&amp;rcaron=9l;6t&amp;rcedil=9j;6r&amp;rceil=6x5;124&amp;rcub=3h;1c&amp;rcy=u8;c7&amp;rdca=853;18w&amp;rdldhar=86h;19x&amp;rdquo=6cd;e2&amp;rdquor=6cd;e1&amp;rdsh=6nn;k0&amp;real=6jg;g9&amp;realine=6jf;g6&amp;realpart=6jg;g8&amp;reals=6jh;gc&amp;rect=7fx;151&amp;reg=4u;1y&amp;rfisht=871;1ah&amp;rfloor=6x7;128&amp;rfr=2kof;1lj&amp;rhard=6o1;kr&amp;rharu=6o0;ko&amp;rharul=86k;1a0&amp;rho=qp;9j&amp;rhov=s1;ab&amp;rightarrow=6mq;i4&amp;rightarrowtail=6n7;j8&amp;rightharpoondown=6o1;kp&amp;rightharpoonup=6o0;km&amp;rightleftarrows=6o4;kz&amp;rightleftharpoons=6oc;lh&amp;rightrightarrows=6o9;la&amp;rightsquigarrow=6n1;iy&amp;rightthreetimes=6vg;zn&amp;ring=ka;86&amp;risingdotseq=6s3;s3&amp;rlarr=6o4;l0&amp;rlhar=6oc;lj&amp;rlm=6bz;dj&amp;rmoust=71t;133&amp;rmoustache=71t;132&amp;rnmid=8ha;1iz&amp;roang=7vx;176&amp;roarr=6pq;mq&amp;robrk=7vr;16w&amp;ropar=87a;1al&amp;ropf=2kpv;1ms&amp;roplus=8by;1d7&amp;rotimes=8c5;1dd&amp;rpar=15;c&amp;rpargt=87o;1av&amp;rppolint=8b6;1cs&amp;rrarr=6o9;lb&amp;rsaquo=6d6;el&amp;rscr=2klj;1k8&amp;rsh=6nl;jy&amp;rsqb=2l;z&amp;rsquo=6c9;dv&amp;rsquor=6c9;du&amp;rthree=6vg;zo&amp;rtimes=6ve;zk&amp;rtri=7g9;15d&amp;rtrie=6ut;ym&amp;rtrif=7g8;15b&amp;rtriltri=89a;1by&amp;ruluhar=86g;19w&amp;rx=6ji;ge&amp;sacute=9n;6v&amp;sbquo=6ca;dx&amp;sc=6t7;ux&amp;scE=8fo;1h8&amp;scap=8fs;1hg&amp;scaron=9t;71&amp;sccue=6t9;v3&amp;sce=8fk;1h6&amp;scedil=9r;6z&amp;scirc=9p;6x&amp;scnE=8fq;1hc&amp;scnap=8fu;1hk&amp;scnsim=6w9;112&amp;scpolint=8b7;1ct&amp;scsim=6tb;va&amp;scy=u9;c8&amp;sdot=6v9;zd&amp;sdotb=6u9;xn&amp;sdote=8di;1ec&amp;seArr=6oo;mc&amp;searhk=84l;18j&amp;searr=6mw;ip&amp;searrow=6mw;io&amp;sect=4n;1l&amp;semi=1n;k&amp;seswar=84p;18p&amp;setminus=6qe;o2&amp;setmn=6qe;o4&amp;sext=7qu;16n&amp;sfr=2kog;1lk&amp;sfrown=6xu;12q&amp;sharp=7lb;16h&amp;shchcy=uh;cg&amp;shcy=ug;cf&amp;shortmid=6qr;oo&amp;shortparallel=6qt;ow&amp;shy=4t;1v&amp;sigma=qr;9n&amp;sigmaf=qq;9l&amp;sigmav=qq;9m&amp;sim=6rg;qa&amp;simdot=8dm;1ed&amp;sime=6rn;qu&amp;simeq=6rn;qt&amp;simg=8f2;1gb&amp;simgE=8f4;1gd&amp;siml=8f1;1ga&amp;simlE=8f3;1gc&amp;simne=6rq;r0&amp;simplus=8bo;1d0&amp;simrarr=86q;1a8&amp;slarr=6mo;hw&amp;smallsetminus=6qe;o0&amp;smashp=8c3;1db&amp;smeparsl=89w;1c7&amp;smid=6qr;op&amp;smile=6xv;12t&amp;smt=8fe;1go&amp;smte=8fg;1gr&amp;smtes=8fg,1e68;1gq&amp;softcy=uk;cj&amp;sol=1b;i&amp;solb=890;1bu&amp;solbar=6yn;12y&amp;sopf=2kpw;1mt&amp;spades=7kw;166&amp;spadesuit=7kw;165&amp;spar=6qt;oy&amp;sqcap=6tv;wx&amp;sqcaps=6tv,1e68;wv&amp;sqcup=6tw;x0&amp;sqcups=6tw,1e68;wy&amp;sqsub=6tr;wk&amp;sqsube=6tt;wr&amp;sqsubset=6tr;wj&amp;sqsubseteq=6tt;wq&amp;sqsup=6ts;wo&amp;sqsupe=6tu;wu&amp;sqsupset=6ts;wn&amp;sqsupseteq=6tu;wt&amp;squ=7fl;14v&amp;square=7fl;14u&amp;squarf=7fu;14y&amp;squf=7fu;14z&amp;srarr=6mq;i5&amp;sscr=2klk;1k9&amp;ssetmn=6qe;o3&amp;ssmile=6xv;12s&amp;sstarf=6va;ze&amp;star=7ie;161&amp;starf=7id;160&amp;straightepsilon=s5;ac&amp;straightphi=r9;a0&amp;strns=4v;1z&amp;sub=6te;vl&amp;subE=8g5;1hy&amp;subdot=8fx;1hn&amp;sube=6ti;vw&amp;subedot=8g3;1ht&amp;submult=8g1;1hr&amp;subnE=8gb;1i8&amp;subne=6tm;w9&amp;subplus=8fz;1hp&amp;subrarr=86x;1ae&amp;subset=6te;vk&amp;subseteq=6ti;vv&amp;subseteqq=8g5;1hx&amp;subsetneq=6tm;w8&amp;subsetneqq=8gb;1i7&amp;subsim=8g7;1i3&amp;subsub=8gl;1ij&amp;subsup=8gj;1ih&amp;succ=6t7;uw&amp;succapprox=8fs;1hf&amp;succcurlyeq=6t9;v2&amp;succeq=8fk;1h5&amp;succnapprox=8fu;1hj&amp;succneqq=8fq;1hb&amp;succnsim=6w9;111&amp;succsim=6tb;v9&amp;sum=6q9;nt&amp;sung=7l6;16d&amp;sup=6tf;vr&amp;sup1=55;2g&amp;sup2=4y;25&amp;sup3=4z;26&amp;supE=8g6;1i2&amp;supdot=8fy;1ho&amp;supdsub=8go;1im&amp;supe=6tj;vz&amp;supedot=8g4;1hu&amp;suphsol=7ux;16s&amp;suphsub=8gn;1il&amp;suplarr=86z;1af&amp;supmult=8g2;1hs&amp;supnE=8gc;1ic&amp;supne=6tn;wd&amp;supplus=8g0;1hq&amp;supset=6tf;vq&amp;supseteq=6tj;vy&amp;supseteqq=8g6;1i1&amp;supsetneq=6tn;wc&amp;supsetneqq=8gc;1ib&amp;supsim=8g8;1i4&amp;supsub=8gk;1ii&amp;supsup=8gm;1ik&amp;swArr=6op;md&amp;swarhk=84m;18l&amp;swarr=6mx;is&amp;swarrow=6mx;ir&amp;swnwar=84q;18r&amp;szlig=67;3k&amp;target=6xi;12h&amp;tau=qs;9o&amp;tbrk=71w;135&amp;tcaron=9x;75&amp;tcedil=9v;73&amp;tcy=ua;c9&amp;tdot=6hn;f4&amp;telrec=6xh;12g&amp;tfr=2koh;1ll&amp;there4=6r8;pv&amp;therefore=6r8;pu&amp;theta=qg;9a&amp;thetasym=r5;9v&amp;thetav=r5;9x&amp;thickapprox=6rs;r3&amp;thicksim=6rg;q7&amp;thinsp=6bt;d8&amp;thkap=6rs;r7&amp;thksim=6rg;q8&amp;thorn=72;4g&amp;tilde=kc;89&amp;times=5z;3c&amp;timesb=6u8;xl&amp;timesbar=8c1;1da&amp;timesd=8c0;1d9&amp;tint=6r1;ph&amp;toea=84o;18o&amp;top=6uc;xt&amp;topbot=6ye;12w&amp;topcir=8hd;1j2&amp;topf=2kpx;1mu&amp;topfork=8gq;1io&amp;tosa=84p;18q&amp;tprime=6d0;eh&amp;trade=6jm;gg&amp;triangle=7g5;158&amp;triangledown=7gf;15i&amp;triangleleft=7gj;15m&amp;trianglelefteq=6us;yh&amp;triangleq=6sc;sg&amp;triangleright=7g9;15c&amp;trianglerighteq=6ut;yl&amp;tridot=7ho;15r&amp;trie=6sc;sh&amp;triminus=8ca;1di&amp;triplus=8c9;1dh&amp;trisb=899;1bx&amp;tritime=8cb;1dj&amp;trpezium=736;13d&amp;tscr=2kll;1ka&amp;tscy=ue;cd&amp;tshcy=uz;cx&amp;tstrok=9z;77&amp;twixt=6ss;tu&amp;twoheadleftarrow=6n2;j0&amp;twoheadrightarrow=6n4;j3&amp;uArr=6oh;lv&amp;uHar=86b;19r&amp;uacute=6y;4c&amp;uarr=6mp;i1&amp;ubrcy=v2;cz&amp;ubreve=a5;7d&amp;ucirc=6z;4d&amp;ucy=ub;ca&amp;udarr=6o5;l2&amp;udblac=a9;7h&amp;udhar=86m;1a3&amp;ufisht=872;1ai&amp;ufr=2koi;1lm&amp;ugrave=6x;4b&amp;uharl=6nz;kl&amp;uharr=6ny;ki&amp;uhblk=7eo;14n&amp;ulcorn=6xo;12j&amp;ulcorner=6xo;12i&amp;ulcrop=6xb;12c&amp;ultri=7i0;15u&amp;umacr=a3;7b&amp;uml=4o;1p&amp;uogon=ab;7j&amp;uopf=2kpy;1mv&amp;uparrow=6mp;i0&amp;updownarrow=6mt;if&amp;upharpoonleft=6nz;kj&amp;upharpoonright=6ny;kg&amp;uplus=6tq;wg&amp;upsi=qt;9q&amp;upsih=r6;9y&amp;upsilon=qt;9p&amp;upuparrows=6o8;l8&amp;urcorn=6xp;12l&amp;urcorner=6xp;12k&amp;urcrop=6xa;12b&amp;uring=a7;7f&amp;urtri=7i1;15v&amp;uscr=2klm;1kb&amp;utdot=6wg;11h&amp;utilde=a1;79&amp;utri=7g5;159&amp;utrif=7g4;157&amp;uuarr=6o8;l9&amp;uuml=70;4e&amp;uwangle=887;1b4&amp;vArr=6ol;m9&amp;vBar=8h4;1iu&amp;vBarv=8h5;1iv&amp;vDash=6ug;y0&amp;vangrt=87w;1az&amp;varepsilon=s5;ad&amp;varkappa=s0;a8&amp;varnothing=6px;n4&amp;varphi=r9;a1&amp;varpi=ra;a3&amp;varpropto=6ql;ob&amp;varr=6mt;ig&amp;varrho=s1;aa&amp;varsigma=qq;9k&amp;varsubsetneq=6tm,1e68;w6&amp;varsubsetneqq=8gb,1e68;1i5&amp;varsupsetneq=6tn,1e68;wa&amp;varsupsetneqq=8gc,1e68;1i9&amp;vartheta=r5;9w&amp;vartriangleleft=6uq;y9&amp;vartriangleright=6ur;yc&amp;vcy=tu;bt&amp;vdash=6ua;xp&amp;vee=6qw;p7&amp;veebar=6uz;yu&amp;veeeq=6sa;sf&amp;vellip=6we;11f&amp;verbar=3g;19&amp;vert=3g;1a&amp;vfr=2koj;1ln&amp;vltri=6uq;yb&amp;vnsub=6te,6he;vj&amp;vnsup=6tf,6he;vo&amp;vopf=2kpz;1mw&amp;vprop=6ql;od&amp;vrtri=6ur;ye&amp;vscr=2kln;1kc&amp;vsubnE=8gb,1e68;1i6&amp;vsubne=6tm,1e68;w7&amp;vsupnE=8gc,1e68;1ia&amp;vsupne=6tn,1e68;wb&amp;vzigzag=87u;1ay&amp;wcirc=ad;7l&amp;wedbar=8db;1eb&amp;wedge=6qv;p5&amp;wedgeq=6s9;se&amp;weierp=6jc;g0&amp;wfr=2kok;1lo&amp;wopf=2kq0;1mx&amp;wp=6jc;g1&amp;wr=6rk;qk&amp;wreath=6rk;qj&amp;wscr=2klo;1kd&amp;xcap=6v6;z6&amp;xcirc=7hr;15t&amp;xcup=6v7;z9&amp;xdtri=7gd;15f&amp;xfr=2kol;1lp&amp;xhArr=7wa;17o&amp;xharr=7w7;17f&amp;xi=qm;9g&amp;xlArr=7w8;17i&amp;xlarr=7w5;179&amp;xmap=7wc;17q&amp;xnis=6wr;11t&amp;xodot=8ao;1ce&amp;xopf=2kq1;1my&amp;xoplus=8ap;1cg&amp;xotime=8aq;1ci&amp;xrArr=7w9;17l&amp;xrarr=7w6;17c&amp;xscr=2klp;1ke&amp;xsqcup=8au;1cm&amp;xuplus=8as;1ck&amp;xutri=7g3;155&amp;xvee=6v5;z2&amp;xwedge=6v4;yz&amp;yacute=71;4f&amp;yacy=un;cm&amp;ycirc=af;7n&amp;ycy=uj;ci&amp;yen=4l;1j&amp;yfr=2kom;1lq&amp;yicy=uv;ct&amp;yopf=2kq2;1mz&amp;yscr=2klq;1kf&amp;yucy=um;cl&amp;yuml=73;4h&amp;zacute=ai;7q&amp;zcaron=am;7u&amp;zcy=tz;by&amp;zdot=ak;7s&amp;zeetrf=6js;gk&amp;zeta=qe;98&amp;zfr=2kon;1lr&amp;zhcy=ty;bx&amp;zigrarr=6ot;mi&amp;zopf=2kq3;1n0&amp;zscr=2klr;1kg&amp;zwj=6bx;dh&amp;zwnj=6bw;dg&amp;&quot;</span>;</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="EntitiesData.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu May 4 2023 21:58:45 CDT using coverage data from Thu May 4 2023 21:58:43 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

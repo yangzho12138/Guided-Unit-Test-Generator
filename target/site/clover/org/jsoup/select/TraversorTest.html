@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../style.css');
+        @import url('../../../tree.css');
+        
+    </style>
+
+    <script src="../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../clover.js" type="text/javascript"></script>
+    <script src="../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../cloud.js" type="text/javascript"></script>
+
+            <title>jsoup Java HTML Parser 1.12.2-SNAPSHOT</title>
+    </head>
+
+<body  onload="onLoad('jsoup Java HTML Parser 1.12.2-SNAPSHOT: org.jsoup.select.TraversorTest.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                                        jsoup Java HTML Parser 1.12.2-SNAPSHOT
+                                </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../" data-package-name="org.jsoup.select">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../dashboard.html">Project Clover database Thu May 4 2023 21:58:36 CDT</a></li> 
+        <li><a href="testsrc-pkg-summary.html">        Package org.jsoup.select</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File TraversorTest.java
+    </h1>
+
+
+
+
+
+
+
+
+        
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+                <ul class="tabs-menu">
+            <li class="menu-item active-tab">
+                <a href="#tabs-file-source"><strong>Source file</strong></a>
+            </li>
+            <li class="menu-item">
+                <a href="test-TraversorTest.html"><strong>Test results</strong></a>
+            </li>
+        </ul>
+        <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                        <div style="display: table-cell; ">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">117</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">97</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">20</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.51</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.33</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">10</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">39</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">117</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">97</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">20</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.51</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.6</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">15</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.33</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="TraversorTest">
+        <span><a href="#10" title="TraversorTest" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '10');">TraversorTest</a></span>
+</td>
+<td>10<a name="sl-10"></a></td>
+    <td class="">39</td>
+    <td class="">0%</td>
+    <td class="">20</td>
+    <td class="">0</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-TraversorTest" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-TraversorTest" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class TraversorTest</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-TraversorTest-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-TraversorTest-methods-body', 'dialog-TraversorTest-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+                    <thead>
+                                                 <tr> <th id="TraversorTest">
+    Class<br/>    <span><a href="#10" title="TraversorTest" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '10');">TraversorTest</a></span>
+</th>
+<th>Line #<br/>10<a name="sl-10"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>39</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>20</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>0</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-TraversorTest-methods-body">
+                                                                                                            <tr id="TraversorTest-1">
+<td id="summary-19-13">
+ <span class="sortValue">head(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#19" title="head(Node,int)&#160;:&#160;FilterResult" name="sl-19" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '19');">head(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">19</span>19</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-2">
+<td id="summary-25-13">
+ <span class="sortValue">tail(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#25" title="tail(Node,int)&#160;:&#160;FilterResult" name="sl-25" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '25');">tail(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">25</span>25</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-3">
+<td id="summary-14-5">
+ <span class="sortValue">filterVisit()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#14" title="filterVisit()&#160;:&#160;void" name="sl-14" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '14');">filterVisit()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">14</span>14</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-4">
+<td id="summary-39-13">
+ <span class="sortValue">head(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#39" title="head(Node,int)&#160;:&#160;FilterResult" name="sl-39" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '39');">head(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">39</span>39</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-5">
+<td id="summary-46-13">
+ <span class="sortValue">tail(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#46" title="tail(Node,int)&#160;:&#160;FilterResult" name="sl-46" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '46');">tail(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">46</span>46</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-6">
+<td id="summary-34-5">
+ <span class="sortValue">filterSkipChildren()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#34" title="filterSkipChildren()&#160;:&#160;void" name="sl-34" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '34');">filterSkipChildren()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">34</span>34</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-7">
+<td id="summary-60-13">
+ <span class="sortValue">head(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#60" title="head(Node,int)&#160;:&#160;FilterResult" name="sl-60" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '60');">head(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">60</span>60</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-8">
+<td id="summary-69-13">
+ <span class="sortValue">tail(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#69" title="tail(Node,int)&#160;:&#160;FilterResult" name="sl-69" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '69');">tail(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">69</span>69</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-9">
+<td id="summary-55-5">
+ <span class="sortValue">filterSkipEntirely()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#55" title="filterSkipEntirely()&#160;:&#160;void" name="sl-55" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '55');">filterSkipEntirely()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">55</span>55</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-10">
+<td id="summary-82-13">
+ <span class="sortValue">head(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#82" title="head(Node,int)&#160;:&#160;FilterResult" name="sl-82" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '82');">head(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">82</span>82</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-11">
+<td id="summary-88-13">
+ <span class="sortValue">tail(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#88" title="tail(Node,int)&#160;:&#160;FilterResult" name="sl-88" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '88');">tail(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">88</span>88</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-12">
+<td id="summary-78-5">
+ <span class="sortValue">filterRemove()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#78" title="filterRemove()&#160;:&#160;void" name="sl-78" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '78');">filterRemove()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">78</span>78</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-13">
+<td id="summary-102-13">
+ <span class="sortValue">head(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#102" title="head(Node,int)&#160;:&#160;FilterResult" name="sl-102" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '102');">head(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">102</span>102</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-14">
+<td id="summary-108-13">
+ <span class="sortValue">tail(Node,int)&#160;:&#160;FilterResult</span>
+&#160;&#160;<a href="?line=29#108" title="tail(Node,int)&#160;:&#160;FilterResult" name="sl-108" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '108');">tail(Node,int)&#160;:&#160;FilterResult</a>
+</td>
+<td align="right"><span class="sortValue">108</span>108</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="TraversorTest-15">
+<td id="summary-97-5">
+ <span class="sortValue">filterStop()&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#97" title="filterStop()&#160;:&#160;void" name="sl-97" onclick="closeDialogAndScrollTo('dialog-TraversorTest', '97');">filterStop()&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">97</span>97</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-TraversorTest">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 5 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-1510">
+<td><a name="testA-1510"></a><input type="checkbox" id="cb-1510" value="1510" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/select/TraversorTest_filterSkipEntirely_15y.html';">
+<span class="sortValue">0.234375</span>
+<div>
+<div title="23.4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:23.4%"></div></div></div></td>
+<td id="tc-1510">  <span class="sortValue">org.jsoup.select.TraversorTest.filterSkipEntirely</span><a href="../../../org/jsoup/select/TraversorTest_filterSkipEntirely_15y.html" title="View Test Summary Page">org.jsoup.select.TraversorTest.filterSkipEntirely</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/select/TraversorTest.html?line=55#src-55" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/select/TraversorTest_filterSkipEntirely_15y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1745">
+<td><a name="testA-1745"></a><input type="checkbox" id="cb-1745" value="1745" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/select/TraversorTest_filterStop_1ch.html';">
+<span class="sortValue">0.203125</span>
+<div>
+<div title="20.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:20.3%"></div></div></div></td>
+<td id="tc-1745">  <span class="sortValue">org.jsoup.select.TraversorTest.filterStop</span><a href="../../../org/jsoup/select/TraversorTest_filterStop_1ch.html" title="View Test Summary Page">org.jsoup.select.TraversorTest.filterStop</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/select/TraversorTest.html?line=97#src-97" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/select/TraversorTest_filterStop_1ch.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-455">
+<td><a name="testA-455"></a><input type="checkbox" id="cb-455" value="455" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/select/TraversorTest_filterSkipChildren_cn.html';">
+<span class="sortValue">0.203125</span>
+<div>
+<div title="20.3% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:20.3%"></div></div></div></td>
+<td id="tc-455">  <span class="sortValue">org.jsoup.select.TraversorTest.filterSkipChildren</span><a href="../../../org/jsoup/select/TraversorTest_filterSkipChildren_cn.html" title="View Test Summary Page">org.jsoup.select.TraversorTest.filterSkipChildren</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/select/TraversorTest.html?line=34#src-34" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/select/TraversorTest_filterSkipChildren_cn.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-1535">
+<td><a name="testA-1535"></a><input type="checkbox" id="cb-1535" value="1535" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/select/TraversorTest_filterRemove_16n.html';">
+<span class="sortValue">0.1875</span>
+<div>
+<div title="18.8% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18.8%"></div></div></div></td>
+<td id="tc-1535">  <span class="sortValue">org.jsoup.select.TraversorTest.filterRemove</span><a href="../../../org/jsoup/select/TraversorTest_filterRemove_16n.html" title="View Test Summary Page">org.jsoup.select.TraversorTest.filterRemove</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/select/TraversorTest.html?line=78#src-78" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/select/TraversorTest_filterRemove_16n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-294">
+<td><a name="testA-294"></a><input type="checkbox" id="cb-294" value="294" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../org/jsoup/select/TraversorTest_filterVisit_86.html';">
+<span class="sortValue">0.171875</span>
+<div>
+<div title="17.2% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:17.2%"></div></div></div></td>
+<td id="tc-294">  <span class="sortValue">org.jsoup.select.TraversorTest.filterVisit</span><a href="../../../org/jsoup/select/TraversorTest_filterVisit_86.html" title="View Test Summary Page">org.jsoup.select.TraversorTest.filterVisit</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../org/jsoup/select/TraversorTest.html?line=14#src-14" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../org/jsoup/select/TraversorTest_filterVisit_86.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="keyword">package</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../select/pkg-summary.html">select</a>;</span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="keyword">import</span> <span class="keyword">static</span> org.junit.Assert.assertEquals;</span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="keyword">import</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>;</span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="keyword">import</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../nodes/pkg-summary.html">nodes</a>.<a href="../../../org/jsoup/nodes/Document.html#Document">Document</a>;</span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="keyword">import</span> org.<a href="../../jsoup/pkg-summary.html">jsoup</a>.<a href="../nodes/pkg-summary.html">nodes</a>.<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a>;</span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="keyword">import</span> org.junit.Test;</span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="10" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-10' onclick="toggleInlineStats(this, 'inlinestats-10');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-10" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-10'), 'inlinestats-10');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (64)</td>
+                <td class="inlineStat">Complexity: 20</td>
+                <td class="inlineStat">Complexity Density: 0.51</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 10, 'Tests that hit TraversorTest');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-10"><span class="spacer"></span><span id="src-10" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../org/jsoup/select/TraversorTest.html#TraversorTest">TraversorTest</a> {</span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine">    <span class="comment">// Note: NodeTraversor.traverse(new NodeVisitor) is tested in</span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine">    <span class="comment">// ElementsTest#traverse()</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="14" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-14' onclick="toggleInlineStats(this, 'inlinestats-14');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-14" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-14'), 'inlinestats-14');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l14">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 14, 'Tests that hit filterVisit()&#160;:&#160;void');" ><span title="Line 14, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-14"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 14,32);" id="img-14" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-14" class="srcLine"><span class="nolink" title="Line 14, Col 5: method entered 1 time.">    @Test</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-14'), 14,32);" id="e14" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> filterVisit() {</span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 16, 'Tests that hit line # 16');" ><span title="Line 16, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="nolink" title="Line 16, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a> doc = <a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>.parse(<span class="string">&quot;&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;&lt;div&gt;There&lt;/div&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 17, 'Tests that hit line # 17');" ><span title="Line 17, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="nolink" title="Line 17, Col 9: statement executed 1 time.">        <span class="keyword">final</span> StringBuilder accum = <span class="keyword">new</span> StringBuilder();</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 18, 'Tests that hit line # 18');" ><span title="Line 18, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"><span class="nolink" title="Line 18, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/select/NodeTraversor.html#NodeTraversor">NodeTraversor</a>.filter(<span class="keyword">new</span> <a href="../../../org/jsoup/select/NodeFilter.html#NodeFilter">NodeFilter</a>() {</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="19" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-19' onclick="toggleInlineStats(this, 'inlinestats-19');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-19" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-19'), 'inlinestats-19');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l19">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 19, 'Tests that hit head(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 19, Col 13: method entered 5 times." class="nolink">&#160;5</span></td>
+<td class=" methodStart  srcCell" id="id-19"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 19,23);" id="img-19" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-19" class="srcLine"><span class="nolink" title="Line 19, Col 13: method entered 5 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-19'), 19,23);" id="e19" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine">            <span class="keyword">public</span> FilterResult head(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 21, 'Tests that hit line # 21');" ><span title="Line 21, Col 17: statement executed 5 times." class="nolink">&#160;5</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="nolink" title="Line 21, Col 17: statement executed 5 times.">                accum.append(<span class="string">&quot;&lt;&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 22, 'Tests that hit line # 22');" ><span title="Line 22, Col 17: statement executed 5 times." class="nolink">&#160;5</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="nolink" title="Line 22, Col 17: statement executed 5 times.">                <span class="keyword">return</span> FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="25" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-25' onclick="toggleInlineStats(this, 'inlinestats-25');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-25" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-25'), 'inlinestats-25');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l25">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 25, 'Tests that hit tail(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 25, Col 13: method entered 5 times." class="nolink">&#160;5</span></td>
+<td class=" methodStart  srcCell" id="id-25"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 25,29);" id="img-25" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-25" class="srcLine"><span class="nolink" title="Line 25, Col 13: method entered 5 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-25'), 25,29);" id="e25" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine">            <span class="keyword">public</span> FilterResult tail(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 27, 'Tests that hit line # 27');" ><span title="Line 27, Col 17: statement executed 5 times." class="nolink">&#160;5</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"><span class="nolink" title="Line 27, Col 17: statement executed 5 times.">                accum.append(<span class="string">&quot;&lt;/&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 28, 'Tests that hit line # 28');" ><span title="Line 28, Col 17: statement executed 5 times." class="nolink">&#160;5</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="nolink" title="Line 28, Col 17: statement executed 5 times.">                <span class="keyword">return</span> FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine">        }, doc.select(<span class="string">&quot;div&quot;</span>));</span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 31, 'Tests that hit line # 31');" ><span title="Line 31, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="nolink" title="Line 31, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;&lt;div&gt;&lt;p&gt;&lt;#text&gt;&lt;/#text&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;#text&gt;&lt;/#text&gt;&lt;/div&gt;&quot;</span>, accum.toString());</span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="34" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-34' onclick="toggleInlineStats(this, 'inlinestats-34');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-34" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-34'), 'inlinestats-34');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l34">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 34, 'Tests that hit filterSkipChildren()&#160;:&#160;void');" ><span title="Line 34, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-34"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 34,53);" id="img-34" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-34" class="srcLine"><span class="nolink" title="Line 34, Col 5: method entered 1 time.">    @Test</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-34'), 34,53);" id="e34" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-35" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> filterSkipChildren() {</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 36, 'Tests that hit line # 36');" ><span title="Line 36, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"><span class="nolink" title="Line 36, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a> doc = <a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>.parse(<span class="string">&quot;&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;&lt;div&gt;There&lt;/div&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 37, 'Tests that hit line # 37');" ><span title="Line 37, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine"><span class="nolink" title="Line 37, Col 9: statement executed 1 time.">        <span class="keyword">final</span> StringBuilder accum = <span class="keyword">new</span> StringBuilder();</span></span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 38, 'Tests that hit line # 38');" ><span title="Line 38, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine"><span class="nolink" title="Line 38, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/select/NodeTraversor.html#NodeTraversor">NodeTraversor</a>.filter(<span class="keyword">new</span> <a href="../../../org/jsoup/select/NodeFilter.html#NodeFilter">NodeFilter</a>() {</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="39" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-39' onclick="toggleInlineStats(this, 'inlinestats-39');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-39" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-39'), 'inlinestats-39');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l39">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 39, 'Tests that hit head(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 39, Col 13: method entered 4 times." class="nolink">&#160;4</span></td>
+<td class=" methodStart  srcCell" id="id-39"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 39,44);" id="img-39" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-39" class="srcLine"><span class="nolink" title="Line 39, Col 13: method entered 4 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-39'), 39,44);" id="e39" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">            <span class="keyword">public</span> FilterResult head(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 41, 'Tests that hit line # 41');" ><span title="Line 41, Col 17: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"><span class="nolink" title="Line 41, Col 17: statement executed 4 times.">                accum.append(<span class="string">&quot;&lt;&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l42">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-42" class="srcLine">                <span class="comment">// OMIT contents of p:</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 43, 'Tests that hit line # 43');" ><span title="Line 43, Col 23: true branch executed 1 time, false branch executed 3 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine"><span class="nolink" title="Line 43, Col 23: true branch executed 1 time, false branch executed 3 times.">                <span class="keyword">return</span> (<span class="string">&quot;p&quot;</span>.equals(node.nodeName())) ? FilterResult.SKIP_CHILDREN : FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="46" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-46' onclick="toggleInlineStats(this, 'inlinestats-46');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-46" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-46'), 'inlinestats-46');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l46">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 46, 'Tests that hit tail(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 46, Col 13: method entered 4 times." class="nolink">&#160;4</span></td>
+<td class=" methodStart  srcCell" id="id-46"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 46,50);" id="img-46" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-46" class="srcLine"><span class="nolink" title="Line 46, Col 13: method entered 4 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-46'), 46,50);" id="e46" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l47">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-47" class="srcLine">            <span class="keyword">public</span> FilterResult tail(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 17: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 17: statement executed 4 times.">                accum.append(<span class="string">&quot;&lt;/&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 17: statement executed 4 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 17: statement executed 4 times.">                <span class="keyword">return</span> FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine">        }, doc.select(<span class="string">&quot;div&quot;</span>));</span></td>
+</tr>
+ <tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit line # 52');" ><span title="Line 52, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;&lt;div&gt;&lt;p&gt;&lt;/p&gt;&lt;/div&gt;&lt;div&gt;&lt;#text&gt;&lt;/#text&gt;&lt;/div&gt;&quot;</span>, accum.toString());</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="55" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-55' onclick="toggleInlineStats(this, 'inlinestats-55');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-55" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-55'), 'inlinestats-55');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l55">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 55, 'Tests that hit filterSkipEntirely()&#160;:&#160;void');" ><span title="Line 55, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-55"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 55,76);" id="img-55" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-55" class="srcLine"><span class="nolink" title="Line 55, Col 5: method entered 1 time.">    @Test</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-55'), 55,76);" id="e55" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> filterSkipEntirely() {</span></td>
+</tr>
+ <tr id="l57">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 57, 'Tests that hit line # 57');" ><span title="Line 57, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-57" class="srcLine"><span class="nolink" title="Line 57, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a> doc = <a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>.parse(<span class="string">&quot;&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;&lt;div&gt;There&lt;/div&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 58, 'Tests that hit line # 58');" ><span title="Line 58, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine"><span class="nolink" title="Line 58, Col 9: statement executed 1 time.">        <span class="keyword">final</span> StringBuilder accum = <span class="keyword">new</span> StringBuilder();</span></span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 59, 'Tests that hit line # 59');" ><span title="Line 59, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLine"><span class="nolink" title="Line 59, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/select/NodeTraversor.html#NodeTraversor">NodeTraversor</a>.filter(<span class="keyword">new</span> <a href="../../../org/jsoup/select/NodeFilter.html#NodeFilter">NodeFilter</a>() {</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="60" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-60' onclick="toggleInlineStats(this, 'inlinestats-60');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-60" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-60'), 'inlinestats-60');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (6)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l60">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 60, 'Tests that hit head(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 60, Col 13: method entered 4 times." class="nolink">&#160;4</span></td>
+<td class=" methodStart  srcCell" id="id-60"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 60,67);" id="img-60" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-60" class="srcLine"><span class="nolink" title="Line 60, Col 13: method entered 4 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-60'), 60,67);" id="e60" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">            <span class="keyword">public</span> FilterResult head(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLine">                <span class="comment">// OMIT p:</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 63, 'Tests that hit line # 63');" ><span title="Line 63, Col 20: true branch executed 1 time, false branch executed 3 times." class="nolink">&#160;4</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine"><span class="nolink" title="Line 63, Col 20: true branch executed 1 time, false branch executed 3 times.">                <span class="keyword">if</span> (<span class="string">&quot;p&quot;</span>.equals(node.nodeName()))</span></span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 64, 'Tests that hit line # 64');" ><span title="Line 64, Col 21: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine"><span class="nolink" title="Line 64, Col 21: statement executed 1 time.">                    <span class="keyword">return</span> FilterResult.SKIP_ENTIRELY;</span></span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 65, 'Tests that hit line # 65');" ><span title="Line 65, Col 17: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"><span class="nolink" title="Line 65, Col 17: statement executed 3 times.">                accum.append(<span class="string">&quot;&lt;&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l66">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 66, 'Tests that hit line # 66');" ><span title="Line 66, Col 17: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-66" class="srcLine"><span class="nolink" title="Line 66, Col 17: statement executed 3 times.">                <span class="keyword">return</span> FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="69" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-69' onclick="toggleInlineStats(this, 'inlinestats-69');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-69" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-69'), 'inlinestats-69');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l69">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 69, 'Tests that hit tail(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 69, Col 13: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-69"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 69,73);" id="img-69" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-69" class="srcLine"><span class="nolink" title="Line 69, Col 13: method entered 3 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-69'), 69,73);" id="e69" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine">            <span class="keyword">public</span> FilterResult tail(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit line # 71');" ><span title="Line 71, Col 17: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 17: statement executed 3 times.">                accum.append(<span class="string">&quot;&lt;/&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 72, 'Tests that hit line # 72');" ><span title="Line 72, Col 17: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine"><span class="nolink" title="Line 72, Col 17: statement executed 3 times.">                <span class="keyword">return</span> FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">        }, doc.select(<span class="string">&quot;div&quot;</span>));</span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 75, 'Tests that hit line # 75');" ><span title="Line 75, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine"><span class="nolink" title="Line 75, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;&lt;div&gt;&lt;/div&gt;&lt;div&gt;&lt;#text&gt;&lt;/#text&gt;&lt;/div&gt;&quot;</span>, accum.toString());</span></span></td>
+</tr>
+ <tr id="l76">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-76" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="78" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-78' onclick="toggleInlineStats(this, 'inlinestats-78');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-78" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-78'), 'inlinestats-78');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.33</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit filterRemove()&#160;:&#160;void');" ><span title="Line 78, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-78"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 78,95);" id="img-78" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 5: method entered 1 time.">    @Test</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-78'), 78,95);" id="e78" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> filterRemove() {</span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 80, 'Tests that hit line # 80');" ><span title="Line 80, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"><span class="nolink" title="Line 80, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a> doc = <a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>.parse(<span class="string">&quot;&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;&lt;div&gt;There be &lt;b&gt;bold&lt;/b&gt;&lt;/div&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l81">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 81, 'Tests that hit line # 81');" ><span title="Line 81, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-81" class="srcLine"><span class="nolink" title="Line 81, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/select/NodeTraversor.html#NodeTraversor">NodeTraversor</a>.filter(<span class="keyword">new</span> <a href="../../../org/jsoup/select/NodeFilter.html#NodeFilter">NodeFilter</a>() {</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="82" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-82' onclick="toggleInlineStats(this, 'inlinestats-82');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-82" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-82'), 'inlinestats-82');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 2</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l82">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 82, 'Tests that hit head(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 82, Col 13: method entered 6 times." class="nolink">&#160;6</span></td>
+<td class=" methodStart  srcCell" id="id-82"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 82,86);" id="img-82" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-82" class="srcLine"><span class="nolink" title="Line 82, Col 13: method entered 6 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-82'), 82,86);" id="e82" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine">            <span class="keyword">public</span> FilterResult head(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine">                <span class="comment">// Delete &quot;p&quot; in head:</span></span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 85, 'Tests that hit line # 85');" ><span title="Line 85, Col 23: true branch executed 1 time, false branch executed 5 times." class="nolink">&#160;6</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine"><span class="nolink" title="Line 85, Col 23: true branch executed 1 time, false branch executed 5 times.">                <span class="keyword">return</span> (<span class="string">&quot;p&quot;</span>.equals(node.nodeName())) ? FilterResult.REMOVE : FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l86">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-86" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="88" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-88' onclick="toggleInlineStats(this, 'inlinestats-88');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-88" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-88'), 'inlinestats-88');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (3)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 2</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l88">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 88, 'Tests that hit tail(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 88, Col 13: method entered 5 times." class="nolink">&#160;5</span></td>
+<td class=" methodStart  srcCell" id="id-88"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 88,92);" id="img-88" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-88" class="srcLine"><span class="nolink" title="Line 88, Col 13: method entered 5 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-88'), 88,92);" id="e88" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine">            <span class="keyword">public</span> FilterResult tail(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine">                <span class="comment">// Delete &quot;b&quot; in tail:</span></span></td>
+</tr>
+ <tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit line # 91');" ><span title="Line 91, Col 23: true branch executed 1 time, false branch executed 4 times." class="nolink">&#160;5</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 23: true branch executed 1 time, false branch executed 4 times.">                <span class="keyword">return</span> (<span class="string">&quot;b&quot;</span>.equals(node.nodeName())) ? FilterResult.REMOVE : FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine">        }, doc.select(<span class="string">&quot;div&quot;</span>));</span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;&lt;div&gt;&lt;/div&gt;\n&lt;div&gt;\n There be \n&lt;/div&gt;&quot;</span>, doc.select(<span class="string">&quot;body&quot;</span>).html());</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="97" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-97' onclick="toggleInlineStats(this, 'inlinestats-97');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-97" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-97'), 'inlinestats-97');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                                    <td class="inlineStat">      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 97, 'Tests that hit filterStop()&#160;:&#160;void');" ><span title="Line 97, Col 5: method entered 1 time." class="nolink">&#160;1</span></td>
+<td class=" methodStart  srcCell" id="id-97"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 97,116);" id="img-97" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 5: method entered 1 time.">    @Test</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-97'), 97,116);" id="e97" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> filterStop() {</span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 99, 'Tests that hit line # 99');" ><span title="Line 99, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine"><span class="nolink" title="Line 99, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/nodes/Document.html#Document">Document</a> doc = <a href="../../../org/jsoup/Jsoup.html#Jsoup">Jsoup</a>.parse(<span class="string">&quot;&lt;div&gt;&lt;p&gt;Hello&lt;/p&gt;&lt;/div&gt;&lt;div&gt;There&lt;/div&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 100, 'Tests that hit line # 100');" ><span title="Line 100, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"><span class="nolink" title="Line 100, Col 9: statement executed 1 time.">        <span class="keyword">final</span> StringBuilder accum = <span class="keyword">new</span> StringBuilder();</span></span></td>
+</tr>
+ <tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 101, 'Tests that hit line # 101');" ><span title="Line 101, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 9: statement executed 1 time.">        <a href="../../../org/jsoup/select/NodeTraversor.html#NodeTraversor">NodeTraversor</a>.filter(<span class="keyword">new</span> <a href="../../../org/jsoup/select/NodeFilter.html#NodeFilter">NodeFilter</a>() {</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="102" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-102' onclick="toggleInlineStats(this, 'inlinestats-102');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-102" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-102'), 'inlinestats-102');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l102">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 102, 'Tests that hit head(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 102, Col 13: method entered 3 times." class="nolink">&#160;3</span></td>
+<td class=" methodStart  srcCell" id="id-102"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 102,106);" id="img-102" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-102" class="srcLine"><span class="nolink" title="Line 102, Col 13: method entered 3 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-102'), 102,106);" id="e102" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine">            <span class="keyword">public</span> FilterResult head(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 104, 'Tests that hit line # 104');" ><span title="Line 104, Col 17: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"><span class="nolink" title="Line 104, Col 17: statement executed 3 times.">                accum.append(<span class="string">&quot;&lt;&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 105, 'Tests that hit line # 105');" ><span title="Line 105, Col 17: statement executed 3 times." class="nolink">&#160;3</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine"><span class="nolink" title="Line 105, Col 17: statement executed 3 times.">                <span class="keyword">return</span> FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="108" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-108' onclick="toggleInlineStats(this, 'inlinestats-108');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-108" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-108'), 'inlinestats-108');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l108">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 108, 'Tests that hit tail(Node,int)&#160;:&#160;FilterResult');" ><span title="Line 108, Col 13: method entered 2 times." class="nolink">&#160;2</span></td>
+<td class=" methodStart  srcCell" id="id-108"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 108,113);" id="img-108" src="../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-108" class="srcLine"><span class="nolink" title="Line 108, Col 13: method entered 2 times.">            @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-108'), 108,113);" id="e108" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine">            <span class="keyword">public</span> FilterResult tail(<a href="../../../org/jsoup/nodes/Node.html#Node">Node</a> node, <span class="keyword">int</span> depth) {</span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 110, 'Tests that hit line # 110');" ><span title="Line 110, Col 17: statement executed 2 times." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine"><span class="nolink" title="Line 110, Col 17: statement executed 2 times.">                accum.append(<span class="string">&quot;&lt;/&quot;</span>).append(node.nodeName()).append(<span class="string">&quot;&gt;&quot;</span>);</span></span></td>
+</tr>
+ <tr id="l111">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-111" class="srcLine">                <span class="comment">// Stop after p.</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 112, 'Tests that hit line # 112');" ><span title="Line 112, Col 23: true branch executed 1 time, false branch executed 1 time." class="nolink">&#160;2</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine"><span class="nolink" title="Line 112, Col 23: true branch executed 1 time, false branch executed 1 time.">                <span class="keyword">return</span> (<span class="string">&quot;p&quot;</span>.equals(node.nodeName())) ? FilterResult.STOP : FilterResult.CONTINUE;</span></span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine">            }</span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine">        }, doc.select(<span class="string">&quot;div&quot;</span>));</span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 115, 'Tests that hit line # 115');" ><span title="Line 115, Col 9: statement executed 1 time." class="nolink">&#160;1</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine"><span class="nolink" title="Line 115, Col 9: statement executed 1 time.">        assertEquals(<span class="string">&quot;&lt;div&gt;&lt;p&gt;&lt;#text&gt;&lt;/#text&gt;&lt;/p&gt;&quot;</span>, accum.toString());</span></span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../';
+    var testsPerFile = -1;
+</script>
+<script src="TraversorTest.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.4.1
+                on Thu May 4 2023 21:58:45 CDT using coverage data from Thu May 4 2023 21:58:43 CDT.
+            </li>
+        </ul>
+        <ul>
+            <li>OpenClover is free and open-source software. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

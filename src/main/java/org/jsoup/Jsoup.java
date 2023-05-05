@@ -17,7 +17,7 @@ import java.net.URL;
 
  @author Jonathan Hedley */
 public class Jsoup {
-    private Jsoup() {}
+    public Jsoup() {}
 
     /**
      Parse HTML into a Document. The parser will make a sensible, balanced document tree out of any HTML.

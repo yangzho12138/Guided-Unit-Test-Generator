@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.parser.CharacterReaderTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.001">
+  <properties/>
+  <testcase name="nextIndexOfUnmatched" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="unconsume" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="bufferUp" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="nextIndexOfChar" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="notEmptyAtBufferSplitPoint" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="rangeEquals" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consumeToChar" classname="org.jsoup.parser.CharacterReaderTest" time="0.001"/>
+  <testcase name="advance" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consumeToString" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consumeToAny" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consumeToEnd" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consumeToNonexistentEndWhenAtAnd" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="containsIgnoreCase" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="mark" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="empty" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="cachesStrings" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consumeLetterThenDigitSequence" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consumeLetterSequence" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="nextIndexOfString" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="matches" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="consume" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="matchesIgnoreCase" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <testcase name="matchesAny" classname="org.jsoup.parser.CharacterReaderTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

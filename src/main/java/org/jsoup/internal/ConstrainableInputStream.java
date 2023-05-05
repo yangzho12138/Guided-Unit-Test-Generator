@@ -23,7 +23,7 @@ public final class ConstrainableInputStream extends BufferedInputStream {
     private int remaining;
     private boolean interrupted;
 
-    private ConstrainableInputStream(InputStream in, int bufferSize, int maxSize) {
+    public ConstrainableInputStream(InputStream in, int bufferSize, int maxSize) {
         super(in, bufferSize);
         Validate.isTrue(maxSize >= 0);
         this.maxSize = maxSize;

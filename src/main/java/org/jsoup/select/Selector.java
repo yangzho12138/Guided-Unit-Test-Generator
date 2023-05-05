@@ -77,7 +77,7 @@ import java.util.IdentityHashMap;
  */
 public class Selector {
     // not instantiable
-    private Selector() {}
+    public Selector() {}
 
     /**
      * Find elements matching selector.

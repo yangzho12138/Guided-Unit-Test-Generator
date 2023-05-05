@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsoup.nodes.DocumentTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2023-01-23T18:33:28" hostname="Xipeng-Songs-MacBook-Pro.local" time="0.011">
+  <properties/>
+  <testcase name="testOutputEncoding" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateDisabledNoChanges" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testHtmlAppendable" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testLocation" classname="org.jsoup.nodes.DocumentTest" time="0.005"/>
+  <testcase name="testClonesDeclarations" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testClone" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testShiftJisRoundtrip" classname="org.jsoup.nodes.DocumentTest" time="0.001"/>
+  <testcase name="testNormalisesStructure" classname="org.jsoup.nodes.DocumentTest" time="0.001"/>
+  <testcase name="testXhtmlReferences" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateXmlNoCharset" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateUtf8" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateEnabledAfterCharsetChange" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateDisabled" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateXmlDisabled" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateCleanup" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="DocumentsWithSameContentAreEqual" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdatedDisabledPerDefault" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateXmlIso8859" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="parseAndHtmlOnDifferentThreads" classname="org.jsoup.nodes.DocumentTest" time="0.001"/>
+  <testcase name="testMetaCharsetUpdateNoCharset" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="DocumentsWithSameContentAreVerifialbe" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="setTextPreservesDocumentStructure" classname="org.jsoup.nodes.DocumentTest" time="0.001"/>
+  <testcase name="htmlParseDefaultsToHtmlOutputSyntax" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateIso8859" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateXmlUtf8" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testHtmlAndXmlSyntax" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testTitles" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <testcase name="testMetaCharsetUpdateXmlDisabledNoChanges" classname="org.jsoup.nodes.DocumentTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

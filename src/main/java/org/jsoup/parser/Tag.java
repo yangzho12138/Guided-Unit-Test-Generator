@@ -25,7 +25,7 @@ public class Tag {
     private boolean formList = false; // a control that appears in forms: input, textarea, output etc
     private boolean formSubmit = false; // a control that can be submitted in a form: input etc
 
-    private Tag(String tagName) {
+    public Tag(String tagName) {
         this.tagName = tagName;
         normalName = Normalizer.lowerCase(tagName);
     }
