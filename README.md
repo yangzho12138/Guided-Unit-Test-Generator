@@ -12,6 +12,14 @@
 <p>Run the Application.java file</p>
 <p>Attention: remember to change the address of the target folder you want to generate its tests</p>
 
+<p>If you want to see the code coverage report by Clover, please check the Clover branch. To check the coverage report, use the following command: </p>
+
+```
+$ mvn clean clover:setup test clover:aggregate clover:clover
+```
+<p>The report is the <b>index.html</b> under the target/site/clover directory. </p>
+
+
 ```java
 PoolInit pool = new PoolInit("target class address (e.g. src/main/java/edu/illinois/cs/test/)");
 TestGenerator tg = new TestGenerator("target class address (e.g. src/main/java/edu/illinois/cs/test/)");
@@ -41,7 +49,5 @@ public void MethodTraverse(String target) {
 ```
 <p>For instance, if you want to generate tests for Entities class, you can change ".java" to the filename of the class</p>
 
-<p>We still have some bugs in this tool, so some tests in your generated file may cannot being executed, we will spare no effort to fix them</p>
 <p>The tool mainly focuses on Jsoup project, so it may have some other undesired bugs when you try to run it on other projects</p>
-<p>We may build a command in the terminal command line to run the tool in the final version</p>
 <p>For more information, please see the report</p>
